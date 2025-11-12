@@ -83,9 +83,12 @@ export default {
         },
       },
       fontFamily: {
-        sans: ["var(--font-sans)"],
+        sans: ["Inter", "system-ui", "sans-serif"],
         serif: ["var(--font-serif)"],
         mono: ["var(--font-mono)"],
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       },
       keyframes: {
         "accordion-down": {

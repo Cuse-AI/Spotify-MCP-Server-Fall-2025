@@ -1,18 +1,34 @@
-import { sql } from "drizzle-orm";
-import { pgTable, text, varchar } from "drizzle-orm/pg-core";
-import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
 
-export const users = pgTable("users", {
-  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
-  username: text("username").notNull().unique(),
-  password: text("password").notNull(),
+// User Journey - The three questions
+export const userJourneySchema = z.object({
+  vibe: z.string().min(1, "Please share your vibe"),
+  now: z.string().min(1, "Please tell us where you are now"),
+  going: z.string().min(1, "Please tell us where you're going"),
 });
 
-export const insertUserSchema = createInsertSchema(users).pick({
-  username: true,
-  password: true,
-});
+export type UserJourney = z.infer<typeof userJourneySchema>;
 
-export type InsertUser = z.infer<typeof insertUserSchema>;
-export type User = typeof users.$inferSelect;
+// Song from Tapestry
+export interface TapestrySong {
+  track_id: string;
+  artist: string;
+  title: string;
+  sub_vibe: string;
+  meta_vibe: string;
+  confidence: number;
+  reddit_context?: string;
+  ananki_reasoning?: string;
+  coordinates?: {
+    x: number;
+    y: number;
+  };
+}
+
+// Playlist Response
+export interface PlaylistResponse {
+  journey: UserJourney;
+  explanation: string;
+  songs: TapestrySong[];
+  emotionalArc: string;
+}
