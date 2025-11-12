@@ -9,6 +9,22 @@ interface PlaylistResultsProps {
 }
 
 export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
+  if (!data || !data.songs || data.songs.length === 0) {
+    return (
+      <div className="min-h-screen px-6 py-12 md:px-8 flex items-center justify-center">
+        <Card className="p-8 max-w-md text-center">
+          <h2 className="text-xl font-medium mb-4">No Playlist Generated</h2>
+          <p className="text-muted-foreground mb-6">
+            We encountered an issue generating your playlist. This might be due to API configuration or connectivity issues.
+          </p>
+          <Button onClick={onStartOver} data-testid="button-start-over">
+            Try Again
+          </Button>
+        </Card>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen px-6 py-12 md:px-8">
       <div className="max-w-3xl mx-auto">

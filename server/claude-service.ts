@@ -7,79 +7,128 @@ const client = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
 });
 
-interface TapestryData {
-  songs: Array<{
-    track_id: string;
-    artist: string;
-    title: string;
-    sub_vibe: string;
-    meta_vibe: string;
-    reddit_context?: string;
-    ananki_reasoning?: string;
-    coordinates?: {
-      x: number;
-      y: number;
+interface TapestryComplete {
+  vibes: {
+    [subVibe: string]: {
+      songs: Array<{
+        artist: string;
+        song: string;
+        spotify_id: string;
+        spotify_uri: string;
+        full_context: string;
+        ananki_analysis: string;
+        mapped_subvibe: string;
+        mapping_confidence: number;
+      }>;
     };
-  }>;
+  };
 }
 
-let tapestryCache: TapestryData | null = null;
+interface EmotionalManifold {
+  metadata: {
+    total_sub_vibes: number;
+    total_central_vibes: number;
+  };
+  central_vibes: {
+    positions: {
+      [vibe: string]: { x: number; y: number };
+    };
+  };
+  sub_vibes: {
+    [subVibe: string]: {
+      emotional_composition: { [vibe: string]: number };
+      coordinates: { x: number; y: number };
+      analysis: string;
+      proximity_notes: string;
+    };
+  };
+}
 
-function loadTapestryData(): TapestryData | null {
-  if (tapestryCache) {
-    return tapestryCache;
+let tapestryCache: TapestryComplete | null = null;
+let manifoldCache: EmotionalManifold | null = null;
+
+function loadTapestryData(): { tapestry: TapestryComplete; manifold: EmotionalManifold } | null {
+  if (tapestryCache && manifoldCache) {
+    return { tapestry: tapestryCache, manifold: manifoldCache };
   }
 
-  // Try multiple potential locations for the tapestry data
-  const possiblePaths = [
-    path.join(process.cwd(), "data", "tapestry_VALIDATED_ONLY.json"),
-    path.join(process.cwd(), "tapestry_VALIDATED_ONLY.json"),
-    path.join(process.cwd(), "..", "data", "tapestry_VALIDATED_ONLY.json"),
-    path.join(process.cwd(), "server", "data", "tapestry_VALIDATED_ONLY.json"),
-  ];
+  try {
+    const tapestryPath = path.join(process.cwd(), "data", "tapestry_complete.json");
+    const manifoldPath = path.join(process.cwd(), "data", "emotional_manifold_COMPLETE.json");
 
-  for (const filePath of possiblePaths) {
-    if (fs.existsSync(filePath)) {
-      console.log(`✅ Found tapestry data at: ${filePath}`);
-      const rawData = fs.readFileSync(filePath, "utf-8");
-      tapestryCache = JSON.parse(rawData);
-      return tapestryCache;
+    if (!fs.existsSync(tapestryPath) || !fs.existsSync(manifoldPath)) {
+      console.warn("⚠️  Tapestry data files not found");
+      return null;
     }
-  }
 
-  // If no file found, return null
-  console.warn(
-    "⚠️  Tapestry data file not found. Using sample playlist. Please add tapestry_VALIDATED_ONLY.json to the project."
-  );
-  return null;
+    console.log("✅ Loading Tapestry manifold...");
+    tapestryCache = JSON.parse(fs.readFileSync(tapestryPath, "utf-8"));
+    manifoldCache = JSON.parse(fs.readFileSync(manifoldPath, "utf-8"));
+    
+    console.log(`✅ Loaded ${manifoldCache.metadata.total_sub_vibes} sub-vibes across ${manifoldCache.metadata.total_central_vibes} central emotional centers`);
+    return { tapestry: tapestryCache, manifold: manifoldCache };
+  } catch (error) {
+    console.error("❌ Error loading Tapestry data:", error);
+    return null;
+  }
 }
 
 export async function generatePlaylistWithClaude(
   journey: UserJourney
 ): Promise<PlaylistResponse> {
-  const tapestryData = loadTapestryData();
+  const data = loadTapestryData();
 
-  if (!tapestryData || tapestryData.songs.length === 0) {
-    // Return a helpful message if no data is available
+  if (!data) {
     console.warn("⚠️  No tapestry data available, returning sample playlist");
     return generateSamplePlaylist(journey);
   }
 
-  // Prepare the tapestry database for Claude
-  const tapestryJson = JSON.stringify(tapestryData, null, 2);
+  const { tapestry, manifold } = data;
+
+  // Prepare a condensed version for Claude (just sub-vibe summaries + select sample songs)
+  const manifestSummary = {
+    manifold: {
+      central_vibes: manifold.central_vibes.positions,
+      sub_vibes: Object.keys(manifold.sub_vibes).map(subVibe => ({
+        name: subVibe,
+        coordinates: manifold.sub_vibes[subVibe].coordinates,
+        emotional_composition: manifold.sub_vibes[subVibe].emotional_composition,
+        analysis: manifold.sub_vibes[subVibe].analysis,
+        song_count: tapestry.vibes[subVibe]?.songs.length || 0
+      }))
+    },
+    available_songs: Object.entries(tapestry.vibes).reduce((acc, [subVibe, data]) => {
+      // For each sub-vibe, include top songs (by confidence)
+      const topSongs = data.songs
+        .sort((a, b) => b.mapping_confidence - a.mapping_confidence)
+        .slice(0, 15) // Top 15 songs per sub-vibe for Claude to choose from
+        .map(song => ({
+          artist: song.artist,
+          title: song.song,
+          spotify_uri: song.spotify_uri,
+          sub_vibe: subVibe,
+          reddit_context: song.full_context.slice(0, 200), // Truncated context
+          ananki_reasoning: song.ananki_analysis
+        }));
+      acc[subVibe] = topSongs;
+      return acc;
+    }, {} as Record<string, any[]>)
+  };
+
+  const manifestJson = JSON.stringify(manifestSummary, null, 2);
 
   // Build the system prompt
-  const systemPrompt = `You are an expert emotional music curator that specializes in creating personalized playlists by "walking the Tapestry manifold."
+  const systemPrompt = `You are an expert emotional playlist curator that specializes in creating personalized playlists by "walking the Tapestry manifold."
 
-The Tapestry is a database of ${tapestryData.songs.length} songs that have been mapped to 114 emotional sub-vibes using human-sourced recommendations from Reddit discussions, NOT algorithmic keyword matching or Spotify's valence metrics. Each song includes:
-- Ananki reasoning: Deep analysis of the emotional qualities
-- Reddit context: Real human discussions about when/why this song resonates
-- Meta-vibe and sub-vibe classifications for precise emotional mapping
+The Tapestry is a 2D emotional manifold mapping ${manifold.metadata.total_sub_vibes} emotional sub-vibes across ${manifold.metadata.total_central_vibes} central emotional centers (${Object.keys(manifold.central_vibes.positions).join(', ')}).
 
-Your task is to create an emotional journey through music that takes the user from their current emotional state to their desired destination.`;
+Each sub-vibe has x,y coordinates and is a weighted composition of central vibes. Songs are mapped using TRUE Ananki - AI analysis of human-sourced Reddit discussions, NOT keyword matching.
+
+Your task: Create an emotional journey by walking the manifold from the user's current state to their desired destination.`;
 
   try {
-    // Call Claude API with prompt caching for the tapestry data
+    console.log("🎵 Calling Claude to walk the Tapestry manifold...");
+    
     const response = await client.messages.create({
       model: "claude-3-5-sonnet-20241022",
       max_tokens: 4096,
@@ -90,44 +139,43 @@ Your task is to create an emotional journey through music that takes the user fr
         },
         {
           type: "text",
-          text: `<tapestry_database>\n${tapestryJson}\n</tapestry_database>`,
-          cache_control: { type: "ephemeral" }, // Cache the entire tapestry!
+          text: `<tapestry_manifest>\n${manifestJson}\n</tapestry_manifest>`,
+          cache_control: { type: "ephemeral" }, // Cache the tapestry manifest!
         },
       ],
       messages: [
         {
           role: "user",
-          content: `Based on the user's emotional journey, select 8-12 songs from the Tapestry database that create a cohesive emotional arc:
+          content: `Create an emotional playlist journey based on the user's responses:
 
-**User's Vibe**: ${journey.vibe}
-**Current Emotional State (Now)**: ${journey.now}
+**Vibe**: ${journey.vibe}
+**Current State (Now)**: ${journey.now}
 **Desired Destination (Going)**: ${journey.going}
 
-Please analyze this journey and:
-1. Identify the emotional starting point and destination
-2. Map the journey through appropriate sub-vibes in the Tapestry
-3. Select songs that create a smooth progression from "now" to "going"
-4. Prioritize songs with strong Reddit context and Ananki reasoning that match the emotional beats
+Instructions:
+1. Analyze the emotional arc: identify starting sub-vibe(s) near "${journey.now}" and destination sub-vibe(s) near "${journey.going}"
+2. Use the 2D coordinates and emotional compositions to plot a path through the manifold
+3. Select 8-12 songs that create a smooth progression across sub-vibes
+4. Prioritize songs with strong Reddit context and Ananki reasoning
+5. Consider the overall vibe "${journey.vibe}" as the journey's emotional character
 
-Return your response as a JSON object with this exact structure:
+Return ONLY a JSON object (no markdown, no extra text):
 {
-  "explanation": "A 2-3 sentence explanation of the emotional arc you've created",
-  "emotionalArc": "A brief description of the progression (e.g., 'Starting with introspective melancholy, building through hopeful contemplation, arriving at peaceful resolution')",
+  "explanation": "2-3 sentences explaining the emotional journey you created",
+  "emotionalArc": "Brief description of the progression through sub-vibes",
   "songs": [
     {
       "track_id": "spotify:track:...",
       "artist": "Artist Name",
       "title": "Song Title",
-      "sub_vibe": "Sub-Vibe Category",
-      "meta_vibe": "Meta-Vibe",
+      "sub_vibe": "Sub-Vibe Name",
+      "meta_vibe": "Central Vibe",
       "confidence": 0.95,
-      "reddit_context": "Context from database",
-      "ananki_reasoning": "Reasoning from database"
+      "reddit_context": "Brief context from Reddit",
+      "ananki_reasoning": "Why this song fits this moment in the journey"
     }
   ]
-}
-
-Only include songs that exist in the provided Tapestry database. Return ONLY the JSON object, no additional text.`,
+}`,
         },
       ],
     });
@@ -139,9 +187,11 @@ Only include songs that exist in the provided Tapestry database. Return ONLY the
     }
     const responseText = firstContent.text;
     
-    // Extract JSON from the response (Claude sometimes wraps it in markdown)
+    // Extract JSON from the response
     let jsonMatch = responseText.match(/\{[\s\S]*\}/);
     if (!jsonMatch) {
+      console.error("❌ Could not extract JSON from Claude's response");
+      console.log("Response:", responseText.slice(0, 500));
       throw new Error("Could not extract JSON from Claude's response");
     }
     
@@ -155,6 +205,11 @@ Only include songs that exist in the provided Tapestry database. Return ONLY the
         cache_read_input_tokens: response.usage.cache_read_input_tokens,
         output_tokens: response.usage.output_tokens,
       });
+      
+      const cacheHitRate = response.usage.cache_read_input_tokens 
+        ? (response.usage.cache_read_input_tokens / (response.usage.input_tokens + response.usage.cache_read_input_tokens) * 100).toFixed(1)
+        : "0";
+      console.log(`💾 Cache hit rate: ${cacheHitRate}%`);
     }
 
     return {
@@ -165,55 +220,52 @@ Only include songs that exist in the provided Tapestry database. Return ONLY the
     };
   } catch (error: any) {
     console.error("❌ Claude API Error:", error);
-    
-    // Fallback to sample playlist if API fails
     console.warn("⚠️  Falling back to sample playlist due to API error");
     return generateSamplePlaylist(journey);
   }
 }
 
-// Fallback function for when Claude API is unavailable or tapestry data is missing
+// Fallback function for when Claude API is unavailable
 function generateSamplePlaylist(journey: UserJourney): PlaylistResponse {
   const sampleSongs: TapestrySong[] = [
     {
-      track_id: "spotify:track:sample1",
-      artist: "Bon Iver",
-      title: "Holocene",
-      sub_vibe: "Introspective - Contemplative",
-      meta_vibe: "Introspective",
+      track_id: "spotify:track:31CYUJj5f9lbQ0Qqm9PzK5",
+      artist: "Julee Cruise",
+      title: "Falling",
+      sub_vibe: "Night - Contemplative",
+      meta_vibe: "Night",
       confidence: 0.92,
-      reddit_context: "Recommended in a thread about reflective morning music",
+      reddit_context: "Recommended for late-night walks after a tough day",
       ananki_reasoning:
-        "This track captures the contemplative, introspective quality of the user's emotional starting point.",
+        "This track captures the contemplative, floating quality of nighttime introspection",
     },
     {
-      track_id: "spotify:track:sample2",
-      artist: "Explosions in the Sky",
-      title: "Your Hand in Mine",
-      sub_vibe: "Hopeful - Building",
-      meta_vibe: "Hopeful",
+      track_id: "spotify:track:6MWnAibO1HAEhlrHoH1kNi",
+      artist: "Cocteau Twins",
+      title: "Lazy Calm",
+      sub_vibe: "Chill - Lofi",
+      meta_vibe: "Chill",
       confidence: 0.88,
-      reddit_context:
-        "User described as 'a journey from quiet contemplation to hopeful resolution'",
+      reddit_context: "Creates dreamy, hazy ambient thought space",
       ananki_reasoning:
-        "Creates an emotional bridge, maintaining intimacy while introducing forward movement.",
+        "Provides an emotional bridge through ambient calm, maintaining reflective mood",
     },
     {
-      track_id: "spotify:track:sample3",
-      artist: "Ólafur Arnalds",
-      title: "Near Light",
-      sub_vibe: "Peaceful - Morning",
-      meta_vibe: "Peaceful",
-      confidence: 0.85,
-      ananki_reasoning:
-        "Embodies the peaceful, uplifting destination the user is moving toward.",
+      track_id: "spotify:track:5KX2DSPC6aCA0pdDidTmBC",
+      artist: "Portishead",
+      title: "The Rip",
+      sub_vibe: "Sad - Melancholic",
+      meta_vibe: "Sad",
+      confidence: 0.90,
+      reddit_context: "Deep, moody reflection without being overwhelming",
+      ananki_reasoning: "Embodies gentle melancholy suitable for contemplative moments",
     },
   ];
 
   return {
     journey,
-    explanation: `Based on your journey from "${journey.now}" to "${journey.going}", I've curated a sample playlist. Note: This is a placeholder until the full Tapestry database is loaded.`,
-    emotionalArc: `Starting with introspective, contemplative vibes and gradually building toward peaceful, uplifting resolution.`,
+    explanation: `Based on your journey from "${journey.now}" to "${journey.going}", I've created a sample playlist. Note: This is using sample data - add your full Tapestry database to data/tapestry_complete.json for AI-powered emotional journeys!`,
+    emotionalArc: `Gentle progression through contemplative night vibes, ambient calm, and melancholic reflection.`,
     songs: sampleSongs,
   };
 }

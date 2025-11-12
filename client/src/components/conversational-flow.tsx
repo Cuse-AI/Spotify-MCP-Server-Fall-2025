@@ -39,12 +39,13 @@ export function ConversationalFlow({ onComplete }: ConversationalFlowProps) {
 
   const generatePlaylistMutation = useMutation({
     mutationFn: async (journey: UserJourney) => {
-      const response = await apiRequest<PlaylistResponse>(
+      const response = await apiRequest(
         "POST",
         "/api/generate-playlist",
         journey
       );
-      return response;
+      const data: PlaylistResponse = await response.json();
+      return data;
     },
     onSuccess: (data) => {
       onComplete(data);
