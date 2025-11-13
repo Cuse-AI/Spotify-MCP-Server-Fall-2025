@@ -24,7 +24,7 @@ export function VibeInput({
       onKeyPress={onKeyPress}
       placeholder={placeholder}
       disabled={disabled}
-      className="h-14 px-6 text-lg bg-transparent border-border/20 focus:border-border/40 transition-colors placeholder:text-muted-foreground/40 placeholder:font-light"
+      className="h-14 px-6 text-lg bg-transparent border-2 border-purple-500/30 focus:border-purple-400/70 focus:ring-2 focus:ring-purple-500/20 transition-all duration-300 placeholder:text-muted-foreground/40 placeholder:font-light shadow-[0_0_15px_rgba(168,85,247,0.1)] focus:shadow-[0_0_25px_rgba(168,85,247,0.25)]"
       autoFocus
       {...props}
     />

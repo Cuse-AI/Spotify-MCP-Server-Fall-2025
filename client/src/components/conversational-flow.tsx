@@ -4,6 +4,7 @@ import { VibeInput } from "./vibe-input";
 import { ProgressDots } from "./progress-dots";
 import { LoadingState } from "./loading-state";
 import { TapestryStatsBanner } from "./tapestry-stats-banner";
+import { CosmicBackground } from "./cosmic-background";
 import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
 import type { UserJourney, PlaylistResponse } from "@shared/schema";
@@ -76,11 +77,18 @@ export function ConversationalFlow({ onComplete }: ConversationalFlowProps) {
   };
 
   if (generatePlaylistMutation.isPending) {
-    return <LoadingState />;
+    return (
+      <>
+        <CosmicBackground />
+        <LoadingState />
+      </>
+    );
   }
 
   return (
-    <div className="min-h-screen flex flex-col px-6 py-6 md:px-8">
+    <>
+      <CosmicBackground />
+      <div className="min-h-screen flex flex-col px-6 py-6 md:px-8">
       {/* Header with Stats Banner */}
       <div className="flex flex-row flex-wrap justify-end gap-4 mb-8">
         <TapestryStatsBanner />
@@ -109,6 +117,7 @@ export function ConversationalFlow({ onComplete }: ConversationalFlowProps) {
           <ProgressDots current={currentQuestion} total={QUESTIONS.length} />
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 }
