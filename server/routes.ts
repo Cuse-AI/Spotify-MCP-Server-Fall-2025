@@ -1,7 +1,7 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
-import { userJourneySchema } from "@shared/schema";
+import { userJourneySchema, userValidatedSongSchema } from "@shared/schema";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   
@@ -18,6 +18,30 @@ export async function registerRoutes(app: Express): Promise<Server> {
       console.error("Error generating playlist:", error);
       res.status(400).json({ 
         message: error.message || "Failed to generate playlist" 
+      });
+    }
+  });
+
+  // Validate Song API - saves upvoted songs directly to tapestry_complete.json
+  app.post("/api/validate-song", async (req, res) => {
+    try {
+      const validatedData = userValidatedSongSchema.parse(req.body);
+      
+      // Create the record with timestamp
+      const record = {
+        song: validatedData.song,
+        user_journey: validatedData.user_journey,
+        validated_at: new Date().toISOString(),
+        source: "user_validated" as const,
+      };
+      
+      await storage.saveValidatedSong(record);
+      
+      res.json({ success: true, message: "Song added to Tapestry!" });
+    } catch (error: any) {
+      console.error("Error validating song:", error);
+      res.status(400).json({ 
+        message: error.message || "Failed to validate song" 
       });
     }
   });
