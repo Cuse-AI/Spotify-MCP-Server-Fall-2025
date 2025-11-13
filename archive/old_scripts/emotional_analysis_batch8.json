@@ -1,0 +1,112 @@
+{
+  "batch": 8,
+  "sub_vibes_analyzed": [
+    "Nostalgic - 90s",
+    "Nostalgic - 2000s",
+    "Nostalgic - Simpler Times",
+    "Angry - Rage",
+    "Angry - Frustrated",
+    "Angry - Aggressive",
+    "Angry - Cathartic Anger",
+    "Bitter - Resentful",
+    "Bitter - Betrayed",
+    "Excited - Adventure"
+  ],
+  "total_in_batch": 10,
+  "analysis": {
+    "Nostalgic - 90s": {
+      "emotional_composition": {
+        "Nostalgic": 0.8,
+        "Happy": 0.15,
+        "Playful": 0.05
+      },
+      "analysis": "New Radicals, Toad the Wet Sprocket, Sublime, RHCP 'Aeroplane', Foo Fighters. Specific decade longing. Alt-rock memories. MTV generation. Grunge and optimism.",
+      "proximity_notes": "Near Nostalgic center with Happy pull. 90s = specific era memory, upbeat nostalgia."
+    },
+    "Nostalgic - 2000s": {
+      "emotional_composition": {
+        "Nostalgic": 0.75,
+        "Happy": 0.15,
+        "Sad": 0.1
+      },
+      "analysis": "Manic Street Preachers, The Script, Foo Fighters, Sugarcult. Y2K memories. Pop-punk and post-grunge. Coming of age in new millennium.",
+      "proximity_notes": "Near Nostalgic center between Happy and Sad. 2000s = recent era nostalgia, bittersweet."
+    },
+    "Nostalgic - Simpler Times": {
+      "emotional_composition": {
+        "Nostalgic": 0.7,
+        "Sad": 0.15,
+        "Peaceful": 0.1,
+        "Grateful": 0.05
+      },
+      "analysis": "Beastie Boys 'Sabotage', Genesis, Aphex Twin, Chemical Brothers, Primus. Longing for less complexity. When life felt easier. Wishing to go back.",
+      "proximity_notes": "Between Nostalgic and Sad/Peaceful. Simpler times = yearning nostalgia, loss of innocence."
+    },
+    "Angry - Rage": {
+      "emotional_composition": {
+        "Angry": 0.9,
+        "Dark": 0.05,
+        "Chaotic": 0.05
+      },
+      "analysis": "Fit for an Autopsy, The Acacia Strain, deathcore intensity. Pure fury. Uncontrolled anger. Screaming energy. Maximum aggression.",
+      "proximity_notes": "Very close to Angry center. Rage = pure concentrated anger at peak intensity."
+    },
+    "Angry - Frustrated": {
+      "emotional_composition": {
+        "Angry": 0.7,
+        "Sad": 0.15,
+        "Anxious": 0.1,
+        "Bitter": 0.05
+      },
+      "analysis": "Pearl Jam 'Black', Derek and the Dominos 'Layla', Type O Negative. Blocked and stuck. Helpless anger. Things not working. Irritation with sadness.",
+      "proximity_notes": "Between Angry and Sad/Anxious. Frustration = anger + helplessness + worry."
+    },
+    "Angry - Aggressive": {
+      "emotional_composition": {
+        "Angry": 0.85,
+        "Energy": 0.1,
+        "Dark": 0.05
+      },
+      "analysis": "Methwitch, Brand of Sacrifice, Terrorizer, Napalm Death. Outward hostility. Attack mode. Confrontational. Physical anger energy.",
+      "proximity_notes": "Very close to Angry center with Energy. Aggressive = focused directed anger, combative."
+    },
+    "Angry - Cathartic Anger": {
+      "emotional_composition": {
+        "Angry": 0.65,
+        "Sad": 0.2,
+        "Introspective": 0.1,
+        "Hopeful": 0.05
+      },
+      "analysis": "Pink Floyd 'Wish You Were Here', Genesis 'No Reply At All', Aphrodite's Child. Releasing anger healthily. Processing through rage. Therapeutic fury.",
+      "proximity_notes": "Between Angry and Sad/Introspective. Cathartic = anger as release, healing rage."
+    },
+    "Bitter - Resentful": {
+      "emotional_composition": {
+        "Bitter": 0.75,
+        "Angry": 0.15,
+        "Sad": 0.1
+      },
+      "analysis": "MEGA DRIVE, Pendulum, The Divine Comedy. Holding grudges. Can't let go. Simmering negativity. Poisoned by past wrongs.",
+      "proximity_notes": "Near Bitter center between Angry and Sad. Resentful = bitter + lingering anger + hurt."
+    },
+    "Bitter - Betrayed": {
+      "emotional_composition": {
+        "Bitter": 0.7,
+        "Angry": 0.2,
+        "Sad": 0.1
+      },
+      "analysis": "Babes in Toyland 'Bruise Violet', Rollins Band 'Liar', Silverstein. Feeling wronged. Trust broken. Wounded and vengeful. Specific hurt.",
+      "proximity_notes": "Between Bitter and Angry/Sad. Betrayed = bitterness from specific violation, trust destroyed."
+    },
+    "Excited - Adventure": {
+      "emotional_composition": {
+        "Excited": 0.75,
+        "Happy": 0.15,
+        "Energy": 0.1
+      },
+      "analysis": "Two Steps From Hell, Thomas Bergersen epic scores. Quest and exploration. Unknown territory. Bold discovery. Thrilling anticipation.",
+      "proximity_notes": "Near Excited center pulled toward Happy/Energy. Adventure = excited exploration, bold joy."
+    }
+  },
+  "status": "Batch 8 complete - 80 of 114 sub-vibes analyzed (cumulative)"
+}

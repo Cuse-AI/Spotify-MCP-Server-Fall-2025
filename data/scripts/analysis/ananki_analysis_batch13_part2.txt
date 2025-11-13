@@ -1,0 +1,22 @@
+================================================================================
+ANANKI EMOTIONAL VALIDATION - BATCH 13 PART 2
+================================================================================
+
+================================================================================
+VIBE: Excited - Adventure
+================================================================================
+Total songs: 322
+
+--- Sample Songs for Emotional Validation ---
+
+1. Suzuki
+
+The tide is high - The paragons
+Traceback (most recent call last):
+  File "C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\data\ananki_deep_analysis.py", line 35, in <module>
+    print(f"   Query: {desc[:150]}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f60a' in position 39: character maps to <undefined>

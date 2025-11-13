@@ -1,0 +1,36 @@
+{
+  "total": 2,
+  "note": "These need human review or are not music recommendations",
+  "songs": [
+    {
+      "artist": "2Pac",
+      "song": "Hit 'Em Up - Single Version",
+      "spotify_id": "0Z2J91b2iTGLVTZC4fKgxf",
+      "spotify_uri": "spotify:track:0Z2J91b2iTGLVTZC4fKgxf",
+      "query_used": "SB19](https://open Shooting for the stars",
+      "extraction_pattern": "dash",
+      "comment_score": 1,
+      "source_url": "https://reddit.com/r/musicsuggestions/comments/1n9py6h/songs_for_stargazing_when_youre_tired_but_want/ncom7xw/",
+      "post_title": "Songs for stargazing when you’re tired but want the vibes",
+      "comment_text": "[Shooting for the stars - SB19](https://open.spotify.com/track/6q3qzeZgWgoFrV6DmaZr1R?si=CRWVlLbFQ_O2bvVkbYDcmQ%0A&context=spotify%3Aplaylist%3A37i9dQZF1DWZPk8hoqJshL)",
+      "ananki_subvibe": "AMBIGUOUS",
+      "ananki_reasoning": "There is a clear mismatch between the context and the validated song. The human recommended 'Shooting for the Stars' by SB19 for a 'stargazing when you're tired but want the vibes' context (which would suggest Chill - Evening or Night - Contemplative), but Spotify validated the track as 'Hit 'Em Up' by 2Pac - an aggressive diss track that does not match the peaceful stargazing context at all. This appears to be a technical error in song validation rather than the human's actual recommendation.",
+      "ananki_confidence": 0.0
+    },
+    {
+      "artist": "2 Chainz",
+      "song": "Pimps Feat Bun B & Big Krit",
+      "spotify_id": "0CAXRKyUQaD4E41FnoAtph",
+      "spotify_uri": "spotify:track:0CAXRKyUQaD4E41FnoAtph",
+      "query_used": "High Roller](https://open Crystal Method",
+      "extraction_pattern": "dash",
+      "comment_score": 1,
+      "source_url": "https://reddit.com/r/musicsuggestions/comments/1ndx9e5/need_song_suggestions_that_feel_like_im_floating/ndkxaox/",
+      "post_title": "Need song suggestions that feel like I’m floating in space?",
+      "comment_text": "[Crystal Method - High Roller](https://open.spotify.com/track/0gYrCS1xKsQlMY38hbpxb7?si=NmooMpOeQPKKQPXQo2X37Q)",
+      "ananki_subvibe": "AMBIGUOUS",
+      "ananki_reasoning": "There is a clear mismatch between the song linked in the comment (Crystal Method - High Roller, an electronic/big beat track that could plausibly fit a 'floating in space' vibe) and the song validated by Spotify (2 Chainz - Pimps Feat Bun B & Big Krit, which is a hip-hop track). The human's intent was to recommend an electronic/ambient track for the 'floating in space' feeling, but the Spotify validation shows a completely different song - likely due to a link error or misidentification. Without being able to verify the actual song being recommended, I cannot accurately map it to an emotional sub-vibe.",
+      "ananki_confidence": 0.3
+    }
+  ]
+}

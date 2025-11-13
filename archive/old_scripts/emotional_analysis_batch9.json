@@ -1,0 +1,115 @@
+{
+  "batch": 9,
+  "sub_vibes_analyzed": [
+    "Excited - Anticipation",
+    "Hopeful - Healing",
+    "Hopeful - New Beginnings",
+    "Hopeful - Optimistic",
+    "Jealous - Romantic Jealousy",
+    "Jealous - Envious",
+    "Jealous - Insecure",
+    "Jealous - Competitive",
+    "Peaceful - Serene",
+    "Peaceful - Meditative"
+  ],
+  "total_in_batch": 10,
+  "analysis": {
+    "Excited - Anticipation": {
+      "emotional_composition": {
+        "Excited": 0.7,
+        "Anxious": 0.15,
+        "Happy": 0.1,
+        "Energy": 0.05
+      },
+      "analysis": "Captain Beefheart 'Electricity', electric energy vibes. Waiting for something good. Nervous excitement. Can't wait feeling. Building tension.",
+      "proximity_notes": "Between Excited and Anxious/Happy. Anticipation = excited + slightly nervous + joyful waiting."
+    },
+    "Hopeful - Healing": {
+      "emotional_composition": {
+        "Hopeful": 0.65,
+        "Sad": 0.2,
+        "Introspective": 0.1,
+        "Peaceful": 0.05
+      },
+      "analysis": "Pink Floyd 'Wish You Were Here', The National 'Sorrow', LCD Soundsystem. Recovery process. Moving through pain. Getting better. Still hurting but improving.",
+      "proximity_notes": "Between Hopeful and Sad. Healing = hope emerging from sadness, transitional recovery."
+    },
+    "Hopeful - New Beginnings": {
+      "emotional_composition": {
+        "Hopeful": 0.7,
+        "Excited": 0.15,
+        "Happy": 0.1,
+        "Anxious": 0.05
+      },
+      "analysis": "Porcupine Tree, Karnivool, My Bloody Valentine 'Loveless', Alcest. Fresh starts. Blank slates. Turning the page. Optimistic about change.",
+      "proximity_notes": "Between Hopeful and Excited/Happy. New beginnings = hope + anticipation + slight nerves."
+    },
+    "Hopeful - Optimistic": {
+      "emotional_composition": {
+        "Hopeful": 0.75,
+        "Happy": 0.2,
+        "Grateful": 0.05
+      },
+      "analysis": "'Let the Day Begin' - The Call, 'Prayer of St Francis', Tears for Fears 'Sowing the Seeds of Love'. Bright outlook. Believing in good. Positive future vision.",
+      "proximity_notes": "Between Hopeful and Happy. Optimistic = strong hope + happiness + faith in good outcomes."
+    },
+    "Jealous - Romantic Jealousy": {
+      "emotional_composition": {
+        "Jealous": 0.75,
+        "Angry": 0.15,
+        "Sad": 0.05,
+        "Anxious": 0.05
+      },
+      "analysis": "'Run for Your Life' - Beatles, 'Jolene' - Dolly Parton, Nick Jonas 'Jealous'. Possessive love. Fear of losing partner. Green-eyed monster.",
+      "proximity_notes": "Near Jealous center with Angry pull. Romantic jealousy = envy + anger + insecurity in love."
+    },
+    "Jealous - Envious": {
+      "emotional_composition": {
+        "Jealous": 0.8,
+        "Sad": 0.1,
+        "Bitter": 0.05,
+        "Anxious": 0.05
+      },
+      "analysis": "'Creep' - Radiohead, 'Possession' - Sarah McLachlan. Wanting what others have. Feeling inadequate. Comparing yourself. Longing for their life.",
+      "proximity_notes": "Very close to Jealous center. Envious = pure jealousy with sadness from lacking."
+    },
+    "Jealous - Insecure": {
+      "emotional_composition": {
+        "Jealous": 0.65,
+        "Anxious": 0.2,
+        "Sad": 0.15
+      },
+      "analysis": "Swans 'Failure', Linkin Park 'Numb', NF 'Let You Down'. Self-doubt and comparison. Worried about not measuring up. Feeling less-than.",
+      "proximity_notes": "Between Jealous and Anxious/Sad. Insecure = jealousy rooted in self-doubt and worry."
+    },
+    "Jealous - Competitive": {
+      "emotional_composition": {
+        "Jealous": 0.6,
+        "Angry": 0.2,
+        "Confident": 0.15,
+        "Energy": 0.05
+      },
+      "analysis": "Illenium tracks, upbeat competitive vibes. Wanting to win. Rivalry energy. Driven by envy. Using jealousy as fuel.",
+      "proximity_notes": "Between Jealous and Angry/Confident. Competitive = jealousy channeled into drive and determination."
+    },
+    "Peaceful - Serene": {
+      "emotional_composition": {
+        "Peaceful": 0.85,
+        "Chill": 0.1,
+        "Grateful": 0.05
+      },
+      "analysis": "Oh Wonder 'Lonely Star', Deuter, Brian Eno, Coldplay 'Ghost Stories'. Complete calm. Stillness and clarity. Deep tranquility. Zen state.",
+      "proximity_notes": "Very close to Peaceful center. Serene = pure peace, deep calm, undisturbed stillness."
+    },
+    "Peaceful - Meditative": {
+      "emotional_composition": {
+        "Peaceful": 0.8,
+        "Introspective": 0.15,
+        "Chill": 0.05
+      },
+      "analysis": "Karunesh 'Solitude', Alice in Chains 'Nutshell' (acoustic), Genesis 'Ripples', Pink Floyd 'Echoes'. Contemplative peace. Mindfulness. Inner quiet.",
+      "proximity_notes": "Between Peaceful and Introspective. Meditative = peace + gentle contemplation, conscious calm."
+    }
+  },
+  "status": "Batch 9 complete - 90 of 114 sub-vibes analyzed (cumulative)"
+}

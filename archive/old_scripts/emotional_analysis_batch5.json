@@ -1,0 +1,117 @@
+{
+  "batch": 5,
+  "sub_vibes_analyzed": [
+    "Party - College",
+    "Party - Dance",
+    "Romantic - First Love",
+    "Romantic - Intimate",
+    "Romantic - Date Night",
+    "Romantic - Long Distance",
+    "Romantic - Anniversary",
+    "Romantic - Proposal",
+    "Romantic - Slow Dance",
+    "Dark - Gothic"
+  ],
+  "total_in_batch": 10,
+  "analysis": {
+    "Party - College": {
+      "emotional_composition": {
+        "Party": 0.7,
+        "Playful": 0.15,
+        "Dark": 0.1,
+        "Energy": 0.05
+      },
+      "analysis": "Gothic Archies 'The World is a Very Scary Place', Ministry 'Everyday is Halloween'. Alternative/goth college party vibes. Edgy and weird. Underground scene energy.",
+      "proximity_notes": "Party pulled toward Playful and Dark. College = alternative party energy, quirky edge."
+    },
+    "Party - Dance": {
+      "emotional_composition": {
+        "Party": 0.8,
+        "Energy": 0.15,
+        "Happy": 0.05
+      },
+      "analysis": "Pure dance floor energy. Slayyyter, Cobrah, electronic beats. Body movement focus. Rhythmic and physical. Club bangers.",
+      "proximity_notes": "Very close to Party center. Dance = concentrated party energy, movement-focused celebration."
+    },
+    "Romantic - First Love": {
+      "emotional_composition": {
+        "Romantic": 0.75,
+        "Happy": 0.15,
+        "Excited": 0.1
+      },
+      "analysis": "Indie folk and dreamy vibes. Anna von Hausswolff, Emma Ruth Rundle. Tender and new. Butterflies and wonder. Innocence of first connection.",
+      "proximity_notes": "Near Romantic center with Happy/Excited pull. First love = romance + joy + nervous anticipation."
+    },
+    "Romantic - Intimate": {
+      "emotional_composition": {
+        "Romantic": 0.8,
+        "Chill": 0.1,
+        "Night": 0.05,
+        "Dark": 0.05
+      },
+      "analysis": "Tracy Chapman, Sofia Isella. Close and vulnerable. Private moments. Deep connection. Quiet intensity. Bedroom vibes.",
+      "proximity_notes": "Close to Romantic center with Chill/Night quality. Intimate = private romance, vulnerable closeness."
+    },
+    "Romantic - Date Night": {
+      "emotional_composition": {
+        "Romantic": 0.7,
+        "Happy": 0.15,
+        "Chill": 0.1,
+        "Excited": 0.05
+      },
+      "analysis": "'Chasing Cars', Radiohead. Intentional romance. Getting ready, anticipation. Effort and care. Creating special moments.",
+      "proximity_notes": "Romantic pulled toward Happy and Chill. Date night = planned romance, excited but relaxed."
+    },
+    "Romantic - Long Distance": {
+      "emotional_composition": {
+        "Romantic": 0.6,
+        "Sad": 0.25,
+        "Nostalgic": 0.1,
+        "Hopeful": 0.05
+      },
+      "analysis": "Neil Young, Saint Motel. Longing and missing someone. Love mixed with ache. Distance creates bittersweet feelings. Holding on.",
+      "proximity_notes": "Between Romantic and Sad. Long distance = love + longing + melancholy separation."
+    },
+    "Romantic - Anniversary": {
+      "emotional_composition": {
+        "Romantic": 0.65,
+        "Nostalgic": 0.2,
+        "Grateful": 0.1,
+        "Happy": 0.05
+      },
+      "analysis": "'Think of Laura', Alice in Chains 'Brother'. Reflection on journey together. Appreciating what you've built. Time and commitment celebrated.",
+      "proximity_notes": "Between Romantic and Nostalgic/Grateful. Anniversary = romance + reflection + appreciation."
+    },
+    "Romantic - Proposal": {
+      "emotional_composition": {
+        "Romantic": 0.7,
+        "Excited": 0.15,
+        "Hopeful": 0.1,
+        "Anxious": 0.05
+      },
+      "analysis": "Pearl Jam vibes. Major life moment. Nervous energy mixed with deep love. Commitment and future. Vulnerability of asking.",
+      "proximity_notes": "Romantic pulled toward Excited/Hopeful with slight Anxious. Proposal = romance + anticipation + nerves."
+    },
+    "Romantic - Slow Dance": {
+      "emotional_composition": {
+        "Romantic": 0.75,
+        "Happy": 0.15,
+        "Nostalgic": 0.05,
+        "Chill": 0.05
+      },
+      "analysis": "'Walking on Sunshine', Whitney Houston 'I Wanna Dance With Somebody'. Physical closeness and joy. Swaying together. Classic romance.",
+      "proximity_notes": "Near Romantic center with Happy pull. Slow dance = romance + joy + physical connection."
+    },
+    "Dark - Gothic": {
+      "emotional_composition": {
+        "Dark": 0.8,
+        "Sad": 0.1,
+        "Romantic": 0.05,
+        "Introspective": 0.05
+      },
+      "analysis": "Murderfolk, The Goddamn Gallows, O'Death 'Lowtide'. Dark folk and gothic aesthetics. Death imagery. Melancholic darkness. Victorian vibes.",
+      "proximity_notes": "Very close to Dark center. Gothic = pure darkness with melancholic and romantic edge."
+    }
+  },
+  "status": "Batch 5 complete - 50 of 114 sub-vibes analyzed (cumulative)"
+}

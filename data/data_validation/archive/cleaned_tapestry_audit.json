@@ -1,0 +1,476 @@
+{
+  "audit_date": "2025-11-09",
+  "tapestry_version": "CLEANED",
+  "total_songs_in_tapestry": 31685,
+  "sample_size": 200,
+  "clean_songs": 144,
+  "flagged_songs": 56,
+  "quality_rate": "72.0%",
+  "issue_breakdown": {
+    "NEWLINE_BREAK": 47,
+    "URL_FRAGMENT": 9,
+    "SUSPICIOUS_CHARS": 9,
+    "TOO_SHORT": 0,
+    "TOO_LONG": 0,
+    "MISSING_ARTIST": 0
+  },
+  "flagged_entries": [
+    {
+      "artist": "DVP\n\nBob Vylan",
+      "song": "Pulled",
+      "vibe": "Introspective - Self-Reflection",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Life\n\nNew Radicals",
+      "song": "You Get",
+      "vibe": "Anxious - Panic",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Keys\n\nGigantic",
+      "song": "The Pixies",
+      "vibe": "Drive - Alone",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Buckley \n\nThe Ghost of You",
+      "song": "My Chemical",
+      "vibe": "Sad - Grief",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Holding Absence",
+      "song": "Purge](https://open",
+      "vibe": "Chill - Morning Coffee",
+      "flags": [
+        "URL_FRAGMENT",
+        "SUSPICIOUS_CHARS"
+      ]
+    },
+    {
+      "artist": "Farm \n\nA Perfect Circle",
+      "song": "Judith",
+      "vibe": "Nostalgic - Teen Years",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Storm\n\nStranglers",
+      "song": "Waltzinblack",
+      "vibe": "Party - House Party",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Alive\nKowloon",
+      "song": "Wake",
+      "vibe": "Hopeful - Optimistic",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Grip\n\n\nGNR",
+      "song": "Paradise",
+      "vibe": "Hopeful - Optimistic",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "All Ye\n\nRL Burnside",
+      "song": "Poor",
+      "vibe": "Anxious - Calming Anxiety",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "The Mountain Goats",
+      "song": "No Children](https://open",
+      "vibe": "Angry - Aggressive",
+      "flags": [
+        "URL_FRAGMENT",
+        "SUSPICIOUS_CHARS"
+      ]
+    },
+    {
+      "artist": "Ellison\n\nForever Autumn",
+      "song": "Justin",
+      "vibe": "Sad - Grief",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Potter & The Nocturnals \n\nSUCKERPUNCH",
+      "song": "All Time",
+      "vibe": "Drive - Road Trip",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Superfly\n\nMiles Davis",
+      "song": "Kind",
+      "vibe": "Energy - Running",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Sunshine On Leith",
+      "song": "The Proclaimers](https://youtu",
+      "vibe": "Sad - Crying",
+      "flags": [
+        "URL_FRAGMENT",
+        "SUSPICIOUS_CHARS"
+      ]
+    },
+    {
+      "artist": "Meets Body\n\nYeah Yeah Yeahs",
+      "song": "Maps",
+      "vibe": "Nostalgic - 2000s",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "DJ\n\nTom Petty",
+      "song": "Into",
+      "vibe": "Introspective - Self-Reflection",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Mancini\n\nMaple Leaf Rag",
+      "song": "Scott",
+      "vibe": "Playful - Silly",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Woman\n\nBabylon Zoo",
+      "song": "Spaceman",
+      "vibe": "Sad - Melancholic",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Steps \n\nTake That",
+      "song": "Shine",
+      "vibe": "Introspective - Growth",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Vision\u00a0\n\n\nGirdap",
+      "song": "She past",
+      "vibe": "Chill - Rainy Day",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Gotta Get Out of This Place  \n\nThe Kinks",
+      "song": "See My",
+      "vibe": "Night - Midnight Drive",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Classic IV",
+      "song": "Spooky](https://www",
+      "vibe": "Party - House Party",
+      "flags": [
+        "URL_FRAGMENT",
+        "SUSPICIOUS_CHARS"
+      ]
+    },
+    {
+      "artist": "Garfunkel\n\nDiamonds And Rust",
+      "song": "Joan",
+      "vibe": "Energy - Sports",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Straits \n\nSanteria",
+      "song": "Sublime",
+      "vibe": "Energy - Sports",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Club\n\nThe Calling",
+      "song": "Laura",
+      "vibe": "Happy - Carefree",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Xanax",
+      "song": "Elohim](https://open",
+      "vibe": "Anxious - Overwhelmed",
+      "flags": [
+        "URL_FRAGMENT",
+        "SUSPICIOUS_CHARS"
+      ]
+    },
+    {
+      "artist": "Return",
+      "song": "Moody](https://www",
+      "vibe": "Introspective - Self-Reflection",
+      "flags": [
+        "URL_FRAGMENT",
+        "SUSPICIOUS_CHARS"
+      ]
+    },
+    {
+      "artist": "Dog\n\nOnce in a Lifetime",
+      "song": "Talking",
+      "vibe": "Drive - Road Trip",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Be Televised\n\nSly and The Family Stone",
+      "song": "Family",
+      "vibe": "Grateful - Thankful",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Gaga\nBoyfren",
+      "song": "LoveLeo",
+      "vibe": "Anxious - Overwhelmed",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Jones\n\nI Try",
+      "song": "Macy",
+      "vibe": "Chill - Morning Coffee",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Crows\n\nHeartbeat",
+      "song": "Scouting",
+      "vibe": "Sad - Lonely",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Dolls\n\nBuddy Holly",
+      "song": "Weezer",
+      "vibe": "Jealous - Romantic Jealousy",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Who Died\n\nGil Scott Heron",
+      "song": "The Revolution",
+      "vibe": "Energy - Workout",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "John\n\nJuxtaposed with You",
+      "song": "Super",
+      "vibe": "Night - 3AM Thoughts",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Leah\u00a0\n\nCircle of women",
+      "song": "Nalini",
+      "vibe": "Confident - Self-Assured",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Murphy\n\nTips for Teens",
+      "song": "Sparks",
+      "vibe": "Energy - Workout",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Nice Life\n\nGod Damn The Sun",
+      "song": "Swans",
+      "vibe": "Happy - Carefree",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Of Men\n\nDiet Mountain Dew",
+      "song": "Lana",
+      "vibe": "Romantic - Intimate",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Of Spain\n\nCommon Saints",
+      "song": "Firebird",
+      "vibe": "Bored - Understimulated",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Arms\n\nWeezer",
+      "song": "My Name",
+      "vibe": "Happy - Feel Good",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Pony\n\nLamb of God",
+      "song": "Ashes",
+      "vibe": "Angry - Rage",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Shocking\n\nMagic Giant",
+      "song": "In The",
+      "vibe": "Party - Pregame",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Cake\n\nCarry The Zero",
+      "song": "Built",
+      "vibe": "Chaotic - Overwhelming",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "LaRosa  \nCry for You",
+      "song": "Isabel",
+      "vibe": "Dark - Noir",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Op\n\nEmil Rottmayer",
+      "song": "Mega",
+      "vibe": "Drive - Night Drive",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Loafy Building \n\nA Perfect Day",
+      "song": "Rusty",
+      "vibe": "Chill - Morning Coffee",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "If you like Hiphop  \nMadlib",
+      "song": "Invades",
+      "vibe": "Happy - Euphoric",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Victim\n\nBrand of Sacrifice",
+      "song": "Casca",
+      "vibe": "Angry - Aggressive",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Dopesmoker",
+      "song": "Sleep](https://www",
+      "vibe": "Happy - Feel Good",
+      "flags": [
+        "URL_FRAGMENT",
+        "SUSPICIOUS_CHARS"
+      ]
+    },
+    {
+      "artist": "Smile of Vortex\n\nLovewillsaveus",
+      "song": "First",
+      "vibe": "Anxious - Overwhelmed",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Laughing Lady\n\nDavid Bowie",
+      "song": "Drive",
+      "vibe": "Sad - Melancholic",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Delirio De Grandeza",
+      "song": "Rosalia](https://youtu",
+      "vibe": "Dark - Gothic",
+      "flags": [
+        "URL_FRAGMENT",
+        "SUSPICIOUS_CHARS"
+      ]
+    },
+    {
+      "artist": "Hitchcock  \nAdventure Rocketship",
+      "song": "Robyn",
+      "vibe": "Playful - Silly",
+      "flags": [
+        "NEWLINE_BREAK"
+      ]
+    },
+    {
+      "artist": "Daisy",
+      "song": "Ashnikko](https://open",
+      "vibe": "Romantic - Slow Dance",
+      "flags": [
+        "URL_FRAGMENT",
+        "SUSPICIOUS_CHARS"
+      ]
+    }
+  ]
+}

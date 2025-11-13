@@ -1,0 +1,44 @@
+CLEANED TAPESTRY QUALITY AUDIT
+================================================================================
+
+Total Songs: 31685
+Sample Size: 200
+Clean Rate: 72.0%
+Issues Found: 56 (28.0%)
+
+ISSUE BREAKDOWN:
+--------------------------------------------------------------------------------
+
+NEWLINE_BREAK: 47 songs
+  - DVP
+
+Bob Vylan - Pulled (Vibe: Introspective - Self-Reflection)
+  - Life
+
+New Radicals - You Get (Vibe: Anxious - Panic)
+  - Keys
+
+Gigantic - The Pixies (Vibe: Drive - Alone)
+  - Buckley 
+
+The Ghost of You - My Chemical (Vibe: Sad - Grief)
+  - Farm 
+
+A Perfect Circle - Judith (Vibe: Nostalgic - Teen Years)
+  ... and 42 more
+
+URL_FRAGMENT: 9 songs
+  - Holding Absence - Purge](https://open (Vibe: Chill - Morning Coffee)
+  - The Mountain Goats - No Children](https://open (Vibe: Angry - Aggressive)
+  - Sunshine On Leith - The Proclaimers](https://youtu (Vibe: Sad - Crying)
+  - Classic IV - Spooky](https://www (Vibe: Party - House Party)
+  - Xanax - Elohim](https://open (Vibe: Anxious - Overwhelmed)
+  ... and 4 more
+
+SUSPICIOUS_CHARS: 9 songs
+  - Holding Absence - Purge](https://open (Vibe: Chill - Morning Coffee)
+  - The Mountain Goats - No Children](https://open (Vibe: Angry - Aggressive)
+  - Sunshine On Leith - The Proclaimers](https://youtu (Vibe: Sad - Crying)
+  - Classic IV - Spooky](https://www (Vibe: Party - House Party)
+  - Xanax - Elohim](https://open (Vibe: Anxious - Overwhelmed)
+  ... and 4 more

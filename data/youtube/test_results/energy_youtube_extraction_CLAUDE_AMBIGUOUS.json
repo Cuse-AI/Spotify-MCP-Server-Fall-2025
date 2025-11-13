@@ -1,0 +1,51 @@
+{
+  "total": 3,
+  "note": "These need human review or are not music recommendations",
+  "songs": [
+    {
+      "artist": "Boldy James",
+      "song": "Photographic Memories (feat. Earl Sweatshirt)",
+      "spotify_id": "3RRjRfsNJ4A5Y3qAgQgAjD",
+      "spotify_uri": "spotify:track:3RRjRfsNJ4A5Y3qAgQgAjD",
+      "source_url": "https://youtube.com/watch?v=j0lSpNtjPM8",
+      "source": "youtube",
+      "post_title": "Energy Booster: Rock",
+      "comment_text": "This is the first song that I heard of papa roach :]",
+      "comment_score": 12707,
+      "playlist_id": "PLPA2HQzqM6PxJqXV1prZRavbqu3O_do7p",
+      "ananki_subvibe": "AMBIGUOUS",
+      "ananki_reasoning": "There is a clear mismatch between the context and the validated song. The human describes this as an 'Energy Booster: Rock' song and their first Papa Roach song (a nu-metal/rock band), but the Spotify validation shows 'Photographic Memories' by Boldy James feat. Earl Sweatshirt, which is a hip-hop/rap track, not a rock song. This suggests either a data error, mismatched validation, or the human commenting on the wrong song. Without clarity on which song is actually being referenced, I cannot reliably map to an emotional sub-vibe.",
+      "ananki_confidence": 0.3
+    },
+    {
+      "artist": "HRVY",
+      "song": "Million Ways",
+      "spotify_id": "3wuR0YSNdT9rgWfFi1lctv",
+      "spotify_uri": "spotify:track:3wuR0YSNdT9rgWfFi1lctv",
+      "source_url": "https://youtube.com/watch?v=00AhT7bSJX0",
+      "source": "youtube",
+      "post_title": "Best Happy and Upbeat Songs - YouTube Playlist 2025",
+      "comment_text": "can we just appreciate how good loren played this role",
+      "comment_score": 7868,
+      "playlist_id": "PLgzTt0k8mXzF2fleyxQ17JxeccHFC8Gxp",
+      "ananki_subvibe": "AMBIGUOUS",
+      "ananki_reasoning": "The comment 'can we just appreciate how good loren played this role' appears to be discussing an actor's performance in what is likely a music video, rather than expressing the emotional experience or vibe of the song itself. The comment is about appreciating the acting/role rather than the musical or emotional qualities of the track. Without information about what emotional response the song evokes or what the commenter felt while listening to it, I cannot accurately map this to a specific emotional sub-vibe.",
+      "ananki_confidence": 0.3
+    },
+    {
+      "artist": "Sway",
+      "song": "This Is My Demo",
+      "spotify_id": "7gDI5Ma2dBJk7duNjpqXbS",
+      "spotify_uri": "spotify:track:7gDI5Ma2dBJk7duNjpqXbS",
+      "source_url": "https://youtube.com/watch?v=gEIVzWCRSg8",
+      "source": "youtube",
+      "post_title": "Best Pregame hype warm up songs",
+      "comment_text": "Today, you guys played in Anchorage Alaska. My Grand Daughter is 8 years old. And, has been taking Viola lessons for the past 3-4 months. She got to see the FREE concert you had for the school kids. THANK YOU, THANK YOU, THANK YOU! You inspired her more than you may understand. I told her. It's all up to her. If she puts her effort in. She can play as well as you guys, before she believes she can. You guys are Awesome. You gave our kids something beyond a simple show. You inspired many, like my Grand Daughter, Claire. Thank You! XOXO",
+      "comment_score": 2150,
+      "playlist_id": "PLyiAq87WKZqUQs10jbWcrorbgupt3rRn3",
+      "ananki_subvibe": "AMBIGUOUS",
+      "ananki_reasoning": "The comment appears to be a heartfelt thank-you message directed at musicians (likely a classical string ensemble or orchestra) who performed a free concert for school children in Anchorage, Alaska. The commenter is expressing gratitude for inspiring their 8-year-old granddaughter who takes viola lessons. However, this context does not match the song 'This Is My Demo' by Sway (which is a hip-hop/rap track), and the post title mentions 'Pregame hype warm up songs' which is completely unrelated to the comment's content about a children's classical music concert. This appears to be a mismatched comment posted in the wrong thread, making it impossible to determine the emotional intent for the validated song.",
+      "ananki_confidence": 0.2
+    }
+  ]
+}

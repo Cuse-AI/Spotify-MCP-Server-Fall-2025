@@ -1,0 +1,238 @@
+{
+  "central_vibes": {
+    "Angry": {
+      "sub_vibes": [
+        "Angry - Aggressive",
+        "Angry - Cathartic Anger",
+        "Angry - Frustrated",
+        "Angry - Rage"
+      ],
+      "count": 4
+    },
+    "Anxious": {
+      "sub_vibes": [
+        "Anxious - Calming Anxiety",
+        "Anxious - Existential Dread",
+        "Anxious - Nervous Energy",
+        "Anxious - Overwhelmed",
+        "Anxious - Panic",
+        "Anxious - Social Anxiety"
+      ],
+      "count": 6
+    },
+    "Bitter": {
+      "sub_vibes": [
+        "Bitter - Betrayed",
+        "Bitter - Resentful"
+      ],
+      "count": 2
+    },
+    "Bored": {
+      "sub_vibes": [
+        "Bored - Monotonous",
+        "Bored - Restless",
+        "Bored - Understimulated",
+        "Bored - Waiting"
+      ],
+      "count": 4
+    },
+    "Chaotic": {
+      "sub_vibes": [
+        "Chaotic - Frantic",
+        "Chaotic - Overwhelming",
+        "Chaotic - Scattered",
+        "Chaotic - Unhinged"
+      ],
+      "count": 4
+    },
+    "Chill": {
+      "sub_vibes": [
+        "Chill - Ambient",
+        "Chill - Beach/Summer",
+        "Chill - Evening",
+        "Chill - Jazz",
+        "Chill - Lofi",
+        "Chill - Morning Coffee",
+        "Chill - Rainy Day",
+        "Chill - Sunday"
+      ],
+      "count": 8
+    },
+    "Confident": {
+      "sub_vibes": [
+        "Confident - Bold",
+        "Confident - Boss",
+        "Confident - Powerful",
+        "Confident - Self-Assured",
+        "Confident - Unstoppable",
+        "Confident - Victorious"
+      ],
+      "count": 6
+    },
+    "Dark": {
+      "sub_vibes": [
+        "Dark - Apocalyptic",
+        "Dark - Brooding",
+        "Dark - Gothic",
+        "Dark - Haunting",
+        "Dark - Noir",
+        "Dark - Villain Arc",
+        "Dark - Witchy"
+      ],
+      "count": 7
+    },
+    "Drive": {
+      "sub_vibes": [
+        "Drive - Alone",
+        "Drive - City",
+        "Drive - Night Drive",
+        "Drive - Road Trip",
+        "Drive - Scenic",
+        "Drive - Speed"
+      ],
+      "count": 6
+    },
+    "Energy": {
+      "sub_vibes": [
+        "Energy - Confidence",
+        "Energy - Pump Up",
+        "Energy - Running",
+        "Energy - Sports",
+        "Energy - Workout"
+      ],
+      "count": 5
+    },
+    "Excited": {
+      "sub_vibes": [
+        "Excited - Adventure",
+        "Excited - Anticipation"
+      ],
+      "count": 2
+    },
+    "Grateful": {
+      "sub_vibes": [
+        "Grateful - Content",
+        "Grateful - Reflective Gratitude",
+        "Grateful - Thankful",
+        "Grateful - Warm Appreciation"
+      ],
+      "count": 4
+    },
+    "Happy": {
+      "sub_vibes": [
+        "Happy - Carefree",
+        "Happy - Celebration",
+        "Happy - Euphoric",
+        "Happy - Feel Good",
+        "Happy - Sunshine"
+      ],
+      "count": 5
+    },
+    "Hopeful": {
+      "sub_vibes": [
+        "Hopeful - Healing",
+        "Hopeful - New Beginnings",
+        "Hopeful - Optimistic"
+      ],
+      "count": 3
+    },
+    "Introspective": {
+      "sub_vibes": [
+        "Introspective - Contemplative",
+        "Introspective - Growth",
+        "Introspective - Life Changes",
+        "Introspective - Philosophical",
+        "Introspective - Questioning",
+        "Introspective - Self-Reflection"
+      ],
+      "count": 6
+    },
+    "Jealous": {
+      "sub_vibes": [
+        "Jealous - Competitive",
+        "Jealous - Envious",
+        "Jealous - Insecure",
+        "Jealous - Romantic Jealousy"
+      ],
+      "count": 4
+    },
+    "Night": {
+      "sub_vibes": [
+        "Night - 3AM Thoughts",
+        "Night - City Nights",
+        "Night - Contemplative",
+        "Night - Midnight Drive",
+        "Night - Sleep"
+      ],
+      "count": 5
+    },
+    "Nostalgic": {
+      "sub_vibes": [
+        "Nostalgic - 2000s",
+        "Nostalgic - 90s",
+        "Nostalgic - Childhood",
+        "Nostalgic - Simpler Times",
+        "Nostalgic - Teen Years"
+      ],
+      "count": 5
+    },
+    "Party": {
+      "sub_vibes": [
+        "Party - Club",
+        "Party - College",
+        "Party - Dance",
+        "Party - Festival",
+        "Party - House Party",
+        "Party - Pregame"
+      ],
+      "count": 6
+    },
+    "Peaceful": {
+      "sub_vibes": [
+        "Peaceful - Gentle",
+        "Peaceful - Meditative",
+        "Peaceful - Quiet Reflection",
+        "Peaceful - Serene"
+      ],
+      "count": 4
+    },
+    "Playful": {
+      "sub_vibes": [
+        "Playful - Childlike",
+        "Playful - Fun",
+        "Playful - Silly",
+        "Playful - Whimsical"
+      ],
+      "count": 4
+    },
+    "Romantic": {
+      "sub_vibes": [
+        "Romantic - Anniversary",
+        "Romantic - Date Night",
+        "Romantic - First Love",
+        "Romantic - Intimate",
+        "Romantic - Long Distance",
+        "Romantic - Proposal",
+        "Romantic - Slow Dance"
+      ],
+      "count": 7
+    },
+    "Sad": {
+      "sub_vibes": [
+        "Sad - Crying",
+        "Sad - Depressive",
+        "Sad - Grief",
+        "Sad - Heartbreak",
+        "Sad - Lonely",
+        "Sad - Melancholic",
+        "Sad - Nostalgic Sad"
+      ],
+      "count": 7
+    }
+  },
+  "metadata": {
+    "total_central_vibes": 23,
+    "total_sub_vibes": 114,
+    "date_created": "2025-11-09"
+  }
+}

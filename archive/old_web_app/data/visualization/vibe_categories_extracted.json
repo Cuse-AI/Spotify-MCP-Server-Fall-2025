@@ -1,0 +1,166 @@
+{
+  "categories": {
+    "Sad": [
+      "Sad - Heartbreak",
+      "Sad - Crying",
+      "Sad - Lonely",
+      "Sad - Melancholic",
+      "Sad - Grief",
+      "Sad - Depressive",
+      "Sad - Nostalgic Sad"
+    ],
+    "Happy": [
+      "Happy - Euphoric",
+      "Happy - Feel Good",
+      "Happy - Celebration",
+      "Happy - Sunshine",
+      "Happy - Carefree"
+    ],
+    "Chill": [
+      "Chill - Morning Coffee",
+      "Chill - Rainy Day",
+      "Chill - Beach/Summer",
+      "Chill - Evening",
+      "Chill - Sunday",
+      "Chill - Lofi",
+      "Chill - Jazz",
+      "Chill - Ambient"
+    ],
+    "Night": [
+      "Night - 3AM Thoughts",
+      "Night - Midnight Drive",
+      "Night - Sleep",
+      "Night - Contemplative",
+      "Night - City Nights"
+    ],
+    "Energy": [
+      "Energy - Workout",
+      "Energy - Pump Up",
+      "Energy - Confidence",
+      "Energy - Running",
+      "Energy - Sports"
+    ],
+    "Drive": [
+      "Drive - Road Trip",
+      "Drive - Night Drive",
+      "Drive - City",
+      "Drive - Speed",
+      "Drive - Scenic",
+      "Drive - Alone"
+    ],
+    "Party": [
+      "Party - Pregame",
+      "Party - Club",
+      "Party - House Party",
+      "Party - Festival",
+      "Party - College",
+      "Party - Dance"
+    ],
+    "Romantic": [
+      "Romantic - First Love",
+      "Romantic - Intimate",
+      "Romantic - Date Night",
+      "Romantic - Long Distance",
+      "Romantic - Anniversary",
+      "Romantic - Proposal",
+      "Romantic - Slow Dance"
+    ],
+    "Dark": [
+      "Dark - Gothic",
+      "Dark - Brooding",
+      "Dark - Haunting",
+      "Dark - Noir",
+      "Dark - Witchy",
+      "Dark - Villain Arc",
+      "Dark - Apocalyptic"
+    ],
+    "Introspective": [
+      "Introspective - Philosophical",
+      "Introspective - Self-Reflection",
+      "Introspective - Contemplative",
+      "Introspective - Life Changes",
+      "Introspective - Growth",
+      "Introspective - Questioning"
+    ],
+    "Anxious": [
+      "Anxious - Panic",
+      "Anxious - Overwhelmed",
+      "Anxious - Nervous Energy",
+      "Anxious - Calming Anxiety",
+      "Anxious - Existential Dread",
+      "Anxious - Social Anxiety"
+    ],
+    "Nostalgic": [
+      "Nostalgic - Childhood",
+      "Nostalgic - Teen Years",
+      "Nostalgic - 90s",
+      "Nostalgic - 2000s",
+      "Nostalgic - Simpler Times"
+    ],
+    "Angry": [
+      "Angry - Rage",
+      "Angry - Frustrated",
+      "Angry - Aggressive",
+      "Angry - Cathartic Anger"
+    ],
+    "Bitter": [
+      "Bitter - Resentful",
+      "Bitter - Betrayed"
+    ],
+    "Excited": [
+      "Excited - Adventure",
+      "Excited - Anticipation"
+    ],
+    "Hopeful": [
+      "Hopeful - Healing",
+      "Hopeful - New Beginnings",
+      "Hopeful - Optimistic"
+    ],
+    "Jealous": [
+      "Jealous - Romantic Jealousy",
+      "Jealous - Envious",
+      "Jealous - Insecure",
+      "Jealous - Competitive"
+    ],
+    "Peaceful": [
+      "Peaceful - Serene",
+      "Peaceful - Meditative",
+      "Peaceful - Quiet Reflection",
+      "Peaceful - Gentle"
+    ],
+    "Playful": [
+      "Playful - Silly",
+      "Playful - Whimsical",
+      "Playful - Fun",
+      "Playful - Childlike"
+    ],
+    "Chaotic": [
+      "Chaotic - Frantic",
+      "Chaotic - Overwhelming",
+      "Chaotic - Unhinged",
+      "Chaotic - Scattered"
+    ],
+    "Bored": [
+      "Bored - Restless",
+      "Bored - Understimulated",
+      "Bored - Waiting",
+      "Bored - Monotonous"
+    ],
+    "Grateful": [
+      "Grateful - Thankful",
+      "Grateful - Content",
+      "Grateful - Reflective Gratitude",
+      "Grateful - Warm Appreciation"
+    ],
+    "Confident": [
+      "Confident - Self-Assured",
+      "Confident - Powerful",
+      "Confident - Bold",
+      "Confident - Victorious",
+      "Confident - Unstoppable",
+      "Confident - Boss"
+    ]
+  },
+  "total_categories": 23,
+  "total_sub_vibes": 114
+}

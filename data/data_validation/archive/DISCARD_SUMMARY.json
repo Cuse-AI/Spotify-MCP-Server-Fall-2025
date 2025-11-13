@@ -1,0 +1,11 @@
+{
+  "total_discarded": 1248,
+  "reason": "Low confidence matches that are garbled or mismatched",
+  "note": "Bad data is NOT kept in the system - only this summary exists",
+  "common_issues": [
+    "Artist/song names swapped with poor fuzzy match",
+    "Multiple songs mashed into one entry",
+    "Extraction artifacts (e.g., \"Metal adjacent Garmarna\")",
+    "Generic single-word names with no valid match"
+  ]
+}

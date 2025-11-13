@@ -1,0 +1,175 @@
+======================================================================
+STRUCTURED DATA ANALYSIS REPORT
+======================================================================
+
+Total Recommendations: 7359
+Unique Songs: 7127
+Unique Vibes: 163
+
+VIBE CATEGORY DISTRIBUTION:
+----------------------------------------------------------------------
+  Other: 4286 recommendations
+  Romantic/Sensual: 608 recommendations
+  Emotional/Sad: 541 recommendations
+  Angry/Intense: 303 recommendations
+  Happy/Upbeat: 281 recommendations
+  Night/Sleep: 273 recommendations
+  Dark/Atmospheric: 219 recommendations
+  Party/Dance: 181 recommendations
+  Introspective/Thoughtful: 181 recommendations
+  Driving/Travel: 156 recommendations
+  Chill/Relaxing: 147 recommendations
+  Discovery/Exploration: 121 recommendations
+  Nostalgic: 30 recommendations
+  Energetic/Motivational: 21 recommendations
+  Innovative/Unique: 8 recommendations
+  Focus/Study: 3 recommendations
+
+GENRE DISTRIBUTION:
+----------------------------------------------------------------------
+  Various: 5223 recommendations
+  Rock: 611 recommendations
+  Pop: 453 recommendations
+  Electronic: 263 recommendations
+  Country: 263 recommendations
+  Hip-Hop: 199 recommendations
+  Folk: 162 recommendations
+  Metal: 89 recommendations
+  R&B/Soul: 66 recommendations
+  Experimental: 13 recommendations
+  Jazz: 7 recommendations
+  Indie: 6 recommendations
+  Classical: 4 recommendations
+
+EXTRACTION CONFIDENCE:
+----------------------------------------------------------------------
+  medium: 7164 recommendations
+  high: 195 recommendations
+
+SUBREDDIT DISTRIBUTION:
+----------------------------------------------------------------------
+  r/musicsuggestions: 5102 recommendations
+  r/spotify: 1115 recommendations
+  r/ifyoulikeblank: 849 recommendations
+  r/popheads: 229 recommendations
+  r/listentothis: 25 recommendations
+  r/electronicmusic: 23 recommendations
+  r/hiphopheads: 16 recommendations
+
+SAMPLE VIBE -> SONG RELATIONSHIPS:
+----------------------------------------------------------------------
+
+[Angry/Intense]
+  Vibe: I’m angry. Give me good heavy rock/metal songs to make the stank face to. - I’m ...
+  Song: "raining blood" by Slayer
+  Genre: Rock
+  Why: I’m angry. Give me good heavy rock/metal songs to make the stank face to.
+
+Stank face example for at...
+
+  Vibe: I’m angry. Give me good heavy rock/metal songs to make the stank face to. - I’m ...
+  Song: ""Walk"" by Pantera
+  Genre: Rock
+  Why: I’m angry. Give me good heavy rock/metal songs to make the stank face to.
+
+Stank face example for at...
+
+  Vibe: I’m angry. Give me good heavy rock/metal songs to make the stank face to. - I’m ...
+  Song: "YKnZJOBobZZHh) - Tool" by BOpkA2Vs4?si=Qz
+  Genre: Rock
+  Why: I’m angry. Give me good heavy rock/metal songs to make the stank face to.
+
+Stank face example for at...
+
+
+[Chill/Relaxing]
+  Vibe: songs with really good bass lines - songs with really good bass lines im a big f...
+  Song: "Fugazi" by Waiting Room
+  Genre: Rock
+  Why: songs with really good bass lines
+
+im a big fan of rock/punk but any genres are chill. i just loveee...
+
+  Vibe: songs with really good bass lines - songs with really good bass lines im a big f...
+  Song: "Hysteria" by Muse
+  Genre: Rock
+  Why: songs with really good bass lines
+
+im a big fan of rock/punk but any genres are chill. i just loveee...
+
+  Vibe: songs with really good bass lines - songs with really good bass lines im a big f...
+  Song: "In The Meantime" by Spacehog
+  Genre: Rock
+  Why: songs with really good bass lines
+
+im a big fan of rock/punk but any genres are chill. i just loveee...
+
+
+[Dark/Atmospheric]
+  Vibe: Music that sounds like this? - Music that sounds like this? Looking for some dar...
+  Song: "Red Right Hand" by Nick Cave
+  Genre: Country
+  Why: Music that sounds like this?
+
+Looking for some dark, gothic, western albums (DOES NOT HAVE TO BE COU...
+
+  Vibe: Dark country/folk songs with a ballad feel - Dark country/folk songs with a ball...
+  Song: "The Rake's Song" by The Decemberists
+  Genre: Folk
+  Why: Dark country/folk songs with a ballad feel
+
+Looking for something like American Murder Song, Amigo T...
+
+  Vibe: Dark country/folk songs with a ballad feel - Dark country/folk songs with a ball...
+  Song: "Buenos Tardes Amigo" by Ween
+  Genre: Folk
+  Why: Dark country/folk songs with a ballad feel
+
+Looking for something like American Murder Song, Amigo T...
+
+
+[Discovery/Exploration]
+  Vibe: Spotify Hit With Class Action Lawsuit Alleging Discovery Mode Is A ‘Pay-For-Play...
+  Song: "spotify is like my grandma remembering something I said i like when I was 5, then giving me a gift related to that every year for the rest of my life" by john mayer
+  Genre: Hip-Hop
+  Why: Spotify Hit With Class Action Lawsuit Alleging Discovery Mode Is A ‘Pay-For-Play Scheme’
+
+Spotify wa...
+
+  Vibe: Your most obscure, niche suggestion please…. - Your most obscure, niche suggesti...
+  Song: "Nightwatch" by Videoing
+  Genre: Various
+  Why: Your most obscure, niche suggestion please….
+
+In my quest to make an untouchable Spotify record (tha...
+
+  Vibe: Your most obscure, niche suggestion please…. - Your most obscure, niche suggesti...
+  Song: "Diabology" by Ode to Ogtha
+  Genre: Various
+  Why: Your most obscure, niche suggestion please….
+
+In my quest to make an untouchable Spotify record (tha...
+
+
+[Driving/Travel]
+  Vibe: Songs that mention specific cars - Songs that mention specific cars What songs r...
+  Song: "Mercedes Benz" by Janis Joplin
+  Genre: Various
+  Why: Songs that mention specific cars
+
+What songs reference a particular make and model of car either in ...
+
+  Vibe: Songs that mention specific cars - Songs that mention specific cars What songs r...
+  Song: "Red Barchetta" by Rush
+  Genre: Various
+  Why: Songs that mention specific cars
+
+What songs reference a particular make and model of car either in ...
+
+  Vibe: Songs that mention specific cars - Songs that mention specific cars What songs r...
+  Song: "Short Skirt / Long Jacket" by CAKE
+  Genre: Various
+  Why: Songs that mention specific cars
+
+What songs reference a particular make and model of car either in ...
+

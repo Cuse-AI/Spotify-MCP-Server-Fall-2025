@@ -1,0 +1,81 @@
+======================================================================
+VIBECHECK MASTER CLEAN DATA SUMMARY
+======================================================================
+
+Generated: 2025-11-07 14:14:07
+
+Total Clean Entries: 7688
+Unique Songs: 7435
+
+Source Distribution:
+  musicsuggestions: 5323
+  spotify: 1130
+  ifyoulikeblank: 898
+  popheads: 236
+  Music: 33
+  listentothis: 25
+  electronicmusic: 23
+  hiphopheads: 16
+  indieheads: 4
+
+Top 50 Artists:
+   1. Slipknot: 20
+   2. Pink Floyd: 20
+   3. Pantera: 18
+   4. Radiohead: 17
+   5. Ween: 17
+   6. Metallica: 17
+   7. Tom Waits: 17
+   8. Tool: 15
+   9. Muse: 14
+  10. Deftones: 12
+  11. Fleetwood Mac: 11
+  12. Johnny Cash: 10
+  13. Black Sabbath: 10
+  14. Iron Maiden: 10
+  15. The Cure: 10
+  16. Jeff Buckley: 10
+  17. Queensryche: 9
+  18. M83: 9
+  19. Rush: 9
+  20. Pearl Jam: 9
+  21. Nine Inch Nails: 9
+  22. Primus: 9
+  23. Massive Attack: 8
+  24. Not what he seems: 8
+  25. Taylor Swift: 8
+  26. Interpol: 8
+  27. Evanescence: 8
+  28. Genesis: 8
+  29. Portishead: 8
+  30. Kate Bush: 7
+  31. Sleep Token: 7
+  32. Nutshell: 7
+  33. Gojira: 7
+  34. Korpiklaani: 7
+  35. Townes Van Zandt: 7
+  36. Sade: 7
+  37. Duran Duran: 7
+  38. Yes: 7
+  39. Alice Cooper: 7
+  40. Death: 7
+  41. The Doors: 7
+  42. David Bowie: 7
+  43. Tori Amos: 6
+  44. Rancid: 6
+  45. U2: 6
+  46. Nick Cave: 6
+  47. Type O Negative: 6
+  48. Cocteau Twins: 6
+  49. The Beach Boys: 6
+  50. System of A Down: 6
+
+======================================================================
+QUALITY FILTERS APPLIED:
+======================================================================
+[X] Removed URL fragments and markdown artifacts
+[X] Removed gibberish and random character strings
+[X] Validated song names (3-150 chars)
+[X] Validated artist names (2-100 chars)
+[X] Removed low-score recommendations
+[X] Removed exact duplicates

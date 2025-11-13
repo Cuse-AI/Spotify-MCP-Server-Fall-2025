@@ -1,0 +1,111 @@
+{
+  "batch": 3,
+  "sub_vibes_analyzed": [
+    "Night - 3AM Thoughts",
+    "Night - Midnight Drive",
+    "Night - Sleep",
+    "Night - Contemplative",
+    "Night - City Nights",
+    "Energy - Workout",
+    "Energy - Pump Up",
+    "Energy - Confidence",
+    "Energy - Running",
+    "Energy - Sports"
+  ],
+  "total_in_batch": 10,
+  "analysis": {
+    "Night - 3AM Thoughts": {
+      "emotional_composition": {
+        "Night": 0.6,
+        "Introspective": 0.25,
+        "Sad": 0.1,
+        "Anxious": 0.05
+      },
+      "analysis": "Deep existential contemplation. 'Nutshell', 'Say Hello to Heaven' - heavy emotional processing. Vulnerability of late night. Mind won't stop. Slight anxiety and melancholy.",
+      "proximity_notes": "Between Night and Introspective with Sad pull. 3AM = when defenses are down, raw thoughts emerge."
+    },
+    "Night - Midnight Drive": {
+      "emotional_composition": {
+        "Night": 0.65,
+        "Drive": 0.25,
+        "Introspective": 0.1
+      },
+      "analysis": "Movement through darkness. Contemplative but active. Solitary journey. Van Morrison, Orville Peck. Freedom and reflection combined.",
+      "proximity_notes": "Between Night and Drive. Midnight drive = nocturnal + movement, active contemplation."
+    },
+    "Night - Sleep": {
+      "emotional_composition": {
+        "Night": 0.6,
+        "Chill": 0.25,
+        "Peaceful": 0.15
+      },
+      "analysis": "Winding down to rest. Arctic Monkeys 'Only Ones Who Know', Death Cab. Gentle, soothing. Releasing the day. Calm preparation for sleep.",
+      "proximity_notes": "Between Night, Chill, and Peaceful. Sleep music = nocturnal calm, restorative stillness."
+    },
+    "Night - Contemplative": {
+      "emotional_composition": {
+        "Night": 0.55,
+        "Introspective": 0.35,
+        "Sad": 0.1
+      },
+      "analysis": "'Chasing Cars', Radiohead 'How to disappear completely'. Deep thought during darkness. Questioning and wondering. Slight melancholy of night reflection.",
+      "proximity_notes": "Halfway between Night and Introspective. Night amplifies contemplation, makes it heavier."
+    },
+    "Night - City Nights": {
+      "emotional_composition": {
+        "Night": 0.6,
+        "Energy": 0.2,
+        "Party": 0.1,
+        "Dark": 0.1
+      },
+      "analysis": "Urban nocturnal energy. Dance music, UK chart hits. Neon lights and movement. Slightly edgy/mysterious. City never sleeps vibe.",
+      "proximity_notes": "Night pulled toward Energy and Party. City nights = nocturnal + social + electric atmosphere."
+    },
+    "Energy - Workout": {
+      "emotional_composition": {
+        "Energy": 0.85,
+        "Confident": 0.1,
+        "Angry": 0.05
+      },
+      "analysis": "'Till I Collapse' - Eminem, 'Maniac'. Pure physical motivation. Push harder. Aggressive determination. Channeled intensity.",
+      "proximity_notes": "Very close to Energy center. Workout = focused physical power, slight aggressive edge for push."
+    },
+    "Energy - Pump Up": {
+      "emotional_composition": {
+        "Energy": 0.75,
+        "Happy": 0.15,
+        "Party": 0.1
+      },
+      "analysis": "90s eurodance! 'Rhythm of the Night', 'Beautiful Life', Ace of Base. Positive high energy. Celebration energy. Pure hype.",
+      "proximity_notes": "Between Energy and Happy/Party. Pump up = energetic joy, motivational positivity."
+    },
+    "Energy - Confidence": {
+      "emotional_composition": {
+        "Energy": 0.6,
+        "Confident": 0.35,
+        "Happy": 0.05
+      },
+      "analysis": "'Unstoppable' by Sia, empowerment anthems. Self-assured power. Bold energy. Feeling capable and strong. Motivational swagger.",
+      "proximity_notes": "Between Energy and Confident. Confidence boost = energized self-assurance."
+    },
+    "Energy - Running": {
+      "emotional_composition": {
+        "Energy": 0.8,
+        "Drive": 0.15,
+        "Excited": 0.05
+      },
+      "analysis": "Jimi Hendrix, Black Sabbath, Rush. Sustained momentum. Forward motion. Racing energy. Rhythmic propulsion.",
+      "proximity_notes": "Near Energy center with Drive pull. Running = continuous energetic movement, rhythmic power."
+    },
+    "Energy - Sports": {
+      "emotional_composition": {
+        "Energy": 0.75,
+        "Confident": 0.15,
+        "Angry": 0.1
+      },
+      "analysis": "Rammstein 'Du Hast', Def Leppard, M\u00f6tley Cr\u00fce. Aggressive competitive energy. Game face. Bring the intensity. Victory mindset.",
+      "proximity_notes": "Energy pulled toward Confident and Angry. Sports = competitive aggression, powered confidence."
+    }
+  },
+  "status": "Batch 3 complete - 30 of 114 sub-vibes analyzed (cumulative)"
+}

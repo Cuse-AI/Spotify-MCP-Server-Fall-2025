@@ -1,0 +1,1420 @@
+{
+  "Sad - Heartbreak": {
+    "emotional_composition": {
+      "Sad": 0.7,
+      "Bitter": 0.15,
+      "Romantic": 0.1,
+      "Angry": 0.05
+    },
+    "coordinates": {
+      "x": 335.37,
+      "y": 531.55
+    },
+    "analysis": "701 songs. Ex: void - SAY GANG. Mazzy Star - [Look On Down From The Bridge](https://www.youtube.com/watch?v=p3NZn0mA_XI&pp=ygUnbG9vayBvbiBkb3duIGZyb20gdGhlIGJyaWRnZSBtYXp6eSBzdGFy)\n\nMiranda Sex Garden - [Intermission](https://www..."
+  },
+  "Sad - Crying": {
+    "emotional_composition": {
+      "Sad": 0.9,
+      "Introspective": 0.05,
+      "Chill": 0.05
+    },
+    "coordinates": {
+      "x": 431.64,
+      "y": 535.86
+    },
+    "analysis": "1183 songs. Ex: Taylor Swift - Soon You’ll Get Better (feat. The Chicks). Soon you’ll get better by Taylor swift"
+  },
+  "Sad - Lonely": {
+    "emotional_composition": {
+      "Sad": 0.7,
+      "Anxious": 0.2,
+      "Introspective": 0.1
+    },
+    "coordinates": {
+      "x": 495.19,
+      "y": 581.59
+    },
+    "analysis": "371 songs. Ex: Journey - Feeling That Way. Feelin’ That Way/Anytime -Journey has to be played back to back.\n\nAlone Again Or - The Damned\n\nWhat Is Life - George Harrison\n\nI’m Alright (Caddyshack theme) -Kenny Loggins"
+  },
+  "Sad - Melancholic": {
+    "emotional_composition": {
+      "Sad": 0.65,
+      "Introspective": 0.25,
+      "Nostalgic": 0.1
+    },
+    "coordinates": {
+      "x": 457.28,
+      "y": 603.59
+    },
+    "analysis": "170 songs. Ex: Beck - Sunday Sun. Bitter Sweet Symphony - The Verve \n\nSunday Sun - Beck\n\nSpend Some Time - Brand New Heavies \n\nDay Is Done - Nick Drake \n\nBittersweet - Big Head Todd and the Monsters\n\nSo Blue - The Jayhawks\n\nNightsw..."
+  },
+  "Sad - Grief": {
+    "emotional_composition": {
+      "Sad": 0.85,
+      "Dark": 0.1,
+      "Introspective": 0.05
+    },
+    "coordinates": {
+      "x": 415.49,
+      "y": 566.73
+    },
+    "analysis": "471 songs. Ex: Sly & The Family Stone - If You Want Me to Stay. I love [this performance](https://www.youtube.com/watch?v=Eh2DSw9KjyY) of \\\\\"If You Want Me To Stay\\\\\" on Soul Train he calls in a different bop at the end and turns the funk up while the TV editors fa..."
+  },
+  "Sad - Depressive": {
+    "emotional_composition": {
+      "Sad": 0.8,
+      "Dark": 0.1,
+      "Anxious": 0.05,
+      "Bored": 0.05
+    },
+    "coordinates": {
+      "x": 450.45,
+      "y": 554.14
+    },
+    "analysis": "296 songs. Ex: Electric Light Orchestra - Mr. Blue Sky. Katrina and the Waves - \\\\\"Walking On Sunshine\\\\\"\n\nELO - \\\\\"Mr. Blue Sky\\\\\""
+  },
+  "Sad - Nostalgic Sad": {
+    "emotional_composition": {
+      "Sad": 0.55,
+      "Nostalgic": 0.35,
+      "Introspective": 0.1
+    },
+    "coordinates": {
+      "x": 412.62,
+      "y": 605.07
+    },
+    "analysis": "511 songs. Ex: Giselle Bellas - Are You Lonesome Tonight. Are You Lonesome Tonight - Giselle Bellas\n\nMostly Major Chord - Shayfer James\n\nYou Belong To Me - Jo Stafford"
+  },
+  "Happy - Euphoric": {
+    "emotional_composition": {
+      "Happy": 0.8,
+      "Energy": 0.15,
+      "Excited": 0.05
+    },
+    "coordinates": {
+      "x": 477.18,
+      "y": 429.11
+    },
+    "analysis": "27 songs. Ex: Champion - Stuck Right Here. if 347Aidan and Lil Peep had a baby and it was related to xxxTentacion \\[Drewlar - \\\\\"Stuck Right Here\\\\\"\\] (https://youtu.be/wXjYQJaQ3Wk)"
+  },
+  "Happy - Feel Good": {
+    "emotional_composition": {
+      "Happy": 0.85,
+      "Chill": 0.1,
+      "Grateful": 0.05
+    },
+    "coordinates": {
+      "x": 524.3,
+      "y": 398.38
+    },
+    "analysis": "767 songs. Ex: Supertramp - Goodbye Stranger - Remastered 2010. Goodbye stranger by Supertramp"
+  },
+  "Happy - Celebration": {
+    "emotional_composition": {
+      "Happy": 0.7,
+      "Party": 0.2,
+      "Energy": 0.1
+    },
+    "coordinates": {
+      "x": 448.63,
+      "y": 418.53
+    },
+    "analysis": "62 songs. Ex: Beastie Boys - (You Gotta) Fight For Your Right (To Party!). Fight for Your Right (to Party) - Beastie Boys"
+  },
+  "Happy - Sunshine": {
+    "emotional_composition": {
+      "Happy": 0.75,
+      "Energy": 0.15,
+      "Playful": 0.1
+    },
+    "coordinates": {
+      "x": 483.99,
+      "y": 390.22
+    },
+    "analysis": "80 songs. Ex: KC & The Sunshine Band - I'm Your Boogie Man. “I’m Your Boogie Man” - KC and the Sunshine Band"
+  },
+  "Happy - Carefree": {
+    "emotional_composition": {
+      "Happy": 0.7,
+      "Chill": 0.2,
+      "Peaceful": 0.1
+    },
+    "coordinates": {
+      "x": 544.51,
+      "y": 378.73
+    },
+    "analysis": "233 songs. Ex: Tiggy - Ring a Ling. Ring-A-Ling - Tiggy\n\nSailor Song - Toy Box\n\nDance Mephisto - Falco\n\nWay I Mate - Rednex\n\nDur Dur D'etra Bebe - Jordy\n\nNo Speak Americano - Yolanda Be Cool & D Cup\n\nThe Gummy Bear Song \n\nThe Curley ..."
+  },
+  "Chill - Morning Coffee": {
+    "emotional_composition": {
+      "Chill": 0.8,
+      "Peaceful": 0.1,
+      "Grateful": 0.1
+    },
+    "coordinates": {
+      "x": 642.26,
+      "y": 472.6
+    },
+    "analysis": "32 songs. Ex: CamelPhat - Breathe. The post title 'Tired of working to the sound of recycled noise — I need real music' suggests the human is seeking authentic, quality music to work to, away from overplayed or generic sounds. The l..."
+  },
+  "Chill - Rainy Day": {
+    "emotional_composition": {
+      "Chill": 0.7,
+      "Sad": 0.15,
+      "Introspective": 0.15
+    },
+    "coordinates": {
+      "x": 582.24,
+      "y": 575.37
+    },
+    "analysis": "19 songs. Ex: Kojaque - RAINY DAYS. The human explicitly describes the cozy indoor experience of being warm while looking out at rainy weather ('looking out the window to hell and damnation'), and the song is literally titled 'RAINY ..."
+  },
+  "Chill - Beach/Summer": {
+    "emotional_composition": {
+      "Chill": 0.75,
+      "Happy": 0.2,
+      "Nostalgic": 0.05
+    },
+    "coordinates": {
+      "x": 575.96,
+      "y": 517.53
+    },
+    "analysis": "42 songs. Ex: Diddy - Dirty Money - Coming Home. The human explicitly requested '2000's rnb/slow music for my beach trip' with 'chill R&B/Soul' vibes. The context is crystal clear: they want music for a beach setting with a relaxed, chill atmosph..."
+  },
+  "Chill - Evening": {
+    "emotional_composition": {
+      "Chill": 0.75,
+      "Night": 0.15,
+      "Introspective": 0.1
+    },
+    "coordinates": {
+      "x": 591.72,
+      "y": 635.02
+    },
+    "analysis": "128 songs. Ex: Anier - Otra Ronda. The playlist title explicitly requests 'Chill vibes' and the context includes artists like Natalia Lafourcade, Carla Morrison, Mon Laferte, and Silvana Estrada - all known for intimate, acoustic, m..."
+  },
+  "Chill - Sunday": {
+    "emotional_composition": {
+      "Chill": 0.8,
+      "Nostalgic": 0.1,
+      "Peaceful": 0.1
+    },
+    "coordinates": {
+      "x": 598.3,
+      "y": 504.27
+    },
+    "analysis": "109 songs. Ex: Cocteau Twins - Lazy Calm. The human explicitly describes this song as 'really chill' and mentions it's a favorite for cleaning. The context of listening to calming music while doing household chores strongly evokes a relaxe..."
+  },
+  "Chill - Lofi": {
+    "emotional_composition": {
+      "Chill": 0.75,
+      "Introspective": 0.15,
+      "Night": 0.1
+    },
+    "coordinates": {
+      "x": 598.75,
+      "y": 624.22
+    },
+    "analysis": "79 songs. Ex: Momus - Datapanik. The human explicitly states they are building a 'Chill Playlist' and recommends several albums known for their relaxed, introspective qualities (RM's 'mono.' and V's 'Layover' from BTS are contempl..."
+  },
+  "Chill - Jazz": {
+    "emotional_composition": {
+      "Chill": 0.7,
+      "Introspective": 0.15,
+      "Romantic": 0.1,
+      "Night": 0.05
+    },
+    "coordinates": {
+      "x": 565.91,
+      "y": 610.2
+    },
+    "analysis": "41 songs. Ex: Avantdale Bowling Club - Still Feel Broke. The context presents this as part of a curated New Zealand music playlist, positioned after culturally significant Māori and NZ hip-hop tracks. Avantdale Bowling Club is known for jazz-influenced h..."
+  },
+  "Chill - Ambient": {
+    "emotional_composition": {
+      "Chill": 0.65,
+      "Peaceful": 0.2,
+      "Introspective": 0.1,
+      "Dark": 0.05
+    },
+    "coordinates": {
+      "x": 623.75,
+      "y": 476.9
+    },
+    "analysis": "125 songs. Ex: JOHAN - Oceans. JOHAN's 'Oceans' is recommended in a post seeking diverse genre suggestions spanning from chill pop to metal. The song title 'Oceans' and its placement among artists like Aqualung ('Brighter Than S..."
+  },
+  "Night - 3AM Thoughts": {
+    "emotional_composition": {
+      "Night": 0.6,
+      "Introspective": 0.25,
+      "Sad": 0.1,
+      "Anxious": 0.05
+    },
+    "coordinates": {
+      "x": 517.69,
+      "y": 882.64
+    },
+    "analysis": "42 songs. Ex: The Stupendium - Tune Into The Madness. The context describes a listener who actively curates their music experience, rejecting passive consumption and expressing that they 'can't abide by passive consumption' or they'd 'go crazy.' The s..."
+  },
+  "Night - Midnight Drive": {
+    "emotional_composition": {
+      "Night": 0.65,
+      "Drive": 0.25,
+      "Introspective": 0.1
+    },
+    "coordinates": {
+      "x": 411.64,
+      "y": 951.29
+    },
+    "analysis": "9 songs. Ex: Allison Russell - Nightflyer. The song title 'Nightflyer' immediately evokes nocturnal imagery and movement through darkness. The context shows the human is seeking 'real music' that's alternative to mainstream radio - music wi..."
+  },
+  "Night - Sleep": {
+    "emotional_composition": {
+      "Night": 0.6,
+      "Chill": 0.25,
+      "Peaceful": 0.15
+    },
+    "coordinates": {
+      "x": 549.1,
+      "y": 738.59
+    },
+    "analysis": "29 songs. Ex: DJ MOOD LIVE - Deep Sleep Melody. The song title 'Deep Sleep Melody' directly indicates sleep-focused music. While the human's comment describes a 'deep melodic chill house mix' for studying, working, or late-night listening, the a..."
+  },
+  "Night - Contemplative": {
+    "emotional_composition": {
+      "Night": 0.55,
+      "Introspective": 0.35,
+      "Sad": 0.1
+    },
+    "coordinates": {
+      "x": 519.2,
+      "y": 876.53
+    },
+    "analysis": "179 songs. Ex: Porcupine Tree - Arriving Somewhere But Not Here - 2017 Remaster. Porcupine Tree's 'Arriving Somewhere But Not Here' is a 12-minute progressive rock epic known for its atmospheric, introspective journey. The song builds slowly with ambient soundscapes before cres..."
+  },
+  "Night - City Nights": {
+    "emotional_composition": {
+      "Night": 0.6,
+      "Energy": 0.2,
+      "Party": 0.1,
+      "Dark": 0.1
+    },
+    "coordinates": {
+      "x": 441.56,
+      "y": 862.0
+    },
+    "analysis": "10 songs. Ex: TroyBoi - Afterhours feat. Diplo & Nina Sky. The song 'Afterhours feat. Diplo & Nina Sky' by TroyBoi fits within a trap/EDM mix titled 'afterglow: inside memories, i can live forever.' The 'afterhours' title specifically evokes late-night urb..."
+  },
+  "Energy - Workout": {
+    "emotional_composition": {
+      "Energy": 0.85,
+      "Confident": 0.1,
+      "Angry": 0.05
+    },
+    "coordinates": {
+      "x": 500.33,
+      "y": 656.44
+    },
+    "analysis": "269 songs. Ex: Right Said Fred - I'm Too Sexy. I'm Too Sexy - Right Said Fred"
+  },
+  "Energy - Pump Up": {
+    "emotional_composition": {
+      "Energy": 0.75,
+      "Happy": 0.15,
+      "Party": 0.1
+    },
+    "coordinates": {
+      "x": 454.59,
+      "y": 612.33
+    },
+    "analysis": "158 songs. Ex: Yusuke Honma - Romantic. Accidentally discovered this influencer Hana Kuroda, the perfect definition of clean girl, softcore aesthetic. \n\nBut, why is nobody talking about her music? It's really girly pop though. Think Pink..."
+  },
+  "Energy - Confidence": {
+    "emotional_composition": {
+      "Energy": 0.6,
+      "Confident": 0.35,
+      "Happy": 0.05
+    },
+    "coordinates": {
+      "x": 599.98,
+      "y": 636.87
+    },
+    "analysis": "203 songs. Ex: Sleep Token - Damocles. 🗡️ \\[COVER\\] Sleep Token - DAMOCLES | Brazilian Vocal Cover\n\nHey everyone! I just released my vocal cover of DAMOCLES, one of Sleep Token’s most powerful tracks. Recorded in Rio de Janeiro, I tried..."
+  },
+  "Energy - Running": {
+    "emotional_composition": {
+      "Energy": 0.8,
+      "Drive": 0.15,
+      "Excited": 0.05
+    },
+    "coordinates": {
+      "x": 409.17,
+      "y": 701.72
+    },
+    "analysis": "88 songs. Ex: Nina Hagen - Smack Jack. Smack Jack-Nina Hagen\n\nTubular Bells- Mike Oldfield\n\nPeople are Strange -The Doors\n\nLa fille damné - Cecile Corbel\n\nWhere the wild roses grow - Nick Cave\n\nHenry Lee - Nick Cave\n\nCold blows the wind..."
+  },
+  "Energy - Sports": {
+    "emotional_composition": {
+      "Energy": 0.75,
+      "Confident": 0.15,
+      "Angry": 0.1
+    },
+    "coordinates": {
+      "x": 511.19,
+      "y": 632.35
+    },
+    "analysis": "4 songs. Ex: Jason DeRush - Opium. IT JUST LAUNCHED 3 mins ago \n\nJason DeRush - Opium \n\n[https://open.spotify.com/track/1PGDeFNw6oSvEaVucrAVkn?si=bb715ed9255743d0](https://open.spotify.com/track/1PGDeFNw6oSvEaVucrAVkn?si=bb715ed9255..."
+  },
+  "Drive - Road Trip": {
+    "emotional_composition": {
+      "Drive": 0.7,
+      "Happy": 0.15,
+      "Excited": 0.1,
+      "Nostalgic": 0.05
+    },
+    "coordinates": {
+      "x": 221.16,
+      "y": 755.33
+    },
+    "analysis": "125 songs. Ex: Roo Panes - Open Road - EP Version. The human explicitly expresses a desire for 'a car, some good friends, great music and the open road,' which directly describes the quintessential road trip experience. The song title 'Open Road' r..."
+  },
+  "Drive - Night Drive": {
+    "emotional_composition": {
+      "Drive": 0.6,
+      "Night": 0.3,
+      "Introspective": 0.1
+    },
+    "coordinates": {
+      "x": 301.16,
+      "y": 913.36
+    },
+    "analysis": "136 songs. Ex: The Smashing Pumpkins - The Interview. The post title explicitly states '80s music late night drives' and the playlist includes classic 80s/alternative tracks perfect for nocturnal driving. The Smashing Pumpkins' 'The Interview' fits th..."
+  },
+  "Drive - City": {
+    "emotional_composition": {
+      "Drive": 0.7,
+      "Energy": 0.2,
+      "Night": 0.1
+    },
+    "coordinates": {
+      "x": 254.49,
+      "y": 861.2
+    },
+    "analysis": "12 songs. Ex: Doechii - DENIAL IS A RIVER. The post is explicitly titled 'Car Music 2025 - Driving Music' and is about driving playlists. The comment 'I might need a while to remember the lyrics to this one' suggests the song has complex, r..."
+  },
+  "Drive - Speed": {
+    "emotional_composition": {
+      "Drive": 0.65,
+      "Energy": 0.25,
+      "Excited": 0.1
+    },
+    "coordinates": {
+      "x": 238.41,
+      "y": 790.34
+    },
+    "analysis": "28 songs. Ex: Joe Satriani - Surfing with the Alien. The human explicitly describes this as '80s Late Night Driving Music' and emphasizes that the song 'made me want to drive FAST' with a warning to 'mind your speed.' The context is clearly about dri..."
+  },
+  "Drive - Scenic": {
+    "emotional_composition": {
+      "Drive": 0.65,
+      "Chill": 0.2,
+      "Happy": 0.1,
+      "Peaceful": 0.05
+    },
+    "coordinates": {
+      "x": 313.41,
+      "y": 727.33
+    },
+    "analysis": "20 songs. Ex: TOTO - Hold the Line. The context describes listening to 'Hold the Line' by TOTO while flying a plane in GTA San Andreas, creating a traveling/journey experience. The song appears in a 'Classic Rock Road Trip Playlist' ..."
+  },
+  "Drive - Alone": {
+    "emotional_composition": {
+      "Drive": 0.6,
+      "Introspective": 0.25,
+      "Sad": 0.1,
+      "Night": 0.05
+    },
+    "coordinates": {
+      "x": 315.74,
+      "y": 833.12
+    },
+    "analysis": "27 songs. Ex: A$AP Rocky - F**kin' Problems (feat. Drake, 2 Chainz & Kendrick Lamar). The human describes a deeply solitary early morning highway drive experience with no other cars around, explicitly stating 'No cars in front of me, in back of me, on the side of me, just open highw..."
+  },
+  "Party - Pregame": {
+    "emotional_composition": {
+      "Party": 0.7,
+      "Energy": 0.2,
+      "Excited": 0.1
+    },
+    "coordinates": {
+      "x": 295.29,
+      "y": 462.59
+    },
+    "analysis": "20 songs. Ex: NNX LXSY - Hemenesy. The human explicitly mentions this music is 'Perfect for your weekend pregame' as the first use case listed. The context describes a 2-hour progressive & trance mix intended as a 'weekend soundtrac..."
+  },
+  "Party - Club": {
+    "emotional_composition": {
+      "Party": 0.75,
+      "Energy": 0.15,
+      "Dark": 0.05,
+      "Romantic": 0.05
+    },
+    "coordinates": {
+      "x": 297.15,
+      "y": 482.89
+    },
+    "analysis": "11 songs. Ex: Jennifer Lopez - On The Floor. The context describes an EDM trap-inspired DJ mix with influences from artists like ISOxo, Skrillex, and Knock2, which are known for high-energy electronic music. The mix title 'afterglow: inside m..."
+  },
+  "Party - House Party": {
+    "emotional_composition": {
+      "Party": 0.7,
+      "Happy": 0.2,
+      "Playful": 0.1
+    },
+    "coordinates": {
+      "x": 324.33,
+      "y": 362.72
+    },
+    "analysis": "18 songs. Ex: n$vd - dense. The human explicitly describes this as a '90s HOUSE electronic track', emphasizing the house music genre. House music is fundamentally designed for dancing and party environments. The 90s house sty..."
+  },
+  "Party - Festival": {
+    "emotional_composition": {
+      "Party": 0.65,
+      "Happy": 0.2,
+      "Excited": 0.1,
+      "Energy": 0.05
+    },
+    "coordinates": {
+      "x": 311.0,
+      "y": 416.01
+    },
+    "analysis": "7 songs. Ex: PEEKABOO - BADDERS. This is a SKRILLEX collaboration flip (remix) of a bass-heavy electronic track featuring multiple prominent dubstep/bass music artists (G-REX, PEEKABOO). The context shows the producer sharing thei..."
+  },
+  "Party - College": {
+    "emotional_composition": {
+      "Party": 0.7,
+      "Playful": 0.15,
+      "Dark": 0.1,
+      "Energy": 0.05
+    },
+    "coordinates": {
+      "x": 303.13,
+      "y": 404.41
+    },
+    "analysis": "2 songs. Ex: Disc Tools Series - Stadium 2. The creator explicitly describes this as a 'pump up mix for a college football season' designed for 'students at SEC schools' to listen to 'on gameday before heading out to whatever darty/tailgate ..."
+  },
+  "Party - Dance": {
+    "emotional_composition": {
+      "Party": 0.8,
+      "Energy": 0.15,
+      "Happy": 0.05
+    },
+    "coordinates": {
+      "x": 307.0,
+      "y": 448.9
+    },
+    "analysis": "33 songs. Ex: Bodies Of Water - I'm Set Free. The human explicitly describes this as part of an Acid-House/Eurodance/Trance DJ set they mixed, which are all dance-oriented electronic music genres designed for club/party environments. The song ..."
+  },
+  "Romantic - First Love": {
+    "emotional_composition": {
+      "Romantic": 0.75,
+      "Happy": 0.15,
+      "Excited": 0.1
+    },
+    "coordinates": {
+      "x": 252.39,
+      "y": 570.13
+    },
+    "analysis": "72 songs. Ex: Janis Ian - At Seventeen - Remastered. Janis Ian, \\\\\"At Seventeen\\\\\"\n\nCannibal Ox, \\\\\"The F Word\\\\\"\n\nTwin Shadow, \\\\\"Old Love / New Love\\\\\"\n\nSkold vs. KMFDM, \\\\\"Love Is Like\\\\\""
+  },
+  "Romantic - Intimate": {
+    "emotional_composition": {
+      "Romantic": 0.8,
+      "Chill": 0.1,
+      "Night": 0.05,
+      "Dark": 0.05
+    },
+    "coordinates": {
+      "x": 274.85,
+      "y": 650.99
+    },
+    "analysis": "106 songs. Ex: Sean Stemaly - Come Back To Bed. The post explicitly requests 'chill, romantic songs with a peaceful rhythm,' and the song title 'Come Back To Bed' directly suggests an intimate romantic context. The recommendation list includes s..."
+  },
+  "Romantic - Date Night": {
+    "emotional_composition": {
+      "Romantic": 0.7,
+      "Happy": 0.15,
+      "Chill": 0.1,
+      "Excited": 0.05
+    },
+    "coordinates": {
+      "x": 294.72,
+      "y": 573.07
+    },
+    "analysis": "74 songs. Ex: Charlie Puth - Marvin Gaye (feat. Meghan Trainor). The song 'Marvin Gaye' by Charlie Puth ft. Meghan Trainor is a playful, flirtatious duet with romantic and sensual overtones. The context mentions 'Soft Pop Hits' and groups Charlie Puth with Ed Sh..."
+  },
+  "Romantic - Long Distance": {
+    "emotional_composition": {
+      "Romantic": 0.6,
+      "Sad": 0.25,
+      "Nostalgic": 0.1,
+      "Hopeful": 0.05
+    },
+    "coordinates": {
+      "x": 293.05,
+      "y": 590.05
+    },
+    "analysis": "10 songs. Ex: Olivia Dean - Man I Need. The comment expresses a prayer/hope for a devoted man who is 'for me and only me' to reveal himself. This reflects longing and yearning for a romantic partner who hasn't fully manifested yet - some..."
+  },
+  "Romantic - Anniversary": {
+    "emotional_composition": {
+      "Romantic": 0.65,
+      "Nostalgic": 0.2,
+      "Grateful": 0.1,
+      "Happy": 0.05
+    },
+    "coordinates": {
+      "x": 315.8,
+      "y": 603.07
+    },
+    "analysis": "47 songs. Ex: JVKE - golden hour. This context is deeply emotional and centered on enduring love within a marriage facing terminal illness. The commenter describes the song as representing his wife - 'the world, and more, light, li..."
+  },
+  "Romantic - Proposal": {
+    "emotional_composition": {
+      "Romantic": 0.7,
+      "Excited": 0.15,
+      "Hopeful": 0.1,
+      "Anxious": 0.05
+    },
+    "coordinates": {
+      "x": 261.91,
+      "y": 560.47
+    },
+    "analysis": "11 songs. Ex: Jason Mraz - I'm Yours. The commenter explicitly states they walked down the aisle to this song at their wedding, thanking the artist (though they mistakenly call Jason Mraz 'Madilyn'). Walking down the aisle is a wedding..."
+  },
+  "Romantic - Slow Dance": {
+    "emotional_composition": {
+      "Romantic": 0.75,
+      "Happy": 0.15,
+      "Nostalgic": 0.05,
+      "Chill": 0.05
+    },
+    "coordinates": {
+      "x": 284.71,
+      "y": 592.03
+    },
+    "analysis": "40 songs. Ex: Irma Thomas - Straight From The Heart. The human is recommending 1950s songs in response to a request for 'chill, romantic songs with a peaceful rhythm.' 'Straight From the Heart' by Irma Thomas fits this description perfectly - it's a ..."
+  },
+  "Dark - Gothic": {
+    "emotional_composition": {
+      "Dark": 0.8,
+      "Sad": 0.1,
+      "Romantic": 0.05,
+      "Introspective": 0.05
+    },
+    "coordinates": {
+      "x": 362.65,
+      "y": 795.48
+    },
+    "analysis": "68 songs. Ex: Burzum - Dungeons of Darkness. The user is seeking 'super heavy metal music' and lists extreme metal subgenres (death metal, grind, deathcore) alongside their favorite bands. Burzum's 'Dungeons of Darkness' is a black metal trac..."
+  },
+  "Dark - Brooding": {
+    "emotional_composition": {
+      "Dark": 0.7,
+      "Introspective": 0.2,
+      "Anxious": 0.1
+    },
+    "coordinates": {
+      "x": 441.09,
+      "y": 814.27
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Dark - Haunting": {
+    "emotional_composition": {
+      "Dark": 0.75,
+      "Sad": 0.15,
+      "Introspective": 0.1
+    },
+    "coordinates": {
+      "x": 385.81,
+      "y": 787.18
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Dark - Noir": {
+    "emotional_composition": {
+      "Dark": 0.7,
+      "Night": 0.15,
+      "Introspective": 0.1,
+      "Romantic": 0.05
+    },
+    "coordinates": {
+      "x": 388.86,
+      "y": 848.43
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Dark - Witchy": {
+    "emotional_composition": {
+      "Dark": 0.7,
+      "Romantic": 0.15,
+      "Introspective": 0.1,
+      "Playful": 0.05
+    },
+    "coordinates": {
+      "x": 358.8,
+      "y": 761.53
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Dark - Villain Arc": {
+    "emotional_composition": {
+      "Dark": 0.65,
+      "Angry": 0.2,
+      "Confident": 0.15
+    },
+    "coordinates": {
+      "x": 417.6,
+      "y": 694.69
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Dark - Apocalyptic": {
+    "emotional_composition": {
+      "Dark": 0.8,
+      "Anxious": 0.1,
+      "Sad": 0.05,
+      "Chaotic": 0.05
+    },
+    "coordinates": {
+      "x": 407.32,
+      "y": 778.69
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Introspective - Philosophical": {
+    "emotional_composition": {
+      "Introspective": 0.75,
+      "Sad": 0.1,
+      "Dark": 0.1,
+      "Chill": 0.05
+    },
+    "coordinates": {
+      "x": 569.53,
+      "y": 751.26
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Introspective - Self-Reflection": {
+    "emotional_composition": {
+      "Introspective": 0.8,
+      "Sad": 0.1,
+      "Chill": 0.1
+    },
+    "coordinates": {
+      "x": 595.97,
+      "y": 733.5
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Introspective - Contemplative": {
+    "emotional_composition": {
+      "Introspective": 0.75,
+      "Sad": 0.15,
+      "Night": 0.1
+    },
+    "coordinates": {
+      "x": 572.19,
+      "y": 766.17
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Introspective - Life Changes": {
+    "emotional_composition": {
+      "Introspective": 0.65,
+      "Anxious": 0.15,
+      "Hopeful": 0.1,
+      "Sad": 0.1
+    },
+    "coordinates": {
+      "x": 602.02,
+      "y": 690.34
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Introspective - Growth": {
+    "emotional_composition": {
+      "Introspective": 0.7,
+      "Hopeful": 0.15,
+      "Grateful": 0.1,
+      "Sad": 0.05
+    },
+    "coordinates": {
+      "x": 608.04,
+      "y": 649.35
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Introspective - Questioning": {
+    "emotional_composition": {
+      "Introspective": 0.75,
+      "Anxious": 0.15,
+      "Sad": 0.1
+    },
+    "coordinates": {
+      "x": 613.13,
+      "y": 743.58
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Anxious - Panic": {
+    "emotional_composition": {
+      "Anxious": 0.85,
+      "Chaotic": 0.1,
+      "Dark": 0.05
+    },
+    "coordinates": {
+      "x": 704.24,
+      "y": 650.57
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Anxious - Overwhelmed": {
+    "emotional_composition": {
+      "Anxious": 0.75,
+      "Sad": 0.1,
+      "Chaotic": 0.1,
+      "Bored": 0.05
+    },
+    "coordinates": {
+      "x": 705.11,
+      "y": 609.9
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Anxious - Nervous Energy": {
+    "emotional_composition": {
+      "Anxious": 0.7,
+      "Energy": 0.2,
+      "Excited": 0.1
+    },
+    "coordinates": {
+      "x": 619.69,
+      "y": 659.5
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Anxious - Calming Anxiety": {
+    "emotional_composition": {
+      "Anxious": 0.5,
+      "Chill": 0.3,
+      "Peaceful": 0.2
+    },
+    "coordinates": {
+      "x": 694.41,
+      "y": 511.7
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Anxious - Existential Dread": {
+    "emotional_composition": {
+      "Anxious": 0.65,
+      "Dark": 0.2,
+      "Introspective": 0.15
+    },
+    "coordinates": {
+      "x": 635.54,
+      "y": 734.2
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Anxious - Social Anxiety": {
+    "emotional_composition": {
+      "Anxious": 0.75,
+      "Sad": 0.15,
+      "Introspective": 0.1
+    },
+    "coordinates": {
+      "x": 669.18,
+      "y": 674.12
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Nostalgic - Childhood": {
+    "emotional_composition": {
+      "Nostalgic": 0.75,
+      "Happy": 0.15,
+      "Sad": 0.1
+    },
+    "coordinates": {
+      "x": 383.0,
+      "y": 623.38
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Nostalgic - Teen Years": {
+    "emotional_composition": {
+      "Nostalgic": 0.7,
+      "Sad": 0.15,
+      "Introspective": 0.1,
+      "Happy": 0.05
+    },
+    "coordinates": {
+      "x": 397.66,
+      "y": 655.28
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Nostalgic - 90s": {
+    "emotional_composition": {
+      "Nostalgic": 0.8,
+      "Happy": 0.15,
+      "Playful": 0.05
+    },
+    "coordinates": {
+      "x": 379.54,
+      "y": 605.45
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Nostalgic - 2000s": {
+    "emotional_composition": {
+      "Nostalgic": 0.75,
+      "Happy": 0.15,
+      "Sad": 0.1
+    },
+    "coordinates": {
+      "x": 383.0,
+      "y": 623.38
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Nostalgic - Simpler Times": {
+    "emotional_composition": {
+      "Nostalgic": 0.7,
+      "Sad": 0.15,
+      "Peaceful": 0.1,
+      "Grateful": 0.05
+    },
+    "coordinates": {
+      "x": 424.41,
+      "y": 578.17
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Angry - Rage": {
+    "emotional_composition": {
+      "Angry": 0.9,
+      "Dark": 0.05,
+      "Chaotic": 0.05
+    },
+    "coordinates": {
+      "x": 343.75,
+      "y": 321.77
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Angry - Frustrated": {
+    "emotional_composition": {
+      "Angry": 0.7,
+      "Sad": 0.15,
+      "Anxious": 0.1,
+      "Bitter": 0.05
+    },
+    "coordinates": {
+      "x": 364.92,
+      "y": 385.69
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Angry - Aggressive": {
+    "emotional_composition": {
+      "Angry": 0.85,
+      "Energy": 0.1,
+      "Dark": 0.05
+    },
+    "coordinates": {
+      "x": 340.54,
+      "y": 364.34
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Angry - Cathartic Anger": {
+    "emotional_composition": {
+      "Angry": 0.65,
+      "Sad": 0.2,
+      "Introspective": 0.1,
+      "Hopeful": 0.05
+    },
+    "coordinates": {
+      "x": 380.28,
+      "y": 389.37
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Bitter - Resentful": {
+    "emotional_composition": {
+      "Bitter": 0.75,
+      "Angry": 0.15,
+      "Sad": 0.1
+    },
+    "coordinates": {
+      "x": 138.06,
+      "y": 538.58
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Bitter - Betrayed": {
+    "emotional_composition": {
+      "Bitter": 0.7,
+      "Angry": 0.2,
+      "Sad": 0.1
+    },
+    "coordinates": {
+      "x": 151.07,
+      "y": 524.07
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Excited - Adventure": {
+    "emotional_composition": {
+      "Excited": 0.75,
+      "Happy": 0.15,
+      "Energy": 0.1
+    },
+    "coordinates": {
+      "x": 242.24,
+      "y": 421.95
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Excited - Anticipation": {
+    "emotional_composition": {
+      "Excited": 0.7,
+      "Anxious": 0.15,
+      "Happy": 0.1,
+      "Energy": 0.05
+    },
+    "coordinates": {
+      "x": 294.9,
+      "y": 452.29
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Hopeful - Healing": {
+    "emotional_composition": {
+      "Hopeful": 0.65,
+      "Sad": 0.2,
+      "Introspective": 0.1,
+      "Peaceful": 0.05
+    },
+    "coordinates": {
+      "x": 509.67,
+      "y": 347.21
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Hopeful - New Beginnings": {
+    "emotional_composition": {
+      "Hopeful": 0.7,
+      "Excited": 0.15,
+      "Happy": 0.1,
+      "Anxious": 0.05
+    },
+    "coordinates": {
+      "x": 464.48,
+      "y": 308.05
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Hopeful - Optimistic": {
+    "emotional_composition": {
+      "Hopeful": 0.75,
+      "Happy": 0.2,
+      "Grateful": 0.05
+    },
+    "coordinates": {
+      "x": 518.91,
+      "y": 283.67
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Jealous - Romantic Jealousy": {
+    "emotional_composition": {
+      "Jealous": 0.75,
+      "Angry": 0.15,
+      "Sad": 0.05,
+      "Anxious": 0.05
+    },
+    "coordinates": {
+      "x": 105.64,
+      "y": 292.79
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Jealous - Envious": {
+    "emotional_composition": {
+      "Jealous": 0.8,
+      "Sad": 0.1,
+      "Bitter": 0.05,
+      "Anxious": 0.05
+    },
+    "coordinates": {
+      "x": 80.73,
+      "y": 316.03
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Jealous - Insecure": {
+    "emotional_composition": {
+      "Jealous": 0.65,
+      "Anxious": 0.2,
+      "Sad": 0.15
+    },
+    "coordinates": {
+      "x": 207.24,
+      "y": 378.69
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Jealous - Competitive": {
+    "emotional_composition": {
+      "Jealous": 0.6,
+      "Angry": 0.2,
+      "Confident": 0.15,
+      "Energy": 0.05
+    },
+    "coordinates": {
+      "x": 213.76,
+      "y": 332.43
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Peaceful - Serene": {
+    "emotional_composition": {
+      "Peaceful": 0.85,
+      "Chill": 0.1,
+      "Grateful": 0.05
+    },
+    "coordinates": {
+      "x": 726.31,
+      "y": 89.89
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Peaceful - Meditative": {
+    "emotional_composition": {
+      "Peaceful": 0.8,
+      "Introspective": 0.15,
+      "Chill": 0.05
+    },
+    "coordinates": {
+      "x": 711.73,
+      "y": 160.94
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Peaceful - Quiet Reflection": {
+    "emotional_composition": {
+      "Peaceful": 0.7,
+      "Introspective": 0.2,
+      "Sad": 0.05,
+      "Chill": 0.05
+    },
+    "coordinates": {
+      "x": 689.58,
+      "y": 224.19
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Peaceful - Gentle": {
+    "emotional_composition": {
+      "Peaceful": 0.75,
+      "Chill": 0.15,
+      "Happy": 0.05,
+      "Grateful": 0.05
+    },
+    "coordinates": {
+      "x": 708.21,
+      "y": 134.13
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Playful - Silly": {
+    "emotional_composition": {
+      "Playful": 0.85,
+      "Happy": 0.1,
+      "Party": 0.05
+    },
+    "coordinates": {
+      "x": 400.77,
+      "y": 58.76
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Playful - Whimsical": {
+    "emotional_composition": {
+      "Playful": 0.75,
+      "Happy": 0.15,
+      "Introspective": 0.05,
+      "Peaceful": 0.05
+    },
+    "coordinates": {
+      "x": 440.37,
+      "y": 97.69
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Playful - Fun": {
+    "emotional_composition": {
+      "Playful": 0.7,
+      "Happy": 0.2,
+      "Party": 0.1
+    },
+    "coordinates": {
+      "x": 404.19,
+      "y": 117.52
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Playful - Childlike": {
+    "emotional_composition": {
+      "Playful": 0.65,
+      "Nostalgic": 0.2,
+      "Happy": 0.1,
+      "Peaceful": 0.05
+    },
+    "coordinates": {
+      "x": 416.11,
+      "y": 176.33
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Chaotic - Frantic": {
+    "emotional_composition": {
+      "Chaotic": 0.8,
+      "Anxious": 0.15,
+      "Energy": 0.05
+    },
+    "coordinates": {
+      "x": 678.38,
+      "y": 314.25
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Chaotic - Overwhelming": {
+    "emotional_composition": {
+      "Chaotic": 0.75,
+      "Anxious": 0.15,
+      "Sad": 0.05,
+      "Dark": 0.05
+    },
+    "coordinates": {
+      "x": 658.77,
+      "y": 337.08
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Chaotic - Unhinged": {
+    "emotional_composition": {
+      "Chaotic": 0.7,
+      "Dark": 0.15,
+      "Angry": 0.1,
+      "Playful": 0.05
+    },
+    "coordinates": {
+      "x": 582.26,
+      "y": 310.39
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Chaotic - Scattered": {
+    "emotional_composition": {
+      "Chaotic": 0.75,
+      "Anxious": 0.15,
+      "Bored": 0.1
+    },
+    "coordinates": {
+      "x": 720.71,
+      "y": 305.34
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Bored - Restless": {
+    "emotional_composition": {
+      "Bored": 0.7,
+      "Anxious": 0.2,
+      "Energy": 0.1
+    },
+    "coordinates": {
+      "x": 892.67,
+      "y": 461.24
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Bored - Understimulated": {
+    "emotional_composition": {
+      "Bored": 0.8,
+      "Sad": 0.1,
+      "Chill": 0.05,
+      "Anxious": 0.05
+    },
+    "coordinates": {
+      "x": 908.09,
+      "y": 404.88
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Bored - Waiting": {
+    "emotional_composition": {
+      "Bored": 0.65,
+      "Anxious": 0.2,
+      "Introspective": 0.1,
+      "Peaceful": 0.05
+    },
+    "coordinates": {
+      "x": 894.04,
+      "y": 453.92
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Bored - Monotonous": {
+    "emotional_composition": {
+      "Bored": 0.75,
+      "Sad": 0.15,
+      "Dark": 0.1
+    },
+    "coordinates": {
+      "x": 846.69,
+      "y": 435.24
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Grateful - Thankful": {
+    "emotional_composition": {
+      "Grateful": 0.8,
+      "Happy": 0.15,
+      "Peaceful": 0.05
+    },
+    "coordinates": {
+      "x": 748.18,
+      "y": 353.07
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Grateful - Content": {
+    "emotional_composition": {
+      "Grateful": 0.7,
+      "Peaceful": 0.2,
+      "Happy": 0.1
+    },
+    "coordinates": {
+      "x": 754.05,
+      "y": 300.13
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Grateful - Reflective Gratitude": {
+    "emotional_composition": {
+      "Grateful": 0.7,
+      "Introspective": 0.2,
+      "Nostalgic": 0.05,
+      "Happy": 0.05
+    },
+    "coordinates": {
+      "x": 723.23,
+      "y": 467.93
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Grateful - Warm Appreciation": {
+    "emotional_composition": {
+      "Grateful": 0.75,
+      "Happy": 0.15,
+      "Romantic": 0.05,
+      "Peaceful": 0.05
+    },
+    "coordinates": {
+      "x": 719.16,
+      "y": 366.2
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Confident - Self-Assured": {
+    "emotional_composition": {
+      "Confident": 0.8,
+      "Happy": 0.1,
+      "Energy": 0.1
+    },
+    "coordinates": {
+      "x": 765.06,
+      "y": 578.92
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Confident - Powerful": {
+    "emotional_composition": {
+      "Confident": 0.75,
+      "Energy": 0.15,
+      "Dark": 0.05,
+      "Angry": 0.05
+    },
+    "coordinates": {
+      "x": 730.79,
+      "y": 602.32
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Confident - Bold": {
+    "emotional_composition": {
+      "Confident": 0.75,
+      "Energy": 0.15,
+      "Excited": 0.05,
+      "Playful": 0.05
+    },
+    "coordinates": {
+      "x": 724.96,
+      "y": 565.09
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Confident - Victorious": {
+    "emotional_composition": {
+      "Confident": 0.7,
+      "Happy": 0.2,
+      "Excited": 0.05,
+      "Grateful": 0.05
+    },
+    "coordinates": {
+      "x": 732.05,
+      "y": 527.84
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Confident - Unstoppable": {
+    "emotional_composition": {
+      "Confident": 0.8,
+      "Energy": 0.15,
+      "Angry": 0.05
+    },
+    "coordinates": {
+      "x": 755.05,
+      "y": 589.79
+    },
+    "analysis": "Empty - needs scraping!"
+  },
+  "Confident - Boss": {
+    "emotional_composition": {
+      "Confident": 0.75,
+      "Dark": 0.1,
+      "Energy": 0.1,
+      "Happy": 0.05
+    },
+    "coordinates": {
+      "x": 733.39,
+      "y": 614.33
+    },
+    "analysis": "Empty - needs scraping!"
+  }
+}

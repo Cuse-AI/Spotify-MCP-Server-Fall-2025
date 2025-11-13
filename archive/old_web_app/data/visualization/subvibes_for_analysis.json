@@ -1,0 +1,1582 @@
+{
+  "subvibes": {
+    "Sad - Heartbreak": {
+      "parent_category": "Sad",
+      "total_songs": 783,
+      "sample_songs": [
+        "Ludo - The Horror",
+        "We were vampires - Jason",
+        "Dahmer Does Hollywood - Amigo",
+        "Evie - Shoe",
+        "Spiracle - Flower"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Sad - Crying": {
+      "parent_category": "Sad",
+      "total_songs": 801,
+      "sample_songs": [
+        "Nutshell - Alice",
+        "Black - Pearl",
+        "Cat In The Cradle - Harry",
+        "Angel - Sarah",
+        "All by myself - Eric"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Sad - Lonely": {
+      "parent_category": "Sad",
+      "total_songs": 410,
+      "sample_songs": [
+        "Pat Benatar - All Fired",
+        "Anthem of the lonely - Nine",
+        "Card From A Hooker In Minneapolis - Tom Waits",
+        "The Motorcycle Song by Acid Ghost - Nobody",
+        "Mitski - Ghost"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Sad - Melancholic": {
+      "parent_category": "Sad",
+      "total_songs": 484,
+      "sample_songs": [
+        "Reverie - Debussy",
+        "Vocalise - Rachmaninoff",
+        "Yanni has an amazing piano album - In my",
+        "Keith Jarrett - Solo",
+        "Arvo Part - Alina"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Sad - Grief": {
+      "parent_category": "Sad",
+      "total_songs": 682,
+      "sample_songs": [
+        "Warren Zevon - Keep",
+        "Terry Jacks - Seasons",
+        "Slipped away - Avril",
+        "Gone Away - The Offspring",
+        "Linkin Park - One More"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Sad - Depressive": {
+      "parent_category": "Sad",
+      "total_songs": 702,
+      "sample_songs": [
+        "Blue Eyes Crying in the Rain - Willie",
+        "Nelson\n\nBackside of Thirty - John",
+        "Conlee\n\nHe Stopped Loving Her Today - George",
+        "Hurt - Johnny",
+        "George jones \n\nThe grand tour - George"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Sad - Nostalgic Sad": {
+      "parent_category": "Sad",
+      "total_songs": 500,
+      "sample_songs": [
+        "Stella Paris\u00a0\n\nFloat - Eleri",
+        "Ward\u00a0\n\nThe wishing tree - Megan",
+        "Dixon hood\u00a0\n\nSyrena - Kiki",
+        "Rockwell\u00a0\n\nThe seed - Aurora",
+        "Absolute Valentine - New Heights"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Happy - Euphoric": {
+      "parent_category": "Happy",
+      "total_songs": 373,
+      "sample_songs": [
+        "One Day Like This - Elbow",
+        "La Roux - Bulletproof",
+        "Motorcycle - As the",
+        "Rush Comes\n\nBlood Command - Decades",
+        "Rolo Tomassi - Aftermath"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Happy - Feel Good": {
+      "parent_category": "Happy",
+      "total_songs": 1237,
+      "sample_songs": [
+        "Lovely Day - Bill",
+        "The Drifters - Hello",
+        "Happiness \n\nKC and the sunshine band - Give",
+        "LF System - Afraid",
+        "The Go - Go\u2019s"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Happy - Celebration": {
+      "parent_category": "Happy",
+      "total_songs": 331,
+      "sample_songs": [
+        "Bookends - Simon",
+        "Forever - Beach",
+        "QMMkNnQ - Box of",
+        "BRf - Y?si=i0n9pt3irfVCib9k",
+        "VlASCGfF - Kp) was"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Happy - Sunshine": {
+      "parent_category": "Happy",
+      "total_songs": 904,
+      "sample_songs": [
+        "All Right - Kenny",
+        "Loggins\n\nHot Dog - Led Zeppelin",
+        "The Impression That I Get - The Mighty",
+        "REM\n\nGodzilla - Blue",
+        "Oyster Cult \n\nSurrender - Cheap"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Happy - Carefree": {
+      "parent_category": "Happy",
+      "total_songs": 628,
+      "sample_songs": [
+        "Ichiko Aoba - Luminescent",
+        "Hayden Pedigo - I'll",
+        "Deadwood - Really",
+        "Inisheer - Thomas",
+        "Walsh\n\nSanctuary - Camel"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Chill - Morning Coffee": {
+      "parent_category": "Chill",
+      "total_songs": 538,
+      "sample_songs": [
+        "Currently listening to Thelonious Monk - Monks",
+        "Another Cup of Coffee - Mike",
+        "Give it to me - Timbaland",
+        "Things have changed - Bob Dylan",
+        "LvkAdT - GgyGDlDldX8w)"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Chill - Rainy Day": {
+      "parent_category": "Chill",
+      "total_songs": 381,
+      "sample_songs": [
+        "Happy - Billie",
+        "Care - Paola",
+        "Bennett\n\nYou Belong To Me - Jo Stafford",
+        "Will You Be There - Giselle",
+        "As It Was - Hozier"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Chill - Beach/Summer": {
+      "parent_category": "Chill",
+      "total_songs": 262,
+      "sample_songs": [
+        "The dresden dolls - Nesacerray",
+        "Lovebites - Shadowmaker",
+        "Porcupine Tree - Arriving",
+        "But Not Here\n\nThe Montrose Avenue - Thirty",
+        "Johan - Oceans"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Chill - Evening": {
+      "parent_category": "Chill",
+      "total_songs": 152,
+      "sample_songs": [
+        "A Briefcase Full of Blues - The Blues",
+        "Jazz - Miles",
+        "Lagrima - Rita",
+        "Erroll Garner - Concert",
+        "Count Basie - April"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Chill - Sunday": {
+      "parent_category": "Chill",
+      "total_songs": 172,
+      "sample_songs": [
+        "Violator - Depeche",
+        "The Banana LP - Velvet",
+        "Secrets of the Beehive - David",
+        "Sylvian\n\nSo - Peter",
+        "Gabriel\n\nGentlemen Take Polaroids - Japan"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Chill - Lofi": {
+      "parent_category": "Chill",
+      "total_songs": 156,
+      "sample_songs": [
+        "Boards Of Canada - Farewell",
+        "Cocteau Twins - Lazy",
+        "Calm\n\nThe Irish Rovers - Bonnie",
+        "Nick Drake - Pink",
+        "Cocteau Twins - Heaven"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Chill - Jazz": {
+      "parent_category": "Chill",
+      "total_songs": 273,
+      "sample_songs": [
+        "Numb - XXXTentacion",
+        "Hairpin - Pinegrove",
+        "Blood blister - Heart",
+        "Mum - Yesterday",
+        "Mario Biondi - Handful"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Chill - Ambient": {
+      "parent_category": "Chill",
+      "total_songs": 63,
+      "sample_songs": [
+        "Jean Michel - Jarre",
+        "Jean - Michel",
+        "Primordial - Where",
+        "Earthmover - Have",
+        "Animal Collective - Banshee"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Night - 3AM Thoughts": {
+      "parent_category": "Night",
+      "total_songs": 616,
+      "sample_songs": [
+        "Wet Sand - Red Hot",
+        "Chili Peppers\n\nSay Hello to Heaven - Temple",
+        "Dog\n\nNutshell - Alice",
+        "Jason Isbell - Elephant",
+        "Mount Eerie - Real"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Night - Midnight Drive": {
+      "parent_category": "Night",
+      "total_songs": 548,
+      "sample_songs": [
+        "Ride - Carey",
+        "This is the end - Mortimer",
+        "Midnight Radio - Big Head",
+        "Dead of Night - Orville",
+        "Van Morrison - Golden"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Night - Sleep": {
+      "parent_category": "Night",
+      "total_songs": 362,
+      "sample_songs": [
+        "Only Ones Who Know - Arctic",
+        "Monkeys\n\nCamp Adventure - Delta",
+        "Sleep\n\nMilk - Sweet",
+        "Trip\n\nI Will Follow You into the Dark - Death",
+        "Cab for Cutie\n\nSay Yes - Elliott"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Night - Contemplative": {
+      "parent_category": "Night",
+      "total_songs": 201,
+      "sample_songs": [
+        "Chasing Cars - Snow",
+        "How to disappear completely - Radiohead",
+        "Tool - Lateralus",
+        "Yellow - Cold",
+        "Black Sabbath - Solitude"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Night - City Nights": {
+      "parent_category": "Night",
+      "total_songs": 235,
+      "sample_songs": [
+        "DJ Food - Kaleidoscope](https://open",
+        "For A - Ha, *The",
+        "Cardigans - My Favourite",
+        "UK chart hits - Dance",
+        "I Wanna Rock - Twisted"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Energy - Workout": {
+      "parent_category": "Energy",
+      "total_songs": 727,
+      "sample_songs": [
+        "Flashdance - Maniac",
+        "List of demands - Saul",
+        "Williams\nTill I collapse - Eminem",
+        "The Fire - The Roots",
+        "To Build a Mountain - Crowbar"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Energy - Pump Up": {
+      "parent_category": "Energy",
+      "total_songs": 898,
+      "sample_songs": [
+        "Rhythm of the Night - Corona",
+        "Beautiful Life - Ace of",
+        "Rhythm is a Dancer - Snap",
+        "The Sign - Ace of",
+        "Deee - Lite"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Energy - Confidence": {
+      "parent_category": "Energy",
+      "total_songs": 569,
+      "sample_songs": [
+        "TYzQrr - Hk?si=bLIh0U1iiBSM6OLf)",
+        "Me And the Sky - Come",
+        "Finish the Fight - Suffs",
+        "The Anchor - Revive",
+        "Unstoppable by Sia - The Greatest"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Energy - Running": {
+      "parent_category": "Energy",
+      "total_songs": 340,
+      "sample_songs": [
+        "The Jimi Hendrix Experience - Are You",
+        "Black Sabbath - Black",
+        "Permanent Waves - Moving",
+        "Pictures - Signals",
+        "Rainbow ever did\n\nSelf Titled - Rising"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Energy - Sports": {
+      "parent_category": "Energy",
+      "total_songs": 791,
+      "sample_songs": [
+        "Rammstein - Du Hast",
+        "Here I Go Again - Whitesnake",
+        "Armageddon It - Def Leppard",
+        "Kickstart My Heart - M\u00f6tley",
+        "Bring Me To Life - Evanescence"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Drive - Road Trip": {
+      "parent_category": "Drive",
+      "total_songs": 1075,
+      "sample_songs": [
+        "Chris Rea - On The",
+        "Yellowcard - Ocean",
+        "Avenue\n\nSublime - Paddle",
+        "Real Estate - Beach",
+        "Time To Pretend - MGMT"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Drive - Night Drive": {
+      "parent_category": "Drive",
+      "total_songs": 858,
+      "sample_songs": [
+        "Cars - Who's",
+        "New Order - True",
+        "Ceremony\n\nBauhaus - She's",
+        "Stone Roses - I want",
+        "Addiction - Up the"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Drive - City": {
+      "parent_category": "Drive",
+      "total_songs": 298,
+      "sample_songs": [
+        "Man Man - Life",
+        "KOx - DCXQ",
+        "NdQjSnVsBF - Df16g",
+        "Not what he seems - Stella",
+        "Paris\u00a0\n\nBurn your village - Kiki"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Drive - Speed": {
+      "parent_category": "Drive",
+      "total_songs": 415,
+      "sample_songs": [
+        "Radar Love - Golden",
+        "Earring\n\nLive and Let Die - Paul",
+        "McCartney and Wings\n\nHighway Star - Deep",
+        "Purple\n\nBarracuda - Heart",
+        "Mountain Song - Jane\u2019s"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Drive - Scenic": {
+      "parent_category": "Drive",
+      "total_songs": 199,
+      "sample_songs": [
+        "George Clinton - Atomic",
+        "SEOGNYR - UVwlBg](https://open",
+        "SEOGNYR - UVwlBg)",
+        "Back Pocket - Dean",
+        "Town - Animal"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Drive - Alone": {
+      "parent_category": "Drive",
+      "total_songs": 160,
+      "sample_songs": [
+        "Wet Sand - Red Hot",
+        "Chili Peppers\n\nSay Hello to Heaven - Temple",
+        "Dog\n\nNutshell - Alice",
+        "Jason Isbell - Elephant",
+        "Mount Eerie - Real"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Party - Pregame": {
+      "parent_category": "Party",
+      "total_songs": 529,
+      "sample_songs": [
+        "Red Hot Name Thinktank - M. R",
+        "Meshuggah - Combustion](https://youtu",
+        "Dropkick Murphys - The Gauntlet",
+        "Lagwagon - May 16",
+        "Billionaire\n\nEastern Conference Champions - The Whip"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Party - Club": {
+      "parent_category": "Party",
+      "total_songs": 528,
+      "sample_songs": [
+        "Cure For Pain by Morphine - Across",
+        "Street by Bobby Womack - I Want",
+        "You by Marvin Gaye - Ain't",
+        "Luxar - Heat",
+        "Not Real - American"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Party - House Party": {
+      "parent_category": "Party",
+      "total_songs": 430,
+      "sample_songs": [
+        "Melophobia - Cage",
+        "Elephant \nSounds about Jane - Maroon",
+        "Lady Gaga - Born",
+        "This Way\n\nMichael Jackson - Dangerous",
+        "Thriller\n\nSmashing Pumpkins - Siamese"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Party - Festival": {
+      "parent_category": "Party",
+      "total_songs": 271,
+      "sample_songs": [
+        "Trans - Siberian",
+        "Bruno Mars - Las Vegas",
+        "Get Ready For Love - There",
+        "My Beautiful World - From",
+        "Her to Eternity - O Children"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Party - College": {
+      "parent_category": "Party",
+      "total_songs": 329,
+      "sample_songs": [
+        "The World is a Very Scary Place - The Gothic",
+        "Archies\n\nDevil in a Suitcase - Men and",
+        "Everyday is Halloween - Ministry:",
+        "Sidewalks and Skeletons - Sleep",
+        "Sidewalk And Skeletons - Disappear"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Party - Dance": {
+      "parent_category": "Party",
+      "total_songs": 332,
+      "sample_songs": [
+        "QMgo - Chained",
+        "Jimmy Edgar - Push",
+        "Slayyyter - Purrr",
+        "Cobrah - Gooey",
+        "Fluid Girls  \nZheani - Bring"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Romantic - First Love": {
+      "parent_category": "Romantic",
+      "total_songs": 905,
+      "sample_songs": [
+        "Anna von Hausswolff - Bill",
+        "Callahan - Carla",
+        "Forno - The Dead",
+        "Tongues - Emma",
+        "Ruth Rundle - Jaye"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Romantic - Intimate": {
+      "parent_category": "Romantic",
+      "total_songs": 802,
+      "sample_songs": [
+        "Tracy Chapman - Behind",
+        "Not what he seems - Stella",
+        "Hailey Orion\u00a0\n\nNot all men - Morgan",
+        "St Jean\u00a0\n\nLabour - Paris",
+        "Paloma\u00a0\n\nUs and pigs - Sofia"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Romantic - Date Night": {
+      "parent_category": "Romantic",
+      "total_songs": 598,
+      "sample_songs": [
+        "Last woman on earth - Paris",
+        "Chasing Cars - Snow",
+        "How to disappear completely - Radiohead",
+        "Tool - Lateralus",
+        "Yellow - Cold"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Romantic - Long Distance": {
+      "parent_category": "Romantic",
+      "total_songs": 371,
+      "sample_songs": [
+        "Old King - Neil",
+        "Let me down gently - Saint",
+        "One Second is enough to die for - C418",
+        "Gone forever - Three",
+        "Central Time - Vansire"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Romantic - Anniversary": {
+      "parent_category": "Romantic",
+      "total_songs": 614,
+      "sample_songs": [
+        "I Can Never Say Goodbye - The Cure",
+        "Think of Laura - Christopher",
+        "Alice in Chains - Brother](https://youtu",
+        "Sev - Angel's Son",
+        "Drink a Beer - Luke"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Romantic - Proposal": {
+      "parent_category": "Romantic",
+      "total_songs": 238,
+      "sample_songs": [
+        "BlackLED - Lagoon",
+        "Nyege Nyege Tapes - Back",
+        "Mysterians - Topic",
+        "Pearl Jam - Even",
+        "Flow - Guitar"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Romantic - Slow Dance": {
+      "parent_category": "Romantic",
+      "total_songs": 613,
+      "sample_songs": [
+        "Walking on Sunshine - Katrina",
+        "Waves\n\nYou Make My Dreams Come True - Halls",
+        "Oates \n\nPocketful of Sunshine - Natasha",
+        "Wanna Have Fun - Cyndi",
+        "Lauper\n\nI Wanna Dance With Somebody - Whitney"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Dark - Gothic": {
+      "parent_category": "Dark",
+      "total_songs": 635,
+      "sample_songs": [
+        "FOLKICIDE - Murderfolk",
+        "Dreadful Sinner - The Goddamn",
+        "Gallows\n\nUnholy Hymns - The Bridge",
+        "City Sinners\n\nLowtide - O'Death",
+        "Dance Macabre - Cousin"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Dark - Brooding": {
+      "parent_category": "Dark",
+      "total_songs": 247,
+      "sample_songs": [
+        "Kraftwerk - Radioactivity",
+        "I recommend these - Burn",
+        "Kiki Rockwell\n\nNot what he seems - Stella",
+        "Paris\u00a0\n\nThe doll people - Sofia",
+        "Portishead - Dummy"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Dark - Haunting": {
+      "parent_category": "Dark",
+      "total_songs": 544,
+      "sample_songs": [
+        "Hendrix - All Along",
+        "The Animals - House",
+        "Hallelujah - Jeff",
+        "Connor\n\nTainted Love - Soft",
+        "A Little Help From My Friends - Joe Cocker"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Dark - Noir": {
+      "parent_category": "Dark",
+      "total_songs": 359,
+      "sample_songs": [
+        "Welcome to Hell - Black",
+        "Run To Your Mama - Goat](https://open",
+        "EMcrORRUa - K89bSqIp7Q)",
+        "No Se Muy Bien - Lisasinson](https://open",
+        "Sur La Planche - La Femme](https://open"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Dark - Witchy": {
+      "parent_category": "Dark",
+      "total_songs": 415,
+      "sample_songs": [
+        "Fleetwood Mac - Rhiannon](https://open",
+        "Fleetwood Mac - Sisters",
+        "Stevie Nicks - Sorcerer](https://open",
+        "Heilung - Svanrand](https://youtu",
+        "Wardruna - Solringen"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Dark - Villain Arc": {
+      "parent_category": "Dark",
+      "total_songs": 300,
+      "sample_songs": [
+        "Oceano - Into",
+        "Dea - Aisha",
+        "PJ - This Wicked Tongue",
+        "Irca - OCD](https://open",
+        "Garbage - Hammering"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Dark - Apocalyptic": {
+      "parent_category": "Dark",
+      "total_songs": 670,
+      "sample_songs": [
+        "Deep in the Woods - The Birthday",
+        "Darzamat - The Dream](https://spotify",
+        "Axis of Perdition - Deleted",
+        "Watchers - Mayhem",
+        "They Told Me I Was A Fool - Jandek"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Introspective - Philosophical": {
+      "parent_category": "Introspective",
+      "total_songs": 755,
+      "sample_songs": [
+        "Mozart - Requiem",
+        "Take me Back to Eden - Sleep",
+        "Rush - La Villa",
+        "Between the Bars - Elliot",
+        "Burial - Archangel"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Introspective - Self-Reflection": {
+      "parent_category": "Introspective",
+      "total_songs": 681,
+      "sample_songs": [
+        "Uru - Land",
+        "Ado - Unravel",
+        "Show\n\nYoshino - Bavarois",
+        "Heaven or Las Vegas - Cocteau",
+        "Mint Jams - CASIOPEA"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Introspective - Contemplative": {
+      "parent_category": "Introspective",
+      "total_songs": 263,
+      "sample_songs": [
+        "Chasing Cars - Snow",
+        "How to disappear completely - Radiohead",
+        "Tool - Lateralus",
+        "Yellow - Cold",
+        "Black Sabbath - Solitude"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Introspective - Life Changes": {
+      "parent_category": "Introspective",
+      "total_songs": 893,
+      "sample_songs": [
+        "Sisters of Mercy - A Slight",
+        "Case of Overbombing\n\nThe Cure - Staring",
+        "Depeche Mode - Violator",
+        "The Joshua Tree\n\nGive Up - The Postal",
+        "Hairway to Steven - Butthole"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Introspective - Growth": {
+      "parent_category": "Introspective",
+      "total_songs": 652,
+      "sample_songs": [
+        "Check out the Byrds - Sweetheart",
+        "Too Soon to Tell - Todd",
+        "Jamey Johnson - Rebel",
+        "Smith & Jones Forever - Silver",
+        "Back to Black - Amy Winehouse"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Introspective - Questioning": {
+      "parent_category": "Introspective",
+      "total_songs": 442,
+      "sample_songs": [
+        "Lou - What a Wonderful World",
+        "Joh - Daughters",
+        "Rainbow Connection - Kermit",
+        "Time In A Bottle - Jim Croce",
+        "Hurt - Johnny"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Anxious - Panic": {
+      "parent_category": "Anxious",
+      "total_songs": 354,
+      "sample_songs": [
+        "Effluence - Sarmat",
+        "John Coltrane - I've",
+        "Halim El - Dabh",
+        "By Fire - Hiatus",
+        "Hans Zimmer - Grains"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Anxious - Overwhelmed": {
+      "parent_category": "Anxious",
+      "total_songs": 1502,
+      "sample_songs": [
+        "Bad Religion - We're",
+        "By the sea - Stella",
+        "Paris\u00a0\n\nThe art of letting go - Fia",
+        "Just let go - Tara",
+        "Do Not Worry - M. R"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Anxious - Nervous Energy": {
+      "parent_category": "Anxious",
+      "total_songs": 284,
+      "sample_songs": [
+        "Dance With the Dead - Zombie",
+        "Neo - Tokyo",
+        "Carpenter Brut - Day Stalker",
+        "Perturbator - Future",
+        "Midnight Danger - Hell"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Anxious - Calming Anxiety": {
+      "parent_category": "Anxious",
+      "total_songs": 54,
+      "sample_songs": [
+        "Juanma Salinas - Calmo",
+        "Joachim Pastor - Fixi",
+        "The Snow Goose - Camel",
+        "Michel - Mike",
+        "Oldfield\n\nThe Songs of Distant Earth - Mike"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Anxious - Existential Dread": {
+      "parent_category": "Anxious",
+      "total_songs": 95,
+      "sample_songs": [
+        "Tool - Aenima",
+        "Soundgarden - Jesus",
+        "Precious Things - Tori",
+        "Wooden Ships - CSN.",
+        "Better Off Dead - The Defectives"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Anxious - Social Anxiety": {
+      "parent_category": "Anxious",
+      "total_songs": 108,
+      "sample_songs": [
+        "Ptolemaea - Ethel",
+        "Nurse With Wound - Scrapie](https://youtu",
+        "Gwely Mernans - Aphex",
+        "Terrorfakt - Teethgrinder",
+        "Diamanda Galas - Broken"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Nostalgic - Childhood": {
+      "parent_category": "Nostalgic",
+      "total_songs": 693,
+      "sample_songs": [
+        "Heart - Ann Wilsons",
+        "Jon - Blue",
+        "Everywhere at the End of Time - The Caretaker",
+        "Geogaddi - Boards",
+        "Nur - Angry Eelectric Finger"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Nostalgic - Teen Years": {
+      "parent_category": "Nostalgic",
+      "total_songs": 457,
+      "sample_songs": [
+        "Sisters of Mercy - A Slight",
+        "Case of Overbombing\n\nThe Cure - Staring",
+        "Depeche Mode - Violator",
+        "The Joshua Tree\n\nGive Up - The Postal",
+        "Hairway to Steven - Butthole"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Nostalgic - 90s": {
+      "parent_category": "Nostalgic",
+      "total_songs": 366,
+      "sample_songs": [
+        "New Radicals - You Get",
+        "Toad the Wet Sprocket - All I",
+        "Sublime - What",
+        "I Got\n\n\nRHCP - Aeroplane",
+        "Foo Fighter - Next"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Nostalgic - 2000s": {
+      "parent_category": "Nostalgic",
+      "total_songs": 331,
+      "sample_songs": [
+        "A Design for Life - Manic",
+        "Break Even - The Script",
+        "Learn to Fly - Foo Fighters",
+        "Best of You - Foo Fighters",
+        "Memory - Sugarcult"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Nostalgic - Simpler Times": {
+      "parent_category": "Nostalgic",
+      "total_songs": 739,
+      "sample_songs": [
+        "Sabotage - The Beastie",
+        "Genesis - Land",
+        "Windowlicker - Aphex",
+        "Chemical Brothers - Let Forever",
+        "Big Brown Beaver - Primus"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Angry - Rage": {
+      "parent_category": "Angry",
+      "total_songs": 718,
+      "sample_songs": [
+        "Orphan - Memorandum",
+        "Fit for an Autopsy - Shepherd",
+        "The Acacia Strain - Crippling",
+        "Poison\n\nThe Anchor - Masterpiece",
+        "Cocktail Molotov - ZAND"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Angry - Frustrated": {
+      "parent_category": "Angry",
+      "total_songs": 266,
+      "sample_songs": [
+        "Unrequited to the Nth Degree - Loundon",
+        "Pearl Jam - Black",
+        "Layla - Derek",
+        "Natural Beauty of Infidelity - Type",
+        "Girlfriend by Badflower - Stalker"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Angry - Aggressive": {
+      "parent_category": "Angry",
+      "total_songs": 465,
+      "sample_songs": [
+        "Methwitch - Burn",
+        "Victim\n\nBrand of Sacrifice - Casca",
+        "Orphan - Hourglass",
+        "Terrorizer - World",
+        "Downfall\n\nNapalm Death - From"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Angry - Cathartic Anger": {
+      "parent_category": "Angry",
+      "total_songs": 331,
+      "sample_songs": [
+        "Five\n\nPalantir - Clara",
+        "Freak Kitchen - Morons](https://youtu",
+        "Break - Aphrodite's",
+        "Child\n\nWish You Were Here - Pink",
+        "Floyd\n\nNo Reply At All - Genesis"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Bitter - Resentful": {
+      "parent_category": "Bitter",
+      "total_songs": 278,
+      "sample_songs": [
+        "MEGA DRIVE - Acid",
+        "Ram - The Bells",
+        "Silence - Delerium](https://open",
+        "Miles - Pendulum](https://open",
+        "Our Mutual Friend - The Divine"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Bitter - Betrayed": {
+      "parent_category": "Bitter",
+      "total_songs": 86,
+      "sample_songs": [
+        "Bruise Violet - Babes",
+        "Rollins Band - Liar](https://www",
+        "Silverstein - I Knew",
+        "Trust You\n\nBrand of Sacrifice - Eclipse",
+        "Tanuki - Nail"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Excited - Adventure": {
+      "parent_category": "Excited",
+      "total_songs": 314,
+      "sample_songs": [
+        "Met - Doomscroller",
+        "Pattern - Seeking",
+        "I gave you P - SA first",
+        "Impossible - Two Steps",
+        "From Hell \n\nWe Are Legends - Thomas"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Excited - Anticipation": {
+      "parent_category": "Excited",
+      "total_songs": 237,
+      "sample_songs": [
+        "Captain Beefheart - Electricity",
+        "John - Gris",
+        "Rex - Electric",
+        "Ren - Slaughter",
+        "The Right Person Will Stay - Lana"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Hopeful - Healing": {
+      "parent_category": "Hopeful",
+      "total_songs": 728,
+      "sample_songs": [
+        "Pink Floyd - Wish",
+        "PJ Harvey - Dear",
+        "Darkness\n\nThe National - Sorrow",
+        "LCD Soundsystem - Someone",
+        "Sonic Youth - The Diamond"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Hopeful - New Beginnings": {
+      "parent_category": "Hopeful",
+      "total_songs": 713,
+      "sample_songs": [
+        "Porcupine tree - In absentia",
+        "Karnivool - Sound",
+        "Ride - Nowhere",
+        "My Bloody Valentine - Loveless",
+        "Alcest - Shelter"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Hopeful - Optimistic": {
+      "parent_category": "Hopeful",
+      "total_songs": 878,
+      "sample_songs": [
+        "Let the Day Begin - The Call",
+        "Prayer of St Francis - Sarah",
+        "McLachlan  \nSowing the Seeds of Love - Tears",
+        "Just One Victory - Todd",
+        "Coming - LeAnn"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Jealous - Romantic Jealousy": {
+      "parent_category": "Jealous",
+      "total_songs": 825,
+      "sample_songs": [
+        "Run for Your Life - Beatles",
+        "Run For Your Life - The Beatles",
+        "Jolene - Dolly",
+        "Jealous - Nick",
+        "I hate to say it but \n  \nNick Jonas - Jealous"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Jealous - Envious": {
+      "parent_category": "Jealous",
+      "total_songs": 159,
+      "sample_songs": [
+        "Silence - Delerium](https://open",
+        "Miles - Pendulum](https://open",
+        "Our Mutual Friend - The Divine",
+        "Creep - Radiohead](https://open",
+        "Possession - Sarah"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Jealous - Insecure": {
+      "parent_category": "Jealous",
+      "total_songs": 261,
+      "sample_songs": [
+        "Swans - Failure",
+        "Numb - Linkin",
+        "NF - Let You",
+        "Ataraxia - King",
+        "Spoon - I Ain\u2019t"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Jealous - Competitive": {
+      "parent_category": "Jealous",
+      "total_songs": 221,
+      "sample_songs": [
+        "I say that as a non - MJ fan);",
+        "Takeaway - Illenium",
+        "GQrIiqPQ - KY&ab_channel=UniqueVibes)",
+        "COiDG - QebLN_EQ)",
+        "Cheb Khaled - Algerian"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Peaceful - Serene": {
+      "parent_category": "Peaceful",
+      "total_songs": 660,
+      "sample_songs": [
+        "English rebel songs when in a Middle - Earth",
+        "Lonely Star - Oh Wonder",
+        "Deuter - East",
+        "Sleepwalkers - Brian",
+        "Coldplay - Ghost"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Peaceful - Meditative": {
+      "parent_category": "Peaceful",
+      "total_songs": 314,
+      "sample_songs": [
+        "Karunesh - Solitude",
+        "Nutshell - Alice",
+        "Ripples - Genesis",
+        "No Rain - Blind",
+        "Echoes - Pink"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Peaceful - Quiet Reflection": {
+      "parent_category": "Peaceful",
+      "total_songs": 506,
+      "sample_songs": [
+        "Fruit of the Poison Tree - Mortimer",
+        "Muse - Unintended",
+        "Kings of convenience - Gold",
+        "Peace - T. Swift",
+        "I Want Love - Elton"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Peaceful - Gentle": {
+      "parent_category": "Peaceful",
+      "total_songs": 340,
+      "sample_songs": [
+        "Mars Volta - Deloused",
+        "Maybe\n\nTAUK - The Chemist",
+        "The Milk - Knock",
+        "Queensryche - Operation:",
+        "Empire\n\nFrank Zappa - Apostrophe"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Playful - Silly": {
+      "parent_category": "Playful",
+      "total_songs": 848,
+      "sample_songs": [
+        "Chu - My Ding-a-Ling",
+        "We Want A Rock - They",
+        "Garfunkel and Oates - The Loophole",
+        "Beep Beep - The Playmates",
+        "Along Came Jones - The Coasters"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Playful - Whimsical": {
+      "parent_category": "Playful",
+      "total_songs": 464,
+      "sample_songs": [
+        "Plaid - Tearisci",
+        "Dave Brockie Experience - Helium",
+        "Creed\n\nDevin Townsend - Olives",
+        "Ron  Gallo - Pull",
+        "Quote\n\nKurt Vile - Red Apples"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Playful - Fun": {
+      "parent_category": "Playful",
+      "total_songs": 699,
+      "sample_songs": [
+        "Shy Away - Twenty",
+        "Gimme Chocolate - BabyMetal",
+        "Madness - One Step",
+        "Beyond\n\nBad Manners - The Can",
+        "Can\n\nLittle Big - Skibidi"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Playful - Childlike": {
+      "parent_category": "Playful",
+      "total_songs": 358,
+      "sample_songs": [
+        "Money for nothing - Dire",
+        "In the Air Tonight - Phil",
+        "Bolero - Ravel",
+        "Libras - A Perfect",
+        "The pretender - Foo Fighters"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Chaotic - Frantic": {
+      "parent_category": "Chaotic",
+      "total_songs": 297,
+      "sample_songs": [
+        "GVB - FQ&si=9jwZPIC4nPqiEyrk",
+        "Bel Canto - Electronic",
+        "Biosphere - Wonderful",
+        "Ta det lugnt - Dungen",
+        "Stadsvandringar - Dungen"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Chaotic - Overwhelming": {
+      "parent_category": "Chaotic",
+      "total_songs": 353,
+      "sample_songs": [
+        "Marcus King - Autumn",
+        "Peter Gabriel - Intruder",
+        "The Faces - Bad n",
+        "Brother Yusef - Everyday",
+        "XwcroTS - MHjuRF6ZExg"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Chaotic - Unhinged": {
+      "parent_category": "Chaotic",
+      "total_songs": 147,
+      "sample_songs": [
+        "Gunship & Health - Blood",
+        "Health & SWARM - The Drain",
+        "Perturbator - Venger",
+        "GosT - Supreme",
+        "Sierra - Stronger"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Chaotic - Scattered": {
+      "parent_category": "Chaotic",
+      "total_songs": 82,
+      "sample_songs": [
+        "Fire - Toolz",
+        "Krator - Mary",
+        "Lemaitre - Chapter",
+        "X - Godsmack",
+        "Faux - Sister"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Bored - Restless": {
+      "parent_category": "Bored",
+      "total_songs": 405,
+      "sample_songs": [
+        "Mercyful Fate \n\nHonorable mention - Iron",
+        "The Bravery - Honest",
+        "Mastodon - Crack",
+        "Coal chamber - Loco",
+        "Cypress Hill - Skull"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Bored - Understimulated": {
+      "parent_category": "Bored",
+      "total_songs": 215,
+      "sample_songs": [
+        "PLbnpw - XH5DOGBSIzOb4ei7AFpZeNh43oX)",
+        "Everything In Its Right Place - Radiohead",
+        "The Velvet Underground - All Tomorrow\u2019s",
+        "Summer Moonlight - Stella",
+        "Paris\u00a0\n\nUnder a violet moon - Blackmore\u2019s"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Bored - Waiting": {
+      "parent_category": "Bored",
+      "total_songs": 440,
+      "sample_songs": [
+        "Those who wait - Tommy",
+        "Horizons - Genesis",
+        "Sunrise - Norah",
+        "Jones \n\nBlundering Blood - Nedelle",
+        "Pigs - Black"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Bored - Monotonous": {
+      "parent_category": "Bored",
+      "total_songs": 174,
+      "sample_songs": [
+        "The Frames - Burn",
+        "Vetusta Morla - Un D\u00eda",
+        "Slut - Alienation](https://open",
+        "Porcupine Tree - Lightbulb",
+        "Elbow - AUDIO"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Grateful - Thankful": {
+      "parent_category": "Grateful",
+      "total_songs": 787,
+      "sample_songs": [
+        "Some favorite Dead songs - Ripple",
+        "Elton John - Tumbleweed",
+        "Little Feet - Dixie",
+        "The Meters - Rejuvination",
+        "Hey Pocky a - Way\u201d"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Grateful - Content": {
+      "parent_category": "Grateful",
+      "total_songs": 445,
+      "sample_songs": [
+        "Reach For the Sun - The Polyphonic",
+        "The Brian Jonestown Massacre - Their",
+        "Low - That's",
+        "Smog - Rock",
+        "REflMVqbkKZQ - CA58eYxRXZ)"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Grateful - Reflective Gratitude": {
+      "parent_category": "Grateful",
+      "total_songs": 253,
+      "sample_songs": [
+        "Sharon jones and the dap kings - Ain\u2019t",
+        "Let love be love - Remee",
+        "Sneflokke kommer vrimlende - Erik",
+        "Christmas again - Youknowwho",
+        "Gamle Julemand - Raquel"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Grateful - Warm Appreciation": {
+      "parent_category": "Grateful",
+      "total_songs": 147,
+      "sample_songs": [
+        "Chromatics - Shadow",
+        "ETdayc\n\nCults - Always",
+        "Jidenna - Bambi",
+        "A storm in heaven - The Verve",
+        "Bon Iver - Skinny"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Confident - Self-Assured": {
+      "parent_category": "Confident",
+      "total_songs": 559,
+      "sample_songs": [
+        "TYzQrr - Hk?si=bLIh0U1iiBSM6OLf)",
+        "Me And the Sky - Come",
+        "Finish the Fight - Suffs",
+        "The Anchor - Revive",
+        "Unstoppable by Sia - The Greatest"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Confident - Powerful": {
+      "parent_category": "Confident",
+      "total_songs": 452,
+      "sample_songs": [
+        "Saoirse - Maruja",
+        "The Protomen - Light",
+        "Strangest Thing - The War",
+        "You in the Sky - The Waterboys",
+        "Rolling On - Israel"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Confident - Bold": {
+      "parent_category": "Confident",
+      "total_songs": 398,
+      "sample_songs": [
+        "Aram Khachaturian - Sabre",
+        "Ready Set Go - As December",
+        "Falls\u00a0 \u00a0\nSympathy Symphony - Hot Milk",
+        "Jambinai - Connection",
+        "Soul Ire - Adapt"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Confident - Victorious": {
+      "parent_category": "Confident",
+      "total_songs": 211,
+      "sample_songs": [
+        "Walking on Sunshine - Katrina",
+        "Waves\n\nYou Make My Dreams Come True - Halls",
+        "Oates \n\nPocketful of Sunshine - Natasha",
+        "Wanna Have Fun - Cyndi",
+        "Lauper\n\nI Wanna Dance With Somebody - Whitney"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Confident - Unstoppable": {
+      "parent_category": "Confident",
+      "total_songs": 251,
+      "sample_songs": [
+        "A Reason To Fight - Disturbed",
+        "Metallica - Until",
+        "Swim - Jack's",
+        "Johnny Cash - I Won\u2019t",
+        "James - Ring"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    },
+    "Confident - Boss": {
+      "parent_category": "Confident",
+      "total_songs": 186,
+      "sample_songs": [
+        "Ghost Riders on the Sky - Johnny",
+        "Johnny Cash - Ring",
+        "Highwayman\n\nTrampled by Turtles - Codeine",
+        "Townes Van Zandt - Waiting",
+        "More Southern rock but Lynryd Skynyrd - Freebird"
+      ],
+      "context_samples": [],
+      "needs_analysis": true
+    }
+  },
+  "total_subvibes": 114,
+  "central_positions": {
+    "Sad": {
+      "x": 638.8408075889328,
+      "y": 511.18501511976746
+    },
+    "Happy": {
+      "x": 415.5299992769218,
+      "y": 665.6742332309941
+    },
+    "Chill": {
+      "x": 340.92820652166057,
+      "y": 567.5519703517634
+    },
+    "Anxious": {
+      "x": 666.320226130547,
+      "y": 381.28083597610936
+    },
+    "Energy": {
+      "x": 534.3265483782968,
+      "y": 618.4681761101018
+    },
+    "Dark": {
+      "x": 778.8617822639851,
+      "y": 652.3890217746964
+    },
+    "Introspective": {
+      "x": 697.3498599082255,
+      "y": 574.5860694713876
+    },
+    "Romantic": {
+      "x": 255.96801713010447,
+      "y": 443.4448351446805
+    },
+    "Nostalgic": {
+      "x": 500.0207608671795,
+      "y": 780.7702648940672
+    },
+    "Night": {
+      "x": 503.61075257700406,
+      "y": 344.032144281776
+    },
+    "Drive": {
+      "x": 574.9105452434189,
+      "y": 0.0
+    },
+    "Party": {
+      "x": 214.3810261167495,
+      "y": 650.876764864124
+    },
+    "Angry": {
+      "x": 923.6413104545418,
+      "y": 666.0467364806854
+    },
+    "Bitter": {
+      "x": 705.8494787241943,
+      "y": 862.4439583093754
+    },
+    "Hopeful": {
+      "x": 834.5017979112678,
+      "y": 463.38937349557
+    },
+    "Excited": {
+      "x": 503.9302956430827,
+      "y": 200.13216207992852
+    },
+    "Jealous": {
+      "x": 107.06942918987347,
+      "y": 514.0662729359678
+    },
+    "Peaceful": {
+      "x": 0.0,
+      "y": 937.6761729816158
+    },
+    "Playful": {
+      "x": 777.583081131249,
+      "y": 201.83996424476823
+    },
+    "Chaotic": {
+      "x": 1000.0,
+      "y": 257.2664580251176
+    },
+    "Bored": {
+      "x": 359.3666960616332,
+      "y": 58.402137840082176
+    },
+    "Grateful": {
+      "x": 318.70870018713003,
+      "y": 876.4695866897878
+    },
+    "Confident": {
+      "x": 886.9809505079202,
+      "y": 1000.0
+    }
+  },
+  "instructions": "Ananki will analyze each sub-vibe and determine its emotional composition"
+}

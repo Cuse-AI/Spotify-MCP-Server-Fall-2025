@@ -1,0 +1,510 @@
+{
+  "audit_date": "2025-11-09",
+  "total_songs": 52994,
+  "unique_songs": 31685,
+  "duplicates_found": 10169,
+  "top_duplicates": {
+    "Not what he seems - Stella": 43,
+    "Starseeds - Stella": 37,
+    "Nutshell - Alice": 28,
+    "Orinoco flow - Enya": 23,
+    "Slayer - Raining": 21,
+    "Walking on Sunshine - Katrina": 21,
+    "Portishead - Dummy": 21,
+    "Three Little Birds - Bob Marley": 20,
+    "By the sea - Stella": 20,
+    "Morphine - Cure": 19,
+    "Stop Me Now - Queen": 18,
+    "Semi - Charmed": 18,
+    "Faith No More - Just": 17,
+    "Fast Car - Tracy": 17,
+    "I am - Fia": 17,
+    "Radar Love - Golden": 17,
+    "Hip Hop - Dead": 16,
+    "East Coast - West": 16,
+    "Common - BE. Quite": 16,
+    "Talib Kweli - The Blast": 16
+  },
+  "sample_size": 100,
+  "flagged_count": 52,
+  "estimated_clean_rate": "48%",
+  "flagged_entries": [
+    {
+      "artist": "Ice\n\nRandy",
+      "song": "Beast",
+      "vibe": "Happy - Carefree",
+      "flags": [
+        "SINGLE_WORD_ARTIST",
+        "CONTAINS_NEWLINE"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Bosson",
+      "song": "It's",
+      "vibe": "Drive - Alone",
+      "flags": [
+        "SINGLE_WORD_ARTIST"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "BLiSS",
+      "song": "My LSD",
+      "vibe": "Bored - Restless",
+      "flags": [
+        "SINGLE_WORD_ARTIST"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "LUNGFISH",
+      "song": "Great",
+      "vibe": "Happy - Sunshine",
+      "flags": [
+        "SINGLE_WORD_ARTIST"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Methwitch",
+      "song": "Uninvited",
+      "vibe": "Happy - Feel Good",
+      "flags": [
+        "SINGLE_WORD_ARTIST"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Harbinger",
+      "song": "Polaris",
+      "vibe": "Sad - Lonely",
+      "flags": [
+        "SINGLE_WORD_ARTIST"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Oldfield\n\nJust One Victory",
+      "song": "Todd",
+      "vibe": "Happy - Celebration",
+      "flags": [
+        "CONTAINS_NEWLINE"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Rammstein",
+      "song": "Du Hast",
+      "vibe": "Energy - Sports",
+      "flags": [
+        "SINGLE_WORD_ARTIST"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Monster",
+      "song": "Neveroddoreven",
+      "vibe": "Drive - Road Trip",
+      "flags": [
+        "SINGLE_WORD_ARTIST"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Coyote",
+      "song": "Mako](https://www",
+      "vibe": "Anxious - Overwhelmed",
+      "flags": [
+        "CONTAINS_URL",
+        "SUSPICIOUS_CHARS",
+        "SINGLE_WORD_ARTIST"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Pitfalls",
+      "song": "BoyWithUke??",
+      "vibe": "Hopeful - Healing",
+      "flags": [
+        "SINGLE_WORD_ARTIST"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Roses\u00a0\nThe Sex Pistols",
+      "song": "Never",
+      "vibe": "Angry - Rage",
+      "flags": [
+        "CONTAINS_NEWLINE"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Back Sunday\n\nWhite Pony",
+      "song": "Deftones",
+      "vibe": "Jealous - Insecure",
+      "flags": [
+        "CONTAINS_NEWLINE"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Absolute bangers\n\nBRAIN DAMAGE RAVE",
+      "song": "Meronti",
+      "vibe": "Playful - Whimsical",
+      "flags": [
+        "CONTAINS_NEWLINE"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Touch\n\nBoy Harsher",
+      "song": "Lust",
+      "vibe": "Dark - Apocalyptic",
+      "flags": [
+        "CONTAINS_NEWLINE"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Glass \n\nMaximizing The Audience",
+      "song": "Wim Mertens",
+      "vibe": "Introspective - Contemplative",
+      "flags": [
+        "CONTAINS_NEWLINE"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Jerk",
+      "song": "Off,",
+      "vibe": "Bitter - Betrayed",
+      "flags": [
+        "SINGLE_WORD_ARTIST"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Low\n\nBrian Eno",
+      "song": "Here",
+      "vibe": "Sad - Heartbreak",
+      "flags": [
+        "CONTAINS_NEWLINE"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Highwayman\n\nTrampled by Turtles",
+      "song": "Codeine",
+      "vibe": "Confident - Boss",
+      "flags": [
+        "CONTAINS_NEWLINE"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "NYC",
+      "song": "Interpol",
+      "vibe": "Night - Midnight Drive",
+      "flags": [
+        "SINGLE_WORD_ARTIST"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Sunset\n\nDavid Bromberg",
+      "song": "Jelly",
+      "vibe": "Playful - Whimsical",
+      "flags": [
+        "CONTAINS_NEWLINE"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Safari\n\nPaul Hardcastle",
+      "song": "The Chill",
+      "vibe": "Romantic - Date Night",
+      "flags": [
+        "CONTAINS_NEWLINE"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Bruno mars \nAmerican boy",
+      "song": "Estelle",
+      "vibe": "Party - Pregame",
+      "flags": [
+        "CONTAINS_NEWLINE"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Otis\n\nOld Yellow Bricks",
+      "song": "Arctic",
+      "vibe": "Energy - Running",
+      "flags": [
+        "CONTAINS_NEWLINE"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Soundgarden",
+      "song": "Hunter",
+      "vibe": "Grateful - Thankful",
+      "flags": [
+        "SINGLE_WORD_ARTIST"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Sullivan\n\nTeddy Bear",
+      "song": "Red Sovine",
+      "vibe": "Happy - Sunshine",
+      "flags": [
+        "CONTAINS_NEWLINE"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Wonder\n\nHeaven",
+      "song": "Chris",
+      "vibe": "Happy - Celebration",
+      "flags": [
+        "SINGLE_WORD_ARTIST",
+        "CONTAINS_NEWLINE"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Celtian",
+      "song": "Serena",
+      "vibe": "Dark - Gothic",
+      "flags": [
+        "SINGLE_WORD_ARTIST"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "KLF\n\nIch Bin Ein Auslander",
+      "song": "Pop Will",
+      "vibe": "Romantic - Date Night",
+      "flags": [
+        "CONTAINS_NEWLINE"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Mason Samuel Smith",
+      "song": "I LIED]",
+      "vibe": "Hopeful - Healing",
+      "flags": [
+        "SUSPICIOUS_CHARS"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Work   \nChilliwack",
+      "song": "My Girl",
+      "vibe": "Drive - City",
+      "flags": [
+        "CONTAINS_NEWLINE"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Sugababes",
+      "song": "Push",
+      "vibe": "Confident - Boss",
+      "flags": [
+        "SINGLE_WORD_ARTIST"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Move",
+      "song": "Thousand",
+      "vibe": "Nostalgic - 90s",
+      "flags": [
+        "SINGLE_WORD_ARTIST"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Sleepless",
+      "song": "Ocean",
+      "vibe": "Happy - Feel Good",
+      "flags": [
+        "SINGLE_WORD_ARTIST"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Woods\n\nEvery Mile",
+      "song": "Layup",
+      "vibe": "Nostalgic - Simpler Times",
+      "flags": [
+        "CONTAINS_NEWLINE"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Mac\n\nGloria",
+      "song": "Them",
+      "vibe": "Hopeful - Optimistic",
+      "flags": [
+        "SINGLE_WORD_ARTIST",
+        "CONTAINS_NEWLINE"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Shout\n\nPlacebo",
+      "song": "Follow",
+      "vibe": "Hopeful - New Beginnings",
+      "flags": [
+        "SINGLE_WORD_ARTIST",
+        "CONTAINS_NEWLINE"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Heilung",
+      "song": "Anoana",
+      "vibe": "Romantic - Anniversary",
+      "flags": [
+        "SINGLE_WORD_ARTIST"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Soulfly",
+      "song": "Jumpdafuckup",
+      "vibe": "Energy - Pump Up",
+      "flags": [
+        "SINGLE_WORD_ARTIST"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Evil",
+      "song": "Interpol",
+      "vibe": "Playful - Fun",
+      "flags": [
+        "SINGLE_WORD_ARTIST"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Shapiro\n\nNowhere I can go",
+      "song": "Clara",
+      "vibe": "Happy - Euphoric",
+      "flags": [
+        "CONTAINS_NEWLINE"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Zled",
+      "song": "NKObP)",
+      "vibe": "Grateful - Reflective Gratitude",
+      "flags": [
+        "SUSPICIOUS_CHARS",
+        "SINGLE_WORD_ARTIST"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Vortex  \nThe Marias",
+      "song": "Vicious",
+      "vibe": "Drive - Road Trip",
+      "flags": [
+        "CONTAINS_NEWLINE"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "ZdIHCQl",
+      "song": "CQGHKiGM7w%3D%3D)",
+      "vibe": "Dark - Gothic",
+      "flags": [
+        "SUSPICIOUS_CHARS",
+        "SINGLE_WORD_ARTIST"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Spacehog",
+      "song": "In the",
+      "vibe": "Party - Pregame",
+      "flags": [
+        "SINGLE_WORD_ARTIST"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Surfer\n\nOceansize",
+      "song": "Trail",
+      "vibe": "Introspective - Life Changes",
+      "flags": [
+        "CONTAINS_NEWLINE"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Sheep",
+      "song": "Pink",
+      "vibe": "Jealous - Romantic Jealousy",
+      "flags": [
+        "SINGLE_WORD_ARTIST"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Estate \nLyburnum Wits End Liberation Fly",
+      "song": "Moss",
+      "vibe": "Romantic - Anniversary",
+      "flags": [
+        "CONTAINS_NEWLINE"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "War\n\nXY&O",
+      "song": "Lights",
+      "vibe": "Playful - Whimsical",
+      "flags": [
+        "SINGLE_WORD_ARTIST",
+        "CONTAINS_NEWLINE"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Guy and Junior Wells Acoustic\n\nSam Cooke",
+      "song": "Portrait",
+      "vibe": "Night - Sleep",
+      "flags": [
+        "CONTAINS_NEWLINE"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "Surfer\n\nOceansize",
+      "song": "Trail",
+      "vibe": "Nostalgic - Teen Years",
+      "flags": [
+        "CONTAINS_NEWLINE"
+      ],
+      "needs_manual_check": true
+    },
+    {
+      "artist": "the",
+      "song": "Tigress",
+      "vibe": "Chaotic - Overwhelming",
+      "flags": [
+        "SINGLE_WORD_ARTIST"
+      ],
+      "needs_manual_check": true
+    }
+  ]
+}

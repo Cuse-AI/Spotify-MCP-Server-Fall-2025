@@ -1,0 +1,157 @@
+{
+  "batch": 11,
+  "sub_vibes_analyzed": [
+    "Bored - Restless",
+    "Bored - Understimulated",
+    "Bored - Waiting",
+    "Bored - Monotonous",
+    "Grateful - Thankful",
+    "Grateful - Content",
+    "Grateful - Reflective Gratitude",
+    "Grateful - Warm Appreciation",
+    "Confident - Self-Assured",
+    "Confident - Powerful",
+    "Confident - Bold",
+    "Confident - Victorious",
+    "Confident - Unstoppable",
+    "Confident - Boss"
+  ],
+  "total_in_batch": 14,
+  "analysis": {
+    "Bored - Restless": {
+      "emotional_composition": {
+        "Bored": 0.7,
+        "Anxious": 0.2,
+        "Energy": 0.1
+      },
+      "analysis": "Mastodon, Coal Chamber, Cypress Hill. Understimulated but agitated. Need something to do. Pacing energy. Can't settle but nothing appeals.",
+      "proximity_notes": "Between Bored and Anxious/Energy. Restless = boredom + nervous energy, agitated understimulation."
+    },
+    "Bored - Understimulated": {
+      "emotional_composition": {
+        "Bored": 0.8,
+        "Sad": 0.1,
+        "Chill": 0.05,
+        "Anxious": 0.05
+      },
+      "analysis": "Radiohead 'Everything In Its Right Place', Velvet Underground, ambient tracks. Brain not engaged. Empty feeling. Numb from lack of input.",
+      "proximity_notes": "Very close to Bored center. Understimulated = pure boredom, empty understimulation."
+    },
+    "Bored - Waiting": {
+      "emotional_composition": {
+        "Bored": 0.65,
+        "Anxious": 0.2,
+        "Introspective": 0.1,
+        "Peaceful": 0.05
+      },
+      "analysis": "Tommy Emmanuel, Genesis 'Horizons', Norah Jones 'Sunrise'. Stuck in limbo. Time dragging. Anticipation mixed with tedium. Impatient patience.",
+      "proximity_notes": "Between Bored and Anxious. Waiting = boredom + anticipation, tedious impatience."
+    },
+    "Bored - Monotonous": {
+      "emotional_composition": {
+        "Bored": 0.75,
+        "Sad": 0.15,
+        "Dark": 0.1
+      },
+      "analysis": "The Frames, Vetusta Morla, Porcupine Tree 'Lightbulb Sun'. Repetitive grind. Same thing over and over. Draining sameness. Depression-adjacent.",
+      "proximity_notes": "Between Bored and Sad/Dark. Monotonous = boredom with heaviness, draining repetition."
+    },
+    "Grateful - Thankful": {
+      "emotional_composition": {
+        "Grateful": 0.8,
+        "Happy": 0.15,
+        "Peaceful": 0.05
+      },
+      "analysis": "Grateful Dead 'Ripple', Elton John 'Tumbleweed Connection', The Meters. Appreciation and warmth. Counting blessings. Joy in gratitude.",
+      "proximity_notes": "Very close to Grateful center. Thankful = pure gratitude, warm appreciation."
+    },
+    "Grateful - Content": {
+      "emotional_composition": {
+        "Grateful": 0.7,
+        "Peaceful": 0.2,
+        "Happy": 0.1
+      },
+      "analysis": "Polyphonic Spree 'Reach For the Sun', Brian Jonestown Massacre, Low, Smog 'Rock Bottom Riser'. Satisfied and settled. Enough is enough. Peaceful appreciation.",
+      "proximity_notes": "Between Grateful and Peaceful. Content = gratitude + peace, satisfied stillness."
+    },
+    "Grateful - Reflective Gratitude": {
+      "emotional_composition": {
+        "Grateful": 0.7,
+        "Introspective": 0.2,
+        "Nostalgic": 0.05,
+        "Happy": 0.05
+      },
+      "analysis": "Sharon Jones, Christmas songs, thoughtful appreciation music. Looking back with thanks. Realizing blessings. Contemplative appreciation.",
+      "proximity_notes": "Between Grateful and Introspective. Reflective = gratitude + contemplation, thoughtful thanks."
+    },
+    "Grateful - Warm Appreciation": {
+      "emotional_composition": {
+        "Grateful": 0.75,
+        "Happy": 0.15,
+        "Romantic": 0.05,
+        "Peaceful": 0.05
+      },
+      "analysis": "Chromatics, Cults 'Always Forever', Jidenna 'Bambi', Bon Iver. Affectionate gratitude. Appreciating people and moments. Love-adjacent thanks.",
+      "proximity_notes": "Between Grateful and Happy/Romantic. Warm appreciation = gratitude with affection, loving thanks."
+    },
+    "Confident - Self-Assured": {
+      "emotional_composition": {
+        "Confident": 0.8,
+        "Happy": 0.1,
+        "Energy": 0.1
+      },
+      "analysis": "Sia 'Unstoppable', empowerment anthems. Knowing your worth. Secure in yourself. Unshakeable belief. Comfortable in skin.",
+      "proximity_notes": "Very close to Confident center. Self-assured = pure confidence, secure self-belief."
+    },
+    "Confident - Powerful": {
+      "emotional_composition": {
+        "Confident": 0.75,
+        "Energy": 0.15,
+        "Dark": 0.05,
+        "Angry": 0.05
+      },
+      "analysis": "The Protomen, The War on Drugs, The Waterboys. Force and strength. Commanding presence. Intensity of power. Dominant energy.",
+      "proximity_notes": "Between Confident and Energy. Powerful = confidence + force, strength and dominance."
+    },
+    "Confident - Bold": {
+      "emotional_composition": {
+        "Confident": 0.75,
+        "Energy": 0.15,
+        "Excited": 0.05,
+        "Playful": 0.05
+      },
+      "analysis": "Aram Khachaturian, Hot Milk, Jambinai. Daring and fearless. Taking risks. Unapologetic. Brave energy. Standing out.",
+      "proximity_notes": "Between Confident and Energy/Excited. Bold = confidence + daring, fearless assertion."
+    },
+    "Confident - Victorious": {
+      "emotional_composition": {
+        "Confident": 0.7,
+        "Happy": 0.2,
+        "Excited": 0.05,
+        "Grateful": 0.05
+      },
+      "analysis": "'Walking on Sunshine', 'You Make My Dreams Come True', Whitney Houston. Winner energy. Triumph and celebration. Achieved success. Peak confidence.",
+      "proximity_notes": "Between Confident and Happy. Victorious = confidence + joy from winning, triumphant celebration."
+    },
+    "Confident - Unstoppable": {
+      "emotional_composition": {
+        "Confident": 0.8,
+        "Energy": 0.15,
+        "Angry": 0.05
+      },
+      "analysis": "Disturbed 'A Reason To Fight', Metallica, Johnny Cash 'I Won't Back Down'. Indomitable will. Cannot be stopped. Relentless determination.",
+      "proximity_notes": "Between Confident and Energy/Angry. Unstoppable = fierce confidence, relentless power."
+    },
+    "Confident - Boss": {
+      "emotional_composition": {
+        "Confident": 0.75,
+        "Dark": 0.1,
+        "Energy": 0.1,
+        "Happy": 0.05
+      },
+      "analysis": "Johnny Cash 'Ring of Fire', 'Ghost Riders', Lynyrd Skynyrd 'Freebird'. Command and authority. Leader energy. Take charge. Boss mode.",
+      "proximity_notes": "Between Confident and Dark/Energy. Boss = commanding confidence, authoritative power."
+    }
+  },
+  "status": "Batch 11 complete - ALL 114 SUB-VIBES ANALYZED! COMPLETE!"
+}

@@ -1,0 +1,251 @@
+{
+  "central_vibes": {
+    "Sad": {
+      "description": "Sadness, sorrow, grief, melancholy",
+      "valence": "negative",
+      "energy": "low-medium",
+      "sub_vibes": [
+        "Sad - Heartbreak",
+        "Sad - Crying",
+        "Sad - Lonely",
+        "Sad - Melancholic",
+        "Sad - Grief",
+        "Sad - Depressive",
+        "Sad - Nostalgic Sad"
+      ]
+    },
+    "Happy": {
+      "description": "Happiness, joy, positivity, celebration",
+      "valence": "positive",
+      "energy": "medium-high",
+      "sub_vibes": [
+        "Happy - Feel Good",
+        "Happy - Sunshine",
+        "Happy - Carefree",
+        "Happy - Euphoric",
+        "Happy - Celebration"
+      ]
+    },
+    "Calm": {
+      "description": "Relaxation, peace, tranquility, chill",
+      "valence": "positive-neutral",
+      "energy": "low",
+      "sub_vibes": [
+        "Chill - Morning Coffee",
+        "Chill - Rainy Day",
+        "Chill - Beach/Summer",
+        "Chill - Evening",
+        "Chill - Sunday",
+        "Chill - Lofi",
+        "Chill - Jazz",
+        "Chill - Ambient"
+      ]
+    },
+    "Anxious": {
+      "description": "Anxiety, worry, stress, tension",
+      "valence": "negative",
+      "energy": "medium-high",
+      "sub_vibes": [
+        "Anxious - Overwhelmed",
+        "Anxious - Panic",
+        "Anxious - Nervous Energy",
+        "Anxious - Social Anxiety",
+        "Anxious - Existential Dread",
+        "Anxious - Calming Anxiety"
+      ]
+    },
+    "Energetic": {
+      "description": "Energy, motivation, power, drive",
+      "valence": "positive",
+      "energy": "very high",
+      "sub_vibes": [
+        "Energy - Pump Up",
+        "Energy - Sports",
+        "Energy - Workout",
+        "Energy - Confidence",
+        "Energy - Running"
+      ]
+    },
+    "Dark": {
+      "description": "Darkness, mystery, shadow, gothic",
+      "valence": "neutral-negative",
+      "energy": "variable",
+      "sub_vibes": [
+        "Dark - Apocalyptic",
+        "Dark - Gothic",
+        "Dark - Haunting",
+        "Dark - Witchy",
+        "Dark - Noir",
+        "Dark - Villain Arc",
+        "Dark - Brooding"
+      ]
+    },
+    "Introspective": {
+      "description": "Reflection, contemplation, deep thought",
+      "valence": "neutral",
+      "energy": "low-medium",
+      "sub_vibes": [
+        "Introspective - Life Changes",
+        "Introspective - Philosophical",
+        "Introspective - Self-Reflection",
+        "Introspective - Growth",
+        "Introspective - Questioning",
+        "Introspective - Contemplative"
+      ]
+    },
+    "Romantic": {
+      "description": "Love, romance, intimacy, connection",
+      "valence": "positive",
+      "energy": "medium",
+      "sub_vibes": [
+        "Romantic - First Love",
+        "Romantic - Intimate",
+        "Romantic - Anniversary",
+        "Romantic - Slow Dance",
+        "Romantic - Date Night",
+        "Romantic - Long Distance",
+        "Romantic - Proposal"
+      ]
+    },
+    "Nostalgic": {
+      "description": "Nostalgia, longing for past, memories",
+      "valence": "bittersweet",
+      "energy": "low",
+      "sub_vibes": [
+        "Nostalgic - Simpler Times",
+        "Nostalgic - Childhood",
+        "Nostalgic - Teen Years",
+        "Nostalgic - 90s",
+        "Nostalgic - 2000s"
+      ]
+    },
+    "Night": {
+      "description": "Nighttime emotions, late-night thoughts, nocturnal",
+      "valence": "varies",
+      "energy": "low-medium",
+      "sub_vibes": [
+        "Night - 3AM Thoughts",
+        "Night - Midnight Drive",
+        "Night - Sleep",
+        "Night - City Nights",
+        "Night - Contemplative"
+      ]
+    },
+    "Driving": {
+      "description": "Driving emotions, journey, movement",
+      "valence": "varies",
+      "energy": "medium",
+      "sub_vibes": [
+        "Drive - Road Trip",
+        "Drive - Night Drive",
+        "Drive - Speed",
+        "Drive - City",
+        "Drive - Scenic",
+        "Drive - Alone"
+      ]
+    },
+    "Party": {
+      "description": "Social celebration, dancing, festive energy",
+      "valence": "positive",
+      "energy": "very high",
+      "sub_vibes": [
+        "Party - Club",
+        "Party - Pregame",
+        "Party - House Party",
+        "Party - College",
+        "Party - Dance",
+        "Party - Festival"
+      ]
+    }
+  },
+  "central_relationships": {
+    "Sad": [
+      "Anxious",
+      "Dark",
+      "Introspective",
+      "Nostalgic",
+      "Calm"
+    ],
+    "Happy": [
+      "Energetic",
+      "Romantic",
+      "Calm",
+      "Party",
+      "Nostalgic"
+    ],
+    "Calm": [
+      "Happy",
+      "Introspective",
+      "Nostalgic",
+      "Romantic",
+      "Sad",
+      "Night"
+    ],
+    "Anxious": [
+      "Sad",
+      "Introspective",
+      "Dark",
+      "Energetic",
+      "Night"
+    ],
+    "Energetic": [
+      "Happy",
+      "Party",
+      "Anxious",
+      "Driving"
+    ],
+    "Dark": [
+      "Sad",
+      "Anxious",
+      "Introspective",
+      "Night",
+      "Romantic"
+    ],
+    "Introspective": [
+      "Sad",
+      "Anxious",
+      "Dark",
+      "Calm",
+      "Nostalgic",
+      "Night"
+    ],
+    "Romantic": [
+      "Happy",
+      "Sad",
+      "Calm",
+      "Dark",
+      "Nostalgic",
+      "Night"
+    ],
+    "Nostalgic": [
+      "Sad",
+      "Happy",
+      "Introspective",
+      "Romantic",
+      "Calm"
+    ],
+    "Night": [
+      "Introspective",
+      "Dark",
+      "Anxious",
+      "Calm",
+      "Sad",
+      "Driving"
+    ],
+    "Driving": [
+      "Energetic",
+      "Calm",
+      "Night",
+      "Happy",
+      "Introspective"
+    ],
+    "Party": [
+      "Happy",
+      "Energetic",
+      "Romantic",
+      "Night"
+    ]
+  },
+  "total_central_vibes": 12,
+  "total_sub_vibes": 73
+}

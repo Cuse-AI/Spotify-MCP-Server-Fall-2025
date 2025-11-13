@@ -1,0 +1,22 @@
+{
+  "total": 1,
+  "note": "These need human review or are not music recommendations",
+  "songs": [
+    {
+      "artist": "Frank Ocean",
+      "song": "Pyramids",
+      "spotify_id": "4QhWbupniDd44EDtnh2bFJ",
+      "spotify_uri": "spotify:track:4QhWbupniDd44EDtnh2bFJ",
+      "query_used": "The Go Go’s “[Head Over Heels](https://youtu",
+      "extraction_pattern": "dash",
+      "comment_score": 11,
+      "source_url": "https://reddit.com/r/musicsuggestions/comments/1n9n45e/whats_your_favorite_feel_good_song_so_i_can_steal/ncnwso4/",
+      "full_context": "What's your favorite feel good song so i can steal it?. Im currently trying to do work, but i need music that sounds so happy that i need to dance. preferably happy songs with great bass and beats. . The Go-Go’s “[Head Over Heels](https://youtu.be/jQyazt4RDTM?feature=shared)” - fast, fun, great bass, slamming drums, great harmonies",
+      "post_title": "What's your favorite feel good song so i can steal it?",
+      "comment_text": "The Go-Go’s “[Head Over Heels](https://youtu.be/jQyazt4RDTM?feature=shared)” - fast, fun, great bass, slamming drums, great harmonies",
+      "ananki_subvibe": "AMBIGUOUS",
+      "ananki_reasoning": "There is a clear mismatch between the song described in the comment and the validated Spotify track. The human recommended The Go-Go's 'Head Over Heels' (described as 'fast, fun, great bass, slamming drums, great harmonies') which would clearly be 'Happy - Feel Good'. However, the validated Spotify track is Frank Ocean's 'Pyramids' - a 9+ minute experimental R&B epic that is moody, atmospheric, and introspective, bearing no resemblance to the upbeat 80s new wave song described. Without knowing which track is correct, I cannot accurately map the emotional intent.",
+      "ananki_confidence": 0.0
+    }
+  ]
+}

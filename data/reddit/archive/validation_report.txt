@@ -1,0 +1,271 @@
+C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\data\reddit\validate_reddit_v4.py:219: UserWarning: This pattern is interpreted as a regular expression, and has match groups. To actually get the groups, use str.extract.
+  matches = self.df['vibe_request'].str.contains(pattern, case=False, na=False).sum()
+C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\data\reddit\validate_reddit_v4.py:249: UserWarning: This pattern is interpreted as a regular expression, and has match groups. To actually get the groups, use str.extract.
+  has_emotion = self.df['vibe_request'].str.contains(r'(feel|mood|emotion|vibe|energy)', case=False, na=False)
+C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\data\reddit\validate_reddit_v4.py:250: UserWarning: This pattern is interpreted as a regular expression, and has match groups. To actually get the groups, use str.extract.
+  has_context = self.df['vibe_request'].str.contains(r'(study|work|night|rainy|alone|party)', case=False, na=False)
+
+================================================================================
+ REDDIT V4 DATA VALIDATION - TAPESTRY MANIFOLD ALIGNMENT CHECK
+================================================================================
+
+Loading data...
+Loaded 238 posts and 1978 vibe-song pairs
+
+================================================================================
+1. DATA QUALITY ASSESSMENT
+================================================================================
+
+Total vibe→song pairs captured: 1,978
+Unique songs (artist+title): 1,953
+Unique artists: 1,797
+Source posts: 238
+
+--- Vibe Description Analysis ---
+Average vibe request length: 207 characters
+Median vibe request length: 234 characters
+Vibe requests > 100 chars (rich context): 1,703 (86.1%)
+Vibe requests < 50 chars (keyword-only): 154 (7.8%)
+
+Sample RICH vibe descriptions (>150 chars):
+
+  [1] Can you recommend free jazz that's not too out there and sounds good | When I was first getting into jazz many years ago I tried out some of Coltrane's later records, *Live at the Village Vanguard Aga...
+
+  [2] Can you recommend free jazz that's not too out there and sounds good | When I was first getting into jazz many years ago I tried out some of Coltrane's later records, *Live at the Village Vanguard Aga...
+
+  [3] Can you recommend free jazz that's not too out there and sounds good | When I was first getting into jazz many years ago I tried out some of Coltrane's later records, *Live at the Village Vanguard Aga...
+
+--- Emotional Language & Narrative Detection ---
+Contains emotional language: 643 (32.5%)
+Contains narrative/reasoning: 1,177 (59.5%)
+Both emotion + narrative: 487 (24.6%)
+
+--- Comment Context Quality ---
+Average comment context: 119 characters
+Comments with reasoning (>100 chars): 826 (41.8%)
+
+Sample comment contexts with reasoning:
+
+  Song: Joe Mcphee - Nationtime
+  Context: There is no such thing as excess in my opinion, but here are some more measured albums.
+
+1. At the Golden Circle, Volume One-Ornette Coleman
+2. Fuchsia Swing Song- Sam Rivers
+3. Di...
+
+  Song: Paul Bley - Monastic Trio by Alice Coltrane -Trident by McCoy Tyner -Ramblin
+  Context: Horace Tapscott’s done several excellent trio sessions, the best of which is called “Thoughts of Dar Es Salaam”. https://www.youtube.com/watch?v=uakRkiooPPI
+
+You might also check o...
+
+--- Data Quality Issues Check ---
+URL fragments in songs/artists: 0 (should be 0)
+Potential gibberish in song names: 0
+Potential gibberish in artist names: 0
+Markdown artifacts ([, ]): 0 (should be 0)
+
+--- Extraction Confidence Distribution ---
+medium: 1,930 (97.6%)
+high: 48 (2.4%)
+
+
+================================================================================
+2. GENRE COVERAGE ANALYSIS
+================================================================================
+
+Total genre categories: 17
+
+Distribution by genre category:
+------------------------------------------------------------
+grief                            335 ( 16.9%) ████████
+hidden_gems                      237 ( 12.0%) █████
+introspection                    171 (  8.6%) ████
+best_unknown                     154 (  7.8%) ███
+free_jazz                        127 (  6.4%) ███
+folk_deep                        116 (  5.9%) ██
+underground_hiphop               116 (  5.9%) ██
+energy                            97 (  4.9%) ██
+idm                               86 (  4.3%) ██
+meditation                        86 (  4.3%) ██
+prog                              83 (  4.2%) ██
+contemporary_classical            79 (  4.0%) █
+world_music                       72 (  3.6%) █
+nostalgia                         70 (  3.5%) █
+ambient                           69 (  3.5%) █
+experimental                      60 (  3.0%) █
+metal_variety                     20 (  1.0%) 
+
+--- Edge Case & Diversity Check ---
+
+Edge case artists found: 7/11
+Examples found:
+  - Albert Ayler: 5 mentions
+  - Merzbow: 1 mentions
+  - Sunn: 1 mentions
+  - John Coltrane: 6 mentions
+  - Ornette Coleman: 8 mentions
+  - Sun Ra: 2 mentions
+  - Philip Glass: 1 mentions
+
+--- Sample Songs from Smallest Categories ---
+
+ambient (69 total):
+  - Arc - Starlight Insert Coin - Waves
+  - Glowline - Glow With Me Sam Beckett - Stars Falling Into Your Hands
+
+experimental (60 total):
+  - Harry Nilsson - Without You
+  - Mickey Newbury - How Many Times Must the Piper Be Paid for His Song?
+
+metal_variety (20 total):
+  - A few on top of my head... Paradise Lost - Gothic Mourning Beloveth - Dust Mourning Beloveth - The Sullen Sulcus Konvent - Puritan Masochism
+  - Green lung - this heathen land   Obsidian Sea - Pathos   strange horizon - beyond the strange horizon   Magmakammer - Mindtripper
+
+
+================================================================================
+3. TAPESTRY MANIFOLD ALIGNMENT
+================================================================================
+
+--- Multi-Dimensional Emotional Complexity ---
+Complex emotional expressions: 9 (0.5%)
+
+Breakdown:
+  sad but [positive]: 9
+
+Sample complex emotional requests:
+
+  Vibe: Can you recommend free jazz that's not too out there and sounds good | When I was first getting into jazz many years ago I tried out some of Coltrane'...
+  Match: Dave Holland - Conference of the Birds  Also  Sam Rivers - Fuchsia Swing Song!
+
+  Vibe: Can you recommend free jazz that's not too out there and sounds good | When I was first getting into jazz many years ago I tried out some of Coltrane'...
+  Match: Eric dolphy - Out to lunch
+
+  Vibe: Can you recommend free jazz that's not too out there and sounds good | When I was first getting into jazz many years ago I tried out some of Coltrane'...
+  Match: Craig Taborn - Daylight Ghosts
+
+--- Context & Setting Preservation ---
+Activity context: 100 (5.1%)
+Setting context: 66 (3.3%)
+Transition context: 26 (1.3%)
+Purpose context: 242 (12.2%)
+
+--- Reasoning Quality (WHY explanations) ---
+Comments with 'WHY' reasoning: 26 (1.3%)
+
+Sample reasoning from comments:
+
+  Pilc - Similar to Threedom
+  Reason: Kenny Werner Trio with Hoenig and Weidenmuller. Beat Degeneration is my fave. Not free in the sense of no form but what I consider freedom within form. 
+
+Similar to Threedom by Pil...
+
+  Wayne Shorter in a related way. The title track has - Speak No Evil
+  Reason: ummm
+
+If you mean "A Love Supreme", as a spiritual, "The Real McCoy" has that quartal(4ths based harmonic approach) harmony in abundance. Elvin Jones' drums keeps things buoyant. I...
+
+--- Overall Manifold Readiness Score ---
+Pairs with manifold-ready attributes: 1,716 (86.8%)
+
+Component scores:
+  Emotional language              21.6% [C]
+  Context/setting                  4.6% [D]
+  Rich descriptions               86.1% [A]
+  Reasoning in comments            1.3% [D]
+  Complex emotions                 0.5% [D]
+
+  Overall Manifold Alignment: 22.8% [C]
+
+
+================================================================================
+4. SOURCE ATTRIBUTION & CONFIDENCE
+================================================================================
+
+--- Source URL Tracking ---
+All pairs have permalink: True
+Sample permalink: https://reddit.com/r/Jazz/comments/1omy7q9/can_you_recommend_free_jazz_thats_not_too_out/
+
+--- Subreddit Distribution ---
+musicsuggestions          1,601 (80.9%)
+Jazz                        242 (12.2%)
+ifyoulikeblank               84 (4.2%)
+experimentalmusic            51 (2.6%)
+
+--- Comment Score (Upvote) Analysis ---
+Average comment score: 4.9
+Median comment score: 2
+High confidence (score >= 10): 169 (8.5%)
+Low confidence (score <= 2): 1,256 (63.5%)
+
+--- Calculated Confidence Scores ---
+Proposed confidence formula:
+  - High extraction confidence + score >= 10: 1.0
+  - High extraction confidence + score >= 5: 0.9
+  - Medium extraction confidence + score >= 5: 0.8
+  - Medium extraction confidence + score >= 2: 0.7
+  - Other: 0.6
+
+Confidence distribution:
+calculated_confidence
+(0.0, 0.6]    772
+(0.6, 0.7]    792
+(0.7, 0.8]    405
+(0.8, 0.9]      7
+(0.9, 1.0]      2
+Name: count, dtype: int64
+
+Average confidence: 0.68
+High confidence (>= 0.8): 414 (20.9%)
+
+--- Missing Metadata Check ---
+  All required fields are complete!
+
+
+================================================================================
+5. V5 SCRAPER RECOMMENDATIONS
+================================================================================
+
+--- Identified Issues & Recommendations ---
+
+[HIGH] Issue #1: Query Enhancement
+  Problem: Low complex emotion capture (0.5%)
+  Fix: Add queries specifically targeting complex emotions: 'sad but hopeful music', 'melancholic but beautiful', 'aggressive but uplifting'
+
+[HIGH] Issue #2: Parsing Logic
+  Problem: Reasoning preservation needs improvement (1.3%)
+  Fix: Extract full comment context (not just truncated), prioritize comments with 'because', 'similar to', 'reminds me' patterns
+
+[MEDIUM] Issue #3: Genre Balance
+  Problem: Imbalanced genre distribution (ratio 16.8:1)
+  Fix: Increase max_posts_per_query for underrepresented genres, add more specific queries for smallest categories
+
+[MEDIUM] Issue #4: Query Enhancement
+  Problem: Low context/setting capture (4.6%)
+  Fix: Add activity/setting queries: 'music for rainy days', 'music for late night studying', 'road trip music'
+
+
+--- Technical Enhancements for V5 ---
+
+  1. Extract FULL comment bodies (not truncated at 300 chars) to preserve complete reasoning
+  2. Add emotional axis tagging: classify vibes into primary axes (valence, energy, complexity)
+  3. Implement fuzzy deduplication: detect near-duplicate songs with slight name variations
+  4. Add genre validation: cross-reference extracted artists with Spotify API to confirm genres
+  5. Capture post selftext fully: many rich vibe descriptions are in post body, not title
+  6. Implement checkpoint system: save progress incrementally for long scrapes
+  7. Add multi-pass extraction: try different regex patterns if first pass yields low results
+
+--- Manifold Readiness Verdict ---
+
+Overall Manifold Readiness: 22.8% - NEEDS IMPROVEMENT [RED]
+
+ Recommend running V5 scraper with enhanced queries before manifold training.
+  Focus on emotional complexity and reasoning preservation.
+
+================================================================================
+ VALIDATION COMPLETE
+================================================================================
+
+Report generated: See sections above for detailed analysis
+Files validated:
+  - reddit_v4_diverse_20251107_150221.json
+  - reddit_v4_training_20251107_150221.csv

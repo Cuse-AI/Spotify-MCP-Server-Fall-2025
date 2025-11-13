@@ -1,0 +1,111 @@
+{
+  "batch": 2,
+  "sub_vibes_analyzed": [
+    "Happy - Sunshine",
+    "Happy - Carefree",
+    "Chill - Morning Coffee",
+    "Chill - Rainy Day",
+    "Chill - Beach/Summer",
+    "Chill - Evening",
+    "Chill - Sunday",
+    "Chill - Lofi",
+    "Chill - Jazz",
+    "Chill - Ambient"
+  ],
+  "total_in_batch": 10,
+  "analysis": {
+    "Happy - Sunshine": {
+      "emotional_composition": {
+        "Happy": 0.75,
+        "Energy": 0.15,
+        "Playful": 0.1
+      },
+      "analysis": "Bright, uplifting happiness with bounce. 'All Right' by Kenny Loggins, Led Zeppelin - upbeat classic rock energy. Playful lightness. Optimistic warmth.",
+      "proximity_notes": "Near Happy center with pull toward Energy and Playful. Sunshine = happy + energetic + light."
+    },
+    "Happy - Carefree": {
+      "emotional_composition": {
+        "Happy": 0.7,
+        "Chill": 0.2,
+        "Peaceful": 0.1
+      },
+      "analysis": "Relaxed, unburdened happiness. Ichiko Aoba's gentle folk vibes. Not energetic - more floating/easy. Freedom from worry.",
+      "proximity_notes": "Between Happy and Chill. Carefree = contentment without tension. Gentle happiness."
+    },
+    "Chill - Morning Coffee": {
+      "emotional_composition": {
+        "Chill": 0.8,
+        "Peaceful": 0.1,
+        "Grateful": 0.1
+      },
+      "analysis": "Quiet start to the day. Thelonious Monk jazz, calm acoustic. Ritualistic comfort. Present and grounded. Gentle awakening energy.",
+      "proximity_notes": "Close to Chill center with slight pull toward Peaceful and Grateful. Morning serenity."
+    },
+    "Chill - Rainy Day": {
+      "emotional_composition": {
+        "Chill": 0.7,
+        "Sad": 0.15,
+        "Introspective": 0.15
+      },
+      "analysis": "Cozy melancholy. Rain = gentle sadness + introspection. Billie Eilish, Hozier - moody but not heavy. Comfort in the grey.",
+      "proximity_notes": "Between Chill and Sad/Introspective. Rain brings contemplative mood without depression."
+    },
+    "Chill - Beach/Summer": {
+      "emotional_composition": {
+        "Chill": 0.75,
+        "Happy": 0.2,
+        "Nostalgic": 0.05
+      },
+      "analysis": "Warm, lazy relaxation. Summer ease and sunshine. Happy without being energetic. Nostalgic summer memory quality.",
+      "proximity_notes": "Between Chill and Happy. Beach vibes = relaxed happiness, vacation mode."
+    },
+    "Chill - Evening": {
+      "emotional_composition": {
+        "Chill": 0.75,
+        "Night": 0.15,
+        "Introspective": 0.1
+      },
+      "analysis": "Winding down. Jazz standards (Miles Davis, Count Basie). Transition to night. Reflective but not heavy. Gentle dimming.",
+      "proximity_notes": "Between Chill and Night. Evening = still awake but settling, contemplative relaxation."
+    },
+    "Chill - Sunday": {
+      "emotional_composition": {
+        "Chill": 0.8,
+        "Nostalgic": 0.1,
+        "Peaceful": 0.1
+      },
+      "analysis": "Slow weekend morning. Depeche Mode, Peter Gabriel - 80s reflective vibes. No urgency. Savoring stillness. Sacred rest.",
+      "proximity_notes": "Near Chill center with nostalgic quality. Sunday = intentional slowness, weekly ritual."
+    },
+    "Chill - Lofi": {
+      "emotional_composition": {
+        "Chill": 0.75,
+        "Introspective": 0.15,
+        "Night": 0.1
+      },
+      "analysis": "Study/focus ambient. Boards of Canada, Cocteau Twins. Dreamy, hazy. Background consciousness. Slight melancholy.",
+      "proximity_notes": "Between Chill and Introspective/Night. Lofi = ambient thought space, contemplative calm."
+    },
+    "Chill - Jazz": {
+      "emotional_composition": {
+        "Chill": 0.7,
+        "Introspective": 0.15,
+        "Romantic": 0.1,
+        "Night": 0.05
+      },
+      "analysis": "Sophisticated relaxation. Jazz standards create intimate, thoughtful atmosphere. Late night caf\u00e9 vibes. Romantic undertone.",
+      "proximity_notes": "Chill center pulled toward Introspective and Romantic. Jazz = cultured calm with emotional depth."
+    },
+    "Chill - Ambient": {
+      "emotional_composition": {
+        "Chill": 0.65,
+        "Peaceful": 0.2,
+        "Introspective": 0.1,
+        "Dark": 0.05
+      },
+      "analysis": "Pure atmospheric sound. Jean Michel Jarre, Animal Collective. Spacious, ethereal. Meditation quality. Can touch slightly dark/experimental.",
+      "proximity_notes": "Between Chill and Peaceful with introspective edge. Ambient = consciousness without thought."
+    }
+  },
+  "status": "Batch 2 complete - 20 of 114 sub-vibes analyzed (cumulative)"
+}

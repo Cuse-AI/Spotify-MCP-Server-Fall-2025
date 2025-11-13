@@ -1,0 +1,320 @@
+TAPESTRY DATA QUALITY AUDIT - FLAGGED ENTRIES
+================================================================================
+
+Sample Size: 100 songs
+Flagged: 52 (52%)
+Clean: 48 (48%)
+
+================================================================================
+FLAGGED ENTRIES TO REVIEW:
+================================================================================
+
+[1] Ice
+
+Randy - Beast
+    Vibe: Happy - Carefree
+    Flags: SINGLE_WORD_ARTIST, CONTAINS_NEWLINE
+    Status: NEEDS_MANUAL_CHECK
+
+[2] Bosson - It's
+    Vibe: Drive - Alone
+    Flags: SINGLE_WORD_ARTIST
+    Status: NEEDS_MANUAL_CHECK
+
+[3] BLiSS - My LSD
+    Vibe: Bored - Restless
+    Flags: SINGLE_WORD_ARTIST
+    Status: NEEDS_MANUAL_CHECK
+
+[4] LUNGFISH - Great
+    Vibe: Happy - Sunshine
+    Flags: SINGLE_WORD_ARTIST
+    Status: NEEDS_MANUAL_CHECK
+
+[5] Methwitch - Uninvited
+    Vibe: Happy - Feel Good
+    Flags: SINGLE_WORD_ARTIST
+    Status: NEEDS_MANUAL_CHECK
+
+[6] Harbinger - Polaris
+    Vibe: Sad - Lonely
+    Flags: SINGLE_WORD_ARTIST
+    Status: NEEDS_MANUAL_CHECK
+
+[7] Oldfield
+
+Just One Victory - Todd
+    Vibe: Happy - Celebration
+    Flags: CONTAINS_NEWLINE
+    Status: NEEDS_MANUAL_CHECK
+
+[8] Rammstein - Du Hast
+    Vibe: Energy - Sports
+    Flags: SINGLE_WORD_ARTIST
+    Status: NEEDS_MANUAL_CHECK
+
+[9] Monster - Neveroddoreven
+    Vibe: Drive - Road Trip
+    Flags: SINGLE_WORD_ARTIST
+    Status: NEEDS_MANUAL_CHECK
+
+[10] Coyote - Mako](https://www
+    Vibe: Anxious - Overwhelmed
+    Flags: CONTAINS_URL, SUSPICIOUS_CHARS, SINGLE_WORD_ARTIST
+    Status: NEEDS_MANUAL_CHECK
+
+[11] Pitfalls - BoyWithUke??
+    Vibe: Hopeful - Healing
+    Flags: SINGLE_WORD_ARTIST
+    Status: NEEDS_MANUAL_CHECK
+
+[12] Roses 
+The Sex Pistols - Never
+    Vibe: Angry - Rage
+    Flags: CONTAINS_NEWLINE
+    Status: NEEDS_MANUAL_CHECK
+
+[13] Back Sunday
+
+White Pony - Deftones
+    Vibe: Jealous - Insecure
+    Flags: CONTAINS_NEWLINE
+    Status: NEEDS_MANUAL_CHECK
+
+[14] Absolute bangers
+
+BRAIN DAMAGE RAVE - Meronti
+    Vibe: Playful - Whimsical
+    Flags: CONTAINS_NEWLINE
+    Status: NEEDS_MANUAL_CHECK
+
+[15] Touch
+
+Boy Harsher - Lust
+    Vibe: Dark - Apocalyptic
+    Flags: CONTAINS_NEWLINE
+    Status: NEEDS_MANUAL_CHECK
+
+[16] Glass 
+
+Maximizing The Audience - Wim Mertens
+    Vibe: Introspective - Contemplative
+    Flags: CONTAINS_NEWLINE
+    Status: NEEDS_MANUAL_CHECK
+
+[17] Jerk - Off,
+    Vibe: Bitter - Betrayed
+    Flags: SINGLE_WORD_ARTIST
+    Status: NEEDS_MANUAL_CHECK
+
+[18] Low
+
+Brian Eno - Here
+    Vibe: Sad - Heartbreak
+    Flags: CONTAINS_NEWLINE
+    Status: NEEDS_MANUAL_CHECK
+
+[19] Highwayman
+
+Trampled by Turtles - Codeine
+    Vibe: Confident - Boss
+    Flags: CONTAINS_NEWLINE
+    Status: NEEDS_MANUAL_CHECK
+
+[20] NYC - Interpol
+    Vibe: Night - Midnight Drive
+    Flags: SINGLE_WORD_ARTIST
+    Status: NEEDS_MANUAL_CHECK
+
+[21] Sunset
+
+David Bromberg - Jelly
+    Vibe: Playful - Whimsical
+    Flags: CONTAINS_NEWLINE
+    Status: NEEDS_MANUAL_CHECK
+
+[22] Safari
+
+Paul Hardcastle - The Chill
+    Vibe: Romantic - Date Night
+    Flags: CONTAINS_NEWLINE
+    Status: NEEDS_MANUAL_CHECK
+
+[23] Bruno mars 
+American boy - Estelle
+    Vibe: Party - Pregame
+    Flags: CONTAINS_NEWLINE
+    Status: NEEDS_MANUAL_CHECK
+
+[24] Otis
+
+Old Yellow Bricks - Arctic
+    Vibe: Energy - Running
+    Flags: CONTAINS_NEWLINE
+    Status: NEEDS_MANUAL_CHECK
+
+[25] Soundgarden - Hunter
+    Vibe: Grateful - Thankful
+    Flags: SINGLE_WORD_ARTIST
+    Status: NEEDS_MANUAL_CHECK
+
+[26] Sullivan
+
+Teddy Bear - Red Sovine
+    Vibe: Happy - Sunshine
+    Flags: CONTAINS_NEWLINE
+    Status: NEEDS_MANUAL_CHECK
+
+[27] Wonder
+
+Heaven - Chris
+    Vibe: Happy - Celebration
+    Flags: SINGLE_WORD_ARTIST, CONTAINS_NEWLINE
+    Status: NEEDS_MANUAL_CHECK
+
+[28] Celtian - Serena
+    Vibe: Dark - Gothic
+    Flags: SINGLE_WORD_ARTIST
+    Status: NEEDS_MANUAL_CHECK
+
+[29] KLF
+
+Ich Bin Ein Auslander - Pop Will
+    Vibe: Romantic - Date Night
+    Flags: CONTAINS_NEWLINE
+    Status: NEEDS_MANUAL_CHECK
+
+[30] Mason Samuel Smith - I LIED]
+    Vibe: Hopeful - Healing
+    Flags: SUSPICIOUS_CHARS
+    Status: NEEDS_MANUAL_CHECK
+
+[31] Work   
+Chilliwack - My Girl
+    Vibe: Drive - City
+    Flags: CONTAINS_NEWLINE
+    Status: NEEDS_MANUAL_CHECK
+
+[32] Sugababes - Push
+    Vibe: Confident - Boss
+    Flags: SINGLE_WORD_ARTIST
+    Status: NEEDS_MANUAL_CHECK
+
+[33] Move - Thousand
+    Vibe: Nostalgic - 90s
+    Flags: SINGLE_WORD_ARTIST
+    Status: NEEDS_MANUAL_CHECK
+
+[34] Sleepless - Ocean
+    Vibe: Happy - Feel Good
+    Flags: SINGLE_WORD_ARTIST
+    Status: NEEDS_MANUAL_CHECK
+
+[35] Woods
+
+Every Mile - Layup
+    Vibe: Nostalgic - Simpler Times
+    Flags: CONTAINS_NEWLINE
+    Status: NEEDS_MANUAL_CHECK
+
+[36] Mac
+
+Gloria - Them
+    Vibe: Hopeful - Optimistic
+    Flags: SINGLE_WORD_ARTIST, CONTAINS_NEWLINE
+    Status: NEEDS_MANUAL_CHECK
+
+[37] Shout
+
+Placebo - Follow
+    Vibe: Hopeful - New Beginnings
+    Flags: SINGLE_WORD_ARTIST, CONTAINS_NEWLINE
+    Status: NEEDS_MANUAL_CHECK
+
+[38] Heilung - Anoana
+    Vibe: Romantic - Anniversary
+    Flags: SINGLE_WORD_ARTIST
+    Status: NEEDS_MANUAL_CHECK
+
+[39] Soulfly - Jumpdafuckup
+    Vibe: Energy - Pump Up
+    Flags: SINGLE_WORD_ARTIST
+    Status: NEEDS_MANUAL_CHECK
+
+[40] Evil - Interpol
+    Vibe: Playful - Fun
+    Flags: SINGLE_WORD_ARTIST
+    Status: NEEDS_MANUAL_CHECK
+
+[41] Shapiro
+
+Nowhere I can go - Clara
+    Vibe: Happy - Euphoric
+    Flags: CONTAINS_NEWLINE
+    Status: NEEDS_MANUAL_CHECK
+
+[42] Zled - NKObP)
+    Vibe: Grateful - Reflective Gratitude
+    Flags: SUSPICIOUS_CHARS, SINGLE_WORD_ARTIST
+    Status: NEEDS_MANUAL_CHECK
+
+[43] Vortex  
+The Marias - Vicious
+    Vibe: Drive - Road Trip
+    Flags: CONTAINS_NEWLINE
+    Status: NEEDS_MANUAL_CHECK
+
+[44] ZdIHCQl - CQGHKiGM7w%3D%3D)
+    Vibe: Dark - Gothic
+    Flags: SUSPICIOUS_CHARS, SINGLE_WORD_ARTIST
+    Status: NEEDS_MANUAL_CHECK
+
+[45] Spacehog - In the
+    Vibe: Party - Pregame
+    Flags: SINGLE_WORD_ARTIST
+    Status: NEEDS_MANUAL_CHECK
+
+[46] Surfer
+
+Oceansize - Trail
+    Vibe: Introspective - Life Changes
+    Flags: CONTAINS_NEWLINE
+    Status: NEEDS_MANUAL_CHECK
+
+[47] Sheep - Pink
+    Vibe: Jealous - Romantic Jealousy
+    Flags: SINGLE_WORD_ARTIST
+    Status: NEEDS_MANUAL_CHECK
+
+[48] Estate 
+Lyburnum Wits End Liberation Fly - Moss
+    Vibe: Romantic - Anniversary
+    Flags: CONTAINS_NEWLINE
+    Status: NEEDS_MANUAL_CHECK
+
+[49] War
+
+XY&O - Lights
+    Vibe: Playful - Whimsical
+    Flags: SINGLE_WORD_ARTIST, CONTAINS_NEWLINE
+    Status: NEEDS_MANUAL_CHECK
+
+[50] Guy and Junior Wells Acoustic
+
+Sam Cooke - Portrait
+    Vibe: Night - Sleep
+    Flags: CONTAINS_NEWLINE
+    Status: NEEDS_MANUAL_CHECK
+
+[51] Surfer
+
+Oceansize - Trail
+    Vibe: Nostalgic - Teen Years
+    Flags: CONTAINS_NEWLINE
+    Status: NEEDS_MANUAL_CHECK
+
+[52] the - Tigress
+    Vibe: Chaotic - Overwhelming
+    Flags: SINGLE_WORD_ARTIST
+    Status: NEEDS_MANUAL_CHECK
+

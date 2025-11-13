@@ -1,0 +1,163 @@
+{
+  "Sad": [
+    "Bitter",
+    "Jealous",
+    "Bored",
+    "Dark",
+    "Night"
+  ],
+  "Happy": [
+    "Playful",
+    "Confident",
+    "Romantic",
+    "Excited",
+    "Party"
+  ],
+  "Angry": [
+    "Anxious",
+    "Jealous",
+    "Chaotic",
+    "Bitter",
+    "Dark"
+  ],
+  "Bitter": [
+    "Sad",
+    "Jealous",
+    "Anxious",
+    "Dark",
+    "Angry"
+  ],
+  "Anxious": [
+    "Angry",
+    "Jealous",
+    "Chaotic",
+    "Bitter",
+    "Dark"
+  ],
+  "Chill": [
+    "Peaceful",
+    "Hopeful",
+    "Nostalgic",
+    "Grateful",
+    "Romantic"
+  ],
+  "Peaceful": [
+    "Chill",
+    "Grateful",
+    "Hopeful",
+    "Romantic",
+    "Nostalgic"
+  ],
+  "Energy": [
+    "Excited",
+    "Confident",
+    "Party",
+    "Playful",
+    "Happy"
+  ],
+  "Confident": [
+    "Excited",
+    "Energy",
+    "Playful",
+    "Happy",
+    "Party"
+  ],
+  "Excited": [
+    "Confident",
+    "Energy",
+    "Party",
+    "Playful",
+    "Happy"
+  ],
+  "Hopeful": [
+    "Romantic",
+    "Grateful",
+    "Playful",
+    "Chill",
+    "Drive"
+  ],
+  "Dark": [
+    "Night",
+    "Bored",
+    "Introspective",
+    "Jealous",
+    "Bitter"
+  ],
+  "Introspective": [
+    "Nostalgic",
+    "Night",
+    "Dark",
+    "Bored",
+    "Drive"
+  ],
+  "Romantic": [
+    "Grateful",
+    "Playful",
+    "Hopeful",
+    "Happy",
+    "Confident"
+  ],
+  "Nostalgic": [
+    "Introspective",
+    "Chill",
+    "Drive",
+    "Night",
+    "Hopeful"
+  ],
+  "Night": [
+    "Bored",
+    "Dark",
+    "Introspective",
+    "Nostalgic",
+    "Drive"
+  ],
+  "Drive": [
+    "Hopeful",
+    "Nostalgic",
+    "Introspective",
+    "Chill",
+    "Romantic"
+  ],
+  "Party": [
+    "Excited",
+    "Confident",
+    "Energy",
+    "Happy",
+    "Playful"
+  ],
+  "Jealous": [
+    "Bitter",
+    "Anxious",
+    "Angry",
+    "Sad",
+    "Dark"
+  ],
+  "Playful": [
+    "Happy",
+    "Confident",
+    "Romantic",
+    "Excited",
+    "Energy"
+  ],
+  "Chaotic": [
+    "Anxious",
+    "Angry",
+    "Jealous",
+    "Dark",
+    "Bitter"
+  ],
+  "Bored": [
+    "Night",
+    "Dark",
+    "Introspective",
+    "Sad",
+    "Nostalgic"
+  ],
+  "Grateful": [
+    "Romantic",
+    "Hopeful",
+    "Playful",
+    "Happy",
+    "Peaceful"
+  ]
+}

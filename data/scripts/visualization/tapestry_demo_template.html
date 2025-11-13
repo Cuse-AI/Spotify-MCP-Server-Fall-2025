@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Tapestry | Emotional Manifold</title>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Arial, sans-serif;
+            color: #ffffff;
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Header */
+        .header {
+            padding: 30px 60px;
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.02);
+            border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+        }
+        
+        .title {
+            font-size: 42px;
+            font-weight: 200;
+            letter-spacing: 8px;
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+        }
+        
+        .subtitle {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.4);
+            letter-spacing: 2px;
+            font-weight: 300;
+        }
+        
+        .stats {
+            display: flex;
+            gap: 40px;
+            margin-top: 15px;
+        }
+        
+        .stat {
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.5);
+            letter-spacing: 1px;
+        }
+        
+        .stat-number {
+            font-size: 24px;
+            font-weight: 600;
+            color: #FFD700;
+            display: block;
+            margin-bottom: 2px;
+        }
+        
+        /* Canvas Container */
+        #canvas-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        canvas {
+            cursor: grab;
+            filter: drop-shadow(0 0 40px rgba(255, 215, 0, 0.1));
+        }
+        
+        canvas.dragging {
+            cursor: grabbing;
+        }
+        
+        /* Tooltip */
+        .tooltip {
+            position: absolute;
+            background: rgba(10, 10, 20, 0.98);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            pointer-events: none;
+            display: none;
+            max-width: 350px;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.8),
+                        0 0 30px rgba(255, 215, 0, 0.15);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            animation: fadeIn 0.2s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .tooltip-title {
+            font-size: 20px;
+            font-weight: 500;
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+        
+        .tooltip-composition {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 12px;
+            line-height: 1.6;
+            font-weight: 300;
+        }
+        
+        .tooltip-analysis {
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.5);
+            line-height: 1.6;
+            padding-top: 12px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-weight: 300;
+        }
+        
+        /* Legend */
+        .legend {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 40px;
+            padding: 15px 30px;
+            background: rgba(10, 10, 20, 0.8);
+            border-radius: 100px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.6);
+            letter-spacing: 1px;
+            font-weight: 300;
+        }
+        
+        .legend-circle {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+        
+        .legend-line {
+            width: 20px;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        /* Instructions */
+        .instructions {
+            position: absolute;
+            top: 50%;
+            right: 40px;
+            transform: translateY(-50%);
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.3);
+            text-align: right;
+            letter-spacing: 1px;
+            line-height: 2;
+            font-weight: 300;
+        }
+        
+        .instructions-title {
+            font-size: 13px;
+            color: rgba(255, 215, 0, 0.6);
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="title">THE TAPESTRY</div>
+        <div class="subtitle">EMOTIONAL MANIFOLD SYSTEM</div>
+        <div class="stats">
+            <div class="stat">
+                <span class="stat-number">114</span>
+                SUB-VIBES
+            </div>
+            <div class="stat">
+                <span class="stat-number">23</span>
+                CENTRAL NODES
+            </div>
+            <div class="stat">
+                <span class="stat-number">52,994</span>
+                SONGS
+            </div>
+            <div class="stat">
+                <span class="stat-number">100%</span>
+                HUMAN-SOURCED
+            </div>
+        </div>
+    </div>
+    
+    <div id="canvas-container">
+        <canvas id="manifold-canvas" width="1400" height="1400"></canvas>
+        
+        <div class="instructions">
+            <div class="instructions-title">NAVIGATE</div>
+            DRAG TO PAN<br>
+            HOVER TO EXPLORE<br>
+            DISCOVER CONNECTIONS
+        </div>
+        
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-circle" style="background: white; border: 2px solid white; width: 14px; height: 14px;"></div>
+                <span>CENTRAL VIBES</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-circle" style="background: #FFD700;"></div>
+                <span>SUB-VIBES</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-line"></div>
+                <span>CONNECTIONS</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tooltip" id="tooltip"></div>
+    
+    <script>
+        const manifoldData = MANIFOLD_DATA_PLACEHOLDER;
+        const relationships = RELATIONSHIPS_DATA_PLACEHOLDER;
+        
+        const canvas = document.getElementById('manifold-canvas');
+        const ctx = canvas.getContext('2d');
+        const tooltip = document.getElementById('tooltip');
+        
+        // Pan/zoom state
+        let offsetX = 0;
+        let offsetY = 0;
+        let scale = 1.2;
+        let isDragging = false;
+        let lastMouseX = 0;
+        let lastMouseY = 0;
+        
+        const vibeColors = {
+            'Sad': '#4A5899', 'Happy': '#FFD700', 'Chill': '#87CEEB',
+            'Anxious': '#FF6B6B', 'Energy': '#FF4500', 'Dark': '#2F2F4F',
+            'Introspective': '#9370DB', 'Romantic': '#FF69B4', 'Nostalgic': '#DDA0DD',
+            'Night': '#191970', 'Drive': '#4682B4', 'Party': '#FF1493',
+            'Angry': '#DC143C', 'Bitter': '#8B4513', 'Hopeful': '#FFA500',
+            'Excited': '#FFD700', 'Jealous': '#228B22', 'Peaceful': '#E0FFE0',
+            'Playful': '#FF69B4', 'Chaotic': '#8B0000', 'Bored': '#696969',
+            'Grateful': '#DAA520', 'Confident': '#FF8C00'
+        };
+        
+        const centralPositions = manifoldData.central_vibes.positions;
+        const subVibes = manifoldData.sub_vibes;
+        
+        function toCanvasCoords(x, y) {
+            return { 
+                x: x * scale + offsetX + 100, 
+                y: y * scale + offsetY + 100
+            };
+        }
+        
+        function drawManifold() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Draw connections with glow
+            ctx.strokeStyle = 'rgba(255, 215, 0, 0.08)';
+            ctx.lineWidth = 1;
+            ctx.shadowBlur = 10;
+            ctx.shadowColor = 'rgba(255, 215, 0, 0.2)';
+            
+            for (const [vibe, data] of Object.entries(relationships.central_vibes)) {
+                const pos1 = toCanvasCoords(centralPositions[vibe].x, centralPositions[vibe].y);
+                
+                for (const connectedVibe of data.connects_to) {
+                    if (centralPositions[connectedVibe]) {
+                        const pos2 = toCanvasCoords(centralPositions[connectedVibe].x, centralPositions[connectedVibe].y);
+                        ctx.beginPath();
+                        ctx.moveTo(pos1.x, pos1.y);
+                        ctx.lineTo(pos2.x, pos2.y);
+                        ctx.stroke();
+                    }
+                }
+            }
+            
+            ctx.shadowBlur = 0;
+            
+            // Draw sub-vibes with subtle glow
+            for (const [name, data] of Object.entries(subVibes)) {
+                const pos = toCanvasCoords(data.coordinates.x, data.coordinates.y);
+                const dominantVibe = Object.entries(data.emotional_composition)
+                    .sort((a, b) => b[1] - a[1])[0][0];
+                const color = vibeColors[dominantVibe] || '#FFFFFF';
+                
+                ctx.shadowBlur = 8;
+                ctx.shadowColor = color;
+                ctx.beginPath();
+                ctx.arc(pos.x, pos.y, 4, 0, Math.PI * 2);
+                ctx.fillStyle = color;
+                ctx.fill();
+                ctx.shadowBlur = 0;
+                ctx.strokeStyle = 'rgba(255, 255, 255, 0.2)';
+                ctx.lineWidth = 0.5;
+                ctx.stroke();
+            }
+            
+            // Draw central vibes with strong glow
+            for (const [name, pos] of Object.entries(centralPositions)) {
+                const canvasPos = toCanvasCoords(pos.x, pos.y);
+                const color = vibeColors[name] || '#FFFFFF';
+                
+                // Outer glow
+                ctx.shadowBlur = 20;
+                ctx.shadowColor = color;
+                ctx.beginPath();
+                ctx.arc(canvasPos.x, canvasPos.y, 16, 0, Math.PI * 2);
+                ctx.fillStyle = color;
+                ctx.fill();
+                
+                ctx.shadowBlur = 0;
+                ctx.strokeStyle = 'rgba(255, 255, 255, 0.8)';
+                ctx.lineWidth = 2;
+                ctx.stroke();
+                
+                // Label with better visibility
+                ctx.fillStyle = '#ffffff';
+                ctx.font = 'bold 10px -apple-system, sans-serif';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.shadowBlur = 5;
+                ctx.shadowColor = 'rgba(0, 0, 0, 0.8)';
+                ctx.fillText(name, canvasPos.x, canvasPos.y);
+                ctx.shadowBlur = 0;
+            }
+        }
+        
+        // Mouse drag to pan
+        canvas.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            lastMouseX = e.clientX;
+            lastMouseY = e.clientY;
+            canvas.classList.add('dragging');
+        });
+        
+        canvas.addEventListener('mousemove', (e) => {
+            if (isDragging) {
+                const dx = e.clientX - lastMouseX;
+                const dy = e.clientY - lastMouseY;
+                offsetX += dx;
+                offsetY += dy;
+                lastMouseX = e.clientX;
+                lastMouseY = e.clientY;
+                drawManifold();
+                tooltip.style.display = 'none';
+            } else {
+                // Hover detection
+                const rect = canvas.getBoundingClientRect();
+                const mouseX = e.clientX - rect.left;
+                const mouseY = e.clientY - rect.top;
+                
+                let found = false;
+                
+                // Check sub-vibes
+                for (const [name, data] of Object.entries(subVibes)) {
+                    const pos = toCanvasCoords(data.coordinates.x, data.coordinates.y);
+                    const dist = Math.sqrt((mouseX - pos.x) ** 2 + (mouseY - pos.y) ** 2);
+                    
+                    if (dist < 8) {
+                        const composition = Object.entries(data.emotional_composition)
+                            .sort((a, b) => b[1] - a[1])
+                            .map(([vibe, pct]) => `${vibe} ${Math.round(pct * 100)}%`)
+                            .join(' · ');
+                        
+                        tooltip.innerHTML = `
+                            <div class="tooltip-title">${name}</div>
+                            <div class="tooltip-composition">${composition}</div>
+                            <div class="tooltip-analysis">${data.analysis}</div>
+                        `;
+                        tooltip.style.left = (e.clientX + 20) + 'px';
+                        tooltip.style.top = (e.clientY + 20) + 'px';
+                        tooltip.style.display = 'block';
+                        found = true;
+                        break;
+                    }
+                }
+                
+                // Check central vibes
+                if (!found) {
+                    for (const [name, pos] of Object.entries(centralPositions)) {
+                        const canvasPos = toCanvasCoords(pos.x, pos.y);
+                        const dist = Math.sqrt((mouseX - canvasPos.x) ** 2 + (mouseY - canvasPos.y) ** 2);
+                        
+                        if (dist < 20) {
+                            const relData = relationships.central_vibes[name];
+                            const connections = relData.connects_to.join(' · ');
+                            
+                            tooltip.innerHTML = `
+                                <div class="tooltip-title">${name}</div>
+                                <div class="tooltip-composition">${relData.description}</div>
+                                <div class="tooltip-analysis">Connected to: ${connections}</div>
+                            `;
+                            tooltip.style.left = (e.clientX + 20) + 'px';
+                            tooltip.style.top = (e.clientY + 20) + 'px';
+                            tooltip.style.display = 'block';
+                            found = true;
+                            break;
+                        }
+                    }
+                }
+                
+                if (!found) {
+                    tooltip.style.display = 'none';
+                }
+            }
+        });
+        
+        canvas.addEventListener('mouseup', () => {
+            isDragging = false;
+            canvas.classList.remove('dragging');
+        });
+        
+        canvas.addEventListener('mouseleave', () => {
+            isDragging = false;
+            canvas.classList.remove('dragging');
+            tooltip.style.display = 'none';
+        });
+        
+        // Mouse wheel zoom
+        canvas.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            const rect = canvas.getBoundingClientRect();
+            const mouseX = e.clientX - rect.left;
+            const mouseY = e.clientY - rect.top;
+            
+            const zoomFactor = e.deltaY > 0 ? 0.9 : 1.1;
+            const newScale = scale * zoomFactor;
+            
+            if (newScale >= 0.5 && newScale <= 3) {
+                // Zoom towards mouse position
+                offsetX = mouseX - (mouseX - offsetX) * zoomFactor;
+                offsetY = mouseY - (mouseY - offsetY) * zoomFactor;
+                scale = newScale;
+                drawManifold();
+            }
+        });
+        
+        drawManifold();
+    </script>
+</body>
+</html>

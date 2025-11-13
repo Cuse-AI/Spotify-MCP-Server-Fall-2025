@@ -1,0 +1,12 @@
+{
+  "total_records": 233,
+  "relational_structure": 96.56652360515021,
+  "has_reasoning": 5.579399141630901,
+  "has_anchor": 1.2875536480686696,
+  "has_delta": 58.798283261802574,
+  "complex_emotions": 0.4291845493562232,
+  "proximity_queries": 79.82832618025752,
+  "transition_queries": 0.0,
+  "contextual_queries": 16.30901287553648,
+  "manifold_readiness_score": 49.31330472103004
+}
