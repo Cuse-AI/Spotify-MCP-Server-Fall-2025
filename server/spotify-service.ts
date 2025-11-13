@@ -157,7 +157,8 @@ export async function enrichTracksWithSpotifyData(trackIds: string[]): Promise<M
   }
   
   try {
-    const spotify = await getSpotifyClient();
+    // Use OAuth client for user-scoped API access (album art, preview URLs)
+    const spotify = await getUncachableSpotifyClient();
     
     // Use smaller batch size to reduce rate limit issues (20 instead of 50)
     const batchSize = 20;

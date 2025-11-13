@@ -251,7 +251,7 @@ Instructions:
 Return ONLY a JSON object (no markdown, no extra text):
 {
   "explanation": "2-3 sentences explaining the emotional journey you created",
-  "emotionalArc": "Brief description of the progression through sub-vibes",
+  "emotionalArc": "Brief narrative description of the progression through sub-vibes. IMPORTANT: Do NOT include any numeric coordinates or manifold positions in this text - keep it purely descriptive and narrative.",
   "songs": [
     {
       "track_id": "spotify:track:...",
