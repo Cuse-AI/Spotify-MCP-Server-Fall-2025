@@ -77,6 +77,7 @@ export class MemStorage implements IStorage {
       
       fs.writeFileSync(tapestryPath, JSON.stringify(tapestry, null, 2));
       console.log(`⬆️  Boosted confidence for "${record.song.artist} - ${record.song.title}": ${(existingSong.mapping_confidence * 100).toFixed(0)}% → ${(newConfidence * 100).toFixed(0)}%`);
+      this.invalidateStatsCache();
       return { boosted: true };
     } else {
       // New extrapolated song - add to Tapestry
@@ -100,6 +101,7 @@ export class MemStorage implements IStorage {
       tapestry.vibes[subVibe].songs.push(songEntry);
       fs.writeFileSync(tapestryPath, JSON.stringify(tapestry, null, 2));
       console.log(`✅ Added validated song to Tapestry: ${record.song.artist} - ${record.song.title} (${subVibe})`);
+      this.invalidateStatsCache();
       return { boosted: false };
     }
   }

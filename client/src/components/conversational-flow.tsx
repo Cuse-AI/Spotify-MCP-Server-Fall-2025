@@ -80,14 +80,14 @@ export function ConversationalFlow({ onComplete }: ConversationalFlowProps) {
   }
 
   return (
-    <div className="min-h-screen flex flex-col">
-      {/* Stats Banner - fixed at top right */}
-      <div className="absolute top-6 right-6 z-10">
+    <div className="min-h-screen flex flex-col px-6 py-6 md:px-8">
+      {/* Header with Stats Banner */}
+      <div className="flex flex-row flex-wrap justify-end gap-4 mb-8">
         <TapestryStatsBanner />
       </div>
 
       {/* Main Content - centered */}
-      <div className="flex items-center justify-center flex-1 px-6 py-24 md:px-8">
+      <div className="flex items-center justify-center flex-1">
         <div className="w-full max-w-2xl mx-auto">
           <QuestionDisplay
             question={QUESTIONS[currentQuestion].text}

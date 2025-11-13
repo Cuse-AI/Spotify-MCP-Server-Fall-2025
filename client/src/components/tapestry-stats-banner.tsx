@@ -10,11 +10,11 @@ export function TapestryStatsBanner() {
 
   if (isLoading || !stats) {
     return (
-      <Card className="px-4 py-3 flex items-center gap-3 min-w-[280px]">
-        <div className="w-5 h-5 rounded-full bg-muted animate-pulse" />
+      <Card className="px-4 py-3 flex items-center gap-3 min-w-[280px]" data-testid="card-tapestry-stats-loading">
+        <div className="w-5 h-5 rounded-full bg-muted animate-pulse" data-testid="skeleton-icon" />
         <div className="flex-1">
-          <div className="h-4 w-24 bg-muted rounded animate-pulse mb-1" />
-          <div className="h-3 w-32 bg-muted rounded animate-pulse" />
+          <div className="h-4 w-24 bg-muted rounded animate-pulse mb-1" data-testid="skeleton-track-count" />
+          <div className="h-3 w-32 bg-muted rounded animate-pulse" data-testid="skeleton-vibe-counts" />
         </div>
       </Card>
     );
