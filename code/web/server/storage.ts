@@ -4,6 +4,27 @@ import { enrichTracksWithSpotifyData } from "./spotify-service";
 import * as fs from "fs";
 import * as path from "path";
 
+// Helper to find project root (works both locally in code/web and on Replit)
+function getProjectRoot(): string {
+  let currentDir = process.cwd();
+
+  // Check if we're already at project root (has core/ and data/ folders)
+  if (fs.existsSync(path.join(currentDir, "core", "tapestry.json"))) {
+    return currentDir;
+  }
+
+  // Navigate up to find project root
+  const parentDir = path.join(currentDir, "..", "..");
+  if (fs.existsSync(path.join(parentDir, "core", "tapestry.json"))) {
+    return parentDir;
+  }
+
+  // Fallback to current directory
+  return currentDir;
+}
+
+const PROJECT_ROOT = getProjectRoot();
+
 export interface IStorage {
   generatePlaylist(journey: UserJourney): Promise<PlaylistResponse>;
   saveValidatedSong(record: ValidatedSongRecord): Promise<{ boosted: boolean }>;
@@ -36,8 +57,7 @@ export class MemStorage implements IStorage {
   }
 
   async saveValidatedSong(record: ValidatedSongRecord): Promise<{ boosted: boolean }> {
-    // Navigate up from code/web to project root
-    const tapestryPath = path.join(process.cwd(), "..", "..", "core", "tapestry.json");
+    const tapestryPath = path.join(PROJECT_ROOT, "core", "tapestry.json");
 
     if (!fs.existsSync(tapestryPath)) {
       throw new Error("Tapestry data file not found");
@@ -108,8 +128,7 @@ export class MemStorage implements IStorage {
   }
 
   async saveDownvotedSong(record: ValidatedSongRecord): Promise<void> {
-    // Navigate up from code/web to project root
-    const downvotesPath = path.join(process.cwd(), "..", "..", "data", "user_downvotes.json");
+    const downvotesPath = path.join(PROJECT_ROOT, "data", "user_downvotes.json");
     
     // Create downvotes file if it doesn't exist
     let downvotes: any = { songs: [] };
@@ -162,9 +181,8 @@ export class MemStorage implements IStorage {
       return this.statsCache.stats;
     }
 
-    // Navigate up from code/web to project root
-    const tapestryPath = path.join(process.cwd(), "..", "..", "core", "tapestry.json");
-    const manifoldPath = path.join(process.cwd(), "..", "..", "data", "emotional_manifold_COMPLETE.json");
+    const tapestryPath = path.join(PROJECT_ROOT, "core", "tapestry.json");
+    const manifoldPath = path.join(PROJECT_ROOT, "data", "emotional_manifold_COMPLETE.json");
 
     if (!fs.existsSync(tapestryPath) || !fs.existsSync(manifoldPath)) {
       throw new Error("Tapestry data files not found");
