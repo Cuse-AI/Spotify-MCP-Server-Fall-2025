@@ -2,6 +2,14 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { userJourneySchema, userValidatedSongSchema } from "@shared/schema";
+import { createSpotifyPlaylist } from "./spotify-service";
+import { z } from "zod";
+
+const createPlaylistSchema = z.object({
+  playlistName: z.string(),
+  playlistDescription: z.string(),
+  trackUris: z.array(z.string()),
+});
 
 export async function registerRoutes(app: Express): Promise<Server> {
   
@@ -83,6 +91,20 @@ export async function registerRoutes(app: Express): Promise<Server> {
       console.error("Error fetching Tapestry stats:", error);
       res.status(500).json({ 
         message: error.message || "Failed to fetch stats" 
+      });
+    }
+  });
+
+  // Create Spotify Playlist API
+  app.post("/api/create-spotify-playlist", async (req, res) => {
+    try {
+      const params = createPlaylistSchema.parse(req.body);
+      const result = await createSpotifyPlaylist(params);
+      res.json(result);
+    } catch (error: any) {
+      console.error("Error creating Spotify playlist:", error);
+      res.status(500).json({ 
+        message: error.message || "Failed to create playlist" 
       });
     }
   });

@@ -1,5 +1,68 @@
 import { SpotifyApi } from "@spotify/web-api-ts-sdk";
 
+let connectionSettings: any;
+
+async function getAccessToken() {
+  if (connectionSettings && connectionSettings.settings.expires_at && new Date(connectionSettings.settings.expires_at).getTime() > Date.now()) {
+    // Return cached token if still valid
+    const refreshToken = connectionSettings.settings.oauth.credentials.refresh_token;
+    const accessToken = connectionSettings.settings.oauth.credentials.access_token;
+    const clientId = connectionSettings.settings.oauth.credentials.client_id;
+    const expiresIn = connectionSettings.settings.oauth.credentials.expires_in;
+    return {accessToken, clientId, refreshToken, expiresIn};
+  }
+  
+  const hostname = process.env.REPLIT_CONNECTORS_HOSTNAME
+  const xReplitToken = process.env.REPL_IDENTITY 
+    ? 'repl ' + process.env.REPL_IDENTITY 
+    : process.env.WEB_REPL_RENEWAL 
+    ? 'depl ' + process.env.WEB_REPL_RENEWAL 
+    : null;
+
+  if (!xReplitToken) {
+    throw new Error('X_REPLIT_TOKEN not found for repl/depl');
+  }
+
+  connectionSettings = await fetch(
+    'https://' + hostname + '/api/v2/connection?include_secrets=true&connector_names=spotify',
+    {
+      headers: {
+        'Accept': 'application/json',
+        'X_REPLIT_TOKEN': xReplitToken
+      }
+    }
+  ).then(res => res.json()).then(data => data.items?.[0]);
+  
+  // IMPORTANT: Use oauth.credentials.access_token (the short-lived token)
+  // NOT the top-level access_token (which is actually the refresh token)
+  const refreshToken = connectionSettings?.settings?.oauth?.credentials?.refresh_token;
+  const accessToken = connectionSettings?.settings?.oauth?.credentials?.access_token;
+  const clientId = connectionSettings?.settings?.oauth?.credentials?.client_id;
+  const expiresIn = connectionSettings?.settings?.oauth?.credentials?.expires_in;
+  
+  if (!connectionSettings || (!accessToken || !clientId || !refreshToken)) {
+    throw new Error('Spotify not connected');
+  }
+  
+  return {accessToken, clientId, refreshToken, expiresIn};
+}
+
+// WARNING: Never cache this client.
+// Access tokens expire, so a new client must be created each time.
+// Always call this function again to get a fresh client.
+async function getUncachableSpotifyClient() {
+  const {accessToken, clientId, refreshToken, expiresIn} = await getAccessToken();
+
+  const spotify = SpotifyApi.withAccessToken(clientId, {
+    access_token: accessToken,
+    token_type: "Bearer",
+    expires_in: expiresIn || 3600,
+    refresh_token: refreshToken,
+  });
+
+  return spotify;
+}
+
 // Cache for access token
 let cachedToken: { token: string; expiresAt: number } | null = null;
 
@@ -61,6 +124,31 @@ export interface SpotifyTrackMetadata {
   album_name?: string;
 }
 
+async function fetchWithRetry(fn: () => Promise<any>, retries = 3, delay = 1000): Promise<any> {
+  for (let i = 0; i < retries; i++) {
+    try {
+      return await fn();
+    } catch (error: any) {
+      const isRateLimit = error?.status === 429 || error?.message?.includes('rate limit');
+      const isLastAttempt = i === retries - 1;
+      
+      if (isLastAttempt) {
+        throw error;
+      }
+      
+      if (isRateLimit) {
+        // For rate limits, wait longer (exponential backoff)
+        const waitTime = delay * Math.pow(2, i);
+        console.log(`⏳ Rate limited, waiting ${waitTime}ms before retry ${i + 1}/${retries}`);
+        await new Promise(resolve => setTimeout(resolve, waitTime));
+      } else {
+        // For other errors, shorter wait
+        await new Promise(resolve => setTimeout(resolve, delay));
+      }
+    }
+  }
+}
+
 export async function enrichTracksWithSpotifyData(trackIds: string[]): Promise<Map<string, SpotifyTrackMetadata>> {
   const metadata = new Map<string, SpotifyTrackMetadata>();
   
@@ -69,10 +157,11 @@ export async function enrichTracksWithSpotifyData(trackIds: string[]): Promise<M
   }
   
   try {
-    const spotify = await getSpotifyClient();
+    // Use OAuth client for user-scoped API access (album art, preview URLs)
+    const spotify = await getUncachableSpotifyClient();
     
-    // Spotify API allows fetching up to 50 tracks at once
-    const batchSize = 50;
+    // Use smaller batch size to reduce rate limit issues (20 instead of 50)
+    const batchSize = 20;
     const batches: string[][] = [];
     
     for (let i = 0; i < trackIds.length; i += batchSize) {
@@ -80,25 +169,84 @@ export async function enrichTracksWithSpotifyData(trackIds: string[]): Promise<M
     }
     
     for (const batch of batches) {
-      const normalizedIds = batch.map(id => id.replace("spotify:track:", ""));
-      const tracks = await spotify.tracks.get(normalizedIds);
-      
-      for (const track of tracks) {
-        if (track) {
-          const albumArt = track.album.images[0]?.url || null;
-          metadata.set(track.id, {
-            album_art: albumArt,
-            preview_url: track.preview_url,
-            album_name: track.album.name,
-          });
+      try {
+        const normalizedIds = batch.map(id => id.replace("spotify:track:", ""));
+        
+        // Fetch with retry logic
+        const tracks = await fetchWithRetry(() => spotify.tracks.get(normalizedIds));
+        
+        for (const track of tracks) {
+          if (track) {
+            const albumArt = track.album.images[0]?.url || null;
+            metadata.set(track.id, {
+              album_art: albumArt,
+              preview_url: track.preview_url,
+              album_name: track.album.name,
+            });
+          }
         }
+        
+        // Small delay between batches to avoid rate limits
+        if (batches.length > 1) {
+          await new Promise(resolve => setTimeout(resolve, 200));
+        }
+      } catch (error) {
+        console.error(`Error fetching batch of ${batch.length} tracks:`, error);
+        // Continue with other batches even if one fails
       }
     }
     
-    console.log(`✅ Enriched ${metadata.size} tracks with Spotify metadata`);
+    console.log(`✅ Enriched ${metadata.size}/${trackIds.length} tracks with Spotify metadata`);
   } catch (error) {
     console.error("Error fetching Spotify metadata:", error);
   }
   
   return metadata;
+}
+
+export interface CreatePlaylistParams {
+  playlistName: string;
+  playlistDescription: string;
+  trackUris: string[]; // Spotify URIs like "spotify:track:xxxxx"
+}
+
+export async function createSpotifyPlaylist(params: CreatePlaylistParams): Promise<{ playlistId: string; playlistUrl: string }> {
+  try {
+    const spotify = await getUncachableSpotifyClient();
+    
+    // Get current user profile
+    const user = await spotify.currentUser.profile();
+    
+    // Create playlist
+    const playlist = await spotify.playlists.createPlaylist(user.id, {
+      name: params.playlistName,
+      description: params.playlistDescription,
+      public: false, // Private by default
+    });
+    
+    // Add tracks to playlist (Spotify allows up to 100 tracks per request)
+    if (params.trackUris.length > 0) {
+      // Normalize URIs to ensure they have the spotify:track: prefix
+      const normalizedUris = params.trackUris.map(uri => 
+        uri.startsWith('spotify:track:') ? uri : `spotify:track:${uri}`
+      );
+      
+      // Split into batches of 100
+      const batchSize = 100;
+      for (let i = 0; i < normalizedUris.length; i += batchSize) {
+        const batch = normalizedUris.slice(i, i + batchSize);
+        await spotify.playlists.addItemsToPlaylist(playlist.id, batch);
+      }
+    }
+    
+    console.log(`✅ Created Spotify playlist "${params.playlistName}" with ${params.trackUris.length} tracks`);
+    
+    return {
+      playlistId: playlist.id,
+      playlistUrl: playlist.external_urls.spotify,
+    };
+  } catch (error: any) {
+    console.error('Error creating Spotify playlist:', error);
+    throw new Error(`Failed to create playlist: ${error.message || 'Unknown error'}`);
+  }
 }
