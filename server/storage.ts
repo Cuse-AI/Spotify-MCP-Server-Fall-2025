@@ -36,7 +36,7 @@ export class MemStorage implements IStorage {
   }
 
   async saveValidatedSong(record: ValidatedSongRecord): Promise<{ boosted: boolean }> {
-    const tapestryPath = path.join(process.cwd(), "data", "tapestry_complete.json");
+    const tapestryPath = path.join(process.cwd(), "core", "tapestry.json");
     
     if (!fs.existsSync(tapestryPath)) {
       throw new Error("Tapestry data file not found");
@@ -161,7 +161,7 @@ export class MemStorage implements IStorage {
     }
 
     // Read data files
-    const tapestryPath = path.join(process.cwd(), "data", "tapestry_complete.json");
+    const tapestryPath = path.join(process.cwd(), "core", "tapestry.json");
     const manifoldPath = path.join(process.cwd(), "data", "emotional_manifold_COMPLETE.json");
     
     if (!fs.existsSync(tapestryPath) || !fs.existsSync(manifoldPath)) {

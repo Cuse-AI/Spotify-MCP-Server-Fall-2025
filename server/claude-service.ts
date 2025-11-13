@@ -53,7 +53,7 @@ function loadTapestryData(): { tapestry: TapestryComplete; manifold: EmotionalMa
   }
 
   try {
-    const tapestryPath = path.join(process.cwd(), "data", "tapestry_complete.json");
+    const tapestryPath = path.join(process.cwd(), "core", "tapestry.json");
     const manifoldPath = path.join(process.cwd(), "data", "emotional_manifold_COMPLETE.json");
 
     if (!fs.existsSync(tapestryPath) || !fs.existsSync(manifoldPath)) {

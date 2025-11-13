@@ -66,7 +66,7 @@ Preferred communication style: Simple, everyday language.
 **Schema Location**: `shared/schema.ts` defines data models shared between client and server
 
 **Tapestry Music Data**:
-- Loaded from `data/tapestry_complete.json` (8,211 songs - recently expanded)
+- Loaded from `core/tapestry.json` (6,081 songs)
 - Loaded from `data/emotional_manifold_COMPLETE.json` (2D coordinate system)
 - Contains human-sourced music recommendations with emotional metadata
 - Includes 114 sub-vibes across 9 central emotional centers (Sad, Happy, Chill, Energy, Dark, Romantic, Night, Drive, Party)
@@ -74,6 +74,7 @@ Preferred communication style: Simple, everyday language.
 - Claude receives top 15 songs per sub-vibe (~1,710 songs) to reduce API costs while maintaining quality
 - Graceful fallback to sample playlists if data files are missing
 - **IMPORTANT**: Files are cached on server startup - restart workflow after updating Tapestry data
+- **ARCHIVE**: `data/tapestry_complete.json` contains older dataset (8,211 songs) - not currently used
 
 **Session Management**: 
 - Connect-pg-simple for PostgreSQL-backed sessions
