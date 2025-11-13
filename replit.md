@@ -20,8 +20,10 @@ Preferred communication style: Simple, everyday language.
 - Tailwind CSS for utility-first styling with custom design tokens
 - Dark mode enforced by default (`<html class="dark">`)
 - Custom color system using CSS variables for theming
-- Inter font family for clean, modern typography
+- Quicksand font (weight 600) for questions and headers - rounded, dreamy aesthetic
+- Inter font family for body text and UI
 - Design guidelines emphasize conversational intimacy with progressive disclosure
+- Cosmic purple theme with vibrant outlines and glow effects
 
 **State Management**:
 - React Query (@tanstack/react-query) for server state and API interactions
@@ -52,6 +54,7 @@ Preferred communication style: Simple, everyday language.
 - `server/routes.ts` - API route definitions
 - `server/storage.ts` - Business logic abstraction layer
 - `server/claude-service.ts` - AI integration for playlist generation
+- `server/spotify-service.ts` - Spotify API integration for album art and playlist creation
 
 **Development vs Production**:
 - Development: Vite middleware for HMR and fast refresh
@@ -92,6 +95,20 @@ Preferred communication style: Simple, everyday language.
 - "Walks the emotional manifold" using 2D coordinates and emotional compositions
 - API key required via `ANTHROPIC_API_KEY` environment variable
 - **Content Safety**: Sends only Ananki reasoning (not raw Reddit contexts) to avoid content filters
+
+**Spotify Integration**: Replit Spotify connector for playlist creation and metadata
+- **Album Artwork**: Fetches high-quality album art for all playlist tracks
+  - Batch processing (20 tracks per batch) with delays to respect rate limits
+  - Exponential backoff retry logic for handling 429 rate limit errors
+  - Graceful degradation if album art unavailable
+- **Playlist Creation**: One-click creation of Spotify playlists from generated results
+  - Creates playlist with descriptive name and emotional journey context
+  - Adds all tracks to user's Spotify library
+  - Opens created playlist in Spotify web player
+- **Authentication**: OAuth via Replit connector (access token auto-refresh)
+- **Permissions**: Playlist creation, library management, playback control
+- **API**: Uses `@spotify/web-api-ts-sdk` with fresh client instances per request
+- **Error Handling**: Robust retry logic and user-friendly error messages
 
 **Database Service**: Neon PostgreSQL (serverless)
 - Requires `DATABASE_URL` environment variable
