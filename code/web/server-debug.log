@@ -1,0 +1,6 @@
+
+> rest-express@1.0.0 dev
+> cross-env NODE_ENV=development tsx server/index.ts
+
+11:25:46 PM [express] serving on port 5000
+11:25:57 PM [express] GET /api/tapestry-stats 200 in 54ms :: {"total_tracks":6081,"total_sub_vibes":1…

@@ -1,0 +1,54 @@
+
+======================================================================
+SMART SCRAPING - NIGHT VIBES
+======================================================================
+Target: 500 songs
+Workflow: Scrape -> TRUE Ananki -> Tapestry
+======================================================================
+
+Query: 'late night music'
+  [STATUS] 1m3s | 80 total (79 unique) | 163 URLs
+  [CHECKPOINT] 100 songs saved
+  [CHECKPOINT] 100 songs saved
+  [STATUS] 2m17s | 191 total (188 unique) | 274 URLs
+  [STATUS] 3m18s | 248 total (244 unique) | 509 URLs
+  [STATUS] 4m19s | 295 total (290 unique) | 929 URLs
+  Progress: 313 songs
+
+Query: '3am songs playlist'
+  [STATUS] 5m20s | 318 total (313 unique) | 1152 URLs
+  [STATUS] 6m29s | 374 total (369 unique) | 1508 URLs
+WARNING:root:Your application has reached a rate/request limit. Retry will occur after: 76355
+ERROR:spotipy.client:HTTP Error for GET to https://api.spotify.com/v1/artists/18CJ8k3h2Rggioow01dlwP with Params: {} returned 401 due to The access token expired
+  [STATUS] 1293m8s | 388 total (381 unique) | 1641 URLs
+  [CHECKPOINT] 400 songs saved
+  [CHECKPOINT] 400 songs saved
+  [CHECKPOINT] 400 songs saved
+  [CHECKPOINT] 400 songs saved
+  [CHECKPOINT] 400 songs saved
+  [CHECKPOINT] 400 songs saved
+  [CHECKPOINT] 400 songs saved
+  [CHECKPOINT] 400 songs saved
+  [CHECKPOINT] 400 songs saved
+  [CHECKPOINT] 400 songs saved
+  [CHECKPOINT] 400 songs saved
+  [CHECKPOINT] 400 songs saved
+  [CHECKPOINT] 400 songs saved
+  [CHECKPOINT] 400 songs saved
+  [CHECKPOINT] 400 songs saved
+  [CHECKPOINT] 400 songs saved
+  [CHECKPOINT] 400 songs saved
+  [CHECKPOINT] 400 songs saved
+  [CHECKPOINT] 400 songs saved
+  [CHECKPOINT] 400 songs saved
+  [CHECKPOINT] 400 songs saved
+  [STATUS] 1294m8s | 416 total (409 unique) | 1946 URLs
+  [STATUS] 1295m9s | 473 total (465 unique) | 2303 URLs
+  [CHECKPOINT] 500 songs saved
+  Progress: 500 songs
+Traceback (most recent call last):
+  File "C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\data\reddit\smart_scrapers\scrape_night.py", line 231, in <module>
+    unique.append(r)
+    ~~~~~~~~~~~~~^^^
+  File "C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\data\reddit\smart_scrapers\scrape_night.py", line 220, in scrape_night_vibes
+NameError: name 'all_results' is not defined

@@ -1,0 +1,19 @@
+[RESUME] Found checkpoint! Loading previous progress...
+[RESUME] Continuing from 500 songs!
+
+======================================================================
+SMART SCRAPING - NIGHT VIBES
+======================================================================
+Target: 500 songs
+Workflow: Scrape -> TRUE Ananki -> Tapestry
+======================================================================
+
+Query: 'late night music'
+  Progress: 500 songs
+Traceback (most recent call last):
+  File "C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\data\reddit\smart_scrapers\scrape_night.py", line 242, in <module>
+    results = scraper.scrape_night_vibes(target_songs=500)
+  File "C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\data\reddit\smart_scrapers\scrape_night.py", line 231, in scrape_night_vibes
+    for r in all_results:
+             ^^^^^^^^^^^
+NameError: name 'all_results' is not defined

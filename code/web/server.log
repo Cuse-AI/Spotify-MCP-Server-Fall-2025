@@ -1,0 +1,62 @@
+
+> rest-express@1.0.0 dev
+> cross-env NODE_ENV=development tsx server/index.ts
+
+11:14:04 PM [express] serving on port 5000
+
+A PostCSS plugin did not pass the `from` option to `postcss.parse`. This may cause imported assets to be incorrectly transformed. If you've recently added a PostCSS plugin that raised this warning, please contact the package author to fix the issue.
+11:15:13 PM [express] GET /api/test 200 in 6ms
+
+> rest-express@1.0.0 dev
+> cross-env NODE_ENV=development tsx server/index.ts
+
+11:20:26 PM [express] serving on port 5000
+
+A PostCSS plugin did not pass the `from` option to `postcss.parse`. This may cause imported assets to be incorrectly transformed. If you've recently added a PostCSS plugin that raised this warning, please contact the package author to fix the issue.
+Error fetching Tapestry stats: Error: Tapestry data files not found
+    at MemStorage.getTapestryStats (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\server\storage.ts:168:13)
+    at <anonymous> (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\server\routes.ts:80:35)
+    at Layer.handle [as handle_request] (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\index.js:280:10)
+    at <anonymous> (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\server\index.ts:46:3)
+    at Layer.handle [as handle_request] (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\body-parser\lib\types\urlencoded.js:94:7)
+    at Layer.handle [as handle_request] (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\index.js:280:10)
+    at jsonParser (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\body-parser\lib\types\json.js:113:7)
+    at Layer.handle [as handle_request] (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\middleware\init.js:40:5)
+    at Layer.handle [as handle_request] (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\index.js:280:10)
+    at query (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\middleware\query.js:45:5)
+    at Layer.handle [as handle_request] (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\router\index.js:175:3)
+    at Function.handle (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\application.js:181:10)
+    at Server.app (C:\Users\sw13t\Desktop\Coding\CuseAI\SpotifyMSP\Spotify-MCP-Server-Fall-2025\code\web\node_modules\express\lib\express.js:39:9)
+    at Server.emit (node:events:519:28)
+    at parserOnIncoming (node:_http_server:1184:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:122:17)
+11:20:27 PM [express] GET /api/tapestry-stats 500 in 7ms :: {"message":"Tapestry data files not found…
