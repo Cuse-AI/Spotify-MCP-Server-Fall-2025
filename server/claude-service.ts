@@ -73,6 +73,60 @@ function loadTapestryData(): { tapestry: TapestryComplete; manifold: EmotionalMa
   }
 }
 
+async function identifyRelevantSubVibes(
+  journey: UserJourney,
+  manifold: EmotionalManifold
+): Promise<string[]> {
+  // Quick first pass: Ask Claude which sub-vibes are relevant
+  // This is MUCH faster than sending all songs
+  const subVibesList = Object.keys(manifold.sub_vibes).map(sv => ({
+    name: sv,
+    coords: manifold.sub_vibes[sv].coordinates,
+    composition: manifold.sub_vibes[sv].emotional_composition,
+    analysis: manifold.sub_vibes[sv].analysis
+  }));
+
+  const response = await client.messages.create({
+    model: "claude-sonnet-4-5",
+    max_tokens: 1000,
+    messages: [{
+      role: "user",
+      content: `Given this emotional journey:
+- Vibe: "${journey.vibe}"
+- Current state: "${journey.now}"
+- Desired destination: "${journey.going}"
+
+And these ${subVibesList.length} sub-vibes with their coordinates and compositions:
+${JSON.stringify(subVibesList, null, 2)}
+
+Identify 15-25 sub-vibes that are most relevant for creating a playlist journey from "${journey.now}" to "${journey.going}".
+
+Consider:
+1. Sub-vibes that match the starting emotional state
+2. Sub-vibes that match the destination
+3. Sub-vibes that form a good path between them
+4. The overall vibe "${journey.vibe}"
+
+Return ONLY a JSON array of sub-vibe names, nothing else:
+["sub-vibe-1", "sub-vibe-2", ...]`
+    }]
+  });
+
+  const content = response.content[0];
+  if (content.type === 'text') {
+    const text = content.text.trim();
+    // Extract JSON array from response
+    const match = text.match(/\[[\s\S]*\]/);
+    if (match) {
+      return JSON.parse(match[0]);
+    }
+  }
+
+  // Fallback: return all sub-vibes if parsing fails
+  console.warn("⚠️  Failed to parse relevant sub-vibes, using all");
+  return Object.keys(manifold.sub_vibes);
+}
+
 export async function generatePlaylistWithClaude(
   journey: UserJourney
 ): Promise<PlaylistResponse> {
@@ -85,11 +139,39 @@ export async function generatePlaylistWithClaude(
 
   const { tapestry, manifold } = data;
 
-  // Prepare a condensed version for Claude (just sub-vibe summaries + select sample songs)
+  // STEP 1: First pass - Ask Claude to identify relevant sub-vibes for the journey
+  console.log("🎯 Step 1: Identifying relevant sub-vibes for the journey...");
+
+  const relevantSubVibes = await identifyRelevantSubVibes(journey, manifold);
+  console.log(`✅ Found ${relevantSubVibes.length} relevant sub-vibes:`, relevantSubVibes.slice(0, 5).join(', '), '...');
+
+  // STEP 2: Load ALL songs ONLY from relevant sub-vibes
+  const relevantSongs: Record<string, any[]> = {};
+  let totalSongs = 0;
+
+  for (const subVibe of relevantSubVibes) {
+    if (tapestry.vibes[subVibe]) {
+      const songs = tapestry.vibes[subVibe].songs
+        .sort((a, b) => b.mapping_confidence - a.mapping_confidence)
+        .map(song => ({
+          artist: song.artist,
+          title: song.song,
+          spotify_uri: song.spotify_uri,
+          sub_vibe: subVibe,
+          ananki_reasoning: song.ananki_analysis
+        }));
+      relevantSongs[subVibe] = songs;
+      totalSongs += songs.length;
+    }
+  }
+
+  console.log(`📚 Loaded ${totalSongs} songs from ${relevantSubVibes.length} relevant sub-vibes (out of 6,081 total)`);
+
+  // Prepare manifest with ONLY relevant data
   const manifestSummary = {
     manifold: {
       central_vibes: manifold.central_vibes.positions,
-      sub_vibes: Object.keys(manifold.sub_vibes).map(subVibe => ({
+      sub_vibes: relevantSubVibes.map(subVibe => ({
         name: subVibe,
         coordinates: manifold.sub_vibes[subVibe].coordinates,
         emotional_composition: manifold.sub_vibes[subVibe].emotional_composition,
@@ -97,21 +179,7 @@ export async function generatePlaylistWithClaude(
         song_count: tapestry.vibes[subVibe]?.songs.length || 0
       }))
     },
-    available_songs: Object.entries(tapestry.vibes).reduce((acc, [subVibe, data]) => {
-      // Include ALL songs from the tapestry - the full human-sourced database
-      const allSongs = data.songs
-        .sort((a, b) => b.mapping_confidence - a.mapping_confidence)
-        .map(song => ({
-          artist: song.artist,
-          title: song.song,
-          spotify_uri: song.spotify_uri,
-          sub_vibe: subVibe,
-          // Use only Ananki reasoning, not raw Reddit context (cleaner for API)
-          ananki_reasoning: song.ananki_analysis
-        }));
-      acc[subVibe] = allSongs;
-      return acc;
-    }, {} as Record<string, any[]>)
+    available_songs: relevantSongs
   };
 
   const manifestJson = JSON.stringify(manifestSummary, null, 2);
