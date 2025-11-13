@@ -1,4 +1,4 @@
-# Tapestry Cosmic UI Update v2 🌌✨
+# Tapestry Cosmic UI Update v2.1 🌌✨
 
 ## Overview
 Enhanced cosmic/mystical aesthetic with dreamy rounded font (Quicksand), streamlined loading animation (no progress bar), purple-outlined results page, and updated placeholder text for emotional clarity.
@@ -29,15 +29,19 @@ Enhanced cosmic/mystical aesthetic with dreamy rounded font (Quicksand), streaml
 - Maintains clean, minimal design with cosmic touches
 
 ### 4. **Updated Placeholder Text** 📝
+**Question 1:** "What's Your Vibe?"
+- "an imaginary place, a feeling, a real location, where your mind wanders..."
+
 **Question 2:** "Where are you now?..."
-- **Old:** "describe your current emotional state, what you're feeling right now..."
 - **New:** "your current emotional state, your dream, a physical location..."
 
 **Question 3:** "...and where are you going?"
-- **Old:** "where you want to be, the feeling you're chasing, your destination..."
-- **New:** "an imagined situation, your real emotional state, or where you are physically..."
+- **New:** "an imagined situation, the emotional state you desire, the physical place you're headed..."
 
-**Why:** Clarifies that users can describe imagined situations, real emotions, OR physical locations - more flexibility and clarity.
+**Why:** 
+- Q2 clarifies current state (emotion/dream/place)
+- Q3 emphasizes future/desired state (imagined/desired/headed)
+- More intuitive flow from present to future
 
 ## Files Modified
 
@@ -63,7 +67,7 @@ Enhanced cosmic/mystical aesthetic with dreamy rounded font (Quicksand), streaml
 ### 4. `conversational-flow.tsx` (UPDATED)
 **Changes:**
 - Q2 placeholder: "your current emotional state, your dream, a physical location..."
-- Q3 placeholder: "an imagined situation, your real emotional state, or where you are physically..."
+- Q3 placeholder: "an imagined situation, the emotional state you desire, the physical place you're headed..."
 
 ### 5. `playlist-results.tsx` (UPDATED)
 **Changes:**
@@ -124,7 +128,8 @@ cosmic-ui-update/index.html                    → code/web/client/
 ✅ Results page has purple outlines on cards
 ✅ Cosmic background visible on results page
 ✅ Input box still has purple glow
-✅ Placeholder text updated for Q2 and Q3
+✅ Q2 placeholder: "your current emotional state, your dream, a physical location..."
+✅ Q3 placeholder: "an imagined situation, the emotional state you desire, the physical place you're headed..."
 ✅ Bottom reasoning section has purple outlines
 
 ## Cross-Platform Compatibility

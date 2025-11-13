@@ -25,7 +25,7 @@ const QUESTIONS = [
   {
     id: 3,
     text: "...and where are you going?",
-    placeholder: "an imagined situation, your real emotional state, or where you are physically...",
+    placeholder: "an imagined situation, the emotional state you desire, the physical place you're headed...",
     key: "going" as keyof UserJourney,
   },
 ];
