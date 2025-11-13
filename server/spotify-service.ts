@@ -1,58 +1,55 @@
 import { SpotifyApi } from "@spotify/web-api-ts-sdk";
 
-let connectionSettings: any;
+// Cache for access token
+let cachedToken: { token: string; expiresAt: number } | null = null;
 
-async function getAccessToken() {
-  if (connectionSettings && connectionSettings.settings.expires_at && new Date(connectionSettings.settings.expires_at).getTime() > Date.now()) {
-    // Return full credentials from cache
-    const refreshToken = connectionSettings?.settings?.oauth?.credentials?.refresh_token;
-    const accessToken = connectionSettings?.settings?.access_token || connectionSettings.settings?.oauth?.credentials?.access_token;
-    const clientId = connectionSettings?.settings?.oauth?.credentials?.client_id;
-    const expiresIn = connectionSettings.settings?.oauth?.credentials?.expires_in;
-    return {accessToken, clientId, refreshToken, expiresIn};
-  }
-  
-  const hostname = process.env.REPLIT_CONNECTORS_HOSTNAME;
-  const xReplitToken = process.env.REPL_IDENTITY 
-    ? 'repl ' + process.env.REPL_IDENTITY 
-    : process.env.WEB_REPL_RENEWAL 
-    ? 'depl ' + process.env.WEB_REPL_RENEWAL 
-    : null;
-
-  if (!xReplitToken) {
-    throw new Error('X_REPLIT_TOKEN not found for repl/depl');
+async function getClientCredentialsToken(): Promise<string> {
+  // Check if we have a valid cached token
+  if (cachedToken && cachedToken.expiresAt > Date.now()) {
+    return cachedToken.token;
   }
 
-  connectionSettings = await fetch(
-    'https://' + hostname + '/api/v2/connection?include_secrets=true&connector_names=spotify',
-    {
-      headers: {
-        'Accept': 'application/json',
-        'X_REPLIT_TOKEN': xReplitToken
-      }
-    }
-  ).then(res => res.json()).then(data => data.items?.[0]);
-  
-  const refreshToken = connectionSettings?.settings?.oauth?.credentials?.refresh_token;
-  const accessToken = connectionSettings?.settings?.access_token || connectionSettings.settings?.oauth?.credentials?.access_token;
-  const clientId = connectionSettings?.settings?.oauth?.credentials?.client_id;
-  const expiresIn = connectionSettings.settings?.oauth?.credentials?.expires_in;
-  
-  if (!connectionSettings || (!accessToken || !clientId || !refreshToken)) {
-    throw new Error('Spotify not connected');
+  const clientId = process.env.SPOTIFY_CLIENT_ID;
+  const clientSecret = process.env.SPOTIFY_CLIENT_SECRET;
+
+  if (!clientId || !clientSecret) {
+    throw new Error('Spotify credentials not configured');
   }
+
+  // Request access token using Client Credentials flow
+  const response = await fetch('https://accounts.spotify.com/api/token', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+      'Authorization': 'Basic ' + Buffer.from(clientId + ':' + clientSecret).toString('base64'),
+    },
+    body: 'grant_type=client_credentials',
+  });
+
+  if (!response.ok) {
+    throw new Error(`Spotify authentication failed: ${response.statusText}`);
+  }
+
+  const data = await response.json();
   
-  return {accessToken, clientId, refreshToken, expiresIn};
+  // Cache the token (expires in 1 hour, cache for 50 minutes to be safe)
+  cachedToken = {
+    token: data.access_token,
+    expiresAt: Date.now() + (50 * 60 * 1000),
+  };
+
+  return data.access_token;
 }
 
-async function getUncachableSpotifyClient() {
-  const {accessToken, clientId, refreshToken, expiresIn} = await getAccessToken();
+async function getSpotifyClient() {
+  const accessToken = await getClientCredentialsToken();
+  const clientId = process.env.SPOTIFY_CLIENT_ID!;
 
   const spotify = SpotifyApi.withAccessToken(clientId, {
     access_token: accessToken,
     token_type: "Bearer",
-    expires_in: expiresIn || 3600,
-    refresh_token: refreshToken,
+    expires_in: 3600,
+    refresh_token: "",
   });
 
   return spotify;
@@ -72,7 +69,7 @@ export async function enrichTracksWithSpotifyData(trackIds: string[]): Promise<M
   }
   
   try {
-    const spotify = await getUncachableSpotifyClient();
+    const spotify = await getSpotifyClient();
     
     // Spotify API allows fetching up to 50 tracks at once
     const batchSize = 50;
