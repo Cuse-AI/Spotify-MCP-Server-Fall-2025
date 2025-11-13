@@ -1,0 +1,59 @@
+{
+  "meta_vibe": "Happy",
+  "songs": [
+    {
+      "artist": "HRVY",
+      "song": "Million Ways",
+      "spotify_id": "3wuR0YSNdT9rgWfFi1lctv",
+      "spotify_uri": "spotify:track:3wuR0YSNdT9rgWfFi1lctv",
+      "source_url": "https://youtube.com/watch?v=00AhT7bSJX0",
+      "source": "youtube",
+      "post_title": "Best Happy and Upbeat Songs - YouTube Playlist 2025",
+      "comment_text": "can we just appreciate how good loren played this role",
+      "comment_score": 7868,
+      "playlist_id": "PLgzTt0k8mXzF2fleyxQ17JxeccHFC8Gxp"
+    },
+    {
+      "artist": "The Fray",
+      "song": "You Found Me",
+      "spotify_id": "4IoYz8XqqdowINzfRrFnhi",
+      "spotify_uri": "spotify:track:4IoYz8XqqdowINzfRrFnhi",
+      "source_url": "https://youtube.com/watch?v=jFg_8u87zT0",
+      "source": "youtube",
+      "post_title": "happy/motivational songs",
+      "comment_text": "\"Mierda, Weigel. ¿Donde estuviste todo este tiempo?\"🌈⃤",
+      "comment_score": 4255,
+      "playlist_id": "PLhGO2bt0EkwvRUioaJMLxrMNhU44lRWg8"
+    },
+    {
+      "artist": "Rick Ross",
+      "song": "Presidential",
+      "spotify_id": "2AXZZGmN4cqUAsSQ7jeTT6",
+      "spotify_uri": "spotify:track:2AXZZGmN4cqUAsSQ7jeTT6",
+      "source_url": "https://youtube.com/watch?v=TQQ6SfPZggw",
+      "source": "youtube",
+      "post_title": "Top 40 Feel Good Songs of the 90s",
+      "comment_text": "Some songs are just put together right... This is one of them.",
+      "comment_score": 31,
+      "playlist_id": "PL7F41CFCC10B62896"
+    },
+    {
+      "artist": "Kid Cudi",
+      "song": "Erase Me - Main",
+      "spotify_id": "6XkuklKiHYVTlVvWlTgQYP",
+      "spotify_uri": "spotify:track:6XkuklKiHYVTlVvWlTgQYP",
+      "source_url": "https://youtube.com/watch?v=dLxpNiF0YKs",
+      "source": "youtube",
+      "post_title": "Sunshine music",
+      "comment_text": "I was always a HUGE REM fan from the early 80's. I got married in 92 when I was 33. This album came out a week before our wedding. We drove out to Calfornia, we live in Iowa. 2 weeks. This played (AUTOMATIC FOR THE PEOPLE) about half the time we were in the car. My wife passed away about 5 years ago. Still think of her deeply when I hear any of this album. Especially NIGHT SWIMMING. Miss you Teresa.",
+      "comment_score": 11859,
+      "playlist_id": "PLpeqmYkYtN32A3LHz67yWUwRyl4sEj4I0"
+    }
+  ],
+  "deduplication_stats": {
+    "original_count": 289,
+    "new_count": 4,
+    "duplicates_in_tapestry": 284,
+    "duplicates_in_batch": 1
+  }
+}
