@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 
 const LOADING_MESSAGES = [
   "preparing the crystal ball...",
-  "consulting the cosmic tapestry...",
-  "reading the emotional stars...",
+  "consulting the cosmic entities...",
+  "I hope you enjoy your trip:} -sw13tch...",
   "weaving your sonic journey...",
   "channeling the musical vibrations...",
-  "aligning the celestial playlist...",
+  "aligning the stars...",
   "walking through dimensions...",
   "decoding your emotional frequency...",
   "manifesting the perfect vibes...",
