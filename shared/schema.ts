@@ -23,6 +23,12 @@ export interface TapestrySong {
     x: number;
     y: number;
   };
+  // Extrapolation fields (for Claude-suggested songs beyond Tapestry)
+  extrapolated?: boolean;
+  manifold_x?: number;
+  manifold_y?: number;
+  emotional_composition?: Record<string, number>;
+  nearby_tapestry_songs?: string[];
 }
 
 // Playlist Response

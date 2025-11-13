@@ -124,6 +124,15 @@ The Tapestry is a 2D emotional manifold mapping ${manifold.metadata.total_sub_vi
 
 Each sub-vibe has x,y coordinates and is a weighted composition of central vibes. Songs are mapped using TRUE Ananki - AI analysis of human-sourced Reddit discussions, NOT keyword matching.
 
+**EXTRAPOLATION MODE**: You may extrapolate beyond the provided Tapestry songs by using your music knowledge to suggest songs that fit the manifold math. Requirements for extrapolated songs:
+1. You MUST calculate and provide exact x,y coordinates on the manifold
+2. You MUST specify the emotional composition (% of each central vibe)
+3. You MUST name 2-3 nearby Tapestry songs from the manifest to anchor the extrapolation
+4. You MUST explain the manifold reasoning (not just genre/keywords)
+5. Mark with "extrapolated": true
+
+Aim for 60-70% Tapestry songs + 30-40% extrapolated songs to balance human-sourced data with expanded discovery.
+
 Your task: Create an emotional journey by walking the manifold from the user's current state to their desired destination.`;
 
   try {
@@ -155,9 +164,11 @@ Your task: Create an emotional journey by walking the manifold from the user's c
 Instructions:
 1. Analyze the emotional arc: identify starting sub-vibe(s) near "${journey.now}" and destination sub-vibe(s) near "${journey.going}"
 2. Use the 2D coordinates and emotional compositions to plot a path through the manifold
-3. Select 8-12 songs that create a smooth progression across sub-vibes
-4. Prioritize songs with strong Reddit context and Ananki reasoning
-5. Consider the overall vibe "${journey.vibe}" as the journey's emotional character
+3. Select 10-12 songs total: ~60-70% from Tapestry manifest, ~30-40% extrapolated from your music knowledge
+4. For Tapestry songs: Use those with strong Ananki reasoning that match the path
+5. For extrapolated songs: Calculate manifold position, specify emotional composition, and name nearby Tapestry songs
+6. Consider the overall vibe "${journey.vibe}" as the journey's emotional character
+7. Create a smooth progression - don't just dump extrapolated songs at the end
 
 Return ONLY a JSON object (no markdown, no extra text):
 {
@@ -171,11 +182,21 @@ Return ONLY a JSON object (no markdown, no extra text):
       "sub_vibe": "Sub-Vibe Name",
       "meta_vibe": "Central Vibe",
       "confidence": 0.95,
-      "reddit_context": "Brief context from Reddit",
-      "ananki_reasoning": "Why this song fits this moment in the journey"
+      "reddit_context": "Brief context from Reddit or user validation",
+      "ananki_reasoning": "Why this song fits this moment in the journey",
+      "extrapolated": false,
+      "manifold_x": 0.23,
+      "manifold_y": -0.45,
+      "emotional_composition": {"Chill": 60, "Sad": 25, "Night": 15},
+      "nearby_tapestry_songs": ["Artist - Song", "Artist - Song"]
     }
   ]
-}`,
+}
+
+Notes:
+- For Tapestry songs: extrapolated=false, you can omit manifold coordinates and nearby songs
+- For extrapolated songs: extrapolated=true, MUST include manifold_x, manifold_y, emotional_composition, nearby_tapestry_songs
+- Intersperse extrapolated songs throughout the journey, not just at beginning/end`,
         },
       ],
     });
