@@ -71,7 +71,7 @@ Preferred communication style: Simple, everyday language.
 - Contains human-sourced music recommendations with emotional metadata
 - Includes 114 sub-vibes across 9 central emotional centers (Sad, Happy, Chill, Energy, Dark, Romantic, Night, Drive, Party)
 - Each song includes Reddit context and Ananki reasoning (Claude-analyzed emotional context)
-- Claude receives top 15 songs per sub-vibe (~1,710 songs) to reduce API costs while maintaining quality
+- Claude receives ALL songs from the full Tapestry database (6,081 songs) to maximize human-sourced data quality
 - Graceful fallback to sample playlists if data files are missing
 - **IMPORTANT**: Files are cached on server startup - restart workflow after updating Tapestry data
 - **ARCHIVE**: `data/tapestry_complete.json` contains older dataset (8,211 songs) - not currently used

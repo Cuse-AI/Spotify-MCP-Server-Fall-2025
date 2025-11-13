@@ -98,10 +98,9 @@ export async function generatePlaylistWithClaude(
       }))
     },
     available_songs: Object.entries(tapestry.vibes).reduce((acc, [subVibe, data]) => {
-      // For each sub-vibe, include top songs (by confidence)
-      const topSongs = data.songs
+      // Include ALL songs from the tapestry - the full human-sourced database
+      const allSongs = data.songs
         .sort((a, b) => b.mapping_confidence - a.mapping_confidence)
-        .slice(0, 15) // Top 15 songs per sub-vibe for Claude to choose from
         .map(song => ({
           artist: song.artist,
           title: song.song,
@@ -110,7 +109,7 @@ export async function generatePlaylistWithClaude(
           // Use only Ananki reasoning, not raw Reddit context (cleaner for API)
           ananki_reasoning: song.ananki_analysis
         }));
-      acc[subVibe] = topSongs;
+      acc[subVibe] = allSongs;
       return acc;
     }, {} as Record<string, any[]>)
   };
