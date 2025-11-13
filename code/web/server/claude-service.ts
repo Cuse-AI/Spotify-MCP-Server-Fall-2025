@@ -53,8 +53,9 @@ function loadTapestryData(): { tapestry: TapestryComplete; manifold: EmotionalMa
   }
 
   try {
-    const tapestryPath = path.join(process.cwd(), "core", "tapestry.json");
-    const manifoldPath = path.join(process.cwd(), "data", "emotional_manifold_COMPLETE.json");
+    // Navigate up from code/web to project root
+    const tapestryPath = path.join(process.cwd(), "..", "..", "core", "tapestry.json");
+    const manifoldPath = path.join(process.cwd(), "..", "..", "data", "emotional_manifold_COMPLETE.json");
 
     if (!fs.existsSync(tapestryPath) || !fs.existsSync(manifoldPath)) {
       console.warn("⚠️  Tapestry data files not found");
