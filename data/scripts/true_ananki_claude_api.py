@@ -10,7 +10,9 @@ from pathlib import Path
 from anthropic import Anthropic
 from dotenv import load_dotenv
 
-load_dotenv()
+# Load .env from the reddit directory (where API keys are stored)
+env_path = Path(__file__).parent.parent / 'reddit' / '.env'
+load_dotenv(dotenv_path=env_path)
 
 class TrueAnankiClaudeAPI:
     def __init__(self):
