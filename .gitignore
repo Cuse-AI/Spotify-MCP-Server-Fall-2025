@@ -4,3 +4,27 @@ dist
 server/public
 vite.config.ts.*
 *.tar.gz
+
+# Environment variables - NEVER commit these!
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs
+*.log
+debug*.log
+server*.log
+
+# Backups and archives
+backups/
+archive/expansion_batches/
+archive/old_processing_files/
+archive/old_tapestries/
