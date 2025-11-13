@@ -29,6 +29,10 @@ export interface TapestrySong {
   manifold_y?: number;
   emotional_composition?: Record<string, number>;
   nearby_tapestry_songs?: string[];
+  // Spotify metadata
+  album_art?: string;
+  preview_url?: string;
+  album_name?: string;
 }
 
 // Playlist Response

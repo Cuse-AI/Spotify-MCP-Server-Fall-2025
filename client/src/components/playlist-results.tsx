@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import type { PlaylistResponse, TapestrySong, UserJourney } from "@shared/schema";
-import { Music2, ThumbsUp, ThumbsDown } from "lucide-react";
+import { Music2, ThumbsUp, ThumbsDown, Play, Pause } from "lucide-react";
 import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 interface PlaylistResultsProps {
   data: PlaylistResponse;
@@ -15,6 +15,37 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
   const { toast } = useToast();
   const [validatedSongs, setValidatedSongs] = useState<Set<string>>(new Set());
   const [downvotedSongs, setDownvotedSongs] = useState<Set<string>>(new Set());
+  const [playingTrackId, setPlayingTrackId] = useState<string | null>(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  const handlePlayPreview = (trackId: string, previewUrl: string) => {
+    if (playingTrackId === trackId) {
+      // Pause current track
+      audioRef.current?.pause();
+      setPlayingTrackId(null);
+    } else {
+      // Stop any currently playing track
+      audioRef.current?.pause();
+      
+      // Play new track
+      const audio = new Audio(previewUrl);
+      audioRef.current = audio;
+      audio.play();
+      setPlayingTrackId(trackId);
+      
+      // Reset when track ends
+      audio.addEventListener('ended', () => {
+        setPlayingTrackId(null);
+      });
+    }
+  };
+
+  // Cleanup audio on unmount
+  useEffect(() => {
+    return () => {
+      audioRef.current?.pause();
+    };
+  }, []);
 
   const handleValidateSong = async (song: TapestrySong) => {
     try {
@@ -130,15 +161,47 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
               const isValidated = validatedSongs.has(song.track_id);
               const isDownvoted = downvotedSongs.has(song.track_id);
               
+              const isPlaying = playingTrackId === song.track_id;
+              
               return (
                 <div
                   key={`${song.track_id}-${index}`}
                   className="flex items-center gap-4 p-4 hover-elevate transition-all relative"
                   data-testid={`song-item-${index}`}
                 >
-                  <div className="flex-shrink-0 w-12 h-12 bg-card-border rounded flex items-center justify-center">
-                    <Music2 className="w-5 h-5 text-muted-foreground" />
+                  {/* Album cover or placeholder */}
+                  <div className="flex-shrink-0 w-16 h-16 rounded overflow-hidden bg-card-border relative group">
+                    {song.album_art ? (
+                      <>
+                        <img 
+                          src={song.album_art} 
+                          alt={`${song.title} album cover`}
+                          className="w-full h-full object-cover"
+                          data-testid={`img-album-${index}`}
+                        />
+                        {/* Play button overlay on album cover */}
+                        {song.preview_url && (
+                          <button
+                            onClick={() => handlePlayPreview(song.track_id, song.preview_url!)}
+                            className="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+                            data-testid={`button-preview-${index}`}
+                            title={isPlaying ? "Pause preview" : "Play preview"}
+                          >
+                            {isPlaying ? (
+                              <Pause className="w-6 h-6 text-white" fill="white" />
+                            ) : (
+                              <Play className="w-6 h-6 text-white" fill="white" />
+                            )}
+                          </button>
+                        )}
+                      </>
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center">
+                        <Music2 className="w-6 h-6 text-muted-foreground" />
+                      </div>
+                    )}
                   </div>
+                  
                   <div className="flex-1 min-w-0 pr-20">
                     <h3 className="font-medium truncate" data-testid={`text-song-title-${index}`}>
                       {song.title}

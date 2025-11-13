@@ -1,5 +1,6 @@
 import type { UserJourney, PlaylistResponse, ValidatedSongRecord, TapestrySong } from "@shared/schema";
 import { generatePlaylistWithClaude } from "./claude-service";
+import { enrichTracksWithSpotifyData } from "./spotify-service";
 import * as fs from "fs";
 import * as path from "path";
 
@@ -12,8 +13,25 @@ export interface IStorage {
 export class MemStorage implements IStorage {
   
   async generatePlaylist(journey: UserJourney): Promise<PlaylistResponse> {
-    // Use the real Claude API integration
-    return await generatePlaylistWithClaude(journey);
+    // Get playlist from Claude
+    const playlist = await generatePlaylistWithClaude(journey);
+    
+    // Enrich with Spotify metadata (album art, previews)
+    const trackIds = playlist.songs.map(s => s.track_id);
+    const spotifyMetadata = await enrichTracksWithSpotifyData(trackIds);
+    
+    // Add Spotify data to each song
+    playlist.songs = playlist.songs.map(song => {
+      const metadata = spotifyMetadata.get(song.track_id.replace("spotify:track:", ""));
+      return {
+        ...song,
+        album_art: metadata?.album_art || undefined,
+        preview_url: metadata?.preview_url || undefined,
+        album_name: metadata?.album_name,
+      };
+    });
+    
+    return playlist;
   }
 
   async saveValidatedSong(record: ValidatedSongRecord): Promise<{ boosted: boolean }> {
