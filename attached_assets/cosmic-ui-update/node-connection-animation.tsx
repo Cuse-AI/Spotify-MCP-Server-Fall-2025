@@ -14,23 +14,14 @@ const LOADING_MESSAGES = [
 
 export function NodeConnectionAnimation() {
   const [messageIndex, setMessageIndex] = useState(0);
-  const [progress, setProgress] = useState(0);
 
   useEffect(() => {
     const messageInterval = setInterval(() => {
       setMessageIndex((prev) => (prev + 1) % LOADING_MESSAGES.length);
     }, 2500);
 
-    const progressInterval = setInterval(() => {
-      setProgress((prev) => {
-        if (prev >= 100) return 0;
-        return prev + 0.5;
-      });
-    }, 50);
-
     return () => {
       clearInterval(messageInterval);
-      clearInterval(progressInterval);
     };
   }, []);
 
@@ -128,15 +119,6 @@ export function NodeConnectionAnimation() {
           >
             {LOADING_MESSAGES[messageIndex]}
           </p>
-        </div>
-
-        <div className="mt-6 w-full max-w-xs mx-auto">
-          <div className="h-1 bg-purple-950/30 rounded-full overflow-hidden">
-            <div
-              className="h-full bg-gradient-to-r from-purple-500 to-purple-400 rounded-full transition-all duration-300 ease-out"
-              style={{ width: `${Math.min(progress, 95)}%` }}
-            />
-          </div>
         </div>
       </div>
     </div>

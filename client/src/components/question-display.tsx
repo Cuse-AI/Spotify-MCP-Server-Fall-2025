@@ -24,13 +24,13 @@ export function QuestionDisplay({ question, isVisible }: QuestionDisplayProps) {
 
   return (
     <h1
-      className={`text-center text-4xl md:text-6xl font-black tracking-tight transition-opacity duration-300 ${
+      className={`text-center text-3xl md:text-5xl font-bold tracking-tight transition-opacity duration-300 ${
         fade ? "opacity-100" : "opacity-0"
       }`}
       style={{ 
-        letterSpacing: "-0.03em",
-        fontFamily: "'Space Grotesk', 'Inter', sans-serif",
-        fontWeight: 800
+        letterSpacing: "-0.01em",
+        fontFamily: "'Quicksand', 'Inter', sans-serif",
+        fontWeight: 600
       }}
       data-testid="text-current-question"
     >

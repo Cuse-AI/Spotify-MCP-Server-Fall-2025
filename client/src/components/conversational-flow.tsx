@@ -19,13 +19,13 @@ const QUESTIONS = [
   {
     id: 2,
     text: "Where are you now?...",
-    placeholder: "describe your current emotional state, what you're feeling right now...",
+    placeholder: "your current emotional state, your dream, a physical location...",
     key: "now" as keyof UserJourney,
   },
   {
     id: 3,
     text: "...and where are you going?",
-    placeholder: "where you want to be, the feeling you're chasing, your destination...",
+    placeholder: "an imagined situation, your real emotional state, or where you are physically...",
     key: "going" as keyof UserJourney,
   },
 ];
