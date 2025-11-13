@@ -167,11 +167,22 @@ export async function generatePlaylistWithClaude(
 
   console.log(`📚 Loaded ${totalSongs} songs from ${relevantSubVibes.length} relevant sub-vibes (out of 6,081 total)`);
 
+  // Filter out any sub-vibes that don't exist in the manifold (Claude might hallucinate names)
+  const validSubVibes = relevantSubVibes.filter(subVibe => {
+    if (!manifold.sub_vibes[subVibe]) {
+      console.warn(`⚠️  Sub-vibe "${subVibe}" returned by Claude but not found in manifold`);
+      return false;
+    }
+    return true;
+  });
+
+  console.log(`✅ Validated ${validSubVibes.length} sub-vibes exist in manifold`);
+
   // Prepare manifest with ONLY relevant data
   const manifestSummary = {
     manifold: {
       central_vibes: manifold.central_vibes.positions,
-      sub_vibes: relevantSubVibes.map(subVibe => ({
+      sub_vibes: validSubVibes.map(subVibe => ({
         name: subVibe,
         coordinates: manifold.sub_vibes[subVibe].coordinates,
         emotional_composition: manifold.sub_vibes[subVibe].emotional_composition,
