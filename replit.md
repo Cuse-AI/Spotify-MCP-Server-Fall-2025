@@ -66,11 +66,13 @@ Preferred communication style: Simple, everyday language.
 **Schema Location**: `shared/schema.ts` defines data models shared between client and server
 
 **Tapestry Music Data**:
-- Expected to be loaded from `data/tapestry_VALIDATED_ONLY.json`
+- Loaded from `data/tapestry_complete.json` (3,870+ songs)
+- Loaded from `data/emotional_manifold_COMPLETE.json` (2D coordinate system)
 - Contains human-sourced music recommendations with emotional metadata
-- Includes 114 sub-vibes and higher-level meta-vibe categories
-- Each song includes Reddit context and emotional reasoning
-- Currently supports fallback to sample playlists if data file is missing
+- Includes 114 sub-vibes across 9 central emotional centers (Sad, Happy, Chill, Energy, Dark, Romantic, Night, Drive, Party)
+- Each song includes Reddit context and Ananki reasoning (Claude-analyzed emotional context)
+- Graceful fallback to sample playlists if data files are missing
+- **IMPORTANT**: Files are cached on server startup - restart workflow after updating Tapestry data
 
 **Session Management**: 
 - Connect-pg-simple for PostgreSQL-backed sessions
@@ -79,10 +81,15 @@ Preferred communication style: Simple, everyday language.
 ### External Dependencies
 
 **AI Service**: Anthropic Claude API for intelligent playlist generation
-- Uses prompt caching for efficient processing of large tapestry dataset
+- **Model**: Claude Sonnet 4.5 (`claude-sonnet-4-5`)
+- **Prompt Caching**: Caches 83K+ tokens (condensed Tapestry manifest) for 90% cost reduction
+- **First request**: ~45 seconds (creates cache), subsequent requests: ~5-10 seconds
+- **Cost**: ~$0.02 per playlist generation with caching
 - Analyzes user journey (3 questions) against emotional music database
-- Generates playlist with explanations and emotional arc descriptions
+- Generates 8-12 songs with explanations and emotional arc descriptions
+- "Walks the emotional manifold" using 2D coordinates and emotional compositions
 - API key required via `ANTHROPIC_API_KEY` environment variable
+- **Content Safety**: Sends only Ananki reasoning (not raw Reddit contexts) to avoid content filters
 
 **Database Service**: Neon PostgreSQL (serverless)
 - Requires `DATABASE_URL` environment variable

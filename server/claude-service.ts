@@ -107,7 +107,7 @@ export async function generatePlaylistWithClaude(
           title: song.song,
           spotify_uri: song.spotify_uri,
           sub_vibe: subVibe,
-          reddit_context: song.full_context.slice(0, 200), // Truncated context
+          // Use only Ananki reasoning, not raw Reddit context (cleaner for API)
           ananki_reasoning: song.ananki_analysis
         }));
       acc[subVibe] = topSongs;
@@ -130,7 +130,7 @@ Your task: Create an emotional journey by walking the manifold from the user's c
     console.log("🎵 Calling Claude to walk the Tapestry manifold...");
     
     const response = await client.messages.create({
-      model: "claude-3-5-sonnet-20241022",
+      model: "claude-sonnet-4-5",
       max_tokens: 4096,
       system: [
         {
