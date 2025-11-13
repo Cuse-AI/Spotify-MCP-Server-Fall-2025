@@ -35,13 +35,41 @@ export async function registerRoutes(app: Express): Promise<Server> {
         source: "user_validated" as const,
       };
       
-      await storage.saveValidatedSong(record);
+      const result = await storage.saveValidatedSong(record);
       
-      res.json({ success: true, message: "Song added to Tapestry!" });
+      res.json({ 
+        success: true, 
+        message: result?.boosted ? "Confidence boosted!" : "Song added to Tapestry!",
+        boosted: result?.boosted || false
+      });
     } catch (error: any) {
       console.error("Error validating song:", error);
       res.status(400).json({ 
         message: error.message || "Failed to validate song" 
+      });
+    }
+  });
+
+  // Downvote Song API - saves flagged songs to user_downvotes.json
+  app.post("/api/downvote-song", async (req, res) => {
+    try {
+      const downvoteData = userValidatedSongSchema.parse(req.body);
+      
+      // Create the record with timestamp
+      const record = {
+        song: downvoteData.song,
+        user_journey: downvoteData.user_journey,
+        validated_at: new Date().toISOString(),
+        source: "user_validated" as const,
+      };
+      
+      await storage.saveDownvotedSong(record);
+      
+      res.json({ success: true, message: "Feedback recorded!" });
+    } catch (error: any) {
+      console.error("Error downvoting song:", error);
+      res.status(400).json({ 
+        message: error.message || "Failed to record feedback" 
       });
     }
   });

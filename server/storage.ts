@@ -5,7 +5,8 @@ import * as path from "path";
 
 export interface IStorage {
   generatePlaylist(journey: UserJourney): Promise<PlaylistResponse>;
-  saveValidatedSong(record: ValidatedSongRecord): Promise<void>;
+  saveValidatedSong(record: ValidatedSongRecord): Promise<{ boosted: boolean }>;
+  saveDownvotedSong(record: ValidatedSongRecord): Promise<void>;
 }
 
 export class MemStorage implements IStorage {
@@ -15,7 +16,7 @@ export class MemStorage implements IStorage {
     return await generatePlaylistWithClaude(journey);
   }
 
-  async saveValidatedSong(record: ValidatedSongRecord): Promise<void> {
+  async saveValidatedSong(record: ValidatedSongRecord): Promise<{ boosted: boolean }> {
     const tapestryPath = path.join(process.cwd(), "data", "tapestry_complete.json");
     
     if (!fs.existsSync(tapestryPath)) {
@@ -33,36 +34,99 @@ export class MemStorage implements IStorage {
       tapestry.vibes[subVibe] = { songs: [] };
     }
     
-    // Create the song entry with user validation context
-    const songEntry = {
+    // Normalize IDs for comparison (handle both "spotify:track:XXX" and plain "XXX")
+    const normalizeSpotifyId = (id: string) => id.replace("spotify:track:", "");
+    const searchId = normalizeSpotifyId(record.song.track_id);
+    
+    // Check if song already exists in Tapestry
+    const existingIndex = tapestry.vibes[subVibe]?.songs.findIndex(
+      (s: any) => normalizeSpotifyId(s.spotify_uri || s.spotify_id || "") === searchId
+    );
+    
+    if (existingIndex !== undefined && existingIndex >= 0) {
+      // Song exists - boost confidence score
+      const existingSong = tapestry.vibes[subVibe].songs[existingIndex];
+      const confidenceBoost = 0.05; // 5% boost per validation
+      const newConfidence = Math.min(0.99, existingSong.mapping_confidence + confidenceBoost);
+      
+      tapestry.vibes[subVibe].songs[existingIndex] = {
+        ...existingSong,
+        mapping_confidence: newConfidence,
+        last_validated: record.validated_at,
+        validation_count: (existingSong.validation_count || 0) + 1,
+      };
+      
+      fs.writeFileSync(tapestryPath, JSON.stringify(tapestry, null, 2));
+      console.log(`⬆️  Boosted confidence for "${record.song.artist} - ${record.song.title}": ${(existingSong.mapping_confidence * 100).toFixed(0)}% → ${(newConfidence * 100).toFixed(0)}%`);
+      return { boosted: true };
+    } else {
+      // New extrapolated song - add to Tapestry
+      const songEntry = {
+        artist: record.song.artist,
+        song: record.song.title,
+        spotify_id: record.song.track_id.replace("spotify:track:", ""),
+        spotify_uri: record.song.track_id,
+        full_context: `User-validated song from journey: "${record.user_journey.vibe}" (${record.user_journey.now} → ${record.user_journey.going})`,
+        ananki_analysis: record.song.ananki_reasoning || "User-validated as perfect fit for their emotional journey",
+        mapped_subvibe: subVibe,
+        mapping_confidence: record.song.confidence,
+        source: "user_validated",
+        validated_at: record.validated_at,
+        validation_count: 1,
+        manifold_x: record.song.manifold_x,
+        manifold_y: record.song.manifold_y,
+        emotional_composition: record.song.emotional_composition,
+      };
+      
+      tapestry.vibes[subVibe].songs.push(songEntry);
+      fs.writeFileSync(tapestryPath, JSON.stringify(tapestry, null, 2));
+      console.log(`✅ Added validated song to Tapestry: ${record.song.artist} - ${record.song.title} (${subVibe})`);
+      return { boosted: false };
+    }
+  }
+
+  async saveDownvotedSong(record: ValidatedSongRecord): Promise<void> {
+    const downvotesPath = path.join(process.cwd(), "data", "user_downvotes.json");
+    
+    // Create downvotes file if it doesn't exist
+    let downvotes: any = { songs: [] };
+    if (fs.existsSync(downvotesPath)) {
+      downvotes = JSON.parse(fs.readFileSync(downvotesPath, "utf-8"));
+    }
+
+    // Create the downvote entry
+    const downvoteEntry = {
       artist: record.song.artist,
       song: record.song.title,
       spotify_id: record.song.track_id.replace("spotify:track:", ""),
       spotify_uri: record.song.track_id,
-      full_context: `User-validated song from journey: "${record.user_journey.vibe}" (${record.user_journey.now} → ${record.user_journey.going})`,
-      ananki_analysis: record.song.ananki_reasoning || "User-validated as perfect fit for their emotional journey",
-      mapped_subvibe: subVibe,
-      mapping_confidence: record.song.confidence,
-      source: "user_validated",
-      validated_at: record.validated_at,
+      sub_vibe: record.song.sub_vibe,
+      meta_vibe: record.song.meta_vibe,
+      confidence: record.song.confidence,
+      user_journey: {
+        vibe: record.user_journey.vibe,
+        now: record.user_journey.now,
+        going: record.user_journey.going,
+      },
+      reason: "User flagged as poor match for their emotional journey",
+      downvoted_at: record.validated_at,
       manifold_x: record.song.manifold_x,
       manifold_y: record.song.manifold_y,
       emotional_composition: record.song.emotional_composition,
+      extrapolated: record.song.extrapolated,
     };
-    
-    // Add to tapestry (avoid duplicates)
-    const exists = tapestry.vibes[subVibe].songs.some(
-      (s: any) => s.spotify_uri === songEntry.spotify_uri
+
+    // Check for duplicates
+    const exists = downvotes.songs.some(
+      (s: any) => s.spotify_uri === downvoteEntry.spotify_uri
     );
-    
+
     if (!exists) {
-      tapestry.vibes[subVibe].songs.push(songEntry);
-      
-      // Write back to file
-      fs.writeFileSync(tapestryPath, JSON.stringify(tapestry, null, 2));
-      console.log(`✅ Added validated song to Tapestry: ${record.song.artist} - ${record.song.title} (${subVibe})`);
+      downvotes.songs.push(downvoteEntry);
+      fs.writeFileSync(downvotesPath, JSON.stringify(downvotes, null, 2));
+      console.log(`🚫 Downvoted song saved: ${record.song.artist} - ${record.song.title}`);
     } else {
-      console.log(`ℹ️  Song already exists in Tapestry: ${record.song.artist} - ${record.song.title}`);
+      console.log(`ℹ️  Song already downvoted: ${record.song.artist} - ${record.song.title}`);
     }
   }
 }

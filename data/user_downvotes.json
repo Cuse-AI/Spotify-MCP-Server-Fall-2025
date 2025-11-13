@@ -1,0 +1,28 @@
+{
+  "songs": [
+    {
+      "artist": "Mazzy Star",
+      "song": "Fade Into You",
+      "spotify_id": "1",
+      "spotify_uri": "spotify:track:1",
+      "sub_vibe": "Sad - Nostalgic Sad",
+      "meta_vibe": "Sad",
+      "confidence": 0.94,
+      "user_journey": {
+        "vibe": "melancholic but hopeful",
+        "now": "reflecting on past memories",
+        "going": "finding peace and acceptance"
+      },
+      "reason": "User flagged as poor match for their emotional journey",
+      "downvoted_at": "2025-11-13T01:33:56.867Z",
+      "manifold_x": 398.2,
+      "manifold_y": 615.8,
+      "emotional_composition": {
+        "Nostalgic": 65,
+        "Sad": 25,
+        "Introspective": 10
+      },
+      "extrapolated": true
+    }
+  ]
+}

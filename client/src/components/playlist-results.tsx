@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import type { PlaylistResponse, TapestrySong, UserJourney } from "@shared/schema";
-import { Music2, ThumbsUp } from "lucide-react";
+import { Music2, ThumbsUp, ThumbsDown } from "lucide-react";
 import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
@@ -14,34 +14,34 @@ interface PlaylistResultsProps {
 export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
   const { toast } = useToast();
   const [validatedSongs, setValidatedSongs] = useState<Set<string>>(new Set());
+  const [downvotedSongs, setDownvotedSongs] = useState<Set<string>>(new Set());
 
   const handleValidateSong = async (song: TapestrySong) => {
     try {
-      await apiRequest("/api/validate-song", {
-        method: "POST",
-        body: JSON.stringify({
-          song: {
-            track_id: song.track_id,
-            artist: song.artist,
-            title: song.title,
-            sub_vibe: song.sub_vibe,
-            meta_vibe: song.meta_vibe,
-            confidence: song.confidence,
-            manifold_x: song.manifold_x,
-            manifold_y: song.manifold_y,
-            emotional_composition: song.emotional_composition,
-            extrapolated: song.extrapolated,
-          },
-          user_journey: data.journey,
-        }),
-        headers: { "Content-Type": "application/json" },
+      const response = await apiRequest("POST", "/api/validate-song", {
+        song: {
+          track_id: song.track_id,
+          artist: song.artist,
+          title: song.title,
+          sub_vibe: song.sub_vibe,
+          meta_vibe: song.meta_vibe,
+          confidence: song.confidence,
+          manifold_x: song.manifold_x,
+          manifold_y: song.manifold_y,
+          emotional_composition: song.emotional_composition,
+          extrapolated: song.extrapolated,
+        },
+        user_journey: data.journey,
       });
 
+      const result = await response.json();
       setValidatedSongs((prev) => new Set(prev).add(song.track_id));
       
       toast({
-        title: "✨ Added to Tapestry!",
-        description: `"${song.title}" is now part of the manifold`,
+        title: result.boosted ? "⬆️ Confidence boosted!" : "✨ Added to Tapestry!",
+        description: result.boosted 
+          ? `"${song.title}" validation count increased`
+          : `"${song.title}" is now part of the manifold`,
         duration: 3000,
       });
     } catch (error) {
@@ -49,6 +49,41 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
         variant: "destructive",
         title: "Error",
         description: "Failed to add song to Tapestry",
+        duration: 3000,
+      });
+    }
+  };
+
+  const handleDownvoteSong = async (song: TapestrySong) => {
+    try {
+      await apiRequest("POST", "/api/downvote-song", {
+        song: {
+          track_id: song.track_id,
+          artist: song.artist,
+          title: song.title,
+          sub_vibe: song.sub_vibe,
+          meta_vibe: song.meta_vibe,
+          confidence: song.confidence,
+          manifold_x: song.manifold_x,
+          manifold_y: song.manifold_y,
+          emotional_composition: song.emotional_composition,
+          extrapolated: song.extrapolated,
+        },
+        user_journey: data.journey,
+      });
+
+      setDownvotedSongs((prev) => new Set(prev).add(song.track_id));
+      
+      toast({
+        title: "Feedback recorded",
+        description: `"${song.title}" flagged for review`,
+        duration: 3000,
+      });
+    } catch (error) {
+      toast({
+        variant: "destructive",
+        title: "Error",
+        description: "Failed to record feedback",
         duration: 3000,
       });
     }
@@ -93,6 +128,7 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
           <div className="divide-y divide-border">
             {data.songs.map((song, index) => {
               const isValidated = validatedSongs.has(song.track_id);
+              const isDownvoted = downvotedSongs.has(song.track_id);
               
               return (
                 <div
@@ -103,7 +139,7 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
                   <div className="flex-shrink-0 w-12 h-12 bg-card-border rounded flex items-center justify-center">
                     <Music2 className="w-5 h-5 text-muted-foreground" />
                   </div>
-                  <div className="flex-1 min-w-0 pr-10">
+                  <div className="flex-1 min-w-0 pr-20">
                     <h3 className="font-medium truncate" data-testid={`text-song-title-${index}`}>
                       {song.title}
                     </h3>
@@ -116,20 +152,42 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
                     </p>
                   </div>
                   
-                  {/* Thumbs up button - subtle, bottom-right */}
-                  <button
-                    onClick={() => handleValidateSong(song)}
-                    disabled={isValidated}
-                    className={`absolute bottom-3 right-3 p-1.5 rounded-md transition-all ${
-                      isValidated
-                        ? "text-primary opacity-100"
-                        : "text-muted-foreground opacity-40 hover:opacity-100 hover-elevate"
-                    }`}
-                    data-testid={`button-validate-song-${index}`}
-                    title={isValidated ? "Added to Tapestry!" : "Add to Tapestry"}
-                  >
-                    <ThumbsUp className="w-3.5 h-3.5" fill={isValidated ? "currentColor" : "none"} />
-                  </button>
+                  {/* Feedback buttons - subtle, bottom-right */}
+                  <div className="absolute bottom-3 right-3 flex gap-2">
+                    {/* Thumbs up - green outline on hover */}
+                    <button
+                      onClick={() => handleValidateSong(song)}
+                      disabled={isValidated || isDownvoted}
+                      className={`p-1.5 rounded-md transition-all border ${
+                        isValidated
+                          ? "text-green-500 border-green-500 opacity-100"
+                          : isDownvoted
+                          ? "text-muted-foreground/30 border-transparent opacity-30 cursor-not-allowed"
+                          : "text-muted-foreground border-transparent opacity-40 hover:opacity-100 hover:border-green-500 hover:text-green-500"
+                      }`}
+                      data-testid={`button-validate-song-${index}`}
+                      title={isValidated ? "Added to Tapestry!" : isDownvoted ? "Already downvoted" : "Add to Tapestry"}
+                    >
+                      <ThumbsUp className="w-3.5 h-3.5" fill={isValidated ? "currentColor" : "none"} />
+                    </button>
+                    
+                    {/* Thumbs down - red outline on hover */}
+                    <button
+                      onClick={() => handleDownvoteSong(song)}
+                      disabled={isDownvoted || isValidated}
+                      className={`p-1.5 rounded-md transition-all border ${
+                        isDownvoted
+                          ? "text-red-500 border-red-500 opacity-100"
+                          : isValidated
+                          ? "text-muted-foreground/30 border-transparent opacity-30 cursor-not-allowed"
+                          : "text-muted-foreground border-transparent opacity-40 hover:opacity-100 hover:border-red-500 hover:text-red-500"
+                      }`}
+                      data-testid={`button-downvote-song-${index}`}
+                      title={isDownvoted ? "Flagged for review" : isValidated ? "Already validated" : "Flag as poor match"}
+                    >
+                      <ThumbsDown className="w-3.5 h-3.5" fill={isDownvoted ? "currentColor" : "none"} />
+                    </button>
+                  </div>
                 </div>
               );
             })}
