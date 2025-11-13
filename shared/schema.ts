@@ -70,3 +70,11 @@ export interface ValidatedSongRecord {
   validated_at: string;
   source: "user_validated";
 }
+
+// Tapestry Statistics
+export interface TapestryStats {
+  total_tracks: number;
+  total_sub_vibes: number;
+  total_meta_vibes: number;
+  human_sourced: boolean;
+}

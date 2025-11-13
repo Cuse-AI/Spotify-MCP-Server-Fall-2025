@@ -3,6 +3,7 @@ import { QuestionDisplay } from "./question-display";
 import { VibeInput } from "./vibe-input";
 import { ProgressDots } from "./progress-dots";
 import { LoadingState } from "./loading-state";
+import { TapestryStatsBanner } from "./tapestry-stats-banner";
 import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
 import type { UserJourney, PlaylistResponse } from "@shared/schema";
@@ -79,26 +80,34 @@ export function ConversationalFlow({ onComplete }: ConversationalFlowProps) {
   }
 
   return (
-    <div className="flex items-center justify-center min-h-screen px-6 py-24 md:px-8">
-      <div className="w-full max-w-2xl mx-auto">
-        <QuestionDisplay
-          question={QUESTIONS[currentQuestion].text}
-          isVisible={!generatePlaylistMutation.isPending}
-        />
+    <div className="min-h-screen flex flex-col">
+      {/* Stats Banner - fixed at top right */}
+      <div className="absolute top-6 right-6 z-10">
+        <TapestryStatsBanner />
+      </div>
 
-        <div className="mt-12">
-          <VibeInput
-            value={inputValue}
-            onChange={setInputValue}
-            onSubmit={handleSubmit}
-            onKeyPress={handleKeyPress}
-            placeholder={QUESTIONS[currentQuestion].placeholder}
-            disabled={generatePlaylistMutation.isPending}
-            data-testid="input-vibe-response"
+      {/* Main Content - centered */}
+      <div className="flex items-center justify-center flex-1 px-6 py-24 md:px-8">
+        <div className="w-full max-w-2xl mx-auto">
+          <QuestionDisplay
+            question={QUESTIONS[currentQuestion].text}
+            isVisible={!generatePlaylistMutation.isPending}
           />
-        </div>
 
-        <ProgressDots current={currentQuestion} total={QUESTIONS.length} />
+          <div className="mt-12">
+            <VibeInput
+              value={inputValue}
+              onChange={setInputValue}
+              onSubmit={handleSubmit}
+              onKeyPress={handleKeyPress}
+              placeholder={QUESTIONS[currentQuestion].placeholder}
+              disabled={generatePlaylistMutation.isPending}
+              data-testid="input-vibe-response"
+            />
+          </div>
+
+          <ProgressDots current={currentQuestion} total={QUESTIONS.length} />
+        </div>
       </div>
     </div>
   );

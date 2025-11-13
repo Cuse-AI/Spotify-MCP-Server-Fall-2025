@@ -1,4 +1,4 @@
-import type { UserJourney, PlaylistResponse, ValidatedSongRecord, TapestrySong } from "@shared/schema";
+import type { UserJourney, PlaylistResponse, ValidatedSongRecord, TapestrySong, TapestryStats } from "@shared/schema";
 import { generatePlaylistWithClaude } from "./claude-service";
 import { enrichTracksWithSpotifyData } from "./spotify-service";
 import * as fs from "fs";
@@ -8,6 +8,7 @@ export interface IStorage {
   generatePlaylist(journey: UserJourney): Promise<PlaylistResponse>;
   saveValidatedSong(record: ValidatedSongRecord): Promise<{ boosted: boolean }>;
   saveDownvotedSong(record: ValidatedSongRecord): Promise<void>;
+  getTapestryStats(): Promise<TapestryStats>;
 }
 
 export class MemStorage implements IStorage {
@@ -146,6 +147,49 @@ export class MemStorage implements IStorage {
     } else {
       console.log(`ℹ️  Song already downvoted: ${record.song.artist} - ${record.song.title}`);
     }
+  }
+
+  private statsCache: { stats: TapestryStats; cachedAt: number } | null = null;
+  private readonly STATS_TTL = 60 * 1000; // 60 seconds TTL
+
+  async getTapestryStats(): Promise<TapestryStats> {
+    // Check cache with TTL
+    if (this.statsCache && (Date.now() - this.statsCache.cachedAt) < this.STATS_TTL) {
+      return this.statsCache.stats;
+    }
+
+    // Read data files
+    const tapestryPath = path.join(process.cwd(), "data", "tapestry_complete.json");
+    const manifoldPath = path.join(process.cwd(), "data", "emotional_manifold_COMPLETE.json");
+    
+    if (!fs.existsSync(tapestryPath) || !fs.existsSync(manifoldPath)) {
+      throw new Error("Tapestry data files not found");
+    }
+
+    const tapestry = JSON.parse(fs.readFileSync(tapestryPath, "utf-8"));
+    const manifold = JSON.parse(fs.readFileSync(manifoldPath, "utf-8"));
+
+    // Calculate track count
+    const totalTracks = Object.values(tapestry.vibes).reduce(
+      (sum: number, vibe: any) => sum + (vibe.songs?.length || 0),
+      0
+    );
+
+    const stats: TapestryStats = {
+      total_tracks: totalTracks,
+      total_sub_vibes: manifold.metadata.total_sub_vibes,
+      total_meta_vibes: manifold.metadata.total_central_vibes,
+      human_sourced: true,
+    };
+
+    // Cache the stats
+    this.statsCache = { stats, cachedAt: Date.now() };
+
+    return stats;
+  }
+
+  invalidateStatsCache(): void {
+    this.statsCache = null;
   }
 }
 

@@ -74,6 +74,19 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // Get Tapestry Stats API
+  app.get("/api/tapestry-stats", async (req, res) => {
+    try {
+      const stats = await storage.getTapestryStats();
+      res.json(stats);
+    } catch (error: any) {
+      console.error("Error fetching Tapestry stats:", error);
+      res.status(500).json({ 
+        message: error.message || "Failed to fetch stats" 
+      });
+    }
+  });
+
   const httpServer = createServer(app);
 
   return httpServer;
