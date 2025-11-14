@@ -117,14 +117,14 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
         description: result.boosted 
           ? `"${song.title}" validation count increased`
           : `"${song.title}" is now part of the manifold`,
-        duration: 3000,
+        duration: 1500,
       });
     } catch (error) {
       toast({
         variant: "destructive",
         title: "Error",
         description: "Failed to add song to Tapestry",
-        duration: 3000,
+        duration: 1500,
       });
     }
   };
@@ -152,14 +152,14 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
       toast({
         title: "Feedback recorded",
         description: `"${song.title}" flagged for review`,
-        duration: 3000,
+        duration: 1500,
       });
     } catch (error) {
       toast({
         variant: "destructive",
         title: "Error",
         description: "Failed to record feedback",
-        duration: 3000,
+        duration: 1500,
       });
     }
   };
@@ -192,7 +192,7 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
             style={{ fontFamily: "'Quicksand', 'Inter', sans-serif" }}
             data-testid="text-results-title"
           >
-            Your Emotional Journey
+            {data.playlistTitle || "Your Emotional Journey"}
           </h1>
           <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto" data-testid="text-journey-explanation">
             {data.explanation}
@@ -349,7 +349,6 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
                   </h4>
                   {song.ananki_reasoning && (
                     <p className="text-sm text-muted-foreground mb-2">
-                      <span className="font-medium text-foreground">Ananki: </span>
                       {song.ananki_reasoning}
                     </p>
                   )}
