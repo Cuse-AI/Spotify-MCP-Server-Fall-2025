@@ -163,56 +163,31 @@ class DarkYouTubeScraper:
         """Scrape Dark vibes from YouTube - DIVERSE queries including consolidated sub-vibes"""
         cp = CheckpointManager('Dark')
 
-        # UPDATED: Queries targeting original + consolidated sub-vibes
+        # UPDATED: Queries with standard + creative dark terms
         queries = [
-            # Gothic (original)
+            # Standard Dark terms
             'gothic music playlist',
             'dark gothic songs',
-
-            # Apocalyptic (original)
             'apocalyptic soundtrack',
-            'end of world music',
-            'dystopian playlist',
-
-            # Brooding (original)
-            'brooding dark music',
-            'moody brooding songs',
-
-            # Haunting (original)
-            'haunting atmospheric music',
-            'eerie haunting playlist',
-
-            # Noir (original)
-            'film noir soundtrack',
-            'noir jazz music',
-
-            # Villain Arc (original)
             'villain theme songs',
-            'villain music playlist',
-            'antagonist soundtrack',
-
-            # Witchy (original)
             'witchy dark music',
-            'witch aesthetic playlist',
-            'occult music',
-
-            # CONSOLIDATED: Anxious sub-vibes
             'anxious dark music',
-            'paranoid music playlist',
-            'panic attack songs',
-            'overwhelming anxiety music',
-
-            # CONSOLIDATED: Bitter sub-vibes
             'bitter cynical music',
-            'jaded dark songs',
-            'resentful music',
-
-            # CONSOLIDATED: Jealous sub-vibes
-            'jealous dark music',
-            'envious songs',
-            'possessive music playlist',
-            'insecurity songs dark'
+            
+            # Creative Dark terms!
+            'villain arc energy songs',
+            'walking through dark alley playlist',
+            'plotting my revenge music',
+            'dark aesthetic vibes',
+            'mysterious shadow music',
+            'dark thoughts playlist',
+            'main villain energy songs',
+            'sinister vibe music',
+            'haunting atmosphere songs',
+            'darkness within playlist'
         ]
+
+        print("\n" + "="*70)
 
         print("\n" + "="*70)
         print("YOUTUBE SCRAPING - DARK VIBES")

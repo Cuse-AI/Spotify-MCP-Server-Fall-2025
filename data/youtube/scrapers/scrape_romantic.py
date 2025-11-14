@@ -159,7 +159,27 @@ class RomanticYouTubeScraper:
         """Scrape Romantic vibes from YouTube"""
         cp = CheckpointManager('Romantic')
         
-        queries = ['romantic music playlist', 'love songs', 'romantic vibes', 'date night playlist', 'intimate music', 'couple songs']
+        queries = [
+            # Standard Romantic terms
+            'romantic music playlist',
+            'love songs',
+            'romantic vibes',
+            'date night playlist',
+            'intimate music',
+            'couple songs',
+            
+            # Creative Romantic terms!
+            'falling in love playlist',
+            'butterflies in stomach songs',
+            'slow dance with your person',
+            'hopeless romantic music',
+            'thinking about them songs',
+            'dreamy love playlist',
+            'first date energy music',
+            'love language songs',
+            'soulmate vibes playlist',
+            'romantic movie moment songs'
+        ]
 
         print("\n" + "="*70)
         print("YOUTUBE SCRAPING - ROMANTIC VIBES")

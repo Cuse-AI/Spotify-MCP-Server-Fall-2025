@@ -160,34 +160,28 @@ class HappyYouTubeScraper:
         cp = CheckpointManager('Happy')
 
         queries = [
-            # Original Happy queries
+            # Standard Happy queries
             'happy music playlist',
             'feel good songs',
             'joyful music mix',
             'upbeat happy playlist',
             'cheerful songs',
             'sunshine music',
-
-            # CONSOLIDATED: Grateful sub-vibes
             'grateful music playlist',
-            'thankful songs',
-            'appreciation music',
-            'blessed songs',
-            'content happy music',
-
-            # CONSOLIDATED: Hopeful sub-vibes
             'hopeful music playlist',
-            'optimistic songs',
-            'new beginnings music',
-            'rising hope songs',
-            'healing music',
-
-            # CONSOLIDATED: Playful sub-vibes
             'playful music playlist',
-            'silly fun songs',
-            'whimsical music',
-            'carefree happy songs',
-            'childlike joy music'
+            
+            # Creative Happy terms!
+            'songs that make you smile',
+            'good vibes only playlist',
+            'happiness boost music',
+            'pure serotonin playlist',
+            'main character happy moment',
+            'summer day energy songs',
+            'life is good music',
+            'dancing in your room playlist',
+            'everything is possible songs',
+            'living your best life music'
         ]
 
         print("\n" + "="*70)

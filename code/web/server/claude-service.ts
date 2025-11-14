@@ -271,6 +271,7 @@ Instructions:
 
 Return ONLY a JSON object (no markdown, no extra text):
 {
+  "playlistTitle": "A catchy, creative 2-5 word playlist name that captures the emotional journey (avoid generic titles like 'Your Journey' or 'Emotional Playlist')",
   "explanation": "2-3 sentences explaining the emotional journey you created",
   "emotionalArc": "Brief narrative description of the progression through sub-vibes. IMPORTANT: Do NOT include any numeric coordinates or manifold positions in this text - keep it purely descriptive and narrative.",
   "songs": [
@@ -334,6 +335,7 @@ Notes:
 
     return {
       journey,
+      playlistTitle: claudeResponse.playlistTitle || "Your Emotional Journey",
       explanation: claudeResponse.explanation,
       emotionalArc: claudeResponse.emotionalArc,
       songs: claudeResponse.songs,
@@ -384,6 +386,7 @@ function generateSamplePlaylist(journey: UserJourney): PlaylistResponse {
 
   return {
     journey,
+    playlistTitle: "Nighttime Reflections",
     explanation: `Based on your journey from "${journey.now}" to "${journey.going}", I've created a sample playlist. Note: This is using sample data - add your full Tapestry database to data/tapestry_complete.json for AI-powered emotional journeys!`,
     emotionalArc: `Gentle progression through contemplative night vibes, ambient calm, and melancholic reflection.`,
     songs: sampleSongs,

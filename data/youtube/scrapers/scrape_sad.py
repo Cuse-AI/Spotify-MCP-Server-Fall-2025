@@ -160,24 +160,34 @@ class SadYouTubeScraper:
         cp = CheckpointManager('Sad')
 
         queries = [
-            # Original Sad queries
+            # Standard terms
             'sad music playlist',
             'crying songs',
             'heartbreak music',
             'melancholic playlist',
             'depressing songs',
             'sadness music',
-
-            # CONSOLIDATED: Nostalgic sub-vibes
             'nostalgic music playlist',
-            'childhood nostalgia songs',
-            '90s nostalgia music',
-            '2000s throwback playlist',
-            'miss the old days songs',
-            'simpler times music',
-            'first love nostalgia',
-            'summer nostalgia playlist',
-            'yearning for the past music'
+            
+            # Creative Sad terms (Solution B!)
+            'songs for crying in the shower',
+            'breakup anthems that hit different',
+            'rainy day feels music',
+            'songs that make you ugly cry',
+            'heartache playlist 3am',
+            'post breakup healing songs',
+            'emotional damage playlist',
+            'songs for when everything hurts',
+            
+            # Nostalgic variations (creative!)
+            'songs that bring back memories',
+            'throwback hits that hit different',
+            'childhood soundtrack playlist',
+            'songs from simpler times',
+            'music that takes you back',
+            'nostalgia trip playlist',
+            'remember when music',
+            'songs your younger self loved'
         ]
 
         print("\n" + "="*70)

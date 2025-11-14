@@ -160,26 +160,26 @@ class ChillYouTubeScraper:
         cp = CheckpointManager('Chill')
 
         queries = [
-            # Original Chill queries
+            # Standard Chill queries
             'chill vibes playlist',
             'relaxing music mix',
             'chill songs to vibe to',
             'laid back playlist',
             'mellow music mix',
             'sunday morning chill',
-
-            # CONSOLIDATED: Peaceful sub-vibes
             'peaceful music playlist',
-            'serene calm music',
-            'meditative peaceful songs',
-            'tranquil music',
-            'gentle peaceful playlist',
-
-            # CONSOLIDATED: Bored sub-vibes
-            'understimulated music',
-            'waiting room playlist',
-            'monotonous chill music',
-            'restless bored songs'
+            
+            # Creative Chill terms!
+            'lazy sunday playlist',
+            'cozy vibes music',
+            'coffee shop ambience playlist',
+            'just vibing music',
+            'rainy day chill songs',
+            'soft background music',
+            'study chill beats',
+            'calm your mind playlist',
+            'lofi type beats',
+            'perfect chill ratio music'
         ]
 
         print("\n" + "="*70)

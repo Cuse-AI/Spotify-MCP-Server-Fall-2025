@@ -230,9 +230,14 @@ Confidence scale:
             print(f"Reasoning: {example['ananki_reasoning']}")
             print(f"Confidence: {example['ananki_confidence']}")
 
-        # Save results
+        # Save results to 3_analyzed/mapped/ directory
         if output_file is None:
-            output_file = Path(songs_file).parent / f"{Path(songs_file).stem}_CLAUDE_MAPPED.json"
+            # Get project root and save to correct workflow directory
+            project_root = Path(songs_file).parent.parent
+            mapped_dir = project_root / '3_analyzed' / 'mapped'
+            mapped_dir.mkdir(parents=True, exist_ok=True)
+            
+            output_file = mapped_dir / f"{Path(songs_file).stem}_CLAUDE_MAPPED.json"
 
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump({
@@ -245,9 +250,12 @@ Confidence scale:
 
         print(f"\nSaved to: {output_file}")
 
-        # Save ambiguous separately
+        # Save ambiguous separately to 3_analyzed/ambiguous/
         if ambiguous_songs:
-            ambig_file = Path(songs_file).parent / f"{Path(songs_file).stem}_CLAUDE_AMBIGUOUS.json"
+            ambig_dir = project_root / '3_analyzed' / 'ambiguous'
+            ambig_dir.mkdir(parents=True, exist_ok=True)
+            ambig_file = ambig_dir / f"{Path(songs_file).stem}_CLAUDE_AMBIGUOUS.json"
+            
             with open(ambig_file, 'w', encoding='utf-8') as f:
                 json.dump({
                     'total': len(ambiguous_songs),

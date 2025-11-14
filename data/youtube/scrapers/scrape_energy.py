@@ -160,29 +160,28 @@ class EnergyYouTubeScraper:
         cp = CheckpointManager('Energy')
 
         queries = [
-            # Original Energy queries
+            # Standard Energy queries
             'energy music playlist',
             'pump up songs',
             'workout music mix',
             'running playlist',
             'sports hype music',
             'high energy songs',
-
-            # CONSOLIDATED: Angry sub-vibes
             'angry music playlist',
-            'rage songs',
-            'aggressive music',
-            'furious music workout',
-
-            # CONSOLIDATED: Confident sub-vibes
             'confident music playlist',
-            'self assured songs',
-            'boss music',
-            'power moves playlist',
-            'unstoppable songs',
-
-            # CONSOLIDATED: Chaotic sub-vibes
-            'chaotic energy music',
+            
+            # Creative Energy terms!
+            'songs that hype you up',
+            'workout beast mode playlist',
+            'adrenaline rush music',
+            'running like your life depends on it',
+            'unstoppable energy songs',
+            'boss mode activated playlist',
+            'gym motivation hits',
+            'rage workout music',
+            'feel invincible songs',
+            'absolute power playlist'
+        ]
             'frantic playlist',
             'wild energy songs',
             'unhinged music',

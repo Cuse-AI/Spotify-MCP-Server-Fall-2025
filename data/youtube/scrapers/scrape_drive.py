@@ -159,7 +159,27 @@ class DriveYouTubeScraper:
         """Scrape Drive vibes from YouTube"""
         cp = CheckpointManager('Drive')
         
-        queries = ['driving music playlist', 'road trip songs', 'highway music mix', 'night drive playlist', 'scenic drive music', 'alone in car songs']
+        queries = [
+            # Standard terms
+            'driving music playlist',
+            'road trip songs',
+            'highway music mix',
+            'night drive playlist',
+            'scenic drive music',
+            'alone in car songs',
+            
+            # Creative Drive terms (Solution B!)
+            'songs for driving at 3am',
+            'windows down music',
+            'highway escape playlist',
+            'midnight drive vibes',
+            'main character driving moment',
+            'cruising music perfect vibe',
+            'open road soundtrack',
+            'alone in the car therapy',
+            'driving through the city at night',
+            'road trip essential hits'
+        ]
 
         print("\n" + "="*70)
         print("YOUTUBE SCRAPING - DRIVE VIBES")

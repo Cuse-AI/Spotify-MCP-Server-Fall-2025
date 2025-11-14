@@ -159,7 +159,27 @@ class PartyYouTubeScraper:
         """Scrape Party vibes from YouTube"""
         cp = CheckpointManager('Party')
         
-        queries = ['party music playlist', 'dance songs', 'club music mix', 'hype party playlist', 'pregame music', 'party vibes']
+        queries = [
+            # Standard terms
+            'party music playlist',
+            'dance songs',
+            'club music mix',
+            'hype party playlist',
+            'pregame music',
+            'party vibes',
+            
+            # Creative Party terms (Solution B!)
+            'pregame bangers that slap',
+            'club hits that go crazy',
+            'dance floor fire playlist',
+            'turn up music loud',
+            'party starter songs',
+            'getting lit playlist',
+            'hype music for the function',
+            'songs that make everyone dance',
+            'absolute bangers playlist',
+            'party anthems 2024'
+        ]
 
         print("\n" + "="*70)
         print("YOUTUBE SCRAPING - PARTY VIBES")

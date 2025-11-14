@@ -1,13 +1,51 @@
-# DEAR CLAUDE - Nov 13, 2025 (Evening Update)
+# DEAR CLAUDE - Nov 13, 2025 (Late Night Update)
 
 ## 🎯 CURRENT STATUS
 
-**Tapestry:** 6,542 songs (100% TRUE Ananki reasoning) ⬆️ +461 songs!
+**Tapestry:** 6,542 songs (100% TRUE Ananki reasoning)
 **Structure:** 9 meta-vibes, 114 sub-vibes
 **Location:** `core/tapestry.json`
-**API Budget Remaining:** ~$7-8 (after today's scraping/analysis)
+**API Budget Remaining:** ~$7-8
 
-## ⚡ LATEST SESSION UPDATES (Nov 13 Evening)
+## 🚀 LATEST UPDATE (Nov 13 Late Night) - SCRAPER IMPROVEMENTS COMPLETE!
+
+### What Just Happened:
+1. **✅ Fixed YouTube .env file** - Re-created missing `data/youtube/.env` with API key
+2. **✅ Cleaned all work-in-progress folders** - Fresh start (1_raw_scrapes, 2_deduped, 3_analyzed cleared)
+3. **✅ Implemented Solutions B + C from dataScraping_process7:**
+   - **Solution B: Creative Search Terms** - Added metaphors & cultural phrases to ALL major scrapers
+   - **Solution C: URL Tracking** - Already implemented (checkpoint system skips scraped URLs)
+   
+### All Scrapers Updated with Creative Terms:
+Each scraper now has **BOTH standard AND creative queries** for maximum diversity:
+
+**Sad:** "songs for crying in the shower", "emotional damage playlist", "songs that bring back memories"
+**Party:** "pregame bangers that slap", "dance floor fire playlist", "getting lit playlist"
+**Drive:** "songs for driving at 3am", "main character driving moment", "alone in the car therapy"
+**Happy:** "pure serotonin playlist", "main character happy moment", "living your best life music"
+**Chill:** "lazy sunday playlist", "coffee shop ambience", "just vibing music"
+**Energy:** "workout beast mode", "feel invincible songs", "boss mode activated"
+**Romantic:** "butterflies in stomach songs", "slow dance with your person", "soulmate vibes"
+**Dark:** "villain arc energy", "plotting my revenge music", "main villain energy"
+**Night:** "3am thoughts playlist", "existential crisis music", "staring at ceiling songs"
+
+### Why These Changes Matter:
+- **More diverse results** - Creative phrases find different content than basic terms
+- **Better emotional context** - Captures how humans ACTUALLY describe music  
+- **Less duplicates** - Different queries = different playlists/videos
+- **URL tracking** - Never scrape same URL twice (checkpoint system)
+- **Expanded search space** - 2-3x more queries per scraper = richer dataset
+
+### Ready to Run:
+- ✅ YouTube API key configured
+- ✅ All folders cleaned  
+- ✅ 9 major scrapers updated with creative terms
+- ✅ Automated pipeline ready (`scripts/automated_pipeline.py`)
+- ✅ DearClaude updated
+
+**Next:** Run scrapers → Automated pipeline handles dedupe → Ananki → Inject
+
+## ⚡ PREVIOUS SESSION UPDATES (Nov 13 Evening)
 
 ### What Just Happened:
 1. **Major Data Reorganization** - All 109 scattered JSON files organized into clear workflow:

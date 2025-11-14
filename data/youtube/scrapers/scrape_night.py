@@ -160,25 +160,26 @@ class NightYouTubeScraper:
         cp = CheckpointManager('Night')
 
         queries = [
-            # Original Night queries
+            # Standard Night terms
             'late night music playlist',
             '3am songs',
             'midnight vibes',
             'night time music',
             'insomnia playlist',
             'nighttime feelings',
-
-            # CONSOLIDATED: Introspective sub-vibes
             'introspective music playlist',
-            'deep thoughts music',
-            'philosophical songs',
-            'existential music',
-            'questioning life playlist',
-            'self discovery songs',
-            'soul searching music',
-            'contemplative playlist',
-            'life changes music',
-            'personal growth songs'
+            
+            # Creative Night terms!
+            '3am thoughts playlist',
+            'existential crisis music',
+            'staring at ceiling songs',
+            'night owl vibes',
+            'midnight drive through empty streets',
+            'cant sleep thinking music',
+            'deep night contemplation songs',
+            'moon gazing playlist',
+            'night time soul searching',
+            'alone with your thoughts music'
         ]
 
         print("\n" + "="*70)

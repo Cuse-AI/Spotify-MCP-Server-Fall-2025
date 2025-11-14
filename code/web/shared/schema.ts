@@ -38,6 +38,7 @@ export interface TapestrySong {
 // Playlist Response
 export interface PlaylistResponse {
   journey: UserJourney;
+  playlistTitle: string;
   explanation: string;
   songs: TapestrySong[];
   emotionalArc: string;
