@@ -15,6 +15,12 @@ import time
 from dotenv import load_dotenv
 from pathlib import Path
 from checkpoint_utils import CheckpointManager
+# Import tapestry pre-filtering
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent.parent / 'youtube' / 'scrapers'))
+from improved_search_utils import load_tapestry_spotify_ids
+import random
 
 load_dotenv()
 load_dotenv(Path(__file__).parent.parent / '.env')
@@ -35,6 +41,9 @@ class PartySmartScraper:
         )
 
         self.scraped_urls = set()
+        
+        # Pre-load tapestry to skip existing songs
+        self.existing_spotify_ids = load_tapestry_spotify_ids()
 
     def is_music_comment(self, text):
         """Check if comment is actually about music"""
@@ -100,6 +109,12 @@ class PartySmartScraper:
             if results['tracks']['items']:
                 track = results['tracks']['items'][0]
 
+                # Skip if already in tapestry
+                track_id = track['id']
+                if track_id in self.existing_spotify_ids:
+                    return None
+
+
                 # Validate it's actually music
                 if not self.is_valid_track(track):
                     return None
@@ -150,12 +165,13 @@ class PartySmartScraper:
         
         """Continue scrape Party meta-vibe"""
         queries = [
-            'party music playlist',
-            'pregame songs',
-            'club bangers',
-            'house party music',
-            'festival vibes songs',
-            'dance party playlist'
+            # Emotional state descriptions (better context!)
+            'pregame hype music',
+            'getting ready to go out songs',
+            'club bangers playlist',
+            'party starter high energy',
+            'drunk dancing music',
+            'house party playlist',
         ]
 
         # Using cp.all_results from checkpoint
@@ -182,6 +198,13 @@ class PartySmartScraper:
                         if len(cp.all_results) >= target_songs:
                             break
 
+                        # SKIP if we've already processed this post
+                        post_id = post.id
+                        if cp.is_post_processed(post_id):
+                            continue
+                        if len(cp.all_results) >= target_songs:
+                            break
+
                         post_title = post.title
                         post_body = post.selftext if hasattr(post, 'selftext') else ''
 
@@ -204,6 +227,8 @@ class PartySmartScraper:
                                 )
                                 cp.update_progress(songs)
 
+                        # Mark post as processed
+                        cp.mark_post_processed(post_id)
                         time.sleep(1)
 
                 except Exception as e:
@@ -234,8 +259,13 @@ class PartySmartScraper:
 
 
 if __name__ == '__main__':
+    import sys
+
+    # Get target from command line, default to 1500
+    target_songs = int(sys.argv[1]) if len(sys.argv) > 1 else 1500
+
     scraper = PartySmartScraper()
-    results = scraper.scrape_party_vibes(target_songs=1500)
+    results = scraper.scrape_party_vibes(target_songs=1000)
 
     print(f"\n{'='*70}")
     print(f"SCRAPING COMPLETE!")

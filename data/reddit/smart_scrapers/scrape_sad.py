@@ -15,6 +15,12 @@ import time
 from dotenv import load_dotenv
 from pathlib import Path
 from checkpoint_utils import CheckpointManager
+# Import tapestry pre-filtering
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent.parent / 'youtube' / 'scrapers'))
+from improved_search_utils import load_tapestry_spotify_ids
+import random
 
 load_dotenv()
 load_dotenv(Path(__file__).parent.parent / '.env')
@@ -35,6 +41,9 @@ class SadSmartScraper:
         )
 
         self.scraped_urls = set()
+        
+        # Pre-load tapestry to skip existing songs
+        self.existing_spotify_ids = load_tapestry_spotify_ids()
 
     def is_music_comment(self, text):
         """Check if comment is actually about music"""
@@ -100,6 +109,12 @@ class SadSmartScraper:
             if results['tracks']['items']:
                 track = results['tracks']['items'][0]
 
+                # Skip if already in tapestry
+                track_id = track['id']
+                if track_id in self.existing_spotify_ids:
+                    return None
+
+
                 # Validate it's actually music
                 if not self.is_valid_track(track):
                     return None
@@ -149,21 +164,14 @@ class SadSmartScraper:
         cp = CheckpointManager('Sad')
         
         queries = [
-            'sad songs that make you cry',
-            'heartbreak music',
-            'songs about loneliness',
-            'depressing music',
-            'grief songs',
-            'melancholic music',
-            'sad nostalgic songs',
-            'songs about loss',
-            'breakup playlist',
-            'crying songs'
-        ,
-            'childhood nostalgia music',
-            '90s nostalgia songs',
-            '2000s throwback',
-            'yearning for the past']
+            # Emotional state descriptions (better context!)
+            'heartbroken need sad songs',
+            'crying in my room music',
+            'breakup devastated playlist',
+            'grieving loss sad music',
+            'feeling lonely depressing songs',
+            'tears emotional music',
+        ]
 
         # Using cp.all_results from checkpoint
 
@@ -189,6 +197,13 @@ class SadSmartScraper:
                         if len(cp.all_results) >= target_songs:
                             break
 
+                        # SKIP if we've already processed this post
+                        post_id = post.id
+                        if cp.is_post_processed(post_id):
+                            continue
+                        if len(cp.all_results) >= target_songs:
+                            break
+
                         post_title = post.title
                         post_body = post.selftext if hasattr(post, 'selftext') else ''
 
@@ -211,6 +226,8 @@ class SadSmartScraper:
                                 )
                                 cp.update_progress(songs)
 
+                        # Mark post as processed
+                        cp.mark_post_processed(post_id)
                         time.sleep(1)
 
                 except Exception as e:

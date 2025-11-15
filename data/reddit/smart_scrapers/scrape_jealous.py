@@ -15,6 +15,12 @@ import time
 from dotenv import load_dotenv
 from pathlib import Path
 from checkpoint_utils import CheckpointManager
+# Import tapestry pre-filtering
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent.parent / 'youtube' / 'scrapers'))
+from improved_search_utils import load_tapestry_spotify_ids
+import random
 
 load_dotenv()
 load_dotenv(Path(__file__).parent.parent / '.env')
@@ -35,6 +41,9 @@ class JealousSmartScraper:
         )
 
         self.scraped_urls = set()
+        
+        # Pre-load tapestry to skip existing songs
+        self.existing_spotify_ids = load_tapestry_spotify_ids()
 
     def is_music_comment(self, text):
         text_lower = text.lower()
@@ -76,6 +85,12 @@ class JealousSmartScraper:
             results = self.sp.search(q=query_text, type='track', limit=1)
             if results['tracks']['items']:
                 track = results['tracks']['items'][0]
+
+                # Skip if already in tapestry
+                track_id = track['id']
+                if track_id in self.existing_spotify_ids:
+                    return None
+
                 if not self.is_valid_track(track):
                     return None
                 return {

@@ -15,6 +15,12 @@ import time
 from dotenv import load_dotenv
 from pathlib import Path
 from checkpoint_utils import CheckpointManager
+# Import tapestry pre-filtering
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent.parent / 'youtube' / 'scrapers'))
+from improved_search_utils import load_tapestry_spotify_ids
+import random
 
 load_dotenv()
 load_dotenv(Path(__file__).parent.parent / '.env')
@@ -35,6 +41,9 @@ class AngrySmartScraper:
         )
 
         self.scraped_urls = set()
+        
+        # Pre-load tapestry to skip existing songs
+        self.existing_spotify_ids = load_tapestry_spotify_ids()
 
     def is_music_comment(self, text):
         """Check if comment is actually about music"""
@@ -100,6 +109,12 @@ class AngrySmartScraper:
             if results['tracks']['items']:
                 track = results['tracks']['items'][0]
 
+                # Skip if already in tapestry
+                track_id = track['id']
+                if track_id in self.existing_spotify_ids:
+                    return None
+
+
                 # Validate it's actually music
                 if not self.is_valid_track(track):
                     return None
@@ -150,12 +165,13 @@ class AngrySmartScraper:
         
         """Continue scrape Angry meta-vibe"""
         queries = [
-            'angry music playlist',
-            'rage songs',
-            'frustrated music',
-            'aggressive songs',
-            'cathartic anger music',
-            'breakup angry songs'
+            # Emotional state descriptions (better context!)
+            'pissed off need angry music',
+            'furious need aggressive songs',
+            'rage workout music',
+            'angry breakup songs',
+            'frustrated need heavy metal',
+            'mad need loud music',
         ]
 
         # Using cp.all_results from checkpoint

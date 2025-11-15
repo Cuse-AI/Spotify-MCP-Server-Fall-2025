@@ -15,6 +15,12 @@ import time
 from dotenv import load_dotenv
 from pathlib import Path
 from checkpoint_utils import CheckpointManager
+# Import tapestry pre-filtering
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent.parent / 'youtube' / 'scrapers'))
+from improved_search_utils import load_tapestry_spotify_ids
+import random
 
 load_dotenv()
 load_dotenv(Path(__file__).parent.parent / '.env')
@@ -36,6 +42,9 @@ class ChillSmartScraper:
         )
 
         self.scraped_urls = set()
+        
+        # Pre-load tapestry to skip existing songs
+        self.existing_spotify_ids = load_tapestry_spotify_ids()
 
     def is_music_comment(self, text):
         """Check if comment is actually about music"""
@@ -101,6 +110,12 @@ class ChillSmartScraper:
             if results['tracks']['items']:
                 track = results['tracks']['items'][0]
 
+                # Skip if already in tapestry
+                track_id = track['id']
+                if track_id in self.existing_spotify_ids:
+                    return None
+
+
                 # Validate it's actually music
                 if not self.is_valid_track(track):
                     return None
@@ -145,23 +160,25 @@ class ChillSmartScraper:
 
         return songs
 
-    def scrape_chill_vibes(self, target_songs=1500):
+    def scrape_chill_vibes(self, target_songs=1000):
         """Scrape Chill meta-vibe with checkpointing"""
         # Initialize checkpoint manager
         cp = CheckpointManager('Chill')
         
         queries = [
-            'chill music playlist',
-            'relaxing songs',
-            'rainy day music',
-            'morning coffee songs',
-            'sunday vibes playlist',
-            'lofi chill music',
-            'beach summer chill',
-            'ambient relaxing'
-        ,
-            'peaceful meditative music',
-            'serene calm songs']
+            # Emotional state descriptions (better context!)
+            'feeling stressed need calm music',
+            'overwhelmed need relaxing songs',
+            'anxious need chill vibes',
+            'can\'t focus need calm background',
+            'need music to unwind after work',
+            'studying need peaceful music',
+            # Specific scenarios with emotion
+            'rainy day cozy music recommendations',
+            'sunday morning coffee songs',
+            'meditation peaceful ambient',
+            'yoga relaxing instrumental'
+        ]
 
         print("\n" + "="*70)
         print("SMART SCRAPING - CHILL VIBES")
@@ -185,6 +202,13 @@ class ChillSmartScraper:
                         if len(cp.all_results) >= target_songs:
                             break
 
+                        # SKIP if we've already processed this post
+                        post_id = post.id
+                        if cp.is_post_processed(post_id):
+                            continue
+                        if len(cp.all_results) >= target_songs:
+                            break
+
                         post_title = post.title
                         post_body = post.selftext if hasattr(post, 'selftext') else ''
 
@@ -205,12 +229,10 @@ class ChillSmartScraper:
                                     comment.body, url, comment.score,
                                     post_title, post_body
                                 )
-                                songs = self.extract_from_comment(
-                                    comment.body, url, comment.score,
-                                    post_title, post_body
-                                )
-                                cp.update_progress(songs)  # Checkpoint + status!
+                                cp.update_progress(songs)
 
+                        # Mark post as processed
+                        cp.mark_post_processed(post_id)
                         time.sleep(1)
 
                 except Exception as e:
@@ -243,6 +265,11 @@ class ChillSmartScraper:
 
 
 if __name__ == '__main__':
+    import sys
+
+    # Get target from command line, default to 1500
+    target_songs = int(sys.argv[1]) if len(sys.argv) > 1 else 1500
+
     scraper = ChillSmartScraper()
     results = scraper.scrape_chill_vibes(target_songs=500)
 

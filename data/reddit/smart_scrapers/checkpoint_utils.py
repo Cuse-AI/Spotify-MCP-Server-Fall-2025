@@ -18,15 +18,25 @@ class CheckpointManager:
         # Load existing checkpoint if resuming
         self.all_results = []
         self.scraped_urls = set()
-        
+        self.processed_posts = set()  # NEW: Track Reddit posts we've fully processed
+
         if self.checkpoint_file.exists():
             print(f"[RESUME] Found checkpoint! Loading previous progress...")
             with open(self.checkpoint_file, 'r', encoding='utf-8') as f:
                 checkpoint = json.load(f)
                 self.all_results = checkpoint.get('songs', [])
                 self.scraped_urls = set(checkpoint.get('scraped_urls', []))
-            print(f"[RESUME] Continuing from {len(self.all_results)} songs!")
+                self.processed_posts = set(checkpoint.get('processed_posts', []))  # NEW
+            print(f"[RESUME] Continuing from {len(self.all_results)} songs, {len(self.processed_posts)} posts processed!")
     
+    def mark_post_processed(self, post_id):
+        """Mark a Reddit post as fully processed"""
+        self.processed_posts.add(post_id)
+
+    def is_post_processed(self, post_id):
+        """Check if we've already processed this Reddit post"""
+        return post_id in self.processed_posts
+
     def save_checkpoint(self):
         """Save progress"""
         with open(self.checkpoint_file, 'w', encoding='utf-8') as f:
@@ -34,6 +44,7 @@ class CheckpointManager:
                 'meta_vibe': self.meta_vibe_name,
                 'songs': self.all_results,
                 'scraped_urls': list(self.scraped_urls),
+                'processed_posts': list(self.processed_posts),  # NEW
                 'last_updated': datetime.now().isoformat()
             }, f, indent=2, ensure_ascii=False)
     

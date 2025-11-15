@@ -15,6 +15,12 @@ import time
 from dotenv import load_dotenv
 from pathlib import Path
 from checkpoint_utils import CheckpointManager
+# Import tapestry pre-filtering
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent.parent / 'youtube' / 'scrapers'))
+from improved_search_utils import load_tapestry_spotify_ids
+import random
 
 load_dotenv()
 load_dotenv(Path(__file__).parent.parent / '.env')
@@ -35,6 +41,9 @@ class DarkSmartScraper:
         )
 
         self.scraped_urls = set()
+        
+        # Pre-load tapestry to skip existing songs
+        self.existing_spotify_ids = load_tapestry_spotify_ids()
 
     def is_music_comment(self, text):
         """Check if comment is actually about music"""
@@ -100,6 +109,12 @@ class DarkSmartScraper:
             if results['tracks']['items']:
                 track = results['tracks']['items'][0]
 
+                # Skip if already in tapestry
+                track_id = track['id']
+                if track_id in self.existing_spotify_ids:
+                    return None
+
+
                 # Validate it's actually music
                 if not self.is_valid_track(track):
                     return None
@@ -144,36 +159,19 @@ class DarkSmartScraper:
 
         return songs
 
-    def scrape_dark_vibes(self, target_songs=1500):
+    def scrape_dark_vibes(self, target_songs=1000):
         """Scrape Dark with checkpointing"""
         cp = CheckpointManager('Dark')
         
         """Continue scrape Dark meta-vibe - including consolidated sub-vibes"""
         queries = [
-            # Original Dark queries
-            'dark music playlist',
-            'gothic songs',
-            'brooding music',
-            'haunting songs',
-            'noir playlist',
-            'villain arc music',
-            'apocalyptic songs',
-
-            # CONSOLIDATED: Anxious sub-vibes
-            'anxious dark songs',
-            'paranoid music',
-            'panic attack music',
-            'overwhelming anxiety songs',
-
-            # CONSOLIDATED: Bitter sub-vibes
-            'bitter cynical music',
-            'jaded songs',
-            'resentful music',
-
-            # CONSOLIDATED: Jealous sub-vibes
-            'jealous dark music',
-            'envious songs',
-            'possessive music'
+            # Emotional state descriptions (better context!)
+            'feeling depressed need dark music',
+            'going through dark time need songs',
+            'gothic moody music',
+            'haunting atmospheric songs',
+            'eerie unsettling music',
+            'black metal recommendations',
         ]
 
         # Using cp.all_results from checkpoint
@@ -200,6 +198,11 @@ class DarkSmartScraper:
                         if len(cp.all_results) >= target_songs:
                             break
 
+                        # SKIP if we've already processed this post
+                        post_id = post.id
+                        if cp.is_post_processed(post_id):
+                            continue
+
                         post_title = post.title
                         post_body = post.selftext if hasattr(post, 'selftext') else ''
 
@@ -222,6 +225,8 @@ class DarkSmartScraper:
                                 )
                                 cp.update_progress(songs)
 
+                        # Mark post as processed
+                        cp.mark_post_processed(post_id)
                         time.sleep(1)
 
                 except Exception as e:
@@ -252,8 +257,13 @@ class DarkSmartScraper:
 
 
 if __name__ == '__main__':
+    import sys
+
+    # Get target from command line, default to 1500
+    target_songs = int(sys.argv[1]) if len(sys.argv) > 1 else 1500
+
     scraper = DarkSmartScraper()
-    results = scraper.scrape_dark_vibes(target_songs=1500)
+    results = scraper.scrape_dark_vibes(target_songs=1000)
 
     print(f"\n{'='*70}")
     print(f"SCRAPING COMPLETE!")

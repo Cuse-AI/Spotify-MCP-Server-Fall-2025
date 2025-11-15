@@ -73,8 +73,11 @@ def batch_dedupe(file_list):
             new_songs.append(song)
             cross_file_ids.add(spotify_id)
         
-        # Save deduped file
-        output_file = scraped_path.parent / f"{scraped_path.stem}_DEDUPED.json"
+        # Save deduped file to 2_deduped/ directory (NOT back to same folder!)
+        project_root = Path(__file__).parent.parent
+        deduped_dir = project_root / '2_deduped'
+        deduped_dir.mkdir(parents=True, exist_ok=True)
+        output_file = deduped_dir / f"{scraped_path.stem}_DEDUPED.json"
         
         output_data = {
             'meta_vibe': data.get('meta_vibe', 'Unknown'),

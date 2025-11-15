@@ -18,14 +18,16 @@ class CheckpointManager:
         # Load existing checkpoint if resuming
         self.all_results = []
         self.scraped_urls = set()
-        
+        self.processed_playlists = set()  # NEW: Track playlists we've fully processed
+
         if self.checkpoint_file.exists():
             print(f"[RESUME] Found checkpoint! Loading previous progress...")
             with open(self.checkpoint_file, 'r', encoding='utf-8') as f:
                 checkpoint = json.load(f)
                 self.all_results = checkpoint.get('songs', [])
                 self.scraped_urls = set(checkpoint.get('scraped_urls', []))
-            print(f"[RESUME] Continuing from {len(self.all_results)} songs!")
+                self.processed_playlists = set(checkpoint.get('processed_playlists', []))  # NEW
+            print(f"[RESUME] Continuing from {len(self.all_results)} songs, {len(self.processed_playlists)} playlists processed!")
     
     def save_checkpoint(self):
         """Save progress"""
@@ -34,24 +36,33 @@ class CheckpointManager:
                 'meta_vibe': self.meta_vibe_name,
                 'songs': self.all_results,
                 'scraped_urls': list(self.scraped_urls),
+                'processed_playlists': list(self.processed_playlists),  # NEW
                 'last_updated': datetime.now().isoformat()
             }, f, indent=2, ensure_ascii=False)
     
+    def mark_playlist_processed(self, playlist_id):
+        """Mark a playlist as fully processed"""
+        self.processed_playlists.add(playlist_id)
+
+    def is_playlist_processed(self, playlist_id):
+        """Check if we've already processed this playlist"""
+        return playlist_id in self.processed_playlists
+
     def update_progress(self, new_songs):
         """Add songs and auto-checkpoint"""
         self.all_results.extend(new_songs)
-        
+
         # Checkpoint every 100 songs
         if len(self.all_results) % 100 == 0:
             self.save_checkpoint()
             print(f"  [CHECKPOINT] {len(self.all_results)} songs saved")
-        
+
         # Status every 60 seconds
         current_time = time.time()
         if (current_time - self.last_status_time) >= 60:
             elapsed = int(current_time - self.start_time)
             unique = len(set((s['artist'].lower(), s['song'].lower()) for s in self.all_results))
-            print(f"  [STATUS] {elapsed//60}m{elapsed%60}s | {len(self.all_results)} total ({unique} unique) | {len(self.scraped_urls)} URLs")
+            print(f"  [STATUS] {elapsed//60}m{elapsed%60}s | {len(self.all_results)} total ({unique} unique) | {len(self.scraped_urls)} URLs | {len(self.processed_playlists)} playlists")
             self.last_status_time = current_time
     
     def finalize(self, output_file, target_songs=None):

@@ -24,6 +24,8 @@ import time
 from dotenv import load_dotenv
 from pathlib import Path
 from checkpoint_utils import CheckpointManager
+from improved_search_utils import load_tapestry_spotify_ids, diversify_queries, get_diverse_search_params
+import random
 
 load_dotenv()
 load_dotenv(Path(__file__).parent.parent / '.env')
@@ -45,6 +47,9 @@ class DarkYouTubeScraper:
         )
         
         self.scraped_videos = set()
+        
+        # Pre-load tapestry to skip existing songs
+        self.existing_spotify_ids = load_tapestry_spotify_ids()
 
     def clean_song_title(self, title):
         """Clean YouTube video title to get actual song name"""
@@ -138,11 +143,16 @@ class DarkYouTubeScraper:
     def search_playlists(self, query, max_results=10):
         """Search for playlists"""
         try:
+            # Get diverse search parameters
+            params = get_diverse_search_params()
+
             request = self.youtube.search().list(
                 part='snippet',
                 q=query,
                 type='playlist',
-                maxResults=max_results
+                maxResults=max_results * 2,  # Get more, then randomize
+                order=params['order'],  # Varies each run
+                regionCode=params['regionCode']  # Regional diversity
             )
             response = request.execute()
             
@@ -187,6 +197,9 @@ class DarkYouTubeScraper:
             'darkness within playlist'
         ]
 
+        # Add diversity modifiers (time, quality, etc.)
+        queries = diversify_queries(queries)
+
         print("\n" + "="*70)
 
         print("\n" + "="*70)
@@ -201,18 +214,51 @@ class DarkYouTubeScraper:
                 break
                 
             print(f"\nSearching: '{query}'")
+
+            # Find playlists (increased from 5 to 10 for better coverage)
+            playlists = self.search_playlists(query, max_results=10)
             
-            # Find playlists
-            playlists = self.search_playlists(query, max_results=5)
-            
+            # Randomize playlist selection for diversity
+            random.shuffle(playlists)
+            playlists = playlists[:10]  # Take random subset
+
             for playlist in playlists:
+
+            
                 if len(cp.all_results) >= target_songs:
+
+            
                     break
-                
+
+            
+            
+
+            
+                playlist_id = playlist['id']
+
+            
+            
+
+            
+                # SKIP if we've already processed this playlist
+
+            
+                if cp.is_playlist_processed(playlist_id):
+
+            
+                    print(f"  SKIP (already processed): {playlist['title'][:50].encode('ascii', 'ignore').decode()}...")
+
+            
+                    continue
+
+            
+            
+
+            
                 print(f"  Playlist: {playlist['title'][:50].encode('ascii', 'ignore').decode()}...")
                 
                 # Get videos from playlist
-                videos = self.get_playlist_videos(playlist['id'])
+                videos = self.get_playlist_videos(playlist_id)
                 
                 for video in videos[:30]:  # First 30 songs per playlist
                     if len(cp.all_results) >= target_songs:
@@ -255,12 +301,15 @@ class DarkYouTubeScraper:
                             'post_title': playlist['title'],
                             'comment_text': best_comment if best_comment else playlist['description'][:500],
                             'comment_score': best_likes,
-                            'playlist_id': playlist['id']
+                            'playlist_id': playlist_id
                         }
                         
                         cp.update_progress([song_data])
                     
                     time.sleep(0.3)  # YouTube API rate limiting
+                
+                cp.mark_playlist_processed(playlist_id)
+
                 
                 time.sleep(1)  # Between playlists
 
@@ -271,8 +320,13 @@ class DarkYouTubeScraper:
 
 
 if __name__ == '__main__':
+    import sys
+
+    # Get target from command line, default to 1000
+    target_songs = int(sys.argv[1]) if len(sys.argv) > 1 else 1000
+
     scraper = DarkYouTubeScraper()
-    results = scraper.scrape_dark_vibes(target_songs=1000)
+    results = scraper.scrape_dark_vibes(target_songs=target_songs)
 
     print(f"\n{'='*70}")
     print(f"SCRAPING COMPLETE!")

@@ -57,9 +57,12 @@ def dedupe_before_ananki(scraped_file, output_file=None):
     print(f"  Duplicates (skipped): {duplicates}")
     print(f"  Savings: ${duplicates * 0.003:.2f} (avoided analyzing {duplicates} duplicates!)")
     
-    # Save deduplicated file
+    # Save deduplicated file to 2_deduped/ directory (NOT back to same folder!)
     if output_file is None:
-        output_file = Path(scraped_file).parent / f"{Path(scraped_file).stem}_DEDUPED.json"
+        project_root = Path(__file__).parent.parent
+        deduped_dir = project_root / '2_deduped'
+        deduped_dir.mkdir(parents=True, exist_ok=True)
+        output_file = deduped_dir / f"{Path(scraped_file).stem}_DEDUPED.json"
     
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump({
