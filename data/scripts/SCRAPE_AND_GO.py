@@ -1,5 +1,5 @@
 """
-🚀 ONE COMMAND TO RULE THEM ALL 🚀
+ONE COMMAND TO RULE THEM ALL
 
 Just run: python SCRAPE_AND_GO.py party,night,romantic
 
@@ -19,6 +19,10 @@ from pathlib import Path
 import subprocess
 import importlib.util
 
+# Force UTF-8 encoding for Windows console
+if sys.platform == 'win32':
+    sys.stdout.reconfigure(encoding='utf-8')
+
 PROJECT_ROOT = Path(__file__).parent.parent
 SCRIPTS_DIR = Path(__file__).parent
 
@@ -33,11 +37,11 @@ def load_module_from_file(module_name, file_path):
     return module
 
 print("""
-╔══════════════════════════════════════════════════════════════════╗
-║                   🎵 TAPESTRY AUTO-SCRAPER 🎵                    ║
-║                                                                  ║
-║            "Just say SCRAPE and watch the magic happen!"        ║
-╚══════════════════════════════════════════════════════════════════╝
+==================================================================
+                  TAPESTRY AUTO-SCRAPER
+
+           "Just say SCRAPE and watch the magic happen!"
+==================================================================
 """)
 
 # Parse arguments

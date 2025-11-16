@@ -6,9 +6,14 @@ NO KEYWORD MATCHING - Real human-level understanding
 
 import json
 import os
+import sys
 from pathlib import Path
 from anthropic import Anthropic
 from dotenv import load_dotenv
+
+# Force UTF-8 encoding for Windows console
+if sys.platform == 'win32':
+    sys.stdout.reconfigure(encoding='utf-8')
 
 # Load .env from the reddit directory (where API keys are stored)
 env_path = Path(__file__).parent.parent / 'reddit' / '.env'

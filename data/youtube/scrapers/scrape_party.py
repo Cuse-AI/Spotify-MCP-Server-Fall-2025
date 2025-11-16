@@ -21,18 +21,23 @@ from dotenv import load_dotenv
 from pathlib import Path
 from checkpoint_utils import CheckpointManager
 from improved_search_utils import load_tapestry_spotify_ids, diversify_queries, get_diverse_search_params
+from youtube_api_manager import YouTubeAPIManager
 import random
+import logging
+
+# Set up logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
 
 load_dotenv()
 load_dotenv(Path(__file__).parent.parent / '.env')
 
 class PartyYouTubeScraper:
     def __init__(self):
-        # Initialize YouTube
-        api_key = os.getenv('YOUTUBE_API_KEY')
-        if not api_key:
-            raise ValueError("YOUTUBE_API_KEY not found in .env")
-        self.youtube = build('youtube', 'v3', developerKey=api_key)
+        # Initialize YouTube with API Manager (supports rotation)
+        logger.info("Initializing YouTube API Manager...")
+        self.youtube_manager = YouTubeAPIManager()
+        logger.info(f"YouTube API ready: {self.youtube_manager.get_current_key_info()}")
         
         # Initialize Spotify
         self.sp = spotipy.Spotify(
@@ -137,12 +142,15 @@ class PartyYouTubeScraper:
             return []
 
     def search_playlists(self, query, max_results=10):
-        """Search for playlists"""
+        """Search for playlists with automatic API key rotation"""
         try:
             # Get diverse search parameters
             params = get_diverse_search_params()
 
-            request = self.youtube.search().list(
+            logger.info(f"Searching: '{query[:50]}...' (order={params['order']}, region={params['regionCode']})")
+
+            # Use API manager with automatic rotation
+            response, error = self.youtube_manager.search(
                 part='snippet',
                 q=query,
                 type='playlist',
@@ -150,8 +158,15 @@ class PartyYouTubeScraper:
                 order=params['order'],  # Varies each run
                 regionCode=params['regionCode']  # Regional diversity
             )
-            response = request.execute()
-            
+
+            if error:
+                logger.error(f"[X] YouTube API Error for query: {query[:50]}")
+                logger.error(f"    Error details: {error}")
+                if error.get('all_keys_exhausted'):
+                    logger.error(f"    [!] ALL API KEYS EXHAUSTED - Cannot continue")
+                    raise Exception("All YouTube API keys exhausted - daily quota reached")
+                return []
+
             playlists = []
             for item in response.get('items', []):
                 playlists.append({
@@ -159,10 +174,14 @@ class PartyYouTubeScraper:
                     'title': item['snippet']['title'],
                     'description': item['snippet']['description']
                 })
-            
+
+            logger.info(f"[OK] Found {len(playlists)} playlists")
             return playlists
+
         except Exception as e:
-            print(f"  Error searching playlists: {e}")
+            logger.error(f"[X] Error in search_playlists: {type(e).__name__}: {e}")
+            if "exhausted" in str(e).lower():
+                raise  # Re-raise quota errors
             return []
 
     def scrape_party_vibes(self, target_songs=1000):
