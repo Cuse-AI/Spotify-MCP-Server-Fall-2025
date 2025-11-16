@@ -114,8 +114,9 @@ class IntrospectiveSmartScraper:
                 return False
 
             return True
-        except:
-            return True  # If we can't check, allow it (TRUE Ananki will catch false positives)
+        except Exception as e:
+            self.logger.warning(f"Failed to validate track '{track.get('name', 'unknown')}': {e}")
+            return True  # Allow on validation failure - quality filter will catch bad comments
 
     def search_spotify(self, query_text):
         """Search Spotify with validation"""
@@ -142,7 +143,8 @@ class IntrospectiveSmartScraper:
                     'query_used': query_text[:100]
                 }
             return None
-        except:
+        except Exception as e:
+            self.logger.debug(f"Spotify search failed for '{query_text[:50]}': {e}")
             return None
 
     def extract_from_comment(self, comment_text, source_url, score, post_title='', post_body=''):

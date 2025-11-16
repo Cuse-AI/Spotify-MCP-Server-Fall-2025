@@ -116,7 +116,8 @@ class PlayfulSmartScraper:
                     'query_used': query_text[:100]
                 }
             return None
-        except:
+        except Exception as e:
+            self.logger.debug(f"Spotify search failed for '{query_text[:50]}': {e}")
             return None
 
     def extract_from_comment(self, comment_text, source_url, score, post_title='', post_body=''):
