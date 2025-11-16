@@ -1,0 +1,51 @@
+{
+  "total": 3,
+  "note": "These need human review or are not music recommendations",
+  "songs": [
+    {
+      "artist": "Papoose",
+      "song": "Thought I Was Gonna Stop (Remix)",
+      "spotify_id": "3rXHiTfElg14Yu9zeIPaiZ",
+      "spotify_uri": "spotify:track:3rXHiTfElg14Yu9zeIPaiZ",
+      "source_url": "https://youtube.com/watch?v=BvAUGnwZiAA",
+      "source": "youtube",
+      "post_title": "🎉 Party Music Hits",
+      "comment_text": "Have a relaxing weekend everyone! Planning on chilling at home and catching up on my favorite anime 😌 What about you?",
+      "comment_score": 91,
+      "playlist_id": "PLC1og_v3eb4jS6H0tMVnV-tzy2207Bcnp",
+      "ananki_subvibe": "AMBIGUOUS",
+      "ananki_reasoning": "There is a significant mismatch between the context and the song. The human describes 'relaxing weekend,' 'chilling at home,' and 'catching up on my favorite anime' - which suggests a calm, laid-back mood. However, Papoose's 'Thought I Was Gonna Stop (Remix)' is an aggressive, high-energy hip-hop track with a confrontational tone. The post title says 'Party Music Hits' but the comment describes the opposite of party behavior. This contradiction, combined with the fact that an intense rap song doesn't align with relaxing anime-watching at home, makes this context unreliable for emotional mapping. The human may have posted the wrong song, or this could be spam/bot behavior.",
+      "ananki_confidence": 0.3
+    },
+    {
+      "artist": "Drake",
+      "song": "8am in Charlotte",
+      "spotify_id": "0w3Mfe4PIVjuFjJbe3OlYv",
+      "spotify_uri": "spotify:track:0w3Mfe4PIVjuFjJbe3OlYv",
+      "source_url": "https://youtube.com/watch?v=CCw9ib_ZYbM",
+      "source": "youtube",
+      "post_title": "All that Jazz dance songs",
+      "comment_text": "can you do some dances with some simple turns!! and could you do traitor!!",
+      "comment_score": 75,
+      "playlist_id": "PLcpPboUmwROpImTN9-BBjyuAMCPHtgSsS",
+      "ananki_subvibe": "AMBIGUOUS",
+      "ananki_reasoning": "The comment is requesting dance choreography with 'simple turns' and asking for a dance to the song 'traitor' (likely Olivia Rodrigo's song). However, the validated song is Drake's '8am in Charlotte,' which is a hip-hop track, not a jazz dance song as the post title suggests. There's a clear mismatch between what was requested (jazz dance choreography for 'traitor'), what the post is about (jazz dance songs), and what song was actually validated (Drake's '8am in Charlotte'). The comment doesn't provide any emotional context about how the validated song makes them feel or what emotional vibe they're seeking from it. This appears to be a misalignment in the data rather than genuine emotional context for this specific track.",
+      "ananki_confidence": 0.3
+    },
+    {
+      "artist": "Jon Lajoie",
+      "song": "Everyday Normal Guy 2",
+      "spotify_id": "2hhFpD32iXUd4GaCu6T4wn",
+      "spotify_uri": "spotify:track:2hhFpD32iXUd4GaCu6T4wn",
+      "source_url": "https://youtube.com/watch?v=0rWBzZoQMP0",
+      "source": "youtube",
+      "post_title": "Trending Dance Hits UK | Top Dance Songs 2025 | Best EDM &amp; Dance Music Playlist",
+      "comment_text": "Watching Celine Dion being happy and dancing was just pure joy for me.  Great trancey track with 00s vibe. Let’s go back to that era and mindset.",
+      "comment_score": 630,
+      "playlist_id": "PLeDakahyfrO84mbaSqsAPpBtzWlq4mPFg",
+      "ananki_subvibe": "AMBIGUOUS",
+      "ananki_reasoning": "There is a clear mismatch between the comment context and the validated song. The comment describes watching Celine Dion dancing to a 'great trancey track with 00s vibe' in the context of a dance/EDM playlist. However, the Spotify-validated song is 'Everyday Normal Guy 2' by Jon Lajoie, which is a comedy/parody rap song, not a trance or dance track. This suggests either a validation error, the commenter was discussing a different song in the playlist/video, or there's some contextual confusion. Without being able to match the emotional intent (joy, nostalgia for 2000s trance/dance music) to the actual comedy song provided, I cannot reliably map this to a sub-vibe.",
+      "ananki_confidence": 0.3
+    }
+  ]
+}

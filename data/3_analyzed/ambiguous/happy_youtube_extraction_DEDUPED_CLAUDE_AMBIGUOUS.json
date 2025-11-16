@@ -1,0 +1,21 @@
+{
+  "total": 1,
+  "note": "These need human review or are not music recommendations",
+  "songs": [
+    {
+      "artist": "Brian D. Johnson",
+      "song": "Chapter 1 - Warning Signs - How to Protect Your Kids from Becoming Victims or Perpetrators of Violence and Aggression",
+      "spotify_id": "0DSl90FgPsU6VIkxTqTbsB",
+      "spotify_uri": "spotify:track:0DSl90FgPsU6VIkxTqTbsB",
+      "source_url": "https://youtube.com/watch?v=nkiwqmeNUxU",
+      "source": "youtube",
+      "post_title": "~Good Vibes Only~ |  ~Song Playlist~",
+      "comment_text": "im leaving a coment here so the next moth or year, i can see who like my coment!\n\n\nHave a grat day!  ❤",
+      "comment_score": 3,
+      "playlist_id": "PLao3Ixr_S7AEVCamN-I4Y5mJTJYNXtvmy",
+      "ananki_subvibe": "AMBIGUOUS",
+      "ananki_reasoning": "The comment is a generic engagement message asking for likes and wishing a great day, with no emotional context about the music itself. The song title indicates this is an audiobook or educational content about child safety and violence prevention, not a musical piece that fits any of the emotional sub-vibes in the list. This appears to be a mismatch between the 'Good Vibes Only' playlist title and the actual content, which is spoken word educational material rather than music for emotional expression.",
+      "ananki_confidence": 0.3
+    }
+  ]
+}
