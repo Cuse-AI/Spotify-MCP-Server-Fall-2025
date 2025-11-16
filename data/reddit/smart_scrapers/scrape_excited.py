@@ -25,6 +25,11 @@ import random
 load_dotenv()
 load_dotenv(Path(__file__).parent.parent / '.env')
 
+# Quality filtering
+import logging
+from quality_filters import QualityFilter
+
+
 class ExcitedSmartScraper:
     def __init__(self):
         self.sp = spotipy.Spotify(
@@ -41,9 +46,19 @@ class ExcitedSmartScraper:
         )
 
         self.scraped_urls = set()
-        
+
         # Pre-load tapestry to skip existing songs
         self.existing_spotify_ids = load_tapestry_spotify_ids()
+
+        # Initialize quality filter
+        self.quality_filter = QualityFilter()
+
+        # Setup logging
+        logging.basicConfig(
+            level=logging.INFO,
+            format='%(asctime)s [%(levelname)s] %(message)s'
+        )
+        self.logger = logging.getLogger(__name__)
 
     def is_music_comment(self, text):
         text_lower = text.lower()
@@ -105,7 +120,15 @@ class ExcitedSmartScraper:
             return None
 
     def extract_from_comment(self, comment_text, source_url, score, post_title='', post_body=''):
+                # QUALITY CHECK FIRST - before Spotify API calls
+        is_valid, reject_reason = self.quality_filter.is_quality_emotional_context(comment_text)
+        if not is_valid:
+            self.logger.debug(f"Rejected comment ({reject_reason}): {comment_text[:50]}...")
+            return []
+
         candidates = self.find_music_mentions(comment_text)
+
+        self.quality_filter.stats['songs_extracted'] += len(candidates)
         songs = []
         seen = set()
         for candidate_text, pattern_type in candidates:
@@ -177,7 +200,7 @@ class ExcitedSmartScraper:
                         print(f"  [STOPPING] Gracefully exiting with {len(cp.all_results)} songs")
                         print(f"  [NOTE] Checkpoint saved - can resume later!")
                         return cp.all_results
-                    print(f"  Error in r/{sub_name}: {e}")
+                    self.logger.error(f"Error in r/{sub_name}: {e}", exc_info=True)
             if len(cp.all_results) >= target_songs:
                 break
         output = Path('../test_results/excited_smart_extraction.json')

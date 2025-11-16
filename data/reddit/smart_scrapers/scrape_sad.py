@@ -22,6 +22,11 @@ sys.path.insert(0, str(Path(__file__).parent.parent.parent / 'youtube' / 'scrape
 from improved_search_utils import load_tapestry_spotify_ids
 import random
 
+# Quality filtering
+import logging
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from quality_filters import QualityFilter
+
 load_dotenv()
 load_dotenv(Path(__file__).parent.parent / '.env')
 
@@ -41,9 +46,19 @@ class SadSmartScraper:
         )
 
         self.scraped_urls = set()
-        
+
         # Pre-load tapestry to skip existing songs
         self.existing_spotify_ids = load_tapestry_spotify_ids()
+
+        # Initialize quality filter
+        self.quality_filter = QualityFilter()
+
+        # Setup logging
+        logging.basicConfig(
+            level=logging.INFO,
+            format='%(asctime)s [%(levelname)s] %(message)s'
+        )
+        self.logger = logging.getLogger(__name__)
 
     def is_music_comment(self, text):
         """Check if comment is actually about music"""
@@ -132,7 +147,16 @@ class SadSmartScraper:
 
     def extract_from_comment(self, comment_text, source_url, score, post_title='', post_body=''):
         """Extract with full context"""
+        # QUALITY CHECK FIRST - before Spotify API calls
+        is_valid, reject_reason = self.quality_filter.is_quality_emotional_context(comment_text)
+        if not is_valid:
+            self.logger.debug(f"Rejected comment ({reject_reason}): {comment_text[:50]}...")
+            return []
+
         candidates = self.find_music_mentions(comment_text)
+
+        self.quality_filter.stats['songs_extracted'] += len(candidates)
+
         songs = []
         seen = set()
 
@@ -234,21 +258,24 @@ class SadSmartScraper:
                     error_msg = str(e)
                     # Check for Reddit rate limit
                     if 'rate' in error_msg.lower() or 'limit' in error_msg.lower():
-                        print(f"  [RATE LIMIT] Hit Reddit API limit in r/{sub_name}")
-                        print(f"  [STOPPING] Gracefully exiting with {len(cp.all_results)} songs")
-                        print(f"  [NOTE] Checkpoint saved - can resume later!")
+                        self.logger.warning(f"[RATE LIMIT] Hit Reddit API limit in r/{sub_name}")
+                        self.logger.info(f"[STOPPING] Gracefully exiting with {len(cp.all_results)} songs")
+                        self.logger.info(f"[NOTE] Checkpoint saved - can resume later!")
                         return cp.all_results  # Return what we have so far
-                    print(f"  Error in r/{sub_name}: {e}")
+                    self.logger.error(f"Error in r/{sub_name}: {e}", exc_info=True)
 
             print(f"  Progress: {len(cp.all_results)} songs")
 
             if len(cp.all_results) >= target_songs:
                 break
 
+        # Log quality statistics
+        self.quality_filter.log_stats(self.logger)
+
         # Deduplicate
         seen = set()
         unique = []
-        for r in all_results:
+        for r in cp.all_results:  # Fixed: was 'all_results', should be 'cp.all_results'
             key = (r['artist'].lower(), r['song'].lower())
             if key not in seen:
                 seen.add(key)
