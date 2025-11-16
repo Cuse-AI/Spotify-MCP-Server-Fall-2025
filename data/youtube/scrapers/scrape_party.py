@@ -98,23 +98,40 @@ class PartyYouTubeScraper:
             return None
 
     def get_playlist_videos(self, playlist_id):
-        """Get all videos from a playlist"""
+        """Get all videos from a playlist with API rotation support"""
         try:
             videos = []
-            request = self.youtube.playlistItems().list(
+            response, error = self.youtube_manager.get_playlist_items(
                 part='snippet',
                 playlistId=playlist_id,
                 maxResults=50
             )
-            
-            while request and len(videos) < 100:  # Limit to 100 videos per playlist
-                response = request.execute()
+
+            if error:
+                logger.error(f"[X] Error getting playlist {playlist_id}: {error}")
+                if error.get('all_keys_exhausted'):
+                    raise Exception("All YouTube API keys exhausted")
+                return []
+
+            videos.extend(response.get('items', []))
+
+            # Get more pages if available (up to 100 videos)
+            while 'nextPageToken' in response and len(videos) < 100:
+                response, error = self.youtube_manager.get_playlist_items(
+                    part='snippet',
+                    playlistId=playlist_id,
+                    maxResults=50,
+                    pageToken=response['nextPageToken']
+                )
+                if error or not response:
+                    break
                 videos.extend(response.get('items', []))
-                request = self.youtube.playlistItems().list_next(request, response)
-            
+
             return videos
         except Exception as e:
-            print(f"  Error getting playlist: {e}")
+            logger.error(f"[X] Error in get_playlist_videos: {e}")
+            if "exhausted" in str(e).lower():
+                raise
             return []
 
     def get_video_comments(self, video_id, max_comments=20):
