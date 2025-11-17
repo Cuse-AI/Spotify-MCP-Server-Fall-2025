@@ -142,6 +142,31 @@ class BitterYouTubeScraper:
                 request = self.youtube.playlistItems().list_next(request, response)
             
             return videos
+        except HttpError as e:
+            if 'quota' in str(e).lower() or (hasattr(e, 'status_code') and e.status_code == 403):
+                self.logger.warning(f"[QUOTA] Attempting key rotation for get_playlist_videos...")
+                try:
+                    self.rotate_api_key()
+                    # Retry with new key
+                    videos = []
+                    request = self.youtube.playlistItems().list(
+                        part='snippet',
+                        playlistId=playlist_id,
+                        maxResults=50
+                    )
+
+                    while request and len(videos) < 100:
+                        response = request.execute()
+                        videos.extend(response.get('items', []))
+                        request = self.youtube.playlistItems().list_next(request, response)
+
+                    return videos
+                except Exception as retry_error:
+                    self.logger.error(f"Key rotation failed: {retry_error}")
+                    return []
+
+            print(f"  Error getting playlist: {e}")
+            return []
         except Exception as e:
             print(f"  Error getting playlist: {e}")
             return []
@@ -217,6 +242,39 @@ class BitterYouTubeScraper:
                 })
             
             return playlists
+        except HttpError as e:
+            # Check if quota exceeded
+            if 'quota' in str(e).lower() or (hasattr(e, 'status_code') and e.status_code == 403):
+                self.logger.warning(f"[QUOTA] Attempting key rotation for search_playlists...")
+                try:
+                    self.rotate_api_key()
+                    # Retry with new key
+                    params = get_diverse_search_params()
+                    request = self.youtube.search().list(
+                        part='snippet',
+                        q=query,
+                        type='playlist',
+                        maxResults=max_results * 2,
+                        order=params['order'],
+                        regionCode=params['regionCode']
+                    )
+                    response = request.execute()
+
+                    playlists = []
+                    for item in response.get('items', []):
+                        playlists.append({
+                            'id': item['id']['playlistId'],
+                            'title': item['snippet']['title'],
+                            'description': item['snippet']['description']
+                        })
+                    return playlists
+                except Exception as retry_error:
+                    self.logger.error(f"Key rotation failed: {retry_error}")
+                    return []  # Continue with empty results
+
+            # For other errors, log and return empty
+            print(f"  Error searching playlists: {e}")
+            return []
         except Exception as e:
             print(f"  Error searching playlists: {e}")
             return []
