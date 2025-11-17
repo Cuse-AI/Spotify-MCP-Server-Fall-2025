@@ -184,7 +184,7 @@ class PeacefulSmartScraper:
 
         return songs
 
-    def scrape_peaceful_vibes(self, target_songs=1500):
+    def scrape_peaceful_vibes(self, target_songs=100):
         """Scrape Peaceful with checkpointing"""
         cp = CheckpointManager('Peaceful')
         
@@ -277,7 +277,7 @@ class PeacefulSmartScraper:
 
 if __name__ == '__main__':
     scraper = PeacefulSmartScraper()
-    results = scraper.scrape_peaceful_vibes(target_songs=1500)
+    results = scraper.scrape_peaceful_vibes(target_songs=100)
 
     print(f"\n{'='*70}")
     print(f"SCRAPING COMPLETE!")

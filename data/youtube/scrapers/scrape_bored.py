@@ -178,7 +178,7 @@ class BoredYouTubeScraper:
             print(f"  Error searching playlists: {e}")
             return []
 
-    def scrape_bored_vibes(self, target_songs=1000):
+    def scrape_bored_vibes(self, target_songs=100):
         """Scrape Bored vibes from YouTube"""
         cp = CheckpointManager('Bored')
         
@@ -314,7 +314,7 @@ class BoredYouTubeScraper:
 
 if __name__ == '__main__':
     scraper = BoredYouTubeScraper()
-    results = scraper.scrape_bored_vibes(target_songs=1000)
+    results = scraper.scrape_bored_vibes(target_songs=100)
 
     print(f"\n{'='*70}")
     print(f"SCRAPING COMPLETE!")

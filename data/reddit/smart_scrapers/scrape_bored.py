@@ -152,7 +152,7 @@ class BoredSmartScraper:
             time.sleep(0.1)
         return songs
 
-    def scrape_bored_vibes(self, target_songs=500):
+    def scrape_bored_vibes(self, target_songs=100):
         cp = CheckpointManager('Bored')
         queries = [
             'bored music playlist',
@@ -211,7 +211,7 @@ class BoredSmartScraper:
 
 if __name__ == '__main__':
     scraper = BoredSmartScraper()
-    results = scraper.scrape_bored_vibes(target_songs=500)
+    results = scraper.scrape_bored_vibes(target_songs=100)
     print(f"\n{'='*70}")
     print(f"SCRAPING COMPLETE!")
     print(f"{'='*70}")

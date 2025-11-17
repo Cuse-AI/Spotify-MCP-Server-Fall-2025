@@ -184,7 +184,7 @@ class HappySmartScraper:
 
         return songs
 
-    def scrape_happy_vibes(self, target_songs=1000):
+    def scrape_happy_vibes(self, target_songs=100):
         """Scrape Happy with checkpointing"""
         cp = CheckpointManager('Happy')
         
@@ -293,7 +293,7 @@ if __name__ == '__main__':
     target_songs = int(sys.argv[1]) if len(sys.argv) > 1 else 1500
 
     scraper = HappySmartScraper()
-    results = scraper.scrape_happy_vibes(target_songs=1000)
+    results = scraper.scrape_happy_vibes(target_songs=100)
 
     print(f"\n{'='*70}")
     print(f"SCRAPING COMPLETE!")

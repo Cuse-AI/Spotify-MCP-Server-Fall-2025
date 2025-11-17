@@ -178,7 +178,7 @@ class IntrospectiveYouTubeScraper:
             print(f"  Error searching playlists: {e}")
             return []
 
-    def scrape_introspective_vibes(self, target_songs=1000):
+    def scrape_introspective_vibes(self, target_songs=100):
         """Scrape Introspective vibes from YouTube"""
         cp = CheckpointManager('Introspective')
         
@@ -314,7 +314,7 @@ class IntrospectiveYouTubeScraper:
 
 if __name__ == '__main__':
     scraper = IntrospectiveYouTubeScraper()
-    results = scraper.scrape_introspective_vibes(target_songs=1000)
+    results = scraper.scrape_introspective_vibes(target_songs=100)
 
     print(f"\n{'='*70}")
     print(f"SCRAPING COMPLETE!")

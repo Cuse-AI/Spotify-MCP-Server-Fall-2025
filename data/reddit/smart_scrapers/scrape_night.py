@@ -184,7 +184,7 @@ class NightSmartScraper:
 
         return songs
 
-    def scrape_night_vibes(self, target_songs=1000):
+    def scrape_night_vibes(self, target_songs=100):
         """Scrape Night with checkpointing"""
         cp = CheckpointManager('Night')
         
@@ -293,7 +293,7 @@ if __name__ == '__main__':
     target_songs = int(sys.argv[1]) if len(sys.argv) > 1 else 1500
 
     scraper = NightSmartScraper()
-    results = scraper.scrape_night_vibes(target_songs=500)
+    results = scraper.scrape_night_vibes(target_songs=100)
 
     print(f"\n{'='*70}")
     print(f"SCRAPING COMPLETE!")

@@ -184,7 +184,7 @@ class DarkSmartScraper:
 
         return songs
 
-    def scrape_dark_vibes(self, target_songs=1000):
+    def scrape_dark_vibes(self, target_songs=100):
         """Scrape Dark with checkpointing"""
         cp = CheckpointManager('Dark')
         
@@ -291,7 +291,7 @@ if __name__ == '__main__':
     target_songs = int(sys.argv[1]) if len(sys.argv) > 1 else 1500
 
     scraper = DarkSmartScraper()
-    results = scraper.scrape_dark_vibes(target_songs=1000)
+    results = scraper.scrape_dark_vibes(target_songs=100)
 
     print(f"\n{'='*70}")
     print(f"SCRAPING COMPLETE!")

@@ -178,7 +178,7 @@ class ChaoticYouTubeScraper:
             print(f"  Error searching playlists: {e}")
             return []
 
-    def scrape_chaotic_vibes(self, target_songs=1000):
+    def scrape_chaotic_vibes(self, target_songs=100):
         """Scrape Chaotic vibes from YouTube"""
         cp = CheckpointManager('Chaotic')
         
@@ -314,7 +314,7 @@ class ChaoticYouTubeScraper:
 
 if __name__ == '__main__':
     scraper = ChaoticYouTubeScraper()
-    results = scraper.scrape_chaotic_vibes(target_songs=1000)
+    results = scraper.scrape_chaotic_vibes(target_songs=100)
 
     print(f"\n{'='*70}")
     print(f"SCRAPING COMPLETE!")

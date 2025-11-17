@@ -184,7 +184,7 @@ class AngrySmartScraper:
 
         return songs
 
-    def scrape_angry_vibes(self, target_songs=1500):
+    def scrape_angry_vibes(self, target_songs=100):
         """Scrape Angry with checkpointing"""
         cp = CheckpointManager('Angry')
         
@@ -279,7 +279,7 @@ class AngrySmartScraper:
 
 if __name__ == '__main__':
     scraper = AngrySmartScraper()
-    results = scraper.scrape_angry_vibes(target_songs=1500)
+    results = scraper.scrape_angry_vibes(target_songs=100)
 
     print(f"\n{'='*70}")
     print(f"SCRAPING COMPLETE!")

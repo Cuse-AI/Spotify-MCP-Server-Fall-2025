@@ -184,7 +184,7 @@ class IntrospectiveSmartScraper:
 
         return songs
 
-    def scrape_introspective_vibes(self, target_songs=1500):
+    def scrape_introspective_vibes(self, target_songs=100):
         """Scrape Introspective with checkpointing"""
         cp = CheckpointManager('Introspective')
         
@@ -278,7 +278,7 @@ class IntrospectiveSmartScraper:
 
 if __name__ == '__main__':
     scraper = IntrospectiveSmartScraper()
-    results = scraper.scrape_introspective_vibes(target_songs=1500)
+    results = scraper.scrape_introspective_vibes(target_songs=100)
 
     print(f"\n{'='*70}")
     print(f"SCRAPING COMPLETE!")

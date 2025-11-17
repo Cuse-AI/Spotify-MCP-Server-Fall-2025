@@ -178,7 +178,7 @@ class PlayfulYouTubeScraper:
             print(f"  Error searching playlists: {e}")
             return []
 
-    def scrape_playful_vibes(self, target_songs=1000):
+    def scrape_playful_vibes(self, target_songs=100):
         """Scrape Playful vibes from YouTube"""
         cp = CheckpointManager('Playful')
         
@@ -314,7 +314,7 @@ class PlayfulYouTubeScraper:
 
 if __name__ == '__main__':
     scraper = PlayfulYouTubeScraper()
-    results = scraper.scrape_playful_vibes(target_songs=1000)
+    results = scraper.scrape_playful_vibes(target_songs=100)
 
     print(f"\n{'='*70}")
     print(f"SCRAPING COMPLETE!")

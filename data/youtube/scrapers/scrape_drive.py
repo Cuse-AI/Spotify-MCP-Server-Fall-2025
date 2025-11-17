@@ -178,7 +178,7 @@ class DriveYouTubeScraper:
             print(f"  Error searching playlists: {e}")
             return []
 
-    def scrape_drive_vibes(self, target_songs=1000):
+    def scrape_drive_vibes(self, target_songs=100):
         """Scrape Drive vibes from YouTube"""
         cp = CheckpointManager('Drive')
         

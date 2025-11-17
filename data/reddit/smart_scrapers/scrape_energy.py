@@ -184,7 +184,7 @@ class EnergySmartScraper:
 
         return songs
 
-    def scrape_energy_vibes(self, target_songs=1500):
+    def scrape_energy_vibes(self, target_songs=100):
         """Scrape Energy with checkpointing"""
         cp = CheckpointManager('Energy')
         
@@ -286,7 +286,7 @@ class EnergySmartScraper:
 
 if __name__ == '__main__':
     scraper = EnergySmartScraper()
-    results = scraper.scrape_energy_vibes(target_songs=1500)
+    results = scraper.scrape_energy_vibes(target_songs=100)
 
     print(f"\n{'='*70}")
     print(f"SCRAPING COMPLETE!")

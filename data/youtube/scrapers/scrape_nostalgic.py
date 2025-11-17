@@ -178,7 +178,7 @@ class NostalgicYouTubeScraper:
             print(f"  Error searching playlists: {e}")
             return []
 
-    def scrape_nostalgic_vibes(self, target_songs=1000):
+    def scrape_nostalgic_vibes(self, target_songs=100):
         """Scrape Nostalgic vibes from YouTube"""
         cp = CheckpointManager('Nostalgic')
         
@@ -314,7 +314,7 @@ class NostalgicYouTubeScraper:
 
 if __name__ == '__main__':
     scraper = NostalgicYouTubeScraper()
-    results = scraper.scrape_nostalgic_vibes(target_songs=1000)
+    results = scraper.scrape_nostalgic_vibes(target_songs=100)
 
     print(f"\n{'='*70}")
     print(f"SCRAPING COMPLETE!")

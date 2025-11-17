@@ -184,7 +184,7 @@ class NostalgicSmartScraper:
 
         return songs
 
-    def scrape_nostalgic_vibes(self, target_songs=1500):
+    def scrape_nostalgic_vibes(self, target_songs=100):
         """Scrape Nostalgic with checkpointing"""
         cp = CheckpointManager('Nostalgic')
         
@@ -278,7 +278,7 @@ class NostalgicSmartScraper:
 
 if __name__ == '__main__':
     scraper = NostalgicSmartScraper()
-    results = scraper.scrape_nostalgic_vibes(target_songs=1500)
+    results = scraper.scrape_nostalgic_vibes(target_songs=100)
 
     print(f"\n{'='*70}")
     print(f"SCRAPING COMPLETE!")

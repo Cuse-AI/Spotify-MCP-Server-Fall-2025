@@ -178,7 +178,7 @@ class HopefulYouTubeScraper:
             print(f"  Error searching playlists: {e}")
             return []
 
-    def scrape_hopeful_vibes(self, target_songs=1000):
+    def scrape_hopeful_vibes(self, target_songs=100):
         """Scrape Hopeful vibes from YouTube"""
         cp = CheckpointManager('Hopeful')
         
@@ -314,7 +314,7 @@ class HopefulYouTubeScraper:
 
 if __name__ == '__main__':
     scraper = HopefulYouTubeScraper()
-    results = scraper.scrape_hopeful_vibes(target_songs=1000)
+    results = scraper.scrape_hopeful_vibes(target_songs=100)
 
     print(f"\n{'='*70}")
     print(f"SCRAPING COMPLETE!")

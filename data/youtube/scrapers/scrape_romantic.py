@@ -178,7 +178,7 @@ class RomanticYouTubeScraper:
             print(f"  Error searching playlists: {e}")
             return []
 
-    def scrape_romantic_vibes(self, target_songs=1000):
+    def scrape_romantic_vibes(self, target_songs=100):
         """Scrape Romantic vibes from YouTube"""
         cp = CheckpointManager('Romantic')
         

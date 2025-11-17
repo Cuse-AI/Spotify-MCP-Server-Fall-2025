@@ -178,7 +178,7 @@ class ChillYouTubeScraper:
             print(f"  Error searching playlists: {e}")
             return []
 
-    def scrape_chill_vibes(self, target_songs=1000):
+    def scrape_chill_vibes(self, target_songs=100):
         """Scrape Chill vibes from YouTube - including consolidated sub-vibes"""
         cp = CheckpointManager('Chill')
 

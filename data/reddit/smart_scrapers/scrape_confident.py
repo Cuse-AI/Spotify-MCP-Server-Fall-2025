@@ -152,7 +152,7 @@ class ConfidentSmartScraper:
             time.sleep(0.1)
         return songs
 
-    def scrape_confident_vibes(self, target_songs=500):
+    def scrape_confident_vibes(self, target_songs=100):
         cp = CheckpointManager('Confident')
         queries = [
             'confident music playlist',
@@ -211,7 +211,7 @@ class ConfidentSmartScraper:
 
 if __name__ == '__main__':
     scraper = ConfidentSmartScraper()
-    results = scraper.scrape_confident_vibes(target_songs=500)
+    results = scraper.scrape_confident_vibes(target_songs=100)
     print(f"\n{'='*70}")
     print(f"SCRAPING COMPLETE!")
     print(f"{'='*70}")

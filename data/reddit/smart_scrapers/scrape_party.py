@@ -184,7 +184,7 @@ class PartySmartScraper:
 
         return songs
 
-    def scrape_party_vibes(self, target_songs=1500):
+    def scrape_party_vibes(self, target_songs=100):
         """Scrape Party with checkpointing"""
         cp = CheckpointManager('Party')
         
@@ -293,7 +293,7 @@ if __name__ == '__main__':
     target_songs = int(sys.argv[1]) if len(sys.argv) > 1 else 1500
 
     scraper = PartySmartScraper()
-    results = scraper.scrape_party_vibes(target_songs=1000)
+    results = scraper.scrape_party_vibes(target_songs=100)
 
     print(f"\n{'='*70}")
     print(f"SCRAPING COMPLETE!")

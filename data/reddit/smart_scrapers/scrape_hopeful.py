@@ -152,7 +152,7 @@ class HopefulSmartScraper:
             time.sleep(0.1)
         return songs
 
-    def scrape_hopeful_vibes(self, target_songs=500):
+    def scrape_hopeful_vibes(self, target_songs=100):
         cp = CheckpointManager('Hopeful')
         queries = [
             'hopeful music playlist',
@@ -211,7 +211,7 @@ class HopefulSmartScraper:
 
 if __name__ == '__main__':
     scraper = HopefulSmartScraper()
-    results = scraper.scrape_hopeful_vibes(target_songs=500)
+    results = scraper.scrape_hopeful_vibes(target_songs=100)
     print(f"\n{'='*70}")
     print(f"SCRAPING COMPLETE!")
     print(f"{'='*70}")

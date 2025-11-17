@@ -185,7 +185,7 @@ class SadSmartScraper:
 
         return songs
 
-    def scrape_sad_vibes(self, target_songs=1500):
+    def scrape_sad_vibes(self, target_songs=100):
         """Scrape Sad meta-vibe with checkpointing"""
         cp = CheckpointManager('Sad')
         

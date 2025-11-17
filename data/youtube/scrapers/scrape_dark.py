@@ -182,7 +182,7 @@ class DarkYouTubeScraper:
             print(f"  Error searching playlists: {e}")
             return []
 
-    def scrape_dark_vibes(self, target_songs=1000):
+    def scrape_dark_vibes(self, target_songs=100):
         """Scrape Dark vibes from YouTube - DIVERSE queries including consolidated sub-vibes"""
         cp = CheckpointManager('Dark')
 

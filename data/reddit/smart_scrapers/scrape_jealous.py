@@ -152,7 +152,7 @@ class JealousSmartScraper:
             time.sleep(0.1)
         return songs
 
-    def scrape_jealous_vibes(self, target_songs=500):
+    def scrape_jealous_vibes(self, target_songs=100):
         cp = CheckpointManager('Jealous')
         queries = [
             'jealous music playlist',
@@ -211,7 +211,7 @@ class JealousSmartScraper:
 
 if __name__ == '__main__':
     scraper = JealousSmartScraper()
-    results = scraper.scrape_jealous_vibes(target_songs=500)
+    results = scraper.scrape_jealous_vibes(target_songs=100)
     print(f"\n{'='*70}")
     print(f"SCRAPING COMPLETE!")
     print(f"{'='*70}")

@@ -178,7 +178,7 @@ class GratefulYouTubeScraper:
             print(f"  Error searching playlists: {e}")
             return []
 
-    def scrape_grateful_vibes(self, target_songs=1000):
+    def scrape_grateful_vibes(self, target_songs=100):
         """Scrape Grateful vibes from YouTube"""
         cp = CheckpointManager('Grateful')
         
@@ -314,7 +314,7 @@ class GratefulYouTubeScraper:
 
 if __name__ == '__main__':
     scraper = GratefulYouTubeScraper()
-    results = scraper.scrape_grateful_vibes(target_songs=1000)
+    results = scraper.scrape_grateful_vibes(target_songs=100)
 
     print(f"\n{'='*70}")
     print(f"SCRAPING COMPLETE!")

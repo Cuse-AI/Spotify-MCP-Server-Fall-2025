@@ -184,7 +184,7 @@ class AnxiousSmartScraper:
 
         return songs
 
-    def scrape_anxious_vibes(self, target_songs=1500):
+    def scrape_anxious_vibes(self, target_songs=100):
         """Scrape Anxious with checkpointing"""
         cp = CheckpointManager('Anxious')
         
@@ -278,7 +278,7 @@ class AnxiousSmartScraper:
 
 if __name__ == '__main__':
     scraper = AnxiousSmartScraper()
-    results = scraper.scrape_anxious_vibes(target_songs=1500)
+    results = scraper.scrape_anxious_vibes(target_songs=100)
 
     print(f"\n{'='*70}")
     print(f"SCRAPING COMPLETE!")

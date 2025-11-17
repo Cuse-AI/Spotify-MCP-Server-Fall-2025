@@ -178,7 +178,7 @@ class ConfidentYouTubeScraper:
             print(f"  Error searching playlists: {e}")
             return []
 
-    def scrape_confident_vibes(self, target_songs=1000):
+    def scrape_confident_vibes(self, target_songs=100):
         """Scrape Confident vibes from YouTube"""
         cp = CheckpointManager('Confident')
         
@@ -314,7 +314,7 @@ class ConfidentYouTubeScraper:
 
 if __name__ == '__main__':
     scraper = ConfidentYouTubeScraper()
-    results = scraper.scrape_confident_vibes(target_songs=1000)
+    results = scraper.scrape_confident_vibes(target_songs=100)
 
     print(f"\n{'='*70}")
     print(f"SCRAPING COMPLETE!")

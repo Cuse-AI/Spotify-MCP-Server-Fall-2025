@@ -178,7 +178,7 @@ class BitterYouTubeScraper:
             print(f"  Error searching playlists: {e}")
             return []
 
-    def scrape_bitter_vibes(self, target_songs=1000):
+    def scrape_bitter_vibes(self, target_songs=100):
         """Scrape Bitter vibes from YouTube"""
         cp = CheckpointManager('Bitter')
         
@@ -314,7 +314,7 @@ class BitterYouTubeScraper:
 
 if __name__ == '__main__':
     scraper = BitterYouTubeScraper()
-    results = scraper.scrape_bitter_vibes(target_songs=1000)
+    results = scraper.scrape_bitter_vibes(target_songs=100)
 
     print(f"\n{'='*70}")
     print(f"SCRAPING COMPLETE!")

@@ -178,7 +178,7 @@ class ExcitedYouTubeScraper:
             print(f"  Error searching playlists: {e}")
             return []
 
-    def scrape_excited_vibes(self, target_songs=1000):
+    def scrape_excited_vibes(self, target_songs=100):
         """Scrape Excited vibes from YouTube"""
         cp = CheckpointManager('Excited')
         
@@ -314,7 +314,7 @@ class ExcitedYouTubeScraper:
 
 if __name__ == '__main__':
     scraper = ExcitedYouTubeScraper()
-    results = scraper.scrape_excited_vibes(target_songs=1000)
+    results = scraper.scrape_excited_vibes(target_songs=100)
 
     print(f"\n{'='*70}")
     print(f"SCRAPING COMPLETE!")

@@ -178,7 +178,7 @@ class HappyYouTubeScraper:
             print(f"  Error searching playlists: {e}")
             return []
 
-    def scrape_happy_vibes(self, target_songs=1000):
+    def scrape_happy_vibes(self, target_songs=100):
         """Scrape Happy vibes from YouTube - including consolidated sub-vibes"""
         cp = CheckpointManager('Happy')
 

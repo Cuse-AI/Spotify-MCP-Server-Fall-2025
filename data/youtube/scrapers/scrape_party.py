@@ -214,7 +214,7 @@ class PartyYouTubeScraper:
                 raise  # Re-raise quota errors
             return []
 
-    def scrape_party_vibes(self, target_songs=1000):
+    def scrape_party_vibes(self, target_songs=100):
         """Scrape Party vibes from YouTube"""
         cp = CheckpointManager('Party')
         

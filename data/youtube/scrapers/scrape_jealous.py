@@ -178,7 +178,7 @@ class JealousYouTubeScraper:
             print(f"  Error searching playlists: {e}")
             return []
 
-    def scrape_jealous_vibes(self, target_songs=1000):
+    def scrape_jealous_vibes(self, target_songs=100):
         """Scrape Jealous vibes from YouTube"""
         cp = CheckpointManager('Jealous')
         
@@ -314,7 +314,7 @@ class JealousYouTubeScraper:
 
 if __name__ == '__main__':
     scraper = JealousYouTubeScraper()
-    results = scraper.scrape_jealous_vibes(target_songs=1000)
+    results = scraper.scrape_jealous_vibes(target_songs=100)
 
     print(f"\n{'='*70}")
     print(f"SCRAPING COMPLETE!")

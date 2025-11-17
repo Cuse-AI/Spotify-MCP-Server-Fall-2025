@@ -179,7 +179,7 @@ class BitterSmartScraper:
 
         return songs
 
-    def scrape_bitter_vibes(self, target_songs=500):
+    def scrape_bitter_vibes(self, target_songs=100):
         """Scrape Bitter meta-vibe with checkpointing"""
         cp = CheckpointManager('Bitter')
         
@@ -257,7 +257,7 @@ class BitterSmartScraper:
 
 if __name__ == '__main__':
     scraper = BitterSmartScraper()
-    results = scraper.scrape_bitter_vibes(target_songs=500)
+    results = scraper.scrape_bitter_vibes(target_songs=100)
 
     print(f"\n{'='*70}")
     print(f"SCRAPING COMPLETE!")

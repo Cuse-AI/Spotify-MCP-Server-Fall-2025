@@ -178,7 +178,7 @@ class EnergyYouTubeScraper:
             print(f"  Error searching playlists: {e}")
             return []
 
-    def scrape_energy_vibes(self, target_songs=1000):
+    def scrape_energy_vibes(self, target_songs=100):
         """Scrape Energy vibes from YouTube - including consolidated sub-vibes"""
         cp = CheckpointManager('Energy')
 
@@ -346,7 +346,7 @@ class EnergyYouTubeScraper:
 
 if __name__ == '__main__':
     scraper = EnergyYouTubeScraper()
-    results = scraper.scrape_energy_vibes(target_songs=1000)
+    results = scraper.scrape_energy_vibes(target_songs=100)
 
     print(f"\n{'='*70}")
     print(f"SCRAPING COMPLETE!")

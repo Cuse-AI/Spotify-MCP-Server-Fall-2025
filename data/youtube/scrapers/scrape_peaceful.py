@@ -178,7 +178,7 @@ class PeacefulYouTubeScraper:
             print(f"  Error searching playlists: {e}")
             return []
 
-    def scrape_peaceful_vibes(self, target_songs=1000):
+    def scrape_peaceful_vibes(self, target_songs=100):
         """Scrape Peaceful vibes from YouTube"""
         cp = CheckpointManager('Peaceful')
         
@@ -314,7 +314,7 @@ class PeacefulYouTubeScraper:
 
 if __name__ == '__main__':
     scraper = PeacefulYouTubeScraper()
-    results = scraper.scrape_peaceful_vibes(target_songs=1000)
+    results = scraper.scrape_peaceful_vibes(target_songs=100)
 
     print(f"\n{'='*70}")
     print(f"SCRAPING COMPLETE!")

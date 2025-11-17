@@ -178,7 +178,7 @@ class NightYouTubeScraper:
             print(f"  Error searching playlists: {e}")
             return []
 
-    def scrape_night_vibes(self, target_songs=1000):
+    def scrape_night_vibes(self, target_songs=100):
         """Scrape Night vibes from YouTube - including consolidated Introspective sub-vibes"""
         cp = CheckpointManager('Night')
 

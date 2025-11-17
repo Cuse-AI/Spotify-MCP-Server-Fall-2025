@@ -178,7 +178,7 @@ class SadYouTubeScraper:
             print(f"  Error searching playlists: {e}")
             return []
 
-    def scrape_sad_vibes(self, target_songs=1000):
+    def scrape_sad_vibes(self, target_songs=100):
         """Scrape Sad vibes from YouTube - including consolidated Nostalgic sub-vibes"""
         cp = CheckpointManager('Sad')
 
