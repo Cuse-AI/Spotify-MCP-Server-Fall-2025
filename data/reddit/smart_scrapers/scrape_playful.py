@@ -27,7 +27,7 @@ load_dotenv(Path(__file__).parent.parent / '.env')
 
 # Quality filtering
 import logging
-from quality_filters import QualityFilter
+from improved_quality_filters import ImprovedQualityFilter
 
 
 class PlayfulSmartScraper:
@@ -51,7 +51,7 @@ class PlayfulSmartScraper:
         self.existing_spotify_ids = load_tapestry_spotify_ids()
 
         # Initialize quality filter
-        self.quality_filter = QualityFilter()
+        self.quality_filter = ImprovedQualityFilter()
 
         # Setup logging
         logging.basicConfig(
@@ -92,8 +92,9 @@ class PlayfulSmartScraper:
             if any(sg in ' '.join(genres).lower() for sg in spoken_genres):
                 return False
             return True
-        except:
-            return True
+        except Exception as e:
+            self.logger.warning(f"Failed to validate track '{track.get('name', 'unknown')}': {e}")
+            return True  # Allow on validation failure - quality filter will catch bad comments
 
     def search_spotify(self, query_text):
         try:

@@ -22,6 +22,8 @@ from pathlib import Path
 from checkpoint_utils import CheckpointManager
 from improved_search_utils import load_tapestry_spotify_ids, diversify_queries, get_diverse_search_params
 import random
+import logging
+from improved_quality_filters import ImprovedQualityFilter
 
 load_dotenv()
 load_dotenv(Path(__file__).parent.parent / '.env')
@@ -46,6 +48,16 @@ class GratefulYouTubeScraper:
         
         # Pre-load tapestry to skip existing songs
         self.existing_spotify_ids = load_tapestry_spotify_ids()
+
+        # Initialize quality filter
+        self.quality_filter = ImprovedQualityFilter()
+
+        # Setup logging
+        logging.basicConfig(
+            level=logging.INFO,
+            format='%(asctime)s [%(levelname)s] %(message)s'
+        )
+        self.logger = logging.getLogger(__name__)
 
     def clean_song_title(self, title):
         """Clean YouTube video title to get actual song name"""
@@ -89,7 +101,8 @@ class GratefulYouTubeScraper:
                     'spotify_uri': track['uri']
                 }
             return None
-        except:
+        except Exception as e:
+            self.logger.debug(f"Spotify search failed: {e}")
             return None
 
     def get_playlist_videos(self, playlist_id):
@@ -258,13 +271,21 @@ class GratefulYouTubeScraper:
                         # Get comments for emotional context
                         comments = self.get_video_comments(video_id, max_comments=10)
                         
-                        # Find best emotional comment
+                        # Find best emotional comment (with quality filtering)
                         best_comment = ""
                         best_likes = 0
                         for comment in comments:
-                            if comment['likes'] > best_likes and len(comment['text']) > 20:
-                                best_comment = comment['text']
+                            comment_text = comment['text']
+                            # Check quality FIRST
+                            is_valid, _ = self.quality_filter.is_quality_emotional_context(
+                                comment_text,
+                                post_title=playlist['title'],
+                                post_body=playlist.get('description', '')
+                            )
+                            if is_valid and comment['likes'] > best_likes:
+                                best_comment = comment_text
                                 best_likes = comment['likes']
+                                self.quality_filter.stats['songs_extracted'] += 1
                         
                         song_data = {
                             **spotify_result,

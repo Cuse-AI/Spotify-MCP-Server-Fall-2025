@@ -27,7 +27,7 @@ load_dotenv(Path(__file__).parent.parent / '.env')
 
 # Quality filtering
 import logging
-from quality_filters import QualityFilter
+from improved_quality_filters import ImprovedQualityFilter
 
 
 class HappySmartScraper:
@@ -51,7 +51,7 @@ class HappySmartScraper:
         self.existing_spotify_ids = load_tapestry_spotify_ids()
 
         # Initialize quality filter
-        self.quality_filter = QualityFilter()
+        self.quality_filter = ImprovedQualityFilter()
 
         # Setup logging
         logging.basicConfig(

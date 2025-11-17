@@ -12,20 +12,20 @@ import os
 import re
 import json
 import time
+import sys
+import logging
+import random
 from dotenv import load_dotenv
 from pathlib import Path
+
+# Setup import paths BEFORE importing local modules
+# Import checkpoint_utils from THIS directory first (Reddit version)
 from checkpoint_utils import CheckpointManager
-# Import tapestry pre-filtering
-import sys
-from pathlib import Path
+from improved_quality_filters import ImprovedQualityFilter
+
+# Then add YouTube path for improved_search_utils
 sys.path.insert(0, str(Path(__file__).parent.parent.parent / 'youtube' / 'scrapers'))
 from improved_search_utils import load_tapestry_spotify_ids
-import random
-
-# Quality filtering
-import logging
-sys.path.insert(0, str(Path(__file__).parent.parent))
-from quality_filters import QualityFilter
 
 load_dotenv()
 load_dotenv(Path(__file__).parent.parent / '.env')
@@ -51,7 +51,7 @@ class SadSmartScraper:
         self.existing_spotify_ids = load_tapestry_spotify_ids()
 
         # Initialize quality filter
-        self.quality_filter = QualityFilter()
+        self.quality_filter = ImprovedQualityFilter()
 
         # Setup logging
         logging.basicConfig(
@@ -288,7 +288,7 @@ class SadSmartScraper:
 
 if __name__ == '__main__':
     scraper = SadSmartScraper()
-    results = scraper.scrape_sad_vibes(target_songs=1500)
+    results = scraper.scrape_sad_vibes(target_songs=100)
 
     print(f"\n{'='*70}")
     print(f"SCRAPING COMPLETE!")
