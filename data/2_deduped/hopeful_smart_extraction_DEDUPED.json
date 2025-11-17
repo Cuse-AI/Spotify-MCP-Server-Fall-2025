@@ -1,0 +1,23 @@
+{
+  "meta_vibe": "Hopeful",
+  "songs": [
+    {
+      "artist": "Keri Hilson",
+      "song": "Knock You Down",
+      "spotify_id": "58FUwmyGUqkt53YPUcm7cJ",
+      "spotify_uri": "spotify:track:58FUwmyGUqkt53YPUcm7cJ",
+      "query_used": "The Moment I Said It Imogen heap a listen.",
+      "extraction_pattern": "by_pattern",
+      "comment_score": 11,
+      "source_url": "https://reddit.com/r/Music/comments/1jbx0df/gradually_going_deaf_send_music_i_should_listen/mhxk8y7/",
+      "post_title": "Gradually going deaf, send music I should listen to before I lose it all!",
+      "comment_text": "I'm so sorry for what you are going through. I would recommend you give \"The Moment I Said It\" by Imogen heap a listen."
+    }
+  ],
+  "deduplication_stats": {
+    "original_count": 45,
+    "new_count": 1,
+    "duplicates_in_tapestry": 33,
+    "duplicates_in_batch": 11
+  }
+}
