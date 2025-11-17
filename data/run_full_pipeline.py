@@ -89,37 +89,83 @@ def main():
 
     print(f"\n[SUCCESS] Deduped {deduped_count}/{len(all_results)} files")
 
-    # Step 3: Ready for Ananki
+    # Step 3: Run Ananki Analysis
     print("\n\n" + "="*70)
-    print("STEP 3: READY FOR ANANKI ANALYSIS")
+    print("STEP 3: ANANKI EMOTIONAL ANALYSIS")
     print("="*70)
 
-    deduped_dir = script_dir / 'youtube' / 'test_results' / 'deduped'
+    deduped_dir = script_dir / '2_deduped'
     if not deduped_dir.exists():
-        deduped_dir = script_dir / 'scripts' / 'deduped'
+        print(f"[ERROR] Deduped directory not found: {deduped_dir}")
+        return
 
-    if deduped_dir.exists():
-        deduped_files = list(deduped_dir.glob('*_deduped.json'))
-        print(f"\nFound {len(deduped_files)} deduped files ready for Ananki:")
-        for f in deduped_files:
-            print(f"  - {f.name}")
+    deduped_files = list(deduped_dir.glob('*_DEDUPED.json'))
+    print(f"\nFound {len(deduped_files)} deduped files for Ananki analysis")
 
-        print(f"\n\nNext step: Run Ananki analysis on these files")
-        print(f"Command: python data/scripts/true_ananki_claude_api.py <file_path>")
-    else:
-        print("\n[WARNING] No deduped directory found")
-        print("Deduped files should be in their original directories with '_deduped' suffix")
+    ananki_script = script_dir / 'scripts' / 'batch_ananki.py'
+    if not ananki_script.exists():
+        print(f"[ERROR] Ananki script not found: {ananki_script}")
+        return
+
+    print("\nRunning Ananki analysis (this will take time)...")
+    ananki_result = subprocess.run(
+        [sys.executable, str(ananki_script)],
+        cwd=str(script_dir / 'scripts')
+    )
+
+    if ananki_result.returncode != 0:
+        print("\n[ERROR] Ananki analysis failed!")
+        return
+
+    print("\n[SUCCESS] Ananki analysis complete!")
+
+    # Step 4: Inject into Tapestry
+    print("\n\n" + "="*70)
+    print("STEP 4: INJECT INTO TAPESTRY")
+    print("="*70)
+
+    ananki_ready_dir = script_dir / '3_ananki_ready'
+    if not ananki_ready_dir.exists():
+        print(f"[ERROR] Ananki ready directory not found: {ananki_ready_dir}")
+        return
+
+    ananki_ready_files = list(ananki_ready_dir.glob('*_ananki_ready.json'))
+    print(f"\nFound {len(ananki_ready_files)} Ananki-analyzed files to inject")
+
+    inject_script = script_dir / 'scripts' / 'inject_to_tapestry.py'
+    if not inject_script.exists():
+        print(f"[ERROR] Inject script not found: {inject_script}")
+        return
+
+    for ananki_file in ananki_ready_files:
+        vibe = ananki_file.stem.replace('_ananki_ready', '')
+        print(f"\nInjecting: {vibe}")
+
+        inject_result = subprocess.run(
+            [sys.executable, str(inject_script), str(ananki_file)],
+            capture_output=True,
+            text=True
+        )
+
+        if inject_result.returncode == 0:
+            # Show summary
+            for line in inject_result.stdout.split('\n'):
+                if 'injected' in line.lower() or 'added' in line.lower():
+                    print(f"  {line.strip()}")
+        else:
+            print(f"  [ERROR] Injection failed for {vibe}")
 
     # Final summary
     print("\n\n" + "="*70)
-    print("PIPELINE COMPLETE")
+    print("FULL PIPELINE COMPLETE!")
     print("="*70)
     print(f"End time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print("\nPipeline Status:")
     print("  ✅ Step 1: Scraping complete")
     print("  ✅ Step 2: Deduplication complete")
-    print("  ⏳ Step 3: Ready for Ananki (manual step)")
-    print("\nAll new songs have been deduped and are ready for emotional analysis!")
+    print("  ✅ Step 3: Ananki analysis complete")
+    print("  ✅ Step 4: Tapestry injection complete")
+    print("\nAll new songs analyzed and added to tapestry!")
     print("="*70)
 
 
