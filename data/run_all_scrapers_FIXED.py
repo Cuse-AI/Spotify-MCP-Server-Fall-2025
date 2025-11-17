@@ -1,10 +1,11 @@
 """
 FIXED Master Script - Runs ALL scrapers (YouTube + Reddit) with better error handling
-Per Replit's recommendations
+Per Replit's recommendations + Architect's Fix #2 (validate output)
 """
 import subprocess
 import time
 import sys
+import json
 from pathlib import Path
 from datetime import datetime
 
@@ -32,7 +33,35 @@ def run_scraper(scraper_path, scraper_type):
         elapsed = time.time() - start_time
 
         if result.returncode == 0:
-            # Show last few lines of output
+            # ARCHITECT'S FIX #2: Validate output - check if actually got songs
+            output_file = None
+            try:
+                if scraper_type == 'YouTube':
+                    output_file = scraper_path.parent.parent / 'test_results' / f'{vibe}_youtube_extraction.json'
+                else:  # Reddit
+                    output_file = scraper_path.parent.parent / 'test_results' / f'{vibe}_smart_extraction.json'
+
+                if output_file and output_file.exists():
+                    with open(output_file, 'r', encoding='utf-8') as f:
+                        data = json.load(f)
+                        total_songs = len(data.get('songs', []))
+
+                    if total_songs == 0:
+                        print(f"[FAILED] {vibe}: 0 songs collected ({elapsed:.1f}s)")
+                        print(f"  Likely cause: API quota exceeded or no results found")
+                        return False, elapsed
+                    else:
+                        print(f"[SUCCESS] {vibe}: {total_songs} songs ({elapsed:.1f}s)")
+                        return True, elapsed
+                else:
+                    print(f"[WARN] {vibe}: Output file not found, assuming success based on returncode")
+                    return True, elapsed
+
+            except Exception as e:
+                # If can't validate, fall back to checking stdout
+                print(f"[WARN] Could not validate output file: {e}")
+
+            # Fallback: Show last few lines of output
             output_lines = result.stdout.strip().split('\n')
             relevant_lines = [l for l in output_lines if 'Total' in l or 'songs' in l or 'COMPLETE' in l]
 

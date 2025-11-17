@@ -11,6 +11,7 @@ Workflow: Scrape → TRUE Ananki Analysis → Inject to Tapestry
 """
 
 from googleapiclient.discovery import build
+from googleapiclient.errors import HttpError
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 import os
@@ -31,10 +32,19 @@ load_dotenv(Path(__file__).parent.parent / '.env')
 class ChillYouTubeScraper:
     def __init__(self):
         # Initialize YouTube
-        api_key = os.getenv('YOUTUBE_API_KEY')
-        if not api_key:
-            raise ValueError("YOUTUBE_API_KEY not found in .env")
-        self.youtube = build('youtube', 'v3', developerKey=api_key)
+        # API key rotation support
+        self.api_keys = [
+            os.getenv('YOUTUBE_API_KEY'),
+            os.getenv('YOUTUBE_API_KEY_2')
+        ]
+        self.api_keys = [k for k in self.api_keys if k]  # Remove None values
+        if not self.api_keys:
+            raise ValueError("No YOUTUBE_API_KEY found in .env")
+
+        self.current_key_index = 0
+        self.youtube = build('youtube', 'v3', developerKey=self.api_keys[self.current_key_index])
+        self.logger = logging.getLogger(__name__)
+        self.logger.info(f"Initialized with {len(self.api_keys)} API key(s)")
         
         # Initialize Spotify
         self.sp = spotipy.Spotify(
@@ -48,6 +58,17 @@ class ChillYouTubeScraper:
         
         # Pre-load tapestry to skip existing songs
         self.existing_spotify_ids = load_tapestry_spotify_ids()
+
+    def rotate_api_key(self):
+        """Switch to next API key when quota exhausted"""
+        if len(self.api_keys) <= 1:
+            self.logger.error("No additional API keys available for rotation")
+            raise Exception("All API keys exhausted")
+
+        old_index = self.current_key_index
+        self.current_key_index = (self.current_key_index + 1) % len(self.api_keys)
+        self.youtube = build('youtube', 'v3', developerKey=self.api_keys[self.current_key_index])
+        self.logger.warning(f"[API KEY ROTATION] Switched from key #{old_index + 1} to key #{self.current_key_index + 1}")
 
         # Initialize quality filter
         self.quality_filter = ImprovedQualityFilter()
@@ -146,8 +167,30 @@ class ChillYouTubeScraper:
                 })
             
             return comments
-        except:
-            return []
+        except HttpError as e:
+            self.logger.error(f"YouTube API error in get_playlist_videos: {e.status_code if hasattr(e, 'status_code') else 'unknown'}")
+
+            if 'quota' in str(e).lower() or (hasattr(e, 'status_code') and e.status_code == 403):
+                self.logger.error("[QUOTA EXCEEDED] Attempting API key rotation...")
+                try:
+                    self.rotate_api_key()
+                    # Retry with new key
+                    response = self.youtube.playlistItems().list(
+                        playlistId=playlist_id,
+                        part='contentDetails',
+                        maxResults=50
+                    ).execute()
+
+                    video_ids = [item['contentDetails']['videoId'] for item in response.get('items', [])]
+                    return video_ids[:20]
+                except Exception as rotate_error:
+                    self.logger.error(f"API key rotation failed: {rotate_error}")
+                    raise
+
+            raise
+        except Exception as e:
+            self.logger.error(f"Unexpected error in get_playlist_videos: {e}")
+            raise
 
     def search_playlists(self, query, max_results=10):
         """Search for playlists"""
