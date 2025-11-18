@@ -1,0 +1,21 @@
+{
+  "total": 1,
+  "note": "These need human review or are not music recommendations",
+  "songs": [
+    {
+      "artist": "The Kid LAROI",
+      "song": "NIGHTS LIKE THIS",
+      "spotify_id": "1XBYiRV30ykHw5f4wm6qEn",
+      "spotify_uri": "spotify:track:1XBYiRV30ykHw5f4wm6qEn",
+      "query_used": "Nights Like This",
+      "extraction_pattern": "quoted",
+      "comment_score": 1,
+      "source_url": "https://reddit.com/r/listentothis/comments/1lz7tuy/music_melting_pot_week_of_july_14_2025/n30d40q/",
+      "post_title": "Music Melting Pot [Week of July 14, 2025]",
+      "comment_text": "\"Nights Like This\" [https://youtu.be/mIc7puYiJwQ?si=AyEJEmgL5AYhxCDP&t=880](https://youtu.be/mIc7puYiJwQ?si=AyEJEmgL5AYhxCDP&t=880)\n\nIndie pop track that's part of an album I released last year; a mix of Nick Cave, Brian Wilson's vocal arrangements, and Leonard Cohen\n\nEnjoy!",
+      "ananki_subvibe": "AMBIGUOUS",
+      "ananki_reasoning": "There is a significant mismatch between the described song and the validated Spotify track. The commenter describes an indie pop track they personally released, influenced by Nick Cave, Brian Wilson's vocal arrangements, and Leonard Cohen - suggesting a sophisticated, likely melancholic or contemplative indie sound. However, the Spotify validation identifies this as 'NIGHTS LIKE THIS' by The Kid LAROI, who is a contemporary hip-hop/pop artist with a completely different style. The YouTube link timestamp (880 seconds into a video) suggests this may be from a compilation or playlist rather than the artist's official channel. Without being able to verify which song is actually being recommended, and given the contradictory information about genre, artist, and style, I cannot confidently map this to a specific emotional sub-vibe.",
+      "ananki_confidence": 0.2
+    }
+  ]
+}

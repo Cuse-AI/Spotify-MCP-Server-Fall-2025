@@ -1,0 +1,81 @@
+{
+  "total": 5,
+  "note": "These need human review or are not music recommendations",
+  "songs": [
+    {
+      "artist": "Travis Scott",
+      "song": "TELEKINESIS (feat. SZA & Future)",
+      "spotify_id": "1i9lZvlaDdWDPyXEE95aiq",
+      "spotify_uri": "spotify:track:1i9lZvlaDdWDPyXEE95aiq",
+      "query_used": "Sounds I only hear in my sleep",
+      "extraction_pattern": "quoted",
+      "comment_score": 1,
+      "source_url": "https://reddit.com/r/listentothis/comments/1ogzyl0/music_melting_pot_week_of_october_27_2025/nlmqqua/",
+      "post_title": "Music Melting Pot [Week of October 27, 2025]",
+      "comment_text": "Hi my name is Cherry, I am a composer and producer. I just released my album as a set of 9 tracks called \"Sounds I only hear in my sleep\". This album is based on music I heard in my dreams or scenes I saw and wrote music to. I use synths, MIDIs, my Rubik's cube, and my vocals. I hope you enjoy :) [listen here ](http://\nhttps://on.soundcloud.com/cXTOzry5fYlZp8N7DC)",
+      "ananki_subvibe": "AMBIGUOUS",
+      "ananki_reasoning": "There is a clear mismatch between the human's comment and the validated song. The human (Cherry) describes their own album 'Sounds I only hear in my sleep' featuring synths, MIDIs, Rubik's cube, and vocals with a dream-inspired aesthetic - suggesting ambient/experimental music. However, the Spotify-validated song is 'TELEKINESIS' by Travis Scott feat. SZA & Future, which is a completely different artist and likely a hip-hop/trap track. The link provided appears to go to SoundCloud for Cherry's personal work, not the Travis Scott song. Without being able to verify the actual emotional context of the Travis Scott track that was validated, and given the complete disconnect between the description and the song metadata, I cannot accurately map this to a sub-vibe.",
+      "ananki_confidence": 0.2
+    },
+    {
+      "artist": "HUNTR/X",
+      "song": "Takedown",
+      "spotify_id": "0MHStU0muAIEMbwdnebYu2",
+      "spotify_uri": "spotify:track:0MHStU0muAIEMbwdnebYu2",
+      "query_used": "Out Of Place](https://open Tobias Miguel",
+      "extraction_pattern": "dash",
+      "comment_score": 1,
+      "source_url": "https://reddit.com/r/listentothis/comments/1m543nh/music_melting_pot_week_of_july_21_2025/n58dggq/",
+      "post_title": "Music Melting Pot [Week of July 21, 2025]",
+      "comment_text": "[Tobias Miguel - Out Of Place](https://open.spotify.com/album/6S2WVj8qbPBVxVRO8wsN16?si=qASrWsGjQYSWuZGzwvFB_w)\n\nMy 30th track this year (one a week) this is a lot more of a singing song than I usually make, any feedback is welcome. Enjoy ☺️",
+      "ananki_subvibe": "AMBIGUOUS",
+      "ananki_reasoning": "There is a significant mismatch between the context and the validated song. The human's comment references 'Tobias Miguel - Out Of Place' as their 30th weekly track with more singing than usual, but Spotify validated a completely different song: 'HUNTR/X - Takedown'. Without being able to listen to the actual validated track or having any descriptive context about 'Takedown' specifically, I cannot accurately determine the emotional sub-vibe. The comment's context about it being 'a lot more of a singing song' doesn't provide enough emotional information, and it may not even apply to the validated track.",
+      "ananki_confidence": 0.2
+    },
+    {
+      "artist": "Rapsody",
+      "song": "Out tha Trunk.",
+      "spotify_id": "0UcFjFdPZgvQm1HwuP5VdN",
+      "spotify_uri": "spotify:track:0UcFjFdPZgvQm1HwuP5VdN",
+      "query_used": "The Great Escape](https://m Seventh Wonder",
+      "extraction_pattern": "dash",
+      "comment_score": 2,
+      "source_url": "https://reddit.com/r/musicsuggestions/comments/1lxerbr/songs_that_you_love_but_have_a_hard_time/n2ll9me/",
+      "post_title": "Songs That You Love, But Have A Hard Time Recommending",
+      "comment_text": "[Seventh Wonder- The Great Escape](https://m.youtube.com/watch?v=_UN3RYJaMLI&pp=ygUfdGhlIGdyZWF0IGVzY2FwZSBzZXZlbnRoIHdvbmRlcg%3D%3D)\n\nThe musicianship and skill is insane, the vocalist extremely talented, interesting narrative… But I find it hard to recommend a 30 minute sci-fi song.",
+      "ananki_subvibe": "AMBIGUOUS",
+      "ananki_reasoning": "There is a clear mismatch between the human's context and the Spotify validation. The human is discussing Seventh Wonder's 'The Great Escape' - a 30-minute progressive metal/sci-fi epic with complex musicianship and narrative. However, Spotify validated this as Rapsody's 'Out tha Trunk' - which is a hip-hop track. These are completely different songs in different genres with different emotional contexts. The human's comment about difficulty recommending a lengthy prog-metal epic doesn't apply to the actual hip-hop track that was validated. Without accurate information about which song is actually being discussed, I cannot confidently assign a sub-vibe.",
+      "ananki_confidence": 0.0
+    },
+    {
+      "artist": "Eric Church",
+      "song": "Holdin' My Own",
+      "spotify_id": "0xttiPFupzuj0a9viBV4eV",
+      "spotify_uri": "spotify:track:0xttiPFupzuj0a9viBV4eV",
+      "query_used": "s one of mine: Tom Sawyer Rush",
+      "extraction_pattern": "by_pattern",
+      "comment_score": 3,
+      "source_url": "https://reddit.com/r/Music/comments/1hq8s9w/songs_i_hate_by_bands_i_love/m4nxxbm/",
+      "post_title": "Songs I hate by bands I love",
+      "comment_text": "Hard agree on Self Esteem. It doesn't help that the rest of the song feels so fucking basic in the rhythm they sing to. \n\n\nHere's one of mine: Tom Sawyer by Rush. I can't quite put it into words but that song just hits my ears wrong and rubs me entirely the wrong way.",
+      "ananki_subvibe": "AMBIGUOUS",
+      "ananki_reasoning": "The Reddit comment is discussing songs the person DISLIKES ('songs I hate by bands I love'), specifically mentioning Self Esteem and Tom Sawyer by Rush as examples of songs they dislike. However, the validated Spotify song is 'Holdin' My Own' by Eric Church, which appears to be completely unrelated to the conversation. There is no context provided about why this Eric Church song was recommended or what emotional state it's meant to evoke. The comment discusses negative reactions to other songs, not a positive recommendation for this particular track. Without any actual emotional context about 'Holdin' My Own' itself, I cannot accurately map it to a sub-vibe.",
+      "ananki_confidence": 0.3
+    },
+    {
+      "artist": "Alkaline Trio",
+      "song": "Draculina",
+      "spotify_id": "4WbOgZ7NyHHGF5Pikss4bt",
+      "spotify_uri": "spotify:track:4WbOgZ7NyHHGF5Pikss4bt",
+      "query_used": "Alkaline trio Draculina",
+      "extraction_pattern": "dash",
+      "comment_score": 3,
+      "source_url": "https://reddit.com/r/Music/comments/1hq8s9w/songs_i_hate_by_bands_i_love/m4owxtl/",
+      "post_title": "Songs I hate by bands I love",
+      "comment_text": "Draculina - Alkaline trio.\n\nI love this band. But this song really misses the mark and is embarrassing.\n\nIt's peak cringe and corny as fuck.",
+      "ananki_subvibe": "AMBIGUOUS",
+      "ananki_reasoning": "The human is expressing strong negative emotions about the song ('peak cringe,' 'corny as fuck,' 'embarrassing'), stating they hate it despite loving the band. This is meta-commentary about the song's quality rather than describing the emotional experience or vibe the song creates for listening. The context tells us the song misses the mark but doesn't indicate what emotional space someone would use this song for (e.g., whether it's meant to be energetic, sad, romantic, etc.). Without knowing the intended emotional vibe of the song itself—only that the commenter finds it embarrassing—there's insufficient context to map it to a specific sub-vibe from the listening perspective.",
+      "ananki_confidence": 0.3
+    }
+  ]
+}

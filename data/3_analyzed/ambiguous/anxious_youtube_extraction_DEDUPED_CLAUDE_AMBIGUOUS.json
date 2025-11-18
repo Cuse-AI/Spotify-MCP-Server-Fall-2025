@@ -1,0 +1,51 @@
+{
+  "total": 3,
+  "note": "These need human review or are not music recommendations",
+  "songs": [
+    {
+      "artist": "Eko Fresh",
+      "song": "Hartz 7 (700 Bars) - Bonus Track",
+      "spotify_id": "190kEDcsNr8NjLzlZMU5zN",
+      "spotify_uri": "spotify:track:190kEDcsNr8NjLzlZMU5zN",
+      "source_url": "https://youtube.com/watch?v=1zt69W41w_Y",
+      "source": "youtube",
+      "post_title": "slow songs",
+      "comment_text": "",
+      "comment_score": 0,
+      "playlist_id": "PLkdpUijsivslcjmRzrIS-Etb184V3-hX0",
+      "ananki_subvibe": "AMBIGUOUS",
+      "ananki_reasoning": "The context provided is extremely minimal - only the title 'slow songs' with no actual comment text. While this indicates the song has a slow tempo, 'Hartz 7 (700 Bars)' by Eko Fresh is a German rap track that is actually quite long and verbose (700 bars suggests an extensive verse). The title 'slow songs' alone doesn't provide sufficient emotional context to determine the specific sub-vibe the human was experiencing or intended. Without understanding whether they meant slow in tempo, mood, or another quality, and without any emotional expression in the comment, I cannot confidently map this to a specific emotional sub-vibe from the available list.",
+      "ananki_confidence": 0.3
+    },
+    {
+      "artist": "Artifacts",
+      "song": "Return to da Wrongside",
+      "spotify_id": "5Pb50fIOEadS3fEJJc1d8H",
+      "spotify_uri": "spotify:track:5Pb50fIOEadS3fEJJc1d8H",
+      "source_url": "https://youtube.com/watch?v=WlH6mligjZw",
+      "source": "youtube",
+      "post_title": "slow songs",
+      "comment_text": "Best beginner crochet tutorial I’ve come across! Perfectly explained, and very easy to see and understand what’s being done at all times. Have recommended this to several beginners who also loved it! 👏🏼❤️",
+      "comment_score": 14,
+      "playlist_id": "PLkdpUijsivslcjmRzrIS-Etb184V3-hX0",
+      "ananki_subvibe": "AMBIGUOUS",
+      "ananki_reasoning": "The comment is clearly about a crochet tutorial, not about music at all. The human is praising instructional content for beginners learning to crochet, discussing visibility and clarity of the tutorial. This appears to be a mismatched post where either the comment was placed on the wrong content, or there's a data error linking a crochet tutorial comment to an Artifacts hip-hop song ('Return to da Wrongside'). There is zero emotional context related to music listening, making it impossible to accurately map to any music sub-vibe.",
+      "ananki_confidence": 0.1
+    },
+    {
+      "artist": "Sherlock Holmes",
+      "song": "Teil 3 - Die neuen Fälle, Fall 2: Die Gesellschaft des Schreckens",
+      "spotify_id": "5BqOWmGJcTHxvuxBIHr5dT",
+      "spotify_uri": "spotify:track:5BqOWmGJcTHxvuxBIHr5dT",
+      "source_url": "https://youtube.com/watch?v=o-R04TFqXME",
+      "source": "youtube",
+      "post_title": "slow songs",
+      "comment_text": "",
+      "comment_score": 0,
+      "playlist_id": "PLkdpUijsivslcjmRzrIS-Etb184V3-hX0",
+      "ananki_subvibe": "AMBIGUOUS",
+      "ananki_reasoning": "The post title is 'slow songs' and the comment text is empty. While 'slow songs' suggests a tempo preference, it doesn't provide clear emotional context. More critically, the Spotify track is 'Sherlock Holmes - Teil 3 - Die neuen Fälle, Fall 2: Die Gesellschaft des Schreckens' which appears to be a German audiobook/audio drama episode (a Sherlock Holmes mystery story), not a music track. This is spoken word content rather than a song, making it impossible to map to a music-based emotional sub-vibe. The minimal context combined with non-musical content makes this clearly ambiguous.",
+      "ananki_confidence": 0.2
+    }
+  ]
+}

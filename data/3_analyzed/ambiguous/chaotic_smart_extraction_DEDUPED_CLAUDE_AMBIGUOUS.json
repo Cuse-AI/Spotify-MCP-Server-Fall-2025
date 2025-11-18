@@ -1,0 +1,21 @@
+{
+  "total": 1,
+  "note": "These need human review or are not music recommendations",
+  "songs": [
+    {
+      "artist": "Akhenaton",
+      "song": "The end of Their World Part II",
+      "spotify_id": "52RzwGQnzetEVwwplxvGQM",
+      "spotify_uri": "spotify:track:52RzwGQnzetEVwwplxvGQM",
+      "query_used": "s either that one or The Hurting Tears For Fears",
+      "extraction_pattern": "by_pattern",
+      "comment_score": 3,
+      "source_url": "https://reddit.com/r/Music/comments/1k9dmty/whats_your_favourite_album_and_why/mpe21fi/",
+      "post_title": "What’s your favourite album and why?",
+      "comment_text": "Echo and the Bunnymen's Ocean Rain album is one I keep going back to after decades and it still hits the same way it did when I first heard it in high school. Under duress I'd probably have to go with that. It's either that one or The Hurting by Tears For Fears. Or Laughing Stock by Talk Talk. Yes, I'm an old.",
+      "ananki_subvibe": "AMBIGUOUS",
+      "ananki_reasoning": "There is a critical mismatch between the context and the validated song. The human's comment discusses their favorite albums from the 1980s (Echo and the Bunnymen's 'Ocean Rain', Tears For Fears' 'The Hurting') and 1990s (Talk Talk's 'Laughing Stock') - all post-punk/new wave/art rock albums. However, the validated Spotify song is 'The end of Their World Part II' by Akhenaton, who is a French hip-hop artist. This suggests either a data error or that the song recommendation is unrelated to the emotional context provided. Without being able to verify the actual connection between the comment and this specific song, I cannot confidently map it to an emotional sub-vibe.",
+      "ananki_confidence": 0.3
+    }
+  ]
+}

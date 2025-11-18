@@ -1,0 +1,51 @@
+{
+  "total": 3,
+  "note": "These need human review or are not music recommendations",
+  "songs": [
+    {
+      "artist": "Boosie Badazz",
+      "song": "When You Gonna Drop",
+      "spotify_id": "2JbiG97b960tRPhwyo5MIM",
+      "spotify_uri": "spotify:track:2JbiG97b960tRPhwyo5MIM",
+      "source_url": "https://youtube.com/watch?v=kQQAq4s9mDg",
+      "source": "youtube",
+      "post_title": "Fatal Fury 2 The New Battle - OST",
+      "comment_text": "",
+      "comment_score": 0,
+      "playlist_id": "PLqY-KxIOXOX08j0PqGgPodMJLKVXbxy2H",
+      "ananki_subvibe": "AMBIGUOUS",
+      "ananki_reasoning": "The post title references 'Fatal Fury 2 The New Battle - OST' (a fighting game/anime soundtrack), but the validated Spotify track is 'When You Gonna Drop' by Boosie Badazz, which is a hip-hop/rap track completely unrelated to the Fatal Fury franchise. There is no comment text providing emotional context about why this song was recommended or how it relates to the post title. This appears to be either a mismatched validation, spam, or an error in the recommendation system. Without any genuine emotional context about the actual song's meaning to the user, I cannot accurately assign a sub-vibe.",
+      "ananki_confidence": 0.2
+    },
+    {
+      "artist": "Esham",
+      "song": "The Wicketshit Will Never Die",
+      "spotify_id": "58MnqhrxArBcKAoxFvJx2T",
+      "spotify_uri": "spotify:track:58MnqhrxArBcKAoxFvJx2T",
+      "source_url": "https://youtube.com/watch?v=3lXqOTtE6s4",
+      "source": "youtube",
+      "post_title": "Fatal Fury 2 The New Battle - OST",
+      "comment_text": "",
+      "comment_score": 0,
+      "playlist_id": "PLqY-KxIOXOX08j0PqGgPodMJLKVXbxy2H",
+      "ananki_subvibe": "AMBIGUOUS",
+      "ananki_reasoning": "The post title references 'Fatal Fury 2 The New Battle - OST' (a fighting game/anime soundtrack), but the validated song is 'The Wicketshit Will Never Die' by Esham, which is a horrorcore hip-hop track completely unrelated to Fatal Fury. There is no comment text provided to give emotional context about why this song was recommended. This appears to be either a validation error or the human simply posted a title without explaining the connection. Without any actual emotional context or explanation from the human about how they feel about this song or why they're recommending it, I cannot determine the appropriate sub-vibe.",
+      "ananki_confidence": 0.2
+    },
+    {
+      "artist": "Lloyd",
+      "song": "You",
+      "spotify_id": "5Y77SQxEr1eiofPeUTPHxM",
+      "spotify_uri": "spotify:track:5Y77SQxEr1eiofPeUTPHxM",
+      "source_url": "https://youtube.com/watch?v=s_yWthzaZFs",
+      "source": "youtube",
+      "post_title": "F9 (Fast &amp; Furious 9) [Soundtrack]",
+      "comment_text": "",
+      "comment_score": 0,
+      "playlist_id": "PLDisKgcnAC4RtmpKf16xB52K5pPGmHTPO",
+      "ananki_subvibe": "AMBIGUOUS",
+      "ananki_reasoning": "The context provided only includes the title 'F9 (Fast & Furious 9) [Soundtrack]' with no comment text or emotional expression from the human. While the song 'You' by Lloyd is from the Fast & Furious 9 soundtrack, without any emotional context about why this song was recommended or how it made the person feel, I cannot accurately map it to a specific emotional sub-vibe. The Fast & Furious franchise could suggest various vibes (Energy - Unstoppable, Drive - Speed, etc.), but without explicit human emotional expression, this would be speculation rather than mapping based on provided context.",
+      "ananki_confidence": 0.3
+    }
+  ]
+}

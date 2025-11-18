@@ -124,12 +124,12 @@ def main():
     print("STEP 4: INJECT INTO TAPESTRY")
     print("="*70)
 
-    ananki_ready_dir = script_dir / '3_ananki_ready'
+    ananki_ready_dir = script_dir / '3_analyzed' / 'mapped'
     if not ananki_ready_dir.exists():
         print(f"[ERROR] Ananki ready directory not found: {ananki_ready_dir}")
         return
 
-    ananki_ready_files = list(ananki_ready_dir.glob('*_ananki_ready.json'))
+    ananki_ready_files = list(ananki_ready_dir.glob('*_CLAUDE_MAPPED.json'))
     print(f"\nFound {len(ananki_ready_files)} Ananki-analyzed files to inject")
 
     inject_script = script_dir / 'scripts' / 'inject_to_tapestry.py'
@@ -138,7 +138,7 @@ def main():
         return
 
     for ananki_file in ananki_ready_files:
-        vibe = ananki_file.stem.replace('_ananki_ready', '')
+        vibe = ananki_file.stem.replace('_DEDUPED_CLAUDE_MAPPED', '').replace('_youtube_extraction', '').replace('_smart_extraction', '')
         print(f"\nInjecting: {vibe}")
 
         inject_result = subprocess.run(

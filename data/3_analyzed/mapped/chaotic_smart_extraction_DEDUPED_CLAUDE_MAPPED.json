@@ -1,0 +1,69 @@
+{
+  "total": 4,
+  "mapped": 3,
+  "ambiguous": 1,
+  "mapped_songs": [
+    {
+      "artist": "Marco Polo",
+      "song": "G.U.R.U.",
+      "spotify_id": "1lCCn7sRZQSPzHZP8tNzd7",
+      "spotify_uri": "spotify:track:1lCCn7sRZQSPzHZP8tNzd7",
+      "query_used": "Bombay music video Reminded me to El Guincho",
+      "extraction_pattern": "dash",
+      "comment_score": 1,
+      "source_url": "https://reddit.com/r/Music/comments/1l5voue/sabrina_carpenters_manchild_the_chaotic_music/mwkrc3w/",
+      "post_title": "Sabrina Carpenters’ “Manchild”: the Chaotic Music Video We Never Expected",
+      "comment_text": "Reminded me to El Guincho - Bombay music video, same random/chaotic style: https://youtu.be/AIdUBVjyY5A",
+      "ananki_subvibe": "Energy - Unhinged",
+      "ananki_reasoning": "The human context explicitly describes the music video as 'chaotic' and 'random/chaotic style,' comparing it to another similarly styled video. The song 'G.U.R.U.' by Marco Polo is a high-energy hip-hop track with intense beats and aggressive delivery. The combination of the chaotic visual aesthetic mentioned and the frenetic energy of the track best aligns with 'Energy - Unhinged,' which captures both the wild, unpredictable nature of the chaotic music video style and the intense, unbridled energy of the song itself.",
+      "ananki_confidence": 0.8
+    },
+    {
+      "artist": "Interpol",
+      "song": "Obstacle 1",
+      "spotify_id": "1ZBqJilDGBVYktvlCEo9jC",
+      "spotify_uri": "spotify:track:1ZBqJilDGBVYktvlCEo9jC",
+      "query_used": "Interpol Turn On The Bright Lights",
+      "extraction_pattern": "dash",
+      "comment_score": 3,
+      "source_url": "https://reddit.com/r/Music/comments/1k9dmty/whats_your_favourite_album_and_why/mpds71z/",
+      "post_title": "What’s your favourite album and why?",
+      "comment_text": "Turn On The Bright Lights - Interpol\n\nGreat music. Immaculate vibes. Challenging and comfortable in equal measure.",
+      "ananki_subvibe": "Dark - Brooding",
+      "ananki_reasoning": "The human describes 'Turn On The Bright Lights' and specifically 'Obstacle 1' by Interpol as having 'immaculate vibes' that are 'challenging and comfortable in equal measure.' This album and song are quintessentially post-punk revival with atmospheric, moody instrumentation and introspective lyrics. The tension between 'challenging and comfortable' perfectly captures the brooding quality - it's dark and contemplative but also compelling and engaging. Interpol's signature sound on this track features Paul Banks' baritone vocals, interweaving guitar lines, and a sense of urban melancholy that defines the brooding sub-vibe rather than something more anxious, aggressive, or purely introspective.",
+      "ananki_confidence": 0.9
+    },
+    {
+      "artist": "Rhythmora",
+      "song": "Falling Light",
+      "spotify_id": "0apGDRYoItFcd00mCoAda8",
+      "spotify_uri": "spotify:track:0apGDRYoItFcd00mCoAda8",
+      "query_used": "Future Light](https://www Fraymor",
+      "extraction_pattern": "dash",
+      "comment_score": 1,
+      "source_url": "https://reddit.com/r/listentothis/comments/1kkf0ax/music_melting_pot_week_of_may_12_2025/msb823b/",
+      "post_title": "Music Melting Pot [Week of May 12, 2025]",
+      "comment_text": "\"Future Light\" is a haunting alt-metal / metalcore track about losing yourself in darkness and fighting to hold onto hope. With emotional vocals and crushing instrumentals, Fraymor captures the sound of breaking down — and trying to rise again.\n\n  \n[Fraymor - Future Light](https://www.youtube.com/watch?v=GnhPg6y0eWo)",
+      "ananki_subvibe": "Energy - Cathartic Anger",
+      "ananki_reasoning": "The description emphasizes 'losing yourself in darkness,' 'fighting to hold onto hope,' 'crushing instrumentals,' and 'the sound of breaking down — and trying to rise again.' This alt-metal/metalcore track captures the emotional release of working through intense darkness and struggle. While it has dark elements, the focus on 'fighting,' the heavy instrumentals, and the active process of 'trying to rise again' points to cathartic emotional release rather than passive brooding. The combination of emotional breakdown and the attempt to overcome it through aggressive, heavy music is the essence of cathartic anger - using intense energy to process and release overwhelming emotions.",
+      "ananki_confidence": 0.85
+    }
+  ],
+  "ambiguous_songs": [
+    {
+      "artist": "Akhenaton",
+      "song": "The end of Their World Part II",
+      "spotify_id": "52RzwGQnzetEVwwplxvGQM",
+      "spotify_uri": "spotify:track:52RzwGQnzetEVwwplxvGQM",
+      "query_used": "s either that one or The Hurting Tears For Fears",
+      "extraction_pattern": "by_pattern",
+      "comment_score": 3,
+      "source_url": "https://reddit.com/r/Music/comments/1k9dmty/whats_your_favourite_album_and_why/mpe21fi/",
+      "post_title": "What’s your favourite album and why?",
+      "comment_text": "Echo and the Bunnymen's Ocean Rain album is one I keep going back to after decades and it still hits the same way it did when I first heard it in high school. Under duress I'd probably have to go with that. It's either that one or The Hurting by Tears For Fears. Or Laughing Stock by Talk Talk. Yes, I'm an old.",
+      "ananki_subvibe": "AMBIGUOUS",
+      "ananki_reasoning": "There is a critical mismatch between the context and the validated song. The human's comment discusses their favorite albums from the 1980s (Echo and the Bunnymen's 'Ocean Rain', Tears For Fears' 'The Hurting') and 1990s (Talk Talk's 'Laughing Stock') - all post-punk/new wave/art rock albums. However, the validated Spotify song is 'The end of Their World Part II' by Akhenaton, who is a French hip-hop artist. This suggests either a data error or that the song recommendation is unrelated to the emotional context provided. Without being able to verify the actual connection between the comment and this specific song, I cannot confidently map it to an emotional sub-vibe.",
+      "ananki_confidence": 0.3
+    }
+  ]
+}
