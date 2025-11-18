@@ -4,10 +4,9 @@ Batch inject all CLAUDE_MAPPED files to restore TRUE Ananki tapestry
 import subprocess
 from pathlib import Path
 
-youtube_files = sorted(Path('../youtube/test_results').glob('*CLAUDE_MAPPED.json'))
-reddit_files = sorted(Path('../reddit/test_results').glob('*CLAUDE_MAPPED.json'))
-
-all_files = list(youtube_files) + list(reddit_files)
+# Files are now in 3_analyzed/mapped/ directory
+mapped_dir = Path(__file__).parent.parent / '3_analyzed' / 'mapped'
+all_files = sorted(mapped_dir.glob('*_CLAUDE_MAPPED.json'))
 
 print(f"\nFound {len(all_files)} CLAUDE_MAPPED files")
 print("="*70)
