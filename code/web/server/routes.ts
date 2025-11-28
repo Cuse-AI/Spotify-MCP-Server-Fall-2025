@@ -4,6 +4,8 @@ import { storage } from "./storage";
 import { userJourneySchema, userValidatedSongSchema } from "@shared/schema";
 import { createSpotifyPlaylist } from "./spotify-service";
 import { z } from "zod";
+import * as fs from "fs";
+import * as path from "path";
 
 const createPlaylistSchema = z.object({
   playlistName: z.string(),
@@ -12,6 +14,63 @@ const createPlaylistSchema = z.object({
 });
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  
+  // Health Check API - validates all systems are ready
+  app.get("/api/health", async (req, res) => {
+    try {
+      // Get project root (same logic as storage.ts)
+      let projectRoot = process.cwd();
+      const parentDir = path.join(projectRoot, "..", "..");
+      if (fs.existsSync(path.join(parentDir, "core", "tapestry.json"))) {
+        projectRoot = parentDir;
+      }
+
+      const tapestryPath = path.join(projectRoot, "core", "tapestry.json");
+      const manifoldPath = path.join(projectRoot, "data", "emotional_manifold_COMPLETE.json");
+
+      // Check file existence
+      const tapestryExists = fs.existsSync(tapestryPath);
+      const manifoldExists = fs.existsSync(manifoldPath);
+
+      // Check API keys
+      const hasAnthropicKey = !!process.env.ANTHROPIC_API_KEY;
+      const hasSpotifyId = !!process.env.SPOTIFY_CLIENT_ID;
+      const hasSpotifySecret = !!process.env.SPOTIFY_CLIENT_SECRET;
+
+      // Get stats if files exist
+      let stats = null;
+      if (tapestryExists && manifoldExists) {
+        try {
+          stats = await storage.getTapestryStats();
+        } catch (e) {
+          console.error("Error getting stats:", e);
+        }
+      }
+
+      const isHealthy = tapestryExists && manifoldExists && hasAnthropicKey && hasSpotifyId && hasSpotifySecret;
+
+      res.status(isHealthy ? 200 : 503).json({
+        status: isHealthy ? "healthy" : "degraded",
+        timestamp: new Date().toISOString(),
+        files: {
+          tapestry: { exists: tapestryExists, path: tapestryPath },
+          manifold: { exists: manifoldExists, path: manifoldPath },
+        },
+        environment: {
+          anthropic_key: hasAnthropicKey ? "✅ set" : "❌ missing",
+          spotify_id: hasSpotifyId ? "✅ set" : "❌ missing",
+          spotify_secret: hasSpotifySecret ? "✅ set" : "❌ missing",
+        },
+        data: stats,
+      });
+    } catch (error: any) {
+      console.error("Health check error:", error);
+      res.status(500).json({
+        status: "error",
+        message: error.message || "Health check failed",
+      });
+    }
+  });
   
   // Generate Playlist API
   app.post("/api/generate-playlist", async (req, res) => {
