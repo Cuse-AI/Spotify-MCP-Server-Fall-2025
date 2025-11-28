@@ -111,8 +111,27 @@ export async function registerRoutes(app: Express): Promise<Server> {
       });
     } catch (error: any) {
       console.error("Error validating song:", error);
+      
+      if (error instanceof z.ZodError) {
+        const issues = error.errors.map(e => `${e.path.join(".")}: ${e.message}`).join("; ");
+        res.status(400).json({ 
+          message: `Invalid song data: ${issues}`,
+          details: "Song must have: track_id, title, artist, sub_vibe, confidence, etc."
+        });
+        return;
+      }
+      
+      if (error.message.includes("Tapestry data file not found")) {
+        res.status(503).json({ 
+          message: "Cannot save upvote: Tapestry database not found",
+          details: "Check /api/health for system status"
+        });
+        return;
+      }
+      
       res.status(400).json({ 
-        message: error.message || "Failed to validate song" 
+        message: "Failed to save upvote",
+        details: error.message
       });
     }
   });
@@ -135,8 +154,19 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.json({ success: true, message: "Feedback recorded!" });
     } catch (error: any) {
       console.error("Error downvoting song:", error);
+      
+      if (error instanceof z.ZodError) {
+        const issues = error.errors.map(e => `${e.path.join(".")}: ${e.message}`).join("; ");
+        res.status(400).json({ 
+          message: `Invalid song data: ${issues}`,
+          details: "Required: track_id, title, artist, sub_vibe, meta_vibe"
+        });
+        return;
+      }
+      
       res.status(400).json({ 
-        message: error.message || "Failed to record feedback" 
+        message: "Failed to record downvote",
+        details: error.message
       });
     }
   });
@@ -148,8 +178,19 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.json(stats);
     } catch (error: any) {
       console.error("Error fetching Tapestry stats:", error);
+      
+      if (error.message.includes("Tapestry data files not found")) {
+        res.status(503).json({ 
+          message: "Tapestry data unavailable",
+          details: "Required files missing: core/tapestry.json or data/emotional_manifold_COMPLETE.json",
+          check: "Run /api/health for diagnostic details"
+        });
+        return;
+      }
+      
       res.status(500).json({ 
-        message: error.message || "Failed to fetch stats" 
+        message: "Failed to fetch stats",
+        details: error.message
       });
     }
   });
@@ -162,8 +203,43 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.json(result);
     } catch (error: any) {
       console.error("Error creating Spotify playlist:", error);
+      
+      if (error instanceof z.ZodError) {
+        const issues = error.errors.map(e => `${e.path.join(".")}: ${e.message}`).join("; ");
+        res.status(400).json({ 
+          message: `Invalid playlist data: ${issues}`,
+          details: "Required: playlistName (string), playlistDescription (string), trackUris (array)"
+        });
+        return;
+      }
+      
+      if (error.message.includes("401") || error.message.includes("Unauthorized")) {
+        res.status(401).json({ 
+          message: "Spotify authentication failed",
+          details: "Your Spotify token may have expired. Please re-authenticate."
+        });
+        return;
+      }
+      
+      if (error.message.includes("429") || error.message.includes("Too Many Requests")) {
+        res.status(429).json({ 
+          message: "Spotify rate limit exceeded",
+          details: "Too many playlist creations. Please try again in a few moments."
+        });
+        return;
+      }
+      
+      if (error.message.includes("Spotify")) {
+        res.status(503).json({ 
+          message: "Spotify API error: " + error.message,
+          details: "Unable to create playlist on Spotify"
+        });
+        return;
+      }
+      
       res.status(500).json({ 
-        message: error.message || "Failed to create playlist" 
+        message: "Failed to create Spotify playlist",
+        details: error.message
       });
     }
   });
