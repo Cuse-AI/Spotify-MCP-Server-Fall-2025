@@ -1,0 +1,1595 @@
+{
+  "metadata": {
+    "total_sub_vibes": 114,
+    "total_central_vibes": 9,
+    "analysis_complete": true,
+    "restructure_date": "2025-11-12",
+    "restructure_note": "Consolidated 23 meta-vibes to 9 core metas",
+    "coordinate_system": {
+      "range_x": [
+        0,
+        1000
+      ],
+      "range_y": [
+        0,
+        1000
+      ],
+      "algorithm": "weighted_composition"
+    }
+  },
+  "central_vibes": {
+    "positions": {
+      "Sad": {
+        "x": 411.34964791213724,
+        "y": 521.7256480174839
+      },
+      "Happy": {
+        "x": 498.08010177584254,
+        "y": 383.23561002148386
+      },
+      "Chill": {
+        "x": 611.3789881241486,
+        "y": 542.1813806225903
+      },
+      "Energy": {
+        "x": 471.2751921798258,
+        "y": 685.3040441681674
+      },
+      "Dark": {
+        "x": 349.854846741085,
+        "y": 840.714910999968
+      },
+      "Romantic": {
+        "x": 215.49399173084322,
+        "y": 630.9144942350624
+      },
+      "Night": {
+        "x": 476.4882634014095,
+        "y": 1000.0
+      },
+      "Drive": {
+        "x": 160.83354571362656,
+        "y": 891.6216833114466
+      },
+      "Party": {
+        "x": 264.25349153995427,
+        "y": 408.6798630604943
+      }
+    },
+    "total": 9
+  },
+  "sub_vibes": {
+    "Sad - Heartbreak": {
+      "emotional_composition": {
+        "Sad": 0.7,
+        "Bitter": 0.15,
+        "Romantic": 0.1,
+        "Angry": 0.05
+      },
+      "coordinates": {
+        "x": 335.37,
+        "y": 531.55
+      },
+      "analysis": "Heartbreak sits at the painful intersection of sadness and lost love. Strong bitter/resentful component from feeling hurt. Slight anger at situation or person.",
+      "proximity_notes": "Orbits Sad center but pulled significantly toward Bitter and Romantic. More complex than pure sadness."
+    },
+    "Sad - Crying": {
+      "emotional_composition": {
+        "Sad": 0.9,
+        "Introspective": 0.05,
+        "Chill": 0.05
+      },
+      "coordinates": {
+        "x": 431.64,
+        "y": 535.86
+      },
+      "analysis": "Nearly pure sadness with cathartic release. Songs like 'Nutshell' and 'Cat In The Cradle' are deeply melancholic. Slight introspective quality from reflecting on what caused tears.",
+      "proximity_notes": "Very close to Sad center. Minimal pull toward other vibes. This is concentrated grief/sorrow."
+    },
+    "Sad - Lonely": {
+      "emotional_composition": {
+        "Sad": 0.7,
+        "Anxious": 0.2,
+        "Introspective": 0.1
+      },
+      "coordinates": {
+        "x": 495.19,
+        "y": 581.59
+      },
+      "analysis": "Loneliness combines sadness with anxious isolation. The anxiety of being alone creates nervous energy. Introspective because isolation forces self-reflection.",
+      "proximity_notes": "Orbits Sad but pulled notably toward Anxious. Loneliness has a worried, restless quality beyond pure sadness."
+    },
+    "Sad - Melancholic": {
+      "emotional_composition": {
+        "Sad": 0.65,
+        "Introspective": 0.25,
+        "Nostalgic": 0.1
+      },
+      "coordinates": {
+        "x": 457.28,
+        "y": 603.59
+      },
+      "analysis": "Melancholy is contemplative sadness. Classical pieces (Debussy, Rachmaninoff) suggest deep reflection. Not acute pain but lingering sorrow. Nostalgic quality of dwelling on past.",
+      "proximity_notes": "Between Sad and Introspective. More thoughtful than raw emotional pain. Gentle rather than sharp sadness."
+    },
+    "Sad - Grief": {
+      "emotional_composition": {
+        "Sad": 0.85,
+        "Dark": 0.1,
+        "Introspective": 0.05
+      },
+      "coordinates": {
+        "x": 415.49,
+        "y": 566.73
+      },
+      "analysis": "Heavy, profound loss. Songs about death and permanent absence. Darker than regular sadness - touches on mortality and void. Some processing/reflection but overwhelmingly sorrowful.",
+      "proximity_notes": "Close to Sad center with pull toward Dark. Grief has weight and shadow that goes beyond typical sadness."
+    },
+    "Sad - Depressive": {
+      "emotional_composition": {
+        "Sad": 0.8,
+        "Dark": 0.1,
+        "Anxious": 0.05,
+        "Bored": 0.05
+      },
+      "coordinates": {
+        "x": 450.45,
+        "y": 554.14
+      },
+      "analysis": "Heavy, lingering sadness with numbness. 'Hurt' by Johnny Cash captures devastating emptiness. Darker than melancholy - touches despair. Slight anxious quality and emotional flatness.",
+      "proximity_notes": "Near Sad center but pulled toward Dark and slightly toward Bored (emotional numbness/emptiness)."
+    },
+    "Sad - Nostalgic Sad": {
+      "emotional_composition": {
+        "Sad": 0.55,
+        "Nostalgic": 0.35,
+        "Introspective": 0.1
+      },
+      "coordinates": {
+        "x": 412.62,
+        "y": 605.07
+      },
+      "analysis": "Bittersweet longing for the past. Equal parts sadness and nostalgia - missing what was. Reflective quality of looking backward. Gentler than pure grief.",
+      "proximity_notes": "Halfway between Sad and Nostalgic. Strong pull in both directions. This is where two emotions truly blend."
+    },
+    "Happy - Euphoric": {
+      "emotional_composition": {
+        "Happy": 0.8,
+        "Energy": 0.15,
+        "Excited": 0.05
+      },
+      "coordinates": {
+        "x": 477.18,
+        "y": 429.11
+      },
+      "analysis": "Peak happiness with high energy. 'Bulletproof' and intense upbeat tracks. Not just contentment but explosive joy. Energetic celebration.",
+      "proximity_notes": "Near Happy center but pulled toward Energy. Euphoria has momentum and intensity beyond calm happiness."
+    },
+    "Happy - Feel Good": {
+      "emotional_composition": {
+        "Happy": 0.85,
+        "Chill": 0.1,
+        "Grateful": 0.05
+      },
+      "coordinates": {
+        "x": 524.3,
+        "y": 398.38
+      },
+      "analysis": "Classic positive vibes. 'Lovely Day' captures comfortable, warm happiness. Not intense - sustainable good mood. Grateful/content quality.",
+      "proximity_notes": "Close to Happy center with gentle pull toward Chill and Grateful. Relaxed happiness, not manic."
+    },
+    "Happy - Celebration": {
+      "emotional_composition": {
+        "Happy": 0.7,
+        "Party": 0.2,
+        "Energy": 0.1
+      },
+      "coordinates": {
+        "x": 448.63,
+        "y": 418.53
+      },
+      "analysis": "Social, event-based happiness. Made for gatherings and milestones. Higher energy than feel-good, more outward-focused. Party energy channeled into joy.",
+      "proximity_notes": "Between Happy and Party, pulled toward Energy. Celebration is happy + social + energetic."
+    },
+    "Happy - Sunshine": {
+      "emotional_composition": {
+        "Happy": 0.75,
+        "Energy": 0.15,
+        "Playful": 0.1
+      },
+      "coordinates": {
+        "x": 483.99,
+        "y": 390.22
+      },
+      "analysis": "Bright, uplifting happiness with bounce. 'All Right' by Kenny Loggins, Led Zeppelin - upbeat classic rock energy. Playful lightness. Optimistic warmth.",
+      "proximity_notes": "Near Happy center with pull toward Energy and Playful. Sunshine = happy + energetic + light."
+    },
+    "Happy - Carefree": {
+      "emotional_composition": {
+        "Happy": 0.7,
+        "Chill": 0.2,
+        "Peaceful": 0.1
+      },
+      "coordinates": {
+        "x": 544.51,
+        "y": 378.73
+      },
+      "analysis": "Relaxed, unburdened happiness. Ichiko Aoba's gentle folk vibes. Not energetic - more floating/easy. Freedom from worry.",
+      "proximity_notes": "Between Happy and Chill. Carefree = contentment without tension. Gentle happiness."
+    },
+    "Chill - Morning Coffee": {
+      "emotional_composition": {
+        "Chill": 0.8,
+        "Peaceful": 0.1,
+        "Grateful": 0.1
+      },
+      "coordinates": {
+        "x": 642.26,
+        "y": 472.6
+      },
+      "analysis": "Quiet start to the day. Thelonious Monk jazz, calm acoustic. Ritualistic comfort. Present and grounded. Gentle awakening energy.",
+      "proximity_notes": "Close to Chill center with slight pull toward Peaceful and Grateful. Morning serenity."
+    },
+    "Chill - Rainy Day": {
+      "emotional_composition": {
+        "Chill": 0.7,
+        "Sad": 0.15,
+        "Introspective": 0.15
+      },
+      "coordinates": {
+        "x": 582.24,
+        "y": 575.37
+      },
+      "analysis": "Cozy melancholy. Rain = gentle sadness + introspection. Billie Eilish, Hozier - moody but not heavy. Comfort in the grey.",
+      "proximity_notes": "Between Chill and Sad/Introspective. Rain brings contemplative mood without depression."
+    },
+    "Chill - Beach/Summer": {
+      "emotional_composition": {
+        "Chill": 0.75,
+        "Happy": 0.2,
+        "Nostalgic": 0.05
+      },
+      "coordinates": {
+        "x": 575.96,
+        "y": 517.53
+      },
+      "analysis": "Warm, lazy relaxation. Summer ease and sunshine. Happy without being energetic. Nostalgic summer memory quality.",
+      "proximity_notes": "Between Chill and Happy. Beach vibes = relaxed happiness, vacation mode."
+    },
+    "Chill - Evening": {
+      "emotional_composition": {
+        "Chill": 0.75,
+        "Night": 0.15,
+        "Introspective": 0.1
+      },
+      "coordinates": {
+        "x": 591.72,
+        "y": 635.02
+      },
+      "analysis": "Winding down. Jazz standards (Miles Davis, Count Basie). Transition to night. Reflective but not heavy. Gentle dimming.",
+      "proximity_notes": "Between Chill and Night. Evening = still awake but settling, contemplative relaxation."
+    },
+    "Chill - Sunday": {
+      "emotional_composition": {
+        "Chill": 0.8,
+        "Nostalgic": 0.1,
+        "Peaceful": 0.1
+      },
+      "coordinates": {
+        "x": 598.3,
+        "y": 504.27
+      },
+      "analysis": "Slow weekend morning. Depeche Mode, Peter Gabriel - 80s reflective vibes. No urgency. Savoring stillness. Sacred rest.",
+      "proximity_notes": "Near Chill center with nostalgic quality. Sunday = intentional slowness, weekly ritual."
+    },
+    "Chill - Lofi": {
+      "emotional_composition": {
+        "Chill": 0.75,
+        "Introspective": 0.15,
+        "Night": 0.1
+      },
+      "coordinates": {
+        "x": 598.75,
+        "y": 624.22
+      },
+      "analysis": "Study/focus ambient. Boards of Canada, Cocteau Twins. Dreamy, hazy. Background consciousness. Slight melancholy.",
+      "proximity_notes": "Between Chill and Introspective/Night. Lofi = ambient thought space, contemplative calm."
+    },
+    "Chill - Jazz": {
+      "emotional_composition": {
+        "Chill": 0.7,
+        "Introspective": 0.15,
+        "Romantic": 0.1,
+        "Night": 0.05
+      },
+      "coordinates": {
+        "x": 565.91,
+        "y": 610.2
+      },
+      "analysis": "Sophisticated relaxation. Jazz standards create intimate, thoughtful atmosphere. Late night café vibes. Romantic undertone.",
+      "proximity_notes": "Chill center pulled toward Introspective and Romantic. Jazz = cultured calm with emotional depth."
+    },
+    "Chill - Ambient": {
+      "emotional_composition": {
+        "Chill": 0.65,
+        "Peaceful": 0.2,
+        "Introspective": 0.1,
+        "Dark": 0.05
+      },
+      "coordinates": {
+        "x": 623.75,
+        "y": 476.9
+      },
+      "analysis": "Pure atmospheric sound. Jean Michel Jarre, Animal Collective. Spacious, ethereal. Meditation quality. Can touch slightly dark/experimental.",
+      "proximity_notes": "Between Chill and Peaceful with introspective edge. Ambient = consciousness without thought."
+    },
+    "Night - 3AM Thoughts": {
+      "emotional_composition": {
+        "Night": 0.6,
+        "Introspective": 0.25,
+        "Sad": 0.1,
+        "Anxious": 0.05
+      },
+      "coordinates": {
+        "x": 517.69,
+        "y": 882.64
+      },
+      "analysis": "Deep existential contemplation. 'Nutshell', 'Say Hello to Heaven' - heavy emotional processing. Vulnerability of late night. Mind won't stop. Slight anxiety and melancholy.",
+      "proximity_notes": "Between Night and Introspective with Sad pull. 3AM = when defenses are down, raw thoughts emerge."
+    },
+    "Night - Midnight Drive": {
+      "emotional_composition": {
+        "Night": 0.65,
+        "Drive": 0.25,
+        "Introspective": 0.1
+      },
+      "coordinates": {
+        "x": 411.64,
+        "y": 951.29
+      },
+      "analysis": "Movement through darkness. Contemplative but active. Solitary journey. Van Morrison, Orville Peck. Freedom and reflection combined.",
+      "proximity_notes": "Between Night and Drive. Midnight drive = nocturnal + movement, active contemplation."
+    },
+    "Night - Sleep": {
+      "emotional_composition": {
+        "Night": 0.6,
+        "Chill": 0.25,
+        "Peaceful": 0.15
+      },
+      "coordinates": {
+        "x": 549.1,
+        "y": 738.59
+      },
+      "analysis": "Winding down to rest. Arctic Monkeys 'Only Ones Who Know', Death Cab. Gentle, soothing. Releasing the day. Calm preparation for sleep.",
+      "proximity_notes": "Between Night, Chill, and Peaceful. Sleep music = nocturnal calm, restorative stillness."
+    },
+    "Night - Contemplative": {
+      "emotional_composition": {
+        "Night": 0.55,
+        "Introspective": 0.35,
+        "Sad": 0.1
+      },
+      "coordinates": {
+        "x": 519.2,
+        "y": 876.53
+      },
+      "analysis": "'Chasing Cars', Radiohead 'How to disappear completely'. Deep thought during darkness. Questioning and wondering. Slight melancholy of night reflection.",
+      "proximity_notes": "Halfway between Night and Introspective. Night amplifies contemplation, makes it heavier."
+    },
+    "Night - City Nights": {
+      "emotional_composition": {
+        "Night": 0.6,
+        "Energy": 0.2,
+        "Party": 0.1,
+        "Dark": 0.1
+      },
+      "coordinates": {
+        "x": 441.56,
+        "y": 862.0
+      },
+      "analysis": "Urban nocturnal energy. Dance music, UK chart hits. Neon lights and movement. Slightly edgy/mysterious. City never sleeps vibe.",
+      "proximity_notes": "Night pulled toward Energy and Party. City nights = nocturnal + social + electric atmosphere."
+    },
+    "Energy - Workout": {
+      "emotional_composition": {
+        "Energy": 0.85,
+        "Confident": 0.1,
+        "Angry": 0.05
+      },
+      "coordinates": {
+        "x": 500.33,
+        "y": 656.44
+      },
+      "analysis": "'Till I Collapse' - Eminem, 'Maniac'. Pure physical motivation. Push harder. Aggressive determination. Channeled intensity.",
+      "proximity_notes": "Very close to Energy center. Workout = focused physical power, slight aggressive edge for push."
+    },
+    "Energy - Pump Up": {
+      "emotional_composition": {
+        "Energy": 0.75,
+        "Happy": 0.15,
+        "Party": 0.1
+      },
+      "coordinates": {
+        "x": 454.59,
+        "y": 612.33
+      },
+      "analysis": "90s eurodance! 'Rhythm of the Night', 'Beautiful Life', Ace of Base. Positive high energy. Celebration energy. Pure hype.",
+      "proximity_notes": "Between Energy and Happy/Party. Pump up = energetic joy, motivational positivity."
+    },
+    "Energy - Confidence": {
+      "emotional_composition": {
+        "Energy": 0.6,
+        "Confident": 0.35,
+        "Happy": 0.05
+      },
+      "coordinates": {
+        "x": 599.98,
+        "y": 636.87
+      },
+      "analysis": "'Unstoppable' by Sia, empowerment anthems. Self-assured power. Bold energy. Feeling capable and strong. Motivational swagger.",
+      "proximity_notes": "Between Energy and Confident. Confidence boost = energized self-assurance."
+    },
+    "Energy - Running": {
+      "emotional_composition": {
+        "Energy": 0.8,
+        "Drive": 0.15,
+        "Excited": 0.05
+      },
+      "coordinates": {
+        "x": 409.17,
+        "y": 701.72
+      },
+      "analysis": "Jimi Hendrix, Black Sabbath, Rush. Sustained momentum. Forward motion. Racing energy. Rhythmic propulsion.",
+      "proximity_notes": "Near Energy center with Drive pull. Running = continuous energetic movement, rhythmic power."
+    },
+    "Energy - Sports": {
+      "emotional_composition": {
+        "Energy": 0.75,
+        "Confident": 0.15,
+        "Angry": 0.1
+      },
+      "coordinates": {
+        "x": 511.19,
+        "y": 632.35
+      },
+      "analysis": "Rammstein 'Du Hast', Def Leppard, Mötley Crüe. Aggressive competitive energy. Game face. Bring the intensity. Victory mindset.",
+      "proximity_notes": "Energy pulled toward Confident and Angry. Sports = competitive aggression, powered confidence."
+    },
+    "Drive - Road Trip": {
+      "emotional_composition": {
+        "Drive": 0.7,
+        "Happy": 0.15,
+        "Excited": 0.1,
+        "Nostalgic": 0.05
+      },
+      "coordinates": {
+        "x": 221.16,
+        "y": 755.33
+      },
+      "analysis": "Adventure and freedom! Chris Rea 'On The Beach', Yellowcard 'Ocean Avenue', MGMT. Open road energy. Positive journey vibes. Discovery and exploration.",
+      "proximity_notes": "Drive center pulled toward Happy and Excited. Road trip = movement + joy + anticipation."
+    },
+    "Drive - Night Drive": {
+      "emotional_composition": {
+        "Drive": 0.6,
+        "Night": 0.3,
+        "Introspective": 0.1
+      },
+      "coordinates": {
+        "x": 301.16,
+        "y": 913.36
+      },
+      "analysis": "Nocturnal movement. New Order, Bauhaus, Stone Roses. Moody driving. Reflective but kinetic. Headlights cutting through darkness. Solitary momentum.",
+      "proximity_notes": "Between Drive and Night. Night drive = nocturnal journey, contemplative motion."
+    },
+    "Drive - City": {
+      "emotional_composition": {
+        "Drive": 0.7,
+        "Energy": 0.2,
+        "Night": 0.1
+      },
+      "coordinates": {
+        "x": 254.49,
+        "y": 861.2
+      },
+      "analysis": "Urban navigation. Faster pace, more stimulation. City lights and traffic. Alert and engaged. Soundtrack to concrete jungle.",
+      "proximity_notes": "Drive pulled toward Energy and Night. City driving = energetic navigation, urban intensity."
+    },
+    "Drive - Speed": {
+      "emotional_composition": {
+        "Drive": 0.65,
+        "Energy": 0.25,
+        "Excited": 0.1
+      },
+      "coordinates": {
+        "x": 238.41,
+        "y": 790.34
+      },
+      "analysis": "'Radar Love', 'Highway Star' - Deep Purple, 'Barracuda'. Pure velocity. Adrenaline rush. Pedal to the metal. Exhilaration of going fast.",
+      "proximity_notes": "Between Drive and Energy. Speed = intense driving, adrenaline-fueled movement."
+    },
+    "Drive - Scenic": {
+      "emotional_composition": {
+        "Drive": 0.65,
+        "Chill": 0.2,
+        "Happy": 0.1,
+        "Peaceful": 0.05
+      },
+      "coordinates": {
+        "x": 313.41,
+        "y": 727.33
+      },
+      "analysis": "Leisurely cruising. Beautiful views. George Clinton, relaxed funk. Not rushing. Enjoying the journey. Windows down, taking it in.",
+      "proximity_notes": "Between Drive and Chill/Happy. Scenic drive = relaxed movement, appreciative travel."
+    },
+    "Drive - Alone": {
+      "emotional_composition": {
+        "Drive": 0.6,
+        "Introspective": 0.25,
+        "Sad": 0.1,
+        "Night": 0.05
+      },
+      "coordinates": {
+        "x": 315.74,
+        "y": 833.12
+      },
+      "analysis": "'Nutshell', Temple of the Dog, Mount Eerie. Solitary reflection while moving. Processing emotions through motion. Therapeutic driving. Slight melancholy.",
+      "proximity_notes": "Between Drive and Introspective/Sad. Alone = driving as meditation, movement through feelings."
+    },
+    "Party - Pregame": {
+      "emotional_composition": {
+        "Party": 0.7,
+        "Energy": 0.2,
+        "Excited": 0.1
+      },
+      "coordinates": {
+        "x": 295.29,
+        "y": 462.59
+      },
+      "analysis": "Building anticipation! Getting hyped before going out. High energy prep. Dropkick Murphys, punk rock intensity. The ramp-up phase.",
+      "proximity_notes": "Party pulled toward Energy and Excited. Pregame = building party energy, anticipatory hype."
+    },
+    "Party - Club": {
+      "emotional_composition": {
+        "Party": 0.75,
+        "Energy": 0.15,
+        "Dark": 0.05,
+        "Romantic": 0.05
+      },
+      "coordinates": {
+        "x": 297.15,
+        "y": 482.89
+      },
+      "analysis": "Electronic dance beats. 'Across 110th Street', Marvin Gaye. Club atmosphere - pulsing bass, dim lights. Social energy. Nightclub vibe.",
+      "proximity_notes": "Near Party center with Energy. Club = concentrated party energy, electronic social space."
+    },
+    "Party - House Party": {
+      "emotional_composition": {
+        "Party": 0.7,
+        "Happy": 0.2,
+        "Playful": 0.1
+      },
+      "coordinates": {
+        "x": 324.33,
+        "y": 362.72
+      },
+      "analysis": "Cage the Elephant, Maroon 5, Lady Gaga. More intimate than club. Friends and fun. Casual celebration. Mix of genres. Everyone's vibing.",
+      "proximity_notes": "Between Party and Happy. House party = social happiness, relaxed celebration with friends."
+    },
+    "Party - Festival": {
+      "emotional_composition": {
+        "Party": 0.65,
+        "Happy": 0.2,
+        "Excited": 0.1,
+        "Energy": 0.05
+      },
+      "coordinates": {
+        "x": 311.0,
+        "y": 416.01
+      },
+      "analysis": "Trans-Siberian Orchestra, Bruno Mars. Massive crowd energy. Communal celebration. Euphoric shared experience. Peak moments.",
+      "proximity_notes": "Party pulled toward Happy and Excited. Festival = collective joy, epic celebration energy."
+    },
+    "Party - College": {
+      "emotional_composition": {
+        "Party": 0.7,
+        "Playful": 0.15,
+        "Dark": 0.1,
+        "Energy": 0.05
+      },
+      "coordinates": {
+        "x": 303.13,
+        "y": 404.41
+      },
+      "analysis": "Gothic Archies 'The World is a Very Scary Place', Ministry 'Everyday is Halloween'. Alternative/goth college party vibes. Edgy and weird. Underground scene energy.",
+      "proximity_notes": "Party pulled toward Playful and Dark. College = alternative party energy, quirky edge."
+    },
+    "Party - Dance": {
+      "emotional_composition": {
+        "Party": 0.8,
+        "Energy": 0.15,
+        "Happy": 0.05
+      },
+      "coordinates": {
+        "x": 307.0,
+        "y": 448.9
+      },
+      "analysis": "Pure dance floor energy. Slayyyter, Cobrah, electronic beats. Body movement focus. Rhythmic and physical. Club bangers.",
+      "proximity_notes": "Very close to Party center. Dance = concentrated party energy, movement-focused celebration."
+    },
+    "Romantic - First Love": {
+      "emotional_composition": {
+        "Romantic": 0.75,
+        "Happy": 0.15,
+        "Excited": 0.1
+      },
+      "coordinates": {
+        "x": 252.39,
+        "y": 570.13
+      },
+      "analysis": "Indie folk and dreamy vibes. Anna von Hausswolff, Emma Ruth Rundle. Tender and new. Butterflies and wonder. Innocence of first connection.",
+      "proximity_notes": "Near Romantic center with Happy/Excited pull. First love = romance + joy + nervous anticipation."
+    },
+    "Romantic - Intimate": {
+      "emotional_composition": {
+        "Romantic": 0.8,
+        "Chill": 0.1,
+        "Night": 0.05,
+        "Dark": 0.05
+      },
+      "coordinates": {
+        "x": 274.85,
+        "y": 650.99
+      },
+      "analysis": "Tracy Chapman, Sofia Isella. Close and vulnerable. Private moments. Deep connection. Quiet intensity. Bedroom vibes.",
+      "proximity_notes": "Close to Romantic center with Chill/Night quality. Intimate = private romance, vulnerable closeness."
+    },
+    "Romantic - Date Night": {
+      "emotional_composition": {
+        "Romantic": 0.7,
+        "Happy": 0.15,
+        "Chill": 0.1,
+        "Excited": 0.05
+      },
+      "coordinates": {
+        "x": 294.72,
+        "y": 573.07
+      },
+      "analysis": "'Chasing Cars', Radiohead. Intentional romance. Getting ready, anticipation. Effort and care. Creating special moments.",
+      "proximity_notes": "Romantic pulled toward Happy and Chill. Date night = planned romance, excited but relaxed."
+    },
+    "Romantic - Long Distance": {
+      "emotional_composition": {
+        "Romantic": 0.6,
+        "Sad": 0.25,
+        "Nostalgic": 0.1,
+        "Hopeful": 0.05
+      },
+      "coordinates": {
+        "x": 293.05,
+        "y": 590.05
+      },
+      "analysis": "Neil Young, Saint Motel. Longing and missing someone. Love mixed with ache. Distance creates bittersweet feelings. Holding on.",
+      "proximity_notes": "Between Romantic and Sad. Long distance = love + longing + melancholy separation."
+    },
+    "Romantic - Anniversary": {
+      "emotional_composition": {
+        "Romantic": 0.65,
+        "Nostalgic": 0.2,
+        "Grateful": 0.1,
+        "Happy": 0.05
+      },
+      "coordinates": {
+        "x": 315.8,
+        "y": 603.07
+      },
+      "analysis": "'Think of Laura', Alice in Chains 'Brother'. Reflection on journey together. Appreciating what you've built. Time and commitment celebrated.",
+      "proximity_notes": "Between Romantic and Nostalgic/Grateful. Anniversary = romance + reflection + appreciation."
+    },
+    "Romantic - Proposal": {
+      "emotional_composition": {
+        "Romantic": 0.7,
+        "Excited": 0.15,
+        "Hopeful": 0.1,
+        "Anxious": 0.05
+      },
+      "coordinates": {
+        "x": 261.91,
+        "y": 560.47
+      },
+      "analysis": "Pearl Jam vibes. Major life moment. Nervous energy mixed with deep love. Commitment and future. Vulnerability of asking.",
+      "proximity_notes": "Romantic pulled toward Excited/Hopeful with slight Anxious. Proposal = romance + anticipation + nerves."
+    },
+    "Romantic - Slow Dance": {
+      "emotional_composition": {
+        "Romantic": 0.75,
+        "Happy": 0.15,
+        "Nostalgic": 0.05,
+        "Chill": 0.05
+      },
+      "coordinates": {
+        "x": 284.71,
+        "y": 592.03
+      },
+      "analysis": "'Walking on Sunshine', Whitney Houston 'I Wanna Dance With Somebody'. Physical closeness and joy. Swaying together. Classic romance.",
+      "proximity_notes": "Near Romantic center with Happy pull. Slow dance = romance + joy + physical connection."
+    },
+    "Dark - Gothic": {
+      "emotional_composition": {
+        "Dark": 0.8,
+        "Sad": 0.1,
+        "Romantic": 0.05,
+        "Introspective": 0.05
+      },
+      "coordinates": {
+        "x": 362.65,
+        "y": 795.48
+      },
+      "analysis": "Murderfolk, The Goddamn Gallows, O'Death 'Lowtide'. Dark folk and gothic aesthetics. Death imagery. Melancholic darkness. Victorian vibes.",
+      "proximity_notes": "Very close to Dark center. Gothic = pure darkness with melancholic and romantic edge."
+    },
+    "Dark - Brooding": {
+      "emotional_composition": {
+        "Dark": 0.7,
+        "Introspective": 0.2,
+        "Anxious": 0.1
+      },
+      "coordinates": {
+        "x": 441.09,
+        "y": 814.27
+      },
+      "analysis": "Kraftwerk 'Radioactivity', Portishead 'Dummy', Kiki Rockwell. Moody and heavy. Storm cloud energy. Dwelling in shadow. Internal tension.",
+      "proximity_notes": "Between Dark and Introspective. Brooding = darkness + deep thought + worried edge."
+    },
+    "Dark - Haunting": {
+      "emotional_composition": {
+        "Dark": 0.75,
+        "Sad": 0.15,
+        "Introspective": 0.1
+      },
+      "coordinates": {
+        "x": 385.81,
+        "y": 787.18
+      },
+      "analysis": "Hendrix 'All Along the Watchtower', Jeff Buckley 'Hallelujah', Soft Cell 'Tainted Love'. Eerie beauty. Ghost-like quality. Melancholic darkness.",
+      "proximity_notes": "Near Dark center with Sad pull. Haunting = darkness with emotional weight, spectral sadness."
+    },
+    "Dark - Noir": {
+      "emotional_composition": {
+        "Dark": 0.7,
+        "Night": 0.15,
+        "Introspective": 0.1,
+        "Romantic": 0.05
+      },
+      "coordinates": {
+        "x": 388.86,
+        "y": 848.43
+      },
+      "analysis": "Black Sabbath vibes, La Femme. Detective movie soundtrack energy. Urban shadows. Mystery and danger. Stylized darkness.",
+      "proximity_notes": "Between Dark and Night. Noir = cinematic darkness, nocturnal mystery, dangerous romance."
+    },
+    "Dark - Witchy": {
+      "emotional_composition": {
+        "Dark": 0.7,
+        "Romantic": 0.15,
+        "Introspective": 0.1,
+        "Playful": 0.05
+      },
+      "coordinates": {
+        "x": 358.8,
+        "y": 761.53
+      },
+      "analysis": "Fleetwood Mac 'Rhiannon', Stevie Nicks 'Sorcerer', Heilung, Wardruna. Mystical and powerful. Pagan energy. Feminine darkness. Magic and ritual.",
+      "proximity_notes": "Dark pulled toward Romantic and slightly Playful. Witchy = mystical darkness, enchanted power."
+    },
+    "Dark - Villain Arc": {
+      "emotional_composition": {
+        "Dark": 0.65,
+        "Angry": 0.2,
+        "Confident": 0.15
+      },
+      "coordinates": {
+        "x": 417.6,
+        "y": 694.69
+      },
+      "analysis": "Oceano, PJ Harvey 'This Wicked Tongue', Garbage 'Hammering'. Embracing the shadow. Power in darkness. Unapologetic edge. Anti-hero energy.",
+      "proximity_notes": "Between Dark and Angry/Confident. Villain arc = darkness + rage + powerful self-assertion."
+    },
+    "Dark - Apocalyptic": {
+      "emotional_composition": {
+        "Dark": 0.8,
+        "Anxious": 0.1,
+        "Sad": 0.05,
+        "Chaotic": 0.05
+      },
+      "coordinates": {
+        "x": 407.32,
+        "y": 778.69
+      },
+      "analysis": "Mayhem, Axis of Perdition. End-times energy. Dread and doom. Heavy and overwhelming. World-ending atmosphere. Existential darkness.",
+      "proximity_notes": "Very close to Dark center. Apocalyptic = intense darkness with dread, overwhelming shadow."
+    },
+    "Night - Introspective Philosophical": {
+      "emotional_composition": {
+        "Introspective": 0.75,
+        "Sad": 0.1,
+        "Dark": 0.1,
+        "Chill": 0.05
+      },
+      "coordinates": {
+        "x": 569.53,
+        "y": 751.26
+      },
+      "analysis": "Mozart 'Requiem', Rush 'La Villa Strangiato', Elliott Smith. Deep existential questioning. Life's big questions. Contemplating meaning and mortality.",
+      "proximity_notes": "Near Introspective center with Sad/Dark touches. Philosophical = deep thought + existential weight."
+    },
+    "Night - Introspective Self-Reflection": {
+      "emotional_composition": {
+        "Introspective": 0.8,
+        "Sad": 0.1,
+        "Chill": 0.1
+      },
+      "coordinates": {
+        "x": 595.97,
+        "y": 733.5
+      },
+      "analysis": "Japanese artists - Uru, Ado, Yoshino. Personal examination. Looking inward. Understanding yourself. Processing experiences. Inner journey.",
+      "proximity_notes": "Very close to Introspective center. Self-reflection = pure internal focus, personal processing."
+    },
+    "Night - Introspective Contemplative": {
+      "emotional_composition": {
+        "Introspective": 0.75,
+        "Sad": 0.15,
+        "Night": 0.1
+      },
+      "coordinates": {
+        "x": 572.19,
+        "y": 766.17
+      },
+      "analysis": "'Chasing Cars', Radiohead 'How to disappear completely', Tool 'Lateralus'. Quiet thinking. Stillness and wonder. Pondering without urgency.",
+      "proximity_notes": "Between Introspective and Sad/Night. Contemplative = gentle deep thought, reflective mood."
+    },
+    "Night - Introspective Life Changes": {
+      "emotional_composition": {
+        "Introspective": 0.65,
+        "Anxious": 0.15,
+        "Hopeful": 0.1,
+        "Sad": 0.1
+      },
+      "coordinates": {
+        "x": 602.02,
+        "y": 690.34
+      },
+      "analysis": "Sisters of Mercy, The Cure 'Staring', Depeche Mode 'Violator', Postal Service. Processing transitions. Uncertainty and growth. Mixed emotions of change.",
+      "proximity_notes": "Introspective pulled toward Anxious/Hopeful/Sad. Life changes = reflection + uncertainty + hope + loss."
+    },
+    "Night - Introspective Growth": {
+      "emotional_composition": {
+        "Introspective": 0.7,
+        "Hopeful": 0.15,
+        "Grateful": 0.1,
+        "Sad": 0.05
+      },
+      "coordinates": {
+        "x": 608.04,
+        "y": 649.35
+      },
+      "analysis": "The Byrds, Todd Snider, Amy Winehouse 'Back to Black'. Processing lessons learned. Becoming better. Reflecting on progress. Bittersweet development.",
+      "proximity_notes": "Between Introspective and Hopeful/Grateful. Growth = reflection + optimism + appreciation."
+    },
+    "Night - Introspective Questioning": {
+      "emotional_composition": {
+        "Introspective": 0.75,
+        "Anxious": 0.15,
+        "Sad": 0.1
+      },
+      "coordinates": {
+        "x": 613.13,
+        "y": 743.58
+      },
+      "analysis": "Lou Armstrong 'What a Wonderful World', 'Rainbow Connection', Jim Croce 'Time In A Bottle'. Asking why. Seeking answers. Uncertainty and wonder mixed.",
+      "proximity_notes": "Between Introspective and Anxious/Sad. Questioning = deep thought + uncertainty + melancholy."
+    },
+    "Dark - Anxious Panic": {
+      "emotional_composition": {
+        "Anxious": 0.85,
+        "Chaotic": 0.1,
+        "Dark": 0.05
+      },
+      "coordinates": {
+        "x": 704.24,
+        "y": 650.57
+      },
+      "analysis": "John Coltrane experimental, Hans Zimmer tense scores, Hiatus Kaiyote intensity. Heart racing. Overwhelming fear. Loss of control. Peak anxiety.",
+      "proximity_notes": "Very close to Anxious center. Panic = pure anxiety at its peak, chaotic overwhelming."
+    },
+    "Dark - Anxious Overwhelmed": {
+      "emotional_composition": {
+        "Anxious": 0.75,
+        "Sad": 0.1,
+        "Chaotic": 0.1,
+        "Bored": 0.05
+      },
+      "coordinates": {
+        "x": 705.11,
+        "y": 609.9
+      },
+      "analysis": "Bad Religion, Stella Paris, M.Ward. Too much at once. Can't keep up. Drowning in tasks and emotions. Exhausted worry.",
+      "proximity_notes": "Near Anxious center pulled toward Chaotic/Sad. Overwhelmed = anxiety + chaos + exhaustion."
+    },
+    "Dark - Anxious Nervous Energy": {
+      "emotional_composition": {
+        "Anxious": 0.7,
+        "Energy": 0.2,
+        "Excited": 0.1
+      },
+      "coordinates": {
+        "x": 619.69,
+        "y": 659.5
+      },
+      "analysis": "Dance With the Dead, Carpenter Brut, Perturbator. Restless and wired. Can't sit still. Anxious but mobilized. Synthwave tension.",
+      "proximity_notes": "Between Anxious and Energy. Nervous energy = anxiety channeled into movement, restless power."
+    },
+    "Dark - Anxious Calming Anxiety": {
+      "emotional_composition": {
+        "Anxious": 0.5,
+        "Chill": 0.3,
+        "Peaceful": 0.2
+      },
+      "coordinates": {
+        "x": 694.41,
+        "y": 511.7
+      },
+      "analysis": "Juanma Salinas 'Calmo', Camel 'The Snow Goose', Mike Oldfield. Soothing worried mind. Gentle reassurance. Coming down from anxiety.",
+      "proximity_notes": "Halfway between Anxious and Chill/Peaceful. Calming = anxiety being soothed, transitional state."
+    },
+    "Dark - Anxious Existential Dread": {
+      "emotional_composition": {
+        "Anxious": 0.65,
+        "Dark": 0.2,
+        "Introspective": 0.15
+      },
+      "coordinates": {
+        "x": 635.54,
+        "y": 734.2
+      },
+      "analysis": "Tool 'Aenima', Soundgarden, Tori Amos 'Precious Things'. Big scary questions. Mortality and meaninglessness. Cosmic anxiety. Deep philosophical fear.",
+      "proximity_notes": "Between Anxious, Dark, and Introspective. Existential dread = anxiety + darkness + deep thought."
+    },
+    "Dark - Anxious Social Anxiety": {
+      "emotional_composition": {
+        "Anxious": 0.75,
+        "Sad": 0.15,
+        "Introspective": 0.1
+      },
+      "coordinates": {
+        "x": 669.18,
+        "y": 674.12
+      },
+      "analysis": "Ethel Cain 'Ptolemaea', Aphex Twin experimental, Diamanda Galas intensity. Fear of judgment. Awkwardness and isolation. Self-consciousness.",
+      "proximity_notes": "Near Anxious center with Sad pull. Social anxiety = specific anxiety + isolation + self-focus."
+    },
+    "Sad - Nostalgic Childhood": {
+      "emotional_composition": {
+        "Nostalgic": 0.75,
+        "Happy": 0.15,
+        "Sad": 0.1
+      },
+      "coordinates": {
+        "x": 383.0,
+        "y": 623.38
+      },
+      "analysis": "Heart, Boards of Canada 'Geogaddi', The Caretaker 'Everywhere at the End of Time'. Longing for innocence. Bittersweet memories. Simpler times.",
+      "proximity_notes": "Near Nostalgic center between Happy and Sad. Childhood = bittersweet memory, innocence lost."
+    },
+    "Sad - Nostalgic Teen Years": {
+      "emotional_composition": {
+        "Nostalgic": 0.7,
+        "Sad": 0.15,
+        "Introspective": 0.1,
+        "Happy": 0.05
+      },
+      "coordinates": {
+        "x": 397.66,
+        "y": 655.28
+      },
+      "analysis": "Sisters of Mercy, The Cure, Depeche Mode, Postal Service. Coming-of-age memories. First experiences. Identity formation. Angsty nostalgia.",
+      "proximity_notes": "Between Nostalgic and Sad/Introspective. Teen years = reflective nostalgia with complexity."
+    },
+    "Sad - Nostalgic 90s": {
+      "emotional_composition": {
+        "Nostalgic": 0.8,
+        "Happy": 0.15,
+        "Playful": 0.05
+      },
+      "coordinates": {
+        "x": 379.54,
+        "y": 605.45
+      },
+      "analysis": "New Radicals, Toad the Wet Sprocket, Sublime, RHCP 'Aeroplane', Foo Fighters. Specific decade longing. Alt-rock memories. MTV generation. Grunge and optimism.",
+      "proximity_notes": "Near Nostalgic center with Happy pull. 90s = specific era memory, upbeat nostalgia."
+    },
+    "Sad - Nostalgic 2000s": {
+      "emotional_composition": {
+        "Nostalgic": 0.75,
+        "Happy": 0.15,
+        "Sad": 0.1
+      },
+      "coordinates": {
+        "x": 383.0,
+        "y": 623.38
+      },
+      "analysis": "Manic Street Preachers, The Script, Foo Fighters, Sugarcult. Y2K memories. Pop-punk and post-grunge. Coming of age in new millennium.",
+      "proximity_notes": "Near Nostalgic center between Happy and Sad. 2000s = recent era nostalgia, bittersweet."
+    },
+    "Sad - Nostalgic Simpler Times": {
+      "emotional_composition": {
+        "Nostalgic": 0.7,
+        "Sad": 0.15,
+        "Peaceful": 0.1,
+        "Grateful": 0.05
+      },
+      "coordinates": {
+        "x": 424.41,
+        "y": 578.17
+      },
+      "analysis": "Beastie Boys 'Sabotage', Genesis, Aphex Twin, Chemical Brothers, Primus. Longing for less complexity. When life felt easier. Wishing to go back.",
+      "proximity_notes": "Between Nostalgic and Sad/Peaceful. Simpler times = yearning nostalgia, loss of innocence."
+    },
+    "Energy - Rage": {
+      "emotional_composition": {
+        "Angry": 0.9,
+        "Dark": 0.05,
+        "Chaotic": 0.05
+      },
+      "coordinates": {
+        "x": 343.75,
+        "y": 321.77
+      },
+      "analysis": "Fit for an Autopsy, The Acacia Strain, deathcore intensity. Pure fury. Uncontrolled anger. Screaming energy. Maximum aggression.",
+      "proximity_notes": "Very close to Angry center. Rage = pure concentrated anger at peak intensity."
+    },
+    "Energy - Frustrated": {
+      "emotional_composition": {
+        "Angry": 0.7,
+        "Sad": 0.15,
+        "Anxious": 0.1,
+        "Bitter": 0.05
+      },
+      "coordinates": {
+        "x": 364.92,
+        "y": 385.69
+      },
+      "analysis": "Pearl Jam 'Black', Derek and the Dominos 'Layla', Type O Negative. Blocked and stuck. Helpless anger. Things not working. Irritation with sadness.",
+      "proximity_notes": "Between Angry and Sad/Anxious. Frustration = anger + helplessness + worry."
+    },
+    "Energy - Aggressive": {
+      "emotional_composition": {
+        "Angry": 0.85,
+        "Energy": 0.1,
+        "Dark": 0.05
+      },
+      "coordinates": {
+        "x": 340.54,
+        "y": 364.34
+      },
+      "analysis": "Methwitch, Brand of Sacrifice, Terrorizer, Napalm Death. Outward hostility. Attack mode. Confrontational. Physical anger energy.",
+      "proximity_notes": "Very close to Angry center with Energy. Aggressive = focused directed anger, combative."
+    },
+    "Energy - Cathartic Anger": {
+      "emotional_composition": {
+        "Angry": 0.65,
+        "Sad": 0.2,
+        "Introspective": 0.1,
+        "Hopeful": 0.05
+      },
+      "coordinates": {
+        "x": 380.28,
+        "y": 389.37
+      },
+      "analysis": "Pink Floyd 'Wish You Were Here', Genesis 'No Reply At All', Aphrodite's Child. Releasing anger healthily. Processing through rage. Therapeutic fury.",
+      "proximity_notes": "Between Angry and Sad/Introspective. Cathartic = anger as release, healing rage."
+    },
+    "Dark - Resentful": {
+      "emotional_composition": {
+        "Bitter": 0.75,
+        "Angry": 0.15,
+        "Sad": 0.1
+      },
+      "coordinates": {
+        "x": 138.06,
+        "y": 538.58
+      },
+      "analysis": "MEGA DRIVE, Pendulum, The Divine Comedy. Holding grudges. Can't let go. Simmering negativity. Poisoned by past wrongs.",
+      "proximity_notes": "Near Bitter center between Angry and Sad. Resentful = bitter + lingering anger + hurt."
+    },
+    "Dark - Betrayed": {
+      "emotional_composition": {
+        "Bitter": 0.7,
+        "Angry": 0.2,
+        "Sad": 0.1
+      },
+      "coordinates": {
+        "x": 151.07,
+        "y": 524.07
+      },
+      "analysis": "Babes in Toyland 'Bruise Violet', Rollins Band 'Liar', Silverstein. Feeling wronged. Trust broken. Wounded and vengeful. Specific hurt.",
+      "proximity_notes": "Between Bitter and Angry/Sad. Betrayed = bitterness from specific violation, trust destroyed."
+    },
+    "Energy - Adventure": {
+      "emotional_composition": {
+        "Excited": 0.75,
+        "Happy": 0.15,
+        "Energy": 0.1
+      },
+      "coordinates": {
+        "x": 242.24,
+        "y": 421.95
+      },
+      "analysis": "Two Steps From Hell, Thomas Bergersen epic scores. Quest and exploration. Unknown territory. Bold discovery. Thrilling anticipation.",
+      "proximity_notes": "Near Excited center pulled toward Happy/Energy. Adventure = excited exploration, bold joy."
+    },
+    "Energy - Anticipation": {
+      "emotional_composition": {
+        "Excited": 0.7,
+        "Anxious": 0.15,
+        "Happy": 0.1,
+        "Energy": 0.05
+      },
+      "coordinates": {
+        "x": 294.9,
+        "y": 452.29
+      },
+      "analysis": "Captain Beefheart 'Electricity', electric energy vibes. Waiting for something good. Nervous excitement. Can't wait feeling. Building tension.",
+      "proximity_notes": "Between Excited and Anxious/Happy. Anticipation = excited + slightly nervous + joyful waiting."
+    },
+    "Happy - Healing": {
+      "emotional_composition": {
+        "Hopeful": 0.65,
+        "Sad": 0.2,
+        "Introspective": 0.1,
+        "Peaceful": 0.05
+      },
+      "coordinates": {
+        "x": 509.67,
+        "y": 347.21
+      },
+      "analysis": "Pink Floyd 'Wish You Were Here', The National 'Sorrow', LCD Soundsystem. Recovery process. Moving through pain. Getting better. Still hurting but improving.",
+      "proximity_notes": "Between Hopeful and Sad. Healing = hope emerging from sadness, transitional recovery."
+    },
+    "Happy - New Beginnings": {
+      "emotional_composition": {
+        "Hopeful": 0.7,
+        "Excited": 0.15,
+        "Happy": 0.1,
+        "Anxious": 0.05
+      },
+      "coordinates": {
+        "x": 464.48,
+        "y": 308.05
+      },
+      "analysis": "Porcupine Tree, Karnivool, My Bloody Valentine 'Loveless', Alcest. Fresh starts. Blank slates. Turning the page. Optimistic about change.",
+      "proximity_notes": "Between Hopeful and Excited/Happy. New beginnings = hope + anticipation + slight nerves."
+    },
+    "Happy - Optimistic": {
+      "emotional_composition": {
+        "Hopeful": 0.75,
+        "Happy": 0.2,
+        "Grateful": 0.05
+      },
+      "coordinates": {
+        "x": 518.91,
+        "y": 283.67
+      },
+      "analysis": "'Let the Day Begin' - The Call, 'Prayer of St Francis', Tears for Fears 'Sowing the Seeds of Love'. Bright outlook. Believing in good. Positive future vision.",
+      "proximity_notes": "Between Hopeful and Happy. Optimistic = strong hope + happiness + faith in good outcomes."
+    },
+    "Dark - Romantic Jealousy": {
+      "emotional_composition": {
+        "Jealous": 0.75,
+        "Angry": 0.15,
+        "Sad": 0.05,
+        "Anxious": 0.05
+      },
+      "coordinates": {
+        "x": 105.64,
+        "y": 292.79
+      },
+      "analysis": "'Run for Your Life' - Beatles, 'Jolene' - Dolly Parton, Nick Jonas 'Jealous'. Possessive love. Fear of losing partner. Green-eyed monster.",
+      "proximity_notes": "Near Jealous center with Angry pull. Romantic jealousy = envy + anger + insecurity in love."
+    },
+    "Dark - Envious": {
+      "emotional_composition": {
+        "Jealous": 0.8,
+        "Sad": 0.1,
+        "Bitter": 0.05,
+        "Anxious": 0.05
+      },
+      "coordinates": {
+        "x": 80.73,
+        "y": 316.03
+      },
+      "analysis": "'Creep' - Radiohead, 'Possession' - Sarah McLachlan. Wanting what others have. Feeling inadequate. Comparing yourself. Longing for their life.",
+      "proximity_notes": "Very close to Jealous center. Envious = pure jealousy with sadness from lacking."
+    },
+    "Dark - Insecure": {
+      "emotional_composition": {
+        "Jealous": 0.65,
+        "Anxious": 0.2,
+        "Sad": 0.15
+      },
+      "coordinates": {
+        "x": 207.24,
+        "y": 378.69
+      },
+      "analysis": "Swans 'Failure', Linkin Park 'Numb', NF 'Let You Down'. Self-doubt and comparison. Worried about not measuring up. Feeling less-than.",
+      "proximity_notes": "Between Jealous and Anxious/Sad. Insecure = jealousy rooted in self-doubt and worry."
+    },
+    "Dark - Competitive": {
+      "emotional_composition": {
+        "Jealous": 0.6,
+        "Angry": 0.2,
+        "Confident": 0.15,
+        "Energy": 0.05
+      },
+      "coordinates": {
+        "x": 213.76,
+        "y": 332.43
+      },
+      "analysis": "Illenium tracks, upbeat competitive vibes. Wanting to win. Rivalry energy. Driven by envy. Using jealousy as fuel.",
+      "proximity_notes": "Between Jealous and Angry/Confident. Competitive = jealousy channeled into drive and determination."
+    },
+    "Chill - Serene": {
+      "emotional_composition": {
+        "Peaceful": 0.85,
+        "Chill": 0.1,
+        "Grateful": 0.05
+      },
+      "coordinates": {
+        "x": 726.31,
+        "y": 89.89
+      },
+      "analysis": "Oh Wonder 'Lonely Star', Deuter, Brian Eno, Coldplay 'Ghost Stories'. Complete calm. Stillness and clarity. Deep tranquility. Zen state.",
+      "proximity_notes": "Very close to Peaceful center. Serene = pure peace, deep calm, undisturbed stillness."
+    },
+    "Chill - Meditative": {
+      "emotional_composition": {
+        "Peaceful": 0.8,
+        "Introspective": 0.15,
+        "Chill": 0.05
+      },
+      "coordinates": {
+        "x": 711.73,
+        "y": 160.94
+      },
+      "analysis": "Karunesh 'Solitude', Alice in Chains 'Nutshell' (acoustic), Genesis 'Ripples', Pink Floyd 'Echoes'. Contemplative peace. Mindfulness. Inner quiet.",
+      "proximity_notes": "Between Peaceful and Introspective. Meditative = peace + gentle contemplation, conscious calm."
+    },
+    "Chill - Quiet Reflection": {
+      "emotional_composition": {
+        "Peaceful": 0.7,
+        "Introspective": 0.2,
+        "Sad": 0.05,
+        "Chill": 0.05
+      },
+      "coordinates": {
+        "x": 689.58,
+        "y": 224.19
+      },
+      "analysis": "Kings of Convenience 'Gold in the Air', Muse 'Unintended', T.Swift 'Peace'. Gentle pondering. Soft contemplation. Peaceful thought.",
+      "proximity_notes": "Between Peaceful and Introspective. Quiet reflection = peace + gentle thought, calm processing."
+    },
+    "Chill - Gentle": {
+      "emotional_composition": {
+        "Peaceful": 0.75,
+        "Chill": 0.15,
+        "Happy": 0.05,
+        "Grateful": 0.05
+      },
+      "coordinates": {
+        "x": 708.21,
+        "y": 134.13
+      },
+      "analysis": "Mars Volta acoustic moments, TAUK, Elbow 'AUDIO VERTIGO'. Soft and kind. Tender energy. Delicate and warm. Nurturing peace.",
+      "proximity_notes": "Near Peaceful center with Chill. Gentle = soft peace, tender calm, nurturing stillness."
+    },
+    "Happy - Silly": {
+      "emotional_composition": {
+        "Playful": 0.85,
+        "Happy": 0.1,
+        "Party": 0.05
+      },
+      "coordinates": {
+        "x": 400.77,
+        "y": 58.76
+      },
+      "analysis": "Chuck Berry 'My Ding-a-Ling', They Might Be Giants 'We Want A Rock', 'The Loophole', novelty songs. Pure goofiness. Not taking seriously. Comedy music.",
+      "proximity_notes": "Very close to Playful center. Silly = pure playfulness, maximum goofiness, comedic fun."
+    },
+    "Happy - Whimsical": {
+      "emotional_composition": {
+        "Playful": 0.75,
+        "Happy": 0.15,
+        "Introspective": 0.05,
+        "Peaceful": 0.05
+      },
+      "coordinates": {
+        "x": 440.37,
+        "y": 97.69
+      },
+      "analysis": "Plaid 'Tearisci', Devin Townsend experimental, Kurt Vile. Quirky and imaginative. Light but creative. Fantastical and odd. Dreamy playfulness.",
+      "proximity_notes": "Near Playful center with Happy. Whimsical = creative playfulness, imaginative lightness."
+    },
+    "Happy - Fun": {
+      "emotional_composition": {
+        "Playful": 0.7,
+        "Happy": 0.2,
+        "Party": 0.1
+      },
+      "coordinates": {
+        "x": 404.19,
+        "y": 117.52
+      },
+      "analysis": "Twenty One Pilots 'Shy Away', BabyMetal 'Gimme Chocolate', Madness, Bad Manners, Little Big 'Skibidi'. Energetic good times. Upbeat joy. Party-adjacent fun.",
+      "proximity_notes": "Between Playful and Happy/Party. Fun = joyful playfulness, energetic celebration."
+    },
+    "Happy - Childlike": {
+      "emotional_composition": {
+        "Playful": 0.65,
+        "Nostalgic": 0.2,
+        "Happy": 0.1,
+        "Peaceful": 0.05
+      },
+      "coordinates": {
+        "x": 416.11,
+        "y": 176.33
+      },
+      "analysis": "Dire Straits 'Money for Nothing', Phil Collins 'In the Air Tonight', Ravel 'Bolero'. Innocent wonder. Simple joy. Rediscovering play. Youth energy.",
+      "proximity_notes": "Between Playful and Nostalgic. Childlike = playfulness + innocent nostalgia, wonder reclaimed."
+    },
+    "Energy - Frantic": {
+      "emotional_composition": {
+        "Chaotic": 0.8,
+        "Anxious": 0.15,
+        "Energy": 0.05
+      },
+      "coordinates": {
+        "x": 678.38,
+        "y": 314.25
+      },
+      "analysis": "Experimental electronic, Biosphere, Dungen. Scattered and rushing. Can't keep up. Everything at once. Overwhelming pace.",
+      "proximity_notes": "Very close to Chaotic center. Frantic = pure chaos, overwhelming scattered energy."
+    },
+    "Energy - Overwhelming": {
+      "emotional_composition": {
+        "Chaotic": 0.75,
+        "Anxious": 0.15,
+        "Sad": 0.05,
+        "Dark": 0.05
+      },
+      "coordinates": {
+        "x": 658.77,
+        "y": 337.08
+      },
+      "analysis": "Marcus King, Peter Gabriel 'Intruder', experimental intensity. Too much stimulus. Sensory overload. Drowning in chaos. Heavy overwhelm.",
+      "proximity_notes": "Near Chaotic center with Anxious. Overwhelming = chaos + anxiety, crushing intensity."
+    },
+    "Energy - Unhinged": {
+      "emotional_composition": {
+        "Chaotic": 0.7,
+        "Dark": 0.15,
+        "Angry": 0.1,
+        "Playful": 0.05
+      },
+      "coordinates": {
+        "x": 582.26,
+        "y": 310.39
+      },
+      "analysis": "Gunship & Health, GosT 'Supreme', darkwave synthwave. Out of control. Wild and dangerous. Unstable energy. Madness edge.",
+      "proximity_notes": "Between Chaotic and Dark/Angry. Unhinged = chaos + darkness + rage, dangerous instability."
+    },
+    "Energy - Scattered": {
+      "emotional_composition": {
+        "Chaotic": 0.75,
+        "Anxious": 0.15,
+        "Bored": 0.1
+      },
+      "coordinates": {
+        "x": 720.71,
+        "y": 305.34
+      },
+      "analysis": "Experimental tracks, Lemaitre, Godsmack. Can't focus. Mind all over. Distracted and disjointed. Lost in noise.",
+      "proximity_notes": "Between Chaotic and Anxious/Bored. Scattered = chaos + distraction, unfocused overwhelm."
+    },
+    "Chill - Restless": {
+      "emotional_composition": {
+        "Bored": 0.7,
+        "Anxious": 0.2,
+        "Energy": 0.1
+      },
+      "coordinates": {
+        "x": 892.67,
+        "y": 461.24
+      },
+      "analysis": "Mastodon, Coal Chamber, Cypress Hill. Understimulated but agitated. Need something to do. Pacing energy. Can't settle but nothing appeals.",
+      "proximity_notes": "Between Bored and Anxious/Energy. Restless = boredom + nervous energy, agitated understimulation."
+    },
+    "Chill - Understimulated": {
+      "emotional_composition": {
+        "Bored": 0.8,
+        "Sad": 0.1,
+        "Chill": 0.05,
+        "Anxious": 0.05
+      },
+      "coordinates": {
+        "x": 908.09,
+        "y": 404.88
+      },
+      "analysis": "Radiohead 'Everything In Its Right Place', Velvet Underground, ambient tracks. Brain not engaged. Empty feeling. Numb from lack of input.",
+      "proximity_notes": "Very close to Bored center. Understimulated = pure boredom, empty understimulation."
+    },
+    "Chill - Waiting": {
+      "emotional_composition": {
+        "Bored": 0.65,
+        "Anxious": 0.2,
+        "Introspective": 0.1,
+        "Peaceful": 0.05
+      },
+      "coordinates": {
+        "x": 894.04,
+        "y": 453.92
+      },
+      "analysis": "Tommy Emmanuel, Genesis 'Horizons', Norah Jones 'Sunrise'. Stuck in limbo. Time dragging. Anticipation mixed with tedium. Impatient patience.",
+      "proximity_notes": "Between Bored and Anxious. Waiting = boredom + anticipation, tedious impatience."
+    },
+    "Chill - Monotonous": {
+      "emotional_composition": {
+        "Bored": 0.75,
+        "Sad": 0.15,
+        "Dark": 0.1
+      },
+      "coordinates": {
+        "x": 846.69,
+        "y": 435.24
+      },
+      "analysis": "The Frames, Vetusta Morla, Porcupine Tree 'Lightbulb Sun'. Repetitive grind. Same thing over and over. Draining sameness. Depression-adjacent.",
+      "proximity_notes": "Between Bored and Sad/Dark. Monotonous = boredom with heaviness, draining repetition."
+    },
+    "Happy - Thankful": {
+      "emotional_composition": {
+        "Grateful": 0.8,
+        "Happy": 0.15,
+        "Peaceful": 0.05
+      },
+      "coordinates": {
+        "x": 748.18,
+        "y": 353.07
+      },
+      "analysis": "Grateful Dead 'Ripple', Elton John 'Tumbleweed Connection', The Meters. Appreciation and warmth. Counting blessings. Joy in gratitude.",
+      "proximity_notes": "Very close to Grateful center. Thankful = pure gratitude, warm appreciation."
+    },
+    "Happy - Content": {
+      "emotional_composition": {
+        "Grateful": 0.7,
+        "Peaceful": 0.2,
+        "Happy": 0.1
+      },
+      "coordinates": {
+        "x": 754.05,
+        "y": 300.13
+      },
+      "analysis": "Polyphonic Spree 'Reach For the Sun', Brian Jonestown Massacre, Low, Smog 'Rock Bottom Riser'. Satisfied and settled. Enough is enough. Peaceful appreciation.",
+      "proximity_notes": "Between Grateful and Peaceful. Content = gratitude + peace, satisfied stillness."
+    },
+    "Happy - Reflective Gratitude": {
+      "emotional_composition": {
+        "Grateful": 0.7,
+        "Introspective": 0.2,
+        "Nostalgic": 0.05,
+        "Happy": 0.05
+      },
+      "coordinates": {
+        "x": 723.23,
+        "y": 467.93
+      },
+      "analysis": "Sharon Jones, Christmas songs, thoughtful appreciation music. Looking back with thanks. Realizing blessings. Contemplative appreciation.",
+      "proximity_notes": "Between Grateful and Introspective. Reflective = gratitude + contemplation, thoughtful thanks."
+    },
+    "Happy - Warm Appreciation": {
+      "emotional_composition": {
+        "Grateful": 0.75,
+        "Happy": 0.15,
+        "Romantic": 0.05,
+        "Peaceful": 0.05
+      },
+      "coordinates": {
+        "x": 719.16,
+        "y": 366.2
+      },
+      "analysis": "Chromatics, Cults 'Always Forever', Jidenna 'Bambi', Bon Iver. Affectionate gratitude. Appreciating people and moments. Love-adjacent thanks.",
+      "proximity_notes": "Between Grateful and Happy/Romantic. Warm appreciation = gratitude with affection, loving thanks."
+    },
+    "Energy - Self-Assured": {
+      "emotional_composition": {
+        "Confident": 0.8,
+        "Happy": 0.1,
+        "Energy": 0.1
+      },
+      "coordinates": {
+        "x": 765.06,
+        "y": 578.92
+      },
+      "analysis": "Sia 'Unstoppable', empowerment anthems. Knowing your worth. Secure in yourself. Unshakeable belief. Comfortable in skin.",
+      "proximity_notes": "Very close to Confident center. Self-assured = pure confidence, secure self-belief."
+    },
+    "Energy - Powerful": {
+      "emotional_composition": {
+        "Confident": 0.75,
+        "Energy": 0.15,
+        "Dark": 0.05,
+        "Angry": 0.05
+      },
+      "coordinates": {
+        "x": 730.79,
+        "y": 602.32
+      },
+      "analysis": "The Protomen, The War on Drugs, The Waterboys. Force and strength. Commanding presence. Intensity of power. Dominant energy.",
+      "proximity_notes": "Between Confident and Energy. Powerful = confidence + force, strength and dominance."
+    },
+    "Energy - Bold": {
+      "emotional_composition": {
+        "Confident": 0.75,
+        "Energy": 0.15,
+        "Excited": 0.05,
+        "Playful": 0.05
+      },
+      "coordinates": {
+        "x": 724.96,
+        "y": 565.09
+      },
+      "analysis": "Aram Khachaturian, Hot Milk, Jambinai. Daring and fearless. Taking risks. Unapologetic. Brave energy. Standing out.",
+      "proximity_notes": "Between Confident and Energy/Excited. Bold = confidence + daring, fearless assertion."
+    },
+    "Energy - Victorious": {
+      "emotional_composition": {
+        "Confident": 0.7,
+        "Happy": 0.2,
+        "Excited": 0.05,
+        "Grateful": 0.05
+      },
+      "coordinates": {
+        "x": 732.05,
+        "y": 527.84
+      },
+      "analysis": "'Walking on Sunshine', 'You Make My Dreams Come True', Whitney Houston. Winner energy. Triumph and celebration. Achieved success. Peak confidence.",
+      "proximity_notes": "Between Confident and Happy. Victorious = confidence + joy from winning, triumphant celebration."
+    },
+    "Energy - Unstoppable": {
+      "emotional_composition": {
+        "Confident": 0.8,
+        "Energy": 0.15,
+        "Angry": 0.05
+      },
+      "coordinates": {
+        "x": 755.05,
+        "y": 589.79
+      },
+      "analysis": "Disturbed 'A Reason To Fight', Metallica, Johnny Cash 'I Won't Back Down'. Indomitable will. Cannot be stopped. Relentless determination.",
+      "proximity_notes": "Between Confident and Energy/Angry. Unstoppable = fierce confidence, relentless power."
+    },
+    "Energy - Boss": {
+      "emotional_composition": {
+        "Confident": 0.75,
+        "Dark": 0.1,
+        "Energy": 0.1,
+        "Happy": 0.05
+      },
+      "coordinates": {
+        "x": 733.39,
+        "y": 614.33
+      },
+      "analysis": "Johnny Cash 'Ring of Fire', 'Ghost Riders', Lynyrd Skynyrd 'Freebird'. Command and authority. Leader energy. Take charge. Boss mode.",
+      "proximity_notes": "Between Confident and Dark/Energy. Boss = commanding confidence, authoritative power."
+    }
+  }
+}
