@@ -47,7 +47,38 @@ app.use((req, res, next) => {
   next();
 });
 
+// Validate required environment variables at startup
+function validateEnvironmentVariables(): void {
+  const required = [
+    { key: "ANTHROPIC_API_KEY", display: "Anthropic API Key" },
+    { key: "SPOTIFY_CLIENT_ID", display: "Spotify Client ID" },
+    { key: "SPOTIFY_CLIENT_SECRET", display: "Spotify Client Secret" },
+  ];
+
+  const missing: string[] = [];
+  
+  for (const { key, display } of required) {
+    if (!process.env[key]) {
+      missing.push(`  ❌ ${display} (${key})`);
+    }
+  }
+
+  if (missing.length > 0) {
+    console.error("\n🚨 STARTUP ERROR: Missing required environment variables!\n");
+    console.error(missing.join("\n"));
+    console.error("\nPlease set these in your .env file:");
+    console.error("  1. Get ANTHROPIC_API_KEY from: https://console.anthropic.com/");
+    console.error("  2. Get Spotify credentials from: https://developer.spotify.com/dashboard\n");
+    process.exit(1);
+  }
+
+  console.log("✅ All required environment variables are set\n");
+}
+
 (async () => {
+  // Validate all required API keys before starting
+  validateEnvironmentVariables();
+
   const server = await registerRoutes(app);
 
   app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
