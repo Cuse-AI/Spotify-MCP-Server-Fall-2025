@@ -14,7 +14,7 @@
       "comment_score": 0,
       "playlist_id": "PLkdpUijsivslcjmRzrIS-Etb184V3-hX0",
       "ananki_subvibe": "AMBIGUOUS",
-      "ananki_reasoning": "The context provided is extremely minimal - only the title 'slow songs' with no actual comment text. While this indicates the song has a slow tempo, 'Hartz 7 (700 Bars)' by Eko Fresh is a German rap track that is actually quite long and verbose (700 bars suggests an extensive verse). The title 'slow songs' alone doesn't provide sufficient emotional context to determine the specific sub-vibe the human was experiencing or intended. Without understanding whether they meant slow in tempo, mood, or another quality, and without any emotional expression in the comment, I cannot confidently map this to a specific emotional sub-vibe from the available list.",
+      "ananki_reasoning": "The comment text is empty and the post title 'slow songs' is too vague to determine the specific emotional context. While 'Hartz 7 (700 Bars)' by Eko Fresh is a German rap track that is actually quite lengthy and dense (not particularly 'slow' in the typical chill sense), without any actual human emotional expression or context about WHY this song was recommended or how it made them feel, I cannot accurately map it to a specific sub-vibe. The title 'slow songs' could refer to tempo, mood, or various emotional states, and the empty comment provides no clarification.",
       "ananki_confidence": 0.3
     },
     {
@@ -29,8 +29,8 @@
       "comment_score": 14,
       "playlist_id": "PLkdpUijsivslcjmRzrIS-Etb184V3-hX0",
       "ananki_subvibe": "AMBIGUOUS",
-      "ananki_reasoning": "The comment is clearly about a crochet tutorial, not about music at all. The human is praising instructional content for beginners learning to crochet, discussing visibility and clarity of the tutorial. This appears to be a mismatched post where either the comment was placed on the wrong content, or there's a data error linking a crochet tutorial comment to an Artifacts hip-hop song ('Return to da Wrongside'). There is zero emotional context related to music listening, making it impossible to accurately map to any music sub-vibe.",
-      "ananki_confidence": 0.1
+      "ananki_reasoning": "The comment is clearly about a crochet tutorial, not about music at all. The human is praising instructional content for beginners learning to crochet, discussing visibility and clarity of the tutorial. There is a complete mismatch between the context (craft tutorial review) and the validated song ('Return to da Wrongside' by Artifacts, which is a hip-hop track). The post title 'slow songs' suggests music context, but the comment itself contains zero emotional expression or context related to music listening. This appears to be either a data error or the comment was posted on the wrong content.",
+      "ananki_confidence": 0.2
     },
     {
       "artist": "Sherlock Holmes",
@@ -44,7 +44,7 @@
       "comment_score": 0,
       "playlist_id": "PLkdpUijsivslcjmRzrIS-Etb184V3-hX0",
       "ananki_subvibe": "AMBIGUOUS",
-      "ananki_reasoning": "The post title is 'slow songs' and the comment text is empty. While 'slow songs' suggests a tempo preference, it doesn't provide clear emotional context. More critically, the Spotify track is 'Sherlock Holmes - Teil 3 - Die neuen Fälle, Fall 2: Die Gesellschaft des Schreckens' which appears to be a German audiobook/audio drama episode (a Sherlock Holmes mystery story), not a music track. This is spoken word content rather than a song, making it impossible to map to a music-based emotional sub-vibe. The minimal context combined with non-musical content makes this clearly ambiguous.",
+      "ananki_reasoning": "The post title is 'slow songs' and there is no comment text provided. However, the validated Spotify track is 'Die Gesellschaft des Schreckens' (The Society of Terror) by Sherlock Holmes, which appears to be a German audio drama/audiobook episode (Teil 3 - Die neuen Fälle, Fall 2) rather than a music track. This is spoken word content, not a song, making it impossible to map to a music-based emotional sub-vibe. The context is insufficient and the content type is mismatched.",
       "ananki_confidence": 0.2
     }
   ]

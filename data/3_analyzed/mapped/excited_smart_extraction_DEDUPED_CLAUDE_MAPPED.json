@@ -1,0 +1,23 @@
+{
+  "total": 1,
+  "mapped": 0,
+  "ambiguous": 1,
+  "mapped_songs": [],
+  "ambiguous_songs": [
+    {
+      "artist": "Nitty Gritty Dirt Band",
+      "song": "Will The Circle Be Unbroken",
+      "spotify_id": "1SfGvSpwE0HBSjmkaEB1db",
+      "spotify_uri": "spotify:track:1SfGvSpwE0HBSjmkaEB1db",
+      "query_used": "Will the Circle be Unbroken",
+      "extraction_pattern": "quoted",
+      "comment_score": 1,
+      "source_url": "https://reddit.com/r/musicsuggestions/comments/1lmrjo6/looking_for_high_energy_banjo_appalachian_yeehaw/n0awcx5/",
+      "post_title": "Looking for high energy, banjo, Appalachian yeehaw tunes that aren’t AI bullshit",
+      "comment_text": "I always encourage Bluegrass newcomers to the triple album \"Will the Circle be Unbroken\" from the Nitty Gritty Dirt Band. \n\nLots of virtuoso banjo picking by the legendary Earl Scruggs and NGDB's own Bill McEwan.\n\nIt was my introduction to the genre 50 plus years ago",
+      "ananki_subvibe": "AMBIGUOUS",
+      "ananki_reasoning": "API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CVEwGXDcMK1gWwejRnQaP'}",
+      "ananki_confidence": 0.0
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "total": 1,
+  "note": "These need human review or are not music recommendations",
+  "songs": [
+    {
+      "artist": "Keri Hilson",
+      "song": "Knock You Down",
+      "spotify_id": "58FUwmyGUqkt53YPUcm7cJ",
+      "spotify_uri": "spotify:track:58FUwmyGUqkt53YPUcm7cJ",
+      "query_used": "The Moment I Said It Imogen heap a listen.",
+      "extraction_pattern": "by_pattern",
+      "comment_score": 11,
+      "source_url": "https://reddit.com/r/Music/comments/1jbx0df/gradually_going_deaf_send_music_i_should_listen/mhxk8y7/",
+      "post_title": "Gradually going deaf, send music I should listen to before I lose it all!",
+      "comment_text": "I'm so sorry for what you are going through. I would recommend you give \"The Moment I Said It\" by Imogen heap a listen.",
+      "ananki_subvibe": "AMBIGUOUS",
+      "ananki_reasoning": "API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CVEwJ5B1BBeifSJ2EKWaT'}",
+      "ananki_confidence": 0.0
+    }
+  ]
+}

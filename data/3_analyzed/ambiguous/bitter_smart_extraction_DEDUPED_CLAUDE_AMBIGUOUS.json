@@ -1,22 +1,7 @@
 {
-  "total": 4,
+  "total": 3,
   "note": "These need human review or are not music recommendations",
   "songs": [
-    {
-      "artist": "Laufey",
-      "song": "Winter Wonderland - Spotify Singles Holiday",
-      "spotify_id": "1LmkdWSxjCV7wKTPsCvYWN",
-      "spotify_uri": "spotify:track:1LmkdWSxjCV7wKTPsCvYWN",
-      "query_used": "This Is How It Feels (not quite a breakup song Laufey",
-      "extraction_pattern": "dash",
-      "comment_score": 1,
-      "source_url": "https://reddit.com/r/musicsuggestions/comments/1ipd11h/recommend_me_some_breakup_songs_about_still_being/mcqzpjq/",
-      "post_title": "Recommend me some breakup songs about still being in love with your ex",
-      "comment_text": " Counting Crows - Angel of the Silences\n\nd4vd & Laufey - This Is How It Feels (not quite a breakup song, more unrequited love, same vibe though)",
-      "ananki_subvibe": "AMBIGUOUS",
-      "ananki_reasoning": "There is a clear mismatch between the context and the validated song. The human recommended 'd4vd & Laufey - This Is How It Feels' for breakup/unrequited love situations, but Spotify validated 'Winter Wonderland - Spotify Singles Holiday' by Laufey instead. Winter Wonderland is a classic holiday song about enjoying winter scenery and romance, not about heartbreak or unrequited love. The emotional context (still being in love with an ex, unrequited love) does not match the actual song content (festive winter holiday music). This appears to be a validation error where the wrong Laufey track was matched.",
-      "ananki_confidence": 0.3
-    },
     {
       "artist": "Gummibär",
       "song": "I Am Your Gummy Bear (The Gummy Bear Song)",
@@ -29,7 +14,7 @@
       "post_title": "iil singer songwriter music…",
       "comment_text": "I’m a singer-songwriter and I went through this exact situation.  I wrote music through it… you might like these two:\n\nhttps://youtu.be/Ht_NtYU-BgU?si=lhMLyQAZudn5NTZ3\n\nhttps://youtu.be/tdi3ZE4Ur6U?si=6p9EdH3BgnvuhTMn",
       "ananki_subvibe": "AMBIGUOUS",
-      "ananki_reasoning": "There is a clear mismatch between the context and the validated song. The human describes being a singer-songwriter who went through a specific situation and wrote music about it, suggesting emotionally resonant, personal singer-songwriter material. However, the Spotify-validated song is 'I Am Your Gummy Bear (The Gummy Bear Song)' by Gummibär, which is a novelty children's dance song completely inconsistent with the described context. This appears to be either a validation error, a joke response, or the wrong song was matched to the URLs provided. Without being able to verify the actual songs from the YouTube links, and given the complete disconnect between the serious singer-songwriter context and the validated novelty track, I cannot confidently assign a sub-vibe.",
+      "ananki_reasoning": "There is a clear mismatch between the context and the validated song. The human describes being a singer-songwriter who went through a specific situation and wrote music through it, suggesting emotional, introspective singer-songwriter material. However, the Spotify-validated song is 'I Am Your Gummy Bear (The Gummy Bear Song)' by Gummibär - a novelty children's dance song that is completely incongruent with the described context. This appears to be either a validation error, a joke submission, or the wrong song was matched to the comment. Without being able to verify the actual songs from the YouTube links provided, I cannot accurately map the emotional intent.",
       "ananki_confidence": 0.2
     },
     {
@@ -44,7 +29,7 @@
       "post_title": "Music Melting Pot [Week of August 18, 2025]",
       "comment_text": "Check out my project \nhttps://open.spotify.com/track/09hpXJWf2Hqlt9YFEPTJaJ -Feelings by Nak'd\nPlease take a listen🙏🏿",
       "ananki_subvibe": "AMBIGUOUS",
-      "ananki_reasoning": "There is a significant mismatch between the context and the validated song. The human is promoting their own project 'Feelings by Nak'd' with a specific Spotify link, but the validated song is 'Goodbye by Sabrina Carpenter' (different Spotify ID). The comment provides no emotional context about the actual validated song - it's simply a self-promotion post asking people to listen to a completely different track. Without any emotional expression or context about 'Goodbye by Sabrina Carpenter,' there is insufficient information to map this to a specific sub-vibe.",
+      "ananki_reasoning": "There is a significant mismatch between the context and the validated song. The human's comment promotes their own project 'Feelings by Nak'd' with a Spotify link, but the validated song is 'Goodbye by Sabrina Carpenter' - a completely different artist and track. The comment provides no emotional context, description, or feelings about any song - it's simply a self-promotion post asking people to listen. Without any emotional expression or context about the actual validated song (Sabrina Carpenter's 'Goodbye'), there is insufficient information to map this to a specific emotional sub-vibe.",
       "ananki_confidence": 0.2
     },
     {
@@ -59,7 +44,7 @@
       "post_title": "Music Melting Pot [Week of July 14, 2025]",
       "comment_text": "My first release - \"I need\" - Once Young\n\nSoundCloud - [https://on.soundcloud.com/Tp3rQ68oVFNtQzq2jW](https://on.soundcloud.com/Tp3rQ68oVFNtQzq2jW)\n\nMade it in my room one night about nothing really. Hope you give it a listen and enjoy.",
       "ananki_subvibe": "AMBIGUOUS",
-      "ananki_reasoning": "There is a critical mismatch between the user's comment and the validated song. The user claims to be sharing their first release 'I need' by Once Young (linking to SoundCloud), but Spotify validated this as 'Holding Out for a Hero' by Bonnie Tyler - a well-known 1984 power ballad. These are completely different songs by different artists. The user's context ('made it in my room one night about nothing really') suggests an indie/bedroom pop track, while the validated song is an iconic 80s anthem with energetic, heroic themes. Without being able to verify which song is actually being discussed, I cannot accurately map to a sub-vibe. This appears to be either a validation error or a mismatched link.",
+      "ananki_reasoning": "There is a critical mismatch between the human's context and the validated song. The human describes posting their first release 'I need' by Once Young, made casually in their room with no specific theme. However, Spotify validated this as 'Holding Out for a Hero' by Bonnie Tyler - a classic 1980s power anthem about waiting for an idealized romantic hero. These are completely different songs. The human's context ('made it in my room one night about nothing really') suggests a bedroom producer sharing original work, likely indie/lo-fi in nature, while the validated track is an iconic, high-energy 80s rock ballad. Without being able to verify which song is actually being discussed, or hearing the actual track the human intended to share, I cannot reliably map this to an emotional sub-vibe. The context-song mismatch makes this fundamentally ambiguous.",
       "ananki_confidence": 0.2
     }
   ]

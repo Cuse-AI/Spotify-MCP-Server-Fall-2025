@@ -14,7 +14,7 @@
       "comment_score": 0,
       "playlist_id": "PLqY-KxIOXOX08j0PqGgPodMJLKVXbxy2H",
       "ananki_subvibe": "AMBIGUOUS",
-      "ananki_reasoning": "The post title references 'Fatal Fury 2 The New Battle - OST' (a fighting game/anime soundtrack), but the validated Spotify track is 'When You Gonna Drop' by Boosie Badazz, which is a hip-hop/rap track completely unrelated to the Fatal Fury franchise. There is no comment text providing emotional context about why this song was recommended or how it relates to the post title. This appears to be either a mismatched validation, spam, or an error in the recommendation system. Without any genuine emotional context about the actual song's meaning to the user, I cannot accurately assign a sub-vibe.",
+      "ananki_reasoning": "The post title references 'Fatal Fury 2 The New Battle - OST' (a fighting game/anime soundtrack), but the validated Spotify song is 'When You Gonna Drop' by Boosie Badazz, which is a Southern hip-hop/rap track with no apparent connection to the Fatal Fury franchise. There is no comment text providing emotional context. This appears to be either a mismatched validation, spam, or an unclear recommendation. Without any emotional context from the commenter explaining why they're recommending this specific Boosie Badazz track in relation to Fatal Fury, I cannot determine the intended emotional sub-vibe.",
       "ananki_confidence": 0.2
     },
     {
@@ -29,8 +29,8 @@
       "comment_score": 0,
       "playlist_id": "PLqY-KxIOXOX08j0PqGgPodMJLKVXbxy2H",
       "ananki_subvibe": "AMBIGUOUS",
-      "ananki_reasoning": "The post title references 'Fatal Fury 2 The New Battle - OST' (a fighting game/anime soundtrack), but the validated song is 'The Wicketshit Will Never Die' by Esham, which is a horrorcore hip-hop track completely unrelated to Fatal Fury. There is no comment text provided to give emotional context about why this song was recommended. This appears to be either a validation error or the human simply posted a title without explaining the connection. Without any actual emotional context or explanation from the human about how they feel about this song or why they're recommending it, I cannot determine the appropriate sub-vibe.",
-      "ananki_confidence": 0.2
+      "ananki_reasoning": "The post title references 'Fatal Fury 2 The New Battle - OST' (a fighting game/anime soundtrack), but the validated Spotify track is 'The Wicketshit Will Never Die' by Esham, which is a horrorcore hip-hop artist known for dark, aggressive content. There is no comment text providing emotional context, and the disconnect between the post title (which suggests nostalgic video game/anime music) and the actual song (dark underground hip-hop) makes it impossible to determine the human's emotional intent or how they're actually experiencing this music. Without knowing if they're referencing the energy of fighting game music, the darkness of horrorcore, or something else entirely, I cannot confidently assign a sub-vibe.",
+      "ananki_confidence": 0.3
     },
     {
       "artist": "Lloyd",
@@ -44,7 +44,7 @@
       "comment_score": 0,
       "playlist_id": "PLDisKgcnAC4RtmpKf16xB52K5pPGmHTPO",
       "ananki_subvibe": "AMBIGUOUS",
-      "ananki_reasoning": "The context provided only includes the title 'F9 (Fast & Furious 9) [Soundtrack]' with no comment text or emotional expression from the human. While the song 'You' by Lloyd is from the Fast & Furious 9 soundtrack, without any emotional context about why this song was recommended or how it made the person feel, I cannot accurately map it to a specific emotional sub-vibe. The Fast & Furious franchise could suggest various vibes (Energy - Unstoppable, Drive - Speed, etc.), but without explicit human emotional expression, this would be speculation rather than mapping based on provided context.",
+      "ananki_reasoning": "The context provided is only a soundtrack title 'F9 (Fast & Furious 9) [Soundtrack]' with no comment text describing the emotional experience or context of listening to the song. While the song 'You' by Lloyd is an R&B track that could fit various romantic or chill vibes, and Fast & Furious soundtracks typically feature high-energy or party music, there is no actual human emotional expression provided to map to a specific sub-vibe. Without the listener's personal context or emotional reaction, I cannot accurately determine the intended emotional experience.",
       "ananki_confidence": 0.3
     }
   ]

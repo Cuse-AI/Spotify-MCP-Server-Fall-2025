@@ -1,0 +1,81 @@
+{
+  "total": 5,
+  "note": "These need human review or are not music recommendations",
+  "songs": [
+    {
+      "artist": "Lil Wayne",
+      "song": "Mona Lisa (feat. Kendrick Lamar)",
+      "spotify_id": "0dbTQYW3Ad1FTzIA9t90E8",
+      "spotify_uri": "spotify:track:0dbTQYW3Ad1FTzIA9t90E8",
+      "source_url": "https://youtube.com/watch?v=vJheITNRick",
+      "source": "youtube",
+      "post_title": "Beach Music 🌴 Summer Vibes 2025",
+      "comment_text": "Updated weekly! best beach playlist - happy songs - chill beach songs - best chill songs - happy hits - musica praia - best chillout ...",
+      "comment_score": 0,
+      "playlist_id": "PLNjVKDn-Jmf6Kf7GBrg_1JPcLbTfaKLXj",
+      "ananki_subvibe": "AMBIGUOUS",
+      "ananki_reasoning": "There is a clear mismatch between the context and the song. The playlist context describes 'Beach Music 🌴 Summer Vibes 2025' with 'happy songs - chill beach songs - best chillout,' which would typically map to 'Chill - Beach/Summer' or 'Happy - Carefree.' However, the validated song 'Mona Lisa' by Lil Wayne featuring Kendrick Lamar is a dark, narrative-driven hip-hop track about deception and betrayal - completely incongruent with beach/summer vibes. This appears to be either a data error, spam/misleading playlist content, or the song was mistakenly included in the playlist. Without authentic emotional context connecting this specific song to the user's intent, I cannot confidently map it to any sub-vibe.",
+      "ananki_confidence": 0.3
+    },
+    {
+      "artist": "Tyler, The Creator",
+      "song": "Goblin",
+      "spotify_id": "5LJD1sBRPnDkhWs2D5qRk2",
+      "spotify_uri": "spotify:track:5LJD1sBRPnDkhWs2D5qRk2",
+      "source_url": "https://youtube.com/watch?v=8H61_9M6IUs",
+      "source": "youtube",
+      "post_title": "Chill Latino Spotify - Calm Latin Music Spotify Playlist (Spanish Relaxing Songs Spotify 2025-2026)",
+      "comment_text": "Chill Latino Spotify - Calm Latin Music Spotify Playlist (Spanish Relaxing Songs Spotify 2025-2026) Get the chill vibes going and ...",
+      "comment_score": 0,
+      "playlist_id": "PLTyQ14GBs9sbMf1DjwwDHNSwcQx5Nfu_P",
+      "ananki_subvibe": "AMBIGUOUS",
+      "ananki_reasoning": "There is a critical mismatch between the context and the validated song. The playlist title and description explicitly reference 'Chill Latino,' 'Calm Latin Music,' and 'Spanish Relaxing Songs,' suggesting Spanish-language relaxing music. However, the validated song is 'Goblin' by Tyler, The Creator - a dark, aggressive hip-hop track known for its disturbing and intense content, featuring themes of violence and mental turmoil. This is neither Latin music, nor chill, nor relaxing. This appears to be either a data validation error, spam/irrelevant content, or the song was incorrectly matched to the context. Without reliable context about the actual emotional intent for this specific song, I cannot confidently assign a sub-vibe.",
+      "ananki_confidence": 0.2
+    },
+    {
+      "artist": "Eric B. & Rakim",
+      "song": "Lyrics Of Fury",
+      "spotify_id": "6jt8xuXd424y78MrNMNpvS",
+      "spotify_uri": "spotify:track:6jt8xuXd424y78MrNMNpvS",
+      "source_url": "https://youtube.com/watch?v=0ElD2qJ5ZoU",
+      "source": "youtube",
+      "post_title": "Chill Latino Spotify - Calm Latin Music Spotify Playlist (Spanish Relaxing Songs Spotify 2025-2026)",
+      "comment_text": "Chill Latino Spotify - Calm Latin Music Spotify Playlist (Spanish Relaxing Songs Spotify 2025-2026) Get the chill vibes going and ...",
+      "comment_score": 0,
+      "playlist_id": "PLTyQ14GBs9sbMf1DjwwDHNSwcQx5Nfu_P",
+      "ananki_subvibe": "AMBIGUOUS",
+      "ananki_reasoning": "There is a clear mismatch between the context and the validated song. The post title and comment describe a 'Chill Latino' playlist with 'Calm Latin Music' and 'Spanish Relaxing Songs,' but the validated song is 'Lyrics Of Fury' by Eric B. & Rakim, which is a classic aggressive East Coast hip-hop track from 1988 known for its intense delivery and complex wordplay. This is neither Latino/Latin music, nor Spanish language, nor relaxing/chill in nature. This appears to be either a playlist error, spam/misleading content, or a data validation issue. Without genuine emotional context connecting this specific song to a listener's intent, I cannot accurately map it to a sub-vibe.",
+      "ananki_confidence": 0.2
+    },
+    {
+      "artist": "Gecko's Garage",
+      "song": "Gecko's Fix it Song",
+      "spotify_id": "3SM8J132fD6CabAA1FUFnG",
+      "spotify_uri": "spotify:track:3SM8J132fD6CabAA1FUFnG",
+      "source_url": "https://youtube.com/watch?v=btUBCi-hpM0",
+      "source": "youtube",
+      "post_title": "Deep House Chill Vibes 2025 | Deep House Playlist",
+      "comment_text": "Best Deep House Music Hits 2025 | Deep House Playlist & uploads on ChillYourMind.",
+      "comment_score": 0,
+      "playlist_id": "PLqP7At6_Cf_b09h7evs9Rx3eA9K4T4DSS",
+      "ananki_subvibe": "AMBIGUOUS",
+      "ananki_reasoning": "There is a clear mismatch between the context and the validated song. The post title and comment describe 'Deep House Chill Vibes 2025' and 'Deep House Music Hits,' which would typically map to chill or party sub-vibes. However, the Spotify-validated song is 'Gecko's Fix it Song' by Gecko's Garage, which appears to be children's educational content (likely from a kids' show about fixing things), not deep house music at all. This suggests either a validation error, spam/promotional content, or the wrong song was matched. Without being able to verify the actual emotional intent of the song mentioned versus what was validated, I cannot confidently assign a sub-vibe.",
+      "ananki_confidence": 0.2
+    },
+    {
+      "artist": "VideoGameRapBattles",
+      "song": "Charizard Vs. Blastoise",
+      "spotify_id": "5zivQbv8OQB01wdawhVRmd",
+      "spotify_uri": "spotify:track:5zivQbv8OQB01wdawhVRmd",
+      "source_url": "https://youtube.com/watch?v=YaYldw4Be6c",
+      "source": "youtube",
+      "post_title": "$uicideboy$ chill vibes",
+      "comment_text": "I've listened to most of their stuff, I love it when I find one that I've not heard",
+      "comment_score": 479,
+      "playlist_id": "PL0IYNTdrSN93QXM4oKcAXPYs6byExxDPm",
+      "ananki_subvibe": "AMBIGUOUS",
+      "ananki_reasoning": "There is a clear mismatch between the context and the validated song. The human is discussing $uicideboy$ (a hip-hop duo known for dark, underground rap) and mentions finding 'chill vibes' from their catalog. However, the Spotify-validated song is 'Charizard Vs. Blastoise' by VideoGameRapBattles, which is a completely different artist and appears to be a novelty rap battle about Pokémon characters. This suggests either a validation error or the human was discussing a different song than what was captured. Without being able to verify the actual song being recommended matches the emotional context provided, I cannot reliably map this to a sub-vibe.",
+      "ananki_confidence": 0.2
+    }
+  ]
+}

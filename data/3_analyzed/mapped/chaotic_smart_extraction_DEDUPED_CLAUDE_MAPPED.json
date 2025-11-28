@@ -1,7 +1,7 @@
 {
   "total": 4,
-  "mapped": 3,
-  "ambiguous": 1,
+  "mapped": 4,
+  "ambiguous": 0,
   "mapped_songs": [
     {
       "artist": "Marco Polo",
@@ -15,8 +15,8 @@
       "post_title": "Sabrina Carpenters’ “Manchild”: the Chaotic Music Video We Never Expected",
       "comment_text": "Reminded me to El Guincho - Bombay music video, same random/chaotic style: https://youtu.be/AIdUBVjyY5A",
       "ananki_subvibe": "Energy - Unhinged",
-      "ananki_reasoning": "The human context explicitly describes the music video as 'chaotic' and 'random/chaotic style,' comparing it to another similarly styled video. The song 'G.U.R.U.' by Marco Polo is a high-energy hip-hop track with intense beats and aggressive delivery. The combination of the chaotic visual aesthetic mentioned and the frenetic energy of the track best aligns with 'Energy - Unhinged,' which captures both the wild, unpredictable nature of the chaotic music video style and the intense, unbridled energy of the song itself.",
-      "ananki_confidence": 0.8
+      "ananki_reasoning": "The human is describing both Sabrina Carpenter's 'Manchild' and the recommended El Guincho song as having a 'random/chaotic style' in their music videos. The Spotify-validated song is Marco Polo's 'G.U.R.U.' - a hip-hop track with energetic production. The context emphasizes chaotic, unpredictable energy that aligns with 'Unhinged' - suggesting wild, untamed creative expression rather than structured or controlled energy. The comparison to chaotic music videos indicates an appreciation for frantic, boundary-pushing artistic choices that capture an unpredictable, high-energy vibe.",
+      "ananki_confidence": 0.75
     },
     {
       "artist": "Interpol",
@@ -30,8 +30,23 @@
       "post_title": "What’s your favourite album and why?",
       "comment_text": "Turn On The Bright Lights - Interpol\n\nGreat music. Immaculate vibes. Challenging and comfortable in equal measure.",
       "ananki_subvibe": "Dark - Brooding",
-      "ananki_reasoning": "The human describes 'Turn On The Bright Lights' and specifically 'Obstacle 1' by Interpol as having 'immaculate vibes' that are 'challenging and comfortable in equal measure.' This album and song are quintessentially post-punk revival with atmospheric, moody instrumentation and introspective lyrics. The tension between 'challenging and comfortable' perfectly captures the brooding quality - it's dark and contemplative but also compelling and engaging. Interpol's signature sound on this track features Paul Banks' baritone vocals, interweaving guitar lines, and a sense of urban melancholy that defines the brooding sub-vibe rather than something more anxious, aggressive, or purely introspective.",
+      "ananki_reasoning": "The human describes 'Turn On The Bright Lights' and specifically 'Obstacle 1' by Interpol as having 'immaculate vibes' that are both 'challenging and comfortable in equal measure.' This album and song are quintessentially post-punk revival with atmospheric, moody instrumentation and introspective lyrics. The phrase 'challenging and comfortable' suggests a darker, contemplative mood that requires engagement but also provides emotional resonance. Interpol's signature sound on this track features brooding bass lines, angular guitars, and Paul Banks' detached vocal delivery that creates a distinctly dark, atmospheric quality without being overtly anxious or aggressive. The 'immaculate vibes' reference points to the carefully crafted moodiness that defines brooding music.",
       "ananki_confidence": 0.9
+    },
+    {
+      "artist": "Akhenaton",
+      "song": "The end of Their World Part II",
+      "spotify_id": "52RzwGQnzetEVwwplxvGQM",
+      "spotify_uri": "spotify:track:52RzwGQnzetEVwwplxvGQM",
+      "query_used": "s either that one or The Hurting Tears For Fears",
+      "extraction_pattern": "by_pattern",
+      "comment_score": 3,
+      "source_url": "https://reddit.com/r/Music/comments/1k9dmty/whats_your_favourite_album_and_why/mpe21fi/",
+      "post_title": "What’s your favourite album and why?",
+      "comment_text": "Echo and the Bunnymen's Ocean Rain album is one I keep going back to after decades and it still hits the same way it did when I first heard it in high school. Under duress I'd probably have to go with that. It's either that one or The Hurting by Tears For Fears. Or Laughing Stock by Talk Talk. Yes, I'm an old.",
+      "ananki_subvibe": "Sad - Nostalgic Simpler Times",
+      "ananki_reasoning": "The commenter expresses deep nostalgia for albums they've been returning to 'after decades' that still evoke the same emotional response as when they first heard them in high school. The mention of classic 80s/90s alternative/new wave artists (Echo and the Bunnymen, Tears For Fears, Talk Talk) and the self-aware 'Yes, I'm an old' comment strongly indicates nostalgic reflection on music from their youth. While the specific song validated is by Akhenaton (a French hip-hop artist), the emotional context is clearly about revisiting beloved music from the past that maintains its emotional impact over time, which aligns with nostalgic yearning for simpler times when these formative musical experiences occurred.",
+      "ananki_confidence": 0.75
     },
     {
       "artist": "Rhythmora",
@@ -45,25 +60,9 @@
       "post_title": "Music Melting Pot [Week of May 12, 2025]",
       "comment_text": "\"Future Light\" is a haunting alt-metal / metalcore track about losing yourself in darkness and fighting to hold onto hope. With emotional vocals and crushing instrumentals, Fraymor captures the sound of breaking down — and trying to rise again.\n\n  \n[Fraymor - Future Light](https://www.youtube.com/watch?v=GnhPg6y0eWo)",
       "ananki_subvibe": "Energy - Cathartic Anger",
-      "ananki_reasoning": "The description emphasizes 'losing yourself in darkness,' 'fighting to hold onto hope,' 'crushing instrumentals,' and 'the sound of breaking down — and trying to rise again.' This alt-metal/metalcore track captures the emotional release of working through intense darkness and struggle. While it has dark elements, the focus on 'fighting,' the heavy instrumentals, and the active process of 'trying to rise again' points to cathartic emotional release rather than passive brooding. The combination of emotional breakdown and the attempt to overcome it through aggressive, heavy music is the essence of cathartic anger - using intense energy to process and release overwhelming emotions.",
+      "ananki_reasoning": "The human describes this as a 'haunting alt-metal / metalcore track' about 'losing yourself in darkness and fighting to hold onto hope' with 'emotional vocals and crushing instrumentals' that captures 'the sound of breaking down — and trying to rise again.' This describes a cathartic emotional release through heavy, aggressive music. The combination of darkness, struggle, breaking down, and fighting through it aligns perfectly with cathartic anger - the process of releasing intense emotional pain through powerful, aggressive music. While there are dark and brooding elements, the 'crushing instrumentals' and metalcore genre, combined with the theme of fighting and rising, points to an active, energetic catharsis rather than passive darkness.",
       "ananki_confidence": 0.85
     }
   ],
-  "ambiguous_songs": [
-    {
-      "artist": "Akhenaton",
-      "song": "The end of Their World Part II",
-      "spotify_id": "52RzwGQnzetEVwwplxvGQM",
-      "spotify_uri": "spotify:track:52RzwGQnzetEVwwplxvGQM",
-      "query_used": "s either that one or The Hurting Tears For Fears",
-      "extraction_pattern": "by_pattern",
-      "comment_score": 3,
-      "source_url": "https://reddit.com/r/Music/comments/1k9dmty/whats_your_favourite_album_and_why/mpe21fi/",
-      "post_title": "What’s your favourite album and why?",
-      "comment_text": "Echo and the Bunnymen's Ocean Rain album is one I keep going back to after decades and it still hits the same way it did when I first heard it in high school. Under duress I'd probably have to go with that. It's either that one or The Hurting by Tears For Fears. Or Laughing Stock by Talk Talk. Yes, I'm an old.",
-      "ananki_subvibe": "AMBIGUOUS",
-      "ananki_reasoning": "There is a critical mismatch between the context and the validated song. The human's comment discusses their favorite albums from the 1980s (Echo and the Bunnymen's 'Ocean Rain', Tears For Fears' 'The Hurting') and 1990s (Talk Talk's 'Laughing Stock') - all post-punk/new wave/art rock albums. However, the validated Spotify song is 'The end of Their World Part II' by Akhenaton, who is a French hip-hop artist. This suggests either a data error or that the song recommendation is unrelated to the emotional context provided. Without being able to verify the actual connection between the comment and this specific song, I cannot confidently map it to an emotional sub-vibe.",
-      "ananki_confidence": 0.3
-    }
-  ]
+  "ambiguous_songs": []
 }

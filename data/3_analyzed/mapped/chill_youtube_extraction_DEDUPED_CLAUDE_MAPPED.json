@@ -1,5 +1,7 @@
 {
-  "processed_count": 250,
+  "total": 262,
+  "mapped": 257,
+  "ambiguous": 5,
   "mapped_songs": [
     {
       "artist": "James Taylor",
@@ -2578,7 +2580,7 @@
       "comment_score": 97,
       "playlist_id": "PL0IYNTdrSN93QXM4oKcAXPYs6byExxDPm",
       "ananki_subvibe": "Chill - Lofi",
-      "ananki_reasoning": "The post title explicitly mentions '$uicideboy$ chill vibes,' establishing this as a chill/laid-back track. The comment expresses admiration for the artists but doesn't provide additional emotional context beyond the established 'chill vibes' framing. $uicideboy$ is known for dark, atmospheric production, and when their music is characterized as 'chill,' it typically falls into the lofi/atmospheric chill category rather than upbeat or serene chill varieties. The lofi sub-vibe best captures the darker, mellowed-out aesthetic that $uicideboy$ brings to their more relaxed tracks.",
+      "ananki_reasoning": "The post title explicitly states '$uicideboy$ chill vibes,' indicating the user is categorizing this song within a relaxed, laid-back listening context. While $uicideboy$ is known for dark, bass-heavy production, this particular recommendation emphasizes the 'chill' aspect. The comment about wanting to meet the artists shows appreciation but doesn't override the primary emotional framing of 'chill vibes.' Among the chill options, 'Lofi' best captures the hip-hop/rap oriented relaxed vibe that $uicideboy$ fans often describe when referring to their more subdued tracks, as opposed to more ambient or purely instrumental chill categories.",
       "ananki_confidence": 0.75
     },
     {
@@ -2593,7 +2595,7 @@
       "comment_score": 246,
       "playlist_id": "PL0IYNTdrSN93QXM4oKcAXPYs6byExxDPm",
       "ananki_subvibe": "Chill - Lofi",
-      "ananki_reasoning": "The post title explicitly mentions '$uicideboy$ chill vibes' and the comment emphasizes discovery and appreciation of the artist's extensive catalog. While $uicideboy$ is known for darker hip-hop, the context specifically frames this as a 'chill' listening experience. The song 'Rag Round My Skull' fits within their more laid-back, atmospheric production style. 'Chill - Lofi' best captures the relaxed, low-key vibe the listener is seeking while discovering tracks from this hip-hop duo, as opposed to their more aggressive material.",
+      "ananki_reasoning": "The post title explicitly requests '$uicideboy$ chill vibes' and the comment expresses enjoyment of the artist's extensive catalog in a discovery context. While $uicideboy$ is known for dark/aggressive content, the human is specifically framing this as a 'chill' experience. 'Rag Round My Skull' fits into the duo's more laid-back, atmospheric production style with slower tempos and introspective delivery. The 'Chill - Lofi' sub-vibe best captures the relaxed, background-listening quality the human is describing - continuously discovering songs that maintain a consistent mood without disappointment, which aligns with the repeatable, easygoing nature of lofi chill music.",
       "ananki_confidence": 0.75
     },
     {
@@ -2608,7 +2610,7 @@
       "comment_score": 383,
       "playlist_id": "PL0IYNTdrSN93QXM4oKcAXPYs6byExxDPm",
       "ananki_subvibe": "Sad - Nostalgic Sad",
-      "ananki_reasoning": "The human explicitly describes experiencing 'a weird nostalgia feeling' that's difficult to articulate. This vague, ineffable nostalgic quality combined with the context of seeking '$uicideboy$ chill vibes' (an artist known for melancholic, atmospheric hip-hop) suggests a bittersweet, wistful emotional state rather than purely happy nostalgia. The 'weird' qualifier and inability to fully describe it points to the complex, melancholic type of nostalgia rather than simpler/happier nostalgic categories like 'Childhood' or 'Simpler Times.' The track being validated as a French rap song with multiple artists (DA Uzi feat. Soso Maness et ZKR) fits with the atmospheric, mood-driven chill hip-hop aesthetic that evokes this sad-tinged nostalgia.",
+      "ananki_reasoning": "The human describes experiencing 'a weird nostalgia feeling i cant quite describe' when listening to this track. This directly points to a nostalgic emotional response. The context comes from a post titled '$uicideboy$ chill vibes,' suggesting a melancholic, introspective tone rather than happy nostalgia. The combination of the chill vibe context with the 'weird' and hard-to-describe nostalgic feeling indicates a bittersweet, sad nostalgic emotion rather than reminiscing about specific eras (90s, 2000s, childhood, teen years) or simpler times. The 'Sad - Nostalgic Sad' sub-vibe best captures this ineffable, melancholic nostalgia that the listener is experiencing.",
       "ananki_confidence": 0.85
     },
     {
@@ -2622,9 +2624,9 @@
       "comment_text": "wasn't really into this song the day it dropped but now it's my favorite..",
       "comment_score": 834,
       "playlist_id": "PL0IYNTdrSN93QXM4oKcAXPYs6byExxDPm",
-      "ananki_subvibe": "Chill - Lofi",
-      "ananki_reasoning": "The post title explicitly mentions '$uicideboy$ chill vibes' and the comment describes a song that grew on them over time, suggesting a relaxed, repeatable listening experience. $uicideboy$ often incorporates lo-fi hip-hop elements with chill, atmospheric production in their slower tracks. 'Jon Voight (Live Fast, Die Young)' has that laid-back, hazy quality characteristic of lo-fi aesthetics. The user's context emphasizes the 'chill' aspect as the primary emotional experience, and among chill sub-categories, lo-fi best captures the modern hip-hop chill vibe that $uicideboy$ represents, rather than jazz, ambient, or coffee-related moods.",
-      "ananki_confidence": 0.85
+      "ananki_subvibe": "Chill - Evening",
+      "ananki_reasoning": "The context explicitly mentions '$uicideboy$ chill vibes' in the post title, indicating the user is categorizing this as a chill song. The comment reveals a grower effect - the song wasn't initially appealing but became a favorite over time, suggesting a laid-back, contemplative appreciation that developed. $uicideboy$ typically creates dark hip-hop, but when described as 'chill vibes' by fans, it usually refers to their more atmospheric, relaxed tracks. The song title 'Jon Voight (Live Fast, Die Young)' combined with the chill descriptor suggests a mellowed-out, introspective mood rather than aggressive energy. 'Chill - Evening' best captures this subdued, repeated-listening atmosphere that grows on you over time.",
+      "ananki_confidence": 0.8
     },
     {
       "artist": "$uicideboy$",
@@ -2638,8 +2640,8 @@
       "comment_score": 188,
       "playlist_id": "PL0IYNTdrSN93QXM4oKcAXPYs6byExxDPm",
       "ananki_subvibe": "Chill - Rainy Day",
-      "ananki_reasoning": "The human's comment explicitly describes the emotional memory tied to this song as 'walking home from school on those cloudy houston days where Yk it's bout to rain but it hasn't started yet.' This is a textbook description of rainy day vibes - the anticipation of rain, cloudy weather, and the contemplative mood of walking alone. The atmospheric quality of pre-rain weather combined with the reflective act of walking home creates exactly the emotional space that 'Chill - Rainy Day' is designed to capture. While it could potentially fit 'Chill - Evening' or other chill categories, the specific mention of cloudy, about-to-rain weather makes 'Rainy Day' the most precise match.",
-      "ananki_confidence": 0.95
+      "ananki_reasoning": "The human explicitly describes the song reminding them of 'cloudy houston days where Yk it's bout to rain but it hasn't started yet' while walking home from school. This is a direct and vivid description of pre-rain weather creating a specific atmospheric mood. The context of walking home from school, overcast skies, and anticipation of rain perfectly aligns with the 'Rainy Day' sub-vibe under the Chill category. The nostalgic quality of the memory and the contemplative nature of walking in that specific weather condition reinforces the chill, rainy day atmosphere.",
+      "ananki_confidence": 1.0
     },
     {
       "artist": "$uicideboy$",
@@ -2652,8 +2654,8 @@
       "comment_text": "I feel like this track would've been great either way with or without the auto tune but I feel like it added sauce to it, made it perfect",
       "comment_score": 841,
       "playlist_id": "PL0IYNTdrSN93QXM4oKcAXPYs6byExxDPm",
-      "ananki_subvibe": "Dark - Brooding",
-      "ananki_reasoning": "The comment describes '$uicideboy$ chill vibes' with 'Antarctica' - a track known for its dark, atmospheric, and melancholic hip-hop sound. The mention of autotune 'adding sauce' and making it 'perfect' suggests appreciation for the moody, layered production style characteristic of $uicideboy$'s work. While the title mentions 'chill vibes,' $uicideboy$'s catalog typically combines laid-back tempos with dark, introspective, and brooding themes rather than traditional peaceful/serene chill music. 'Antarctica' specifically features haunting production with melancholic undertones that fits the 'Dark - Brooding' category better than standard chill sub-vibes, as it maintains that darker emotional weight while being relatively downtempo.",
+      "ananki_subvibe": "Chill - Lofi",
+      "ananki_reasoning": "The comment discusses '$uicideboy$ chill vibes' and mentions autotune adding 'sauce' to make the track 'perfect.' The song 'Antarctica' by $uicideboy$ is known for its laid-back, atmospheric production with heavily autotuned vocals creating a dreamy, melancholic soundscape. The use of autotune as a stylistic choice that enhances the chill aesthetic aligns perfectly with the lofi vibe, which often incorporates electronic vocal effects and relaxed, atmospheric production. The human explicitly frames this as 'chill vibes,' distinguishing it from the duo's more aggressive tracks.",
       "ananki_confidence": 0.85
     },
     {
@@ -2668,7 +2670,7 @@
       "comment_score": 22,
       "playlist_id": "PL0IYNTdrSN93QXM4oKcAXPYs6byExxDPm",
       "ananki_subvibe": "Happy - Healing",
-      "ananki_reasoning": "The commenter explicitly states they are '6 weeks sober' and that gabapentin helped them 'through hella withdrawals.' The celebratory tone (🤘 emoji, 'glad'), combined with the song title 'Gabapentin Getaway' being recommended in a '$uicideboy$ chill vibes' context, indicates this song represents a healing journey and recovery process. While $uicideboy$ is known for dark content, this specific emotional context is about overcoming addiction and the positive feeling of sobriety, making 'Happy - Healing' the most appropriate sub-vibe.",
+      "ananki_reasoning": "The commenter explicitly mentions being '6 weeks sober' and that gabapentin helped them through withdrawals. The context is clearly about recovery and healing from substance abuse. While the song title references a medication used during withdrawal, the emotional tone expressed is one of celebration and gratitude for being in recovery. The 🤘 emoji and 'glad' indicate a positive emotional state about their healing journey. This fits 'Happy - Healing' as it captures the recovery/healing aspect with a positive, grateful undertone rather than being purely melancholic or dark.",
       "ananki_confidence": 0.85
     },
     {
@@ -2683,7 +2685,7 @@
       "comment_score": 128,
       "playlist_id": "PL0IYNTdrSN93QXM4oKcAXPYs6byExxDPm",
       "ananki_subvibe": "Night - 3AM Thoughts",
-      "ananki_reasoning": "The human highlights lyrics that reflect on wealth, sadness, and isolation ('ends up with me rich, sad, and alone'), which they describe as giving them 'chills.' This introspective, existential reflection paired with the 'chill vibes' context suggests late-night contemplation about life outcomes and emptiness despite success. The combination of chill atmosphere with heavy existential content points to 3AM Thoughts - that specific headspace of lying awake processing darker truths about life and one's trajectory. While Dark - Brooding or Sad - Depressive could fit the lyrical content, the emphasis on 'chill vibes' in the post title combined with the reflective rather than urgent nature of the lyrics makes this more suited to contemplative night listening.",
+      "ananki_reasoning": "The human highlights lyrics about ending up 'rich, sad, and alone' from Ruby's verse, describing it as giving them chills. This reflects deep introspective rumination on life outcomes, isolation, and the darker side of success. The combination of 'chill vibes' in the title with existentially heavy lyrics about loneliness and disillusionment perfectly captures that 3AM thoughts feeling - lying awake with uncomfortable truths about life, processing heavy realizations in a contemplative state. While this could also fit Dark - Brooding or Night - Introspective Self-Reflection, the specific emphasis on the chilling nature of these fatalistic lyrics combined with the 'chill vibes' framing suggests that late-night existential processing characteristic of 3AM thoughts.",
       "ananki_confidence": 0.85
     },
     {
@@ -2698,8 +2700,8 @@
       "comment_score": 0,
       "playlist_id": "PL0IYNTdrSN93QXM4oKcAXPYs6byExxDPm",
       "ananki_subvibe": "Chill - Lofi",
-      "ananki_reasoning": "The post title explicitly states '$uicideboy$ chill vibes', directly indicating the user is categorizing this song under a chill/relaxed listening experience. $uicideboy$ is known for their darker hip-hop production, and 'Prettyleaf' represents their more atmospheric, laid-back side. The lofi sub-vibe best captures the combination of hip-hop beats with a mellow, chill aesthetic that $uicideboy$'s atmospheric tracks often embody - this sits between traditional chill music and the more underground, sample-heavy production style associated with lofi hip-hop.",
-      "ananki_confidence": 0.85
+      "ananki_reasoning": "The post title explicitly states '$uicideboy$ chill vibes' which directly indicates the user is categorizing this as a chill/relaxed track. $uicideboy$ is known for their darker hip-hop sound, but 'Prettyleaf' appears to be one of their more laid-back tracks. The lofi sub-vibe best captures the intersection of hip-hop aesthetics with a chill, relaxed atmosphere that the user is highlighting. This combines the mellow, understated production style common in lofi music with the artist's characteristic sound.",
+      "ananki_confidence": 0.8
     },
     {
       "artist": "$uicideboy$",
@@ -2712,8 +2714,8 @@
       "comment_text": "Sometimes I really wish I could discover $uicideboy$ again",
       "comment_score": 16153,
       "playlist_id": "PL0IYNTdrSN93QXM4oKcAXPYs6byExxDPm",
-      "ananki_subvibe": "Sad - Nostalgic Sad",
-      "ananki_reasoning": "The comment 'Sometimes I really wish I could discover $uicideboy$ again' expresses a deep longing to recapture the feeling of first experiencing this artist, which is inherently nostalgic. The wistfulness of wanting to relive that initial discovery combines melancholy with nostalgia. Combined with the post title '$uicideboy$ chill vibes' and the song 'Clouds as Witnesses,' this points to a reflective, bittersweet emotional state where the listener wishes they could return to that formative musical experience. This is classic nostalgic sadness - mourning the loss of novelty and that 'first time' feeling.",
+      "ananki_subvibe": "Sad - Nostalgic Simpler Times",
+      "ananki_reasoning": "The comment 'Sometimes I really wish I could discover $uicideboy$ again' expresses a longing to recapture the feeling of experiencing something for the first time - a deeply nostalgic sentiment about wanting to return to that initial emotional impact. Combined with the post title mentioning 'chill vibes' and the song 'Clouds as Witnesses' (which is one of $uicideboy$'s more atmospheric, laid-back tracks), this reflects a wistful yearning for simpler times when the discovery was fresh and new. The emotion isn't just about missing the past, but specifically about wanting to relive that particular moment of discovery.",
       "ananki_confidence": 0.85
     },
     {
@@ -2728,7 +2730,7 @@
       "comment_score": 86,
       "playlist_id": "PL0IYNTdrSN93QXM4oKcAXPYs6byExxDPm",
       "ananki_subvibe": "Dark - Anxious Existential Dread",
-      "ananki_reasoning": "The comment 'Wish I wasn't born into a reality of pain and torment' directly expresses deep existential suffering and questioning one's very existence. This is a quintessential expression of existential dread - questioning the nature of reality and one's place in a painful world. Combined with $uicideboy$'s characteristically dark aesthetic and the song 'Behold a Pale Horse' (a Biblical reference to death/apocalypse), this fits the existential dread sub-vibe perfectly. While it could tangentially fit 'Depressive,' the specific language about reality and existence itself makes this distinctly existential rather than purely depressive.",
+      "ananki_reasoning": "The comment 'Wish I wasn't born into a reality of pain and torment' expresses deep existential suffering and regret about existence itself. This goes beyond simple sadness or depression into questioning the fundamental nature of being alive and experiencing reality as inherently painful. While $uicideboy$ is known for their dark, aggressive style, the context here specifically points to existential dread rather than anger or cathartic energy. The phrase 'reality of pain and torment' suggests an ongoing, inescapable anxiety about existence that perfectly aligns with existential dread.",
       "ananki_confidence": 0.95
     },
     {
@@ -2743,7 +2745,7 @@
       "comment_score": 0,
       "playlist_id": "PL0IYNTdrSN93QXM4oKcAXPYs6byExxDPm",
       "ananki_subvibe": "Chill - Lofi",
-      "ananki_reasoning": "The post title explicitly mentions '$uicideboy$ chill vibes' and the song '1000 Blunts' fits the artist's more laid-back, atmospheric production style. $uicideboy$ is known for their dark hip-hop sound, but their 'chill' tracks often feature lofi-influenced production with hazy, relaxed beats perfect for smoking/relaxing sessions. The combination of the explicit 'chill vibes' context and the song title's reference to blunts suggests a mellow, lofi hip-hop atmosphere rather than their harder, more aggressive tracks.",
+      "ananki_reasoning": "The post title explicitly states '$uicideboy$ chill vibes' which clearly indicates the user is recommending this song for its chill qualities. $uicideboy$ is known for their dark hip-hop sound, and '1000 Blunts' specifically has a laid-back, atmospheric quality typical of their more relaxed tracks. The lofi sub-vibe fits best as it captures the relaxed, often hazy and ambient hip-hop aesthetic that characterizes this type of chill rap music. While the group is associated with darker themes, the explicit 'chill vibes' context suggests the user is highlighting the song's more mellowed-out, background-listening quality rather than its emotional darkness.",
       "ananki_confidence": 0.85
     },
     {
@@ -2758,7 +2760,7 @@
       "comment_score": 2445,
       "playlist_id": "PL0IYNTdrSN93QXM4oKcAXPYs6byExxDPm",
       "ananki_subvibe": "Sad - Depressive",
-      "ananki_reasoning": "The human explicitly states that listening to $uicideboy$ when depressed creates 'a really special and unique feeling.' The context directly mentions depression as the emotional state, and the post title emphasizes 'chill vibes' - suggesting this is music that resonates with and validates depressive feelings rather than trying to lift them. $uicideboy$ is known for dark, melancholic hip-hop that speaks to mental health struggles. The combination of being depressed + finding it special/unique suggests this song provides comfort or catharsis within that depressive state, making 'Sad - Depressive' the most accurate sub-vibe.",
+      "ananki_reasoning": "The human explicitly states they listen to $uicideboy$ when depressed, describing it as 'a really special and unique feeling.' The context directly mentions depression as the emotional state, and the title references 'chill vibes' which suggests a mellower, introspective listening experience rather than aggressive energy. While $uicideboy$ can span multiple emotional territories, this specific recommendation is framed around depression and finding solace/connection in that dark emotional space. 'Sad - Depressive' most accurately captures the stated emotional context of listening while experiencing depression.",
       "ananki_confidence": 0.95
     },
     {
@@ -2772,8 +2774,8 @@
       "comment_text": "I feel like this on acid would either be a weird vivid hell experience or the most terrifying bad trip",
       "comment_score": 6,
       "playlist_id": "PL0IYNTdrSN93QXM4oKcAXPYs6byExxDPm",
-      "ananki_subvibe": "Dark - Anxious Existential Dread",
-      "ananki_reasoning": "The comment describes the song as potentially creating 'a weird vivid hell experience or the most terrifying bad trip' on acid, which strongly suggests the track has dark, unsettling, and anxiety-inducing qualities. The mention of it being in a '$uicideboy$ chill vibes' context indicates it's from the darker end of chill/atmospheric music. The specific references to 'hell experience' and 'terrifying' point to existential dread rather than just general anxiety or panic - it's about an overwhelming, reality-questioning experience. The song title 'Xenophobe' also reinforces the darker, uncomfortable emotional territory.",
+      "ananki_subvibe": "Dark - Anxious Overwhelmed",
+      "ananki_reasoning": "The commenter's description of the song potentially creating 'a weird vivid hell experience or the most terrifying bad trip' on acid strongly suggests an intense, unsettling, and psychologically overwhelming quality. The fact that they're discussing this in a '$uicideboy$ chill vibes' thread indicates this is a dark, atmospheric track that pushes beyond simple relaxation into territory that could be anxiety-inducing or mentally overwhelming. The specific mention of it being potentially 'terrifying' and 'hell-like' points to themes of being overwhelmed by dark, anxious feelings rather than other dark emotions like brooding, haunting, or existential dread. This suggests a track with intense, disorienting elements that could create an overwhelming sensory/emotional experience.",
       "ananki_confidence": 0.85
     },
     {
@@ -2788,7 +2790,7 @@
       "comment_score": 498,
       "playlist_id": "PL0IYNTdrSN93QXM4oKcAXPYs6byExxDPm",
       "ananki_subvibe": "Dark - Anxious Calming Anxiety",
-      "ananki_reasoning": "The commenter explicitly describes being in a suicidal crisis ('very close to ending it all') and finding relief through this song ('makes everything feel better'). They describe life as difficult but the music as making it 'bearable' - this is the essence of using dark music to calm severe anxiety and emotional distress. The context shows someone using $uicideboy$'s music therapeutically to manage intense psychological pain, which aligns perfectly with the 'Anxious Calming Anxiety' sub-vibe. The commenter is experiencing dark emotions but finding the music soothing rather than agitating, and they credit the artists with suicide prevention rather than promotion.",
+      "ananki_reasoning": "The commenter explicitly describes being in a severe mental health crisis ('very close to ending it all') and how this $uicideboy$ song provides therapeutic relief ('makes everything feel better'). The song serves as an emotional anchor that helps manage their distress and makes life 'bearable.' This perfectly fits the 'Calming Anxiety' sub-vibe - music that addresses dark, anxious feelings while providing a soothing, stabilizing effect. The commenter's gratitude toward the artists and statement that 'they don't promote suicide, they prevent it' reinforces that this music functions as anxiety management and crisis intervention through its understanding and calming effect on their mental state.",
       "ananki_confidence": 0.95
     },
     {
@@ -2803,7 +2805,7 @@
       "comment_score": 44,
       "playlist_id": "PL0IYNTdrSN93QXM4oKcAXPYs6byExxDPm",
       "ananki_subvibe": "Dark - Brooding",
-      "ananki_reasoning": "The commenter describes feeling the 'soul in the music' and appreciates the 'hardcore reality' that is 'completely unchained from corporate bullshit.' The song title 'Rotten and Paralyzed in a Tropical Paradise' combined with $uicideboy$'s signature dark, introspective style and the user's emphasis on raw, unfiltered authenticity points to a brooding emotional space. This isn't aggressive energy or pure sadness, but rather a dark, contemplative atmosphere where the listener connects with unvarnished reality and emotional depth. The 'chill vibes' context combined with the dark subject matter of the artists suggests a moody, brooding quality rather than high-energy darkness.",
+      "ananki_reasoning": "The commenter describes feeling the 'soul in the music' and appreciates it as 'hardcore reality' that's 'completely unchained from corporate bullshit.' The song title 'Rotten and Paralyzed in a Tropical Paradise' itself suggests a dark, introspective atmosphere. The user is drawn to the authentic, raw emotional expression rather than upbeat or cathartic energy. While $uicideboy$ can be aggressive, the context emphasizes 'chill vibes' and emotional depth, pointing to a dark, contemplative mood rather than pure aggression. 'Dark - Brooding' captures this combination of raw authenticity, darker themes, and chill but heavy emotional atmosphere that resonates with the listener on a soul level.",
       "ananki_confidence": 0.85
     },
     {
@@ -2817,9 +2819,9 @@
       "comment_text": "",
       "comment_score": 0,
       "playlist_id": "PL0IYNTdrSN93QXM4oKcAXPYs6byExxDPm",
-      "ananki_subvibe": "Dark - Brooding",
-      "ananki_reasoning": "The post title explicitly mentions '$uicideboy$ chill vibes', indicating the user is seeking a relaxed but dark atmospheric experience. $uicideboy$ is known for their dark, introspective hip-hop style, and the song title 'My Flaws Burn Through My Skin Like Demonic Flames from Hell' suggests deeply personal, heavy themes presented in a contemplative manner. This represents the intersection of 'chill' listening with dark, introspective content - which aligns with 'Dark - Brooding' as it captures both the reflective, subdued energy and the darker thematic elements. While the artist has aggressive tracks, when fans specifically seek 'chill vibes' from $uicideboy$, they're typically looking for their more atmospheric, contemplative dark tracks rather than pure sadness or anxiety.",
-      "ananki_confidence": 0.85
+      "ananki_subvibe": "Chill - Understimulated",
+      "ananki_reasoning": "The post title explicitly states '$uicideboy$ chill vibes', indicating the user is categorizing this song as chill despite the band's typically dark and heavy content. The song title 'My Flaws Burn Through My Skin Like Demonic Flames from Hell' suggests dark thematic content, but the user's framing emphasizes the chill aspect. $uicideboy$ is known for creating tracks with heavy bass, slow tempo, and hypnotic beats that create a paradoxically relaxed atmosphere despite dark lyrics. 'Chill - Understimulated' best captures this specific type of chill vibe - one that provides stimulation through darker, heavier elements while maintaining a laid-back, repetitive flow that fans of this genre seek when they want to zone out but not into traditional peaceful relaxation.",
+      "ananki_confidence": 0.75
     },
     {
       "artist": "$uicideboy$",
@@ -2833,7 +2835,7 @@
       "comment_score": 4168,
       "playlist_id": "PL0IYNTdrSN93QXM4oKcAXPYs6byExxDPm",
       "ananki_subvibe": "Sad - Grief",
-      "ananki_reasoning": "The commenter explicitly states they are mourning the death of their best friend who died from an overdose a week ago. The song title 'I Miss My Dead Friends' directly aligns with this profound loss. The comment expresses deep pain ('It hurts so much'), ongoing mourning ('I will always miss you'), and hope for their friend's peace ('I hope your in a better place now'). This is a clear expression of acute grief - the emotional response to losing someone close through death. While the post title mentions 'chill vibes,' the actual emotional context is centered on processing the death of a loved one, making 'Sad - Grief' the most appropriate sub-vibe.",
+      "ananki_reasoning": "The context is explicitly about mourning the death of a best friend who died from an overdose just a week ago. The commenter expresses deep pain ('It hurts so much') and ongoing loss ('I will always miss you'). The song title 'I Miss My Dead Friends' directly aligns with the grieving process. While the post title mentions 'chill vibes,' the emotional content is clearly centered on active grief and loss, not melancholic nostalgia or general sadness. This is raw, immediate grief over a recent death, making 'Sad - Grief' the most accurate classification.",
       "ananki_confidence": 1.0
     },
     {
@@ -2848,7 +2850,7 @@
       "comment_score": 5421,
       "playlist_id": "PL0IYNTdrSN93QXM4oKcAXPYs6byExxDPm",
       "ananki_subvibe": "Chill - Lofi",
-      "ananki_reasoning": "The post is explicitly titled '$uicideboy$ chill vibes' which clearly establishes the emotional context as chill/relaxed. The comment focuses on appreciation for the group's rising success rather than the specific emotional content, but the title's emphasis on 'chill vibes' is the key indicator. $uicideboy$ is known for their darker hip-hop sound, but 'All My Life I've Wanted a Chevy' features a laid-back, atmospheric production with trap/phonk elements that aligns with the lofi aesthetic - relaxed beats with a slightly hazy, downtempo quality. The 'Chill - Lofi' sub-vibe best captures this modern hip-hop chill sound that's become popular for background listening.",
+      "ananki_reasoning": "The post title explicitly mentions '$uicideboy$ chill vibes,' indicating this is categorized as a chill track by the recommender. $uicideboy$ is known for their lo-fi influenced production style with slowed, atmospheric beats. The song title 'All My Life I've Wanted a Chevy' and the laid-back nature of their chill tracks align with the lofi aesthetic - characterized by relaxed, downtempo hip-hop beats. The comment about them 'rising to the top' suggests appreciation for their signature sound, which in their chill tracks often features lo-fi production elements.",
       "ananki_confidence": 0.85
     },
     {
@@ -2862,8 +2864,8 @@
       "comment_text": "",
       "comment_score": 0,
       "playlist_id": "PL0IYNTdrSN93QXM4oKcAXPYs6byExxDPm",
-      "ananki_subvibe": "Chill - Lofi",
-      "ananki_reasoning": "The post title explicitly states '$uicideboy$ chill vibes,' indicating the user is seeking or sharing a relaxed, laid-back mood from this artist. $uicideboy$ is known for their darker hip-hop aesthetic, but when fans describe their tracks as 'chill,' they typically mean the more atmospheric, slower-tempo tracks that blend dark ambient elements with hip-hop beats - similar to the lofi hip-hop aesthetic. The track 'Cerberus' fits this description with its moody, atmospheric production that maintains a relaxed tempo despite the darker themes typical of the duo's work. While the song has dark undertones, the explicit framing as 'chill vibes' suggests the user is focusing on the relaxed, atmospheric quality rather than the darker emotional content.",
+      "ananki_subvibe": "Dark - Brooding",
+      "ananki_reasoning": "The post title explicitly mentions '$uicideboy$ chill vibes,' which is a clear reference to the dark, atmospheric style this duo is known for. $uicideboy$ creates music that blends chill, laid-back production with dark, brooding themes and heavy bass. 'Cerberus' (named after the three-headed guardian of the underworld) fits their signature style of moody, introspective hip-hop that maintains a relaxed tempo while exploring darker emotional territories. While 'chill' is mentioned, their brand of chill is distinctly dark and brooding rather than light or serene, making 'Dark - Brooding' the most accurate classification that captures both the relaxed yet heavy, contemplative atmosphere they're known for.",
       "ananki_confidence": 0.85
     },
     {
@@ -2878,7 +2880,7 @@
       "comment_score": 162,
       "playlist_id": "PL0IYNTdrSN93QXM4oKcAXPYs6byExxDPm",
       "ananki_subvibe": "Sad - Depressive",
-      "ananki_reasoning": "The commenter explicitly describes this as a 'sad song' and emphasizes Ruby's performance on it with deep emotional connection. The phrase 'I wish I could just repeat his verse over and over' suggests the listener is drawn to the melancholic, depressive content of the lyrics. While the title mentions 'chill vibes,' the actual comment focuses on the sadness of the track. Given $uicideboy$'s characteristic style of dark, depressive hip-hop and the emphasis on this being a 'sad song' that resonates deeply, this fits 'Sad - Depressive' more than any chill category. The emotional weight and repetitive listening desire indicates someone processing heavier emotions rather than just relaxing.",
+      "ananki_reasoning": "The comment explicitly describes this as a 'sad song' and emphasizes Ruby's verse on these emotional tracks. The context of '$uicideboy$ chill vibes' combined with the focus on sadness and the emotional weight of Ruby's performance indicates a deeper melancholic/depressive mood rather than just general melancholy. The phrase 'I wish I could just repeat his verse over and over' suggests the listener is deeply connecting with the emotional heaviness of the content, which aligns with depressive sad vibes rather than lighter sadness categories.",
       "ananki_confidence": 0.85
     },
     {
@@ -2893,7 +2895,7 @@
       "comment_score": 3783,
       "playlist_id": "PLv0jjxv5Ng1FNkrmKzUIdxYNqiE4W3-J5",
       "ananki_subvibe": "Chill - Gentle",
-      "ananki_reasoning": "The commenter explicitly describes this as 'weed music' that is 'so perfect' when high, indicating a relaxed, mellow listening experience. The song 'So High' by Doja Cat has a smooth, laid-back production with dreamy vocals that creates a gentle, euphoric atmosphere ideal for cannabis consumption. The commenter doesn't understand the lyrics but connects with the musical vibe itself, suggesting the instrumental and vocal texture create a soothing, pleasant experience. 'Chill - Gentle' best captures this soft, easygoing, blissed-out quality over more specific options like Meditative (too focused) or Lofi (genre-specific).",
+      "ananki_reasoning": "The commenter explicitly describes this as 'weed music' that is 'so perfect' when high, and the song title is literally 'So High' by Doja Cat. The context emphasizes the relaxed, enhanced listening experience while using cannabis, which aligns with a gentle, laid-back chill vibe. While the poster's playlist title suggests general 'chill weed music,' the specific comment about this song being 'perfect' with weed, combined with Doja Cat's 'So High' being a smooth R&B/soul track with mellow production, points to 'Chill - Gentle' as the most appropriate sub-vibe. This captures both the relaxed state and the soft, soothing quality that makes it ideal for that listening context.",
       "ananki_confidence": 0.85
     },
     {
@@ -2908,7 +2910,7 @@
       "comment_score": 120,
       "playlist_id": "PLv0jjxv5Ng1FNkrmKzUIdxYNqiE4W3-J5",
       "ananki_subvibe": "Chill - Gentle",
-      "ananki_reasoning": "The context describes this as 'Chill Weed Music' for a 'Get High Playlist,' which directly indicates a relaxed, laid-back listening experience. The comment's emotional weight centers on appreciating artists while they're still alive (referencing Mac Miller's death), suggesting a contemplative but gentle mood rather than heavy introspection. The combination of cannabis culture music with the appreciation of OG hip-hop artists points to a mellow, easy-going vibe. Dizzy Wright's 'I Made Sure' fits into this context as music for relaxed, elevated listening sessions - gentle enough for smoking/chilling but still maintaining the laid-back hip-hop aesthetic.",
+      "ananki_reasoning": "The comment reflects appreciation for artists in the chill/weed music space (Wiz Khalifa, Mac Miller, Dizzy Wright) with a reflective, grateful emotional tone about valuing artists while they're still alive. The context is explicitly about 'Chill Weed Music' playlist, indicating relaxed listening. The emotional sentiment combines gratitude and gentle reflection rather than deep sadness or introspection—the commenter is expressing they need to 'embrace' and appreciate Wiz, which suggests a warm, appreciative but laid-back emotional state. This aligns best with 'Chill - Gentle' as it captures both the relaxed cannabis-listening context and the tender, appreciative emotional undertone.",
       "ananki_confidence": 0.85
     },
     {
@@ -2922,8 +2924,8 @@
       "comment_text": "Everytime I play this song.. my heart starts rushing.. my body gets tingly.. I get excited.. I also get sad.. the message is so good and so well hidden.. this is why kendrick deserves to be counted as one of the best lyrically..",
       "comment_score": 779,
       "playlist_id": "PLv0jjxv5Ng1FNkrmKzUIdxYNqiE4W3-J5",
-      "ananki_subvibe": "Energy - Powerful",
-      "ananki_reasoning": "The commenter describes intense physical and emotional reactions: 'heart starts rushing,' 'body gets tingly,' and 'I get excited.' These are visceral, energizing responses. While they mention also feeling sad and appreciating Kendrick's lyrical depth, the dominant emotional experience is one of excitement and physical intensity. 'HUMBLE.' is a hard-hitting, assertive track that creates a powerful, commanding presence. The combination of getting physically excited, experiencing a rush, and acknowledging the song's strong message points to the 'Energy - Powerful' sub-vibe rather than contemplative or sad categories. The song energizes and overwhelms the listener in a positive, empowering way despite its complex emotional layers.",
+      "ananki_subvibe": "Energy - Cathartic Anger",
+      "ananki_reasoning": "The comment describes a powerful physical and emotional response to 'HUMBLE.' by Kendrick Lamar - heart rushing, body tingling, excitement mixed with sadness. The user emphasizes the 'well hidden message' and Kendrick's lyrical prowess. 'HUMBLE.' is known for its aggressive delivery and confrontational energy that challenges ego and pride, creating a cathartic emotional experience that combines intensity with deeper meaning. The mixture of excitement and sadness, plus the physical reactions described, align with the release and complexity of cathartic anger rather than pure aggression or confidence. The song channels raw energy through sharp social commentary.",
       "ananki_confidence": 0.85
     },
     {
@@ -2938,7 +2940,7 @@
       "comment_score": 7246,
       "playlist_id": "PLv0jjxv5Ng1FNkrmKzUIdxYNqiE4W3-J5",
       "ananki_subvibe": "Chill - Ambient",
-      "ananki_reasoning": "The commenter explicitly describes this version as 'airier and less in your face' and 'a lot more chill,' which are textbook descriptors for ambient music. The context from the post title ('Chill Weed Music') reinforces the relaxed listening intent. The emphasis on the song being 'airier' suggests atmospheric, spacious qualities that are characteristic of ambient music rather than other chill categories like lofi, jazz, or morning coffee which have more specific stylistic associations. The comparison to a 'final version' being more intense further confirms this version's ambient, atmospheric nature.",
+      "ananki_reasoning": "The commenter specifically describes this version as 'airier and less in your face' and 'a lot more chill,' which are classic descriptors of ambient music. The context of a 'Get High Playlist' combined with the emphasis on the song being atmospheric ('airier') and non-aggressive ('less in your face') points directly to an ambient listening experience. This is a stripped-back, spacious version that creates a relaxed, atmospheric environment rather than demanding attention.",
       "ananki_confidence": 0.95
     },
     {
@@ -2952,8 +2954,8 @@
       "comment_text": "Now on Spotify https://open.spotify.com/playlist/4xQdl69nisfqQki0WdEFzf.",
       "comment_score": 0,
       "playlist_id": "PLv0jjxv5Ng1FNkrmKzUIdxYNqiE4W3-J5",
-      "ananki_subvibe": "Chill - Meditative",
-      "ananki_reasoning": "The playlist context 'Chill Weed Music (Get High Playlist)' indicates music meant for cannabis consumption, which typically seeks a relaxed, introspective, and meditative state. Mac Miller's 'Self Care' is a contemplative hip-hop track with dreamy, atmospheric production that creates a spacious, reflective mood perfect for altered states of consciousness. The song's slower tempo, introspective lyrics, and ethereal soundscape align with meditative rather than just ambient chill music, as it maintains enough structure and focus to guide the listener through a contemplative experience while remaining relaxed.",
+      "ananki_subvibe": "Chill - Understimulated",
+      "ananki_reasoning": "The playlist context 'Chill Weed Music (Get High Playlist)' directly indicates music intended for cannabis consumption. Mac Miller's 'Self Care' is a hazy, psychedelic hip-hop track with dreamy production and introspective lyrics that creates a mellowed-out, altered state atmosphere. The song's tempo and production style are specifically designed for the understimulated, relaxed mental state associated with being high - it fills that space with just enough interest without being overstimulating. While 'Meditative' could be considered, 'Understimulated' better captures the specific sensation of needing gentle, engaging content while in a relaxed/altered state, which is the explicit purpose stated in the playlist title.",
       "ananki_confidence": 0.85
     },
     {
@@ -2967,8 +2969,8 @@
       "comment_text": "The Neighbourhood songs have such an unique vibe,I can't explain how I feel while listening to their songs,It makes me wanna cry and laugh at the same time,it's such a mix of emotions,I love it",
       "comment_score": 6161,
       "playlist_id": "PLv0jjxv5Ng1FNkrmKzUIdxYNqiE4W3-J5",
-      "ananki_subvibe": "Sad - Melancholic",
-      "ananki_reasoning": "The comment describes a complex emotional experience with The Neighbourhood's music that makes them 'wanna cry and laugh at the same time' - a bittersweet, mixed emotional state. The song title 'You Get Me So High' combined with the playlist context ('Chill Weed Music') and the description of an 'unique vibe' that's emotionally complex points to melancholic rather than purely sad. The commenter isn't describing pure sadness or heartbreak, but rather that characteristic melancholic mix of emotions - simultaneously uplifting and melancholic, contemplative yet emotionally stirring - which is The Neighbourhood's signature sound. This bittersweetness and emotional complexity is the essence of melancholic music.",
+      "ananki_subvibe": "Dark - Brooding",
+      "ananki_reasoning": "The commenter describes The Neighbourhood's songs as having a 'unique vibe' that creates a complex emotional mix - wanting to 'cry and laugh at the same time.' This contradictory emotional state, combined with the song title 'You Get Me So High' and the playlist context ('Chill Weed Music'), suggests a dark, atmospheric quality rather than purely chill or sad. The Neighbourhood is known for their moody, brooding aesthetic that blends melancholy with atmospheric intensity. The emotional complexity described - simultaneous sadness and euphoria - aligns best with 'Dark - Brooding' as it captures that introspective, emotionally layered darkness rather than pure anxiety, sadness, or chill vibes.",
       "ananki_confidence": 0.85
     },
     {
@@ -2983,7 +2985,7 @@
       "comment_score": 3758,
       "playlist_id": "PLv0jjxv5Ng1FNkrmKzUIdxYNqiE4W3-J5",
       "ananki_subvibe": "Chill - Lofi",
-      "ananki_reasoning": "The context strongly indicates a laid-back, communal listening experience associated with cannabis use ('Chill Weed Music' playlist). The commenter emphasizes 'vibing' and how the song 'brings similar people together,' suggesting a relaxed, contemplative atmosphere. Saba's 'Photosynthesis' fits the lofi hip-hop aesthetic perfectly - it's known for its jazzy, laid-back production and mellow flow. The emphasis on sustained listening ('still bumping this in 2020') and the playlist context point to this being background/ambient hip-hop rather than active party music or deeply introspective night music. While 'Chill - Gentle' or 'Chill - Serene' could apply, the specific hip-hop/rap context and the 'weed music' framing align most closely with the lofi aesthetic, which is commonly associated with relaxed, smoke-session listening.",
+      "ananki_reasoning": "The post title 'Chill Weed Music (Get High Playlist)' combined with the comment about vibing and the song bringing similar people together strongly suggests a laid-back, relaxed listening experience. Saba's 'Photosynthesis' is a hip-hop track with chill, introspective qualities that fits perfectly in a relaxed smoking session context. The lofi sub-vibe captures the mellow, easygoing nature of music meant for getting high and vibing out, which is the explicit context provided. The continued bumping in 2020 and the communal aspect ('brings similar people together') reinforces this is comfort music for a specific chill state of mind.",
       "ananki_confidence": 0.85
     },
     {
@@ -2998,7 +3000,7 @@
       "comment_score": 0,
       "playlist_id": "PLv0jjxv5Ng1FNkrmKzUIdxYNqiE4W3-J5",
       "ananki_subvibe": "Chill - Understimulated",
-      "ananki_reasoning": "The playlist context 'Chill Weed Music (Get High Playlist)' explicitly indicates music for cannabis consumption, which creates a specific altered state characterized by relaxation and seeking sensory engagement. '90210' by Travis Scott is a psychedelic hip-hop track with atmospheric production, dreamy transitions, and a hypnotic quality that pairs well with the understimulated-yet-receptive mental state associated with being high. The song's layered soundscape and mood shifts provide the right level of stimulation for this context without being overwhelming, fitting the 'Chill - Understimulated' category where listeners want atmospheric music that engages their heightened sensory awareness.",
+      "ananki_reasoning": "The playlist context 'Chill Weed Music (Get High Playlist)' explicitly indicates music designed for cannabis use, which typically seeks a relaxed, altered state of consciousness. '90210' by Travis Scott is a psychedelic hip-hop track with atmospheric production, dreamy synths, and a hypnotic quality that pairs well with being high. The 'understimulated' sub-vibe captures the specific type of chill experience where the music fills a mental space during an altered/relaxed state, providing stimulation without being overwhelming - exactly what someone would seek in a 'get high' playlist. This is distinct from other chill categories like 'meditative' or 'ambient' because it's specifically curated for recreational substance use rather than pure relaxation.",
       "ananki_confidence": 0.85
     },
     {
@@ -3012,8 +3014,8 @@
       "comment_text": "Now on Spotify https://open.spotify.com/playlist/4xQdl69nisfqQki0WdEFzf.",
       "comment_score": 0,
       "playlist_id": "PLv0jjxv5Ng1FNkrmKzUIdxYNqiE4W3-J5",
-      "ananki_subvibe": "Chill - Understimulated",
-      "ananki_reasoning": "The playlist title 'Chill Weed Music (Get High Playlist)' explicitly indicates music for cannabis use, which typically involves achieving a relaxed, mellowed-out state. Travis Scott's atmospheric production style combined with James Blake's ethereal vocals creates a hazy, spacey ambiance perfect for that understimulated, zoned-out feeling associated with being high. The track's slow-burning, hypnotic qualities align with the desire to feel more stimulated/engaged while in a relaxed state, which is the essence of the 'Chill - Understimulated' vibe - music that provides gentle engagement without being too demanding.",
+      "ananki_subvibe": "Chill - Ambient",
+      "ananki_reasoning": "The playlist is explicitly titled 'Chill Weed Music (Get High Playlist)', which indicates music intended for a relaxed, altered state of consciousness. Travis Scott's collaboration with James Blake (known for atmospheric production) and 21 Savage creates a laid-back, atmospheric track that fits perfectly into cannabis consumption culture. The 'TIL FURTHER NOTICE' track has spacey, ambient production characteristic of chill-out music. While 'Chill - Meditative' was considered, the specific weed/getting high context suggests a more open, floating ambient experience rather than focused meditation.",
       "ananki_confidence": 0.85
     },
     {
@@ -3028,7 +3030,7 @@
       "comment_score": 19,
       "playlist_id": "PLv0jjxv5Ng1FNkrmKzUIdxYNqiE4W3-J5",
       "ananki_subvibe": "Chill - Lofi",
-      "ananki_reasoning": "The post title explicitly mentions 'Chill Weed Music (Get High Playlist)', establishing a relaxed, cannabis-friendly listening context. The commenter describes being drawn in by the song and staying for the entire video, suggesting an engaging but laid-back vibe. Saba's 'BUSY/SIRENS' has a contemplative, atmospheric quality that fits well with lofi hip-hop aesthetics - reflective lyrics over mellow beats designed for relaxed listening while high. The context of watching a video while vibing to the music, combined with the chill weed theme, strongly points to the lofi sub-vibe rather than more passive categories like meditative or ambient.",
+      "ananki_reasoning": "The post title 'Chill Weed Music (Get High Playlist)' clearly establishes this as chill music for a relaxed, elevated state. The commenter's response indicates they came for the song and stayed engaged, suggesting a laid-back vibe that holds attention without being demanding. Saba's 'BUSY/SIRENS' fits the lofi hip-hop aesthetic often associated with smoking/relaxation playlists. The context of it being in a curated 'get high' playlist, combined with the relaxed, appreciative tone of the comment, points to the lofi sub-vibe which is commonly associated with chill hip-hop beats and weed culture.",
       "ananki_confidence": 0.85
     },
     {
@@ -3043,7 +3045,7 @@
       "comment_score": 3703,
       "playlist_id": "PLv0jjxv5Ng1FNkrmKzUIdxYNqiE4W3-J5",
       "ananki_subvibe": "Party - Pregame",
-      "ananki_reasoning": "The post title 'Chill Weed Music (Get High Playlist)' combined with the comment's excitement about a legendary Travis Scott track suggests a social, elevated atmosphere. 'Drugs You Should Try It' is a cult-favorite Travis Scott song known for its psychedelic, laid-back vibe that's perfect for getting into a mood before going out or during casual social sessions. The energy expressed ('REAL RAGERS ARE CRYING', 'LEGENDARY') indicates this is celebratory music for fans who consume it in social/party contexts, specifically in that pre-party, getting-ready phase where the vibe is still relaxed but building anticipation. While it has chill elements, the context of 'ragers' and the celebratory nature of finally getting an official video after 10 years points to this being pregame music rather than pure introspective chill music.",
+      "ananki_reasoning": "The context indicates this is from a 'Chill Weed Music (Get High Playlist)' and the commenter expresses extreme excitement about a legendary Travis Scott track finally getting a video after 10 years. 'Drugs You Should Try It' is a psychedelic, atmospheric Travis Scott song that's iconic in his discography and commonly associated with getting high/smoking sessions. The combination of the playlist context (getting high), the celebratory excitement ('REAL RAGERS ARE CRYING'), and the song's hazy, euphoric quality points to a pregame/social smoking vibe rather than solitary introspection. While it has chill elements, the community celebration aspect and the song's role in Travis Scott's party-oriented fanbase ('ragers') makes this fit the pregame atmosphere where people get elevated before going out or socializing.",
       "ananki_confidence": 0.75
     },
     {
@@ -3058,8 +3060,8 @@
       "comment_score": 2183,
       "playlist_id": "PLv0jjxv5Ng1FNkrmKzUIdxYNqiE4W3-J5",
       "ananki_subvibe": "Chill - Gentle",
-      "ananki_reasoning": "The context indicates this is from a 'Chill Weed Music (Get High Playlist)' and the comment references Kodak Black being 'in his feelings' despite the humorous lyric quoted. 'Drowning' by A Boogie Wit da Hoodie featuring Kodak Black is a melodic, emotionally reflective hip-hop track with a laid-back, atmospheric production that fits the relaxed/smoking vibe. The song deals with emotional vulnerability and success, delivered over mellow production - making it ideal for a chill, contemplative listening session. While it has sad undertones about drowning in emotions, the context positions it as chill music for getting high rather than deep sadness, so 'Chill - Gentle' best captures the relaxed, emotionally soft vibe intended in this playlist context.",
-      "ananki_confidence": 0.85
+      "ananki_reasoning": "The context is from a 'Chill Weed Music (Get High Playlist)' and the comment references Kodak being 'in his feelings,' which suggests an emotional, relaxed listening experience. 'Drowning' by A Boogie Wit da Hoodie featuring Kodak Black is a melodic hip-hop track with a laid-back, introspective vibe that fits the chill/smoking context. The song has a gentle, smooth flow that aligns with relaxed listening rather than high-energy or deeply sad contexts. While it touches on emotional themes, it's primarily consumed as a mellow, chill track in this playlist context.",
+      "ananki_confidence": 0.75
     },
     {
       "artist": "6LACK",
@@ -3073,7 +3075,7 @@
       "comment_score": 166,
       "playlist_id": "PLv0jjxv5Ng1FNkrmKzUIdxYNqiE4W3-J5",
       "ananki_subvibe": "Happy - Healing",
-      "ananki_reasoning": "The commenter describes feeling 'so free' and connecting deeply with the song's message ('felt every word') specifically in the context of being in a toxic relationship. The emphasis on feeling 'free' suggests liberation, release, and emotional healing from a negative situation. While the song appears in a 'Chill Weed Music' playlist, the emotional core described is about the healing and liberating feeling of breaking free from toxicity, which aligns perfectly with the 'Happy - Healing' sub-vibe rather than a purely chill or sad category. The freedom described is transformative and restorative.",
+      "ananki_reasoning": "The commenter describes feeling 'so free' after listening to this song while in a toxic relationship, indicating a sense of liberation and emotional release. The phrase 'I felt every word' suggests deep personal connection and catharsis. While the song is in a 'Chill Weed Music' playlist context, the emotional impact described is specifically about healing and freedom from toxicity rather than just relaxation. The feeling of freedom and emotional resonance points to a healing journey rather than sadness (as the relationship is toxic, not mourned) or simple chill vibes (the impact is too transformative). 'Happy - Healing' best captures this sense of emotional liberation and recovery.",
       "ananki_confidence": 0.85
     },
     {
@@ -3088,7 +3090,7 @@
       "comment_score": 1399,
       "playlist_id": "PLv0jjxv5Ng1FNkrmKzUIdxYNqiE4W3-J5",
       "ananki_subvibe": "Sad - Nostalgic Simpler Times",
-      "ananki_reasoning": "The commenter explicitly describes the song as 'literally a time machine' that transports them back 12 years to when they had just dropped out of college with nothing but debt. Despite now having a stable, successful life (wife, kids, house, great job), this song triggers powerful nostalgic feelings for that earlier, simpler (though financially struggling) period of their life. The phrase 'what a wild ride' and noting The Weeknd has been 'the soundtrack to my life this whole time' emphasizes the bittersweet nostalgia for their past self and journey. This fits perfectly with nostalgic reflection on simpler times in one's life, even when those times were objectively more difficult.",
+      "ananki_reasoning": "The commenter explicitly describes this song as 'literally a time machine' that transports them back 12 years to when they had just dropped out of college with nothing but debt. Despite now having a stable life (wife, kids, house, great job), the song triggers powerful nostalgia for that earlier, simpler (though financially harder) period. The Weeknd has been 'the soundtrack to my life this whole time' reinforces the nostalgic connection. The emotional core is nostalgia for a past life stage rather than heartbreak, melancholy, or other sad variants. The context of 'Chill Weed Music' playlist supports the reflective, nostalgic listening experience.",
       "ananki_confidence": 0.95
     },
     {
@@ -3103,7 +3105,7 @@
       "comment_score": 10149,
       "playlist_id": "PLTo6svdhIL1cxS4ffGueFpVCF756ip-ab",
       "ananki_subvibe": "Happy - Healing",
-      "ananki_reasoning": "The comment explicitly states 'The song that heals our pain and soul. It brings back our confidence again.' The primary emotional context is about healing and restoration. While the confidence aspect could suggest 'Energy - Confidence,' the emphasis on healing pain and soul takes precedence. The 'Happy - Healing' sub-vibe perfectly captures the restorative, therapeutic quality described, where the song serves as an emotional balm that not only soothes but also rebuilds the listener's sense of self-worth.",
+      "ananki_reasoning": "The comment explicitly states 'The song that heals our pain and soul. It brings back our confidence again.' The key phrase 'heals our pain and soul' directly indicates a healing emotional quality. While the mention of 'brings back our confidence' could suggest Energy - Confidence, the primary emphasis is on the healing aspect of recovering from pain, which is the core emotional intent expressed. The 'Happy - Healing' sub-vibe perfectly captures this restorative, therapeutic quality that helps someone recover emotionally.",
       "ananki_confidence": 0.95
     },
     {
@@ -3118,7 +3120,7 @@
       "comment_score": 206,
       "playlist_id": "PLTo6svdhIL1cxS4ffGueFpVCF756ip-ab",
       "ananki_subvibe": "Happy - Healing",
-      "ananki_reasoning": "The commenter explicitly states 'They are healing my heart,' which is a direct expression of emotional healing and recovery. The positive, restorative nature of the experience and desire for 'a whole album from just them' indicates the music is providing comfort and emotional repair. This perfectly aligns with the Happy - Healing sub-vibe, which captures music that helps mend emotional wounds and brings therapeutic comfort.",
+      "ananki_reasoning": "The commenter explicitly states 'They are healing my heart,' which directly indicates the song's emotional impact is therapeutic and restorative. The phrase 'need a whole album from just them' reinforces that this music is providing emotional comfort and recovery. The 'Happy - Healing' sub-vibe perfectly captures this sentiment of music that soothes emotional wounds and provides a sense of restoration.",
       "ananki_confidence": 0.95
     },
     {
@@ -3133,8 +3135,8 @@
       "comment_score": 0,
       "playlist_id": "PLTo6svdhIL1cxS4ffGueFpVCF756ip-ab",
       "ananki_subvibe": "Party - Dance",
-      "ananki_reasoning": "This is a dance mix remix of '4 Non Blondes - What's Up' by DJ Miko, explicitly featured in a TikTok viral songs playlist for 2025. The context indicates this is a popular dance track circulating on TikTok, which is known for trending dance challenges and energetic party content. The 'Dance Mix' designation confirms this is meant for dancing/movement rather than reflection or other moods. TikTok song playlists typically feature upbeat, danceable tracks that people use for creating content, and this remix format transforms the original into party-friendly dance music.",
-      "ananki_confidence": 0.85
+      "ananki_reasoning": "This is a dance remix of '4 Non Blondes - What's Up' by DJ Miko, specifically labeled as 'Mix Dance Mix' and featured in a TikTok Songs 2025 playlist. The context indicates it's part of a curated collection of viral TikTok songs, which are typically upbeat and designed for dancing, social sharing, and energetic engagement. Dance remixes are explicitly created to energize listeners and encourage movement, making 'Party - Dance' the most appropriate sub-vibe. While TikTok songs span various moods, the 'Dance Mix' designation clearly signals this track's primary purpose.",
+      "ananki_confidence": 0.9
     },
     {
       "artist": "Kelis",
@@ -3148,7 +3150,7 @@
       "comment_score": 0,
       "playlist_id": "PLTo6svdhIL1cxS4ffGueFpVCF756ip-ab",
       "ananki_subvibe": "Party - Dance",
-      "ananki_reasoning": "Kelis's 'Milkshake' is an iconic early 2000s dance-pop track with a playful, confident energy that became a viral sensation. The context indicates this is part of a TikTok hits playlist for 2025, suggesting it's being used for its danceable, fun qualities that make it perfect for social media content creation. The song's catchy hook, upbeat tempo, and cheeky lyrics make it ideal for dance challenges and party content on TikTok. While it has nostalgic elements, its primary use in this TikTok context is clearly for its dance and party appeal.",
+      "ananki_reasoning": "Kelis's 'Milkshake' is an iconic early 2000s dance-pop track with a flirtatious, confident energy that became a cultural phenomenon. The context indicates this is part of a TikTok hits playlist for 2025, suggesting viral dance and party content. The song's catchy hook, R&B-pop production, and club-ready beat make it perfect for dancing and party atmospheres. While it has nostalgic elements, its primary use on TikTok and in playlists like this is for fun, energetic dance content rather than reflective nostalgia. The song's playful, seductive vibe and memorable rhythm align perfectly with dance party contexts.",
       "ananki_confidence": 0.85
     },
     {
@@ -3163,7 +3165,7 @@
       "comment_score": 1876,
       "playlist_id": "PLTo6svdhIL1cxS4ffGueFpVCF756ip-ab",
       "ananki_subvibe": "Energy - Cathartic Anger",
-      "ananki_reasoning": "The commenter describes discovering the lyrics revealed the song is 'a reality check on MAN' rather than idolizing men as portrayed on TikTok. Rihanna's 'Breakin' Dishes' is famously about anger and confrontation in response to relationship betrayal - it's an explosive, cathartic release of fury through aggressive imagery (literally breaking dishes). The commenter's realization about the song's true confrontational nature, combined with the song's intense emotional energy focused on calling out bad behavior, makes this a clear fit for cathartic anger rather than pure rage or aggression. It's anger with purpose and emotional release.",
+      "ananki_reasoning": "The commenter describes a shift in perspective after reading the lyrics - realizing that while TikTok presents it as being about an 'idol MAN,' the song is actually 'a reality check on MAN.' Rihanna's 'Breakin' Dishes' is explicitly about anger and confrontation in response to relationship betrayal, with the titular act of breaking dishes serving as a physical release of rage. The song channels intense emotion into a cathartic outlet, making this the perfect fit for the sub-vibe that captures anger being expressed and released rather than just brooding resentment.",
       "ananki_confidence": 0.95
     },
     {
@@ -3178,7 +3180,7 @@
       "comment_score": 1067,
       "playlist_id": "PLTo6svdhIL1cxS4ffGueFpVCF756ip-ab",
       "ananki_subvibe": "Energy - Unstoppable",
-      "ananki_reasoning": "The comment 'IF I CAN DO IT THEN WHY CANT YOU' hits different 😮‍💨' expresses a powerful motivational sentiment that challenges others to match the speaker's determination and capability. The phrase 'hits different' indicates this lyric resonates emotionally in a way that inspires action and confidence. The song title 'Birth & Death' combined with this lyric suggests themes of life's extremes and pushing through regardless of circumstances. This aligns perfectly with 'Energy - Unstoppable' which captures that relentless, I-can-do-anything mindset where obstacles are dismissed and determination prevails. The exhale emoji adds a sense of triumphant release after proving oneself capable.",
+      "ananki_reasoning": "The comment 'IF I CAN DO IT THEN WHY CANT YOU' with the exhaling emoji suggests a motivational, challenging energy that pushes past limitations. The phrase 'hits different' indicates this lyric resonates emotionally as empowering. Combined with the song title 'Birth & Death' by MVL, this suggests themes of overcoming obstacles and proving capability. The confrontational yet self-assured nature of the lyric fits the 'Unstoppable' energy sub-vibe, which captures that feeling of determination and pushing through barriers while challenging others to do the same.",
       "ananki_confidence": 0.85
     },
     {
@@ -3193,7 +3195,7 @@
       "comment_score": 0,
       "playlist_id": "PLTo6svdhIL1cxS4ffGueFpVCF756ip-ab",
       "ananki_subvibe": "Chill - Beach/Summer",
-      "ananki_reasoning": "Kid Cudi's 'Maui Wowie' is a laid-back, hazy track with tropical and beach-influenced vibes, as suggested by the title itself (Maui being a Hawaiian island). The song features relaxed, summery production with a carefree attitude. While the context is generic (TikTok playlist), the song's inherent qualities align strongly with beach/summer chill vibes - it's often used in content featuring relaxed, sunny, vacation-like moods. The song's mellowness combined with its tropical references makes it a quintessential beach/summer chill track.",
+      "ananki_reasoning": "Kid Cudi's 'Maui Wowie' is a laid-back, psychedelic hip-hop track with strong summer and beach vibes, as suggested by the title referencing Hawaiian cannabis strain and tropical imagery. The song has a relaxed, hazy atmosphere perfect for leisurely summer moments. While the context is generic (TikTok playlist), the song itself is well-known for its chill, summery feel with dreamy production and Cudi's melodic flow creating a carefree, tropical mood. This is a popular TikTok track often used for summer/vacation content.",
       "ananki_confidence": 0.85
     },
     {
@@ -3208,7 +3210,7 @@
       "comment_score": 813,
       "playlist_id": "PLTo6svdhIL1cxS4ffGueFpVCF756ip-ab",
       "ananki_subvibe": "Happy - Healing",
-      "ananki_reasoning": "The commenter explicitly frames their experience around surviving cancer ('18 yrs and here fighting strong') and sends 'Healing vibes and blessings' to others. The song 'What's Up?' by 4 Non Blondes is a powerful anthem about perseverance, questioning life's challenges, and finding strength - themes that directly align with the survivor's journey described. While the song itself has introspective elements, the context of overcoming serious illness as a young parent and continuing to fight 18 years later is fundamentally about healing, resilience, and maintaining hope through adversity. The emotional intent is clearly about recovery and the healing process rather than sadness or grief.",
+      "ananki_reasoning": "The commenter explicitly mentions being a cancer survivor ('18 yrs and here fighting strong') and sends 'Healing vibes and blessings' to others. The song 'What's Up?' by 4 Non Blondes is a powerful anthem about questioning and persevering through life's challenges. In this context, the commenter is sharing the song as part of their healing journey and survival story - going through radiotherapy at 19 with a baby, and now celebrating 18 years of being cancer-free. The emotional weight is clearly about healing, resilience, and sharing hope with others who may be struggling. While there are elements of reflection and strength, the primary emotional intent is about the healing journey and spreading healing energy to others.",
       "ananki_confidence": 0.95
     },
     {
@@ -3223,7 +3225,7 @@
       "comment_score": 816,
       "playlist_id": "PLTo6svdhIL1cxS4ffGueFpVCF756ip-ab",
       "ananki_subvibe": "Energy - Bold",
-      "ananki_reasoning": "The comment emphasizes the song as a powerful opening statement that demonstrates confidence and mastery ('This is how it's done!'). The context describes seamless language blending and positions the song as a bold declaration by the creators to showcase their originality. The commenter highlights how the song serves as an assertive, statement-making opener to a movie, conveying a sense of creative confidence and boldness rather than aggression or competition. This aligns with 'Energy - Bold' as it captures the self-assured, impactful energy of making a strong impression.",
+      "ananki_reasoning": "The comment emphasizes the song as a powerful opening statement ('This is how it's done!') that demonstrates confidence and originality. The praise for seamless language blending and the context of it being an opening song to announce the creators' capabilities suggests a bold, confident energy rather than aggressive or competitive. The tone is about making a statement and showcasing skill in a self-assured, impressive way that sets the stage for what's to come.",
       "ananki_confidence": 0.85
     },
     {
@@ -3238,7 +3240,7 @@
       "comment_score": 1581,
       "playlist_id": "PLTo6svdhIL1cxS4ffGueFpVCF756ip-ab",
       "ananki_subvibe": "Energy - Confidence",
-      "ananki_reasoning": "The comment 'Tyla really won me over. THIS is a popstar' expresses admiration for Tyla's star quality and presence. The song 'CHANEL' is an upbeat, confident pop/R&B track that showcases swagger and self-assurance - qualities associated with being a 'popstar.' The context of it being on a TikTok playlist suggests it's a catchy, energetic track that projects confidence and charisma. While it could fit party vibes, the emphasis on Tyla as a 'popstar' and the winning-over sentiment points more specifically to the confident, self-assured energy the song delivers.",
+      "ananki_reasoning": "The comment 'Tyla really won me over. THIS is a popstar' expresses admiration for Tyla's star quality and presence. The song 'CHANEL' by Tyla is an upbeat, charismatic pop track that showcases confidence and self-assuredness - qualities the commenter is celebrating about her as a popstar. The context of it being featured in a TikTok songs playlist further suggests it's a catchy, confident pop anthem rather than a romantic, sad, or dark track. The emphasis on Tyla being 'a popstar' points to the bold, self-assured energy that defines her music.",
       "ananki_confidence": 0.85
     },
     {
@@ -3253,8 +3255,8 @@
       "comment_score": 49,
       "playlist_id": "PLTo6svdhIL1cxS4ffGueFpVCF756ip-ab",
       "ananki_subvibe": "Sad - Nostalgic 2000s",
-      "ananki_reasoning": "The human explicitly states 'This song give me mid-early 2000s vibes' which directly indicates nostalgia for that specific era. The fire emoji suggests positive enthusiasm about this nostalgic feeling. Among the available options, 'Sad - Nostalgic 2000s' is the most precise match for someone experiencing nostalgia specifically tied to the 2000s time period. While the 'Sad' category might seem counterintuitive with the fire emoji, nostalgia inherently contains bittersweet emotions about the past.",
-      "ananki_confidence": 0.95
+      "ananki_reasoning": "The commenter explicitly states 'This song give me mid-early 2000s vibes' which directly indicates nostalgic feelings toward that specific era. The fire emoji suggests positive nostalgia rather than sadness, but the 2000s reference is the primary emotional signal. Among the available options, 'Sad - Nostalgic 2000s' is the most precise match for music that evokes memories and feelings from the early-to-mid 2000s period.",
+      "ananki_confidence": 0.85
     },
     {
       "artist": "NLE The Great",
@@ -3268,8 +3270,8 @@
       "comment_score": 0,
       "playlist_id": "PLTo6svdhIL1cxS4ffGueFpVCF756ip-ab",
       "ananki_subvibe": "Party - Dance",
-      "ananki_reasoning": "This song 'KO' by NLE The Great is featured in a TikTok hits playlist for 2025. TikTok songs are typically characterized by their viral dance potential, catchy hooks, and energetic vibes that encourage user engagement through challenges and dances. The context indicates this is part of a curated playlist of trending TikTok music, which strongly suggests dance-oriented, party-friendly content designed for social media consumption and movement. Without additional emotional context from the commenter, the TikTok playlist designation itself is the primary indicator, pointing to the dance/party category.",
-      "ananki_confidence": 0.75
+      "ananki_reasoning": "This song is explicitly featured in a TikTok music playlist for 2025. TikTok songs are typically characterized by their viral, danceable, and energetic qualities that encourage user engagement through dance challenges and trends. 'KO' by NLE The Great fits the social media platform's emphasis on upbeat, shareable content designed for short-form video creation and dance performances. The context of being a TikTok hit strongly suggests this is meant for dancing and party-like social engagement rather than introspection or chill vibes.",
+      "ananki_confidence": 0.8
     },
     {
       "artist": "Brent Faiyaz",
@@ -3283,7 +3285,7 @@
       "comment_score": 898,
       "playlist_id": "PLTo6svdhIL1cxS4ffGueFpVCF756ip-ab",
       "ananki_subvibe": "Happy - Healing",
-      "ananki_reasoning": "The comment 'I pray that whoever reads this, GOD HEALS WHATEVER IS HURTING YOU' directly expresses a healing intention and spiritual comfort. This is paired with Brent Faiyaz's 'have to.', which is a smooth, introspective R&B track that combines emotional vulnerability with a sense of working through personal struggles. The blessing-like nature of the comment and the song's contemplative yet hopeful tone align with a healing emotional space rather than pure sadness or melancholy. The commenter is offering comfort and restoration to others, which maps to the 'Happy - Healing' sub-vibe.",
+      "ananki_reasoning": "The comment 'I pray that whoever reads this, GOD HEALS WHATEVER IS HURTING YOU' explicitly focuses on healing and recovery from pain. This is a compassionate, spiritually-oriented message seeking relief and restoration for others who are suffering. Brent Faiyaz's 'have to.' combined with this healing-focused blessing suggests the song resonates with themes of emotional recovery and the process of healing from hurt. While the comment acknowledges pain exists, the primary emotional intent is centered on healing and divine intervention for wellness, making 'Happy - Healing' the most appropriate match.",
       "ananki_confidence": 0.85
     },
     {
@@ -3297,9 +3299,9 @@
       "comment_text": "I've always admired him. I was born in 1993. I've known him since his first songs. I just hope he's well and one day he'll allow me to make music with him, collaborate on releases to help me shine on the music path. ",
       "comment_score": 16,
       "playlist_id": "PLgzTt0k8mXzEpH7-dOCHqRZOsakqXmzmG",
-      "ananki_subvibe": "Chill - Gentle",
-      "ananki_reasoning": "The comment expresses admiration and hope for collaboration, creating a reflective, aspirational mood rather than describing the song's specific emotional quality. However, given this is from a 'Top Chill Songs' playlist and the commenter has followed Justin Bieber since 1993 (their birth year) through his early work, this suggests a gentle, familiar connection to the music. The song 'SPEED DEMON' by Justin Bieber, despite its title, appears in a chill playlist context. The personal, hopeful tone of wanting to collaborate ('help me shine on the music path') suggests a gentle, supportive emotional space rather than high-energy or dark themes. Among chill options, 'Gentle' best captures the tender admiration and calm aspirational quality expressed.",
-      "ananki_confidence": 0.65
+      "ananki_subvibe": "Chill - Evening",
+      "ananki_reasoning": "The comment expresses long-term admiration and aspirational feelings about collaborating with Justin Bieber, shared in a 'Top Chill Songs' playlist context. The reflective, hopeful tone about musical dreams and career aspirations fits an evening chill vibe - contemplative but not heavily introspective, relaxed but with gentle forward-looking energy. The song 'SPEED DEMON' in a chill playlist context, combined with the wistful career reflection, suggests a laid-back evening mood rather than energetic or melancholic tones.",
+      "ananki_confidence": 0.75
     },
     {
       "artist": "d4vd",
@@ -3313,7 +3315,7 @@
       "comment_score": 716,
       "playlist_id": "PLgzTt0k8mXzEpH7-dOCHqRZOsakqXmzmG",
       "ananki_subvibe": "Chill - Gentle",
-      "ananki_reasoning": "The comment discusses Hannah Bahng's collaboration with d4vd in an emotionally supportive context, referring to difficult circumstances ('all this shit') that she and her family (including her brother Bang Chan from Stray Kids) have been going through. The song title 'L.O.V.E.U' suggests a soft, caring romantic or supportive vibe. Given it's in a 'Top Chill Songs' playlist and features a collaboration that seems emotionally significant, the gentle, soothing nature of the track fits 'Chill - Gentle' - a sub-vibe that captures tender, soft chill music that provides comfort without being overly melancholic or sad.",
+      "ananki_reasoning": "The comment discusses a meaningful collaboration between d4vd and Hannah Bahng, with the commenter expressing empathy for the emotions involved in this musical partnership. The song title 'L.O.V.E.U' and the collaborative nature suggest a sweet, tender vibe. The context implies this is an emotional but positive moment worth appreciating. Given it's featured in a 'Top Chill Songs' playlist and involves a heartfelt collaboration, 'Chill - Gentle' best captures the tender, easygoing emotional quality of both the song and the human's appreciation for it.",
       "ananki_confidence": 0.8
     },
     {
@@ -3328,7 +3330,7 @@
       "comment_score": 0,
       "playlist_id": "PLgzTt0k8mXzEpH7-dOCHqRZOsakqXmzmG",
       "ananki_subvibe": "Chill - Gentle",
-      "ananki_reasoning": "The context describes this as part of a 'best chill songs' collection meant to help listeners 'unwind with the smoothest chill tracks.' The use of 'smoothest' and 'unwind' suggests a gentle, relaxing quality rather than more specific chill contexts like rainy day, morning coffee, or lofi. ROSÉ's 'Messy' from the F1 Movie soundtrack, while potentially having other qualities, is being framed here specifically for its smooth, unwinding chill properties, which aligns best with the Chill - Gentle sub-vibe.",
+      "ananki_reasoning": "The context explicitly describes this as part of a 'best chill songs' collection meant to help people 'unwind with the smoothest chill tracks.' The emphasis on 'smoothest' and 'unwind' suggests a gentle, relaxing quality rather than more specific chill contexts like rainy day, morning coffee, or quiet reflection. ROSÉ's 'Messy' from the F1 Movie, when placed in a general chill playlist context, best fits the 'Chill - Gentle' category as it represents approachable, soothing music without being tied to a specific time of day or weather condition.",
       "ananki_confidence": 0.75
     },
     {
@@ -3342,8 +3344,8 @@
       "comment_text": "After years of dreaming about a Kiss and Make UP MV, we are finally seeing Dua Lipa and Jennie together, despite the other 3 members not being in the MV, but I feel fed",
       "comment_score": 29988,
       "playlist_id": "PLgzTt0k8mXzEpH7-dOCHqRZOsakqXmzmG",
-      "ananki_subvibe": "Party - Dance",
-      "ananki_reasoning": "The comment mentions anticipation for a music video collaboration between Dua Lipa and JENNIE, expressing excitement despite some members being absent. The song 'Handlebars' featuring these two artists is a pop collaboration that fits within a playlist titled 'Top Chill Songs,' but the context of excitement about a collaboration MV and the artists involved (both known for danceable pop tracks) suggests this is more upbeat and party-oriented. Given that it's in a chill playlist but involves two major pop/dance artists, and the user's enthusiasm about finally seeing them together, this leans toward 'Party - Dance' as the best fit for the emotional intent behind the recommendation.",
+      "ananki_subvibe": "Energy - Confidence",
+      "ananki_reasoning": "The comment expresses excitement and satisfaction about a long-awaited collaboration between JENNIE and Dua Lipa, despite minor disappointment that other members aren't in the MV. The overall tone is positive anticipation fulfilled. Given this is on a 'Top Chill Songs' playlist, the song itself likely has a confident, self-assured energy that bridges chill and empowerment - characteristic of both artists' styles. The 'Handlebars' title and the collaborative nature suggest a confident, boss-like vibe rather than a purely passive chill track. This fits the excitement and 'fed' (satisfied/fulfilled) emotional state expressed.",
       "ananki_confidence": 0.75
     },
     {
@@ -3358,7 +3360,7 @@
       "comment_score": 23737,
       "playlist_id": "PLgzTt0k8mXzEpH7-dOCHqRZOsakqXmzmG",
       "ananki_subvibe": "Energy - Confidence",
-      "ananki_reasoning": "The comment emphasizes Tate McRae's dancing talent being showcased in the music video, suggesting an energetic, performance-focused track. 'Revolving Door' is an upbeat pop song with confident energy that complements choreography. While it appears in a 'Chill' playlist, the specific context about the dancing and showcasing talent points to the song's confident, self-assured energy rather than a relaxed vibe. The focus on her abilities and performance suggests this fits the Energy - Confidence category better than any chill sub-vibe.",
+      "ananki_reasoning": "The comment emphasizes Tate McRae's dancing talent showcased in the music video. While the playlist is titled 'Top Chill Songs,' the specific comment about her dancing prowess and talent suggests a song with confident, self-assured energy rather than ambient relaxation. Tate McRae is known for combining pop sensibility with choreography, and 'Revolving door' has an upbeat, self-assured quality that balances catchy melodies with confident performance energy. The focus on her talent and physical expression through dance points to Energy - Confidence as the emotional core.",
       "ananki_confidence": 0.75
     },
     {
@@ -3373,7 +3375,7 @@
       "comment_score": 888,
       "playlist_id": "PLgzTt0k8mXzEpH7-dOCHqRZOsakqXmzmG",
       "ananki_subvibe": "Romantic - Anniversary",
-      "ananki_reasoning": "The comment 'Anyone after their marriage??? I am so happy for them' clearly references a celebratory romantic milestone - a marriage. The excitement and joy expressed through multiple emojis indicates this is being listened to in the context of celebrating Selena Gomez and Benny Blanco's recent marriage (or engagement). The song 'Sunset Blvd' by Selena Gomez in this context serves as a romantic celebration track tied to their relationship milestone. 'Anniversary' is the most appropriate sub-vibe as it captures the celebration of a romantic commitment/milestone rather than just general romance.",
+      "ananki_reasoning": "The comment expresses joy and celebration about a marriage ('Anyone after their marriage??? I am so happy for them'), indicating a romantic celebratory context. The song 'Sunset Blvd' by Selena Gomez, combined with the marriage reference and celebratory tone with party emojis, suggests this fits the romantic milestone celebration category. While 'Happy - Celebration' could be considered, the specific mention of marriage makes this distinctly romantic in nature, and 'Anniversary' captures the celebration of a romantic relationship milestone better than other romantic sub-vibes.",
       "ananki_confidence": 0.85
     },
     {
@@ -3387,9 +3389,9 @@
       "comment_text": "\"every time you buy my album. i will use the money to get vocal lessons. so i can sing. better\" Damn, he really got those vocal lessons. It paid off.",
       "comment_score": 847,
       "playlist_id": "PLgzTt0k8mXzEpH7-dOCHqRZOsakqXmzmG",
-      "ananki_subvibe": "Happy - Healing",
-      "ananki_reasoning": "The comment references Rich Brian's journey of self-improvement through vocal lessons, highlighting personal growth and development. The song 'Little Ray of Light' combined with this context of artistic evolution and the positive outcome ('It paid off') suggests a healing, uplifting emotional space. The title itself evokes hope and brightness. While this appears in a 'Top Chill Songs' playlist, the emotional narrative is more about growth, improvement, and the positive transformation of the artist, which aligns best with the healing aspect of happiness rather than pure chill vibes.",
-      "ananki_confidence": 0.75
+      "ananki_subvibe": "Chill - Gentle",
+      "ananki_reasoning": "The comment celebrates Rich Brian's vocal improvement, noting how his dedication to vocal lessons 'paid off.' The song appears in a 'Top Chill Songs' playlist, and the context emphasizes growth and refined vocals. The appreciation for improved singing quality and the gentle, positive tone of the comment suggests a smooth, polished chill track rather than more specific chill sub-categories like lofi, ambient, or rainy day. 'Chill - Gentle' best captures the refined, pleasant vocal performance being praised within a general chill music context.",
+      "ananki_confidence": 0.8
     },
     {
       "artist": "Selena Gomez",
@@ -3403,7 +3405,7 @@
       "comment_score": 6854,
       "playlist_id": "PLgzTt0k8mXzEpH7-dOCHqRZOsakqXmzmG",
       "ananki_subvibe": "Happy - Fun",
-      "ananki_reasoning": "The commenter emphasizes the authentic, genuine happiness and fun nature of the music creation process. The focus on 'genuine happiness to create music' and 'fun' aligns strongly with the Happy - Fun sub-vibe. While the song appears in a 'Chill' playlist, the emotional context described is specifically about joyful, fun energy rather than relaxed or mellow feelings. The collaborative nature between Selena Gomez and Gracie Abrams, combined with the commenter's enthusiasm about the authentic, unprofessional setup creating genuine joy, points to a fun, feel-good vibe rather than a purely chill one.",
+      "ananki_reasoning": "The commenter emphasizes 'genuine happiness to create music' and describes the song as 'authentic and fun.' The focus is on the joyful, unpretentious nature of the creation process and the fun energy conveyed. While this appears in a 'Chill Songs' playlist, the emotional context provided centers on fun and happiness rather than relaxation. The casual, one-room setup and celebration of authentic joy aligns best with Happy - Fun rather than any Chill sub-vibe.",
       "ananki_confidence": 0.85
     },
     {
@@ -3418,8 +3420,8 @@
       "comment_score": 43557,
       "playlist_id": "PLgzTt0k8mXzEpH7-dOCHqRZOsakqXmzmG",
       "ananki_subvibe": "Dark - Witchy",
-      "ananki_reasoning": "The commenter explicitly identifies as a 'swamp witch' and praises the song's authenticity in terms that evoke mystical, timeless quality ('400 year old,' '360 years'). The theatrical, magical framing combined with the emphasis on authenticity strongly suggests they're connecting with dark, witchy vibes. Lola Young's 'Messy' has raw, emotional intensity that would resonate with someone seeking authentic, darker aesthetic music. The swamp witch persona is a direct indicator of Dark - Witchy appeal.",
-      "ananki_confidence": 0.95
+      "ananki_reasoning": "The commenter explicitly identifies as a '400 year old swamp witch' and praises the song as 'the most authentic music' they've heard in centuries. This direct self-identification with witchcraft, combined with the mystical/supernatural framing and the emphasis on authenticity, strongly suggests they're responding to witchy, dark, or mystical qualities in the music. The 'swamp witch' persona and the temporal framing (360 years) creates a distinctly witchy aesthetic. While the song appears in a 'Chill' playlist, the emotional resonance the commenter expresses is clearly tied to dark, witchy themes rather than general relaxation.",
+      "ananki_confidence": 0.85
     },
     {
       "artist": "Chris Brown",
@@ -3433,8 +3435,8 @@
       "comment_score": 43441,
       "playlist_id": "PLgzTt0k8mXzEpH7-dOCHqRZOsakqXmzmG",
       "ananki_subvibe": "Chill - Serene",
-      "ananki_reasoning": "The comment is a prayer/blessing rather than a direct emotional description of the song, but it appears in a 'Top Chill Songs' playlist context. The prayerful, peaceful nature of the blessing ('keep the person reading this alive, safe, healthy and financially blessed') suggests a calm, tranquil atmosphere. Chris Brown's 'Residuals' is a smooth R&B track that fits within chill music. Given the playlist title emphasizes 'Chill' and the blessing has a peaceful, serene quality to it, 'Chill - Serene' best captures the spiritual calmness and tranquil vibe being conveyed.",
-      "ananki_confidence": 0.7
+      "ananki_reasoning": "The comment is a prayer/blessing that evokes feelings of peace, safety, and spiritual calm. While the comment itself isn't directly describing the music, it's posted in a 'Top Chill Songs' playlist context, and the blessing's tone suggests a serene, peaceful atmosphere. Chris Brown's 'Residuals' is an R&B track with smooth, laid-back vibes that align with the tranquil, contemplative mood of offering blessings. The combination of the chill playlist context and the peaceful prayer sentiment points to a serene listening experience.",
+      "ananki_confidence": 0.75
     },
     {
       "artist": "Tyla",
@@ -3447,9 +3449,9 @@
       "comment_text": "This song was released at 8 Nov and today is 8 Nov happy 1 year anniversary (A Grammy nominee)",
       "comment_score": 151,
       "playlist_id": "PLgzTt0k8mXzEpH7-dOCHqRZOsakqXmzmG",
-      "ananki_subvibe": "Party - Dance",
-      "ananki_reasoning": "Tyla's 'PUSH 2 START' is an upbeat, rhythmic amapiano/pop track with a danceable groove. The song was posted in a 'Top Chill Songs' playlist, but the track itself is known for its energetic, infectious beat that encourages movement and dancing. The comment mentions it being a Grammy nominee, which aligns with its popularity as a party/dance track. While it appeared in a chill playlist, the song's actual vibe is more aligned with dance/party energy given its production style and Tyla's characteristic sound that blends R&B with dance elements.",
-      "ananki_confidence": 0.85
+      "ananki_subvibe": "Chill - Beach/Summer",
+      "ananki_reasoning": "Tyla's 'PUSH 2 START' is an amapiano-influenced track with smooth, laid-back production and sensual vibes that fits well within a 'Top Chill Songs' playlist context. The song has a warm, groovy quality characteristic of Tyla's South African-inspired sound, which aligns with relaxed summer/beach atmospheres. While the human's comment focuses on the anniversary aspect rather than specific emotional descriptors, the playlist context ('Top Chill Songs') combined with Tyla's signature style—which blends rhythmic, body-moving elements with smooth, easygoing production—best matches the Beach/Summer chill sub-vibe rather than more introspective or ambient chill categories.",
+      "ananki_confidence": 0.75
     },
     {
       "artist": "Sabrina Carpenter",
@@ -3463,8 +3465,8 @@
       "comment_score": 0,
       "playlist_id": "PLgzTt0k8mXzEpH7-dOCHqRZOsakqXmzmG",
       "ananki_subvibe": "Chill - Gentle",
-      "ananki_reasoning": "The context describes this as part of a 'best chill songs' collection meant to help listeners 'unwind with the smoothest chill tracks.' However, Sabrina Carpenter's 'Taste' is actually an upbeat pop song with playful, somewhat sassy lyrics about romantic rivalry - not typically what would be considered a 'chill' track in the ambient/lofi sense. Given the human's explicit framing of it as a 'chill' song for unwinding, and needing to choose from the available options, 'Chill - Gentle' is the closest match as it's the most general chill category that could accommodate a softer pop interpretation. The confidence is lower because there's a disconnect between the song's actual energetic pop nature and how it's being categorized by the curator.",
-      "ananki_confidence": 0.6
+      "ananki_reasoning": "While the context describes this as part of a 'chill songs' playlist meant to 'unwind with the smoothest chill tracks,' there's a significant mismatch with the actual song. Sabrina Carpenter's 'Taste' is an upbeat, sassy pop song with assertive energy - not typically what would be considered a chill track. However, I must respect the human's emotional framing and playlist categorization. Given they've explicitly placed it in a chill context and described it as 'smooth,' the most appropriate sub-vibe from the available options would be 'Chill - Gentle' as it represents the softer, more accessible end of chill music rather than meditative, ambient, or lofi varieties. The confidence is low because there's a clear disconnect between the song's actual energy and the described context.",
+      "ananki_confidence": 0.55
     },
     {
       "artist": "Gracie Abrams",
@@ -3477,9 +3479,9 @@
       "comment_text": "love the song but this video makes me so uncomfortable 😭😭😭",
       "comment_score": 12873,
       "playlist_id": "PLgzTt0k8mXzEpH7-dOCHqRZOsakqXmzmG",
-      "ananki_subvibe": "Sad - Heartbreak",
-      "ananki_reasoning": "Gracie Abrams' 'That's So True' is a raw, emotional song about processing a breakup and the painful realization about an ex's new relationship. The song deals with themes of romantic betrayal, comparison, and the sting of being replaced. The comment itself ('love the song') confirms emotional connection to the track despite discomfort with the video. The song's lyrical content about relationship aftermath and emotional wounds clearly maps to heartbreak rather than other sad categories or dark jealousy vibes, as it focuses on the personal pain and sadness of lost love rather than anger or resentment.",
-      "ananki_confidence": 0.95
+      "ananki_subvibe": "Chill - Restless",
+      "ananki_reasoning": "The human loves the song but expresses discomfort with the video, suggesting an emotional tension or unease. Gracie Abrams' 'That's So True' is a contemporary pop track with introspective lyrics about relationship dynamics and self-awareness. The song appears in a 'Top Chill Songs' playlist, indicating it has chill qualities, but the commenter's reaction of being 'so uncomfortable' suggests an underlying restlessness or unease rather than pure relaxation. The 'Chill - Restless' sub-vibe captures this paradox of being in a chill context while feeling emotionally unsettled, which aligns with both the playlist categorization and the emotional discomfort expressed.",
+      "ananki_confidence": 0.75
     },
     {
       "artist": "LISA",
@@ -3493,8 +3495,8 @@
       "comment_score": 45620,
       "playlist_id": "PLgzTt0k8mXzEpH7-dOCHqRZOsakqXmzmG",
       "ananki_subvibe": "Romantic - First Love",
-      "ananki_reasoning": "The comment describes Lisa appearing 'truly madly deeply in love' with a smile that suggests genuine, overwhelming romantic feelings. The phrase 'truly madly deeply' evokes the intensity and purity of first love or new love, and the observation about never seeing her 'like this before' reinforces the fresh, transformative nature of the emotion. The song 'Moonlit Floor (Kiss Me)' with its romantic title combined with this context of someone experiencing what appears to be profound romantic feelings fits the 'First Love' sub-vibe perfectly, capturing that specific quality of being swept away by new romantic emotion.",
-      "ananki_confidence": 0.9
+      "ananki_reasoning": "The commenter describes Lisa appearing 'truly madly deeply in love' with a genuine, heartfelt smile. This expression of pure, overwhelming romantic feelings strongly suggests the innocent intensity of first love. The song 'Moonlit Floor (Kiss Me)' combined with the observation of someone appearing deeply enamored creates a clear romantic context. While other romantic sub-vibes could fit, the phrase 'truly madly deeply' and the focus on the authentic, overwhelming nature of the emotion points specifically to the all-consuming feeling characteristic of first love rather than more mature romantic stages.",
+      "ananki_confidence": 0.85
     },
     {
       "artist": "HUGEL",
@@ -3508,7 +3510,7 @@
       "comment_score": 101,
       "playlist_id": "PLNjVKDn-Jmf6MJ56EPkd0qtYjml3nkQ4X",
       "ananki_subvibe": "Happy - Childlike",
-      "ananki_reasoning": "The comment explicitly describes a 3-year-old daughter who loves the song so much she requests it repeatedly, and emphasizes the 'impossible to describe feeling and good mood' it conveys. The context of a young child's joyful, repetitive engagement with the music, combined with the parent's observation of the uplifting mood it creates, strongly points to a childlike happiness and innocent joy. The song appears in a lounge/bar/cafe playlist context but the emotional response described is clearly centered on pure, childlike delight rather than sophisticated lounge vibes or other happy sub-categories.",
+      "ananki_reasoning": "The commenter explicitly describes their 3-year-old daughter's enthusiastic, repetitive listening behavior - asking for the song to be played 'over and over again' with joy. The parent describes an 'impossible to describe' feeling of good mood the song conveys. This pure, innocent joy and the specific mention of a young child's genuine delight perfectly captures a childlike happiness. The song appears in a lounge/cafe playlist context but the emotional expression is distinctly about uncomplicated, pure joy that resonates especially with a child, making 'Happy - Childlike' the most appropriate sub-vibe.",
       "ananki_confidence": 0.95
     },
     {
@@ -3523,7 +3525,7 @@
       "comment_score": 1027,
       "playlist_id": "PLNjVKDn-Jmf6MJ56EPkd0qtYjml3nkQ4X",
       "ananki_subvibe": "Sad - Melancholic",
-      "ananki_reasoning": "The human explicitly describes experiencing 'happiness and sadness at the same time' which is the quintessential definition of melancholy - a bittersweet emotional state that blends contentment with wistfulness. The context of 'Lounge Music Bar & Cafe Playlist' suggests a sophisticated, reflective listening environment where this complex emotional blend would resonate. The word 'Beautiful' indicates this isn't pure sadness or grief, but rather an appreciation of the emotional complexity. Lost Frequencies' 'Black Friday (pretty like the sun)' is known for its bittersweet, contemplative quality that fits perfectly within the melancholic sub-vibe rather than pure sadness or pure happiness categories.",
+      "ananki_reasoning": "The user describes experiencing 'happiness and sadness at the same time' which is the quintessential definition of melancholy - a bittersweet emotional state that blends wistful sadness with beauty. The context of a lounge/bar/cafe playlist and the descriptor 'Beautiful ✨' reinforces this sophisticated, reflective emotional complexity. Lost Frequencies' 'Black Friday (pretty like the sun)' is known for its melodic, downtempo electronic sound that carries this exact bittersweet quality - uplifting yet tinged with sadness. While 'Chill - Gentle' or 'Chill - Quiet Reflection' could fit the lounge setting, the explicit mention of the simultaneous happiness/sadness feeling points directly to melancholy as the primary emotional sub-vibe.",
       "ananki_confidence": 0.95
     },
     {
@@ -3538,8 +3540,8 @@
       "comment_score": 0,
       "playlist_id": "PLNjVKDn-Jmf6MJ56EPkd0qtYjml3nkQ4X",
       "ananki_subvibe": "Chill - Jazz",
-      "ananki_reasoning": "The context explicitly describes this as part of a 'Lounge Music Bar & Cafe Playlist' with 'lounge hits and classics' and 'best chill music playlist.' Lounge music is traditionally associated with jazz-influenced instrumental or vocal music designed for relaxed bar and cafe settings. The song by Habló Pablo fits within this curated lounge/chill aesthetic, and among the available sub-vibes, 'Chill - Jazz' best captures the sophisticated, laid-back lounge bar atmosphere that this playlist is designed to evoke.",
-      "ananki_confidence": 0.85
+      "ananki_reasoning": "The context explicitly describes this as 'Lounge Music' for a 'Bar & Cafe Playlist' with 'lounge hits and classics' and 'chill lounge playlist'. Lounge music is traditionally jazz-influenced instrumental or vocal music designed for relaxed bar and cafe atmospheres. The combination of 'lounge' and 'chill' keywords, along with the bar/cafe setting, points directly to the jazz-inflected chill vibe rather than other chill categories like lofi, ambient, or morning coffee.",
+      "ananki_confidence": 0.9
     },
     {
       "artist": "TWOPILOTS",
@@ -3552,9 +3554,9 @@
       "comment_text": "Updated weekly, lounge hits and classics! best chill music playlist - best lounge songs - chill lounge playlist - best chill vibes - fall ...",
       "comment_score": 0,
       "playlist_id": "PLNjVKDn-Jmf6MJ56EPkd0qtYjml3nkQ4X",
-      "ananki_subvibe": "Chill - Lounge",
-      "ananki_reasoning": "The context explicitly describes this as 'Lounge Music' for 'Bar & Cafe Playlist' with 'lounge hits and classics' and 'chill lounge playlist'. However, 'Chill - Lounge' is not in the available sub-vibes list. Given the bar/cafe lounge context with 'best chill music playlist' and 'best chill vibes', and that lounge music is typically associated with evening social settings in bars and cafes, the closest match is 'Chill - Evening' which captures the relaxed, sophisticated atmosphere of lounge music played during evening hours at bars and cafes.",
-      "ananki_confidence": 0.75
+      "ananki_subvibe": "Chill - Evening",
+      "ananki_reasoning": "The context explicitly describes this as 'lounge music' for 'bar & cafe' settings with 'chill music' and 'chill lounge playlist' tags. While several chill sub-vibes could apply, 'Chill - Evening' best captures the sophisticated lounge/bar atmosphere typically associated with evening social settings where people relax with drinks (🍹 cocktail emoji reinforces this). The lounge genre is characterized by smooth, mellow sounds perfect for unwinding in the evening at bars and cafes, rather than morning coffee, ambient meditation, or other more specific chill contexts.",
+      "ananki_confidence": 0.85
     },
     {
       "artist": "TWOPILOTS",
@@ -3567,9 +3569,9 @@
       "comment_text": "I can express the joy this song gives me🥹❤️‍🩹",
       "comment_score": 11,
       "playlist_id": "PLNjVKDn-Jmf6MJ56EPkd0qtYjml3nkQ4X",
-      "ananki_subvibe": "Chill - Lounge",
-      "ananki_reasoning": "The post title explicitly identifies this as 'Lounge Music 🍹Bar & Cafe Playlist,' which directly corresponds to a lounge atmosphere. The commenter expresses that the song gives them joy with healing heart imagery (❤️‍🩹), suggesting a warm, comfortable emotional response typical of lounge music settings. The combination of the bar/cafe context and the joyful emotional expression points to a relaxed, sophisticated atmosphere where one can unwind and feel uplifted.",
-      "ananki_confidence": 0.95
+      "ananki_subvibe": "Chill - Jazz",
+      "ananki_reasoning": "The context is from a 'Lounge Music Bar & Cafe Playlist' and the commenter expresses joy with emotional vulnerability ('I can express the joy this song gives me🥹❤️‍🩹'). The song 'Riptide' by TWOPILOTS in a lounge/bar/cafe context strongly suggests a jazz-influenced chill vibe designed for relaxed social settings. The emotional expression indicates a gentle, feel-good quality that aligns with the sophisticated, laid-back atmosphere of lounge jazz music. While other chill categories could apply, the explicit 'Lounge Music Bar & Cafe' framing makes 'Chill - Jazz' the most contextually appropriate choice.",
+      "ananki_confidence": 0.85
     },
     {
       "artist": "DOLCE VITA",
@@ -3583,7 +3585,7 @@
       "comment_score": 290,
       "playlist_id": "PLNjVKDn-Jmf6MJ56EPkd0qtYjml3nkQ4X",
       "ananki_subvibe": "Happy - Feel Good",
-      "ananki_reasoning": "The commenter explicitly states they 'Always love a great feel good family movie' and describes the song as 'beautiful,' indicating positive, uplifting emotions. The song 'Volare (Nel Blu Dipinto Di Blu)' is a classic Italian pop song known for its joyful, carefree mood, and the context of discovering it through a feel-good family movie reinforces the happy, pleasant emotional experience. The lounge/cafe playlist context and the connection to 'La Dolce Villa' (referencing the sweet life) all point to an uncomplicated, enjoyable listening experience that fits the 'Feel Good' category perfectly.",
+      "ananki_reasoning": "The commenter explicitly describes discovering this song through a 'feel good family movie' (La Dolce Villa 2025) and calls it 'beautiful.' The song 'Volare' is a classic Italian feel-good anthem about joy and flying, and the context of lounge/bar/cafe music combined with the movie reference strongly indicates a uplifting, pleasant emotional experience. The commenter's enthusiastic tone ('Always love a great feel good family movie!') and positive reaction to the song clearly aligns with a feel-good emotional state rather than specific moments like celebration, carefree energy, or other happy sub-categories.",
       "ananki_confidence": 0.95
     },
     {
@@ -3597,9 +3599,9 @@
       "comment_text": "Portuguese is the most beautiful language. Makes me proud to be a Brazilian",
       "comment_score": 137,
       "playlist_id": "PLNjVKDn-Jmf6MJ56EPkd0qtYjml3nkQ4X",
-      "ananki_subvibe": "Chill - Lounge",
-      "ananki_reasoning": "The post title explicitly identifies this as 'Lounge Music 🍹Bar & Cafe Playlist,' which directly indicates a lounge/bar atmosphere. The song is an Afro House track that would fit a relaxed bar or cafe setting. The commenter's appreciation for Portuguese language suggests the track creates a sophisticated, culturally-rich atmosphere typical of lounge environments. However, 'Chill - Lounge' is not in the available list. Given the context, the best match is 'Party - Club' since Afro House is a dance genre typically played in club/lounge settings, though the 'Bar & Cafe' framing suggests a more relaxed vibe. Actually, reviewing the list again, 'Chill - Evening' best captures the relaxed bar/cafe lounge atmosphere described in the title.",
-      "ananki_confidence": 0.75
+      "ananki_subvibe": "Chill - Beach/Summer",
+      "ananki_reasoning": "This song is recommended in a 'Lounge Music Bar & Cafe Playlist' context, and the commenter expresses pride in Brazilian Portuguese language. The song is an Afro House track, which is a danceable yet laid-back genre often associated with beach culture, tropical vibes, and summer atmospheres - particularly fitting for Brazilian musical culture. The lounge/bar/cafe context combined with the Brazilian pride and the Afro House genre strongly suggests a relaxed, warm, beach-oriented vibe rather than high-energy party or purely ambient chill.",
+      "ananki_confidence": 0.85
     },
     {
       "artist": "TWOPILOTS",
@@ -3613,8 +3615,8 @@
       "comment_score": 0,
       "playlist_id": "PLNjVKDn-Jmf6MJ56EPkd0qtYjml3nkQ4X",
       "ananki_subvibe": "Chill - Lofi",
-      "ananki_reasoning": "The context explicitly describes this as 'Lounge Music' for a 'Bar & Cafe Playlist' with tags like 'best chill music playlist', 'lounge songs', and 'chill lounge playlist'. The song is a cover of 'Can't Help Falling In Love' by TWOPILOTS, which aligns with the lounge/chill aesthetic mentioned. While 'Chill - Jazz' could be considered, the repeated emphasis on 'lounge' and 'chill vibes' combined with this being a modern cover/remix points more toward the lofi aesthetic, which is commonly associated with cafe/bar background music and modern chill playlists. The lounge context suggests relaxed background listening rather than active jazz appreciation.",
-      "ananki_confidence": 0.75
+      "ananki_reasoning": "The context explicitly describes this as 'lounge music' for a 'Bar & Cafe Playlist' with 'best chill music playlist' and 'chill lounge playlist' tags. TWOPILOTS' cover of 'Can't Help Falling In Love With You' is a downtempo, electronic lounge arrangement that fits perfectly into the lofi/chillout aesthetic commonly used in cafes and lounges. While 'Chill - Jazz' could also apply to lounge music, the emphasis on 'chill vibes' and modern playlist context suggests the more contemporary lofi interpretation, which encompasses the electronic lounge style that TWOPILOTS is known for.",
+      "ananki_confidence": 0.85
     },
     {
       "artist": "Daniel Santoro",
@@ -3627,8 +3629,8 @@
       "comment_text": "Updated weekly, lounge hits and classics! best chill music playlist - best lounge songs - chill lounge playlist - best chill vibes - fall ...",
       "comment_score": 0,
       "playlist_id": "PLNjVKDn-Jmf6MJ56EPkd0qtYjml3nkQ4X",
-      "ananki_subvibe": "Chill - Lounge",
-      "ananki_reasoning": "The context explicitly describes this as 'Lounge Music' for 'Bar & Cafe Playlist' with references to 'lounge hits and classics,' 'best lounge songs,' and 'chill lounge playlist.' This is a clear lounge music context designed for relaxed bar and cafe environments. However, I notice 'Chill - Lounge' is not in the available sub-vibe list. Given the available options and the context mentioning 'best chill music playlist,' 'best chill vibes,' and the cafe/bar setting, the closest match would be 'Chill - Evening' as it captures the bar/lounge atmosphere typically associated with evening relaxation in social settings.",
+      "ananki_subvibe": "Chill - Lofi",
+      "ananki_reasoning": "The context explicitly describes this as 'Lounge Music' for 'Bar & Cafe Playlist' with tags like 'best chill music playlist', 'lounge songs', 'chill lounge playlist', and 'best chill vibes'. While there's a specific 'Chill - Jazz' option that could fit lounge music, the repeated emphasis on 'chill' and the casual cafe/bar setting, combined with the playlist nature of the recommendation, most strongly aligns with the 'Chill - Lofi' vibe which captures that laid-back, background music aesthetic typical of modern lounge and cafe playlists. Lofi has become synonymous with relaxed cafe/study/lounge environments.",
       "ananki_confidence": 0.75
     },
     {
@@ -3642,8 +3644,8 @@
       "comment_text": "Updated weekly, lounge hits and classics! best chill music playlist - best lounge songs - chill lounge playlist - best chill vibes - fall ...",
       "comment_score": 0,
       "playlist_id": "PLNjVKDn-Jmf6MJ56EPkd0qtYjml3nkQ4X",
-      "ananki_subvibe": "Chill - Lofi",
-      "ananki_reasoning": "The context explicitly describes this as 'Lounge Music' for 'Bar & Cafe Playlist' with tags like 'best chill music playlist,' 'lounge songs,' and 'chill lounge playlist.' While the actual song is a David Guetta remix which is typically more upbeat/dance-oriented, the human's framing is clearly positioning it within a lounge/chill context for background listening in cafes and bars. The repeated use of 'chill' and 'lounge' combined with the cafe/bar setting best maps to 'Chill - Lofi' as it represents relaxed, atmospheric background music suitable for casual social spaces. This is preferred over other chill categories because lofi commonly serves as modern lounge/cafe background music.",
+      "ananki_subvibe": "Chill - Lounge",
+      "ananki_reasoning": "The context explicitly describes this as 'Lounge Music' for a 'Bar & Cafe Playlist' with 'lounge hits and classics' and 'best lounge songs.' However, 'Chill - Lounge' is not in the available sub-vibe list. Given that the post emphasizes 'best chill music playlist,' 'best chill vibes,' and the cafe/bar lounge atmosphere, the closest match would be 'Chill - Evening' which captures the sophisticated, relaxed social atmosphere of lounge music typically played in bars and cafes during evening hours. The David Guetta remix of 'Love Tonight' by Shouse is an upbeat house track that fits the modern lounge/cafe vibe where chill meets danceable energy.",
       "ananki_confidence": 0.75
     },
     {
@@ -3657,9 +3659,9 @@
       "comment_text": "Updated weekly, lounge hits and classics! best chill music playlist - best lounge songs - chill lounge playlist - best chill vibes - fall ...",
       "comment_score": 0,
       "playlist_id": "PLNjVKDn-Jmf6MJ56EPkd0qtYjml3nkQ4X",
-      "ananki_subvibe": "Chill - Evening",
-      "ananki_reasoning": "The context explicitly describes this as 'Lounge Music 🍹Bar & Cafe Playlist' with emphasis on 'best chill music playlist,' 'lounge songs,' and 'best chill vibes.' The bar/cafe setting with cocktail emoji suggests a relaxed evening social atmosphere. While 'Chill - Jazz' could also apply to lounge music, the broader 'evening' context with bar/cafe imagery points more specifically to evening lounging. The song 'Shine Like Stars' fits the sophisticated, relaxed ambiance of evening lounge settings.",
-      "ananki_confidence": 0.85
+      "ananki_subvibe": "Chill - Lounge",
+      "ananki_reasoning": "The context explicitly describes this as 'Lounge Music' for 'Bar & Cafe Playlist' with terms like 'lounge hits,' 'best lounge songs,' and 'chill lounge playlist.' This is clearly lounge music intended for relaxed bar and cafe environments. However, I notice 'Chill - Lounge' is not in the available sub-vibes list. Given the alternatives, this fits best with 'Chill - Gentle' as lounge music is characterized by smooth, gentle, unobtrusive background music perfect for socializing in cafes and bars. The mention of 'best chill music' and 'best chill vibes' reinforces the gentle, relaxed atmosphere.",
+      "ananki_confidence": 0.75
     },
     {
       "artist": "ERIICE",
@@ -3672,9 +3674,189 @@
       "comment_text": "Updated weekly, lounge hits and classics! best chill music playlist - best lounge songs - chill lounge playlist - best chill vibes - fall ...",
       "comment_score": 0,
       "playlist_id": "PLNjVKDn-Jmf6MJ56EPkd0qtYjml3nkQ4X",
-      "ananki_subvibe": "Chill - Lofi",
-      "ananki_reasoning": "The context explicitly describes this as 'lounge hits and classics' and 'best chill music playlist' for a 'Bar & Cafe Playlist' that's updated weekly. The mention of 'chill lounge playlist' and 'best chill vibes' points to a relaxed, background atmosphere suitable for social spaces. While 'Chill - Jazz' could also fit lounge music, the broader 'lofi' descriptor better captures the modern lounge/cafe playlist aesthetic that blends various chill genres. The cafe/bar context suggests music meant to create an easy-going atmosphere rather than pure jazz focus.",
+      "ananki_subvibe": "Chill - Jazz",
+      "ananki_reasoning": "The context explicitly describes this as 'Lounge Music' for a 'Bar & Cafe Playlist' with descriptors like 'lounge hits,' 'chill music,' and 'best lounge songs.' Lounge music is traditionally rooted in jazz traditions and is designed for relaxed bar/cafe environments. While 'Chill - Lofi' or 'Chill - Morning Coffee' could be considered, the emphasis on 'lounge' and 'bar' settings points more specifically to the jazz-influenced lounge aesthetic that's distinct from bedroom lofi or coffee shop ambiance. The repeated use of 'lounge' as the primary descriptor makes this a jazz-centric chill experience.",
+      "ananki_confidence": 0.85
+    },
+    {
+      "artist": "Regard",
+      "song": "Ride It",
+      "spotify_id": "2tnVG71enUj33Ic2nFN6kZ",
+      "spotify_uri": "spotify:track:2tnVG71enUj33Ic2nFN6kZ",
+      "source_url": "https://youtube.com/watch?v=ucVUEmjKsko",
+      "source": "youtube",
+      "post_title": "Lounge Music 🍹Bar &amp; Cafe Playlist",
+      "comment_text": "Does anyone feel like this song has been out for like 7 years already and it is like one of those songs that you go to YouTube to reminisce but in reality it’s current. It’s weird.",
+      "comment_score": 9718,
+      "playlist_id": "PLNjVKDn-Jmf6MJ56EPkd0qtYjml3nkQ4X",
+      "ananki_subvibe": "Sad - Nostalgic Simpler Times",
+      "ananki_reasoning": "The commenter describes a specific nostalgic paradox - feeling like the song has been around for 7 years and associating it with reminiscing on YouTube, even though it's actually current. This creates a sense of false nostalgia or temporal displacement that evokes memories of 'simpler times' even for a contemporary song. The context of it being in a 'Lounge Music Bar & Cafe Playlist' combined with this nostalgic feeling points to a bittersweet longing. 'Ride It' by Regard is a deep house track with a nostalgic vocal sample, which reinforces this temporal confusion the listener experiences - it sounds like it could be from another era, triggering nostalgic feelings for a time that wasn't actually experienced with this song.",
+      "ananki_confidence": 0.85
+    },
+    {
+      "artist": "TWOPILOTS",
+      "song": "Get It On Tonite",
+      "spotify_id": "7FvNDS4H2wSCpgyAgd71iW",
+      "spotify_uri": "spotify:track:7FvNDS4H2wSCpgyAgd71iW",
+      "source_url": "https://youtube.com/watch?v=9Gxc4xR5RtE",
+      "source": "youtube",
+      "post_title": "Lounge Music 🍹Bar &amp; Cafe Playlist",
+      "comment_text": "Updated weekly, lounge hits and classics! best chill music playlist - best lounge songs - chill lounge playlist - best chill vibes - fall ...",
+      "comment_score": 0,
+      "playlist_id": "PLNjVKDn-Jmf6MJ56EPkd0qtYjml3nkQ4X",
+      "ananki_subvibe": "Chill - Jazz",
+      "ananki_reasoning": "The context explicitly describes this as 'Lounge Music' for 'Bar & Cafe Playlist' with 'lounge hits and classics' and 'chill lounge playlist'. Lounge music is traditionally a jazz-influenced genre designed for relaxed social settings like bars and cafes. The combination of 'lounge' repeatedly mentioned with 'chill music' and 'chill vibes' points directly to the sophisticated, laid-back atmosphere that characterizes jazz lounge music. While other chill sub-vibes could apply, the specific lounge/bar/cafe context is most authentically captured by Chill - Jazz.",
+      "ananki_confidence": 0.85
+    },
+    {
+      "artist": "TWOPILOTS",
+      "song": "Waiting For Tonight",
+      "spotify_id": "6eKxQoGNNxvHy8R2W0Pmlg",
+      "spotify_uri": "spotify:track:6eKxQoGNNxvHy8R2W0Pmlg",
+      "source_url": "https://youtube.com/watch?v=VHnp0QYoc0s",
+      "source": "youtube",
+      "post_title": "Lounge Music 🍹Bar &amp; Cafe Playlist",
+      "comment_text": "Updated weekly, lounge hits and classics! best chill music playlist - best lounge songs - chill lounge playlist - best chill vibes - fall ...",
+      "comment_score": 0,
+      "playlist_id": "PLNjVKDn-Jmf6MJ56EPkd0qtYjml3nkQ4X",
+      "ananki_subvibe": "Chill - Lounge",
+      "ananki_reasoning": "The context explicitly describes this as 'Lounge Music' for 'Bar & Cafe Playlist' with 'lounge hits and classics' and 'best lounge songs.' However, reviewing the available sub-vibes list, there is no 'Chill - Lounge' option. The closest matches from the available options would be 'Chill - Evening' (which captures the bar/cafe evening atmosphere) or 'Chill - Jazz' (which is commonly associated with lounge music). Given the bar and cafe context, the sophisticated yet relaxed atmosphere, and the evening social setting typically associated with lounge music, 'Chill - Evening' best captures the intended vibe of waiting for tonight in a lounge setting.",
       "ananki_confidence": 0.75
+    },
+    {
+      "artist": "Toby Rose",
+      "song": "Careless Whisper",
+      "spotify_id": "4wyIAKiAc8Twh1jgzylZWo",
+      "spotify_uri": "spotify:track:4wyIAKiAc8Twh1jgzylZWo",
+      "source_url": "https://youtube.com/watch?v=39cFFK9mHD4",
+      "source": "youtube",
+      "post_title": "Lounge Music 🍹Bar &amp; Cafe Playlist",
+      "comment_text": "Updated weekly, lounge hits and classics! best chill music playlist - best lounge songs - chill lounge playlist - best chill vibes - fall ...",
+      "comment_score": 0,
+      "playlist_id": "PLNjVKDn-Jmf6MJ56EPkd0qtYjml3nkQ4X",
+      "ananki_subvibe": "Chill - Jazz",
+      "ananki_reasoning": "The context explicitly describes this as 'Lounge Music' for 'Bar & Cafe Playlist' with 'lounge hits and classics' and 'best chill music playlist'. The song is Toby Rose's cover of 'Careless Whisper', which is a smooth jazz/lounge standard frequently featured in sophisticated bar and cafe settings. The combination of lounge music context and this particular jazz-oriented song makes 'Chill - Jazz' the most appropriate sub-vibe, as lounge music is characterized by its jazzy, smooth, sophisticated atmosphere perfect for bars and cafes.",
+      "ananki_confidence": 0.95
+    },
+    {
+      "artist": "Emory Quinn",
+      "song": "The Road Company (Mount Vernon Sessions)",
+      "spotify_id": "5ZGWjOSP2VkdvR7zNRIOBj",
+      "spotify_uri": "spotify:track:5ZGWjOSP2VkdvR7zNRIOBj",
+      "source_url": "https://youtube.com/watch?v=GIVa24B8hzI",
+      "source": "youtube",
+      "post_title": "Lounge Music 🍹Bar &amp; Cafe Playlist",
+      "comment_text": "Updated weekly, lounge hits and classics! best chill music playlist - best lounge songs - chill lounge playlist - best chill vibes - fall ...",
+      "comment_score": 0,
+      "playlist_id": "PLNjVKDn-Jmf6MJ56EPkd0qtYjml3nkQ4X",
+      "ananki_subvibe": "Chill - Lounge",
+      "ananki_reasoning": "The context explicitly describes this as 'Lounge Music' for 'Bar & Cafe Playlist' with 'lounge hits and classics' and 'best lounge songs.' However, 'Chill - Lounge' is not in the available sub-vibe list. Given the cafe/bar setting and description of 'best chill music playlist,' 'best chill vibes,' this most closely aligns with 'Chill - Morning Coffee' which captures the cafe/relaxed social atmosphere, or 'Chill - Jazz' which is traditional lounge music territory. Since lounge music historically has strong jazz influences and the bar/cafe context suggests sophisticated background music rather than specifically morning timing, 'Chill - Jazz' is the best match for this lounge playlist context.",
+      "ananki_confidence": 0.75
+    },
+    {
+      "artist": "Carston",
+      "song": "Another Day In Paradise",
+      "spotify_id": "2ixVW5NIC2byHkjoE2P5GT",
+      "spotify_uri": "spotify:track:2ixVW5NIC2byHkjoE2P5GT",
+      "source_url": "https://youtube.com/watch?v=Fss9P2yCI0k",
+      "source": "youtube",
+      "post_title": "Lounge Music 🍹Bar &amp; Cafe Playlist",
+      "comment_text": "Updated weekly, lounge hits and classics! best chill music playlist - best lounge songs - chill lounge playlist - best chill vibes - fall ...",
+      "comment_score": 0,
+      "playlist_id": "PLNjVKDn-Jmf6MJ56EPkd0qtYjml3nkQ4X",
+      "ananki_subvibe": "Chill - Evening",
+      "ananki_reasoning": "The context explicitly describes this as 'lounge music' for a 'Bar & Cafe Playlist' with 'best chill music' and 'chill lounge playlist.' Lounge music is quintessentially associated with relaxed bar and cafe environments, typically enjoyed during evening social hours. The combination of 'bar,' 'cafe,' and 'lounge' strongly suggests an evening atmosphere where people unwind after work or socialize in a sophisticated, relaxed setting. While 'Chill - Jazz' could be considered, the broader lounge context and bar/cafe setting point more specifically to the evening time period and ambiance.",
+      "ananki_confidence": 0.85
+    },
+    {
+      "artist": "Lost Frequencies",
+      "song": "Are You With Me",
+      "spotify_id": "4255amV4enzl28KAn16rUO",
+      "spotify_uri": "spotify:track:4255amV4enzl28KAn16rUO",
+      "source_url": "https://youtube.com/watch?v=VjHMDlAPMUw",
+      "source": "youtube",
+      "post_title": "Lounge Music 🍹Bar &amp; Cafe Playlist",
+      "comment_text": "Time flies soo fast😢. I can't believe it's been almost 11 years since the song was realesed. What wonderful memories! Music is time machine and one of the best things that was created by human beings",
+      "comment_score": 199,
+      "playlist_id": "PLNjVKDn-Jmf6MJ56EPkd0qtYjml3nkQ4X",
+      "ananki_subvibe": "Sad - Nostalgic Simpler Times",
+      "ananki_reasoning": "The commenter explicitly expresses nostalgia about time passing ('Time flies soo fast😢'), reflects on wonderful memories from 11 years ago when the song was released, and describes music as a 'time machine.' The emotional tone combines wistfulness about the past with appreciation for how music evokes those memories. While 'Are You With Me' by Lost Frequencies is an upbeat tropical house track often played in lounge/cafe settings, the human's emotional response is clearly nostalgic rather than purely chill or upbeat. The bittersweet reflection on time passing and cherished memories aligns perfectly with 'Nostalgic Simpler Times' rather than other nostalgic categories like childhood or teen years, as this seems to be about a specific life period marked by this song's release.",
+      "ananki_confidence": 0.95
+    },
+    {
+      "artist": "Vincent Mason",
+      "song": "Damned If I Do",
+      "spotify_id": "7mxctiYgZD9JtvEZBJWoAW",
+      "spotify_uri": "spotify:track:7mxctiYgZD9JtvEZBJWoAW",
+      "source_url": "https://youtube.com/watch?v=6QooXjR4GVM",
+      "source": "youtube",
+      "post_title": "Best Chill Country Songs of All Time - Most Popular Chill Country Music Playlist",
+      "comment_text": "Best Chill Country Songs of All Time - Most Popular Chill Country Music Playlist Find our playlist with these keywords: If you liked ...",
+      "comment_score": 0,
+      "playlist_id": "PLxvodScTx2RtRNWTOsIDlKCpjRxr-7Tyk",
+      "ananki_subvibe": "Chill - Sunday",
+      "ananki_reasoning": "The context explicitly describes this as part of a 'Best Chill Country Songs' playlist, emphasizing the relaxed, easygoing nature of the music. The 'Chill - Sunday' sub-vibe perfectly captures the laid-back, leisurely quality of chill country music - the kind of easy-listening tracks that fit a relaxed weekend vibe. Country music in a 'chill' context typically evokes that unhurried, comfortable feeling associated with Sunday afternoons, making this the most appropriate match from the available chill sub-vibes.",
+      "ananki_confidence": 0.85
+    },
+    {
+      "artist": "Rhonda Vincent",
+      "song": "Twelve Days of Christmas (feat. Charlie Daniels, The Oak Ridge Boys, Ronnie Milsap, Gene Watson, Bill Anderson, Larry Gatlin, Jeanne Seeley, Lorrie Morgan, Pam Tillis)",
+      "spotify_id": "49wqQwwqBPQ9guYDhETABa",
+      "spotify_uri": "spotify:track:49wqQwwqBPQ9guYDhETABa",
+      "source_url": "https://youtube.com/watch?v=TKQ2KqkoNHo",
+      "source": "youtube",
+      "post_title": "Best Chill Country Songs of All Time - Most Popular Chill Country Music Playlist",
+      "comment_text": "Best Chill Country Songs of All Time - Most Popular Chill Country Music Playlist Find our playlist with these keywords: If you liked ...",
+      "comment_score": 0,
+      "playlist_id": "PLxvodScTx2RtRNWTOsIDlKCpjRxr-7Tyk",
+      "ananki_subvibe": "Happy - Celebration",
+      "ananki_reasoning": "This is a Christmas song ('Twelve Days of Christmas') featuring multiple country artists in a collaborative performance. While the post title mentions 'Chill Country Songs,' the song itself is a festive holiday classic typically associated with celebration and joy rather than relaxation. The star-studded collaboration (Charlie Daniels, Oak Ridge Boys, Ronnie Milsap, etc.) and the nature of the holiday song point toward celebratory energy rather than a chill vibe. Christmas music, especially traditional songs like this with multiple featured artists, is primarily used for festive celebration contexts.",
+      "ananki_confidence": 0.75
+    },
+    {
+      "artist": "Post Malone",
+      "song": "White Iverson",
+      "spotify_id": "6eT7xZZlB2mwyzJ2sUKG6w",
+      "spotify_uri": "spotify:track:6eT7xZZlB2mwyzJ2sUKG6w",
+      "source_url": "https://youtube.com/watch?v=SLsTskih7_I",
+      "source": "youtube",
+      "post_title": "Chill Morning Study Rap/Hip Hop Playlist",
+      "comment_text": "This lowkey make me sad to think how fast time fly its crazzy",
+      "comment_score": 9137,
+      "playlist_id": "PL6FZAmQwSblcLD6QzwbU3_jvq8Mc_gtCs",
+      "ananki_subvibe": "Sad - Nostalgic Simpler Times",
+      "ananki_reasoning": "The comment 'This lowkey make me sad to think how fast time fly its crazzy' directly expresses sadness combined with reflection on the passage of time. The context is a 'Chill Morning Study' playlist, and the commenter is experiencing bittersweet nostalgia about how quickly time passes. This isn't about a specific era (2000s/90s/childhood/teen years) but rather a melancholic reflection on time flying by and simpler times passing, which perfectly fits 'Sad - Nostalgic Simpler Times'. The 'lowkey' qualifier and the study playlist context suggest a gentle, reflective sadness rather than intense grief or crying.",
+      "ananki_confidence": 0.95
+    },
+    {
+      "artist": "Khalid",
+      "song": "Location",
+      "spotify_id": "152lZdxL1OR0ZMW6KquMif",
+      "spotify_uri": "spotify:track:152lZdxL1OR0ZMW6KquMif",
+      "source_url": "https://youtube.com/watch?v=by3yRdlQvzs",
+      "source": "youtube",
+      "post_title": "Chill Morning Study Rap/Hip Hop Playlist",
+      "comment_text": "Chill beats and dope bars. A great way to start your morning off right.",
+      "comment_score": 0,
+      "playlist_id": "PL6FZAmQwSblcLD6QzwbU3_jvq8Mc_gtCs",
+      "ananki_subvibe": "Chill - Morning Coffee",
+      "ananki_reasoning": "The context explicitly mentions this is a 'Chill Morning Study Rap/Hip Hop Playlist' described as 'a great way to start your morning off right.' The combination of 'chill beats,' morning timing, and study-focused atmosphere directly aligns with the Morning Coffee sub-vibe, which captures that relaxed, focused energy of starting the day. While Khalid's 'Location' has smooth R&B vibes that could fit multiple chill categories, the explicit morning context and the intended use case (studying, starting the day) makes Morning Coffee the most accurate match.",
+      "ananki_confidence": 0.95
+    },
+    {
+      "artist": "The Roots",
+      "song": "You Got Me (Featuring Jill Scott) - Live / 1999",
+      "spotify_id": "71he7ShvDkKna60RozMqyN",
+      "spotify_uri": "spotify:track:71he7ShvDkKna60RozMqyN",
+      "source_url": "https://youtube.com/watch?v=MJCHeEQV454",
+      "source": "youtube",
+      "post_title": "Chill Morning Study Rap/Hip Hop Playlist",
+      "comment_text": "Chill beats and dope bars. A great way to start your morning off right.",
+      "comment_score": 0,
+      "playlist_id": "PL6FZAmQwSblcLD6QzwbU3_jvq8Mc_gtCs",
+      "ananki_subvibe": "Chill - Morning Coffee",
+      "ananki_reasoning": "The post title explicitly mentions 'Chill Morning Study' and the comment describes it as 'a great way to start your morning off right.' The combination of 'chill beats' with a morning context directly aligns with the Morning Coffee sub-vibe, which captures relaxed, focused morning energy. While the song features 'dope bars' suggesting some lyrical engagement, the overall framing emphasizes the chill, morning-appropriate nature of the music for studying and starting the day.",
+      "ananki_confidence": 0.95
     }
   ],
   "ambiguous_songs": [
@@ -3750,9 +3932,8 @@
       "comment_score": 479,
       "playlist_id": "PL0IYNTdrSN93QXM4oKcAXPYs6byExxDPm",
       "ananki_subvibe": "AMBIGUOUS",
-      "ananki_reasoning": "There is a clear mismatch between the context and the validated song. The human is discussing discovering $uicideboy$ songs with 'chill vibes,' but the Spotify-validated track is 'Charizard Vs. Blastoise' by VideoGameRapBattles, which is a completely different artist and appears to be a Pokémon-themed rap battle track. This suggests either a data validation error or the wrong song was matched. Without being able to verify the actual song the human was referring to, I cannot accurately map this to an emotional sub-vibe, as the context (chill $uicideboy$ music) does not match the validated track (video game rap battle).",
+      "ananki_reasoning": "There is a clear mismatch between the context and the validated song. The human is discussing $uicideboy$ (a hip-hop duo known for dark, underground rap) and mentions finding 'chill vibes' from their catalog. However, the Spotify-validated song is 'Charizard Vs. Blastoise' by VideoGameRapBattles, which is a completely different artist and appears to be a novelty rap battle about Pokémon characters. This suggests either a validation error or the human was discussing a different song than what was captured. Without being able to verify the actual song being recommended matches the emotional context provided, I cannot reliably map this to a sub-vibe.",
       "ananki_confidence": 0.2
     }
-  ],
-  "last_updated": "2025-11-18T02:06:02.548521"
+  ]
 }

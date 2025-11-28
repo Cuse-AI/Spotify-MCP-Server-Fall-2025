@@ -1,0 +1,21 @@
+{
+  "total": 1,
+  "note": "These need human review or are not music recommendations",
+  "songs": [
+    {
+      "artist": "Julie Andrews",
+      "song": "Do-Re-Mi",
+      "spotify_id": "6aNMGfwdGyELNGCuqs5ldU",
+      "spotify_uri": "spotify:track:6aNMGfwdGyELNGCuqs5ldU",
+      "query_used": "Sound of Music",
+      "extraction_pattern": "quoted",
+      "comment_score": 199,
+      "source_url": "https://reddit.com/r/Music/comments/1ius0nt/what_do_you_think_is_the_edelweiss_of_the_united/mdzyf9b/",
+      "post_title": "What do you think is the “Edelweiss” of the United States?",
+      "comment_text": "Lol, we had to learn \"Edelweiss\" in choir when I was a little kid and before I saw \"Sound of Music\". Since I was partially deaf at that time, knew no German, and the instructor taught us the words by reciting, at first I thought it was \"8:05, 8:05, every morning you greet me\".\n\nI think it would be \"This Land Is Your Land\".",
+      "ananki_subvibe": "AMBIGUOUS",
+      "ananki_reasoning": "API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CVEwGyJ1ZaMeigatVfN63'}",
+      "ananki_confidence": 0.0
+    }
+  ]
+}
