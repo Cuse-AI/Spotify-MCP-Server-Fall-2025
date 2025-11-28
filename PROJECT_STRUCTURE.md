@@ -120,6 +120,44 @@ python inject_to_tapestry.py ../data/reddit/test_results/dark_smart_extraction_D
 - `server/routes.ts` - API endpoints (/api/generate-playlist, /api/tapestry-stats)
 - `.env` - API keys (ANTHROPIC_API_KEY, SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET)
 
+### API Endpoints:
+
+**Health Check** (Diagnostics)
+```
+GET /api/health
+```
+Returns: File status, song count, API key validation
+Use: Before demoing to verify everything is ready!
+
+**Generate Playlist** (Main Feature)
+```
+POST /api/generate-playlist
+Body: { vibe, now, going }
+Returns: Playlist with songs, album art, Spotify previews
+```
+
+**Validate Song** (Upvote)
+```
+POST /api/validate-song
+Body: { song, user_journey }
+Returns: { success, boosted, message }
+Saves: Upvoted songs to tapestry.json
+```
+
+**Downvote Song** (Feedback)
+```
+POST /api/downvote-song
+Body: { song, user_journey }
+Returns: { success, message }
+Saves: Downvoted songs to user_downvotes.json
+```
+
+**Tapestry Stats** (Data Info)
+```
+GET /api/tapestry-stats
+Returns: { total_tracks, total_sub_vibes, total_meta_vibes, human_sourced }
+```
+
 ## IMPORTANT:
 
 ### SAFE FILES (in core/):
