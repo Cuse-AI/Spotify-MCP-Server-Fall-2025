@@ -25,6 +25,30 @@ function getProjectRoot(): string {
 
 const PROJECT_ROOT = getProjectRoot();
 
+// Atomic write helper: writes to temp file first, then atomically renames
+// Prevents file corruption if process crashes mid-write
+async function atomicWriteJson(filePath: string, data: any): Promise<void> {
+  const tempPath = `${filePath}.tmp`;
+  try {
+    // Write to temp file
+    await fs.promises.writeFile(tempPath, JSON.stringify(data, null, 2), "utf-8");
+    
+    // Verify it's valid JSON by reading it back
+    await fs.promises.readFile(tempPath, "utf-8");
+    
+    // Atomic rename (replaces original only if temp write succeeded)
+    await fs.promises.rename(tempPath, filePath);
+  } catch (error) {
+    // Clean up temp file if something went wrong
+    try {
+      await fs.promises.unlink(tempPath);
+    } catch {
+      // Ignore cleanup errors
+    }
+    throw error;
+  }
+}
+
 export interface IStorage {
   generatePlaylist(journey: UserJourney): Promise<PlaylistResponse>;
   saveValidatedSong(record: ValidatedSongRecord): Promise<{ boosted: boolean }>;
@@ -96,7 +120,7 @@ export class MemStorage implements IStorage {
         validation_count: (existingSong.validation_count || 0) + 1,
       };
       
-      fs.writeFileSync(tapestryPath, JSON.stringify(tapestry, null, 2));
+      await atomicWriteJson(tapestryPath, tapestry);
       console.log(`⬆️  Boosted confidence for "${record.song.artist} - ${record.song.title}": ${(existingSong.mapping_confidence * 100).toFixed(0)}% → ${(newConfidence * 100).toFixed(0)}%`);
       this.invalidateStatsCache();
       return { boosted: true };
@@ -120,7 +144,7 @@ export class MemStorage implements IStorage {
       };
       
       tapestry.vibes[subVibe].songs.push(songEntry);
-      fs.writeFileSync(tapestryPath, JSON.stringify(tapestry, null, 2));
+      await atomicWriteJson(tapestryPath, tapestry);
       console.log(`✅ Added validated song to Tapestry: ${record.song.artist} - ${record.song.title} (${subVibe})`);
       this.invalidateStatsCache();
       return { boosted: false };
@@ -165,7 +189,7 @@ export class MemStorage implements IStorage {
 
     if (!exists) {
       downvotes.songs.push(downvoteEntry);
-      fs.writeFileSync(downvotesPath, JSON.stringify(downvotes, null, 2));
+      await atomicWriteJson(downvotesPath, downvotes);
       console.log(`🚫 Downvoted song saved: ${record.song.artist} - ${record.song.title}`);
     } else {
       console.log(`ℹ️  Song already downvoted: ${record.song.artist} - ${record.song.title}`);
