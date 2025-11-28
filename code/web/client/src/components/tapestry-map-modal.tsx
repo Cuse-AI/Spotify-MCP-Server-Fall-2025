@@ -1,5 +1,6 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { X } from "lucide-react";
+import { InteractiveTapestryMap } from "./interactive-tapestry-map";
 
 interface TapestryMapModalProps {
   isOpen: boolean;
@@ -9,10 +10,10 @@ interface TapestryMapModalProps {
 export function TapestryMapModal({ isOpen, onClose }: TapestryMapModalProps) {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+      <DialogContent className="max-w-6xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle className="flex items-center justify-between">
-            <span>The Emotional Tapestry</span>
+            <span>🗺️ The Emotional Tapestry</span>
             <button
               onClick={onClose}
               className="text-muted-foreground hover:text-foreground"
@@ -22,29 +23,18 @@ export function TapestryMapModal({ isOpen, onClose }: TapestryMapModalProps) {
           </DialogTitle>
         </DialogHeader>
         
-        <div className="space-y-6">
-          <div className="prose prose-invert max-w-none">
-            <p className="text-sm text-muted-foreground">
-              Every song in Midden is mapped to emotional coordinates on a 2D manifold. 
-              This tapestry captures 114 emotional sub-vibes across 9 meta-vibes, all sourced from real human conversations about music.
-            </p>
-          </div>
+        <div className="space-y-4">
+          <p className="text-sm text-muted-foreground">
+            Every song in Midden is mapped to emotional coordinates on a 2D manifold. 
+            Click on any vibe to explore its emotional composition and see what real people say about it.
+          </p>
 
-          {/* Placeholder for the interactive visualization */}
-          <div className="bg-muted rounded-lg p-8 flex items-center justify-center min-h-[400px]">
-            <div className="text-center space-y-2">
-              <p className="text-muted-foreground">
-                🗺️ Interactive Tapestry Visualization
-              </p>
-              <p className="text-xs text-muted-foreground">
-                Coming soon: 2D emotional manifold with interactive exploration
-              </p>
-            </div>
-          </div>
+          {/* Interactive Visualization */}
+          <InteractiveTapestryMap />
 
-          <div className="space-y-4">
-            <h3 className="font-semibold">Why This Matters</h3>
-            <ul className="space-y-2 text-sm text-muted-foreground">
+          <div className="space-y-4 pt-4 border-t border-muted">
+            <h3 className="font-semibold text-sm">Why This Matters</h3>
+            <ul className="space-y-2 text-xs text-muted-foreground">
               <li>✨ <strong>Not keyword matching</strong> - Real emotional understanding from Reddit discussions</li>
               <li>🎵 <strong>8,726 songs</strong> with complete provenance and emotional reasoning</li>
               <li>💭 <strong>Emotional journey mapping</strong> - From where you are to where you want to go</li>
