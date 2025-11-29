@@ -79,7 +79,9 @@ class QualityFilter:
         # WHY phrases - these explain the emotional connection
         'because', 'makes me feel', 'made me feel', 'helps me', 'helped me',
         'whenever i listen', 'every time i hear', 'when i hear this',
-        'takes me back', 'transports me', 'brings me',
+        'every time it', 'whenever it',  # "every time it plays..."
+        'takes me back', 'transports me', 'brings me', 'thrown back',
+        'brings back', 'takes me to', 'puts me in',
         'going through', 'went through', 'been through',
         'gets me through', 'got me through',
         'perfectly captures', 'captures the feeling', 'captures that',
@@ -92,6 +94,10 @@ class QualityFilter:
         'love this because', 'love this song because',
         'perfect for when', 'great for when',
         'reminds me of when', 'reminds me of the time',  # Specific memory
+        'came out when', 'was in college', 'was in high school',  # Era markers
+        'great times', 'good times', 'those days', 'back then',
+        'instantly', 'immediately',  # Visceral reactions
+        'hits different', 'hit different',  # Modern phrasing
     ]
     
     # SHALLOW phrases to reject - mention emotion but no depth
@@ -220,7 +226,12 @@ class QualityFilter:
 class TestScraper:
     """
     Clean test scraper for Reddit music recommendations.
+    V2: Added randomness to avoid duplicate scrapes
     """
+    
+    # Vary these to get different results each run
+    TIME_FILTERS = ['year', 'month', 'all', 'week']
+    SORT_OPTIONS = ['relevance', 'hot', 'top', 'new']
     
     def __init__(self):
         # Initialize Spotify
@@ -241,12 +252,29 @@ class TestScraper:
         # Quality filter
         self.quality = QualityFilter()
         
-        # Track what we've seen
-        self.seen_urls = set()
+        # Load persistent seen URLs (survives across runs!)
+        self.seen_file = Path(__file__).parent / 'output' / 'seen_urls.json'
+        self.seen_urls = self._load_seen_urls()
         self.seen_songs = set()  # (artist, title) tuples
         
         # Results
         self.results = []
+    
+    def _load_seen_urls(self) -> set:
+        """Load previously seen URLs from file."""
+        if self.seen_file.exists():
+            try:
+                with open(self.seen_file, 'r') as f:
+                    return set(json.load(f))
+            except:
+                pass
+        return set()
+    
+    def _save_seen_urls(self):
+        """Save seen URLs to file for next run."""
+        self.seen_file.parent.mkdir(exist_ok=True)
+        with open(self.seen_file, 'w') as f:
+            json.dump(list(self.seen_urls), f)
     
     def search_spotify(self, query: str) -> dict | None:
         """Search Spotify for a track, return metadata if found."""
@@ -283,9 +311,94 @@ class TestScraper:
         
         return candidates
     
+    def browse_for_posts(self, subreddit_name: str, keywords: list, limit: int = 100) -> list:
+        """
+        Browse a subreddit's recent/hot posts looking for relevant titles.
+        This finds posts organically rather than just searching.
+        """
+        relevant_posts = []
+        try:
+            sub = self.reddit.subreddit(subreddit_name)
+            # Mix of hot and new posts
+            posts = list(sub.hot(limit=limit//2)) + list(sub.new(limit=limit//2))
+            
+            for post in posts:
+                title_lower = post.title.lower()
+                if any(kw in title_lower for kw in keywords):
+                    relevant_posts.append(post)
+            
+            print(f"    [Browse r/{subreddit_name}: found {len(relevant_posts)} relevant posts]")
+        except Exception as e:
+            print(f"    [Browse error: {e}]")
+        
+        return relevant_posts
+    
+    def _process_post(self, post, vibe_name: str, target: int = None) -> int:
+        """Process a single post's comments. Returns number of songs found."""
+        if target and len(self.results) >= target:
+            return 0
+            
+        found = 0
+        post.comments.replace_more(limit=0)
+        comments = post.comments.list()[:25]
+        
+        for comment in comments:
+            if target and len(self.results) >= target:
+                break
+                
+            if not hasattr(comment, 'body'):
+                continue
+            
+            if comment.score < 2:
+                continue
+            
+            url = f"https://reddit.com{comment.permalink}"
+            if url in self.seen_urls:
+                continue
+            self.seen_urls.add(url)
+            
+            passed, reason = self.quality.check(comment.body)
+            if not passed:
+                continue
+            
+            mentions = self.extract_song_mentions(comment.body)
+            
+            for mention in mentions:
+                if target and len(self.results) >= target:
+                    break
+                
+                track = self.search_spotify(mention)
+                if not track:
+                    continue
+                
+                song_key = (track['artist'].lower(), track['title'].lower())
+                if song_key in self.seen_songs:
+                    continue
+                self.seen_songs.add(song_key)
+                
+                result = {
+                    'artist': track['artist'],
+                    'song': track['title'],
+                    'spotify_id': track['spotify_id'],
+                    'spotify_uri': track['spotify_uri'],
+                    'album': track['album'],
+                    'comment_text': comment.body[:400],
+                    'comment_score': comment.score,
+                    'post_title': post.title,
+                    'source_url': url,
+                    'target_vibe': vibe_name,
+                    'scraped_at': datetime.now().isoformat(),
+                }
+                
+                self.results.append(result)
+                print(f"    ✓ {track['artist']} - {track['title']}")
+                found += 1
+        
+        return found
+    
     def scrape(self, config: dict, target: int = 50):
         """
-        Main scraping function.
+        Main scraping function with RANDOMIZATION to avoid duplicates.
         
         config = {
             'name': 'Drive - Road Trip',
@@ -294,16 +407,44 @@ class TestScraper:
         }
         """
         name = config['name']
-        queries = config['queries']
+        queries = config['queries'].copy()  # Don't modify original
         subreddits = config.get('subreddits', ['musicsuggestions', 'ifyoulikeblank', 'Music'])
+        
+        # RANDOMIZE for variety!
+        random.shuffle(queries)
+        random.shuffle(subreddits)
+        time_filter = random.choice(self.TIME_FILTERS)
+        sort_method = random.choice(self.SORT_OPTIONS)
         
         print("\n" + "="*70)
         print(f"SCRAPING: {name}")
         print("="*70)
         print(f"Target: {target} songs")
-        print(f"Queries: {queries}")
-        print(f"Subreddits: {subreddits}")
+        print(f"Time filter: {time_filter} | Sort: {sort_method}")
+        print(f"Already seen: {len(self.seen_urls)} URLs from previous runs")
+        print(f"Queries (shuffled): {queries[:3]}...")
         print("="*70)
+        
+        # PHASE 1: Browse subreddits for posts with relevant titles
+        browse_subs = config.get('browse_subs', [])
+        title_keywords = config.get('title_keywords', [])
+        browsed_posts = []
+        
+        if browse_subs and title_keywords:
+            print("\n[Phase 1: Browsing for relevant post titles...]")
+            for sub_name in browse_subs:
+                found = self.browse_for_posts(sub_name, title_keywords)
+                browsed_posts.extend(found)
+                time.sleep(1)
+            print(f"  Total browsed posts: {len(browsed_posts)}")
+            
+            # Process browsed posts first
+            for post in browsed_posts:
+                if len(self.results) >= target:
+                    break
+                self._process_post(post, name)
+        
+        print("\n[Phase 2: Searching with queries...]")
         
         for query in queries:
             if len(self.results) >= target:
@@ -319,84 +460,25 @@ class TestScraper:
                 
                 try:
                     sub = self.reddit.subreddit(sub_name)
-                    posts = list(sub.search(query, limit=15, time_filter='year'))
+                    posts = list(sub.search(query, limit=15, time_filter=time_filter, sort=sort_method))
                     
                     for post in posts:
                         if len(self.results) >= target:
                             break
                         
-                        # Get comments
-                        post.comments.replace_more(limit=0)
-                        comments = post.comments.list()[:25]
-                        
-                        for comment in comments:
-                            if len(self.results) >= target:
-                                break
-                            
-                            if not hasattr(comment, 'body'):
-                                continue
-                            
-                            # Skip low-score comments
-                            if comment.score < 2:
-                                continue
-                            
-                            # Skip if we've seen this URL
-                            url = f"https://reddit.com{comment.permalink}"
-                            if url in self.seen_urls:
-                                continue
-                            self.seen_urls.add(url)
-                            
-                            # QUALITY CHECK - the key step!
-                            passed, reason = self.quality.check(comment.body)
-                            if not passed:
-                                continue
-                            
-                            # Try to extract song mentions
-                            mentions = self.extract_song_mentions(comment.body)
-                            
-                            for mention in mentions:
-                                if len(self.results) >= target:
-                                    break
-                                
-                                # Search Spotify
-                                track = self.search_spotify(mention)
-                                if not track:
-                                    continue
-                                
-                                # Skip duplicates
-                                song_key = (track['artist'].lower(), track['title'].lower())
-                                if song_key in self.seen_songs:
-                                    continue
-                                self.seen_songs.add(song_key)
-                                
-                                # Build result
-                                result = {
-                                    'artist': track['artist'],
-                                    'song': track['title'],
-                                    'spotify_id': track['spotify_id'],
-                                    'spotify_uri': track['spotify_uri'],
-                                    'album': track['album'],
-                                    'comment_text': comment.body[:400],
-                                    'comment_score': comment.score,
-                                    'post_title': post.title,
-                                    'source_url': url,
-                                    'target_vibe': name,
-                                    'scraped_at': datetime.now().isoformat(),
-                                }
-                                
-                                self.results.append(result)
-                                print(f"    ✓ {track['artist']} - {track['title']}")
-                        
+                        self._process_post(post, name, target)
                         time.sleep(0.5)  # Be nice to Reddit
                     
                 except Exception as e:
                     if 'rate' in str(e).lower():
                         print(f"    [RATE LIMITED - stopping gracefully]")
+                        self._save_seen_urls()  # Save progress!
                         return self.results
                     print(f"    [Error: {e}]")
                 
                 time.sleep(1)  # Between subreddits
         
+        self._save_seen_urls()  # Save at end
         return self.results
 
 
@@ -452,18 +534,41 @@ class TestScraper:
 DRIVE_CONFIG = {
     'name': 'Drive',
     'queries': [
+        # Classic queries
         'road trip songs playlist',
-        'driving music playlist',
+        'driving music playlist', 
         'songs for long drives',
         'night drive music',
         'highway driving songs',
-        'cruising music playlist',
-        'car ride songs',
-        'scenic drive music',
-        'solo drive playlist',
-        'windows down music'
+        # Natural language / how people actually ask
+        'songs that feel like driving at sunset',
+        'music for when youre the main character driving',
+        'what do you listen to on long drives',
+        'songs that make you feel free while driving',
+        'driving alone at night what do you listen to',
+        'best songs to drive to',
+        'music that makes driving feel cinematic',
+        'songs for 3am drives',
+        'windows down summer driving songs',
+        'songs that hit different while driving',
+        'cruising music recommendations',
+        'road trip playlist suggestions',
+        'songs for solo road trips',
+        'late night drive vibes',
+        'driving through the city at night music',
+        'songs that make you drive faster',
+        'mellow driving music',
+        'songs for scenic drives',
+        'driving in the rain music',
+        'cross country road trip songs',
+        'music for long commutes',
+        'songs that feel like freedom',
+        'driving with no destination music',
+        'songs for empty highways',
     ],
-    'subreddits': ['musicsuggestions', 'ifyoulikeblank', 'Music', 'listentothis', 'spotify']
+    'subreddits': ['musicsuggestions', 'ifyoulikeblank', 'Music', 'listentothis', 'spotify'],
+    'browse_subs': ['musicsuggestions', 'ifyoulikeblank'],  # Also browse these for titles
+    'title_keywords': ['drive', 'driving', 'road trip', 'highway', 'car ride', 'cruising', 'commute']
 }
 
 # Party (335 songs)

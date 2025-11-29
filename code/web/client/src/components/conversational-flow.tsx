@@ -7,6 +7,7 @@ import { TapestryStatsBanner } from "./tapestry-stats-banner";
 import { CosmicBackground } from "./cosmic-background";
 import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
+import { useToast } from "@/hooks/use-toast";
 import type { UserJourney, PlaylistResponse } from "@shared/schema";
 
 const QUESTIONS = [
@@ -38,6 +39,7 @@ export function ConversationalFlow({ onComplete }: ConversationalFlowProps) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<Partial<UserJourney>>({});
   const [inputValue, setInputValue] = useState("");
+  const { toast } = useToast();
 
   const generatePlaylistMutation = useMutation({
     mutationFn: async (journey: UserJourney) => {
@@ -46,11 +48,23 @@ export function ConversationalFlow({ onComplete }: ConversationalFlowProps) {
         "/api/generate-playlist",
         journey
       );
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData.message || `API error: ${response.status}`);
+      }
       const data: PlaylistResponse = await response.json();
       return data;
     },
     onSuccess: (data) => {
       onComplete(data);
+    },
+    onError: (error: Error) => {
+      console.error("Playlist generation failed:", error);
+      toast({
+        title: "Couldn't create your playlist",
+        description: error.message || "Something went wrong. Please try again.",
+        variant: "destructive",
+      });
     },
   });
 

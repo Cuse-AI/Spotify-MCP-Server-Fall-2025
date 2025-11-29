@@ -36,7 +36,7 @@ export function TapestryMapModal({ isOpen, onClose }: TapestryMapModalProps) {
             <h3 className="font-semibold text-sm">Why This Matters</h3>
             <ul className="space-y-2 text-xs text-muted-foreground">
               <li>✨ <strong>Not keyword matching</strong> - Real emotional understanding from Reddit discussions</li>
-              <li>🎵 <strong>8,726 songs</strong> with complete provenance and emotional reasoning</li>
+              <li>🎵 <strong>5,700+ quality-verified songs</strong> with complete provenance and emotional reasoning</li>
               <li>💭 <strong>Emotional journey mapping</strong> - From where you are to where you want to go</li>
               <li>🤝 <strong>100% human-sourced</strong> - Every song has context from real people describing their feelings</li>
             </ul>

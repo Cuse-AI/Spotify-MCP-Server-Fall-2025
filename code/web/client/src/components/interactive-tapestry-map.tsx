@@ -56,14 +56,32 @@ export function InteractiveTapestryMap() {
     const subVibe = manifoldData.sub_vibes[subVibeName];
     const songs = tapestryData.vibes[subVibeName]?.songs || [];
 
+    // Filter and sort for high-quality display
+    const qualitySongs = songs
+      .filter((s: any) => {
+        // Prefer songs with good human context (30-300 chars)
+        const commentLen = (s.comment_text || "").length;
+        return commentLen >= 30 && commentLen <= 300;
+      })
+      .sort((a: any, b: any) => b.mapping_confidence - a.mapping_confidence)
+      .slice(0, 3);
+
+    // Fallback to top confidence songs if no quality filter matches
+    const displaySongs = qualitySongs.length >= 2 
+      ? qualitySongs 
+      : songs.sort((a: any, b: any) => b.mapping_confidence - a.mapping_confidence).slice(0, 3);
+
     const selectedData: SubVibeData = {
       name: subVibeName,
       composition: subVibe.emotional_composition,
       analysis: subVibe.analysis,
-      songs: songs.slice(0, 3).map((s: any) => ({
+      songs: displaySongs.map((s: any) => ({
         artist: s.artist,
         song: s.song,
-        comment_text: s.comment_text,
+        // Use ananki_reasoning if comment_text is too long/short, otherwise use comment
+        comment_text: (s.comment_text && s.comment_text.length >= 30 && s.comment_text.length <= 300) 
+          ? s.comment_text 
+          : (s.ananki_reasoning ? s.ananki_reasoning.slice(0, 200) + "..." : s.comment_text || "Quality-mapped to this vibe"),
       })),
       songCount: songs.length,
     };
