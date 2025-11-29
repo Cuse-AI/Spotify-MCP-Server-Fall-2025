@@ -12,6 +12,32 @@ from pathlib import Path
 if sys.stdout.encoding != 'utf-8':
     sys.stdout.reconfigure(encoding='utf-8')
 
+def sync_to_vercel(tapestry_path: Path):
+    """Copy tapestry to Vercel deployment locations"""
+    import shutil
+    
+    project_root = tapestry_path.parent.parent  # core/ -> project root
+    
+    vercel_locations = [
+        project_root / "code" / "web" / "core" / "tapestry.json",
+        project_root / "code" / "web" / "client" / "public" / "core" / "tapestry.json",
+    ]
+    
+    print(f"\n[*] Syncing to Vercel deployment locations...")
+    
+    for dest in vercel_locations:
+        if dest.parent.exists():
+            try:
+                shutil.copy2(tapestry_path, dest)
+                print(f"    ✅ Synced to: {dest.relative_to(project_root)}")
+            except Exception as e:
+                print(f"    ❌ Failed to sync to {dest.name}: {e}")
+        else:
+            print(f"    ⚠️  Skipped (dir not found): {dest.relative_to(project_root)}")
+    
+    print(f"[OK] Vercel sync complete!")
+
+
 def inject_analyzed_songs():
     """Load tapestry, inject all mapped songs, save atomically"""
     
@@ -120,6 +146,9 @@ def inject_analyzed_songs():
         import shutil
         shutil.move(temp_path, str(tapestry_path))
         print(f"[OK] Atomically replaced {tapestry_path.name}")
+        
+        # Auto-sync to Vercel deployment locations
+        sync_to_vercel(tapestry_path)
         
         print(f"\n[COMPLETE] Your tapestry now has {final_count} songs!")
         return True
