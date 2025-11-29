@@ -1,37 +1,34 @@
-# Tapestry Data
+# Data Folder
 
-This folder should contain the `tapestry_VALIDATED_ONLY.json` file with the complete emotional music database.
+## Structure
 
-## Expected Format
-
-```json
-{
-  "songs": [
-    {
-      "track_id": "spotify:track:...",
-      "artist": "Artist Name",
-      "title": "Song Title",
-      "sub_vibe": "Specific emotional sub-category (one of 114)",
-      "meta_vibe": "Higher-level emotional category",
-      "reddit_context": "Human-sourced context from Reddit discussions",
-      "ananki_reasoning": "Deep emotional analysis of why this song fits this vibe",
-      "coordinates": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    }
-  ]
-}
+```
+data/
+├── pipeline/           ← NEW DATA GOES HERE
+│   ├── 1_raw/         ← Fresh scraper output
+│   ├── 2_deduped/     ← After deduplication  
+│   ├── 3_analyzed/    ← After Ananki analysis
+│   └── 4_ready/       ← Human-verified, ready to inject
+│
+├── manifold/          ← Emotional mapping (don't touch)
+│   └── emotional_manifold_COMPLETE.json
+│
+└── archive/           ← Old stuff (don't touch)
+    ├── legacy/
+    ├── misc/
+    ├── processed/
+    ├── quality_scrub/
+    └── scripts/
 ```
 
-## Adding Your Data
+## Pipeline Flow
 
-1. Place `tapestry_VALIDATED_ONLY.json` in this directory
-2. The server will automatically detect and load it
-3. Claude will use this data with prompt caching for efficient playlist generation
+```
+1_raw → 2_deduped → STOP ✋ → 3_analyzed → 4_ready → core/tapestry.json
+                      │
+                  Ask Claude to verify!
+```
 
-## Current Status
+## The Simple Rule
 
-⚠️ **No tapestry data loaded yet**
-
-The application will use sample playlists until the real data is added.
+New scraper data follows the pipeline. Old stuff stays in archive.

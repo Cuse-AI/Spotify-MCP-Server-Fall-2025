@@ -27293,6 +27293,22 @@
           "comment_text": "I just like how Pitbull looks genuinely happy in all of his videos. Like not horny, not talking down to people, just enjoying the moment and living it up.",
           "ananki_reasoning": "The comment specifically emphasizes Pitbull's genuine happiness and enjoying the moment without any darker undertones (not horny, not talking down). The phrase 'just enjoying the moment and living it up' directly describes a carefree attitude. While 'Fireball' is an upbeat party song, the human's focus is on the authentic joy and living-in-the-moment energy rather than party atmosphere specifically. The song fits under a happy, carefree emotional context where someone is simply feeling good and letting loose without overthinking.",
           "mapped_subvibe": "Happy - Carefree"
+        },
+        {
+          "artist": "Loituma",
+          "song": "Ievan Polkka - Extended Mix",
+          "spotify_id": "10OWVYQlWoHss6lvXe7L6i",
+          "spotify_uri": "spotify:track:10OWVYQlWoHss6lvXe7L6i",
+          "comment_score": 273,
+          "source_url": "https://youtube.com/watch?v=QbODmtrGqfk",
+          "data_source": "analyzed_batch_nov27",
+          "extraction_confidence": 1,
+          "mapping_confidence": 0.75,
+          "full_context": "",
+          "post_title": "Best Car Music Playlist 2023 - 2024: House Music, G-House, Bass, Gangster",
+          "comment_text": "Lyrics don't matter. \nThe feeling you get matters.",
+          "ananki_reasoning": "The comment 'Lyrics don't matter. The feeling you get matters' combined with the context of a car music playlist and the song being 'Ievan Polkka' (a high-energy Finnish folk song famous for its infectious, upbeat rhythm) suggests a focus on pure visceral enjoyment and energetic vibes. While the playlist title mentions House/G-House/Bass, this particular track is known for creating an energetic, fun, almost meme-like carefree feeling. The extended mix format and placement in a driving playlist emphasizes the song's ability to generate pure energetic enjoyment without needing to understand the lyrics - it's about the infectious feeling and energy it creates.",
+          "mapped_subvibe": "Energy - Carefree"
         }
       ]
     },
@@ -47049,6 +47065,22 @@
           "comment_text": "This made me got an A+ in chemistry",
           "ananki_reasoning": "The comment 'This made me got an A+ in chemistry' suggests the song was used as motivational, energizing music while studying or before an exam. 'Low' by Flo Rida ft. T-Pain is a high-energy hip-hop/club track, and the context indicates it provided the energetic boost needed to achieve academic success. The post title 'Happy Good Mood Songs - Music to Boost Your Mood' further confirms this is about uplifting, motivational energy. While it could fit 'Happy - Feel Good', the specific mention of achievement and the pump-up nature of the song itself makes 'Energy - Pump Up' the most accurate match.",
           "mapped_subvibe": "Energy - Pump Up"
+        },
+        {
+          "artist": "Alejandro Fernández",
+          "song": "Me Dediqué a Perderte",
+          "spotify_id": "4NUt1fcnO9aQAELBgXq3Kr",
+          "spotify_uri": "spotify:track:4NUt1fcnO9aQAELBgXq3Kr",
+          "comment_score": 208,
+          "source_url": "https://youtube.com/watch?v=D8kvrYuQHOo",
+          "data_source": "analyzed_batch_nov27",
+          "extraction_confidence": 1,
+          "mapping_confidence": 0.85,
+          "full_context": "",
+          "post_title": "Best of  - EBM Dark Electro NDH Industial Gothic Videos",
+          "comment_text": "OMFG YES I finally found it. Someone showed me this years ago. Had no idea what it was called, and with little more than a melody and vague inkling of the lyrics, even though I had them completely wrong, I somehow managed to find it! I am so happy right now. I have achieved the impossible through willpower alone. :D",
+          "ananki_reasoning": "The human's emotional expression is overwhelmingly about triumph and achievement - they successfully found a song they'd been searching for years with minimal information ('little more than a melody and vague inkling of the lyrics'). Key phrases like 'I am so happy right now,' 'I have achieved the impossible through willpower alone,' and the celebratory tone with 'OMFG YES' and ':D' all point to a victorious, triumphant emotional state. While the post title mentions dark music genres (EBM, Dark Electro, Industrial, Gothic), the human's comment is entirely focused on their personal victory of finding the song rather than the song's inherent emotional qualities. There's a mismatch between the Spotify validation (showing a romantic Latin ballad by Alejandro Fernández) and the dark industrial playlist context, but the human's emotional expression is clearly about the joy of victory and accomplishment.",
+          "mapped_subvibe": "Happy - Victorious"
         }
       ]
     },
@@ -83141,9 +83173,6 @@
         }
       ]
     },
-    "Dark - Anxious Social Anxiety": {
-      "songs": []
-    },
     "Sad - Nostalgic Childhood": {
       "songs": [
         {
@@ -86409,6 +86438,54 @@
           "comment_text": "This collab feels is so nostalgic. Like I’m back in the 2011-2018 era. When music sounded real good and different from what we have now. This Wayne verse gave me old Wayne vibes.",
           "ananki_reasoning": "The commenter explicitly describes feeling nostalgic for the 2011-2018 era when 'music sounded real good and different from what we have now.' Despite the playlist being titled 'Happy Songs,' the emotional context is clearly centered on nostalgia for a past musical era that felt better/simpler than the present. The longing for 'old Wayne vibes' and the specific yearning for how music used to sound indicates a wistful reflection on simpler times rather than pure happiness or celebration. This matches 'Sad - Nostalgic Simpler Times' more accurately than other nostalgic categories.",
           "mapped_subvibe": "Sad - Nostalgic Simpler Times"
+        },
+        {
+          "artist": "Concrete Blonde",
+          "song": "True",
+          "spotify_id": "3kHyoKe0V1TWA9QAcNML5R",
+          "spotify_uri": "spotify:track:3kHyoKe0V1TWA9QAcNML5R",
+          "comment_score": 2,
+          "source_url": "https://reddit.com/r/musicsuggestions/comments/1km5cr4/hey_everyone_looking_for_music_similar_to_what/ms7nc8m/",
+          "data_source": "analyzed_batch_nov27",
+          "extraction_confidence": 1,
+          "mapping_confidence": 0.75,
+          "full_context": "",
+          "post_title": "Hey everyone, looking for music similar to what I’ve been listening to lately. —I’ll link my Soft Rock playlist for reference.— Recently I’ve been loving: Dan Hartman, Duran Duran, Phil Collins, Square Rooms by Al Corley, Pet Shop boys. —Genre-wise liking Dark Wave, 80s, 80s Synth, 70s, etc. Thanks!",
+          "comment_text": "Yeah I have two songs by spandau ballet that I really like on my Soft Rock list — True obviously and I also really like Gold by them. — I can really dig some of the 80s pop too, typically I’m a little picky with pop but some of the 80s pop music I like.",
+          "ananki_reasoning": "WAIT - I need to reconsider. 'Sad - Nostalgic 80s' is NOT in the available list. Looking at the context: the user is seeking 80s synth, dark wave, and soft rock from artists like Duran Duran, Phil Collins, Pet Shop Boys. They mention liking Spandau Ballet's 'True' and 'Gold.' However, the Spotify validation shows this is 'True' by Concrete Blonde (a 1987 alternative rock band), NOT Spandau Ballet's 'True.' Concrete Blonde's 'True' is a darker, more alternative rock track with melancholic undertones. Given the user's interest in dark wave and 80s music, combined with Concrete Blonde's brooding alternative rock sound that fits the dark wave aesthetic they mentioned, this maps best to 'Dark - Brooding' - it captures the moody, introspective quality of Concrete Blonde's style while honoring the dark wave preference.",
+          "mapped_subvibe": "Sad - Nostalgic 80s"
+        },
+        {
+          "artist": "R.E.M.",
+          "song": "The One I Love - Remastered 2012",
+          "spotify_id": "2fdfsGuqb6SBX5ocoBWHUd",
+          "spotify_uri": "spotify:track:2fdfsGuqb6SBX5ocoBWHUd",
+          "comment_score": 0,
+          "source_url": "https://youtube.com/watch?v=j7oQEPfe-O8",
+          "data_source": "analyzed_batch_nov27",
+          "extraction_confidence": 1,
+          "mapping_confidence": 0.85,
+          "full_context": "",
+          "post_title": "80s Alternative Music | 80s Alternative Playlist: New Wave, Post-Punk, Power Pop",
+          "comment_text": "Add this playlist to your library! ➕✓ Calling all love cats, denizens of dark wave, Oi! punks, and New Romantics – this one's for ...",
+          "ananki_reasoning": "This is R.E.M.'s 'The One I Love' from 1987, presented in a curated 80s Alternative playlist context featuring New Wave, Post-Punk, and Power Pop. The playlist title and description explicitly invoke 80s alternative music nostalgia with references to 'love cats' (The Cure), dark wave, and New Romantics - all iconic 80s movements. While the song itself has melancholic undertones about a complicated relationship, the contextual framing is primarily nostalgic, celebrating the 80s alternative era. However, I notice 'Sad - Nostalgic 80s' is not in the available list - the closest matches are 'Sad - Nostalgic 90s', 'Sad - Nostalgic 2000s', 'Sad - Nostalgic Teen Years', or 'Sad - Nostalgic Simpler Times'. Given the explicit 80s timeframe and the bittersweet nature of looking back at that musical era, 'Sad - Nostalgic Simpler Times' best captures the emotion of revisiting this classic alternative track from a bygone musical period.",
+          "mapped_subvibe": "Sad - Nostalgic 80s"
+        },
+        {
+          "artist": "David Bowie",
+          "song": "Ashes to Ashes - 2017 Remaster",
+          "spotify_id": "37CRPk0L5ZpfPeePEPwE0t",
+          "spotify_uri": "spotify:track:37CRPk0L5ZpfPeePEPwE0t",
+          "comment_score": 0,
+          "source_url": "https://youtube.com/watch?v=HyMm4rJemtI",
+          "data_source": "analyzed_batch_nov27",
+          "extraction_confidence": 1,
+          "mapping_confidence": 0.95,
+          "full_context": "",
+          "post_title": "80s Alternative Music | 80s Alternative Playlist: New Wave, Post-Punk, Power Pop",
+          "comment_text": "Add this playlist to your library! ➕✓ Calling all love cats, denizens of dark wave, Oi! punks, and New Romantics – this one's for ...",
+          "ananki_reasoning": "This is a classic David Bowie track from 1980 featured in an 80s Alternative playlist that explicitly references New Wave and post-punk genres. 'Ashes to Ashes' is an iconic song that revisits Bowie's Major Tom character with melancholic undertones, perfectly fitting the nostalgic 80s alternative aesthetic. The context emphasizes the era-specific alternative music scene, and this song embodies that bittersweet nostalgia for 80s new wave culture.",
+          "mapped_subvibe": "Sad - Nostalgic 80s"
         }
       ]
     },
@@ -88816,9 +88893,6 @@
         }
       ]
     },
-    "Dark - Envious": {
-      "songs": []
-    },
     "Dark - Insecure": {
       "songs": [
         {
@@ -88854,9 +88928,6 @@
           "mapped_subvibe": "Dark - Insecure"
         }
       ]
-    },
-    "Dark - Competitive": {
-      "songs": []
     },
     "Chill - Serene": {
       "songs": [
@@ -90842,9 +90913,6 @@
         }
       ]
     },
-    "Energy - Frantic": {
-      "songs": []
-    },
     "Energy - Overwhelming": {
       "songs": [
         {
@@ -91012,9 +91080,6 @@
           "mapped_subvibe": "Energy - Unhinged"
         }
       ]
-    },
-    "Energy - Scattered": {
-      "songs": []
     },
     "Chill - Restless": {
       "songs": [
@@ -91415,9 +91480,6 @@
           "mapped_subvibe": "Chill - Monotonous"
         }
       ]
-    },
-    "Happy - Thankful": {
-      "songs": []
     },
     "Happy - Content": {
       "songs": [
@@ -92275,9 +92337,6 @@
         }
       ]
     },
-    "Energy - Victorious": {
-      "songs": []
-    },
     "Energy - Unstoppable": {
       "songs": [
         {
@@ -92955,101 +93014,6 @@
           "comment_text": "Best of Gangster Rap (2Pac, The Notorious B.I.G., Nas, Tech N9ne, Night Lovell, Gorilla Zoe, Logic, Eminem & more)",
           "ananki_reasoning": "This is Snoop Dogg's 'Bitch Please' from a gangster rap playlist. The song is a classic West Coast hip-hop track featuring aggressive, confident, and boastful lyrics typical of the gangster rap genre. While it has aggressive elements, the overall vibe leans more toward self-assured swagger and dominance rather than pure rage or anger. 'Energy - Boss' best captures the confident, assertive, and commanding presence that defines both this track and gangster rap as a genre - it's about projecting power, control, and an untouchable attitude.",
           "mapped_subvibe": "Energy - Boss"
-        }
-      ]
-    },
-    "Sad - Nostalgic 80s": {
-      "songs": [
-        {
-          "artist": "Concrete Blonde",
-          "song": "True",
-          "spotify_id": "3kHyoKe0V1TWA9QAcNML5R",
-          "spotify_uri": "spotify:track:3kHyoKe0V1TWA9QAcNML5R",
-          "comment_score": 2,
-          "source_url": "https://reddit.com/r/musicsuggestions/comments/1km5cr4/hey_everyone_looking_for_music_similar_to_what/ms7nc8m/",
-          "data_source": "analyzed_batch_nov27",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.75,
-          "full_context": "",
-          "post_title": "Hey everyone, looking for music similar to what I’ve been listening to lately. —I’ll link my Soft Rock playlist for reference.— Recently I’ve been loving: Dan Hartman, Duran Duran, Phil Collins, Square Rooms by Al Corley, Pet Shop boys. —Genre-wise liking Dark Wave, 80s, 80s Synth, 70s, etc. Thanks!",
-          "comment_text": "Yeah I have two songs by spandau ballet that I really like on my Soft Rock list — True obviously and I also really like Gold by them. — I can really dig some of the 80s pop too, typically I’m a little picky with pop but some of the 80s pop music I like.",
-          "ananki_reasoning": "WAIT - I need to reconsider. 'Sad - Nostalgic 80s' is NOT in the available list. Looking at the context: the user is seeking 80s synth, dark wave, and soft rock from artists like Duran Duran, Phil Collins, Pet Shop Boys. They mention liking Spandau Ballet's 'True' and 'Gold.' However, the Spotify validation shows this is 'True' by Concrete Blonde (a 1987 alternative rock band), NOT Spandau Ballet's 'True.' Concrete Blonde's 'True' is a darker, more alternative rock track with melancholic undertones. Given the user's interest in dark wave and 80s music, combined with Concrete Blonde's brooding alternative rock sound that fits the dark wave aesthetic they mentioned, this maps best to 'Dark - Brooding' - it captures the moody, introspective quality of Concrete Blonde's style while honoring the dark wave preference.",
-          "mapped_subvibe": "Sad - Nostalgic 80s"
-        },
-        {
-          "artist": "R.E.M.",
-          "song": "The One I Love - Remastered 2012",
-          "spotify_id": "2fdfsGuqb6SBX5ocoBWHUd",
-          "spotify_uri": "spotify:track:2fdfsGuqb6SBX5ocoBWHUd",
-          "comment_score": 0,
-          "source_url": "https://youtube.com/watch?v=j7oQEPfe-O8",
-          "data_source": "analyzed_batch_nov27",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "80s Alternative Music | 80s Alternative Playlist: New Wave, Post-Punk, Power Pop",
-          "comment_text": "Add this playlist to your library! ➕✓ Calling all love cats, denizens of dark wave, Oi! punks, and New Romantics – this one's for ...",
-          "ananki_reasoning": "This is R.E.M.'s 'The One I Love' from 1987, presented in a curated 80s Alternative playlist context featuring New Wave, Post-Punk, and Power Pop. The playlist title and description explicitly invoke 80s alternative music nostalgia with references to 'love cats' (The Cure), dark wave, and New Romantics - all iconic 80s movements. While the song itself has melancholic undertones about a complicated relationship, the contextual framing is primarily nostalgic, celebrating the 80s alternative era. However, I notice 'Sad - Nostalgic 80s' is not in the available list - the closest matches are 'Sad - Nostalgic 90s', 'Sad - Nostalgic 2000s', 'Sad - Nostalgic Teen Years', or 'Sad - Nostalgic Simpler Times'. Given the explicit 80s timeframe and the bittersweet nature of looking back at that musical era, 'Sad - Nostalgic Simpler Times' best captures the emotion of revisiting this classic alternative track from a bygone musical period.",
-          "mapped_subvibe": "Sad - Nostalgic 80s"
-        },
-        {
-          "artist": "David Bowie",
-          "song": "Ashes to Ashes - 2017 Remaster",
-          "spotify_id": "37CRPk0L5ZpfPeePEPwE0t",
-          "spotify_uri": "spotify:track:37CRPk0L5ZpfPeePEPwE0t",
-          "comment_score": 0,
-          "source_url": "https://youtube.com/watch?v=HyMm4rJemtI",
-          "data_source": "analyzed_batch_nov27",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "80s Alternative Music | 80s Alternative Playlist: New Wave, Post-Punk, Power Pop",
-          "comment_text": "Add this playlist to your library! ➕✓ Calling all love cats, denizens of dark wave, Oi! punks, and New Romantics – this one's for ...",
-          "ananki_reasoning": "This is a classic David Bowie track from 1980 featured in an 80s Alternative playlist that explicitly references New Wave and post-punk genres. 'Ashes to Ashes' is an iconic song that revisits Bowie's Major Tom character with melancholic undertones, perfectly fitting the nostalgic 80s alternative aesthetic. The context emphasizes the era-specific alternative music scene, and this song embodies that bittersweet nostalgia for 80s new wave culture.",
-          "mapped_subvibe": "Sad - Nostalgic 80s"
-        }
-      ]
-    },
-    "Chill - Lounge": {
-      "songs": []
-    },
-    "Happy - Victorious": {
-      "songs": [
-        {
-          "artist": "Alejandro Fernández",
-          "song": "Me Dediqué a Perderte",
-          "spotify_id": "4NUt1fcnO9aQAELBgXq3Kr",
-          "spotify_uri": "spotify:track:4NUt1fcnO9aQAELBgXq3Kr",
-          "comment_score": 208,
-          "source_url": "https://youtube.com/watch?v=D8kvrYuQHOo",
-          "data_source": "analyzed_batch_nov27",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Best of  - EBM Dark Electro NDH Industial Gothic Videos",
-          "comment_text": "OMFG YES I finally found it. Someone showed me this years ago. Had no idea what it was called, and with little more than a melody and vague inkling of the lyrics, even though I had them completely wrong, I somehow managed to find it! I am so happy right now. I have achieved the impossible through willpower alone. :D",
-          "ananki_reasoning": "The human's emotional expression is overwhelmingly about triumph and achievement - they successfully found a song they'd been searching for years with minimal information ('little more than a melody and vague inkling of the lyrics'). Key phrases like 'I am so happy right now,' 'I have achieved the impossible through willpower alone,' and the celebratory tone with 'OMFG YES' and ':D' all point to a victorious, triumphant emotional state. While the post title mentions dark music genres (EBM, Dark Electro, Industrial, Gothic), the human's comment is entirely focused on their personal victory of finding the song rather than the song's inherent emotional qualities. There's a mismatch between the Spotify validation (showing a romantic Latin ballad by Alejandro Fernández) and the dark industrial playlist context, but the human's emotional expression is clearly about the joy of victory and accomplishment.",
-          "mapped_subvibe": "Happy - Victorious"
-        }
-      ]
-    },
-    "Energy - Carefree": {
-      "songs": [
-        {
-          "artist": "Loituma",
-          "song": "Ievan Polkka - Extended Mix",
-          "spotify_id": "10OWVYQlWoHss6lvXe7L6i",
-          "spotify_uri": "spotify:track:10OWVYQlWoHss6lvXe7L6i",
-          "comment_score": 273,
-          "source_url": "https://youtube.com/watch?v=QbODmtrGqfk",
-          "data_source": "analyzed_batch_nov27",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.75,
-          "full_context": "",
-          "post_title": "Best Car Music Playlist 2023 - 2024: House Music, G-House, Bass, Gangster",
-          "comment_text": "Lyrics don't matter. \nThe feeling you get matters.",
-          "ananki_reasoning": "The comment 'Lyrics don't matter. The feeling you get matters' combined with the context of a car music playlist and the song being 'Ievan Polkka' (a high-energy Finnish folk song famous for its infectious, upbeat rhythm) suggests a focus on pure visceral enjoyment and energetic vibes. While the playlist title mentions House/G-House/Bass, this particular track is known for creating an energetic, fun, almost meme-like carefree feeling. The extended mix format and placement in a driving playlist emphasizes the song's ability to generate pure energetic enjoyment without needing to understand the lyrics - it's about the infectious feeling and energy it creates.",
-          "mapped_subvibe": "Energy - Carefree"
         }
       ]
     }
