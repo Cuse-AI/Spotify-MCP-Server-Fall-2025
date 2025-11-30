@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import { Sparkles } from "lucide-react";
-import { TapestryMapModal } from "./tapestry-map-modal";
 
 interface TapestryStats {
   total_tracks: number;
@@ -12,7 +11,6 @@ interface TapestryStats {
 export function TapestryStatsBanner() {
   const [stats, setStats] = useState<TapestryStats | null>(null);
   const [isLoading, setIsLoading] = useState(true);
-  const [showMapModal, setShowMapModal] = useState(false);
 
   useEffect(() => {
     const loadStats = async () => {
@@ -62,30 +60,22 @@ export function TapestryStatsBanner() {
   }
 
   return (
-    <>
-      <Card className="px-4 py-3 flex items-center gap-3 min-w-[280px]" data-testid="card-tapestry-stats">
-        <Sparkles className="w-5 h-5 text-primary flex-shrink-0" />
-        <div className="flex-1 min-w-0">
-          <div className="text-sm font-medium" data-testid="text-track-count">
-            {stats.total_tracks.toLocaleString()} tracks
-          </div>
-          <div className="text-xs text-muted-foreground flex items-center gap-1.5">
-            <span data-testid="text-vibe-counts">
-              {stats.total_meta_vibes} metavibes • {stats.total_sub_vibes} subvibes
-            </span>
-            <span className="text-muted-foreground/40">•</span>
-            <button
-              onClick={() => setShowMapModal(true)}
-              className="text-primary/90 font-medium hover:text-primary cursor-pointer transition-colors"
-              data-testid="text-human-sourced"
-            >
-              100% human-sourced
-            </button>
-          </div>
+    <Card className="px-4 py-3 flex items-center gap-3 min-w-[280px]" data-testid="card-tapestry-stats">
+      <Sparkles className="w-5 h-5 text-primary flex-shrink-0" />
+      <div className="flex-1 min-w-0">
+        <div className="text-sm font-medium" data-testid="text-track-count">
+          {stats.total_tracks.toLocaleString()} tracks
         </div>
-      </Card>
-
-      <TapestryMapModal isOpen={showMapModal} onClose={() => setShowMapModal(false)} />
-    </>
+        <div className="text-xs text-muted-foreground flex items-center gap-1.5">
+          <span data-testid="text-vibe-counts">
+            {stats.total_meta_vibes} metavibes • {stats.total_sub_vibes} subvibes
+          </span>
+          <span className="text-muted-foreground/40">•</span>
+          <span className="text-primary/90 font-medium" data-testid="text-human-sourced">
+            100% human-sourced
+          </span>
+        </div>
+      </div>
+    </Card>
   );
 }
