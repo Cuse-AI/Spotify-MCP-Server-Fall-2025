@@ -19,6 +19,7 @@ export interface TapestrySong {
   confidence: number;
   reddit_context?: string;
   ananki_reasoning?: string;
+  source_url?: string; // To show "from YouTube" vs "from Reddit"
   coordinates?: {
     x: number;
     y: number;

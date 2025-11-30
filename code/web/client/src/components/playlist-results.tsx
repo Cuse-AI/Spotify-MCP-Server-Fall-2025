@@ -354,12 +354,20 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
         {data.songs.some((s) => s.reddit_context || s.ananki_reasoning) && (
           <details className="mt-12">
             <summary className="text-sm text-muted-foreground cursor-pointer hover:text-foreground transition-colors text-center">
-              Why these songs? See the human stories behind each pick
+              Why these songs? See the stories behind each pick
             </summary>
             <div className="mt-6 space-y-4">
               {data.songs.map((song, index) => {
-                const humanQuote = song.reddit_context;
+                const isExtrapolated = song.extrapolated === true;
+                const humanQuote = !isExtrapolated ? song.reddit_context : undefined; // No fake quotes for extrapolated
                 const aiReasoning = song.ananki_reasoning;
+                
+                // Determine source label from URL
+                const sourceLabel = song.source_url?.includes('youtube') 
+                  ? 'YouTube comment' 
+                  : song.source_url?.includes('reddit') 
+                    ? 'Reddit' 
+                    : 'the community';
                 
                 if (!humanQuote && !aiReasoning) return null;
                 
@@ -370,9 +378,10 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
                   >
                     <h4 className="font-medium text-sm text-primary mb-3">
                       {song.title} — {song.artist}
+                      {isExtrapolated && <span className="ml-2 text-xs text-muted-foreground">(AI discovery)</span>}
                     </h4>
                     
-                    {/* Human Quote - The Star */}
+                    {/* Human Quote - ONLY for tapestry songs */}
                     {humanQuote && (
                       <div className="mb-4">
                         <div className="flex gap-3">
@@ -382,14 +391,14 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
                           </blockquote>
                         </div>
                         <p className="text-xs text-muted-foreground/60 mt-2 ml-8">
-                          — from Reddit
+                          — from {sourceLabel}
                         </p>
                       </div>
                     )}
                     
-                    {/* AI Reasoning - Supporting */}
+                    {/* AI Reasoning */}
                     {aiReasoning && (
-                      <div className="border-t border-border/50 pt-3 mt-3">
+                      <div className={humanQuote ? "border-t border-border/50 pt-3 mt-3" : ""}>
                         <p className="text-xs text-muted-foreground leading-relaxed">
                           <span className="font-medium text-muted-foreground/80">Why it fits: </span>
                           {aiReasoning}

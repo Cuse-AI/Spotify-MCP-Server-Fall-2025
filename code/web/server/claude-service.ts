@@ -85,20 +85,26 @@ function enrichSongsWithHumanContext(songs: TapestrySong[], tapestry: TapestryCo
     const trackId = song.track_id.replace('spotify:track:', '');
     const original = songLookup.get(song.track_id) || songLookup.get(trackId);
     
-    if (original) {
-      // Get the human quote (comment_text is the actual Reddit comment)
+    if (original && !song.extrapolated) {
+      // ONLY enrich non-extrapolated songs with human quotes
+      // Extrapolated songs don't have real human context!
       const humanQuote = original.comment_text || original.full_context;
-      // Get the AI reasoning
       const aiReasoning = song.ananki_reasoning || original.ananki_reasoning || original.ananki_analysis;
+      const sourceUrl = original.source_url || '';
       
       return {
         ...song,
         reddit_context: humanQuote || song.reddit_context,
         ananki_reasoning: aiReasoning,
+        source_url: sourceUrl,
       };
     }
     
-    return song;
+    // For extrapolated songs, only keep the AI reasoning, NO fake human quote
+    return {
+      ...song,
+      reddit_context: undefined, // Clear any fake quote Claude might have generated
+    };
   });
 }
 
