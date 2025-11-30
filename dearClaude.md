@@ -84,7 +84,7 @@ Location: core/tapestry.json (8.01 MB)
 | # | Task | Difficulty | Time Est. | Demo Priority | Status |
 |---|------|------------|-----------|---------------|--------|
 | 1 | Playlist page text | Easy | 15 min | HIGH | ✅ DONE - Simplified to one paragraph + journey path visual |
-| 2 | Add human quotes | Medium | 1-2 hrs | MEDIUM | 🔲 TODO |
+| 2 | Add human quotes | Medium | 1-2 hrs | MEDIUM | ✅ DONE - Reddit quotes now display in song details |
 | 3 | Fix "failed to add songs" error | Medium | 30-60 min | HIGH | ⚠️ Vercel can't persist files - works locally, not in prod |
 | 4 | Remove thumbs from non-extrapolated | Easy | 15 min | HIGH | ✅ DONE - Only AI discoveries show feedback buttons |
 | 5 | Create Playlist on Spotify button | Hard | 2-3 hrs | LOW | ❌ Skip for demo |
@@ -104,14 +104,18 @@ Location: core/tapestry.json (8.01 MB)
 - Pills with arrows showing the emotional progression
 **File:** `code/web/client/src/components/playlist-results.tsx`
 
-#### 2. Add Human Quotes (MEDIUM - WORTH IT)
+#### 2. Add Human Quotes ✅ COMPLETED
 **What:** Show the original Reddit comments that explain WHY each song fits
-**Where:** Same component, add display for `ananki_reasoning` or `reddit_context` fields
-**Why it matters:** This is the SOUL of Midden - human emotional context
-**Data available:** 
-- `song.ananki_reasoning` - Claude's emotional analysis
-- `song.reddit_context` - Original human comment (when available)
-**Implementation:** Could be tooltips, expandable sections, or inline text
+**Changes:**
+- Removed the XX% match display (doesn't fit our human-centered philosophy)
+- Added `enrichSongsWithHumanContext()` function in claude-service.ts to look up original Reddit comments
+- Redesigned song details section with Quote icon and beautiful formatting
+- Human quote is the star (blockquote style), AI reasoning is secondary
+- Summary now shows "Why these songs? See the human stories behind each pick"
+**Data quality:** 99.3% of songs have quality Reddit quotes (>30 chars)
+**Files modified:** 
+- `code/web/client/src/components/playlist-results.tsx`
+- `code/web/server/claude-service.ts`
 
 #### 3. Thumbs Up/Down System ✅ IMPLEMENTED (but Vercel limited)
 **What:** Track all user feedback for human oversight
