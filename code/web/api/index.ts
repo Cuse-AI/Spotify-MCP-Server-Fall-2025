@@ -4,6 +4,13 @@ import { storage } from "../server/storage";
 import { createSpotifyPlaylist } from "../server/spotify-service";
 import { userJourneySchema, userValidatedSongSchema } from "../shared/schema";
 import { z } from "zod";
+import * as fs from "fs";
+import * as path from "path";
+import { fileURLToPath } from "url";
+
+// Get __dirname equivalent in ESM
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const createPlaylistSchema = z.object({
   playlistName: z.string(),
@@ -61,10 +68,27 @@ async function handleHealth(req: VercelRequest, res: VercelResponse) {
   const hasSpotifyId = !!process.env.SPOTIFY_CLIENT_ID;
   const hasSpotifySecret = !!process.env.SPOTIFY_CLIENT_SECRET;
 
+  // Debug path info
+  const cwd = process.cwd();
+  const apiDirname = __dirname;
+  const possiblePaths = [
+    path.join(apiDirname, "..", "core", "tapestry.json"),
+    path.join(apiDirname, "core", "tapestry.json"),
+    path.join(cwd, "core", "tapestry.json"),
+    "/var/task/core/tapestry.json",
+  ];
+  
+  const pathChecks = possiblePaths.map(p => ({
+    path: p,
+    exists: fs.existsSync(p)
+  }));
+
   let stats = null;
+  let statsError = null;
   try {
     stats = await storage.getTapestryStats();
-  } catch (e) {
+  } catch (e: any) {
+    statsError = e.message;
     console.error("Error getting stats:", e);
   }
 
@@ -73,12 +97,18 @@ async function handleHealth(req: VercelRequest, res: VercelResponse) {
   return res.status(isHealthy ? 200 : 503).json({
     status: isHealthy ? "healthy" : "degraded",
     timestamp: new Date().toISOString(),
+    debug: {
+      cwd,
+      apiDirname,
+      pathChecks,
+    },
     environment: {
       anthropic_key: hasAnthropicKey ? "✅ set" : "❌ missing",
       spotify_id: hasSpotifyId ? "✅ set" : "❌ missing",
       spotify_secret: hasSpotifySecret ? "✅ set" : "❌ missing",
     },
     data: stats,
+    statsError,
   });
 }
 

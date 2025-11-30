@@ -2,23 +2,40 @@ import Anthropic from "@anthropic-ai/sdk";
 import type { UserJourney, PlaylistResponse, TapestrySong } from "@shared/schema";
 import * as fs from "fs";
 import * as path from "path";
+import { fileURLToPath } from "url";
 
-// Helper to find project root (works both locally in code/web and on Replit)
+// Get __dirname equivalent in ESM
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Helper to find project root (works locally, on Replit, and on Vercel)
 function getProjectRoot(): string {
-  let currentDir = process.cwd();
+  // Try relative to this file first (most reliable for serverless)
+  // claude-service.ts is in server/, so go up one level
+  const fromDirname = path.join(__dirname, "..");
+  if (fs.existsSync(path.join(fromDirname, "core", "tapestry.json"))) {
+    return fromDirname;
+  }
 
-  // Check if we're already at project root (has core/ and data/ folders)
+  // Try cwd
+  let currentDir = process.cwd();
   if (fs.existsSync(path.join(currentDir, "core", "tapestry.json"))) {
     return currentDir;
   }
 
-  // Navigate up to find project root
+  // Try Vercel's task directory
+  if (fs.existsSync("/var/task/core/tapestry.json")) {
+    return "/var/task";
+  }
+
+  // Navigate up from cwd
   const parentDir = path.join(currentDir, "..", "..");
   if (fs.existsSync(path.join(parentDir, "core", "tapestry.json"))) {
     return parentDir;
   }
 
-  // Fallback to current directory
+  // Fallback
+  console.warn("⚠️ Could not find project root, using cwd:", currentDir);
   return currentDir;
 }
 
