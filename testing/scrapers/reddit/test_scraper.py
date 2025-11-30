@@ -4,6 +4,8 @@ MIDDEN TEST SCRAPER - Reddit
 ============================
 A clean, quality-first scraper built from scratch.
 
+UPDATED: Nov 30, 2025 - Now uses UnifiedQualityFilter
+
 Key principles:
 1. Quality filtering AT THE SOURCE - bad data never saved
 2. Target specific sub-vibes with targeted queries
@@ -33,6 +35,10 @@ from datetime import datetime
 from pathlib import Path
 from dotenv import load_dotenv
 
+# Add scrapers/shared to path for unified filter
+sys.path.insert(0, str(Path(__file__).parent.parent.parent.parent / 'scrapers' / 'shared'))
+from unified_quality_filter import UnifiedQualityFilter
+
 # Load environment variables from multiple possible locations
 load_dotenv()
 load_dotenv(Path(__file__).parent.parent.parent.parent / 'code' / 'web' / '.env')
@@ -42,8 +48,7 @@ load_dotenv(Path(__file__).parent.parent.parent.parent / 'data' / 'spotify' / '.
 if hasattr(sys.stdout, 'reconfigure'):
     sys.stdout.reconfigure(encoding='utf-8')
 
-
-class QualityFilter:
+# NOTE: Using UnifiedQualityFilter imported from scrapers/shared
     """
     STRICT quality filter - rejects bad data BEFORE it enters our system.
     
@@ -249,8 +254,8 @@ class TestScraper:
             user_agent=os.getenv('REDDIT_USER_AGENT', 'MiddenScraper/1.0')
         )
         
-        # Quality filter
-        self.quality = QualityFilter()
+        # Quality filter - USE UNIFIED FILTER
+        self.quality = UnifiedQualityFilter()
         
         # Load persistent seen URLs (survives across runs!)
         self.seen_file = Path(__file__).parent / 'output' / 'seen_urls.json'
@@ -357,7 +362,7 @@ class TestScraper:
                 continue
             self.seen_urls.add(url)
             
-            passed, reason = self.quality.check(comment.body)
+            passed, reason = self.quality.check(comment.body, source='reddit')
             if not passed:
                 continue
             
@@ -626,7 +631,7 @@ if __name__ == '__main__':
     results = scraper.scrape(DRIVE_CONFIG, target=30)
     
     # Show stats
-    scraper.quality.print_stats()
+    scraper.quality.print_stats('Reddit')
     
     # Show samples for verification
     scraper.show_samples(5)

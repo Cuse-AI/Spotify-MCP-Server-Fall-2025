@@ -20,6 +20,7 @@ import time
 from dotenv import load_dotenv
 from pathlib import Path
 from checkpoint_utils import CheckpointManager
+from unified_quality_filter import UnifiedQualityFilter
 
 load_dotenv()
 load_dotenv(Path(__file__).parent.parent / '.env')
@@ -41,6 +42,7 @@ class AngryYouTubeScraper:
         )
         
         self.scraped_videos = set()
+        self.quality_filter = UnifiedQualityFilter()
 
     def clean_song_title(self, title):
         """Clean YouTube video title to get actual song name"""
@@ -212,20 +214,27 @@ class AngryYouTubeScraper:
                         # Get comments for emotional context
                         comments = self.get_video_comments(video_id, max_comments=10)
                         
-                        # Find best emotional comment
+                        # Find best emotional comment using quality filter
                         best_comment = ""
                         best_likes = 0
                         for comment in comments:
-                            if comment['likes'] > best_likes and len(comment['text']) > 20:
-                                best_comment = comment['text']
+                            text = comment['text']
+                            # Use unified quality filter
+                            passed, reason = self.quality_filter.check(text, source='youtube')
+                            if passed and comment['likes'] >= best_likes:
+                                best_comment = text
                                 best_likes = comment['likes']
+                        
+                        # SKIP if no quality comment found (never use playlist description!)
+                        if not best_comment:
+                            continue
                         
                         song_data = {
                             **spotify_result,
                             'source_url': video_url,
                             'source': 'youtube',
                             'post_title': playlist['title'],
-                            'comment_text': best_comment if best_comment else playlist['description'][:500],
+                            'comment_text': best_comment,  # NEVER use playlist description as fallback
                             'comment_score': best_likes,
                             'playlist_id': playlist['id']
                         }

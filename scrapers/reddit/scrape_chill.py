@@ -15,6 +15,7 @@ import time
 from dotenv import load_dotenv
 from pathlib import Path
 from checkpoint_utils import CheckpointManager
+from unified_quality_filter import UnifiedQualityFilter
 
 load_dotenv()
 load_dotenv(Path(__file__).parent.parent / '.env')
@@ -36,6 +37,7 @@ class ChillSmartScraper:
         )
 
         self.scraped_urls = set()
+        self.quality_filter = UnifiedQualityFilter()
 
     def is_music_comment(self, text):
         """Check if comment is actually about music"""
@@ -201,10 +203,20 @@ class ChillSmartScraper:
                                     continue
                                 cp.scraped_urls.add(url)
 
+                                # Quality filter check FIRST
+                                passed, reason = self.quality_filter.check(comment.body, source='reddit')
+                                if not passed:
+                                    continue
+                                
                                 songs = self.extract_from_comment(
                                     comment.body, url, comment.score,
                                     post_title, post_body
                                 )
+                                # Quality filter check FIRST
+                                passed, reason = self.quality_filter.check(comment.body, source='reddit')
+                                if not passed:
+                                    continue
+                                
                                 songs = self.extract_from_comment(
                                     comment.body, url, comment.score,
                                     post_title, post_body

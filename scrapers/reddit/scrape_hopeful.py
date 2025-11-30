@@ -15,6 +15,7 @@ import time
 from dotenv import load_dotenv
 from pathlib import Path
 from checkpoint_utils import CheckpointManager
+from unified_quality_filter import UnifiedQualityFilter
 
 load_dotenv()
 load_dotenv(Path(__file__).parent.parent / '.env')
@@ -35,6 +36,7 @@ class HopefulSmartScraper:
         )
 
         self.scraped_urls = set()
+        self.quality_filter = UnifiedQualityFilter()
 
     def is_music_comment(self, text):
         text_lower = text.lower()

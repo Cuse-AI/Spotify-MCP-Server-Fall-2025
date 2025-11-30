@@ -4,10 +4,13 @@ MIDDEN TEST SCRAPER - YouTube
 =============================
 A clean, quality-first YouTube scraper built from scratch.
 
+UPDATED: Nov 30, 2025 - Now uses UnifiedQualityFilter
+
 Key differences from Reddit:
 - Song/artist comes from VIDEO TITLE (not comment extraction)
 - Comments provide EMOTIONAL CONTEXT only
 - Extra filters for YouTube-specific spam (timestamps, "who's here in 2024", etc.)
+- NEVER uses playlist descriptions as comments (prevents duplicates!)
 
 Usage:
     python test_scraper_yt.py
@@ -31,6 +34,10 @@ from dotenv import load_dotenv
 from googleapiclient.discovery import build
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
+
+# Add scrapers/shared to path for unified filter
+sys.path.insert(0, str(Path(__file__).parent.parent.parent.parent / 'scrapers' / 'shared'))
+from unified_quality_filter import UnifiedQualityFilter
 
 # Load environment variables
 load_dotenv()
@@ -215,8 +222,8 @@ class YouTubeTestScraper:
             )
         )
         
-        # Quality filter
-        self.quality = YouTubeQualityFilter()
+        # Quality filter - USE UNIFIED FILTER
+        self.quality = UnifiedQualityFilter()
         
         # Track what we've seen
         self.seen_videos = set()
@@ -402,10 +409,10 @@ class YouTubeTestScraper:
                 # Get comments
                 comments = self.get_video_comments(video_id, max_comments=30)
                 
-                # Find a quality comment
+                # Find a quality comment - USE UNIFIED FILTER with source='youtube'
                 best_comment = None
                 for comment in comments:
-                    passed, reason = self.quality.check(comment['text'])
+                    passed, reason = self.quality.check(comment['text'], source='youtube')
                     if passed:
                         best_comment = comment
                         break
@@ -550,7 +557,7 @@ if __name__ == '__main__':
     results = scraper.scrape(DRIVE_CONFIG, target=30)
     
     # Show stats
-    scraper.quality.print_stats()
+    scraper.quality.print_stats('YouTube')
     
     # Show samples for verification
     scraper.show_samples(5)
