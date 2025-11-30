@@ -1,0 +1,114 @@
+Great question. Let me think through this carefully.
+
+## Analyzing the Quota Decision
+
+### The Math on Multi-Version Fallback:
+
+**Best case (official works):** 101 units per song
+- 1 search (100) + 1 comment fetch (1)
+
+**Worst case (all 5 versions tried, none work):** 505 units, 0 songs
+- 5 searches (500) + 5 comment fetches (5) = WASTED
+
+**Average case (need 2-3 versions):** ~250 units per song
+
+### The Risk:
+
+With `max_yt_quota=5000` and 3 keys (30,000 total daily):
+- If average is 250 units/song → ~120 songs per run
+- If we hit worst case a lot → could burn quota on failed rescues
+
+### The Question: Is Rescuing Worth It?
+
+**Unknown:** What % of songs need rescuing vs what % are unrescueable?
+
+If 80% of songs work on official → fallback is cheap insurance
+If 80% of songs need fallback → we're burning quota on rescue attempts
+
+---
+
+## My Recommendation: Conservative First Run
+
+Let me modify the scraper to be **smarter about when to try fallback**:Here's my thinking:
+
+**Option A: Conservative (max 2 versions)**
+- Try official first
+- If fails, try lyrics only (highest success rate for emotional comments)
+- Skip slowed/acoustic/live unless we're desperate
+- Saves quota, might miss some songs
+
+**Option B: Aggressive (all 5 versions)** 
+- Current approach
+- Maximizes songs found per Reddit discovery
+- Burns more quota
+
+**Option C: Adaptive**
+- Track success rates per version type
+- Stop trying versions that rarely work
+- More complex but optimal
+
+---
+
+## For Testing: I Recommend a Staged Approach
+
+**Run 1: Diagnostic (small, careful)**
+```python
+target=30, max_yt_quota=2000
+```
+- See what % need fallback
+- See what versions actually rescue songs
+- Don't burn all quota on unknowns
+
+**Run 2: Adjust based on data**
+- If rescue rate is high → keep all 5 versions
+- If rescue rate is low → trim to 2-3 versions
+- Scale up quota accordingly
+
+Let me add a **configurable fallback depth** so we can test:Now update the call site and add the parameter to scrape():I need to thread the max_versions parameter through. Let me update the scrape method and the call site:Now update the scrape method signature:Now update the main block to use conservative settings for first test:Now verify syntax:---
+
+## ✅ ULTIMATE HYBRID SCRAPER v4 - Updated with Configurable Fallback
+
+**Summary of Changes:**
+
+### New `max_versions` Parameter:
+```python
+scraper.scrape(
+    target=30,           # How many songs to collect
+    max_yt_quota=2000,   # Quota limit
+    max_versions=2       # How many video versions to try (1-5)
+)
+```
+
+### Preset Configurations:
+
+| Mode | target | quota | versions | Best For |
+|------|--------|-------|----------|----------|
+| **Diagnostic** | 30 | 2000 | 2 | First run, see efficiency |
+| **Balanced** | 50 | 3000 | 3 | Normal operation |
+| **Aggressive** | 100 | 8000 | 5 | Maximize songs |
+
+### Why This Is Better:
+
+1. **First run is DIAGNOSTIC** - We'll see:
+   - How many songs work on first try (official)
+   - How many get rescued by lyrics video
+   - Average quota cost per song
+   - Whether fallback is worth the extra cost
+
+2. **Data-driven scaling** - After first run:
+   - If rescue rate is high → increase max_versions
+   - If rescue rate is low → keep it at 2
+   - Adjust quota accordingly
+
+3. **Default is conservative** (2000 quota, 2 versions)
+   - Won't burn all 3 keys on first test
+   - Leaves room to adjust and run again
+
+---
+
+**Ready for Replit sanity check!**
+
+After the first diagnostic run, we'll have real data to decide:
+- Is lyrics fallback worth it? (probably yes)
+- Is slowed+reverb worth it? (depends on data)
+- What's our actual songs-per-quota ratio?

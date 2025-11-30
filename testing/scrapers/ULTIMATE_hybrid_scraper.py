@@ -630,16 +630,22 @@ class UltimateHybridScraper:
                 print(f"    [Comment error: {e}]")
             return None
 
-    def search_with_fallback(self, artist: str, song: str, min_score: int = 6) -> Tuple[Optional[Dict], Optional[Dict]]:
+    def search_with_fallback(self, artist: str, song: str, min_score: int = 6, max_versions: int = 3) -> Tuple[Optional[Dict], Optional[Dict]]:
         """
         Try multiple video versions until we find one with quality comments.
+        
+        Args:
+            max_versions: How many versions to try (1-5). Default 3 = official, lyrics, slowed
+                         Use 1 for testing, 5 for maximum rescue attempts
         
         Returns: (video_info, comment_data) or (None, None) if all fail
         
         This is the KEY INNOVATION: Instead of giving up when the official
         video has no good comments, we try lyrics, slowed+reverb, etc.
         """
-        for version_suffix, version_desc in VIDEO_VERSIONS:
+        versions_to_try = VIDEO_VERSIONS[:max_versions]
+        
+        for version_suffix, version_desc in versions_to_try:
             query = f"{artist} {song} {version_suffix}"
             
             # Search for this version
@@ -710,7 +716,8 @@ class UltimateHybridScraper:
             # Uses fallback: official → lyrics → slowed → acoustic → live
             video, comment_data = self.search_with_fallback(
                 spotify_data['artist'], 
-                spotify_data['song']
+                spotify_data['song'],
+                max_versions=self._max_versions
             )
             
             if not video or not comment_data:
@@ -743,16 +750,23 @@ class UltimateHybridScraper:
         
         return results
 
-    def scrape(self, target: int = 50, max_yt_quota: int = 5000):
+    def scrape(self, target: int = 50, max_yt_quota: int = 3000, max_versions: int = 3):
         """
         Main scraping loop.
         
         Args:
             target: Number of songs to collect
-            max_yt_quota: Stop when this much YT quota is used (default 5000 = 50%)
+            max_yt_quota: Stop when this much YT quota is used
+            max_versions: How many video versions to try per song (1-5)
+                         1 = official only (fastest, might miss songs)
+                         3 = official + lyrics + slowed (balanced) [DEFAULT]
+                         5 = all versions (thorough, uses more quota)
         """
+        self._max_versions = max_versions
+        version_names = [v[0] for v in VIDEO_VERSIONS[:max_versions]]
+        
         print(f"\nTarget: {target} songs | Max YT quota: {max_yt_quota} units")
-        print(f"Video fallback enabled: official -> lyrics -> slowed -> acoustic -> live")
+        print(f"Video versions to try: {' -> '.join(version_names)}")
         print(f"{'='*70}\n")
         
         completed_queries = set(self.checkpoint.get('completed_queries', []))
@@ -903,10 +917,22 @@ if __name__ == '__main__':
     
     scraper = UltimateHybridScraper()
     
-    # Start scraping
-    # - target: how many songs to collect
-    # - max_yt_quota: stop when this much YT quota used
-    results = scraper.scrape(target=100, max_yt_quota=5000)
+    # CONFIGURATION - Adjust these based on your needs:
+    #
+    # DIAGNOSTIC RUN (first time, conservative):
+    #   target=30, max_yt_quota=2000, max_versions=2
+    #
+    # BALANCED RUN (normal operation):
+    #   target=50, max_yt_quota=3000, max_versions=3
+    #
+    # AGGRESSIVE RUN (maximize songs, burn quota):
+    #   target=100, max_yt_quota=8000, max_versions=5
+    
+    results = scraper.scrape(
+        target=30,           # Start small to see efficiency
+        max_yt_quota=2000,   # Conservative quota limit
+        max_versions=2       # official + lyrics only (most efficient)
+    )
     
     scraper.print_stats()
     scraper.save()
