@@ -1,0 +1,18 @@
+{
+  "timestamp": "20251130_013915",
+  "config": {
+    "songs_per_vibe": 2,
+    "min_score": 6,
+    "total_vibes": 107
+  },
+  "results": {
+    "vibes_processed": 107,
+    "songs_attempted": 140,
+    "songs_accepted": 79,
+    "songs_rejected": 61,
+    "youtube_calls": 338,
+    "quota_rotations": 0
+  },
+  "acceptance_rate": "56.4%",
+  "output_file": "RAW_hybrid_scraper_20251130_013915.json"
+}

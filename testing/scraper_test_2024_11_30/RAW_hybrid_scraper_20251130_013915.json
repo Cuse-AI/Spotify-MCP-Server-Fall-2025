@@ -1,0 +1,1528 @@
+{
+  "metadata": {
+    "scraper": "balanced_hybrid_v1",
+    "timestamp": "20251130_013915",
+    "songs_per_vibe_attempted": 2,
+    "min_score": 6,
+    "total_vibes": 107,
+    "songs_collected": 79,
+    "pipeline_stage": "RAW",
+    "next_step": "Move to data/pipeline/1_raw/ then dedupe",
+    "needs_ananki": true
+  },
+  "songs": [
+    {
+      "artist": "AMBIENT CHILLOUT LOUNGE RELAXING MUSIC",
+      "song": "Essential Relax Session 1 - Background Chill Out Music -",
+      "comment_text": "Got covid in a bad way...after beginning to recover I fell ill again. Hospital found blood clots on my lungs, I&#39;m here now using this beautiful music to soothe my soul through my headphones. Being extremely unwell gives u a new appreciation for LIFE!!!!!<br><br>I can&#39;t wait to start living my life again with my sons. Be grateful for what you have people, even the simply things mean so much.",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "life_event",
+        "emotional_words_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=cq2Ef6rvL6g",
+      "search_context": "ambient music relaxing",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:39:19.003636",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Ambient Study Music To Concentrate",
+      "song": "4 Hours of Music for Studying, Concentration and Memory",
+      "comment_text": "hi, random reader.\r<br>i&#39;m a medical student. and i have a surgery exam tomorrow.<br>my health is really bad + i have a stress and really depression.\r<br>i just started preparing for exam, i have exactly 24 hours and as soon as i started listening to this music, i got my strength back.<br>i can do anything. and so can you. we can do it, good luck to you. i am with you.<br><br>edited:  i passed the exam and got the highest score guys :)",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "life_event",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=sjkrrmBnpGE",
+      "search_context": "atmospheric background music",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:39:20.071956",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "The Chainsmokers",
+      "song": "Roses",
+      "comment_text": "Who else is so stressed this 2019? And trying to bring back the good vibes you had 3 years ago by listening to this song?\r<br>I guess I&#39;m the only one.",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "story_context_1",
+        "good_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=mBZdHuZCfic",
+      "search_context": "beach songs feeling",
+      "spotify_id": "3vv9phIu6Y1vX3jcqaGz5Z",
+      "spotify_uri": "spotify:track:3vv9phIu6Y1vX3jcqaGz5Z",
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:39:22.973620",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Beach House",
+      "song": "Space Song",
+      "comment_text": "This reminds me of my Russian friend. He had just had a child, he was so happy - everything was so good, and then Russia invaded Ukraine and as he was a soldier already, he was one of the first sent out to fight. He has not been on since those days before, in December 2022.\r<br><br>I think I know what happened, but I don&#39;t want to think about it too. What a man, and what a life he had ahead of him. Way too young man.<br><br>May he be in eternal peace, wherever he is. Love you Portokhali, brother &lt;3",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect_1",
+        "emotional_words_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=RBtlPT23PTM",
+      "search_context": "beach songs feeling",
+      "spotify_id": "7H0ya83CMmgFcOhw0UB6ow",
+      "spotify_uri": "spotify:track:7H0ya83CMmgFcOhw0UB6ow",
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:39:23.808704",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Relaxing Sleep Music + Stress Relief",
+      "song": "Relaxing Music, Deep Sleep Instantly, Night Coffee Music",
+      "comment_text": "I am so stress right now, i couldn’t do anything just lying on my bed in the entire day and this calming music help me to relax my mind and body. Thank You so much for this! <br><br>Reminder: To all whos reading this, it’s okay if you didn’t do anything today! It’s okay if you all just do today is cry, just let it out okay? You will get through this! I love you! You are amazing love. ❤️",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect_1",
+        "emotional_words_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=6kticX9eW_A",
+      "search_context": "evening wind down music",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:39:25.094556",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Healing Sleep Music",
+      "song": "Eliminate Stress,Release of Melatonin and Toxin | Sleep Music For Your Night 2",
+      "comment_text": "Its 4 am I have an exam in 3 hours and 3 presentations at school. I woke up because of my anxiety, but i started listening to this and started raining, I started to relax and have confidence on what i have studied. Wish me luck and Thank you for reading this.",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "life_event",
+        "action_statement",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=sSER7a1qKjI",
+      "search_context": "evening wind down music",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:39:25.907853",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "10 Hours of Relaxing Music",
+      "song": "Calm Piano &amp; Guitar, Sleep Music, Study Music",
+      "comment_text": "I had surgery several years ago to correct my hearing. An unwanted side-effect is tinnitus on both sides, drums, whistles, engines, static, cicadas...it&#39;s overwhelming. I went from experiencing peaceful silence to never having a moment without noise. This music plays all day, while I&#39;m working, studying, cooking, etc. It is so beautiful that I cry sometimes from how this music has allowed me to overcome my tinnitus and move me so deeply. Thank you for this music. I honestly believe it is saving my life. &lt;3",
+      "comment_score": 8,
+      "comment_reasons": [
+        "first_person",
+        "story_context_1",
+        "life_event",
+        "emotional_words_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=8WVXk0Gz66E",
+      "search_context": "gentle soft music",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:39:27.264089",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "TENDER",
+      "song": "Slow Love",
+      "comment_text": "Nothing hits like Tender! The first time I ever heard them was when I stumbled across “Slow Love” one sad day and I was in sweet, uncontrollable tears within seconds! I don’t think that’s ever happened to me in my life… Where I was brought to tears immediately after hearing a song for the first time…. And it wasn’t because of the terrible day I was having; it was because that song pierced through my hard exterior and made sense of the maddening anguish in my heart. It perfectly describes my past relationship that I still feel nostalgic and yet resentful about. For the first time in a long time, I found a perfect convergence of all the emotions &amp; epiphanies I was feeling that gave me the most enrapturing, full-bodied auricular experience. That’s why I made a point to travel 90 miles, despite not having much money for gas, to go see them live when they recently visited the States. And, just as I expected, they captivated my soul immediately. And they were gracious enough to stick around after the show to meet a long line of fans, including myself. I was pretty nervous at the time so I didn&#39;t really know what to say to the ones who brought some light back into the ominous darkness brought on by the erosion of life. I was also having a very sad day that day too, but just like the last time, Tender whispered their raw, humbling lyrics into my soul and lifted my entire being with their nectarous melodies. It reduced me to a position of  subservience that was beautiful and meaningful. That’s what I really wanted to tell them when I met them, but the words escaped me when I was presented with the opportunity. I honestly cannot wait to see them again and I would stop at nothing to get there. You have a fan for life, Tender! Thank you so much for what you’ve created and for taking the time to meet your fans that day! I hope to meet you again and wish you all the success you deserve!",
+      "comment_score": 9,
+      "comment_reasons": [
+        "first_person",
+        "story_context_2",
+        "emotional_words_2",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=u7yYWoWys1k",
+      "search_context": "tender calm songs",
+      "spotify_id": "56cfpk00pjNw6HCh6gpRCX",
+      "spotify_uri": "spotify:track:56cfpk00pjNw6HCh6gpRCX",
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:39:28.298973",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Relaxing Jazz Music",
+      "song": "Background Chill Out  Music - Music For Relax,Study,Work",
+      "comment_text": "Let me tell you what this video means to me. I discovered it about a year ago and ever since then I have listened to this to soothe my anxiety after my mom died, when I felt lonely and afraid to sleep because my best friend wasn&#39;t home, to slow dance to with my very first boyfriend, to clean my house, on a long road trip to ease my anxiety, I&#39;ve also worked on my novel with this playing, and I have cooked with it in the background. My best friend, who&#39;s also my room mate, always giggles and texts me and says &quot;I can hear you listening to your jazz video in your room :)&quot;. She then knows either I&#39;m working on my book, stretching, cleaning my room, or perhaps I&#39;m trying to relax or maybe I need some comfort. This is, in fact, the sound track of my life and I love it!",
+      "comment_score": 9,
+      "comment_reasons": [
+        "first_person",
+        "story_context_1",
+        "life_event",
+        "emotional_words_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=neV3EPgvZ3g",
+      "search_context": "chill jazz playlist",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:39:29.771513",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Jazz &amp; Soul R&amp;B",
+      "song": "Warm Sax, Rhodes &amp; Chill Grooves | Feel-Good Smooth Jazz for Relaxation 🎷✨",
+      "comment_text": "I’ve been struggling with my mental health for a while now. This music, though, brings me some peace in the chaos. It&#39;s like a gentle reminder that I&#39;m not alone, and there’s beauty in just being still.",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect_1",
+        "emotional_words_1",
+        "good_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=-Z2lTeSIQIw",
+      "search_context": "chill jazz playlist",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:39:30.386658",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Chill Lofi Mix [chill lo",
+      "song": "fi hip hop beats]",
+      "comment_text": "I&#39;ve been experiencing anxiety attacks for a few years now, those who know, know. I&#39;ve got a interview coming up and I&#39;ve been so stressed that i cant concentrate and prepare for it. I came across this and i feel like its helping already, as i typed this out i&#39;m sitting in front of my pc trying to prepare. Wish me luck thanks for this relaxing mix",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "life_event",
+        "action_statement",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=CLeZyIID9Bo",
+      "search_context": "lofi hip hop chill",
+      "spotify_id": "7lsW3SedRhYYvAkaFJEidL",
+      "spotify_uri": "spotify:track:7lsW3SedRhYYvAkaFJEidL",
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:39:32.184956",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "4K",
+      "song": "Autism Calming Sensory: Relaxing Music",
+      "comment_text": "I just went through a horrible feeling of overstimulation. I was on the verge of tears, Felt like I couldn’t move. My dog was walking all over me and it really messed up how i felt temperature wise. But then she started licking me. This helped me focus on one feeling rather than hundreds, this brought me back to reality. Thank you dog. You stopped me from having a huge panic attack 😭❤️",
+      "comment_score": 9,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect_2",
+        "emotional_words_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=yrAFXphbwgg",
+      "search_context": "repetitive calming music",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:39:35.339491",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Drone Sound for Deep Sleep",
+      "song": "12 Hours Drone Space | Sleep Scape, Meditation or Study",
+      "comment_text": "Mkay, so.... for some reason i find this both relaxing and unnerving.<br><br>Since this is a constant sound of very low drone, this could be used to isolate a person during depression, making them feeling hopeless. This method is for an example is used in &quot;Cry of Fear&quot;, where the main character, Simon Hendriksson, has depression and goes onto a crazed delirium. This genuinely is a way to make it sound, like there is nothing left, other than you and the void.<br><br>I personally like this kind of sound since im into horror stuff and using this drone to make a character feel desolate is really interesting and cool (imo)",
+      "comment_score": 8,
+      "comment_reasons": [
+        "first_person",
+        "story_context_1",
+        "life_event",
+        "emotional_words_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=JuEsBhpR9Bk",
+      "search_context": "droning ambient",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:39:36.549603",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Morning Coffee Vol. 4 | R&amp;B, Hip",
+      "song": "Hop, Old School, Morning Playlist, Chill Vibes, 90s-2000s",
+      "comment_text": "🚨 Update 5/19: Volume 5 is out! Go check it out 😊!!<br><br>I am thinking of doing a healing playlist next! What are some songs that help you guys heal? ❤️‍🩹",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "life_event",
+        "emotional_words_1",
+        "good_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=nkotP8XMr2M",
+      "search_context": "morning coffee playlist",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:39:37.903828",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Morning Coffee ☕ Happy Music to Start Your Day",
+      "song": "Relaxing Chillout House | The Good Life No.18",
+      "comment_text": "I just overcame 16 years of heavy drug addiction and am now building an animal shelter in Denmark. My 75yo uncle and I have bought a big house with a huge barn, and we have taken in 3 cats and 57 birds and 2 dogs and 1 homeless man and an elderly man with mental challenges. <br>Right now, we are building a music studio in part of the barn, and in the spring, we are beginning on the animal shelter. <br>I just want you to know that it&#39;s never too late to create a happy life for yourself.<br>My younger sister and younger brother both died, as did my last boyfriend and best friend, I am 56yo and even though I miss them a lot, I am surrounded by love ,family, friends, animals and nature.<br>You can get a good life too - one little step at a time. No matter what has happened, you deserve happiness. I believe in you and send you lots of love ❤️",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "life_event",
+        "emotional_words_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=SSuCyZlksrI",
+      "search_context": "morning coffee playlist",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:39:38.797503",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Deep Focus Music To Improve Concentration",
+      "song": "12 Hours of Ambient Study Music to Concentrate #508",
+      "comment_text": "Right now, there are people all over the world who are just like you. They&#39;re either lonely, they&#39;re missing somebody, they&#39;re depressed, they&#39;re hurt, they&#39;re scarred from the past, they&#39;re having personal issues no one knows about, they have secrets you wouldn&#39;t believe. They wish, they dream and they hope. And right now, they are sitting here reading these words, and I&#39;m writing this for you so you don’t feel alone anymore. What really helped me start overcoming the pain and actually move toward my goals was reading Manifest the Unseen by Luna Rivers, it opened my eyes in ways I didn’t expect. Always remember, don’t be depressed about the past, don’t worry about the future, and just focus on today. ❤",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect_1",
+        "emotional_words_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=DfSkKYQiwoU",
+      "search_context": "peaceful thinking songs",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:39:40.682224",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Overcome Anxiety, Stop All Stress",
+      "song": "Calm Down, End Anxiety Attacks, Overactive Thinking",
+      "comment_text": "When I get anxiety my heart races, I can&#39;t control my breathing, I fell like I&#39;m going to have a heart attack or stroke, my arm or leg go numb, my mind will free fall. <br> it sometimes lasts for an hour and it feels like hours. <br>This music really helped me calm down! I can&#39;t believe I read all the comments. Each comment helped me unbottle these emotions. You all are heroes! <br><br>And if you&#39;re struggling like me let&#39;s try not to forget that we are not alone,  we are not weak, we are not broken, we are not useless. And that this anxiety/ panic attack shall too pass! <br>It is okay to cry  open your heart and shed those negativities and all those worries! <br><br><br>Writing this comment really was something that I needed to do and I hope that you will too! Share your burdens and do the same!",
+      "comment_score": 10,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect_1",
+        "life_event",
+        "emotional_words_2",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=zcLv6aZBFdY",
+      "search_context": "peaceful thinking songs",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:39:41.240368",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Rainy Jazz Cafe",
+      "song": "Slow Jazz Music in Coffee Shop Ambience for Work, Study and Relaxation",
+      "comment_text": "being in nursing school and constantly having exams that bring me dread an anxiety; Im so glad I found this video its so comforting and all the comments make me feel so much better. Thank you&lt;3",
+      "comment_score": 8,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect_2",
+        "life_event",
+        "good_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=NJuSStkIZBg",
+      "search_context": "cozy rain music",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:39:43.176077",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Rainy Day ☔ Chilling Your Mood 🎧 Chill Lo",
+      "song": "fi Hip Hop to Study / Relax / Work 🌲 Lofi Coffee ☕",
+      "comment_text": "This comment section…. Has given me a little faith in humanity in 2025…. You have no idea how valuable this is. Worth more than gold…. Thank you for healing my crying soul just a little bit tonight. Bless you with every fragment of my spirit - ay0 ❤",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "life_event",
+        "emotional_words_2",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=DEWzT1geuPU",
+      "search_context": "cozy rain music",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:39:43.853367",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Frozen in Time",
+      "song": "Dystopian Dark Ambience - Meditative Dark Ambient Music",
+      "comment_text": "There was a time when I felt incredibly alone, like no one truly understood what I was going through. I&#39;d spend my evenings just scrolling, feeling disconnected. Then, one night, I stumbled upon this music. It was like a warm embrace, a melody that spoke directly to my soul and reminded me that I wasn&#39;t as isolated as I thought. Music truly has a way of healing. Wishing everyone listening, and the creator of this amazing channel, good health and happiness!",
+      "comment_score": 11,
+      "comment_reasons": [
+        "first_person",
+        "story_context_1",
+        "cause_effect_1",
+        "life_event",
+        "emotional_words_2",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=6HMF2rYw4K0",
+      "search_context": "uneasy ambient",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:39:45.753619",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Lazy Afternoon",
+      "song": "A Vintage Music Playlist",
+      "comment_text": "Thank you so much for this playlist. Recently my grandmother just passed away she was 97 years old. And had been married to my grandfather for 76 years. The songs bring back memories of her luckily I still have my grandfather with him being 97 also I do not expect him to be around much longer. This generation depicted in these pictures was one of the best. Along with the ideas and the aspirations they all had!🙏",
+      "comment_score": 8,
+      "comment_reasons": [
+        "first_person",
+        "story_context_1",
+        "life_event",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=kdzbuXYnwfE",
+      "search_context": "lazy sunday playlist",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:39:48.533292",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Zach Bryan",
+      "song": "Sunday Afternoon",
+      "comment_text": "“ I haven’t even seen the gravestone that I paid to have placed there “  man that literally brought me to tears. I lost my Dad 2 years ago and have only been once to see it, it makes it so real I don’t know if im ready to see it again.      Thanks for making such great music brother",
+      "comment_score": 10,
+      "comment_reasons": [
+        "first_person",
+        "story_context_1",
+        "cause_effect_1",
+        "life_event",
+        "emotional_words_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=DQTDqHorK9w",
+      "search_context": "sunday afternoon music",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:39:50.017568",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "ADD/ADHD Intense Relief",
+      "song": "Extended, ADHD Focus Music, ADHD Music Therapy, Isochronic Tones",
+      "comment_text": "I am 66 yrs old and was recently told by my Doctor that I have been living with undiagnosed ADHD all of my life. I can tell you a couple of things about my life, it has been Amazing! I followed my own interests. I never let people&#39;s judgements convince me that I was something I wasn&#39;t or allow myself to become someone whose self belief and worth depended on other people&#39;s opinions of me.<br>I had different interests from most of my classmates as a kid, but I explored my interests by myself or occasionally with someone I might meet who shared an interest or two with me. I never ignored my own path to follow the crowd and although I was thrilled to meet someone who shared some interest or hobby with me, I was never disappointed or feeling left out by the crowd. I always liked being me, even though sometimes it seemed as though just being yourself draws all kinds of criticism and even insults from others, there was Nothing in my life that I would have traded just to fit in with the crowd. When I was a kid in school, we were strapped for very many small and unjustifiable reasons, I know now that the main reason was for the teacher&#39;s purpose, they had no other tool in their toolbox that they could use to establish Crowd Control of a classroom full of kids.<br>These days, I believe, that the teachers position has not gifted them with any new tools to replace that Strap they&#39;ve been deprived of and since kids are still kids and teachers are still dealing with exactly the same problems as they did in years gone by, I believe they&#39;ve been making their lives easier by talking to parents and Doctors about their problem, which is. They believe themselves to be Great Teachers as they were Great Students but who would believe that when so many kids are floundering in School?<br>Their own sense of self preservation, I think, has led them to claim that while they are Great teachers despite the numbers of children and students who fail, it&#39;s simply because those kids &quot;Just can&#39;t Learn&quot;<br>Why would that be? Because they just can&#39;t focus on the drivel the curriculum forces me to teach them one and all, when no two think alike...that&#39;s what I think has become the conversation talking points....the teachers are great, the curriculum is scintillatingly interesting but half of the kids just can&#39;t seem to Focus on most of the subjects long enough to learn, they start fidgeting and doodling (out of boredom?) and distract the rest of the class.<br>Then the parents teacher day causes stress in all of the Parents, they get the suggestion that their kid should maybe be seen and tested for ADHD and sure enough, the next thing you know, half the kids or more and all being medicated to get along in their classes.<br>I&#39;m starting to think that the old strap was a lot easier on our minds than the diagnosis and medications have been on yours.<br>When some teacher strapped me, in the back of my mind, I always thought that there was something wrong with that teacher doing that to us kids.<br>These days, after you&#39;ve been seen and told any of a multitude of things are Wrong With You and you have been duly medicated and left believing that something was wrong with You. that&#39;s a Horrible thing to plant in a young persons mind.<br>We had a lot of violence to live with and a lot of hard work to do, but we never heard of kids suffering from anxiety or panic attacks or needing to be medicated to allow us to focus on many things that no kid in it&#39;s right mind would want to spend two minutes focusing on.<br>Make sure that you don&#39;t take all the judgements and labels to heart, Believe in yourself, you&#39;ve got two arms and two legs like everyone else and you can do whatever anyone else can, as long as You really want to.<br>If you don&#39;t believe me, check it out, a great number of successful people, really successful people have been told they have ADHD, including most of those who work in Silicon Valley, some of the most famous techie names you ever heard of, they got so good at something because they were great at focusing  on that thing, which could be all about computers or programming, or observing nature or farming, or painting, or anything at all.<br>Don&#39;t let being &quot;different&quot; cause you to look at yourself in any way other than as an Original Masterpiece. Those are not always recognized immediately by the masses, but once they are, they can often go from being shunned to being adored, look at Van Gough and many many others, what they went through just because they were different and nobody was able to recognize their greatness, that wasn&#39;t their fault, it didn&#39;t make them less great, they believed in themselves, not what others thought about them. You Do that Too, if you don&#39;t do anything else, Get your own back!",
+      "comment_score": 10,
+      "comment_reasons": [
+        "first_person",
+        "story_context_2",
+        "life_event",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=jvM9AfAzoSo",
+      "search_context": "understimulated music",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:39:51.539024",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "1 HR Bilateral Music Therapy",
+      "song": "Relieve Stress, Anxiety, PTSD, Nervousness - EMDR, Brainspotting",
+      "comment_text": "As a recent graduate, it is challenging to find a new job in IT. I’m depressed, and anxiety hit me hard. So, my EMDR therapist recommended me listen to this, and I’m crying right now. I have not felt this kind of calmness before. In the first 10 minutes, the magic of this music worked.",
+      "comment_score": 10,
+      "comment_reasons": [
+        "first_person",
+        "life_event",
+        "emotional_words_2",
+        "lyric_reaction",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=3AAH7vINhmQ",
+      "search_context": "understimulated music",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:39:51.947676",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Phoebe Bridgers",
+      "song": "Waiting Room",
+      "comment_text": "You can make it- I just turned 68.<br>I found this song about a month ago and it punched me in the heart. I was told when I was 17- it’s for the better. No one fucking knows that! <br>Life is full of pain but also joy<br>Look at the sky- look at your feet- you are here now <br>Look for the beauty in small things<br>Find the small speck that brings a smile to your face<br>Focus on that",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "story_context_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=VUOwg6nhuzA",
+      "search_context": "waiting room music",
+      "spotify_id": "04mAOoQNsXmDJlyupJwmkO",
+      "spotify_uri": "spotify:track:04mAOoQNsXmDJlyupJwmkO",
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:39:53.429877",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Jhené Aiko",
+      "song": "calm &amp; patient",
+      "comment_text": "❤❤❤this Song been listening to it since it first came out came out I was really sad last year …an this song Got me through an god the father himself thaaaank you for making this song .",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "story_context_1",
+        "cause_effect_1",
+        "good_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=rVoaycu_zTM",
+      "search_context": "patient calm songs",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:39:54.358655",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Superheaven",
+      "song": "&quot;Stare At The Void&quot;",
+      "comment_text": "I started listening back in 2023 and one band has never changed my life more. My brother committed suicide on his birthday a couple of years ago in a car wreck, driving into a tree. I remember the cold, brisk morning afterward, searching his bloodied car for his belongings. I found his phone- completely untouched and playing &quot;Dig Into Me&quot; by Superheaven. I looked up the band shortly after out of curiosity, and thinking we weren&#39;t getting any more music. Then, I saw this, and cried tears remembering when my brother would play music similar to this and hearing that song for the first time after his death. Thank you, Superheaven.",
+      "comment_score": 9,
+      "comment_reasons": [
+        "first_person",
+        "story_context_1",
+        "life_event",
+        "emotional_words_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=siDhacKVxdE",
+      "search_context": "void staring songs",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:39:58.171560",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Melanie Martinez",
+      "song": "VOID",
+      "comment_text": "“Like a priest behind confession walls I judge myselffff! “ that line hits so different when dealing with depression ❤",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "life_event",
+        "lyric_reaction",
+        "good_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=1NroJZVNgz8",
+      "search_context": "void staring songs",
+      "spotify_id": "6wmKvtSmyTqHNo44OBXVN1",
+      "spotify_uri": "spotify:track:6wmKvtSmyTqHNo44OBXVN1",
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:39:58.745101",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Softening into Change (1hr)",
+      "song": "Soothe #Anxiety + Calm Your Nervous System - #528hz  Healing Frequency",
+      "comment_text": "This music is the living proof that sound healing does work. I cannot describe the peace this brings to my body, mind and emotions. Thank you for sharing this with the world and making a difference for many souls. 💓💓💓",
+      "comment_score": 8,
+      "comment_reasons": [
+        "first_person",
+        "life_event",
+        "emotional_words_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=hGVUqE-bIUs",
+      "search_context": "nervous energy playlist",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:00.378934",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Sarah Reeves",
+      "song": "Anxious",
+      "comment_text": "It was around this time two years ago that my depression began. The anxiety made me feel like every atom in my body was trying to break loose. I remember searching for answers all the time. Most of the time I found myself reading through comment sections like this one to find someone I could relate to. It’s hard to reach out to other Christians. I felt like my joy had been stolen from me and I envied their peace and joy—there proximity to God. Though God had not abandoned me, I was convinced he had. Still, I believe having experienced his love for me before, has gotten me through these years in this fight to feel closer to Him. <br>It comforts me to find a Christian artist willing to be honest about their mental health.",
+      "comment_score": 11,
+      "comment_reasons": [
+        "first_person",
+        "story_context_1",
+        "cause_effect_1",
+        "life_event",
+        "emotional_words_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=p5H5iUuoeJM",
+      "search_context": "jittery anxious songs",
+      "spotify_id": "138cjz7vQLAeQw4hiVlK0t",
+      "spotify_uri": "spotify:track:138cjz7vQLAeQw4hiVlK0t",
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:01.243912",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Overwhelmed",
+      "song": "Ryan Mack &amp; Christian Gates",
+      "comment_text": "I imagine two people fighting <br>The first bit is the person explaining how overwhelmed and anxiety filled they are, while the next person keeps trying to help. The first person pushes them away because they’ve heard the same things from multiple people, they just get angry and frustrated.<br>I should write a story on this-",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "life_event",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=ApsgDNiZhXI",
+      "search_context": "overwhelmed music helps",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:02.714860",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Doechii",
+      "song": "Anxiety",
+      "comment_text": "I got anxiety when i realized this wasn&#39;t the song i used to know",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "story_context_1",
+        "life_event"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=riCP9x31Kuk",
+      "search_context": "too much anxiety songs",
+      "spotify_id": "1musbempyJAw5gfSKZHXP9",
+      "spotify_uri": "spotify:track:1musbempyJAw5gfSKZHXP9",
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:03.796144",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Instant Calm Down",
+      "song": "Remove Panic Attack and Stress, Sleep Music",
+      "comment_text": "This actually really helps me!! I’ve been having panic attacks lately &amp; anxiety. Waking up in the middle of the night &amp; hearing this just eases me to go back to sleep 🥹 I really think this &amp; Kava root tea is the best combination!! Im so relaxed!! Thank you! I’m going back to bed ☺️",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect_1",
+        "life_event",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=qd8oL8yJV68",
+      "search_context": "panic attack music",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:05.225914",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Anxiety and Panic Attack Relief Calming Mix",
+      "song": "Alpha Isochronic Tones",
+      "comment_text": "I am sending you lots of love and hugs as this helped me calmed down a lot...I had something weighing so much in my chest even after taking anxiety pills ...I could not settle down...after hearing this music I literally could calm down a lot....GOD BLESS YOU❤",
+      "comment_score": 8,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect_1",
+        "life_event",
+        "emotional_words_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=6Wj6QleCOvc",
+      "search_context": "panic attack music",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:05.688882",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "활공",
+      "song": "포스트 아포칼립스 감성 앰비언트/에픽뮤직 9곡 플레이리스트",
+      "comment_text": "The story behind this playlist with the line &quot;let&#39;s just keep going until we no longer can&quot; (paraphrasing) and the slowly depleting gas tank and timer counting down is making me feel all sorts of emotions 😭 Combined with the serene atmosphere of the music, I just imagine a pilot making peace and enjoying the view for as long as they can before the end they know is coming.",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "emotional_words_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=khnr4-ehwKA",
+      "search_context": "apocalyptic playlist",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:07.166667",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Skeeter Davis",
+      "song": "The End Of The World / HQ 1963",
+      "comment_text": "Song breaks my heart.  Reminds me after my grandfather died we came home from the hospital and this song came on a movie playing in the background. My grandmother busted out crying. I&#39;ll never forget it",
+      "comment_score": 11,
+      "comment_reasons": [
+        "first_person",
+        "story_context_1",
+        "cause_effect_1",
+        "life_event",
+        "emotional_words_2",
+        "good_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=DsY_kocbWaM",
+      "search_context": "end of world music",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:08.021108",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Olivia Rodrigo",
+      "song": "traitor",
+      "comment_text": "&quot;guess you didnt cheat, but you&#39;re still a traitor&quot;<br>idk about u guys but I feel so validated right now. i used to j brush things off bc he technically didn&#39;t &quot;cheat&quot; but her lyric is comforting bc it lets me know that he did fuck up and do something wrong and I&#39;m not overreacting. ty liv &lt;3",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "story_context_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=E2NuSNZNKnM",
+      "search_context": "betrayal songs",
+      "spotify_id": "5CZ40GBx1sQ9agT82CLQCT",
+      "spotify_uri": "spotify:track:5CZ40GBx1sQ9agT82CLQCT",
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:09.532149",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Carly Pearce",
+      "song": "What He Didn&#39;t Do",
+      "comment_text": "This song (the entire album honestly) helped me through my divorce like no other. As tragic and sad as it is to know someone experienced the EXACT same things i did and could put it in to words was tragically comforting - if that even makes sense. Very grateful for Carly and this beautiful album she shared with the world",
+      "comment_score": 8,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect_1",
+        "life_event",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=XKnhN07wvJs",
+      "search_context": "betrayal songs",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:10.140466",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Cyberpunk Ambient",
+      "song": "[MOODY-ATMOSPHERIC] Music for Rainy Night Walks",
+      "comment_text": "Your music is wonderful, it helps me sleep after hard days of work at the hospital. It pushes all the stress and worries away and makes me experience the moment. <br><br>Any plans for the future to experiment with music/ambient sounds outside of the sci-fi genre?",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect_1",
+        "life_event",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=0FyEM4g4eR0",
+      "search_context": "moody atmospheric songs",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:12.114605",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Halsey",
+      "song": "Haunting",
+      "comment_text": "This song, in all honestly, reminds me of a really, really dark period of my life where I fell in love with someone, who was also going through his own dark time. Despite the fact that it&#39;s been many years, and I&#39;ll likely never see this guy again and I have a bf, I still dream about him and think about him and it sucks, lmao.",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=bjyGkvNUtRU",
+      "search_context": "haunting music",
+      "spotify_id": "1r1WtSrPbAOYHE7zwq4eqK",
+      "spotify_uri": "spotify:track:1r1WtSrPbAOYHE7zwq4eqK",
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:16.160995",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Dead Gods",
+      "song": "Hauntingly Beautiful Vocal Fantasy Music",
+      "comment_text": "&quot;I remember times when I was all there was. I was honored with unlimited worship and obedience. My blessings were what created time and space. Now all there is left are empty temples, unspoken prayers and an everlasting longing for purpose.&quot;",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "story_context_1",
+        "emotional_words_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=_egA9RZrD5k",
+      "search_context": "eerie beautiful songs",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:17.003562",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "KB Mike",
+      "song": "Insecure",
+      "comment_text": "Definitely hit hard, now I got a song to play on repeat to help me get thru the a little bit better",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect_1",
+        "repeated_connection",
+        "good_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=4hGzRUm9vFU",
+      "search_context": "insecure feeling music",
+      "spotify_id": "5Alwl2gUFmRJOQ5gneCcEl",
+      "spotify_uri": "spotify:track:5Alwl2gUFmRJOQ5gneCcEl",
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:18.730337",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "this is what self destruction feels like (Official Lyric Video)",
+      "song": "Marina Lin",
+      "comment_text": "&quot; but they dont know how feels to be broken &quot; hits hard because my parent&#39;s dont know how it feels to be depressed and they always blamed the phone or they say that im depressed because i like to sit in my room all day i sit in my room because i dont have any friends where i live i also stay inside because im scared of people im more afraid of men than women because i was sexualy touched by a man that was 5 or 6 times my age ever since then i stopped trusting men because im afraid that they might try to touch me like that guy did im tired of feeling the way that i do i learned the hard way that not everyone is trustworthy not even your family which is why i dont trust easily cause the times that i did i was hurt my heart was broken to the point of no return theres a lot of things that i have to deal with: <br><br>1. Im extremely sensitive to criticism <br><br>2. I dont trust anyone because im afraid of being hurt<br><br>3. I get emotionally attached to stuffed animals cause they wont criticize me or  hurt me like people do<br><br>4. I have anxiety <br><br>5. I have insomnia i struggle to sleep<br><br>6. I cant handle loud music or else i get over stimulated<br><br>7. I cry when im alone cause i dont want anyone to see me<br><br>8. The house where i used to live didn&#39;t feel like home it felt like a prison where i was forced to deal with mental abuse and kept locked up ( when i lived with my grandma)<br><br>9. I never felt happy i always felt like a faliure and like no one was ever going to love me<br><br>10. The one thing that made me happy was taken away from me ( my cat pearl was taken from me and left at a ranch because she was pregnant) <br><br>11. I put one a fake smile every day everyone thinks im happy but in the inside I&#39;m secretly hurting <br><br>12. Thought about going to therapy but its too expensive <br><br>13. I was made to feel like my depression didn&#39;t matter since when i brought it up and told my mom that why i didn&#39;t eat she got mad and said &quot; FUCK YOUR DEPRESSION &quot; it hurt so bad to hear those words so i never brought it and i kept it a secret",
+      "comment_score": 9,
+      "comment_reasons": [
+        "first_person",
+        "story_context_1",
+        "life_event",
+        "emotional_words_2",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=W6z-9-DhM5o",
+      "search_context": "insecure feeling music",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:19.312706",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Jazz Noir",
+      "song": "You&#39;re a Detective in the 1940s on a Rainy Night | Calm Jazz Music for Foggy Nights",
+      "comment_text": "I was posted outside a warehouse on Pier 9—the kind of place where bodies go missing and questions get answered with silence.<br>I had a name, a lead, and a snub-nosed .38 that still smelled like the last mistake I didn’t regret.<br><br>Then she showed up.<br>Red coat. Black heels. Hair like spilled ink. She moved through the rain like she owned it—like the whole night was her stage, and I was the fool with a front-row ticket.<br><br>“You’re late,” I said.<br>She lit a cigarette, lips painted in lies. “You’re early,” she replied. “That’s what gets men killed in this town.”<br><br>Behind her—tires squealed. A black sedan—no lights, no plates—came sliding around the corner.<br>My hand was already on the steel before the doors flew open.<br><br>Three suits. One problem. No place to run that didn’t end in blood.",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "emotional_words_1",
+        "lyric_reaction",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=HA9YYaqfyrg",
+      "search_context": "noir music playlist",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:20.658032",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Jazz Noir",
+      "song": "Soft Jazz Music for Foggy Nights, Rainy Days, Solitude and Broken Hearts",
+      "comment_text": "This got me through long hours doing Uber during the winter, seeing the snow fall with neon lit signs in my downtown area. The customers falling asleep, or looking out the window with this in the background, I was hoping for one of them to monolog like they&#39;re a detective in the 1950s lol.<br><br>I sometimes miss that time in my life but it&#39;s for the best I move on.",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect_1",
+        "emotional_words_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=c2Cc-6nT0S4",
+      "search_context": "noir music playlist",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:21.228217",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "PARTYNEXTDOOR",
+      "song": "RESENTMENT",
+      "comment_text": "last year I met a girl who used to always play this song while we were driving around the city at night. I still remember the skies were blue, foggy and the vanilla perfume she had….god I miss those times…she was a 10",
+      "comment_score": 8,
+      "comment_reasons": [
+        "first_person",
+        "story_context_2",
+        "emotional_words_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=K02S9CznrhE",
+      "search_context": "resentment songs",
+      "spotify_id": "3ViEhfgPwDKva54pvEQFTO",
+      "spotify_uri": "spotify:track:3ViEhfgPwDKva54pvEQFTO",
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:22.787909",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Jazmine Sullivan",
+      "song": "Resentment",
+      "comment_text": "Beyoncé’s version sounds like she’s hurt from the resentment and I feel like jazmine sullivan is explaining the hurt to her lover after healing from the hurt and moving in emotionally from him",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "life_event",
+        "emotional_words_1",
+        "good_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=2WfWquoVum0",
+      "search_context": "resentment songs",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:23.511109",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Gin Blossoms",
+      "song": "Hey Jealousy",
+      "comment_text": "“If I hadn’t blown the whole thing years ago, I might be here with you/I might not be alone” is the line(s) that gets me every time I listen to this song. Just gets me in my feels. Great song.",
+      "comment_score": 11,
+      "comment_reasons": [
+        "first_person",
+        "story_context_1",
+        "lyric_reaction",
+        "repeated_connection",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=ah5gAkna3jI",
+      "search_context": "jealousy songs",
+      "spotify_id": "4o7ZPI2fmEi3piRe0Hrfpy",
+      "spotify_uri": "spotify:track:4o7ZPI2fmEi3piRe0Hrfpy",
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:25.250079",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "The Killers",
+      "song": "Mr. Brightside",
+      "comment_text": "When people say this songs makes people feel better people don’t realise that this was written after he found out he was being cheated on, so he made a draft that night and most of the lyrics weren’t changed as he wanted it to be as close to how he felt in that moment as he could, so at one of this legends lowest times he made a song that will be timeless and I have full respect and hope that this will never be forgotten",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "life_event",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=gGdGFtwCNBE",
+      "search_context": "jealousy songs",
+      "spotify_id": "003vvx7Niy0yvhvHt4a68B",
+      "spotify_uri": "spotify:track:003vvx7Niy0yvhvHt4a68B",
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:25.860473",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Witchy Music 🌙",
+      "song": "Celtic, Wiccan Playlist - Enchanting Witchcraft Fantasy Music ✨ - 10h Version",
+      "comment_text": "🌿I am Born a child..of the Earth Mothers Light..To awaken to her Beauty gives my Soul..Her Vision and her Sight..To give our lives a purpose...for a future one can see...She believes in You..She believes in me..Her guiding Spirits all around us...the smallest Flower or the Biggest Tree...Be our Healing flow of Life..Make our Hearts and Minds Strong...Give us your Beautiful Sanctuary...And know this is where we Belong !             🌿🐞🪲🦅🕊🌺🌲🦊💚",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "life_event",
+        "emotional_words_2",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=hUBzRKRAlJ4",
+      "search_context": "witchy playlist",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:28.421383",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Wiccan Music 🌿",
+      "song": "Magical, Witchy Music - 🌙 Celtic, Pagan, Witchcraft Music - Mystical Witch Music ✨",
+      "comment_text": "In a world of chaos and hate, let this music bring you the peace it has brought me. Manifest your dreams, and may we all manifest a world without the negativity and hopefully by Beltane we can rejoice. Blessed be ⭐️ 🌙 🌹",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect_1",
+        "emotional_words_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=88-FPN9YADs",
+      "search_context": "witchy playlist",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:28.787875",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "twenty one pilots",
+      "song": "Ride",
+      "comment_text": "i love this band and i love this fandom because it seems like everyone is just so respectful of opinions and when i really got into this band i saw how everyone was brought together through tøp&#39;s music which is how it should be and yeah love you guys goodbye (this song makes my heart jump fml) ",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "emotional_words_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=Pw-0pbY9JeU",
+      "search_context": "solo car ride songs",
+      "spotify_id": "2Z8WuEywRWYTKe1NybPQEW",
+      "spotify_uri": "spotify:track:2Z8WuEywRWYTKe1NybPQEW",
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:31.120498",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "&#39;Night Drive&#39;",
+      "song": "Relaxing Deep House &amp; Progressive House Mix",
+      "comment_text": "Reminds me of when I used to hit up the bars in Atlanta in my college days. The best days of my life before responsibilities came along. This music makes those good feelings come back. Miss those times.",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "story_context_1",
+        "cause_effect_1",
+        "emotional_words_1",
+        "good_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=U3SPkP4y-rY",
+      "search_context": "urban night drive",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:33.046671",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "City Nights",
+      "song": "Deep House Mix",
+      "comment_text": "I start with house music, then i had a period when i was raveing alot on tech house and minimal music (very dark that period, using alots of drugs)... now i am sober and damn, deep house is music for soul. I&#39;m so glad that I found myself to this type of music",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "story_context_1",
+        "life_event",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=hrotHC9OPr4",
+      "search_context": "urban night drive",
+      "spotify_id": "3bCCdkqf3F1NIm6gl2SJ5R",
+      "spotify_uri": "spotify:track:3bCCdkqf3F1NIm6gl2SJ5R",
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:33.886871",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "340ml",
+      "song": "Midnight",
+      "comment_text": "remind me of my Childhood when I used to wake up at 3 AM and watch SABC 1 Sgubhu Samamphela .",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "story_context_1",
+        "cause_effect_1",
+        "good_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=YssYhusEs4I",
+      "search_context": "midnight driving songs",
+      "spotify_id": "2PAEKTFAiEGCUelGmtNLXj",
+      "spotify_uri": "spotify:track:2PAEKTFAiEGCUelGmtNLXj",
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:36.072415",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Road Trip 🚐",
+      "song": "An Indie/Pop/Rock Playlist | Vol. 3",
+      "comment_text": "Hey you, yes you reading this.. don’t give up. 💛 Life can feel like pushing a boulder uphill, but you’re stronger than you realize. When I first heard about Manifest the Unseen by Luna Rivers on a podcast and then read it, something shifted for me. It brought me clarity, peace, and so many unexpected blessings. Maybe this is exactly what you need right now. Wishing you a wonderful day ✨",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect_1",
+        "emotional_words_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=5rqLNx8Lgj0",
+      "search_context": "road trip playlist",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:37.798439",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "songs that feel like you are on an advanture",
+      "song": "a roadtrip playlist",
+      "comment_text": "I love your playlists so much they take me back to even two or three years ago. It doesn’t feel like any filler songs were added and the pictures you pick match so well. I hope you’re doing good and I just wanted to say I really want you to come back because your playlists just make life so much better. Thank you for all these videos ❤",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "story_context_1",
+        "cause_effect_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=G4cZLU5AY6Q",
+      "search_context": "road trip playlist",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:38.226469",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "&#39;Night Drive&#39;",
+      "song": "Relaxing Deep House &amp; Progressive House Mix",
+      "comment_text": "Reminds me of when I used to hit up the bars in Atlanta in my college days. The best days of my life before responsibilities came along. This music makes those good feelings come back. Miss those times.",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "story_context_1",
+        "cause_effect_1",
+        "emotional_words_1",
+        "good_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=U3SPkP4y-rY",
+      "search_context": "scenic drive music",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:40.053112",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "RELAXING COUNTRY MUSIC MIX",
+      "song": "Best Playlist for a Peaceful Country Escape 🌾💿",
+      "comment_text": "To you who are reading, I pray that the pain and worries you are facing will soon dissipate. May the dark thoughts, anxiety, and doubt no longer linger in your mind. Let clarity replace chaos. Wishing you peace and serenity in your life.",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "life_event",
+        "emotional_words_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=ffQJRqlgf4E",
+      "search_context": "scenic drive music",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:40.539934",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Tracy Chapman",
+      "song": "Fast Car",
+      "comment_text": "We Love you Tracy!!! My wife and I got married in 1986 I was 17 and she was 16 and Pregnant.. I remember us lying in bed listening to this song over and over it brought us some comfort in our little crazy world.. 37 Years and 4 Kids later we still love this song..❤❤❤❣💯",
+      "comment_score": 10,
+      "comment_reasons": [
+        "first_person",
+        "life_event",
+        "emotional_words_1",
+        "repeated_connection",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=AIOAlaACuv4",
+      "search_context": "fast driving songs",
+      "spotify_id": "2M9ro2krNb7nr7HSprkEgo",
+      "spotify_uri": "spotify:track:2M9ro2krNb7nr7HSprkEgo",
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:43.123043",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "World&#39;s Most Epic Adventure Music | 2",
+      "song": "Hour Orchestral Music Mix",
+      "comment_text": "This is wonderful! I enjoy listening to this kind of music during my prayer and devotion time. It reminds me that I may live in this world but I was meant for another.",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "story_context_1",
+        "cause_effect_1",
+        "good_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=bANjQqUVgvM",
+      "search_context": "adventure music epic",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:44.379218",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "3 Hours of Epic &amp; Powerful Fantasy Music: Legendary",
+      "song": "GRV MegaMix",
+      "comment_text": "I hardly ever comment on YouTube videos but this one really deserves it. I listened to this on repeat when I was 13 and writing my own fantasy novel, and it gave me so much inspiration. Now I&#39;m 24 and finishing my master&#39;s thesis and decided to revisit this - and it still hits as hard as it did 10 years ago. From the bottom of my heart, thank you for making me feel like I can achieve my dreams through music.",
+      "comment_score": 8,
+      "comment_reasons": [
+        "first_person",
+        "story_context_1",
+        "emotional_words_1",
+        "repeated_connection",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=mB5rsayMxrg",
+      "search_context": "adventure music epic",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:44.885649",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Disturbed",
+      "song": "Down With The Sickness",
+      "comment_text": "Disturbed was the last concert my husband and I went to before he passed away. When they played this song, my husband&#39;s face lit up like a thousand suns. It was the last good time we had before he became paralyzed from the neck down. Everytime I hear this song, it brings me back.",
+      "comment_score": 9,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect_1",
+        "life_event",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=09LTT0xwdfw",
+      "search_context": "angry energy songs",
+      "spotify_id": "40rvBMQizxkIqnjPdEWY1v",
+      "spotify_uri": "spotify:track:40rvBMQizxkIqnjPdEWY1v",
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:46.944502",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Chevelle",
+      "song": "The Red",
+      "comment_text": "I played this song on Spotify after I got home from my medical appointment last Tuesday. This song hits hard for me after I won the battle with cancer almost 4 years ago.",
+      "comment_score": 8,
+      "comment_reasons": [
+        "first_person",
+        "story_context_1",
+        "life_event",
+        "good_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=trinU3VD1Zo",
+      "search_context": "angry energy songs",
+      "spotify_id": "1gyee1JuFFiP476LQpRMYU",
+      "spotify_uri": "spotify:track:1gyee1JuFFiP476LQpRMYU",
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:47.448469",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Epic Build Up Music (With a Hint of Darkness)",
+      "song": "Final Form",
+      "comment_text": "&quot;All this time I&#39;ve been fighting demons and monsters, I never thought  I&#39;d  become one, I used to be a different man but that man died when they did&quot;",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "story_context_1",
+        "life_event",
+        "good_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=urREaCQyPJQ",
+      "search_context": "exciting buildup songs",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:49.411902",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Epic Motivational Music",
+      "song": "Born A Legend",
+      "comment_text": "My god. With this type of music you can defeat your anxiety , you can reduce to silence that voice from your head that speaks wrong like &quot; you can&#39;t do this , you are to week for that , you look to bad for that&quot; . You literally can reinforce yourself , you are your own master , the power is in you. This song awekens something in you...and that is really you. Say hi to yourself!",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "life_event",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=tzBEpdfCRqw",
+      "search_context": "exciting buildup songs",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:49.930828",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Demi Lovato",
+      "song": "Confident",
+      "comment_text": "Happy 10th Anniversary to Confident. Nostalgia hits hard with this one. I was only in elementary school when this was popular in 2015 it&#39;s crazy how I&#39;m about to head to high school. Crazy how fast time went by. It&#39;s crazy how this song is 10 years old, and the chorus really brings back so much nostalgia that it hits me like a shockwave, I&#39;m still here for the nostalgia and Demi&#39;s singing. This will always take me back to summer/fall 2015, I can&#39;t believe that was 10 years ago. I came back to this song during Covid back it was only 5 years old, the nostalgia is hitting hard. October 9, 2015 - October 9, 2025",
+      "comment_score": 8,
+      "comment_reasons": [
+        "first_person",
+        "story_context_1",
+        "cause_effect_1",
+        "emotional_words_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=cwLRQn61oUY",
+      "search_context": "bold confident music",
+      "spotify_id": "3DXXKDbbZKyAZfNb96ST3q",
+      "spotify_uri": "spotify:track:3DXXKDbbZKyAZfNb96ST3q",
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:51.713005",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Lost Sky",
+      "song": "Fearless",
+      "comment_text": "No one knows how much this song means to me, I literally cry when I hear it, it reminds me of a youtuber that I haven&#39;t seen in years. This song used to always be on their channel. I miss them. 😢😢😢",
+      "comment_score": 9,
+      "comment_reasons": [
+        "first_person",
+        "story_context_1",
+        "cause_effect_1",
+        "emotional_words_2",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=PeVqgynorvA",
+      "search_context": "fearless songs",
+      "spotify_id": "4y1nvncvBhdoelqPMyXxis",
+      "spotify_uri": "spotify:track:4y1nvncvBhdoelqPMyXxis",
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:52.945518",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Motionless In White",
+      "song": "Catharsis",
+      "comment_text": "Catharsis, in darkness<br>When you can&#39;t seem to feel a thing<br>The absence, that haunts you<br>Won&#39;t hurt much longer<br><br>Catharsis, in darkness<br>When you can&#39;t seem to feel a thing<br>The absence, that haunts you<br>Won&#39;t hurt much longer<br><br>This feelings getting a bit harder to control<br>A place to feel completed or a place to feel alone<br>The river of rebellion from the rattle in your bones<br>A sonic liberation, salvation in your headphones<br><br>Darkest disguise<br>Leave it at the door<br>Bright lights defined<br>(Leave your body on the floor)<br><br>Catharsis, in darkness<br>When you can&#39;t seem to feel a thing<br>The absence, that haunts you<br>Won&#39;t hurt much longer<br><br>Stand in the shadows, entertaining the unknown<br>The words I always needed like I wrote them on my own<br>I sing for absolution, for the cleansing of my soul<br>Narcotic is the beating of our hearts at the tempo<br><br>Holding through time<br>Leave it at the door<br>Bright lights defined<br>(Leave your body on the floor)<br><br>Catharsis, in darkness<br>When you can&#39;t seem to feel a thing<br>The absence, that haunts you<br>Won&#39;t hurt much longer<br><br>(Woah...)<br><br>Catharsis, in darkness<br>When you can&#39;t seem to feel a thing<br>The darkness, that haunts you<br><br>Catharsis, in darkness<br>A place to feel the words we say<br>The absence, that haunts you<br>Won&#39;t hurt much longer!",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "emotional_words_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=bmJAHLaVmGY",
+      "search_context": "angry music catharsis",
+      "spotify_id": "7FJpjeyDQxmRfZioyFHLLG",
+      "spotify_uri": "spotify:track:7FJpjeyDQxmRfZioyFHLLG",
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:40:56.557482",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "The Rolling Stones",
+      "song": "Angry",
+      "comment_text": "My father&#39;s favorite band. He was diagnosed with Parkinson&#39;s about 2 years ago and unfortunately is also suffering from early dementia.  I played this song for him and he absolutely lit up!! It was incredible. I&#39;m getting emotionally writing this. <br><br>Thank you Rolling Stones... for putting some life back into my father!!!",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "story_context_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=_mEC54eTuGw",
+      "search_context": "frustrated angry music",
+      "spotify_id": "0daHbdrLvUmkh81rnolMcG",
+      "spotify_uri": "spotify:track:0daHbdrLvUmkh81rnolMcG",
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:41:01.653646",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "852 Hz",
+      "song": "LET GO of Fear, Overthinking &amp; Worries | Cleanse Destructive Energy | Awakening Intuition",
+      "comment_text": "Hey you yes you who&#39;s reading this... Always remember to stay positive no matter what. I know life hasn&#39;t been easy on you, but you are stronger then you think.<br>Love yourself and let go of all the pain, sadness, axienty, depression, loneliness, emptiness...<br>Let go and breathe... You will be just fine.<br>You are made out of stardust even stars shine in the dark.<br>The sun rises even went he went down.<br>Sending love into the universe... Peace to all",
+      "comment_score": 8,
+      "comment_reasons": [
+        "first_person",
+        "life_event",
+        "emotional_words_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=-vvpsIiUVKY",
+      "search_context": "overwhelming energy music",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:41:03.750610",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Clearing Dense Energy",
+      "song": "Sound bath for positive energy change",
+      "comment_text": "Thank you Travis. As an empath. Life can be overwhelming. It seems almost selfish to do any self care. The goal is always to press on. Someone will always need you, be grateful for you, become inspired because of you. It&#39;s my belief we are here to help each other, for the collective good, but not at the cost of ourselves. Tonight I Thank you for the gift of music, talent and time. I am lying on the floor snuggled with a blanket. Listening to this. As if a pause. As if, I hear and feel nothing else except me. Who tragically has been neglected, in these last weeks. The one person I forgot to care for while caring for others. <br><br>For anyone who is reading this. Treat yourself, the way you treat others. Buy yourself flowers, take yourself shopping, go get that sweet treat. Do one nice thing for yourself and someone else today. <br><br>Also give back while taking, and that includes yourself. You are beautiful.  You are love. And you are loved just the way you are. <br><br>I wish something really good happens to everyone today. Remember this won&#39;t last forever, like seasons, one must end and a new will begin. Death js an opportunity at a rebirth of something.  Suffering is not for nothing. You can do hard things. This too shall pass. Please never give up, sit, take a break if you must, but keep going! ❤<br><br>With all my ❤<br>Stephanie",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "life_event",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=h6HVK1IJYVs",
+      "search_context": "overwhelming energy music",
+      "spotify_id": null,
+      "spotify_uri": null,
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:41:04.199052",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Rachel Platten",
+      "song": "Fight Song",
+      "comment_text": "When I was 16, after 10 years of compulsory public education, I watched a couple of friends leave to further their tertiary educations overseas, while I could only get a local polytechnic diploma. 2-3 years after that, I watch more friends walk proudly into various local universities, while my educational journey came to an end. I came from a poor family and my father could only send me for basic education and nothing more as I had 3 younger siblings who were still schooling. After 3 years in the military, I began working and became the family bread winner. I never stopped working for almost 25 years and slowly climbed up the career ladder. A few years ago, I hear this song and it struck a cord in me. I decided it was time. I enrolled in graduate school at 45. Next to the lecturer, I was the oldest person in class. Everywhere I went on campus, I stood out like a sore thumb. Everyone was on laptops and tablets, while I was on books, papers and pencils. But I didn&#39;t give up, I kept turning to this song to keep me going. THIS was MY fight song. I struggled hard but help soon came. Classmates half my age who once spurred the &#39;old dude&#39; from groups in class, turned to me for life advice and in turn, helped me navigate the digital world and gadgets and online submissions. I still turned to this song to keep the fire going when I wanted to give up.<br><br>I graduated last year, ahead of schedule, 4 years out of a 5 year part time degree programme. My parents couldn&#39;t make it as they were too frail. There was no one in the audience clapping for a 49 year old graduate. But I was proud. I had made it. And this song was one of those songs that just kept me telling myself ... I can do this!",
+      "comment_score": 13,
+      "comment_reasons": [
+        "first_person",
+        "story_context_2",
+        "cause_effect_1",
+        "life_event",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=xo1VInw-SKc",
+      "search_context": "empowering songs",
+      "spotify_id": "37f4ITSlgPX81ad2EvmVQr",
+      "spotify_uri": "spotify:track:37f4ITSlgPX81ad2EvmVQr",
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:41:06.132756",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Billie Eilish",
+      "song": "Your Power",
+      "comment_text": "I’m 53 years old and something similar happened to me when I was younger.  Billie is so young and I usually don’t relate with songs by much younger artists.  But boy does this hit home.  This song is haunting and I can’t get it out of my head.  I just keep listening to it over and over. I actually came upon this song by accident...I’m glad I did.",
+      "comment_score": 9,
+      "comment_reasons": [
+        "first_person",
+        "story_context_1",
+        "repeated_connection",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=fzeWc3zh01g",
+      "search_context": "empowering songs",
+      "spotify_id": "042Sl6Mn83JHyLEqdK7uI0",
+      "spotify_uri": "spotify:track:042Sl6Mn83JHyLEqdK7uI0",
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:41:06.680100",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Noah Kahan",
+      "song": "False Confidence",
+      "comment_text": "this song is one of few that makes me feel that life is worth living. ive been in a slump of depression and self hate the past week or so, then i came across this song. i realized i can and i will get better. to people like me out there listening, i want you to know its okay to feel like this. its okay to cry yourself to sleep every night for weeks, because just know youll be okay at some point. <br>i didnt think i&#39;d make it to 13 but i did. im still here, and you can make it too. take my hand when you&#39;re ready, i&#39;ll wait. i wont force you to get better, i know its hard.<br>-Raymond",
+      "comment_score": 9,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect_1",
+        "life_event",
+        "emotional_words_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=dWRWuY3pV2c",
+      "search_context": "self assured music",
+      "spotify_id": "7nDFTHHwfe32a8qdp9XqPy",
+      "spotify_uri": "spotify:track:7nDFTHHwfe32a8qdp9XqPy",
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:41:12.242723",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Tate McRae",
+      "song": "chaotic",
+      "comment_text": "<b>“Fooling myself thinking that I&#39;ll never love again, but damn I felt it.”</b><br><br>This part right here HITS. I know I’ll get over it, but God, does it feel like I never will. I’m just FEELING the pain from their absence and it can make me feel like nothing will ever ease that feeling but them.",
+      "comment_score": 9,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect_1",
+        "lyric_reaction",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=t6B6nS5ljzU",
+      "search_context": "chaotic songs",
+      "spotify_id": "4bt7eqP7mfWduRBKEpCAzM",
+      "spotify_uri": "spotify:track:4bt7eqP7mfWduRBKEpCAzM",
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:41:17.550577",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Sia",
+      "song": "Unstoppable",
+      "comment_text": "Sia, if you ever read this, I just want to say thank you for your music because it can save lives. I&#39;ve been through a very difficult year and I used this song  every single day as a mantra to help me overcome anxiety and depression. Thank you, from the bottom of my heart.",
+      "comment_score": 10,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect_1",
+        "life_event",
+        "emotional_words_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=YaEG2aWJnZ8",
+      "search_context": "unstoppable playlist",
+      "spotify_id": "1yvMUkIOTeUNtNWlWRgANS",
+      "spotify_uri": "spotify:track:1yvMUkIOTeUNtNWlWRgANS",
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:41:19.949033",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Sia",
+      "song": "Unstoppable",
+      "comment_text": "This song has been with me throughout the year. I started the year by ending a relationship, then I lost my job and last month I lost my father. We buried him close to Father&#39;s Day. I had been going through several &quot;mournings&quot; until I faced this last real mourning. This song speaks deeplty to my soul, helping me find strength within myself.",
+      "comment_score": 9,
+      "comment_reasons": [
+        "first_person",
+        "story_context_1",
+        "life_event",
+        "emotional_words_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=jJvDnYdD8JQ",
+      "search_context": "unstoppable playlist",
+      "spotify_id": "1yvMUkIOTeUNtNWlWRgANS",
+      "spotify_uri": "spotify:track:1yvMUkIOTeUNtNWlWRgANS",
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:41:20.719434",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Kiana Ledé",
+      "song": "I Choose You",
+      "comment_text": "I was able to dedicate this song to my fiancee before he passed. I will always choose him over anybody else....and its so true the part where it says. Im good on my own but with u im something else... I LOVE and MISS him everyday. Its been a month and a half. But i will forever LOVE him.",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "emotional_words_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=vyGm1NSSBC4",
+      "search_context": "engagement music",
+      "spotify_id": "71cPHAS8YITrKPIwNrLGfm",
+      "spotify_uri": "spotify:track:71cPHAS8YITrKPIwNrLGfm",
+      "data_source": "hybrid_balanced_v1",
+      "created_at": "2025-11-30T01:41:53.826013",
+      "_needs_ananki_analysis": true
+    }
+  ]
+}
