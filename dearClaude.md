@@ -2,7 +2,7 @@
 
 ## PROJECT STATUS - NOV 29, 2025
 
-**Last Update:** Nov 29, 2025 ~9:30 PM (Saturday)
+**Last Update:** Nov 29, 2025 ~10:00 PM (Saturday)
 **Current Version:** 1.0.0 (PRODUCTION DEPLOYED! 🎉)
 **Demo Dates:** Dec 2 (demo day - 3 DAYS!), Dec 4 (industry summit)
 **Live Site:** https://midden.vercel.app/ ← FULLY WORKING!
@@ -77,21 +77,111 @@ Location: core/tapestry.json (8.01 MB)
 
 ---
 
-## 🔥 NEXT TASKS (Priority Order for Dec 2 Demo)
+## 🔥 NEXT TASKS - DETAILED ANALYSIS
 
-### HIGH PRIORITY (Must have for demo)
-1. **Playlist page text** - Update copy/messaging on results page
-2. **Error handling** - "Failed to add songs to tapestry" needs fixing
-3. **Clean up thumbs UI** - Remove up/down from non-extrapolated songs
+### Task Priority for Dec 2 Demo
 
-### MEDIUM PRIORITY (Nice to have)
-4. **Add human quotes** - Show scraped Reddit comments on playlist page
-5. **Create Playlist button** - Make "Add to Spotify" actually work
-6. **Cover art** - Decide how to handle playlist cover images
+| # | Task | Difficulty | Time Est. | Demo Priority | Recommendation |
+|---|------|------------|-----------|---------------|----------------|
+| 1 | Playlist page text | Easy | 15 min | HIGH | ✅ Do it now |
+| 2 | Add human quotes | Medium | 1-2 hrs | MEDIUM | ✅ Worth it if time |
+| 3 | Fix "failed to add songs" error | Medium | 30-60 min | HIGH | ⚠️ Debug needed |
+| 4 | Remove thumbs from non-extrapolated | Easy | 15 min | HIGH | ✅ Do it now |
+| 5 | Create Playlist on Spotify button | Hard | 2-3 hrs | LOW | ❌ Skip for demo |
+| 6 | Cover art situation | Medium | 1-2 hrs | LOW | ❌ Skip for demo |
+| 7 | General aesthetics | Varies | Ongoing | LOW | 🤔 Fresh eyes needed |
+| 8 | Interactive map reimagined | Hard | 4+ hrs | NONE | ❌ Post-demo project |
 
-### LOW PRIORITY (Post-demo)
-7. **General aesthetics** - Polish UI/UX
-8. **Interactive map reimagined** - New approach to visualizing the manifold
+---
+
+### Detailed Task Notes
+
+#### 1. Playlist Page Text (EASY - DO NOW)
+**What:** Update copy/messaging on the results page
+**Where:** `code/web/client/src/components/playlist-results.tsx`
+**Notes:** Quick win. Just editing strings. No logic changes.
+
+#### 2. Add Human Quotes (MEDIUM - WORTH IT)
+**What:** Show the original Reddit comments that explain WHY each song fits
+**Where:** Same component, add display for `ananki_reasoning` or `reddit_context` fields
+**Why it matters:** This is the SOUL of Midden - human emotional context
+**Data available:** 
+- `song.ananki_reasoning` - Claude's emotional analysis
+- `song.reddit_context` - Original human comment (when available)
+**Implementation:** Could be tooltips, expandable sections, or inline text
+
+#### 3. Fix "Failed to Add Songs" Error (MEDIUM - IMPORTANT)
+**What:** Error when upvoting songs to add to Tapestry
+**Root cause likely:** Vercel serverless functions can't write to filesystem!
+**Why:** Serverless = ephemeral = no persistent file writes
+**Solutions:**
+- Option A: Use a database (Supabase, Planetscale, etc.)
+- Option B: Store in localStorage and batch upload later
+- Option C: Just disable the feature for demo (songs still play, just can't upvote)
+**Recommendation:** Option C for demo, proper solution post-demo
+
+#### 4. Remove Thumbs from Non-Extrapolated (EASY - DO NOW)
+**What:** Only show thumbs up/down on AI-extrapolated songs, not Tapestry songs
+**Where:** `code/web/client/src/components/playlist-results.tsx`
+**Why:** Tapestry songs are ALREADY human-validated. Only extrapolated songs need feedback.
+**Implementation:** Conditional render based on `song.extrapolated === true`
+
+#### 5. Create Playlist on Spotify Button (HARD - SKIP)
+**What:** Actually create a playlist in user's Spotify account
+**Why it's hard:** Requires OAuth user authentication flow
+**Current state:** We have client credentials (can read), but creating user playlists needs user login
+**Options:**
+- Full OAuth flow (complex, 2-3 hours minimum)
+- "Copy to clipboard" with Spotify URIs (easier workaround)
+- Just show track list (current behavior)
+**Recommendation:** Skip for demo. The playlist plays via embeds already.
+
+#### 6. Cover Art Situation (MEDIUM - SKIP)
+**What:** What image to show for the generated playlist
+**Options:**
+- A: Generate with AI (DALL-E, etc.) - costs money, adds latency
+- B: Collage of album arts from songs - medium complexity
+- C: Gradient based on emotional composition - cool but needs design
+- D: Static Midden logo/branding - easiest
+- E: Skip entirely - just show songs
+**Recommendation:** D or E for demo. Cover art is nice-to-have, not essential.
+
+#### 7. General Aesthetics (VARIES - FRESH EYES)
+**What:** Overall UI/UX polish
+**Current state:** Cosmic background looks good, but could use refinement
+**Notes:** Best done with fresh perspective, not at end of long debug session
+**Recommendation:** Schedule dedicated aesthetics session after core features work
+
+#### 8. Interactive Map Reimagined (HARD - POST-DEMO)
+**What:** New visualization of the emotional manifold
+**Why removed:** Old version was buggy and not ready for demo
+**Ideas for future:**
+- D3.js force-directed graph of sub-vibes
+- Zoomable map with song clusters
+- User's journey path animated on the manifold
+**Recommendation:** This is a post-demo feature. Don't touch until after Dec 4.
+
+---
+
+### Demo Day Checklist (Dec 2)
+
+**Must Work:**
+- [ ] 3-question flow completes without errors
+- [ ] Playlist displays with songs
+- [ ] Album art shows for songs
+- [ ] Songs can be previewed/played
+- [ ] Stats banner shows accurate count
+
+**Nice to Have:**
+- [ ] Human quotes visible for songs
+- [ ] Only extrapolated songs show thumbs
+- [ ] Polished text/copy
+
+**Don't Need:**
+- [ ] Spotify playlist creation
+- [ ] Cover art
+- [ ] Interactive map
+- [ ] Upvote persistence
 
 ---
 
@@ -115,6 +205,11 @@ Spotify-MCP-Server-Fall-2025/
 │   ├── shared/
 │   │   └── schema.ts      # TypeScript types + Zod schemas
 │   ├── client/            # React frontend
+│   │   └── src/components/
+│   │       ├── playlist-results.tsx  # ← EDIT THIS FOR TASKS 1, 2, 4
+│   │       ├── conversational-flow.tsx
+│   │       ├── tapestry-stats-banner.tsx
+│   │       └── ...
 │   ├── core/              # Synced copy of tapestry.json
 │   ├── data/              # Synced copy of manifold
 │   ├── vercel.json        # Serverless config
@@ -141,6 +236,7 @@ Spotify-MCP-Server-Fall-2025/
 2. **ESM needs .js extensions** - Even for .ts files, import as `.js`
 3. **`process.cwd()` is unreliable** - Use `fileURLToPath(import.meta.url)` instead
 4. **includeFiles in vercel.json** - Must explicitly include `core/**,data/**` for JSON files
+5. **CAN'T WRITE TO FILESYSTEM** - Serverless is ephemeral, no persistent writes
 
 ### Data Sync Flow
 When songs are injected via `core/inject_analyzed_songs.py`:
@@ -154,8 +250,8 @@ When songs are injected via `core/inject_analyzed_songs.py`:
 - `/api/health` - System status
 - `/api/generate-playlist` - Main Claude workflow
 - `/api/tapestry-stats` - Stats for banner
-- `/api/validate-song` - Upvote/add to tapestry
-- `/api/downvote-song` - Record bad matches
+- `/api/validate-song` - Upvote/add to tapestry (⚠️ won't persist on Vercel)
+- `/api/downvote-song` - Record bad matches (⚠️ won't persist on Vercel)
 - `/api/create-spotify-playlist` - Export to Spotify
 - `/api/debug` - Shows file paths (temporary)
 
@@ -182,7 +278,14 @@ Claude then walks the manifold, selecting songs that create a smooth emotional a
 
 ## 📅 HISTORY
 
-### Nov 28, 2025 (Yesterday)
+### Nov 29, 2025 (Today)
+- 🎉 **VERCEL DEPLOYMENT WORKING!**
+- Fixed serverless path issues, ESM imports, Node version
+- Cleaned up codebase (removed old files, organized backups)
+- Removed interactive map modal (will reimagine later)
+- Added auto-sync to injection script
+
+### Nov 28, 2025
 - Quality scrub: removed 2,940 bad songs (33.7%)
 - Created quality filter scripts
 - Down to 5,786 verified songs
@@ -199,5 +302,5 @@ Claude then walks the manifold, selecting songs that create a smooth emotional a
 
 ---
 
-**Last updated by Claude:** Nov 29, 2025 ~9:30 PM
-**Status:** PRODUCTION LIVE! Demo prep mode activated 🚀
+**Last updated by Claude:** Nov 29, 2025 ~10:00 PM
+**Status:** PRODUCTION LIVE! Demo prep mode - focusing on polish 🚀
