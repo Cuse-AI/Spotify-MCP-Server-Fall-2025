@@ -1,6 +1,6 @@
-import type { UserJourney, PlaylistResponse, ValidatedSongRecord, TapestrySong, TapestryStats } from "@shared/schema";
-import { generatePlaylistWithClaude } from "./claude-service";
-import { enrichTracksWithSpotifyData } from "./spotify-service";
+import type { UserJourney, PlaylistResponse, ValidatedSongRecord, TapestrySong, TapestryStats } from "../shared/schema.js";
+import { generatePlaylistWithClaude } from "./claude-service.js";
+import { enrichTracksWithSpotifyData } from "./spotify-service.js";
 import * as fs from "fs";
 import * as path from "path";
 import { fileURLToPath } from "url";

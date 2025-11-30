@@ -1,8 +1,8 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
-import { storage } from "./storage";
-import { userJourneySchema, userValidatedSongSchema } from "@shared/schema";
-import { createSpotifyPlaylist } from "./spotify-service";
+import { storage } from "./storage.js";
+import { userJourneySchema, userValidatedSongSchema } from "../shared/schema.js";
+import { createSpotifyPlaylist } from "./spotify-service.js";
 import { z } from "zod";
 import * as fs from "fs";
 import * as path from "path";

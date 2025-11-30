@@ -1,5 +1,5 @@
 import Anthropic from "@anthropic-ai/sdk";
-import type { UserJourney, PlaylistResponse, TapestrySong } from "@shared/schema";
+import type { UserJourney, PlaylistResponse, TapestrySong } from "../shared/schema.js";
 import * as fs from "fs";
 import * as path from "path";
 import { fileURLToPath } from "url";
