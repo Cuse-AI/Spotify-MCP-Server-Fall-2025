@@ -50,6 +50,83 @@ for parent in ['.', '..', '../..', '../../..']:
 
 
 # =============================================================================
+# CUSTOM EXCEPTIONS
+# =============================================================================
+
+class QuotaExhaustedError(Exception):
+    """Raised when all YouTube API keys have exhausted their quota."""
+    pass
+
+
+# =============================================================================
+# YOUTUBE KEY MANAGER - Rotate keys when quota exhausted
+# =============================================================================
+
+class YouTubeKeyManager:
+    """
+    Manages multiple YouTube API keys with automatic rotation.
+    When one key hits quota, automatically switches to the next.
+    """
+    
+    def __init__(self):
+        self.keys = []
+        self.current_index = 0
+        self.exhausted_keys = set()
+        
+        # Load all available keys
+        key_names = ['YOUTUBE_API_KEY', 'YOUTUBE_API_KEY_2', 'YOUTUBE_API_KEY_3', 
+                     'YOUTUBE_API_KEY_4', 'YOUTUBE_API_KEY_5']
+        for name in key_names:
+            key = os.getenv(name)
+            if key:
+                self.keys.append(key)
+        
+        if not self.keys:
+            raise ValueError("No YouTube API keys found in environment!")
+        
+        print(f"[YT KEYS] Loaded {len(self.keys)} YouTube API keys")
+        self._build_client()
+    
+    def _build_client(self):
+        """Build YouTube client with current key."""
+        self.client = build('youtube', 'v3', developerKey=self.keys[self.current_index])
+    
+    def get_client(self):
+        """Get current YouTube client."""
+        return self.client
+    
+    def rotate_key(self) -> bool:
+        """
+        Rotate to next available key.
+        Returns True if rotation successful, False if all keys exhausted.
+        """
+        self.exhausted_keys.add(self.current_index)
+        
+        # Find next non-exhausted key
+        for i in range(len(self.keys)):
+            if i not in self.exhausted_keys:
+                self.current_index = i
+                self._build_client()
+                print(f"\n[YT KEYS] Rotated to key #{i + 1} of {len(self.keys)}")
+                return True
+        
+        print("\n[YT KEYS] ALL KEYS EXHAUSTED!")
+        return False
+    
+    def handle_quota_error(self) -> bool:
+        """
+        Called when quota exceeded error occurs.
+        Returns True if successfully rotated, False if all keys exhausted.
+        """
+        print(f"\n[YT KEYS] Key #{self.current_index + 1} quota exceeded!")
+        return self.rotate_key()
+    
+    def keys_remaining(self) -> int:
+        """Return number of non-exhausted keys."""
+        return len(self.keys) - len(self.exhausted_keys)
+
+
+# =============================================================================
 # DEDUPLICATION - Load existing tapestry to avoid re-scraping
 # =============================================================================
 
@@ -361,11 +438,9 @@ class FixedHybridScraper:
             )
         )
         
-        # Initialize YouTube (EXPENSIVE - 100 units per search!)
-        yt_key = os.getenv('YOUTUBE_API_KEY')
-        if not yt_key:
-            raise ValueError("YOUTUBE_API_KEY not found!")
-        self.youtube = build('youtube', 'v3', developerKey=yt_key)
+        # Initialize YouTube with KEY MANAGER (handles rotation!)
+        self.yt_manager = YouTubeKeyManager()
+        self.youtube = self.yt_manager.get_client()
         
         # Load existing songs to skip
         self.existing_catalog = load_existing_catalog()
@@ -435,6 +510,7 @@ class FixedHybridScraper:
         NOT a generic "sad music playlist" search!
         
         Cost: 100 units per search
+        Automatically rotates to next key if quota exceeded.
         """
         # Build a targeted query for the actual song
         query = f"{artist} {song} official"
@@ -473,8 +549,14 @@ class FixedHybridScraper:
             
         except Exception as e:
             if 'quotaExceeded' in str(e):
-                print("\n[!] YOUTUBE QUOTA EXHAUSTED!")
-                raise  # Re-raise to stop scraping
+                # Try to rotate to next key
+                if self.yt_manager.handle_quota_error():
+                    self.youtube = self.yt_manager.get_client()
+                    # Retry with new key
+                    return self.search_youtube_video(artist, song)
+                else:
+                    # All keys exhausted
+                    raise QuotaExhaustedError("All YouTube API keys exhausted!")
             print(f"  [YouTube error: {e}]")
         
         return None
@@ -529,6 +611,14 @@ class FixedHybridScraper:
             return best
             
         except Exception as e:
+            if 'quotaExceeded' in str(e):
+                # Try to rotate to next key
+                if self.yt_manager.handle_quota_error():
+                    self.youtube = self.yt_manager.get_client()
+                    # Retry with new key
+                    return self.get_video_comments(video_id, min_score)
+                else:
+                    raise QuotaExhaustedError("All YouTube API keys exhausted!")
             if 'commentsDisabled' not in str(e):
                 print(f"  [Comment error: {e}]")
             return None
@@ -666,19 +756,21 @@ class FixedHybridScraper:
                                     comment, post.title, sub_name
                                 )
                                 self.results.extend(new_songs)
+                            except QuotaExhaustedError:
+                                print("\n[!] ALL YOUTUBE KEYS EXHAUSTED - stopping")
+                                return self.results
                             except Exception as e:
-                                if 'quotaExceeded' in str(e):
-                                    raise
+                                print(f"  [Error: {e}]")
                             
                             if len(self.results) >= target:
                                 break
                         
                         time.sleep(0.3)
                     
+                except QuotaExhaustedError:
+                    print("\n[!] ALL YOUTUBE KEYS EXHAUSTED - stopping")
+                    return self.results
                 except Exception as e:
-                    if 'quotaExceeded' in str(e):
-                        print(f"\n[!] YOUTUBE QUOTA EXHAUSTED - stopping")
-                        return self.results
                     if 'rate' in str(e).lower():
                         print(f"  [RATE LIMITED - waiting 60s]")
                         time.sleep(60)
@@ -707,8 +799,8 @@ class FixedHybridScraper:
         print(f"YouTube comment fetches: {self.stats['youtube_comments']}")
         print(f"Quality threshold passed: {self.stats['quality_passed']}")
         print(f"\nFINAL SONGS SAVED: {self.stats['songs_saved']}")
-        print(f"\nYOUTUBE QUOTA USED: {self.stats['yt_quota_used']} units")
-        print(f"Remaining today: ~{10000 - self.stats['yt_quota_used']} units")
+        print(f"\nYOUTUBE API KEYS: {self.yt_manager.keys_remaining()}/{len(self.yt_manager.keys)} remaining")
+        print(f"YOUTUBE QUOTA USED: {self.stats['yt_quota_used']} units (estimated)")
         
         if self.stats['spotify_validated'] > 0:
             efficiency = 100 * self.stats['songs_saved'] / self.stats['spotify_validated']
