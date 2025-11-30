@@ -85,7 +85,7 @@ Location: core/tapestry.json (8.01 MB)
 |---|------|------------|-----------|---------------|--------|
 | 1 | Playlist page text | Easy | 15 min | HIGH | ✅ DONE - Simplified to one paragraph + journey path visual |
 | 2 | Add human quotes | Medium | 1-2 hrs | MEDIUM | 🔲 TODO |
-| 3 | Fix "failed to add songs" error | Medium | 30-60 min | HIGH | ⚠️ Known Vercel limitation - skip for demo |
+| 3 | Fix "failed to add songs" error | Medium | 30-60 min | HIGH | ⚠️ Vercel can't persist files - works locally, not in prod |
 | 4 | Remove thumbs from non-extrapolated | Easy | 15 min | HIGH | ✅ DONE - Only AI discoveries show feedback buttons |
 | 5 | Create Playlist on Spotify button | Hard | 2-3 hrs | LOW | ❌ Skip for demo |
 | 6 | Cover art situation | Medium | 1-2 hrs | LOW | ❌ Skip for demo |
@@ -113,21 +113,23 @@ Location: core/tapestry.json (8.01 MB)
 - `song.reddit_context` - Original human comment (when available)
 **Implementation:** Could be tooltips, expandable sections, or inline text
 
-#### 3. Fix "Failed to Add Songs" Error (MEDIUM - IMPORTANT)
-**What:** Error when upvoting songs to add to Tapestry
-**Root cause likely:** Vercel serverless functions can't write to filesystem!
-**Why:** Serverless = ephemeral = no persistent file writes
-**Solutions:**
-- Option A: Use a database (Supabase, Planetscale, etc.)
-- Option B: Store in localStorage and batch upload later
-- Option C: Just disable the feature for demo (songs still play, just can't upvote)
-**Recommendation:** Option C for demo, proper solution post-demo
+#### 3. Thumbs Up/Down System ✅ IMPLEMENTED (but Vercel limited)
+**What:** Track all user feedback for human oversight
+**Current implementation:**
+- Thumbs up: Adds to tapestry + logs to `data/user_upvotes.json`
+- Thumbs down: Logs to `data/user_downvotes.json`
+- Both track: song info, user journey, timestamp, action type
+**Vercel limitation:** Serverless can't persist file writes between requests
+**Works:** Locally (full persistence)
+**Doesn't work:** Vercel production (files reset between requests)
+**For demo:** Thumbs work visually but don't persist. That's OK.
+**Post-demo fix:** Use a database (Supabase, Planetscale, etc.)
 
-#### 4. Remove Thumbs from Non-Extrapolated (EASY - DO NOW)
+#### 4. Remove Thumbs from Non-Extrapolated ✅ COMPLETED
 **What:** Only show thumbs up/down on AI-extrapolated songs, not Tapestry songs
-**Where:** `code/web/client/src/components/playlist-results.tsx`
-**Why:** Tapestry songs are ALREADY human-validated. Only extrapolated songs need feedback.
-**Implementation:** Conditional render based on `song.extrapolated === true`
+**Changes:** Added `isExtrapolated` check, only render thumbs buttons when `song.extrapolated === true`
+**File:** `code/web/client/src/components/playlist-results.tsx`
+**Result:** Cleaner UI - tapestry songs don't show unnecessary feedback buttons
 
 #### 5. Create Playlist on Spotify Button (HARD - SKIP)
 **What:** Actually create a playlist in user's Spotify account
