@@ -86,6 +86,11 @@ function loadTapestryData(): { tapestry: TapestryComplete; manifold: EmotionalMa
     tapestryCache = JSON.parse(fs.readFileSync(tapestryPath, "utf-8"));
     manifoldCache = JSON.parse(fs.readFileSync(manifoldPath, "utf-8"));
     
+    if (!tapestryCache || !manifoldCache) {
+      console.warn("⚠️  Failed to parse Tapestry data");
+      return null;
+    }
+    
     console.log(`✅ Loaded ${manifoldCache.metadata.total_sub_vibes} sub-vibes across ${manifoldCache.metadata.total_central_vibes} central emotional centers`);
     return { tapestry: tapestryCache, manifold: manifoldCache };
   } catch (error) {
