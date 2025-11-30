@@ -81,12 +81,12 @@ Location: core/tapestry.json (8.01 MB)
 
 ### Task Priority for Dec 2 Demo
 
-| # | Task | Difficulty | Time Est. | Demo Priority | Recommendation |
-|---|------|------------|-----------|---------------|----------------|
-| 1 | Playlist page text | Easy | 15 min | HIGH | ✅ Do it now |
-| 2 | Add human quotes | Medium | 1-2 hrs | MEDIUM | ✅ Worth it if time |
-| 3 | Fix "failed to add songs" error | Medium | 30-60 min | HIGH | ⚠️ Debug needed |
-| 4 | Remove thumbs from non-extrapolated | Easy | 15 min | HIGH | ✅ Do it now |
+| # | Task | Difficulty | Time Est. | Demo Priority | Status |
+|---|------|------------|-----------|---------------|--------|
+| 1 | Playlist page text | Easy | 15 min | HIGH | ✅ DONE - Simplified to one paragraph + journey path visual |
+| 2 | Add human quotes | Medium | 1-2 hrs | MEDIUM | 🔲 TODO |
+| 3 | Fix "failed to add songs" error | Medium | 30-60 min | HIGH | ⚠️ Known Vercel limitation - skip for demo |
+| 4 | Remove thumbs from non-extrapolated | Easy | 15 min | HIGH | ✅ DONE - Only AI discoveries show feedback buttons |
 | 5 | Create Playlist on Spotify button | Hard | 2-3 hrs | LOW | ❌ Skip for demo |
 | 6 | Cover art situation | Medium | 1-2 hrs | LOW | ❌ Skip for demo |
 | 7 | General aesthetics | Varies | Ongoing | LOW | 🤔 Fresh eyes needed |
@@ -96,10 +96,13 @@ Location: core/tapestry.json (8.01 MB)
 
 ### Detailed Task Notes
 
-#### 1. Playlist Page Text (EASY - DO NOW)
-**What:** Update copy/messaging on the results page
-**Where:** `code/web/client/src/components/playlist-results.tsx`
-**Notes:** Quick win. Just editing strings. No logic changes.
+#### 1. Playlist Page Text ✅ COMPLETED
+**What:** Simplified header - removed second paragraph, added journey path visual
+**Changes:**
+- Removed `emotionalArc` text block (was redundant)
+- Added visual journey bar: `[Sad] → [Chill] → [Happy]`
+- Pills with arrows showing the emotional progression
+**File:** `code/web/client/src/components/playlist-results.tsx`
 
 #### 2. Add Human Quotes (MEDIUM - WORTH IT)
 **What:** Show the original Reddit comments that explain WHY each song fits

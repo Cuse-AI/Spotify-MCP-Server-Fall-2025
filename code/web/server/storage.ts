@@ -97,6 +97,53 @@ export class MemStorage implements IStorage {
     return playlist;
   }
 
+  // Helper: Log upvote to tracking file (for human oversight)
+  private async logUpvoteForOversight(record: ValidatedSongRecord, action: "added" | "boosted"): Promise<void> {
+    const upvotesPath = path.join(PROJECT_ROOT, "data", "user_upvotes.json");
+    
+    // Create upvotes file if it doesn't exist
+    let upvotes: any = { songs: [], metadata: { description: "All user upvotes for oversight - songs here are also in tapestry" } };
+    if (fs.existsSync(upvotesPath)) {
+      try {
+        upvotes = JSON.parse(fs.readFileSync(upvotesPath, "utf-8"));
+      } catch {
+        // If file is corrupted, start fresh
+        upvotes = { songs: [], metadata: { description: "All user upvotes for oversight - songs here are also in tapestry" } };
+      }
+    }
+
+    const upvoteEntry = {
+      artist: record.song.artist,
+      song: record.song.title,
+      spotify_id: record.song.track_id.replace("spotify:track:", ""),
+      spotify_uri: record.song.track_id,
+      sub_vibe: record.song.sub_vibe,
+      meta_vibe: record.song.meta_vibe,
+      confidence: record.song.confidence,
+      user_journey: {
+        vibe: record.user_journey.vibe,
+        now: record.user_journey.now,
+        going: record.user_journey.going,
+      },
+      action, // "added" or "boosted"
+      upvoted_at: record.validated_at,
+      manifold_x: record.song.manifold_x,
+      manifold_y: record.song.manifold_y,
+      emotional_composition: record.song.emotional_composition,
+      extrapolated: record.song.extrapolated,
+    };
+
+    upvotes.songs.push(upvoteEntry);
+    
+    try {
+      await atomicWriteJson(upvotesPath, upvotes);
+      console.log(`📝 Upvote logged for oversight: ${record.song.artist} - ${record.song.title} (${action})`);
+    } catch (error) {
+      // Don't fail the main operation if logging fails
+      console.warn(`⚠️ Failed to log upvote for oversight: ${error}`);
+    }
+  }
+
   async saveValidatedSong(record: ValidatedSongRecord): Promise<{ boosted: boolean }> {
     const tapestryPath = path.join(PROJECT_ROOT, "core", "tapestry.json");
 
@@ -139,6 +186,10 @@ export class MemStorage implements IStorage {
       
       await atomicWriteJson(tapestryPath, tapestry);
       console.log(`⬆️  Boosted confidence for "${record.song.artist} - ${record.song.title}": ${(existingSong.mapping_confidence * 100).toFixed(0)}% → ${(newConfidence * 100).toFixed(0)}%`);
+      
+      // Log for oversight
+      await this.logUpvoteForOversight(record, "boosted");
+      
       this.invalidateStatsCache();
       return { boosted: true };
     } else {
@@ -163,6 +214,10 @@ export class MemStorage implements IStorage {
       tapestry.vibes[subVibe].songs.push(songEntry);
       await atomicWriteJson(tapestryPath, tapestry);
       console.log(`✅ Added validated song to Tapestry: ${record.song.artist} - ${record.song.title} (${subVibe})`);
+      
+      // Log for oversight
+      await this.logUpvoteForOversight(record, "added");
+      
       this.invalidateStatsCache();
       return { boosted: false };
     }
@@ -172,9 +227,13 @@ export class MemStorage implements IStorage {
     const downvotesPath = path.join(PROJECT_ROOT, "data", "user_downvotes.json");
     
     // Create downvotes file if it doesn't exist
-    let downvotes: any = { songs: [] };
+    let downvotes: any = { songs: [], metadata: { description: "User downvotes - songs flagged as poor matches" } };
     if (fs.existsSync(downvotesPath)) {
-      downvotes = JSON.parse(fs.readFileSync(downvotesPath, "utf-8"));
+      try {
+        downvotes = JSON.parse(fs.readFileSync(downvotesPath, "utf-8"));
+      } catch {
+        downvotes = { songs: [], metadata: { description: "User downvotes - songs flagged as poor matches" } };
+      }
     }
 
     // Create the downvote entry
