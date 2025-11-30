@@ -53,13 +53,53 @@ interface TapestryComplete {
         song: string;
         spotify_id: string;
         spotify_uri: string;
-        full_context: string;
-        ananki_analysis: string;
+        full_context?: string;
+        comment_text?: string;
+        ananki_analysis?: string;
+        ananki_reasoning?: string;
         mapped_subvibe: string;
         mapping_confidence: number;
       }>;
     };
   };
+}
+
+// Helper to look up human quotes from tapestry for songs in a playlist
+function enrichSongsWithHumanContext(songs: TapestrySong[], tapestry: TapestryComplete): TapestrySong[] {
+  // Build a lookup map: spotify_uri -> song data
+  const songLookup = new Map<string, any>();
+  
+  for (const [subVibe, vibeData] of Object.entries(tapestry.vibes)) {
+    for (const song of vibeData.songs || []) {
+      const uri = song.spotify_uri || `spotify:track:${song.spotify_id}`;
+      songLookup.set(uri, song);
+      // Also map by just the ID
+      if (song.spotify_id) {
+        songLookup.set(song.spotify_id, song);
+      }
+    }
+  }
+  
+  return songs.map(song => {
+    // Try to find the original song in tapestry
+    const trackId = song.track_id.replace('spotify:track:', '');
+    const original = songLookup.get(song.track_id) || songLookup.get(trackId);
+    
+    if (original) {
+      // Get the human quote (comment_text is the actual Reddit comment)
+      const humanQuote = original.comment_text || original.full_context;
+      // Get the AI reasoning
+      const aiReasoning = song.ananki_reasoning || original.ananki_reasoning || original.ananki_analysis;
+      
+      return {
+        ...song,
+        reddit_context: humanQuote || song.reddit_context,
+        ananki_reasoning: aiReasoning,
+      };
+    }
+    
+    return song;
+  });
 }
 
 interface EmotionalManifold {
@@ -355,12 +395,16 @@ Notes:
       console.log(`💾 Cache hit rate: ${cacheHitRate}%`);
     }
 
+    // Enrich songs with human quotes from the tapestry
+    const enrichedSongs = enrichSongsWithHumanContext(claudeResponse.songs, tapestry);
+    console.log(`✨ Enriched ${enrichedSongs.length} songs with human context`);
+
     return {
       journey,
       playlistTitle: claudeResponse.playlistTitle || "Your Emotional Journey",
       explanation: claudeResponse.explanation,
       emotionalArc: claudeResponse.emotionalArc,
-      songs: claudeResponse.songs,
+      songs: enrichedSongs,
     };
   } catch (error: any) {
     console.error("❌ Claude API Error:", error);

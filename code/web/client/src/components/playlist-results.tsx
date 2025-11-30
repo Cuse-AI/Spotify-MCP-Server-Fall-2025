@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import type { PlaylistResponse, TapestrySong, UserJourney } from "@shared/schema";
-import { Music2, ThumbsUp, ThumbsDown, Play, Pause, ArrowRight } from "lucide-react";
+import { Music2, ThumbsUp, ThumbsDown, Play, Pause, ArrowRight, Quote } from "lucide-react";
 import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
 import { useState, useRef, useEffect, useMemo } from "react";
@@ -18,7 +18,6 @@ function extractJourneyPath(songs: TapestrySong[]): string[] {
   const path: string[] = [];
   
   for (const song of songs) {
-    // Use meta_vibe for a cleaner, shorter path
     const vibe = song.meta_vibe || song.sub_vibe;
     if (vibe && !seen.has(vibe)) {
       seen.add(vibe);
@@ -37,7 +36,6 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
   const [creatingPlaylist, setCreatingPlaylist] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  // Get the journey path for the visual
   const journeyPath = useMemo(() => extractJourneyPath(data.songs), [data.songs]);
 
   const handlePlayPreview = (trackId: string, previewUrl: string) => {
@@ -204,7 +202,6 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
             {data.playlistTitle || "Your Emotional Journey"}
           </h1>
           
-          {/* Single explanation paragraph */}
           <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto" data-testid="text-journey-explanation">
             {data.explanation}
           </p>
@@ -284,7 +281,7 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
                       {song.artist}
                     </p>
                     <p className="text-xs text-muted-foreground/60 mt-1">
-                      {song.sub_vibe} • {Math.round(song.confidence * 100)}% match
+                      {song.sub_vibe}
                       {isExtrapolated && <span className="ml-2 text-primary">✨ AI discovery</span>}
                     </p>
                   </div>
@@ -353,34 +350,55 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
           </Button>
         </div>
 
-        {/* Song Details (Optional Expand) */}
-        {data.songs.some((s) => s.ananki_reasoning || s.reddit_context) && (
+        {/* Song Stories - The Human Context */}
+        {data.songs.some((s) => s.reddit_context || s.ananki_reasoning) && (
           <details className="mt-12">
             <summary className="text-sm text-muted-foreground cursor-pointer hover:text-foreground transition-colors text-center">
-              View song reasoning & context
+              Why these songs? See the human stories behind each pick
             </summary>
             <div className="mt-6 space-y-4">
-              {data.songs.map((song, index) => (
-                <Card 
-                  key={`detail-${song.track_id}-${index}`} 
-                  className="p-4 border-2 border-purple-500/20 shadow-[0_0_15px_rgba(168,85,247,0.08)]"
-                >
-                  <h4 className="font-medium mb-2">
-                    {song.title} - {song.artist}
-                  </h4>
-                  {song.ananki_reasoning && (
-                    <p className="text-sm text-muted-foreground mb-2">
-                      {song.ananki_reasoning}
-                    </p>
-                  )}
-                  {song.reddit_context && (
-                    <p className="text-xs text-muted-foreground/80">
-                      <span className="font-medium text-foreground">Context: </span>
-                      {song.reddit_context}
-                    </p>
-                  )}
-                </Card>
-              ))}
+              {data.songs.map((song, index) => {
+                const humanQuote = song.reddit_context;
+                const aiReasoning = song.ananki_reasoning;
+                
+                if (!humanQuote && !aiReasoning) return null;
+                
+                return (
+                  <Card 
+                    key={`detail-${song.track_id}-${index}`} 
+                    className="p-5 border-2 border-purple-500/20 shadow-[0_0_15px_rgba(168,85,247,0.08)]"
+                  >
+                    <h4 className="font-medium text-sm text-primary mb-3">
+                      {song.title} — {song.artist}
+                    </h4>
+                    
+                    {/* Human Quote - The Star */}
+                    {humanQuote && (
+                      <div className="mb-4">
+                        <div className="flex gap-3">
+                          <Quote className="w-5 h-5 text-primary/40 flex-shrink-0 mt-0.5" />
+                          <blockquote className="text-foreground/90 italic leading-relaxed">
+                            "{humanQuote}"
+                          </blockquote>
+                        </div>
+                        <p className="text-xs text-muted-foreground/60 mt-2 ml-8">
+                          — from Reddit
+                        </p>
+                      </div>
+                    )}
+                    
+                    {/* AI Reasoning - Supporting */}
+                    {aiReasoning && (
+                      <div className="border-t border-border/50 pt-3 mt-3">
+                        <p className="text-xs text-muted-foreground leading-relaxed">
+                          <span className="font-medium text-muted-foreground/80">Why it fits: </span>
+                          {aiReasoning}
+                        </p>
+                      </div>
+                    )}
+                  </Card>
+                );
+              })}
             </div>
           </details>
         )}
