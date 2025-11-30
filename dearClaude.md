@@ -105,17 +105,26 @@ Location: core/tapestry.json (8.01 MB)
 **File:** `code/web/client/src/components/playlist-results.tsx`
 
 #### 2. Add Human Quotes ✅ COMPLETED
-**What:** Show the original Reddit comments that explain WHY each song fits
+**What:** Show the original human comments that explain WHY each song fits
 **Changes:**
 - Removed the XX% match display (doesn't fit our human-centered philosophy)
-- Added `enrichSongsWithHumanContext()` function in claude-service.ts to look up original Reddit comments
+- Added `enrichSongsWithHumanContext()` function in claude-service.ts to look up original comments
 - Redesigned song details section with Quote icon and beautiful formatting
 - Human quote is the star (blockquote style), AI reasoning is secondary
-- Summary now shows "Why these songs? See the human stories behind each pick"
-**Data quality:** 99.3% of songs have quality Reddit quotes (>30 chars)
+- Summary now shows "Why these songs? See the stories behind each pick"
+- **Fixed:** Extrapolated songs no longer show fake AI-generated "quotes" - only real human quotes from tapestry songs
+- **Fixed:** Now shows correct source - "from YouTube comment" (84% of data) or "from Reddit" (16%)
+
+**Data quality:** 99.3% of songs have quotes, but some need cleanup:
+- Some spam comments (religious copy-paste on Kanye)
+- Some tangential discussions (essays about artists, not the song's emotional impact)
+- Some useless one-liners (just album names)
+- **TODO for next session:** Data quality cleanup pass on tapestry.json
+
 **Files modified:** 
 - `code/web/client/src/components/playlist-results.tsx`
 - `code/web/server/claude-service.ts`
+- `code/web/shared/schema.ts` (added source_url field)
 
 #### 3. Thumbs Up/Down System ✅ IMPLEMENTED (but Vercel limited)
 **What:** Track all user feedback for human oversight
