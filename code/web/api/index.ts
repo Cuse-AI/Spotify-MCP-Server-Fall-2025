@@ -3,6 +3,13 @@ import { storage } from "../server/storage.js";
 import { createSpotifyPlaylist } from "../server/spotify-service.js";
 import { userJourneySchema, userValidatedSongSchema } from "../shared/schema.js";
 import { z } from "zod";
+import * as fs from "fs";
+import * as path from "path";
+import { fileURLToPath } from "url";
+
+// Get __dirname equivalent in ESM
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const createPlaylistSchema = z.object({
   playlistName: z.string(),
@@ -11,12 +18,10 @@ const createPlaylistSchema = z.object({
 });
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
-  // Parse the path from the URL
   const url = new URL(req.url || "", `http://${req.headers.host}`);
   const pathParts = url.pathname.split("/").filter(Boolean);
-  const endpoint = pathParts[1] || ""; // e.g., "generate-playlist" from "/api/generate-playlist"
+  const endpoint = pathParts[1] || "";
 
-  // CORS headers
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
@@ -26,26 +31,21 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   try {
-    // Route handling
     switch (endpoint) {
       case "health":
         return handleHealth(req, res);
-      
+      case "debug":
+        return handleDebug(req, res);
       case "generate-playlist":
         return handleGeneratePlaylist(req, res);
-      
       case "tapestry-stats":
         return handleTapestryStats(req, res);
-      
       case "validate-song":
         return handleValidateSong(req, res);
-      
       case "downvote-song":
         return handleDownvoteSong(req, res);
-      
       case "create-spotify-playlist":
         return handleCreateSpotifyPlaylist(req, res);
-      
       default:
         return res.status(404).json({ message: `Unknown endpoint: /api/${endpoint}` });
     }
@@ -53,6 +53,62 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     console.error("API Error:", error);
     return res.status(500).json({ message: error.message || "Internal server error" });
   }
+}
+
+// Debug endpoint to understand Vercel's file system
+async function handleDebug(req: VercelRequest, res: VercelResponse) {
+  const cwd = process.cwd();
+  
+  // List of paths to check
+  const pathsToCheck = [
+    { name: "cwd", path: cwd },
+    { name: "__dirname", path: __dirname },
+    { name: "cwd/core", path: path.join(cwd, "core") },
+    { name: "cwd/data", path: path.join(cwd, "data") },
+    { name: "__dirname/../core", path: path.join(__dirname, "..", "core") },
+    { name: "__dirname/../data", path: path.join(__dirname, "..", "data") },
+    { name: "/var/task", path: "/var/task" },
+    { name: "/var/task/core", path: "/var/task/core" },
+  ];
+
+  const results: any = {
+    cwd,
+    __dirname,
+    pathChecks: [],
+    cwdContents: [],
+    dirnameContents: [],
+  };
+
+  // Check each path
+  for (const p of pathsToCheck) {
+    const exists = fs.existsSync(p.path);
+    let contents: string[] = [];
+    if (exists) {
+      try {
+        const stat = fs.statSync(p.path);
+        if (stat.isDirectory()) {
+          contents = fs.readdirSync(p.path).slice(0, 20); // First 20 items
+        }
+      } catch (e) {}
+    }
+    results.pathChecks.push({ name: p.name, path: p.path, exists, contents });
+  }
+
+  // List cwd contents
+  try {
+    results.cwdContents = fs.readdirSync(cwd);
+  } catch (e: any) {
+    results.cwdContents = `Error: ${e.message}`;
+  }
+
+  // List __dirname parent contents
+  try {
+    results.dirnameParentContents = fs.readdirSync(path.join(__dirname, ".."));
+  } catch (e: any) {
+    results.dirnameParentContents = `Error: ${e.message}`;
+  }
+
+  return res.json(results);
 }
 
 async function handleHealth(req: VercelRequest, res: VercelResponse) {
@@ -66,7 +122,6 @@ async function handleHealth(req: VercelRequest, res: VercelResponse) {
     stats = await storage.getTapestryStats();
   } catch (e: any) {
     statsError = e.message;
-    console.error("Error getting stats:", e);
   }
 
   const isHealthy = hasAnthropicKey && hasSpotifyId && hasSpotifySecret && stats !== null;
@@ -88,16 +143,13 @@ async function handleGeneratePlaylist(req: VercelRequest, res: VercelResponse) {
   if (req.method !== "POST") {
     return res.status(405).json({ message: "Method not allowed" });
   }
-
   try {
     const journey = userJourneySchema.parse(req.body);
     const playlist = await storage.generatePlaylist(journey);
     return res.json(playlist);
   } catch (error: any) {
     console.error("Error generating playlist:", error);
-    return res.status(400).json({ 
-      message: error.message || "Failed to generate playlist" 
-    });
+    return res.status(400).json({ message: error.message || "Failed to generate playlist" });
   }
 }
 
@@ -106,11 +158,7 @@ async function handleTapestryStats(req: VercelRequest, res: VercelResponse) {
     const stats = await storage.getTapestryStats();
     return res.json(stats);
   } catch (error: any) {
-    console.error("Error fetching stats:", error);
-    return res.status(500).json({ 
-      message: "Failed to fetch stats",
-      details: error.message
-    });
+    return res.status(500).json({ message: "Failed to fetch stats", details: error.message });
   }
 }
 
@@ -118,7 +166,6 @@ async function handleValidateSong(req: VercelRequest, res: VercelResponse) {
   if (req.method !== "POST") {
     return res.status(405).json({ message: "Method not allowed" });
   }
-
   try {
     const validatedData = userValidatedSongSchema.parse(req.body);
     const record = {
@@ -134,7 +181,6 @@ async function handleValidateSong(req: VercelRequest, res: VercelResponse) {
       boosted: result?.boosted || false
     });
   } catch (error: any) {
-    console.error("Error validating song:", error);
     return res.status(400).json({ message: "Failed to save upvote", details: error.message });
   }
 }
@@ -143,7 +189,6 @@ async function handleDownvoteSong(req: VercelRequest, res: VercelResponse) {
   if (req.method !== "POST") {
     return res.status(405).json({ message: "Method not allowed" });
   }
-
   try {
     const downvoteData = userValidatedSongSchema.parse(req.body);
     const record = {
@@ -155,7 +200,6 @@ async function handleDownvoteSong(req: VercelRequest, res: VercelResponse) {
     await storage.saveDownvotedSong(record);
     return res.json({ success: true, message: "Feedback recorded!" });
   } catch (error: any) {
-    console.error("Error downvoting song:", error);
     return res.status(400).json({ message: "Failed to record downvote", details: error.message });
   }
 }
@@ -164,13 +208,11 @@ async function handleCreateSpotifyPlaylist(req: VercelRequest, res: VercelRespon
   if (req.method !== "POST") {
     return res.status(405).json({ message: "Method not allowed" });
   }
-
   try {
     const params = createPlaylistSchema.parse(req.body);
     const result = await createSpotifyPlaylist(params);
     return res.json(result);
   } catch (error: any) {
-    console.error("Error creating Spotify playlist:", error);
     return res.status(500).json({ message: "Failed to create Spotify playlist", details: error.message });
   }
 }
