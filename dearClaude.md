@@ -320,5 +320,68 @@ Claude then walks the manifold, selecting songs that create a smooth emotional a
 
 ---
 
-**Last updated by Claude:** Nov 29, 2025 ~10:00 PM
+**Last updated by Claude:** Nov 30, 2025 ~12:30 AM
 **Status:** PRODUCTION LIVE! Demo prep mode - focusing on polish 🚀
+
+---
+
+## 🧹 NEXT SESSION: TAPESTRY DATA CLEANUP
+
+### Problem Discovered
+Running `analysis/find_duplicate_comments.py` revealed **232 duplicate comment groups affecting ~620 songs** (~10% of tapestry).
+
+### Types of Duplicates Found
+
+| Issue Type | ~Songs | Severity | Example |
+|------------|--------|----------|---------|
+| YouTube playlist descriptions | ~100 | HIGH | "Best Deep House Music Hits 2025..." attached to 23 different songs |
+| Reddit multi-song recommendations | ~150 | MEDIUM | One comment listing 16 wedding songs, attached to each individually |
+| Generic duplicate comments | ~50 | LOW | "This generation will never understand how DOPE the 90's were" on 2 songs |
+| Metadata bugs (wrong artist/song) | ~10 | HIGH | Lord Huron song mislabeled as "Curren$y - At Night" |
+
+### Worst Offenders (from analysis output)
+```
+23 songs: "Best Deep House Music Hits 2025 | Deep House Playlist..."
+17 songs: "Night Drive Playlist | Car Music playlist 2024, chill vibes."
+16 songs: "The full OST soundtrack for the 2003 film 2 Fast 2 Furious..."
+16 songs: "The really popular songs at my brother's wedding..."
+14 songs: "2003!!!! Thrice – The Artist in the Ambulance..."
+12 songs: "The Cure: 'Lovesong,' 'A Night Like This,'..."
+```
+
+### Cleanup Script Needed
+
+Create a script that:
+
+1. **Identifies promotional YouTube descriptions** (contain "playlist", "subscribe", "channel", etc.)
+2. **Flags Reddit comments listing multiple songs** (>500 chars with multiple artist names)
+3. **Detects metadata bugs** by cross-referencing:
+   - Does the quoted lyric in comment match the song's known lyrics?
+   - Does the artist name appear anywhere in the source_url or context?
+4. **De-duplicates** - when same comment on multiple songs, keep only the most relevant
+
+### Recommended Actions
+
+**For each duplicate group, decide:**
+- **KEEP ONE**: If comment is about a specific song, keep only that song's entry
+- **REMOVE ALL**: If comment is just a playlist description (not song-specific)
+- **FLAG FOR REVIEW**: If unclear which song the comment is about
+
+### Files for Cleanup
+- **Source data:** `core/tapestry.json`
+- **Analysis script:** `analysis/find_duplicate_comments.py` (already created)
+- **Cleanup script:** `analysis/cleanup_duplicates.py` (TODO: create this)
+
+### Data Quality Stats (Current)
+```
+Total songs: 5,786
+Unique comments (>20 chars): 5,166
+Duplicate comment groups: 232
+Songs affected by duplicates: ~620 (10.7%)
+Songs with quality comments: ~5,166 (89.3%)
+```
+
+### Priority
+- **Demo impact:** LOW - duplicates don't break anything, just show same quote for different songs
+- **Data quality impact:** HIGH - affects the "human story" authenticity
+- **Recommendation:** Fix AFTER Dec 4 demo, or do a quick pass removing obvious playlist descriptions
