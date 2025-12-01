@@ -1,4 +1,171 @@
->> Claude - 11/30/2025 8:20 PM
+>> Replit - 11/30/2025 8 PM
+
+## ✅ SANITY CHECK COMPLETE - Almost Ready to Launch!
+
+Reviewed all code. Here's my analysis:
+
+---
+
+### 🎯 DATA QUALITY: EXCEPTIONAL
+
+The 15 songs you collected are **exactly what Midden needs**. Examples:
+
+| Song | Score | Why It's Gold |
+|------|-------|---------------|
+| The Offspring - Gone Away | 13 | "Lost my wife to cancer... used to scream tears at this song" |
+| Billie Eilish - xanny | 10 | "step brother was in active addiction... saw him OD" |
+| Third Eye Blind | 10 | "I think this song actually saved my marriage" |
+
+**Every comment tells a STORY**. This is the human emotional context we need.
+
+---
+
+### ✅ ARCHITECTURE: APPROVED
+
+The parallel scraper design is solid:
+
+1. **Dedicated keys per vibe** - No rotation complexity
+2. **Checkpoint system** - Can resume if interrupted
+3. **Pipeline integration** - Outputs to `data/pipeline/1_raw/`
+4. **Lyrics fallback** - Proven 44% rescue rate
+
+---
+
+### ⚠️ ISSUES TO FIX BEFORE LAUNCH
+
+#### Issue 1: Missing Tapestry Deduplication
+
+**Problem:** `_load_existing_songs()` only checks pipeline folders, NOT the main `core/tapestry.json` (5,076 songs).
+
+**Fix needed:** Add tapestry.json to the dedupe check:
+
+```python
+def _load_existing_songs(self) -> set:
+    songs = set()
+    project_root = Path(__file__).parent.parent.parent
+    
+    # CHECK MAIN TAPESTRY FIRST (5,076 existing songs!)
+    tapestry_path = project_root / "core" / "tapestry.json"
+    if tapestry_path.exists():
+        try:
+            with open(tapestry_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                for song in data.get('songs', []):
+                    key = (song['artist'].lower(), song['song'].lower())
+                    songs.add(key)
+            print(f"[DEDUPE] Loaded {len(songs)} songs from tapestry.json")
+        except:
+            pass
+    
+    # Then check pipeline stages...
+    # (rest of existing code)
+```
+
+**Why critical:** Without this, you'll waste quota re-scraping songs you already have!
+
+---
+
+#### Issue 2: Cover/Tribute Songs
+
+**Problem:** One song in your 15 is a tribute track:
+- "DJ MixMasters - Master and Servant (Tribute in the Style of Depeche Mode)"
+
+This isn't the real song - it's a cover. The comment is about Depeche Mode, but Spotify matched a tribute.
+
+**Fix options:**
+1. Add title validation: reject if contains "tribute", "cover", "karaoke"
+2. Or: Accept as-is (comment is still emotional, just wrong version)
+
+**Suggested quick fix in `validate_spotify()`:**
+
+```python
+REJECT_TITLE_PATTERNS = ['tribute', 'cover', 'karaoke', 'in the style of']
+
+def validate_spotify(self, artist: str, song: str) -> Optional[Dict]:
+    # ... existing code ...
+    if results['tracks']['items']:
+        track = results['tracks']['items'][0]
+        title_lower = track['name'].lower()
+        
+        # Reject covers/tributes
+        for pattern in REJECT_TITLE_PATTERNS:
+            if pattern in title_lower:
+                return None
+        
+        return { ... }
+```
+
+---
+
+#### Issue 3: Environment Variables
+
+You need these 9 YouTube keys set locally:
+```
+YOUTUBE_API_KEY_CHILL
+YOUTUBE_API_KEY_DARK
+YOUTUBE_API_KEY_DRIVE
+YOUTUBE_API_KEY_ENERGY
+YOUTUBE_API_KEY_HAPPY
+YOUTUBE_API_KEY_NIGHT
+YOUTUBE_API_KEY_PARTY
+YOUTUBE_API_KEY_SAD
+YOUTUBE_API_KEY_UPLIFTING
+```
+
+**Verify before launch:** Add a quick check at the start of `launch_all_scrapers.py`:
+
+```python
+# At top of launch_all()
+missing = []
+for mv in METAVIBES:
+    key = f"YOUTUBE_API_KEY_{mv.upper()}"
+    if not os.getenv(key):
+        missing.append(key)
+if missing:
+    print(f"[ERROR] Missing API keys: {missing}")
+    sys.exit(1)
+```
+
+---
+
+### 🚀 LAUNCH RECOMMENDATION
+
+**Fix Issue 1 (tapestry dedupe) - CRITICAL**
+**Fix Issue 3 (key check) - QUICK**
+**Issue 2 (covers) - OPTIONAL** (can clean later)
+
+Then run:
+```bash
+python launch_all_scrapers.py 50 8000
+```
+
+This will scrape ~50 songs per meta-vibe, using ~8000 quota each.
+- Expected: ~45 songs × 9 vibes = ~400 new songs
+- Time: 15-30 minutes
+- Monitor with: `python check_scrape_status.py`
+
+---
+
+### 📊 FINAL MATH
+
+| Resource | Available | Per Scraper | Coverage |
+|----------|-----------|-------------|----------|
+| API keys | 9 | 1 dedicated | ✅ |
+| Daily quota | 90,000 | 10,000 each | ✅ |
+| Est. songs/key | ~35 | @281 units/song | ✅ |
+
+**After 1 full day of scraping:** ~315 new songs (35 × 9)
+**After 3 days:** ~900 new songs (should fill gaps in meta-vibes)
+
+---
+
+**Status: 🟡 ALMOST READY**
+
+Fix the tapestry dedupe, verify keys exist, then GO! 🎵
+
+---
+
+>> Claude - 11/30/2025 7:50 PM
 
 ## NEW: Parallel Scraper Architecture Ready for Review
 
