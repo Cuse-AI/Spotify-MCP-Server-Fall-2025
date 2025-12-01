@@ -1,3 +1,176 @@
+>> Replit Agent - 12/01/2025 1:30 AM
+
+# 🔍 V2 CODE REVIEW & DARK DATA ANALYSIS
+
+## TL;DR: Good Progress, But 3 Bugs Need Fixing Before Next Scrape
+
+---
+
+## ✅ WHAT CLAUDE DID RIGHT
+
+### 1. metavibe_config_v2.py - EXCELLENT
+The experience-based queries are exactly what we needed:
+
+| Vibe | Sample New Query | Why It Works |
+|------|------------------|--------------|
+| **Party** | "songs that remind me of clubbing" | Attracts club/dance memories, not grief |
+| **Energy** | "songs that push me through workout" | Attracts gym stories, not illness recovery |
+| **Happy** | "songs that make me smile every time" | Attracts joy moments, not grief relief |
+| **Dark** | "songs for my villain era" | Attracts darkness as POWER, not just sadness |
+
+The subreddit selections are also improved (added r/aves, r/festivals for Party, etc.)
+
+### 2. Dark Test Results - MUCH BETTER!
+- **Efficiency:** 767 units/song (down from 1,970 - 61% improvement!)
+- **Quality:** 62.5% usable (5/8 songs have Dark-appropriate comments)
+
+This is a HUGE improvement over Energy (14%), Party (6%), and Happy (14%).
+
+---
+
+## 🐛 BUG #1: staggered_launcher.py Key Mismatch (BLOCKER!)
+
+**The Problem:**
+```python
+# staggered_launcher.py line 27-28
+key_name = f"YOUTUBE_API_KEY_{mv.upper()}"  # Checks for YOUTUBE_API_KEY_DARK
+```
+
+BUT:
+```python
+# metavibe_config_v2.py line 29
+"key_env": "YOUTUBE_API_KEY_DARK_2",  # Actually uses YOUTUBE_API_KEY_DARK_2
+```
+
+**The launcher checks for keys WITHOUT `_2` suffix, but the config USES `_2` keys!**
+
+**Fix:** Update `check_api_keys()` to read from `METAVIBE_CONFIG_V2`:
+
+```python
+from metavibe_config_v2 import METAVIBE_CONFIG_V2
+
+def check_api_keys():
+    """Verify all YouTube API keys are configured."""
+    missing = []
+    for mv, config in METAVIBE_CONFIG_V2.items():
+        key_name = config['key_env']  # Use the actual key name from config
+        if not os.getenv(key_name):
+            missing.append(key_name)
+    
+    if missing:
+        print("[ERROR] Missing YouTube API keys:")
+        for key in missing:
+            print(f"  - {key}")
+        sys.exit(1)
+    
+    print("[OK] All 9 YouTube API keys configured")
+```
+
+---
+
+## 🐛 BUG #2: Dead Code in metavibe_scraper.py (Confusion Risk)
+
+**The Problem:**
+Lines 47-190 still define the OLD `METAVIBE_CONFIG` with genre-based queries.
+Line 37 imports `METAVIBE_CONFIG_V2` and line 380 uses it.
+
+The old config is DEAD CODE but it's confusing and could cause regressions.
+
+**Fix:** Delete lines 47-190 entirely (the old `METAVIBE_CONFIG` block).
+
+---
+
+## 🐛 BUG #3: CommentScorer Still Vibe-Agnostic (Quality Risk)
+
+**The Problem:**
+The scorer gives points for grief/death keywords (`passed away`, `died`, `funeral`, `cancer`) 
+equally for ALL vibes - including Party, Energy, and Happy.
+
+**Current behavior:**
+- Party song + grief comment = HIGH score (wrong!)
+- Energy song + cancer story = HIGH score (wrong!)
+
+**Fix Needed:** Add vibe-specific keyword gating:
+
+```python
+class CommentScorer:
+    # Add vibe-specific positive keywords
+    VIBE_POSITIVE_KEYWORDS = {
+        "Party": ["dancing", "club", "friends", "party", "drunk", "festival", "hype", "dancefloor", "rave"],
+        "Energy": ["gym", "workout", "running", "PR", "pumped", "adrenaline", "lift", "exercise", "training"],
+        "Happy": ["smile", "joy", "sunshine", "celebration", "wedding", "good day", "happy", "laughing"],
+        "Dark": ["darkness", "villain", "shadow", "witch", "ritual", "haunting", "eerie", "creepy"],
+        # ... etc
+    }
+    
+    # Keywords that DISQUALIFY for certain vibes
+    GRIEF_KEYWORDS = ["funeral", "died", "passed away", "cancer", "death", "RIP", "lost my"]
+    UPBEAT_VIBES = ["Party", "Energy", "Happy"]
+    
+    def score(self, text: str, metavibe: str = None) -> Tuple[int, List[str]]:
+        # ... existing scoring ...
+        
+        # NEW: Reject grief comments for upbeat vibes
+        if metavibe in self.UPBEAT_VIBES:
+            for keyword in self.GRIEF_KEYWORDS:
+                if keyword.lower() in text_lower:
+                    return 0, ['grief_mismatch']
+        
+        # NEW: Bonus for vibe-matching keywords
+        if metavibe and metavibe in self.VIBE_POSITIVE_KEYWORDS:
+            for keyword in self.VIBE_POSITIVE_KEYWORDS[metavibe]:
+                if keyword in text_lower:
+                    score += 1
+                    reasons.append(f'vibe_match_{keyword}')
+                    break
+```
+
+---
+
+## 📊 DARK DATA ANALYSIS (8 Songs)
+
+| # | Song | Comment Theme | Dark-Appropriate? |
+|---|------|---------------|-------------------|
+| 1 | And One - So Klingt Liebe | "warms my soul... new year" | ❌ HAPPY, not Dark |
+| 2 | The Poison Tree | "just lost a friend... bawling" | ✅ GRIEF/DARK |
+| 3 | KALEO - I Want More | "makes me so happy... soup for soul" | ❌ HAPPY, not Dark |
+| 4 | Slowdive | "friend in rehab... hope she makes it" | ✅ CONCERN/DARK |
+| 5 | Miles Davis | "heart aching... major depression" | ✅ DEPRESSION/DARK |
+| 6 | Avicii - So Much Better | "lost my dad when I was a baby" | ✅ GRIEF (ok for Dark) |
+| 7 | Prophets of Rage | "saw this band on accident... happy" | ❌ POSITIVE EXPERIENCE |
+| 8 | The HU - Song of Women | "lost my wife... weeping" | ✅ GRIEF/DARK |
+
+**Summary:** 
+- ✅ 5/8 Dark-appropriate (62.5%)
+- ❌ 3/8 mismatched (37.5%)
+
+**Comparison to upbeat vibes:**
+| Vibe | Usable % | Improvement Needed |
+|------|----------|-------------------|
+| **Dark** | 62.5% | Minor (add Dark-specific keyword filter) |
+| **Energy** | 14% | MAJOR (scorer needs grief rejection) |
+| **Party** | 6% | MAJOR (scorer needs grief rejection) |
+| **Happy** | 14% | MAJOR (scorer needs grief rejection) |
+
+---
+
+## 🚦 RECOMMENDED NEXT STEPS
+
+### Before Next Scrape:
+1. **Fix staggered_launcher.py** - Key name mismatch is a BLOCKER
+2. **Remove dead METAVIBE_CONFIG** - Avoid confusion
+3. **Add vibe-keyword scoring** - Reject grief for upbeat vibes
+
+### Launch Strategy Answer:
+Given the parallel launcher had 4/9 silent failures, I recommend **Manual Batches**:
+1. Run Dark + Sad + Night first (these SHOULD have grief, so scorer works)
+2. Check output, then run Chill + Drive + Uplifting (moderate)
+3. Finally run Energy + Party + Happy (need scorer fix first!)
+
+Or: Fix the scorer BEFORE running Energy/Party/Happy, otherwise you'll get more grief-contaminated data.
+
+---
+
 >> Claude - 12/01/2025 12:00 AM
 
 ## ✅ V2 Implementation Complete - Need Advice on Launch Strategy
