@@ -1,0 +1,350 @@
+{
+  "metadata": {
+    "created": "2025-11-30T19:15:00",
+    "description": "Fresh tapestry for demo - starting from zero",
+    "target_per_metavibe": 100,
+    "target_per_subvibe": 10,
+    "last_updated": "2025-11-30T19:04:06.504872"
+  },
+  "counts": {
+    "total": 15,
+    "by_metavibe": {
+      "Chill": 0,
+      "Dark": 0,
+      "Drive": 0,
+      "Energy": 0,
+      "Happy": 0,
+      "Night": 0,
+      "Party": 0,
+      "Sad": 0,
+      "Uplifting": 0
+    }
+  },
+  "songs": [
+    {
+      "artist": "Garbage",
+      "song": "Milk",
+      "spotify_id": "1mEOxHlvU3zxIOLv2JrcqP",
+      "spotify_uri": "spotify:track:1mEOxHlvU3zxIOLv2JrcqP",
+      "album": "Garbage (20th Anniversary Deluxe Edition/Remastered)",
+      "comment_text": "Had the CD back in 1995 as a gift from my stepsister. Since then I lost my Dad in 2021. I know I can he won't come back. But, listening to this song reminds me how many times I used to listen to this song, to this entire album, tens, dozens, hundreds, a thousand maybe, each of these times I listened to this song while my father was still there. I miss him so much...",
+      "comment_score": 12,
+      "comment_reasons": [
+        "first_person",
+        "story",
+        "cause_effect",
+        "temporal",
+        "life_event",
+        "action",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=y14Kp1DitpE",
+      "youtube_version": "official",
+      "reddit_context": "[IIL] Looking for music that captures the feeling of emotional exhaustion and desire to be emotionally numb | r/ifyoulikeblank",
+      "data_source": "ultimate_hybrid_v4",
+      "scraped_at": "2025-11-30T18:40:23.625212",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "AWOLNATION",
+      "song": "Sail",
+      "spotify_id": "7ueP5u2qkdZbIPN2YA6LR0",
+      "spotify_uri": "spotify:track:7ueP5u2qkdZbIPN2YA6LR0",
+      "album": "Megalithic Symphony",
+      "comment_text": "My boyfriend Nevin \n (who committed suicide by train)\nused to love this song... I never really watched the music video until after he died.  rip my love\n Nevin Johnson 05-02-17",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "temporal",
+        "life_event",
+        "good_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=tgIqecROs5M",
+      "youtube_version": "official",
+      "reddit_context": "[IIL] Looking for music that captures the feeling of emotional exhaustion and desire to be emotionally numb | r/ifyoulikeblank",
+      "data_source": "ultimate_hybrid_v4",
+      "scraped_at": "2025-11-30T18:40:28.450609",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Halsey",
+      "song": "clementine",
+      "spotify_id": "66c7n8ZXmYQQeXyNVfiArc",
+      "spotify_uri": "spotify:track:66c7n8ZXmYQQeXyNVfiArc",
+      "album": "Manic",
+      "comment_text": "As a young woman suffering from bipolar 1 and BPD... MANIC has spoken all the words for me that I have not yet verbalized myself. Listening to this album has helped me cope with my mental illnesses and in turn help me understand a lot about myself as person. And though we may never meet, you may never read this... Thank you from the bottom of my heart and soul for the this art Halsey. It’s beautiful and poetic and though millions of people will interpret it to fit their own narratives I understa",
+      "comment_score": 8,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect",
+        "emotional_2",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=2hlT8CqZ2pA",
+      "youtube_version": "official",
+      "reddit_context": "[IIL] Looking for music that captures the feeling of emotional exhaustion and desire to be emotionally numb | r/ifyoulikeblank",
+      "data_source": "ultimate_hybrid_v4",
+      "scraped_at": "2025-11-30T18:40:32.037147",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Billie Eilish",
+      "song": "xanny",
+      "spotify_id": "4QIo4oxwzzafcBWkKjDpXY",
+      "spotify_uri": "spotify:track:4QIo4oxwzzafcBWkKjDpXY",
+      "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+      "comment_text": "I used to listen to this song constantly when my older step brother was in active addiction to drugs. He was a very depressed person, and I remember singing this song loudly in hopes he heard any of the lyrics, if anything would reach him. Considering how much he was very into music at the time, and how much he used music to cope with what he went through. Sadly he did OD (he survived thankfully) but I remember how traumatic it was to see for myself, I was only in high school, I was dealing with",
+      "comment_score": 10,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect",
+        "temporal",
+        "life_event",
+        "action",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=LZyybvVx-js",
+      "youtube_version": "official",
+      "reddit_context": "[IIL] Looking for music that captures the feeling of emotional exhaustion and desire to be emotionally numb | r/ifyoulikeblank",
+      "data_source": "ultimate_hybrid_v4",
+      "scraped_at": "2025-11-30T18:40:33.266397",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "The Milk Carton Kids",
+      "song": "Michigan",
+      "spotify_id": "6RGGOBfNQLOvQhyl1oG2oD",
+      "spotify_uri": "spotify:track:6RGGOBfNQLOvQhyl1oG2oD",
+      "album": "Prologue",
+      "comment_text": "This reminds me of some of the soundtrack from the movie “Once.” I lived in Michigan for 34 years before moving South. I loved my time there; loved the fields in the fall, the colors of the trees, I even loved the winters when I was younger. But that was then, and this is now! We all move on; remember the good with joy, and find wisdom in the lessons of the things which were no so good.",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "story",
+        "cause_effect",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=eQh7iOog9fA",
+      "youtube_version": "lyrics",
+      "reddit_context": "[IIL] Looking for music that captures the feeling of emotional exhaustion and desire to be emotionally numb | r/ifyoulikeblank",
+      "data_source": "ultimate_hybrid_v4",
+      "scraped_at": "2025-11-30T18:40:35.056623",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "James Taylor",
+      "song": "Fire and Rain - 2019 Remaster",
+      "spotify_id": "1oht5GevPN9t1T3kG1m1GO",
+      "spotify_uri": "spotify:track:1oht5GevPN9t1T3kG1m1GO",
+      "album": "Sweet Baby James (2019 Remaster)",
+      "comment_text": "My father passed away last August and he had a large amount of James Taylor records in his vinyl collection. This makes me cry so much when I listen to it as it reminds me so much of him. I love you Dad.",
+      "comment_score": 9,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect",
+        "emotional_1",
+        "life_event",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=C3uaXCJcRrE",
+      "youtube_version": "lyrics",
+      "reddit_context": "Songs to cry to | r/GriefSupport",
+      "data_source": "ultimate_hybrid_v4",
+      "scraped_at": "2025-11-30T18:40:43.965653",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Boyz II Men",
+      "song": "A Song For Mama",
+      "spotify_id": "6FuJokk9FHx0E00SZ8ib8X",
+      "spotify_uri": "spotify:track:6FuJokk9FHx0E00SZ8ib8X",
+      "album": "Evolution",
+      "comment_text": "Lost my mom almost 4 years ago. This song still and always will bring tears to my eyes. She was a momma of 5,  the most strong and beautiful woman you’d ever meet. Had five boys to raise without a farther, lost him when I was 4. But I know she couldn’t wait to be in his arms again. This world is tough, but she showed us strength. I love you Bridget Carey Rose Murphy with all of my heart.",
+      "comment_score": 10,
+      "comment_reasons": [
+        "first_person",
+        "story",
+        "emotional_2",
+        "life_event",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=H8KnHK1NskY",
+      "youtube_version": "lyrics",
+      "reddit_context": "Songs to cry to | r/GriefSupport",
+      "data_source": "ultimate_hybrid_v4",
+      "scraped_at": "2025-11-30T18:40:46.484074",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Groove Armada",
+      "song": "Hands of Time",
+      "spotify_id": "0eFRusokOSibQkJS6hE9pl",
+      "spotify_uri": "spotify:track:0eFRusokOSibQkJS6hE9pl",
+      "album": "Lovebox",
+      "comment_text": "Heard this in collateral guessed the title but wasn't even close. Reminds me of when I was a little kid dad and I would sit on the porch during storms he'd strum guitar licks some standard r&b some made up as we'd go along. One long song sometimes. If the music took him he'd write the lyrics as he went along. Other times it was the stuff he'd been playing his whole life. Sam and Dave, Otis, songs he played in concerts with Delbert(straight jackets)(rondells) Arthur Conley stuff. I hope to find t",
+      "comment_score": 8,
+      "comment_reasons": [
+        "first_person",
+        "story",
+        "cause_effect",
+        "emotional_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=KDmtOW8hd54",
+      "youtube_version": "official",
+      "reddit_context": "Songs to cry to | r/GriefSupport",
+      "data_source": "ultimate_hybrid_v4",
+      "scraped_at": "2025-11-30T18:40:52.790827",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "The Cure",
+      "song": "Plainsong - 2010 Remaster",
+      "spotify_id": "76rfUs6iZBa3OCf8tCBn27",
+      "spotify_uri": "spotify:track:76rfUs6iZBa3OCf8tCBn27",
+      "album": "Disintegration (Deluxe Edition)",
+      "comment_text": "I used to drive my grandmother to cancer treatment once a week—we'd listen to this song there and back (her choice). She figured out the words all by herself and loved the song even more. Rest In Peace Sandra Louise Finley",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "temporal",
+        "emotional_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=8ofquR1F5mg",
+      "youtube_version": "lyrics",
+      "reddit_context": "Songs to cry to | r/GriefSupport",
+      "data_source": "ultimate_hybrid_v4",
+      "scraped_at": "2025-11-30T18:40:54.468303",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Third Eye Blind",
+      "song": "How's It Going to Be",
+      "spotify_id": "3Uvx1TO0Kg5HgGPk58lHXv",
+      "spotify_uri": "spotify:track:3Uvx1TO0Kg5HgGPk58lHXv",
+      "album": "Third Eye Blind",
+      "comment_text": "Sad posting here...  I think this song actually saved my marriage.  Wifey served the papers from her lawyer, I refused to meet her lawyer.  Times were tense—every minute—and our two young boys just watched, waited, for something to make sense.  We never screamed at each other in front of them, never bad mouthed each other to them but they could see Mommy didn’t love Daddy any more.  Driving in the van one day, we argued before we picked up the boys in the van from pre-school/kindergarten and thi",
+      "comment_score": 10,
+      "comment_reasons": [
+        "first_person",
+        "temporal",
+        "emotional_1",
+        "life_event",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=rE1oIhSgTgI",
+      "youtube_version": "official",
+      "reddit_context": "i need ‘missing them’ songs | r/spotify",
+      "data_source": "ultimate_hybrid_v4",
+      "scraped_at": "2025-11-30T18:39:47.406773",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "DJ MixMasters",
+      "song": "Master and Servant (Tribute in the Style of Depeche Mode)",
+      "spotify_id": "6spFNBJ8D7bbp2ljzzDye8",
+      "spotify_uri": "spotify:track:6spFNBJ8D7bbp2ljzzDye8",
+      "album": "Ultimate Depeche Mode Tones",
+      "comment_text": "My father was a huge fan of Depeche Mode . He is in the spirit realm now, but I’m so grateful he showed me a way to connect to him after he left the physical . I even went to see Depeche Mode live in honor of my father’s spirit. \n\nThis is so healing for my heart right now in the time I need it the most. Thank you for making this mix. 🤍",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "emotional_2",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=aU-PI0SbKis",
+      "youtube_version": "official",
+      "reddit_context": "looking for songs that capture the vibe of george orwell’s 1984 | r/spotify",
+      "data_source": "ultimate_hybrid_v4",
+      "scraped_at": "2025-11-30T18:39:51.544864",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Avril Lavigne",
+      "song": "My Happy Ending",
+      "spotify_id": "6sqNctd7MlJoKDOxPVCAvU",
+      "spotify_uri": "spotify:track:6sqNctd7MlJoKDOxPVCAvU",
+      "album": "Under My Skin",
+      "comment_text": "When i was 8 9 years old my big sister listened to avril lavigne and Kelly clarkson , my big brother listen to linkin park and evenesences . I will always be grateful to them for bringing me up with good music",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "story",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=0-zDFLbWK1Q",
+      "youtube_version": "official",
+      "reddit_context": "Need music for a broken heart! | r/BreakUps",
+      "data_source": "ultimate_hybrid_v4",
+      "scraped_at": "2025-11-30T18:40:13.292214",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "The Chills",
+      "song": "Pink Frost",
+      "spotify_id": "6RcbMVH18ReFMHdBzA0sE9",
+      "spotify_uri": "spotify:track:6RcbMVH18ReFMHdBzA0sE9",
+      "album": "Kaleidoscope World",
+      "comment_text": "This song literally makes me feel like walking deep into the woods while pondering about things for quite a while. The progression at the beginning still gives me a complex vibe of melancholy, grief, anxiety and calmness that kinda keep prevailing over the feeling of desperation caused by the lyrics just 'til the end of the track... Amazing one.",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect",
+        "emotional_2",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=oV_TMB2RtTA",
+      "youtube_version": "official",
+      "reddit_context": "Songs about grief and death | r/musicsuggestions",
+      "data_source": "ultimate_hybrid_v4",
+      "scraped_at": "2025-11-30T18:40:53.847264",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "The Offspring",
+      "song": "Gone Away - 1997",
+      "spotify_id": "5BnFZLH99sYav2cxJFGO2n",
+      "spotify_uri": "spotify:track:5BnFZLH99sYav2cxJFGO2n",
+      "album": "Ixnay On The Hombre",
+      "comment_text": "Lost my wife many years ago to cancer, 2 kids in gradeschool, she was a warm soul with great intellect and beauty.  I used to scream tears at this song while driving in my car and would wipe my face and show up home with a happy face knowing that my kids were doing better day by day.  It was especially true because \"if I could trade I would\" was something I'd have done and that's as much love as there is I reckon.  All said, they're in their 20's now and doing well, we are all close and set to v",
+      "comment_score": 13,
+      "comment_reasons": [
+        "first_person",
+        "story",
+        "temporal",
+        "emotional_2",
+        "life_event",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=40V9_1PMUGM",
+      "youtube_version": "official",
+      "reddit_context": "Songs about grief/loss | r/musicsuggestions",
+      "data_source": "ultimate_hybrid_v4",
+      "scraped_at": "2025-11-30T18:40:59.582298",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Nine Inch Nails",
+      "song": "Somewhat Damaged",
+      "spotify_id": "0yUyPe5c1o5cCyV7aJkz6F",
+      "spotify_uri": "spotify:track:0yUyPe5c1o5cCyV7aJkz6F",
+      "album": "The Fragile",
+      "comment_text": "Introdused to NIN by a neibourghood friend when i was 14 with the DS in 1996 and directly linked up. I did not speak a lot of english at this time (french) but the noise and the energy fed something in me, I never know other NIN fans around me but I always listen. Now i'm almost 40 wife and a kid and NIN is in the Hall of Fame...",
+      "comment_score": 8,
+      "comment_reasons": [
+        "first_person",
+        "story",
+        "temporal",
+        "action",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=L47a_BAhp0c",
+      "youtube_version": "official",
+      "reddit_context": "Songs about grief/loss | r/musicsuggestions",
+      "data_source": "ultimate_hybrid_v4",
+      "scraped_at": "2025-11-30T18:41:00.616973",
+      "_needs_ananki_analysis": true
+    }
+  ]
+}

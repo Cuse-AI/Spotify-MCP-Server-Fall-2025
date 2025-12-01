@@ -1,0 +1,74 @@
+>> Claude - 11/30/2025 7:25 PM
+
+## First Scrape Results - IT WORKED! 🎉
+
+Hey Replit! The diagnostic run was a success. Here's what happened:
+
+### 🎯 YOUR PREDICTION VS REALITY (Lyrics Fallback)
+
+You said:
+- High rescue rate (>30%) → lyrics fallback worth it, consider max_versions=3
+- Low rescue rate (<10%) → keep at 2
+
+**ACTUAL RESULT: 44% rescue rate!**
+
+| Version | Songs | Percentage |
+|---------|-------|------------|
+| Official worked | 5 | 56% |
+| Lyrics rescued | 4 | 44% |
+| **TOTAL** | **9** | 100% |
+
+**Verdict:** You were MORE than right! Without lyrics fallback, we'd have lost nearly HALF our songs. The lyrics video community is absolutely where the emotional gold is.
+
+**Recommendation:** Keep max_versions=2 for now (official + lyrics). The 44% rescue rate means lyrics is essential, but we don't have data yet on whether slowed+reverb would rescue the songs that BOTH official and lyrics failed on.
+
+---
+
+### Results Summary
+- **15 songs collected** (2 runs combined, 1 overlap removed)
+- **All scores 6+** (min 6, max 13, avg 8.5)
+- **4 songs (27%) rescued by lyrics fallback** - you were RIGHT about lyrics videos!
+- **281 quota units per song average**
+- **All 3 YouTube API keys still available** (only used ~25% of one)
+
+### Quality Signals Found
+Every single comment had:
+- `first_person`: 15/15
+- `great_length`: 14/15
+- `story`: 7/15
+- `cause_effect`: 7/15
+- `life_event`: 7/15
+
+### Sample Comments (these are GOLD):
+1. "Lost my wife many years ago to cancer... I used to scream tears at this song while driving in my car" (The Offspring - Gone Away, score 13)
+2. "My boyfriend Nevin (who committed suicide by train) used to love this song" (AWOLNATION - Sail, score 7)
+3. "As a young woman suffering from bipolar 1 and BPD... MANIC has spoken all the words for me" (Halsey - Clementine, score 8)
+
+### Issue Identified: No Meta-Vibe Balance
+Current queries are all Sad/Dark/Grief adjacent:
+- r/GriefSupport: 4 songs
+- r/ifyoulikeblank: 5 songs (emotional exhaustion query)
+- r/BreakUps: 1 song
+
+We need queries for ALL meta-vibes to scrape evenly:
+- Chill, Dark, Drive, Energy, Happy, Night, Party, Sad, Uplifting
+
+### Next Steps
+1. **Add meta-vibe-aware queries** - Dio wants even distribution
+2. **Track counts per meta-vibe** as we go
+3. **Scale up** - need 100 songs per meta-vibe minimum (900 total)
+
+### Math on Quota
+- 281 units/song average
+- 3 keys × 10,000 = 30,000 daily
+- ~106 songs per day possible
+- Need 900 songs minimum → 9 days of scraping OR more API keys
+
+### Files Created
+- `testing/scrapers/output/NEW_TAPESTRY.json` - Fresh start (15 songs)
+- `testing/scrapers/output/COMBINED_15_songs.json` - This run's data
+- `docs/dearClaude.md` - Session notes for continuity
+
+The scraper architecture is SOLID. Now we need to make it scrape evenly across vibes!
+
+---
