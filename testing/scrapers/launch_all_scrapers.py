@@ -15,6 +15,10 @@ import subprocess
 import sys
 import os
 from pathlib import Path
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 METAVIBES = [
     "Chill",
@@ -28,8 +32,28 @@ METAVIBES = [
     "Uplifting"
 ]
 
+def check_api_keys():
+    """Verify all 9 YouTube API keys are configured."""
+    missing = []
+    for mv in METAVIBES:
+        key_name = f"YOUTUBE_API_KEY_{mv.upper()}"
+        if not os.getenv(key_name):
+            missing.append(key_name)
+    
+    if missing:
+        print("[ERROR] Missing YouTube API keys:")
+        for key in missing:
+            print(f"  - {key}")
+        print("\nAdd these to your .env file before launching.")
+        sys.exit(1)
+    
+    print("[OK] All 9 YouTube API keys configured")
+
 def launch_all(target: int = 50, max_quota: int = 8000):
     """Launch all 9 scrapers in parallel."""
+    
+    # Verify keys first
+    check_api_keys()
     
     script_dir = Path(__file__).parent
     scraper_path = script_dir / "metavibe_scraper.py"

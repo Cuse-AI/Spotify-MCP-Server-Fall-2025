@@ -473,12 +473,24 @@ class MetavibeScraper:
     
     def validate_spotify(self, artist: str, song: str) -> Optional[Dict]:
         """Validate song exists on Spotify and get normalized info."""
+        # Reject covers, tributes, karaoke versions
+        REJECT_PATTERNS = ['tribute', 'cover', 'karaoke', 'in the style of', 'made famous']
+        
         try:
             query = f"track:{song} artist:{artist}"
             results = self.spotify.search(q=query, type='track', limit=1)
             
             if results['tracks']['items']:
                 track = results['tracks']['items'][0]
+                
+                # Check for cover/tribute in title or artist
+                title_lower = track['name'].lower()
+                artist_lower = track['artists'][0]['name'].lower()
+                
+                for pattern in REJECT_PATTERNS:
+                    if pattern in title_lower or pattern in artist_lower:
+                        return None  # Reject this match
+                
                 return {
                     'artist': track['artists'][0]['name'],
                     'song': track['name'],
