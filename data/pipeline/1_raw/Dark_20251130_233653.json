@@ -1,0 +1,199 @@
+{
+  "metavibe": "Dark",
+  "scraped_at": "2025-11-30T23:36:53.635342",
+  "total_songs": 8,
+  "stats": {
+    "metavibe": "Dark",
+    "reddit_comments": 8,
+    "songs_extracted": 455,
+    "spotify_validated": 35,
+    "already_exists": 2,
+    "youtube_searches": 61,
+    "youtube_comments": 34,
+    "quality_passed": 8,
+    "rescued_by_lyrics": 3,
+    "songs_saved": 8,
+    "yt_quota_used": 6134
+  },
+  "songs": [
+    {
+      "artist": "And One",
+      "song": "So Klingt Liebe - X-Mix",
+      "spotify_id": "6IHbGVma4NF9YKzRKTehlp",
+      "spotify_uri": "spotify:track:6IHbGVma4NF9YKzRKTehlp",
+      "album": "So Klingt Liebe (X)",
+      "comment_text": "This song warms my soul! Pleasant male vocals, melody and general mood. This song has its own unique atmosphere, for some reason it makes me think about the new year! And not so far from it! Snow has already fallen in Kazan. Greetings from Russia and good luck to you!",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect",
+        "emotional_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=2R4g83TM39g",
+      "youtube_version": "lyrics",
+      "reddit_context": "Ranking, Rating and Reviewing: Three Days Grace | r/Music",
+      "metavibe": "Dark",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T23:34:17.752611",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "The Good, the Bad & the Queen",
+      "song": "The Poison Tree",
+      "spotify_id": "1QfeZxMrapvHtqYZhBfF9M",
+      "spotify_uri": "spotify:track:1QfeZxMrapvHtqYZhBfF9M",
+      "album": "Merrie Land",
+      "comment_text": "Music doesn't usually make me cry, but this song touched me in such an indescribable way that I just started bawling. Damon's voice just sound so... Sincere? Broken? I don't know.<br><br>Edit: I just lost a friend today and came back to this... Yep. It definitely struck me.",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect",
+        "emotional_2",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=6g6qO3HxaKI",
+      "youtube_version": "official",
+      "reddit_context": "I listened to over 400 albums, LP’s and EP’s in 20 | r/Music",
+      "metavibe": "Dark",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T23:34:38.215038",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "KALEO",
+      "song": "I Want More",
+      "spotify_id": "7eOvXiJXyZ6EZa6FtGS7wL",
+      "spotify_uri": "spotify:track:7eOvXiJXyZ6EZa6FtGS7wL",
+      "album": "Alter Ego",
+      "comment_text": "This makes me so happy 😍 and dam I've missed that voice, soup for the soul 💜 Thankyou to all the boys!   <br>Wanting more, for sure, can not wait untill the new album!",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect",
+        "emotional_2",
+        "good_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=CluJBwZN1UI",
+      "youtube_version": "official",
+      "reddit_context": "I listened to over 400 albums, LP’s and EP’s in 20 | r/Music",
+      "metavibe": "Dark",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T23:34:51.727956",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Slowdive",
+      "song": "Slowdive",
+      "spotify_id": "7fgHvYrA6d92B3ClbjZinS",
+      "spotify_uri": "spotify:track:7fgHvYrA6d92B3ClbjZinS",
+      "album": "Just For A Day",
+      "comment_text": "I had a friend I was in rehab with go back out after 90 days.  This makes me think of her.  I hope she makes in back in.  It matters where she is.",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "story",
+        "cause_effect",
+        "emotional_1",
+        "good_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=tjdo8_FMZCI",
+      "youtube_version": "lyrics",
+      "reddit_context": "I listened to over 400 albums, LP’s and EP’s in 20 | r/Music",
+      "metavibe": "Dark",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T23:35:35.656569",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Miles Davis",
+      "song": "Miles Theme",
+      "spotify_id": "1fqBo2FakquR5gBdBEe4C7",
+      "spotify_uri": "spotify:track:1fqBo2FakquR5gBdBEe4C7",
+      "album": "Horns and Quintets",
+      "comment_text": "I come to this one often when my heart is aching. Too many bad relationships, bad times with family, bad times with friends. Just makes me appreciate myself for a minute and the fact that there were other people in the world who felt the same way. I have a hard time listening to a lot of music when I'm emotionally hurt; and that's hard due to the fact that I love music so much. When I get into major depression moments - this is the only thing that I can listen to. <br><br>Listening to jazz like ",
+      "comment_score": 9,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect",
+        "life_event",
+        "emotional_2",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=Wc4tT-55ZzI",
+      "youtube_version": "official",
+      "reddit_context": "I listened to over 400 albums, LP’s and EP’s in 20 | r/Music",
+      "metavibe": "Dark",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T23:35:56.370906",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Avicii",
+      "song": "So Much Better - Avicii Remix",
+      "spotify_id": "6i3WMnuvd8DtczaGIMJvwC",
+      "spotify_uri": "spotify:track:6i3WMnuvd8DtczaGIMJvwC",
+      "album": "AVĪCI (01)",
+      "comment_text": "I lost my dad when I was a baby, I have no memories of him but this song feel like a message from him to me, because he left too early and I don't think he ever felt like he'd really lived his life. Don't worry dad, I'll live my life to the fullest, I'll do it for both of us 🌻 <br><br>Edit: I'm aware people lie about this shit for likes, I know the truth and you can believe what you like. It makes no difference to me whether you think I'm lying or not.",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "story",
+        "life_event",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=2S0QhGGO1gQ",
+      "youtube_version": "lyrics",
+      "reddit_context": "I listened to over 400 albums, LP’s and EP’s in 20 | r/Music",
+      "metavibe": "Dark",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T23:36:12.216161",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Prophets Of Rage",
+      "song": "Prophets Of Rage",
+      "spotify_id": "1bTVbi6uwmGwlsXy2soxpg",
+      "spotify_uri": "spotify:track:1bTVbi6uwmGwlsXy2soxpg",
+      "album": "Prophets Of Rage",
+      "comment_text": "I saw this band on accident back in October. I thought I was buying Awolnatiom tickets and didn't realize they were only opening. I was dissapointed when i got there, but was incredibly happy when i left. Best mistake I've ever made",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "story",
+        "life_event",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=2220MdXVPGw",
+      "youtube_version": "official",
+      "reddit_context": "I listened to over 400 albums, LP’s and EP’s in 20 | r/Music",
+      "metavibe": "Dark",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T23:36:14.877036",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "The HU",
+      "song": "Song of Women (feat. Lzzy Hale of Halestorm)",
+      "spotify_id": "1OZ2eE4InmLDhl5KVG002w",
+      "spotify_uri": "spotify:track:1OZ2eE4InmLDhl5KVG002w",
+      "album": "The Gereg (Deluxe Edition)",
+      "comment_text": "This song....<br>I lost my wife years ago. This song literally brought me to my knees, weeping....reminding me of her.  <br>Reminding me of her love, her strength, her tenderness...her passion for life.",
+      "comment_score": 8,
+      "comment_reasons": [
+        "first_person",
+        "story",
+        "life_event",
+        "emotional_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=mdN1U9NvuIc",
+      "youtube_version": "official",
+      "reddit_context": "I listened to over 400 albums, LP’s and EP’s in 20 | r/Music",
+      "metavibe": "Dark",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T23:36:16.620193",
+      "_needs_ananki_analysis": true
+    }
+  ]
+}

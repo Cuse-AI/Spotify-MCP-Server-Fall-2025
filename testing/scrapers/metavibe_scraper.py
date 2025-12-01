@@ -30,6 +30,13 @@ from pathlib import Path
 from typing import Optional, Dict, List, Tuple
 from dotenv import load_dotenv
 
+# Load environment variables
+load_dotenv()
+
+# Import V2 config (experience-based queries)
+from metavibe_config_v2 import METAVIBE_CONFIG_V2
+from dotenv import load_dotenv
+
 # Load environment
 load_dotenv()
 
@@ -370,11 +377,11 @@ class MetavibeScraper:
     """Scraper dedicated to a single meta-vibe."""
     
     def __init__(self, metavibe: str):
-        if metavibe not in METAVIBE_CONFIG:
-            raise ValueError(f"Unknown metavibe: {metavibe}. Valid: {list(METAVIBE_CONFIG.keys())}")
+        if metavibe not in METAVIBE_CONFIG_V2:
+            raise ValueError(f"Unknown metavibe: {metavibe}. Valid: {list(METAVIBE_CONFIG_V2.keys())}")
         
         self.metavibe = metavibe
-        self.config = METAVIBE_CONFIG[metavibe]
+        self.config = METAVIBE_CONFIG_V2[metavibe]
         
         # Output directory - use the main data pipeline
         # Go up from testing/scrapers to project root, then into data/pipeline/1_raw
@@ -777,7 +784,7 @@ class MetavibeScraper:
 if __name__ == '__main__':
     if len(sys.argv) < 2:
         print("Usage: python metavibe_scraper.py <MetaVibe>")
-        print(f"Valid meta-vibes: {', '.join(METAVIBE_CONFIG.keys())}")
+        print(f"Valid meta-vibes: {', '.join(METAVIBE_CONFIG_V2.keys())}")
         sys.exit(1)
     
     metavibe = sys.argv[1]
