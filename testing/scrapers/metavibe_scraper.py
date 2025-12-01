@@ -360,8 +360,10 @@ class MetavibeScraper:
         self.metavibe = metavibe
         self.config = METAVIBE_CONFIG[metavibe]
         
-        # Output directory
-        self.output_dir = Path(__file__).parent / "output" / "metavibe_scrapes"
+        # Output directory - use the main data pipeline
+        # Go up from testing/scrapers to project root, then into data/pipeline/1_raw
+        project_root = Path(__file__).parent.parent.parent
+        self.output_dir = project_root / "data" / "pipeline" / "1_raw"
         self.output_dir.mkdir(parents=True, exist_ok=True)
         
         # Initialize APIs
@@ -427,29 +429,26 @@ class MetavibeScraper:
         print(f"[YOUTUBE] Using key: {key_env}")
     
     def _load_existing_songs(self) -> set:
-        """Load existing songs from NEW_TAPESTRY to avoid duplicates."""
+        """Load existing songs from all pipeline stages to avoid duplicates."""
         songs = set()
-        tapestry_path = self.output_dir.parent / "NEW_TAPESTRY.json"
+        project_root = Path(__file__).parent.parent.parent
         
-        if tapestry_path.exists():
-            with open(tapestry_path, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-                for song in data.get('songs', []):
-                    key = (song['artist'].lower(), song['song'].lower())
-                    songs.add(key)
+        # Check all pipeline stages (1_raw, 2_deduped, 3_analyzed, 4_ready)
+        pipeline_dir = project_root / "data" / "pipeline"
+        for stage in ["1_raw", "2_deduped", "3_analyzed", "4_ready"]:
+            stage_dir = pipeline_dir / stage
+            if stage_dir.exists():
+                for file in stage_dir.glob("*.json"):
+                    try:
+                        with open(file, 'r', encoding='utf-8') as f:
+                            data = json.load(f)
+                            for song in data.get('songs', []):
+                                key = (song['artist'].lower(), song['song'].lower())
+                                songs.add(key)
+                    except:
+                        pass
         
-        # Also load any existing scrapes for this metavibe
-        for file in self.output_dir.glob(f"{self.metavibe}_*.json"):
-            try:
-                with open(file, 'r', encoding='utf-8') as f:
-                    data = json.load(f)
-                    for song in data.get('songs', []):
-                        key = (song['artist'].lower(), song['song'].lower())
-                        songs.add(key)
-            except:
-                pass
-        
-        print(f"[DEDUPE] Loaded {len(songs)} existing songs")
+        print(f"[DEDUPE] Loaded {len(songs)} existing songs from pipeline")
         return songs
     
     def _load_checkpoint(self) -> dict:
