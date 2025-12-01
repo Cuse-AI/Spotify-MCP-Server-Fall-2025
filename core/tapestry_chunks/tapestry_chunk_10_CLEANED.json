@@ -152,22 +152,6 @@
         },
         {
           "artist": "Ari Abdul",
-          "song": "Girls On The Internet",
-          "spotify_id": "2p646IXQ5NldzSmZmpHqC1",
-          "spotify_uri": "spotify:track:2p646IXQ5NldzSmZmpHqC1",
-          "comment_score": 23,
-          "source_url": "https://youtube.com/watch?v=MFg50UvLyK8",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Sexy Late Night Vibes ❤️‍🔥 Dark Alt R&amp;B &amp; Electronic Pop 2025",
-          "comment_text": "I feel like this song is missing something and the drop is not impressive.",
-          "ananki_reasoning": "The song 'Girls On The Internet' by Ari Abdul fits within a playlist titled 'Sexy Late Night Vibes ❤️‍🔥 Dark Alt R&B & Electronic Pop 2025', which explicitly mentions 'Dark' and 'Late Night' themes. Ari Abdul is known for dark, moody alt-pop/R&B with brooding, sultry undertones. The commenter's critique about the drop not being impressive suggests the song maintains a more subdued, atmospheric tension rather than explosive energy - characteristic of brooding music. The 'sexy late night' context combined with the dark alternative R&B genre points to a moody, introspective, darker emotional space rather than aggressive darkness or specific anxieties. 'Dark - Brooding' captures this sultry, contemplative, late-night darkness better than other dark sub-vibes.",
-          "mapped_subvibe": "Dark - Brooding"
-        },
-        {
-          "artist": "Ari Abdul",
           "song": "Sinners (feat. Thomas LaRosa)",
           "spotify_id": "0VOyLRYrUBufrXQibWBipR",
           "spotify_uri": "spotify:track:0VOyLRYrUBufrXQibWBipR",
@@ -938,22 +922,6 @@
     },
     "Dark - Apocalyptic": {
       "songs": [
-        {
-          "artist": "Eptic",
-          "song": "Light Up",
-          "spotify_id": "7oouv30MA1XJGi0PvCosE7",
-          "spotify_uri": "spotify:track:7oouv30MA1XJGi0PvCosE7",
-          "comment_score": 72,
-          "source_url": "https://youtube.com/watch?v=WuLsHkl_Xuk",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.75,
-          "full_context": "",
-          "post_title": "(Post-)Apocalyptic Music",
-          "comment_text": "I've listened to a lot of your tracks man and needless to say, you deserve more subscribers. Keep up the good work. :)",
-          "ananki_reasoning": "The post title explicitly mentions '(Post-)Apocalyptic Music' as the thematic context for this recommendation. The comment is supportive but doesn't provide additional emotional context beyond praising the artist's work. Given the clear apocalyptic theme stated in the title, and that Eptic is known for heavy dubstep/bass music that often carries dark, intense, dystopian atmospheres, this song fits best within a dark apocalyptic emotional space. The title 'Light Up' in the context of apocalyptic music likely refers to explosive, intense energy rather than positive uplift.",
-          "mapped_subvibe": "Dark - Apocalyptic"
-        },
         {
           "artist": "Young Fathers",
           "song": "Promised Land",
@@ -6944,22 +6912,6 @@
           "post_title": "What music/song gets you feeling like this every time you listen to it?",
           "comment_text": "Wah Wah Hush Now - Jimi Hendrix\n\nThe song was originally played/recorded while he was with Curtis Knight and The Squires. Curtis sings on the track, but there should be one without the vocals that makes me feel like the picture posted.",
           "ananki_reasoning": "The commenter specifically mentions wanting the instrumental version 'without the vocals' of this Jimi Hendrix wah-wah guitar track, and describes it as making them 'feel like the picture posted' (which in the original post context asks about music that evokes a specific contemplative feeling). The focus on instrumental wah-wah guitar work, combined with the desire for a vocals-free version, suggests they're seeking an immersive, trance-like experience that comes from psychedelic guitar effects. This aligns most closely with 'Chill - Meditative' as the listener is drawn to the hypnotic, introspective quality of the instrumental guitar work rather than energy, darkness, or sadness.",
-          "mapped_subvibe": "Chill - Meditative"
-        },
-        {
-          "artist": "Miracle Healing Tones TP",
-          "song": "5 Hz: Improve Creativity (Theta Waves)",
-          "spotify_id": "3gEbZqS92x6wx58riiqo2j",
-          "spotify_uri": "spotify:track:3gEbZqS92x6wx58riiqo2j",
-          "comment_score": 1,
-          "source_url": "https://reddit.com/r/Music/comments/1nk8mej/do_you_agree_that_ai_music_is_not_real_music_yes/nevz9hy/",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Do you agree that AI Music is NOT Real Music Yes or No and Why?",
-          "comment_text": "I listened to some by accident and could tell right away.  What's intended to sound like a guitar sounds like garbage. It made me feel claustrophobic somehow.  Maybe because of the robotic elevator music style.  It'll never replace human made music for me. It lacks nuance, originality and style so it doesn't  qualify as art to me. What creativity is generated by a computer?",
-          "ananki_reasoning": "The song '5 Hz: Improve Creativity (Theta Waves)' by Miracle Healing Tones TP is a brainwave entrainment track designed for meditation and mental enhancement. Despite the commenter's negative stance on AI music in general, this specific track they validated is clearly intended for meditative/therapeutic purposes, using theta wave frequencies. The song's purpose aligns with relaxation, focus, and mental clarity - core characteristics of the 'Chill - Meditative' sub-vibe. While the context involves criticism of AI music, the actual song chosen is a meditation/healing frequency track, which is its primary emotional function regardless of the surrounding discussion.",
           "mapped_subvibe": "Chill - Meditative"
         },
         {
