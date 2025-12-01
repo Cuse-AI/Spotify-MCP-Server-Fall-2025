@@ -1,7 +1,11 @@
 {
-  "source": "ultimate_hybrid_v4_combined",
-  "combined_at": "2025-11-30T19:00:28.821640",
-  "total_songs": 15,
+  "metavibe": "Sad",
+  "scraped_at": "2025-11-30T18:40:00",
+  "total_songs": 14,
+  "stats": {
+    "metavibe": "Sad",
+    "note": "Initial test data - moved from INITIAL_15_songs.json"
+  },
   "songs": [
     {
       "artist": "Garbage",
@@ -25,7 +29,8 @@
       "reddit_context": "[IIL] Looking for music that captures the feeling of emotional exhaustion and desire to be emotionally numb | r/ifyoulikeblank",
       "data_source": "ultimate_hybrid_v4",
       "scraped_at": "2025-11-30T18:40:23.625212",
-      "_needs_ananki_analysis": true
+      "_needs_ananki_analysis": true,
+      "metavibe": "Sad"
     },
     {
       "artist": "AWOLNATION",
@@ -46,7 +51,8 @@
       "reddit_context": "[IIL] Looking for music that captures the feeling of emotional exhaustion and desire to be emotionally numb | r/ifyoulikeblank",
       "data_source": "ultimate_hybrid_v4",
       "scraped_at": "2025-11-30T18:40:28.450609",
-      "_needs_ananki_analysis": true
+      "_needs_ananki_analysis": true,
+      "metavibe": "Sad"
     },
     {
       "artist": "Halsey",
@@ -67,7 +73,8 @@
       "reddit_context": "[IIL] Looking for music that captures the feeling of emotional exhaustion and desire to be emotionally numb | r/ifyoulikeblank",
       "data_source": "ultimate_hybrid_v4",
       "scraped_at": "2025-11-30T18:40:32.037147",
-      "_needs_ananki_analysis": true
+      "_needs_ananki_analysis": true,
+      "metavibe": "Sad"
     },
     {
       "artist": "Billie Eilish",
@@ -90,7 +97,8 @@
       "reddit_context": "[IIL] Looking for music that captures the feeling of emotional exhaustion and desire to be emotionally numb | r/ifyoulikeblank",
       "data_source": "ultimate_hybrid_v4",
       "scraped_at": "2025-11-30T18:40:33.266397",
-      "_needs_ananki_analysis": true
+      "_needs_ananki_analysis": true,
+      "metavibe": "Sad"
     },
     {
       "artist": "The Milk Carton Kids",
@@ -111,7 +119,8 @@
       "reddit_context": "[IIL] Looking for music that captures the feeling of emotional exhaustion and desire to be emotionally numb | r/ifyoulikeblank",
       "data_source": "ultimate_hybrid_v4",
       "scraped_at": "2025-11-30T18:40:35.056623",
-      "_needs_ananki_analysis": true
+      "_needs_ananki_analysis": true,
+      "metavibe": "Sad"
     },
     {
       "artist": "James Taylor",
@@ -133,7 +142,8 @@
       "reddit_context": "Songs to cry to | r/GriefSupport",
       "data_source": "ultimate_hybrid_v4",
       "scraped_at": "2025-11-30T18:40:43.965653",
-      "_needs_ananki_analysis": true
+      "_needs_ananki_analysis": true,
+      "metavibe": "Sad"
     },
     {
       "artist": "Boyz II Men",
@@ -155,7 +165,8 @@
       "reddit_context": "Songs to cry to | r/GriefSupport",
       "data_source": "ultimate_hybrid_v4",
       "scraped_at": "2025-11-30T18:40:46.484074",
-      "_needs_ananki_analysis": true
+      "_needs_ananki_analysis": true,
+      "metavibe": "Sad"
     },
     {
       "artist": "Groove Armada",
@@ -177,7 +188,8 @@
       "reddit_context": "Songs to cry to | r/GriefSupport",
       "data_source": "ultimate_hybrid_v4",
       "scraped_at": "2025-11-30T18:40:52.790827",
-      "_needs_ananki_analysis": true
+      "_needs_ananki_analysis": true,
+      "metavibe": "Sad"
     },
     {
       "artist": "The Cure",
@@ -198,7 +210,8 @@
       "reddit_context": "Songs to cry to | r/GriefSupport",
       "data_source": "ultimate_hybrid_v4",
       "scraped_at": "2025-11-30T18:40:54.468303",
-      "_needs_ananki_analysis": true
+      "_needs_ananki_analysis": true,
+      "metavibe": "Sad"
     },
     {
       "artist": "Third Eye Blind",
@@ -220,27 +233,8 @@
       "reddit_context": "i need ‘missing them’ songs | r/spotify",
       "data_source": "ultimate_hybrid_v4",
       "scraped_at": "2025-11-30T18:39:47.406773",
-      "_needs_ananki_analysis": true
-    },
-    {
-      "artist": "DJ MixMasters",
-      "song": "Master and Servant (Tribute in the Style of Depeche Mode)",
-      "spotify_id": "6spFNBJ8D7bbp2ljzzDye8",
-      "spotify_uri": "spotify:track:6spFNBJ8D7bbp2ljzzDye8",
-      "album": "Ultimate Depeche Mode Tones",
-      "comment_text": "My father was a huge fan of Depeche Mode . He is in the spirit realm now, but I’m so grateful he showed me a way to connect to him after he left the physical . I even went to see Depeche Mode live in honor of my father’s spirit. \n\nThis is so healing for my heart right now in the time I need it the most. Thank you for making this mix. 🤍",
-      "comment_score": 6,
-      "comment_reasons": [
-        "first_person",
-        "emotional_2",
-        "great_length"
-      ],
-      "youtube_url": "https://youtube.com/watch?v=aU-PI0SbKis",
-      "youtube_version": "official",
-      "reddit_context": "looking for songs that capture the vibe of george orwell’s 1984 | r/spotify",
-      "data_source": "ultimate_hybrid_v4",
-      "scraped_at": "2025-11-30T18:39:51.544864",
-      "_needs_ananki_analysis": true
+      "_needs_ananki_analysis": true,
+      "metavibe": "Sad"
     },
     {
       "artist": "Avril Lavigne",
@@ -260,7 +254,8 @@
       "reddit_context": "Need music for a broken heart! | r/BreakUps",
       "data_source": "ultimate_hybrid_v4",
       "scraped_at": "2025-11-30T18:40:13.292214",
-      "_needs_ananki_analysis": true
+      "_needs_ananki_analysis": true,
+      "metavibe": "Sad"
     },
     {
       "artist": "The Chills",
@@ -281,7 +276,8 @@
       "reddit_context": "Songs about grief and death | r/musicsuggestions",
       "data_source": "ultimate_hybrid_v4",
       "scraped_at": "2025-11-30T18:40:53.847264",
-      "_needs_ananki_analysis": true
+      "_needs_ananki_analysis": true,
+      "metavibe": "Sad"
     },
     {
       "artist": "The Offspring",
@@ -304,7 +300,8 @@
       "reddit_context": "Songs about grief/loss | r/musicsuggestions",
       "data_source": "ultimate_hybrid_v4",
       "scraped_at": "2025-11-30T18:40:59.582298",
-      "_needs_ananki_analysis": true
+      "_needs_ananki_analysis": true,
+      "metavibe": "Sad"
     },
     {
       "artist": "Nine Inch Nails",
@@ -326,7 +323,8 @@
       "reddit_context": "Songs about grief/loss | r/musicsuggestions",
       "data_source": "ultimate_hybrid_v4",
       "scraped_at": "2025-11-30T18:41:00.616973",
-      "_needs_ananki_analysis": true
+      "_needs_ananki_analysis": true,
+      "metavibe": "Sad"
     }
   ]
 }

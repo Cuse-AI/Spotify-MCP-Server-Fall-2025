@@ -1,0 +1,177 @@
+{
+  "metavibe": "Uplifting",
+  "scraped_at": "2025-11-30T20:48:21.943546",
+  "total_songs": 7,
+  "stats": {
+    "metavibe": "Uplifting",
+    "reddit_comments": 84,
+    "songs_extracted": 202,
+    "spotify_validated": 22,
+    "already_exists": 4,
+    "youtube_searches": 35,
+    "youtube_comments": 14,
+    "quality_passed": 7,
+    "rescued_by_lyrics": 4,
+    "songs_saved": 7,
+    "yt_quota_used": 3514
+  },
+  "songs": [
+    {
+      "artist": "Lupe Fiasco",
+      "song": "The Show Goes On",
+      "spotify_id": "4NTWZqvfQTlOMitlVn6tew",
+      "spotify_uri": "spotify:track:4NTWZqvfQTlOMitlVn6tew",
+      "album": "Lasers",
+      "comment_text": "My brother used to play this song almost every time he picked me up from school or whenever we went out.<br>It’s been a year since he passed away and this song popped up on my Spotify from a 2000’s playlist I was listening to. I’ve been avoiding thinking about him for a while because it gets a little too much but this happened and I feel even worse for trying to forget about him. Anyways I think it’s a sign to remember the happy times we spent together.",
+      "comment_score": 8,
+      "comment_reasons": [
+        "first_person",
+        "temporal",
+        "life_event",
+        "emotional_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=u59YcUJnNag",
+      "youtube_version": "lyrics",
+      "reddit_context": "Happy/uplifting music | r/Music",
+      "metavibe": "Uplifting",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:47:33.294854",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Jimmy Eat World",
+      "song": "The Middle - Acoustic Version",
+      "spotify_id": "7HJmJYQqBq2tn7RleFlun5",
+      "spotify_uri": "spotify:track:7HJmJYQqBq2tn7RleFlun5",
+      "album": "Bleed American (Deluxe Edition)",
+      "comment_text": "This is such a timeless song. Was like 11-12 when this came out, now I'm a grown ass 32yr old man and I still listen to this when my depression starts getting to deep.  <br><br>Remember y'all. Everything will be just fine, it just takes some time ❤",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "life_event",
+        "emotional_2",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=FV-HPOHu8mY",
+      "youtube_version": "lyrics",
+      "reddit_context": "Need Uplifting music | r/Music",
+      "metavibe": "Uplifting",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:47:35.959118",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Miley Cyrus",
+      "song": "Party In The U.S.A.",
+      "spotify_id": "5Q0Nhxo0l2bP3pNjpGJwV1",
+      "spotify_uri": "spotify:track:5Q0Nhxo0l2bP3pNjpGJwV1",
+      "album": "The Time Of Our Lives",
+      "comment_text": "This song is the best I love to sit inside with one years old. I heard it was the best ever even love by Keyshia Cole. I didn’t even know who her name I love her song to help me love and thank you, Jesus Christ.",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect",
+        "emotional_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=vA2Lc9c3qN0",
+      "youtube_version": "lyrics",
+      "reddit_context": "Need Uplifting music | r/Music",
+      "metavibe": "Uplifting",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:47:38.291011",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "John Williams",
+      "song": "Star Wars (Main Theme)",
+      "spotify_id": "7a9UUo3zfID7Ik2fTQjRLi",
+      "spotify_uri": "spotify:track:7a9UUo3zfID7Ik2fTQjRLi",
+      "album": "Star Wars: The Empire Strikes Back (Original Motion Picture Soundtrack)",
+      "comment_text": "I was seven years old when my dad took me to see this in the movie theater. To a little kid, that movie blew my little mind. I was no longer on earth, I was out on missions in the universe. It wasn't going to school on the bus, it was a mission to save Alderan. It wasn't going to get groceries with mom, we were going to save the princess from the space station. We weren't at the beach, we were on Tatooine searching for Droids! No book or movie changed my view of self or literature like Starwars.",
+      "comment_score": 8,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect",
+        "temporal",
+        "emotional_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=54hoKbTWon4",
+      "youtube_version": "official",
+      "reddit_context": "Need Uplifting music | r/Music",
+      "metavibe": "Uplifting",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:47:40.659607",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Dropkick Murphys",
+      "song": "The Warrior's Code",
+      "spotify_id": "6ivzLSDw82LpxXfToyb0He",
+      "spotify_uri": "spotify:track:6ivzLSDw82LpxXfToyb0He",
+      "album": "The Warrior's Code",
+      "comment_text": "My dad passed away a couple years ago. Mickey was his favorite. His fights with Arturo are cemented in my childhood memory. Thanks for the memories Mick.",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "story",
+        "life_event",
+        "good_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=PPC0kTWaE7I",
+      "youtube_version": "official",
+      "reddit_context": "Need Uplifting music | r/Music",
+      "metavibe": "Uplifting",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:47:46.288397",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Devin Townsend",
+      "song": "Spirits Will Collide",
+      "spotify_id": "3Woz4yXgXOSTs6Yc0Oh2Es",
+      "spotify_uri": "spotify:track:3Woz4yXgXOSTs6Yc0Oh2Es",
+      "album": "Empath",
+      "comment_text": "Devin has saved my life for longer than I can remember. I'm 32 this year. 5 suicide attempts. PTSD, BPD, a seizure disorder, a wonky spine and hips, severe depression and anxiety. Domestic abuse survivor and 2 children, the oldest named after the man himself for all the respect I have and healing he's enabled. I turned my life around thanks to this man. I have the lyrics remember in the end that death is not the end tattooed on my arm. I love you Devin, see you at bloodstock 🖤",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "life_event",
+        "emotional_2",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=AdHJurX0yVA",
+      "youtube_version": "official",
+      "reddit_context": "Music for the chronically depressed? | r/Music",
+      "metavibe": "Uplifting",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:47:55.021084",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "The Red Army Choir",
+      "song": "Les Champs-Elysées (feat. Julien Dassin)",
+      "spotify_id": "0gAiv58dNuLfhPqD6HQaIh",
+      "spotify_uri": "spotify:track:0gAiv58dNuLfhPqD6HQaIh",
+      "album": "Joe Dassin chante avec Les Choeurs de l'Armée Rouge",
+      "comment_text": "Yesterday, my French teacher passed away. She is an amazing teacher I've ever known, she teach us sometimes with songs lyrics or maybe movie. She makes me want to travel and study more about French. Rest in love Mme, I will always remember you and all the stuff about French❤",
+      "comment_score": 9,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect",
+        "life_event",
+        "emotional_2",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=d7-UcdcK4AA",
+      "youtube_version": "lyrics",
+      "reddit_context": "My Comprehensive List of Musicians That David Bowi | r/Music",
+      "metavibe": "Uplifting",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:48:14.550392",
+      "_needs_ananki_analysis": true
+    }
+  ]
+}

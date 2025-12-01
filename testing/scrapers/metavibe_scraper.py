@@ -40,7 +40,7 @@ load_dotenv()
 METAVIBE_CONFIG = {
     "Chill": {
         "key_env": "YOUTUBE_API_KEY_CHILL",
-        "subreddits": ["chillmusic", "listentothis", "Music", "spotify", "ifyoulikeblank"],
+        "subreddits": ["chillmusic", "listentothis", "Music", "spotify", "ifyoulikeblank", "electronicmusic", "triphop"],
         "queries": [
             "chill music recommendation",
             "relaxing songs playlist",
@@ -49,7 +49,15 @@ METAVIBE_CONFIG = {
             "mellow music vibes",
             "ambient chill songs",
             "lo-fi recommendations",
-            "songs to relax to"
+            "songs to relax to",
+            "downtempo music suggestions",
+            "chillhop playlist",
+            "Sunday morning music",
+            "lazy afternoon songs",
+            "coffee shop music",
+            "rainy day songs",
+            "chill electronic music",
+            "trip hop recommendations"
         ]
     },
     "Dark": {
@@ -82,7 +90,7 @@ METAVIBE_CONFIG = {
     },
     "Energy": {
         "key_env": "YOUTUBE_API_KEY_ENERGY",
-        "subreddits": ["Music", "spotify", "ifyoulikeblank", "Fitness", "running", "workout"],
+        "subreddits": ["Music", "spotify", "ifyoulikeblank", "Fitness", "running", "workout", "EDM", "dubstep", "DnB"],
         "queries": [
             "pump up songs recommendation",
             "workout music playlist",
@@ -91,7 +99,15 @@ METAVIBE_CONFIG = {
             "adrenaline rush songs",
             "intense workout music",
             "songs that get you pumped",
-            "motivational gym songs"
+            "motivational gym songs",
+            "dubstep bangers",
+            "drum and bass recommendations",
+            "EDM workout songs",
+            "running playlist music",
+            "pre-game hype songs",
+            "intense electronic music",
+            "bass drop songs",
+            "headbanger music"
         ]
     },
     "Happy": {

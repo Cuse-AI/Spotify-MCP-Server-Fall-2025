@@ -1,0 +1,131 @@
+{
+  "metavibe": "Dark",
+  "scraped_at": "2025-11-30T20:32:02.867843",
+  "total_songs": 5,
+  "stats": {
+    "metavibe": "Dark",
+    "reddit_comments": 40,
+    "songs_extracted": 380,
+    "spotify_validated": 56,
+    "already_exists": 12,
+    "youtube_searches": 98,
+    "youtube_comments": 52,
+    "quality_passed": 5,
+    "rescued_by_lyrics": 1,
+    "songs_saved": 5,
+    "yt_quota_used": 9852
+  },
+  "songs": [
+    {
+      "artist": "Demon Bitch",
+      "song": "Master of the Games",
+      "spotify_id": "43Dy1apnKh1M5R1xxmJVBq",
+      "spotify_uri": "spotify:track:43Dy1apnKh1M5R1xxmJVBq",
+      "album": "Master of the Games",
+      "comment_text": "I absolutely loved Hellfriends, 'twas one of me favourite albums back in 2016. Thought they'd never make another album (although they did the White Magician project) and then I found this by accident. Kingly!",
+      "comment_score": 8,
+      "comment_reasons": [
+        "first_person",
+        "story",
+        "life_event",
+        "emotional_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=FX1jA9W1oIc",
+      "youtube_version": "official",
+      "reddit_context": "Shreddit's Top 10 of 2024 [RESULTS] | r/Metal",
+      "metavibe": "Dark",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:30:25.791693",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Vendel",
+      "song": "Out in the Fields",
+      "spotify_id": "0Fd6jwFBUpgqKkjZRVTjG4",
+      "spotify_uri": "spotify:track:0Fd6jwFBUpgqKkjZRVTjG4",
+      "album": "Out in the Fields",
+      "comment_text": "Thank you for this glorious power metal that flows through our souls, gives us power, lifts us up to live our lives in this reality, sometimes pain, sometimes anger, at other times we feel the joy of kinship if not watching our back of the enemy, though we may be dodging arrows or bullets on the battlefield of death, we stand together as one in the face of danger, we laugh at death, together, though in the end, it is the Reaper who has the final laugh for us all... THANK YOU---",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "life_event",
+        "emotional_2",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=8zhB4PFoaaE",
+      "youtube_version": "official",
+      "reddit_context": "Shreddit's Top 10 of 2024 [RESULTS] | r/Metal",
+      "metavibe": "Dark",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:30:26.916374",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "War Dogs",
+      "song": "Only the Stars Are Left",
+      "spotify_id": "5OHtUxzib43FdakqORuday",
+      "spotify_uri": "spotify:track:5OHtUxzib43FdakqORuday",
+      "album": "Only the Stars Are Left",
+      "comment_text": "Good trad metal with epic themes. The singer reminds me a bit of Brian Ross from Blitzkrieg and indeed Blitzkrieg on the whole serve as a fair reference point for their sound along with tail ender NWOBHM acts like Elixir, Desolation Angels and Cloven Hoof when the outright metal elements as distinct from 70's heavy rock became more fully formed and finer honed with any punk influences pretty much put to bed. A most enjoyable release and as trad/true as it gets really. Nice work.",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect",
+        "emotional_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=IAfi5_ZE1zA",
+      "youtube_version": "official",
+      "reddit_context": "Shreddit's Top 10 of 2024 [RESULTS] | r/Metal",
+      "metavibe": "Dark",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:31:02.882723",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Procession",
+      "song": "To Reap Heavens Apart",
+      "spotify_id": "0x0R9WAAToB5qLqZDScwwf",
+      "spotify_uri": "spotify:track:0x0R9WAAToB5qLqZDScwwf",
+      "album": "To Reap Heavens Apart",
+      "comment_text": "The Death Minstrel reminds me on another song, could anyone help me please? listen at <a href=\"https://www.youtube.com/watch?v=KY_x8U_Dh7M&t=1790\">29:50</a>",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect",
+        "life_event",
+        "good_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=KY_x8U_Dh7M",
+      "youtube_version": "official",
+      "reddit_context": "Shreddit's Top Albums of 2010 - 2019 (Results) | r/Metal",
+      "metavibe": "Dark",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:31:17.015180",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Elder",
+      "song": "Lore",
+      "spotify_id": "2nTFISlOwaTdUXOtpuiXRp",
+      "spotify_uri": "spotify:track:2nTFISlOwaTdUXOtpuiXRp",
+      "album": "Lore",
+      "comment_text": "I got goosebumps the first time I heard <a href=\"https://www.youtube.com/watch?v=PzDm6ImLtHc&t=879\">14:39</a>. <br><br>Immediately fell in love with this band. The whole thing had been great up until that point, but what a way to end it. Reminds me of a lot of my favorite Pelican, Pallbearer or Ancestors tracks.",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect",
+        "emotional_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=PzDm6ImLtHc",
+      "youtube_version": "lyrics",
+      "reddit_context": "Shreddit's Top Albums of 2010 - 2019 (Results) | r/Metal",
+      "metavibe": "Dark",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:31:27.680906",
+      "_needs_ananki_analysis": true
+    }
+  ]
+}

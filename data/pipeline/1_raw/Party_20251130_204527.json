@@ -1,0 +1,133 @@
+{
+  "metavibe": "Party",
+  "scraped_at": "2025-11-30T20:45:27.804728",
+  "total_songs": 5,
+  "stats": {
+    "metavibe": "Party",
+    "reddit_comments": 40,
+    "songs_extracted": 177,
+    "spotify_validated": 17,
+    "already_exists": 0,
+    "youtube_searches": 31,
+    "youtube_comments": 20,
+    "quality_passed": 5,
+    "rescued_by_lyrics": 2,
+    "songs_saved": 5,
+    "yt_quota_used": 3120
+  },
+  "songs": [
+    {
+      "artist": "David Guetta",
+      "song": "Sexy Bitch (feat. Akon) - Koen Groeneveld Remix; David Guetta Vocal Re-Edit",
+      "spotify_id": "0LzZsugWkBuV9ZbR7J4988",
+      "spotify_uri": "spotify:track:0LzZsugWkBuV9ZbR7J4988",
+      "album": "Sexy Bitch (feat. Akon) [Remixes 1]",
+      "comment_text": "Makes me think of my sister whos died she loved this track I love you Emma ❤❤",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect",
+        "life_event",
+        "emotional_1"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=uIFx6wv8LfE",
+      "youtube_version": "official",
+      "reddit_context": "Which songs would you choose to get a House Party  | r/Music",
+      "metavibe": "Party",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:44:36.708937",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Gucci Mane",
+      "song": "Both (feat. Drake)",
+      "spotify_id": "5tFep7dXGd7vEJ668wTPux",
+      "spotify_uri": "spotify:track:5tFep7dXGd7vEJ668wTPux",
+      "album": "The Return of East Atlanta Santa",
+      "comment_text": "When drake said \"this some shit I wrote about when I was broke, see the power of the mind is not a joke, man I said that I would do it and I did, used to get leftovers at the fridge\", I really felt that shit, love this song, never give up on your goals.",
+      "comment_score": 9,
+      "comment_reasons": [
+        "first_person",
+        "story",
+        "temporal",
+        "emotional_2",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=eu1AHz4MV2g",
+      "youtube_version": "official",
+      "reddit_context": "Which songs would you choose to get a House Party  | r/Music",
+      "metavibe": "Party",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:44:42.428160",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Flute Healing",
+      "song": "Drizzle Sounds - New Worlds",
+      "spotify_id": "7slWM1L6tF6X6mPBpRn4xM",
+      "spotify_uri": "spotify:track:7slWM1L6tF6X6mPBpRn4xM",
+      "album": "Sacred Showers Serenade",
+      "comment_text": "I'm sitting on my front porch 2:30 pm, my husband passed away 2 years ago this November and he was on the role of the Eastern band of Cherokee Indians. I miss him so much, he was the love of my life. Thank you for making me feel like he's sitting with me through this music. Eva.",
+      "comment_score": 9,
+      "comment_reasons": [
+        "first_person",
+        "story",
+        "life_event",
+        "emotional_2",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=QCT3WcUPPmI",
+      "youtube_version": "official",
+      "reddit_context": "Which songs would you choose to get a House Party  | r/Music",
+      "metavibe": "Party",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:44:56.836470",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Citizen Cope",
+      "song": "Let The Drummer Kick",
+      "spotify_id": "4Nrg8EG7wWTiTOumtpw8gk",
+      "spotify_uri": "spotify:track:4Nrg8EG7wWTiTOumtpw8gk",
+      "album": "Citizen Cope",
+      "comment_text": "sO funny..that the last comment made here 3 years ago..is exactly what I thought was being sung for years!..and I loved singing it over again to myself..like a mantra..to clear all my own drama..Maybe this was intended, ie \"let the drummer kick that\"..is similar in meaning to \"let the drama kid die\"..to let the beat of the drum clear all that is superfluous, meaningless, dramatic, self-destructive and without joy OUT of our lives. A fun, simple, yet powerful rhythm that feels good! Thankyou Griz",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "story",
+        "emotional_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=UEqrXHqMAx4",
+      "youtube_version": "lyrics",
+      "reddit_context": "Which songs would you choose to get a House Party  | r/Music",
+      "metavibe": "Party",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:45:05.608368",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Rockets in the Trees",
+      "song": "w w w",
+      "spotify_id": "3Muzr9F7jQ1hjTnwaPrLSi",
+      "spotify_uri": "spotify:track:3Muzr9F7jQ1hjTnwaPrLSi",
+      "album": "Time to Live on the Edge of Life",
+      "comment_text": "I love this song my dad used to play it all the time when we went camping =)...it was also the song that was played at his funeral =( I miss my dad =( RIP Dad sending you all my love, where ever you ended up..\r\n",
+      "comment_score": 9,
+      "comment_reasons": [
+        "first_person",
+        "temporal",
+        "life_event",
+        "emotional_2",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=zXeUvDOMgGY",
+      "youtube_version": "lyrics",
+      "reddit_context": "Which songs would you choose to get a House Party  | r/Music",
+      "metavibe": "Party",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:45:09.537036",
+      "_needs_ananki_analysis": true
+    }
+  ]
+}

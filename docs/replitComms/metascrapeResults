@@ -1,54 +1,55 @@
->> Claude - 11/30/2025 9:20 PM
+>> Claude - 11/30/2025 9:00 PM
 
-## ✅ HAPPY SCRAPE TEST - SUCCESS!
+## Run 1 Complete - 130 Songs Collected!
 
-### Results Summary:
-- **6 songs collected** (target was 20, hit quota limit early)
-- **3,113 quota units used** 
-- **519 units per song** (higher than before - Happy queries might be harder)
-- **3 songs (50%) rescued by lyrics fallback**
+### Results by Meta-Vibe:
 
-### Songs Collected:
-| Song | Artist | Score | Version |
-|------|--------|-------|---------|
-| Tarzan Boy | Baltimora | 6 | official |
-| Boogie Shoes | KC & Sunshine Band | 6 | lyrics |
-| Groove Me | King Floyd | 7 | official |
-| Chicago Rap | Jae Good | 6 | lyrics |
-| Mamma Mia | ABBA | 8 | official |
-| Sugar Pie Honey Bunch* | Various Artists | 8 | lyrics |
+| Meta-Vibe | Songs | Quota Used | Remaining |
+|-----------|-------|------------|-----------|
+| Energy | 22 | 8,157 | 1,843 |
+| Happy | 21 | 9,849 | 151 |
+| Drive | 20 | 8,053 | 1,947 |
+| Sad | 18 | 4,224 | 5,776 |
+| Chill | 10 | 5,332 | 4,668 |
+| Night | 7 | 2,514 | 7,486 |
+| Uplifting | 7 | 3,514 | 6,486 |
+| Party | 5 | 3,120 | 6,880 |
+| Dark | 5 | 9,852 | 148 |
+| **TOTAL** | **130** | | |
 
-*One cover slipped through - added "originally by" and "various artists" to reject patterns.
+### What Worked:
+- All 9 meta-vibes produced output
+- Lyrics fallback rescuing 30-50% of songs
+- Cover/tribute filter catching "Various Artists" compilations
+- Dedupe preventing duplicates across runs
 
-### Sample Comments (GOLD quality):
-1. "Put this on for my 2002 wedding, everyone danced!" (KC & Sunshine Band)
-2. "Music saved me through highly dramatic times" (King Floyd)  
-3. "Mom passed away of cancer 5 months ago... miss you" (ABBA - Mamma Mia)
-4. "At 75, in and out of hospital... music keeps me positive. Married 56yrs, 4 children, 11 grandchildren, 9 great grandchildren" (Four Tops cover)
+### Issue Found:
+The parallel launcher (`launch_all_scrapers.py`) has stdout redirect issues. When using `subprocess.Popen` with `RedirectStandardOutput`, some processes fail silently - logs are empty but no error shown.
 
-### Technical Verification:
-- ✅ API key loaded correctly (YOUTUBE_API_KEY_HAPPY)
-- ✅ Happy-specific queries working
-- ✅ Output saved to: `data/pipeline/1_raw/Happy_20251130_201626.json`
-- ✅ Dedupe loaded 15 existing songs from pipeline
-- ✅ Lyrics fallback working (50% rescue rate!)
+**Chill, Dark, Drive, Energy, Happy** ran fine in parallel.
+**Night, Party, Sad, Uplifting** had empty logs - had to run manually.
 
-### Filter Update:
-Added to REJECT_PATTERNS:
-- "originally by"
-- "various artists"
+### Possible Fix:
+Instead of redirecting stdout to files, could try:
+1. Sequential with delays (slower but reliable)
+2. Use `subprocess.run()` instead of `Popen`
+3. Write logs from within the scraper itself
+4. Use Python multiprocessing instead of subprocess
 
-### Ready for Parallel Launch!
-The single-vibe test confirms everything works. Ready to launch all 9:
+### Next Actions:
+1. Running remaining quota on 6 keys now (Night, Party, Uplifting, Sad, Chill, Drive)
+2. Dio creating 9 more API keys
+3. Need to hit 900+ songs by Dec 4
 
-```bash
-python launch_all_scrapers.py 50 8000
-```
+### Efficiency Notes:
+- Sad: 235 units/song (most efficient!)
+- Drive: ~400 units/song
+- Party: 624 units/song (least efficient)
+- Average across all: ~400 units/song
 
-### Note on Quota:
-Happy used 519 units/song vs 281 for Sad queries. Different vibes may have different efficiency. With 8,000 quota per vibe:
-- Conservative estimate: ~15 songs per vibe
-- Optimistic estimate: ~28 songs per vibe
-- Total first run: ~135-250 songs across all 9 vibes
+At 400 units/song average:
+- 10,000 quota = ~25 songs per key per day
+- 9 keys = ~225 songs per full run
+- Need 4 full runs to hit 900
 
 ---

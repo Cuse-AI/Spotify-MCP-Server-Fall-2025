@@ -1,0 +1,86 @@
+{
+  "metavibe": "Drive",
+  "scraped_at": "2025-11-30T20:58:12.703777",
+  "total_songs": 3,
+  "stats": {
+    "metavibe": "Drive",
+    "reddit_comments": 1397,
+    "songs_extracted": 758,
+    "spotify_validated": 44,
+    "already_exists": 6,
+    "youtube_searches": 18,
+    "youtube_comments": 11,
+    "quality_passed": 3,
+    "rescued_by_lyrics": 1,
+    "songs_saved": 3,
+    "yt_quota_used": 1811
+  },
+  "songs": [
+    {
+      "artist": "Willie Nelson",
+      "song": "Red Headed Stranger",
+      "spotify_id": "5buJ3E5gcaJvM3wRgwenFi",
+      "spotify_uri": "spotify:track:5buJ3E5gcaJvM3wRgwenFi",
+      "album": "Red Headed Stranger",
+      "comment_text": "Happy 91st birthday Willie. One of the greatest events of my life took place 50 years ago, when I smoked weed with you  before a concert in Portland Oregon. YOU ARE ALWAYS ON MY MIND, IN MY HEART, and, IN MY PRAYERS ❤️🙏❤️",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "story",
+        "emotional_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=ieFkYPOawro",
+      "youtube_version": "official",
+      "reddit_context": "Best Albums to listen to start to finish? | r/Music",
+      "metavibe": "Drive",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:54:33.088897",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Radiohead",
+      "song": "Kid A",
+      "spotify_id": "3QDahKSqLwYJYQRbILdzS6",
+      "spotify_uri": "spotify:track:3QDahKSqLwYJYQRbILdzS6",
+      "album": "Kid A",
+      "comment_text": "I remember when I was looking up the lyrics for idiots que one time I found a comment on a lyric website and it tried to explain how the entire album was about the birth of an atomic bomb it was pretty interesting if I find it I’ll paste it below this comment",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "story",
+        "emotional_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=eFU-WrWqlB4",
+      "youtube_version": "lyrics",
+      "reddit_context": "Best Albums to listen to start to finish? | r/Music",
+      "metavibe": "Drive",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:54:42.454596",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Dire Straits",
+      "song": "Brothers in Arms",
+      "spotify_id": "26tWBbtjvgi0tipRL2VQ2X",
+      "spotify_uri": "spotify:track:26tWBbtjvgi0tipRL2VQ2X",
+      "album": "Brothers in Arms",
+      "comment_text": "Played at the funeral of my beautiful brother, aged 33.  Even 8 years later to remember the sight at least 30 soldiers crying to this, as the flyover and bagpipes played will remain with me forever. May all those who served and gave the ultimate sacrifice, rest in peace  xx",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "life_event",
+        "emotional_2",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=jhdFe3evXpk",
+      "youtube_version": "official",
+      "reddit_context": "Best Albums to listen to start to finish? | r/Music",
+      "metavibe": "Drive",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:54:50.452715",
+      "_needs_ananki_analysis": true
+    }
+  ]
+}

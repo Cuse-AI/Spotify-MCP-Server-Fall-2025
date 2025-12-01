@@ -1,86 +1,56 @@
-# Dear Claude - Session Notes & Continuity
+# Dear Claude - Midden Project Session Notes
 
-Use date/time headers for each session entry. Most recent at top.
+## Session: 11/30/2025
 
----
+### Current Status: Parallel Scraping Working!
 
-## Claude - 11/30/2025 8:15 PM
+**Data collected so far:** 130 songs across all 9 meta-vibes
 
-### Project Cleanup & New Parallel Scraper Architecture
+| Meta-Vibe | Songs | Quota Used | Quota Remaining |
+|-----------|-------|------------|-----------------|
+| Energy | 22 | 8,157 | 1,843 |
+| Happy | 21 | 9,849 | 151 |
+| Drive | 20 | 8,053 | 1,947 |
+| Sad | 18 | 4,224 | 5,776 |
+| Chill | 10 | 5,332 | 4,668 |
+| Night | 7 | 2,514 | 7,486 |
+| Uplifting | 7 | 3,514 | 6,486 |
+| Party | 5 | 3,120 | 6,880 |
+| Dark | 5 | 9,852 | 148 |
 
-**Cleanup Done:**
-- Moved scorched earth outputs to `testing/scorched_earth/`
-- Archived old `DearClaude.md` from root to `archive/`
-- Moved initial 15 test songs to `data/pipeline/1_raw/`
-- Cleaned up test outputs to `testing/old_test_outputs/`
-
-**Project Structure Now:**
+### Project Structure (Clean)
 ```
-/core/                     - Production tapestry (DON'T TOUCH for now)
-/data/pipeline/            - NEW PIPELINE (this is where new scrapes go!)
-  /1_raw/                  - Raw scraper output lands here
-  /2_deduped/              - After deduplication
-  /3_analyzed/             - After Ananki analysis
-  /4_ready/                - Ready to inject to tapestry
-/testing/                  - All our new work
-  /scrapers/               - New scraper code
-  /scorched_earth/         - Classifier outputs (GOLD/REVIEW/CUT)
-/docs/                     - Documentation
-  /dearClaude.md           - THIS FILE (session notes)
-  /replitComms/            - Communication with Replit AI
-```
+/data/pipeline/          <- NEW DATA GOES HERE
+  /1_raw/                <- Scraper output (130 songs)
+  /2_deduped/            <- After deduplication
+  /3_analyzed/           <- After Ananki analysis
+  /4_ready/              <- Ready for tapestry injection
 
-**New Parallel Scraper System:**
-- 9 YouTube API keys (1 per meta-vibe)
-- `metavibe_scraper.py` - Scrapes single meta-vibe with dedicated key
-- `launch_all_scrapers.py` - Launches all 9 in parallel
-- `check_scrape_status.py` - Shows progress per meta-vibe
-- Output goes directly to `data/pipeline/1_raw/`
+/testing/scrapers/       <- Scraper code
+  metavibe_scraper.py    <- Per-vibe scraper (works!)
+  launch_all_scrapers.py <- Parallel launcher (has issues)
+  check_scrape_status.py <- Progress monitor
 
-**Pipeline Flow:**
-```
-1. Scrape → data/pipeline/1_raw/{Metavibe}_{timestamp}.json
-2. Dedupe → data/pipeline/2_deduped/
-3. Ananki → data/pipeline/3_analyzed/
-4. Ready → data/pipeline/4_ready/
-5. Inject → core/tapestry.json
+/core/tapestry.json      <- Production (don't touch yet)
 ```
 
-**Current Status:**
-- 15 test songs in pipeline (from first successful scrape)
-- 9 API keys configured in .env
-- Awaiting Replit sanity check before parallel launch
+### What Works
+- Individual metavibe scrapers work perfectly
+- Reddit → Spotify → YouTube pipeline validated
+- Lyrics fallback rescuing ~30-50% of songs
+- Cover/tribute filter catching bad matches
+- Dedupe against pipeline preventing duplicates
 
-**Quota Math:**
-- 9 keys × 10,000 units = 90,000 daily quota
-- ~281 units per song average
-- ~320 songs/day possible
-- 100 per meta-vibe (900 total) = ~3 days
+### Known Issue
+The parallel launcher (`launch_all_scrapers.py`) has stdout redirect issues - some processes don't capture output. Running scrapers individually works fine.
 
----
+### Demo Timeline
+- Dec 2: Demo day
+- Dec 4: Industry summit
+- Target: 900+ songs minimum, 1800+ ideal
 
-## Claude - 11/30/2025 7:20 PM
-
-### MAJOR BREAKTHROUGH: Ultimate Hybrid Scraper v4 Working!
-
-**What happened:**
-- Fixed the broken scraper (old one was searching YouTube directly for "ambient music relaxing" - GARBAGE)
-- New scraper does: Reddit → Spotify → YouTube (targeted "Artist Song official/lyrics")
-- Added multi-version fallback (official → lyrics → slowed → acoustic → live)
-- Added 3 YouTube API key rotation
-- First diagnostic run: 15 quality songs collected!
-
-**Key Stats from First Run:**
-- 15 songs, all score 6+ (avg 8.5)
-- 4 songs (27%) RESCUED by lyrics version fallback
-- 281 units average quota per song
-- Real artists: Garbage, AWOLNATION, Halsey, Billie Eilish, The Cure, Nine Inch Nails, etc.
-
-**Lyrics Fallback Results:**
-- Replit predicted >30% rescue rate = valuable
-- We got **44% rescue rate!**
-- Official worked: 5 songs (56%)
-- Lyrics rescued: 4 songs (44%)
-- Without lyrics fallback we'd have lost nearly half our data
-
----
+### Next Steps
+1. Run remaining quota on 6 keys (Night, Party, Uplifting, Sad, Chill, Drive)
+2. Add 9 more API keys for parallel capacity
+3. Continue scraping through Dec 2
+4. Dedupe and Ananki analysis once we hit targets

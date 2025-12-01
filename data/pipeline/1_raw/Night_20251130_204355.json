@@ -1,0 +1,176 @@
+{
+  "metavibe": "Night",
+  "scraped_at": "2025-11-30T20:43:55.525968",
+  "total_songs": 7,
+  "stats": {
+    "metavibe": "Night",
+    "reddit_comments": 109,
+    "songs_extracted": 107,
+    "spotify_validated": 15,
+    "already_exists": 0,
+    "youtube_searches": 25,
+    "youtube_comments": 14,
+    "quality_passed": 7,
+    "rescued_by_lyrics": 2,
+    "songs_saved": 7,
+    "yt_quota_used": 2514
+  },
+  "songs": [
+    {
+      "artist": "King Crimson",
+      "song": "21st Century Schizoid Man - Including \"Mirrors\"",
+      "spotify_id": "2MfrET7Nc3StKQcGoZKqr9",
+      "spotify_uri": "spotify:track:2MfrET7Nc3StKQcGoZKqr9",
+      "album": "In The Court Of The Crimson King (Expanded & Remastered Original Album Mix)",
+      "comment_text": "The  cover sleeve ‘In The Court of The Crimson King’ was painted across a pub wall by an artist in Taunton, way back in the 70’s. Confronting that image was quite something, even if you were sober! Anyway, still my favourite KC album!",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "story",
+        "emotional_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=7OvW8Z7kiws",
+      "youtube_version": "official",
+      "reddit_context": "Rap Fan Listens to 25 MORE Great Rock Albums for t | r/Music",
+      "metavibe": "Night",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:43:30.120365",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Pink Floyd",
+      "song": "Several Species of Small Furry Animals Gathered Together in a Cave and Grooving with a Pict",
+      "spotify_id": "63M8OHzd0lcVT517Pnon81",
+      "spotify_uri": "spotify:track:63M8OHzd0lcVT517Pnon81",
+      "album": "Ummagumma",
+      "comment_text": "What each Pink Floyd album is saying:<br><br>The Dark Side of the Moon: Mortality comes for everyone, no matter what you do. Your life, in the grand scheme of things, is pointless, and the more you try and fight it, the more insane you will become.<br><br>Wish You Were Here: Syd Barrett was not only an impossibly important asset to the band, but an incredibly close friend, and seeing him lose his mind to drugs haunts us daily.<br><br>Animals: Society is run by pigs who feed off the dogs living i",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "life_event",
+        "emotional_2",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=cYfxdFZkM5Y",
+      "youtube_version": "official",
+      "reddit_context": "Rap Fan Listens to 25 MORE Great Rock Albums for t | r/Music",
+      "metavibe": "Night",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:43:31.618601",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Tom Waits",
+      "song": "Rain Dogs - 2023 Remaster",
+      "spotify_id": "0m64PtMUZrwOxavI4bch5G",
+      "spotify_uri": "spotify:track:0m64PtMUZrwOxavI4bch5G",
+      "album": "Rain Dogs (2023 Remaster)",
+      "comment_text": "I have Jim Jarmusch to thank for introducing me to Tom Waits. Two of his songs were featured in Down By Law and I was struck at the vocals and ltrics. They were unlike anything I had heard before. In my memory (it might be wrong) I made a beeline to the record shop just down the block from the movie theatre and picked up Rain Dogs. I was an instant fan and eagerly awaited each new album. But I drifted away from him over the last twenty-five years. I occasionally \"discover\" a new song. One i part",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "story",
+        "emotional_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=KXW3c5Z6UQ0",
+      "youtube_version": "official",
+      "reddit_context": "Rap Fan Listens to 25 MORE Great Rock Albums for t | r/Music",
+      "metavibe": "Night",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:43:38.310900",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Joni Mitchell",
+      "song": "Blue",
+      "spotify_id": "1yWIsH3TC51gmzvQxZNCQC",
+      "spotify_uri": "spotify:track:1yWIsH3TC51gmzvQxZNCQC",
+      "album": "Blue",
+      "comment_text": "I love Joni Mitchell so much ever since the 60's. I played her music all the time. Blue is my favorite. I just received 2 books from a friend. \"Joni Mitchell, The Complete Poems and Lyrics. And Morning Glory On The Vine, early songs & drawings. Your voice goes straight to my heart. We have something in common, I got polio when I was 5 years old (70 now). I was in insolation for months. It effected my right leg. I have been wearing a brace since. I graduated from high school in 1971. I am an arti",
+      "comment_score": 9,
+      "comment_reasons": [
+        "first_person",
+        "story",
+        "life_event",
+        "emotional_2",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=MvR7Dkg4NQU",
+      "youtube_version": "official",
+      "reddit_context": "Rap Fan Listens to 25 MORE Great Rock Albums for t | r/Music",
+      "metavibe": "Night",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:43:39.827803",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Pink Floyd",
+      "song": "Pompeii Intro - Live at Pompeii - MCMLXXII - 2025 Mix",
+      "spotify_id": "0vQtlq80NMVGAh2EgzQg1C",
+      "spotify_uri": "spotify:track:0vQtlq80NMVGAh2EgzQg1C",
+      "album": "Pink Floyd at Pompeii - MCMLXXII (2025 Mix)",
+      "comment_text": "Besides the awesome cinematography, music, close ups of band, so much that you feel you’re sitting having breakfast with them, this took place in the time before plastic. Literally, plastic was not used to make much back in 1972. All of their equipment, the stools, chairs, cords, organs, guitar straps, amplifiers, keys, switches, clothes, etc. it was all metal, wood, leather, cotton, rubber, stone or ivory. Even the gold company logo on a keyboard was probably metal painted with a gold paint. To",
+      "comment_score": 9,
+      "comment_reasons": [
+        "first_person",
+        "story",
+        "temporal",
+        "emotional_2",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=73Bpyta8vOs",
+      "youtube_version": "official",
+      "reddit_context": "Music Movie Recommendations | r/Music",
+      "metavibe": "Night",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:43:45.828121",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Gorillaz",
+      "song": "Feel Good Inc. - Live at Manchester Opera House",
+      "spotify_id": "7IN4zUEZQJkyATFepIrNWP",
+      "spotify_uri": "spotify:track:7IN4zUEZQJkyATFepIrNWP",
+      "album": "Demon Days Live at the Manchester Opera House",
+      "comment_text": "This song gives me such junior high school nostalgia. My best friend used to listen to it a lot when we were teens back in the early 2010's. And now in 2025, here we are in the future, he still listens to this song regularly. Everytime I hear this song anywhere I'm reminded of him.",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "story",
+        "temporal",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=IbpOfzrNjTY",
+      "youtube_version": "lyrics",
+      "reddit_context": "Music Movie Recommendations | r/Music",
+      "metavibe": "Night",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:43:48.367390",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Billie Eilish",
+      "song": "Happier Than Ever",
+      "spotify_id": "4RVwu0g32PAqgUiJoXsdF8",
+      "spotify_uri": "spotify:track:4RVwu0g32PAqgUiJoXsdF8",
+      "album": "Happier Than Ever",
+      "comment_text": "I was listening to this song when I was on the plane and the music dropped at the exact moment when the plane took off. <br>I started crying cuz I was finally leaving my toxic family and I could finally live my life. <br><br>THE CHILLS",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "story",
+        "emotional_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=YEbz2Qt3vec",
+      "youtube_version": "lyrics",
+      "reddit_context": "Music Movie Recommendations | r/Music",
+      "metavibe": "Night",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:43:51.243380",
+      "_needs_ananki_analysis": true
+    }
+  ]
+}
