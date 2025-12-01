@@ -1,3 +1,646 @@
+>> Replit Agent Analysis - 12/01/2025 (for Claude)
+
+## 🔍 DEEP DIVE: Why Dark Failed & Energy Run 2 Issues
+
+### THE DARK PROBLEM: Genre Queries vs. Emotional Experiences
+
+**Root Cause:** Current Dark queries are GENRE-FOCUSED, not EXPERIENCE-FOCUSED.
+
+| Current Queries (Genre-Based) | What People Actually Search (Experience-Based) |
+|-------------------------------|------------------------------------------------|
+| "dark atmospheric music" | "songs that helped me through depression" |
+| "brooding songs recommendation" | "music for when everything feels hopeless" |
+| "music for dark mood" | "songs about my inner demons" |
+| "haunting beautiful songs" | "music for existential crisis at 3am" |
+| "dark ambient songs" | "song for my villain era after betrayal" |
+
+**The Mismatch:** Dark sub-vibes in the manifold are deeply personal:
+- **Gothic** → grief romance, Victorian death aesthetics
+- **Brooding** → introspective tension, storm cloud energy
+- **Haunting** → loss, ghost-like sadness, eerie beauty
+- **Noir** → urban shadows, mystery, dangerous romance
+- **Witchy** → ritual empowerment, pagan energy, feminine darkness
+- **Villain Arc** → embracing the shadow, power in darkness, anti-hero energy
+- **Apocalyptic** → existential dread, end-times, cosmic anxiety
+
+But the queries don't tap into these EXPERIENCES. Metal/goth subreddits discuss production quality and genre technicalities, not "this song saved me during my darkest hour."
+
+### RECOMMENDED DARK QUERY OVERHAUL:
+
+```python
+"Dark": {
+    "key_env": "YOUTUBE_API_KEY_DARK",
+    "subreddits": [
+        "depression", "anxiety", "GriefSupport", "TrueOffMyChest",
+        "traumatoolbox", "CPTSD", "BPD", "Witch", "occult",
+        "goth", "Metal", "ifyoulikeblank", "Music"
+    ],
+    "queries": [
+        # Experience-based queries (what people FEEL)
+        "songs that helped me through depression",
+        "music for when everything feels hopeless",
+        "songs about inner demons",
+        "music for existential crisis",
+        "songs that understand my darkness",
+        
+        # Sub-vibe specific
+        "haunting song that reminds me of someone I lost",
+        "songs for feeling like a villain",
+        "music for witchy ritual vibes",
+        "songs about betrayal and revenge",
+        "apocalyptic music for end times mood",
+        
+        # Story prompts
+        "what song saved you during your darkest time",
+        "songs for 3am existential dread",
+        "music that makes you feel powerful in a dark way"
+    ]
+}
+```
+
+### THE ENERGY RUN 2 PROBLEM: Technical, Not Query-Related
+
+**Evidence:**
+- Run 1: 22 songs at 371 units/song = EFFICIENT! ✅
+- Run 2: 0 songs = TECHNICAL FAILURE ❌
+
+**Likely Causes:**
+1. API key exhausted from Run 1 (used 8,157/10,000 units)
+2. Missing or malformed `YOUTUBE_API_KEY_ENERGY_2` env var
+3. Spotify auth timeout (script exits early on auth failure)
+4. Parallel launcher swallowed error output
+
+**Fix:** When creating 9 new keys, ensure:
+- Fresh `YOUTUBE_API_KEY_ENERGY_2` (or just replace `YOUTUBE_API_KEY_ENERGY`)
+- Run Energy in foreground first to verify connection
+- Check Spotify auth before batch launch
+
+### EFFICIENCY COMPARISON (Updated):
+
+| Meta-Vibe | Units/Song | Status |
+|-----------|------------|--------|
+| **Sad** | 147 | 🏆 CHAMPION |
+| **Night** | 193 | 🥈 Excellent |
+| **Energy** | 371 | ✅ Good (Run 1) |
+| **Drive** | 429 | ✅ Good |
+| **Chill** | 533 | Okay |
+| **Party** | 477 | Okay |
+| **Uplifting** | 413 | ✅ Good |
+| **Happy** | 469 | Okay |
+| **Dark** | 1,970 | ⚠️ NEEDS OVERHAUL |
+
+### WHY SAD WORKS SO WELL:
+
+Look at Sad queries vs Dark queries:
+
+**Sad (147 units/song):**
+- "songs that make me cry"
+- "heartbreak playlist"
+- "songs about loss"
+- "music for grief"
+
+These are EXPERIENCE queries! They invite personal stories.
+
+**Dark (1,970 units/song):**
+- "dark atmospheric music" ← genre label
+- "brooding songs recommendation" ← genre request
+- "eerie music recommendation" ← aesthetic descriptor
+
+These are PRODUCTION/GENRE queries. They invite "check out this band" responses.
+
+### NEXT STEPS FOR SECOND PARALLEL SCRAPE:
+
+1. **Update Dark queries** in `metavibe_scraper.py` using experience-based approach above
+2. **Verify all 9 new API keys** are properly named and accessible
+3. **Run Dark first** in foreground to test new queries
+4. **Monitor Energy** closely - if it fails again, check logs immediately
+5. **Consider sequential launch** for problematic vibes (Dark, Energy) to catch errors
+
+### FOR DIO:
+
+When setting up the 9 new keys:
+```
+YOUTUBE_API_KEY_CHILL_2=...
+YOUTUBE_API_KEY_DARK_2=...   # or just replace YOUTUBE_API_KEY_DARK
+YOUTUBE_API_KEY_DRIVE_2=...
+YOUTUBE_API_KEY_ENERGY_2=... # VERIFY THIS ONE WORKS
+YOUTUBE_API_KEY_HAPPY_2=...
+YOUTUBE_API_KEY_NIGHT_2=...
+YOUTUBE_API_KEY_PARTY_2=...
+YOUTUBE_API_KEY_SAD_2=...
+YOUTUBE_API_KEY_UPLIFTING_2=...
+```
+
+Update `METAVIBE_CONFIG` key_env values to use the `_2` versions.
+
+---
+
+## 🎯 FULL QUERY OVERHAUL: Vibe-Matched Emotional Context
+
+### THE CORE PRINCIPLE
+
+❌ **BAD:** "Songs that changed my life" → attracts grief (most intense emotion)
+✅ **GOOD:** "Songs from the best night with friends" → attracts party memories
+
+Each vibe needs queries that attract THAT VIBE's emotional stories, not generic "emotional" stories that default to grief.
+
+---
+
+### READY-TO-PASTE CONFIGS (Copy into metavibe_scraper.py)
+
+```python
+METAVIBE_CONFIG = {
+    "Chill": {
+        "key_env": "YOUTUBE_API_KEY_CHILL",
+        "subreddits": [
+            "chillmusic", "listentothis", "Music", "spotify", "ifyoulikeblank",
+            "coffee", "CozyPlaces", "raining", "CasualConversation",
+            "electronicmusic", "triphop", "lofi"
+        ],
+        "queries": [
+            # Morning/Coffee vibes
+            "songs for lazy sunday morning",
+            "music for morning coffee routine",
+            "songs that feel like a cozy morning",
+            
+            # Rainy/Cozy vibes
+            "perfect rainy day songs",
+            "music for staying in on rainy day",
+            "cozy songs for bad weather",
+            
+            # Beach/Summer vibes
+            "songs that feel like summer vacation",
+            "beach day playlist memories",
+            "music for lazy beach afternoon",
+            
+            # Evening wind-down
+            "songs for winding down after work",
+            "evening relaxation music",
+            "songs for peaceful evening",
+            
+            # Study/Focus
+            "songs I study to",
+            "music for long study sessions",
+            "songs that help me focus"
+        ]
+    },
+    
+    "Dark": {
+        "key_env": "YOUTUBE_API_KEY_DARK",
+        "subreddits": [
+            "TrueOffMyChest", "CPTSD", "BPD", "Witch", "occult",
+            "goth", "darkwave", "Metal", "ifyoulikeblank", "Music",
+            "mentalhealth", "anxiety"
+        ],
+        "queries": [
+            # Villain Arc / Empowerment
+            "songs for my villain era",
+            "music that makes me feel like a villain",
+            "songs for feeling dangerous",
+            "music for when you embrace your dark side",
+            
+            # Witchy / Ritual
+            "witchy vibes playlist",
+            "songs for witchy rituals",
+            "music that feels magical and dark",
+            
+            # Existential / Apocalyptic
+            "songs for existential crisis",
+            "music for when nothing matters",
+            "apocalyptic vibes songs",
+            
+            # Brooding / Noir
+            "songs for brooding alone",
+            "noir vibes music",
+            "songs that feel like a dark movie",
+            
+            # Haunting
+            "hauntingly beautiful songs",
+            "songs that give you chills",
+            "eerie songs that stay with you"
+        ]
+    },
+    
+    "Drive": {
+        "key_env": "YOUTUBE_API_KEY_DRIVE",
+        "subreddits": [
+            "Music", "spotify", "ifyoulikeblank", "roadtrip", 
+            "Autos", "cars", "travel", "CasualConversation"
+        ],
+        "queries": [
+            # Road Trip memories
+            "songs for road trip with friends",
+            "best road trip memory songs",
+            "music for long drives with windows down",
+            
+            # Night Drive
+            "songs for driving at night",
+            "midnight drive playlist",
+            "music for late night driving alone",
+            
+            # Speed / Adrenaline
+            "songs for driving fast",
+            "highway driving music",
+            "songs that make you want to drive",
+            
+            # Scenic / Cruising
+            "songs for scenic drives",
+            "cruising music vibes",
+            "songs for driving through mountains"
+        ]
+    },
+    
+    "Energy": {
+        "key_env": "YOUTUBE_API_KEY_ENERGY",
+        "subreddits": [
+            "Fitness", "running", "workout", "crossfit", "bodybuilding",
+            "EDM", "dubstep", "DnB", "Music", "spotify", "ifyoulikeblank",
+            "GetMotivated", "sports"
+        ],
+        "queries": [
+            # Workout / Gym
+            "songs that push me through workout",
+            "gym pump up songs",
+            "music for hitting personal records",
+            "songs for when you need that extra rep",
+            
+            # Running
+            "songs for running faster",
+            "running playlist that keeps me going",
+            "music for runners high",
+            
+            # Sports / Competition
+            "pregame hype songs",
+            "songs before big game",
+            "music that gets the team hyped",
+            
+            # General Pump Up
+            "songs that make you feel unstoppable",
+            "music for feeling powerful",
+            "songs that get your adrenaline going"
+        ]
+    },
+    
+    "Happy": {
+        "key_env": "YOUTUBE_API_KEY_HAPPY",
+        "subreddits": [
+            "Music", "spotify", "ifyoulikeblank", "CasualConversation", 
+            "happy", "MadeMeSmile", "wholesomememes", "UpliftingNews"
+        ],
+        "queries": [
+            # Pure Joy
+            "songs that make me smile every time",
+            "happiest songs you know",
+            "music for when life is good",
+            
+            # Celebration
+            "songs for celebrating good news",
+            "music for happy moments",
+            "songs for when something great happens",
+            
+            # Sunshine vibes
+            "songs that feel like sunshine",
+            "summer happiness songs",
+            "music for beautiful day",
+            
+            # Feel Good
+            "songs that instantly improve mood",
+            "feel good songs for bad day",
+            "music that makes everything better"
+        ]
+    },
+    
+    "Night": {
+        "key_env": "YOUTUBE_API_KEY_NIGHT",
+        "subreddits": [
+            "Music", "spotify", "ifyoulikeblank", "insomnia", 
+            "nightowls", "LateNightMusic", "CasualConversation"
+        ],
+        "queries": [
+            # 3AM Thoughts
+            "songs for 3am thoughts",
+            "music for when you cant sleep",
+            "late night overthinking songs",
+            
+            # Midnight vibes
+            "midnight vibes playlist",
+            "songs for staying up all night",
+            "music for night owls",
+            
+            # City Nights
+            "songs for city at night",
+            "urban nighttime vibes",
+            "music for walking city streets at night",
+            
+            # Contemplative Night
+            "songs for late night thinking",
+            "music for quiet nights",
+            "nocturnal vibes songs"
+        ]
+    },
+    
+    "Party": {
+        "key_env": "YOUTUBE_API_KEY_PARTY",
+        "subreddits": [
+            "Music", "spotify", "ifyoulikeblank", "EDM", "DJs", "house",
+            "aves", "festivals", "college", "CasualConversation"
+        ],
+        "queries": [
+            # Club / Dance
+            "songs that remind me of clubbing",
+            "best club memories songs",
+            "music for dancing all night",
+            
+            # House Party / Friends
+            "songs from best house party",
+            "music for party with friends",
+            "songs that bring back party memories",
+            
+            # Pregame / Hype
+            "songs for getting ready to go out",
+            "pregame playlist favorites",
+            "music that gets everyone hyped",
+            
+            # Festival
+            "songs from best festival experience",
+            "festival vibes music",
+            "songs that remind me of festivals",
+            
+            # College / Wild Nights
+            "songs from college party days",
+            "music from wildest nights",
+            "songs that defined my party years"
+        ]
+    },
+    
+    "Sad": {
+        "key_env": "YOUTUBE_API_KEY_SAD",
+        "subreddits": [
+            "Music", "spotify", "ifyoulikeblank", "depression", 
+            "GriefSupport", "BreakUps", "heartbreak", "widowers"
+        ],
+        "queries": [
+            # Heartbreak (KEEP - this vibe SHOULD have grief)
+            "songs that make me cry about ex",
+            "heartbreak songs that hit hard",
+            "music for broken heart",
+            
+            # Grief (KEEP - this is the RIGHT place for death stories)
+            "songs that helped with grief",
+            "music for losing someone",
+            "songs about death that helped me",
+            
+            # Crying / Catharsis
+            "songs that make me sob",
+            "crying songs for when you need release",
+            "music for letting it all out",
+            
+            # Lonely
+            "songs for feeling alone",
+            "lonely night music",
+            "songs about isolation"
+        ]
+    },
+    
+    "Uplifting": {
+        "key_env": "YOUTUBE_API_KEY_UPLIFTING",
+        "subreddits": [
+            "Music", "spotify", "ifyoulikeblank", "GetMotivated", 
+            "DecidingToBeBetter", "MadeMeSmile", "selfimprovement"
+        ],
+        "queries": [
+            # Overcoming
+            "songs that helped me through hard times",
+            "music for getting through struggles",
+            "songs about overcoming challenges",
+            
+            # New Beginnings
+            "songs for new chapter in life",
+            "music for starting over",
+            "songs about new beginnings",
+            
+            # Hope / Inspiration
+            "songs that give me hope",
+            "inspiring music for tough times",
+            "songs that remind me things get better",
+            
+            # Empowerment (positive)
+            "songs that make me feel strong",
+            "music for believing in yourself",
+            "songs about rising up"
+        ]
+    }
+}
+```
+
+---
+
+### KEY CHANGES EXPLAINED:
+
+**1. PARTY - Now attracts party memories, not funeral stories**
+- Old: "party playlist songs" → generic, attracts any emotional story
+- New: "songs from best house party" → specifically party memories
+
+**2. ENERGY - Now attracts gym/sports moments, not illness recovery**
+- Old: "high energy songs" → attracts any "this gave me energy" including chemo
+- New: "songs for hitting personal records" → gym-specific
+
+**3. HAPPY - Now attracts joy moments, not grief-relief**
+- Old: "songs that make me happy" → attracts "this helped after loss"
+- New: "songs for when life is good" → attracts genuinely happy moments
+
+**4. SAD - KEEP THE GRIEF QUERIES! This is where death stories BELONG**
+- Grief comments should map to Sad sub-vibes, not Party or Energy
+- This is the one vibe where "helped me through loss" is correct
+
+**5. DARK - Experience-based, not genre-based**
+- Old: "dark atmospheric music" → genre discussion
+- New: "songs for my villain era" → personal empowerment stories
+
+---
+
+### SUBREDDIT EXPANSION:
+
+| Vibe | Added Subreddits | Why |
+|------|------------------|-----|
+| Party | r/aves, r/festivals, r/college | Party-specific memories |
+| Energy | r/crossfit, r/bodybuilding | Workout-specific stories |
+| Happy | r/MadeMeSmile, r/wholesomememes | Joy-focused communities |
+| Dark | r/TrueOffMyChest, r/Witch, r/occult | Experience + ritual stories |
+| Chill | r/coffee, r/CozyPlaces, r/raining | Cozy vibe communities |
+
+---
+
+### EXPECTED RESULTS:
+
+With these queries, Ananki will receive:
+- Party songs with "This was playing at my friend's 21st!" → maps to Party - House Party ✓
+- Energy songs with "Crushed my PR to this!" → maps to Energy - Workout ✓
+- Sad songs with "Played at my mom's funeral" → maps to Sad - Grief ✓ (correct!)
+
+No more party songs with grief comments getting mapped to Sad!
+
+---
+
+## 🔬 DEEP CONTENT ANALYSIS: Energy, Party, Happy (Every Song Reviewed)
+
+### THE VERDICT: It's worse than expected 😬
+
+| Vibe | Total | Grief/Death | Medical/Trauma | Wrong Context | Actually Usable |
+|------|-------|-------------|----------------|---------------|-----------------|
+| **Energy** | 22 | 8 (36%) | 4 (18%) | 4 (18%) | ~6 (27%) |
+| **Party** | 16 | 7 (44%) | 2 (13%) | 4 (25%) | ~3 (19%) |
+| **Happy** | 21 | 6 (29%) | 2 (10%) | 6 (29%) | ~7 (33%) |
+| **TOTAL** | **59** | **21 (36%)** | **8 (14%)** | **14 (24%)** | **~16 (27%)** |
+
+**Only 27% of Energy/Party/Happy songs have contextually appropriate comments.**
+
+---
+
+### ⚡ ENERGY (22 songs) - Detailed Breakdown
+
+| # | Song | Comment Theme | Issue | Usable? |
+|---|------|---------------|-------|---------|
+| 1 | Smashing Pumpkins - Cherub Rock | "worst weekends of my entire life... nearly broke into tears" | SAD context | ❌ |
+| 2 | We Were Promised Jetpacks | "makes me feel like a time traveler going back in time" | NOSTALGIC | ⚠️ |
+| 3 | Soilwork - Nerve | "came across this changed my world" | Vague positive | ✅ |
+| 4 | Alter Bridge - My Champion | "when your parents can't anymore" | BITTERSWEET | ⚠️ |
+| 5 | **Parkway Drive - Vice Grip** | "My step-dad passed away yesterday... for his viewing" | **FUNERAL** | ❌ |
+| 6 | Godsmack - When Legends Rise | "They saved my mom who was having a heart attack" | MEDICAL EMERGENCY | ❌ |
+| 7 | **Pop Evil - Waking Lions** | "I have cancer... through chemo" | **ILLNESS RECOVERY** | ❌ |
+| 8 | **Shinedown - Cut the Cord** | "carried our mother to her final resting place! R.I.P Mum" | **FUNERAL** | ❌ |
+| 9 | **Disturbed - The Light** | "broke my neck in a car accident, paralyzing me" | **TRAUMA** | ❌ |
+| 10 | Halestorm - I Am the Fire | "not so great medical news... anxiety" | MEDICAL ANXIETY | ❌ |
+| 11 | DJ Shadow - Organ Donor | "play this one for my breakdance homies" | **ACTUALLY ENERGY!** | ✅ |
+| 12 | **Black Dahlia Murder** | "Trevor has passed away... rest in peace" | **ARTIST DEATH** | ❌ |
+| 13 | Devil Wears Prada | "my youth years were made because of you" | NOSTALGIA | ⚠️ |
+| 14 | **Siinamota - I Care Because** | "prevented me from ending myself" | **SUICIDE PREVENTION** | ❌ |
+| 15 | **Twisted Sister** | "my son, who passed away almost 9 years ago" | **GRIEF** | ❌ |
+| 16 | Foo Fighters - The Pretender | "reminds me that 'the fight' isn't lost" | UPLIFTING | ⚠️ |
+| 17 | Grits - Ooh Ahh | "used to listen to this on repeat when I was 9" | NOSTALGIA | ⚠️ |
+| 18 | Denzel Curry - Vengeance | Music video analysis | OK | ✅ |
+| 19 | Kendrick Lamar - DNA | Just lyrics copy-pasted | BAD CONTENT | ❌ |
+| 20 | LCD Soundsystem | "dreams i had that i never did anything about" | REGRET | ❌ |
+| 21 | **Porter Robinson - Lionhearted** | "dad passed away from cancer this morning" | **GRIEF** | ❌ |
+| 22 | **Porter Robinson - Years of War** | "FUCK CANCER. May peace be with you dad and stepdad" | **GRIEF** | ❌ |
+
+**Energy Summary:** 
+- ✅ Usable: 3 songs (14%)
+- ⚠️ Borderline: 5 songs (23%) 
+- ❌ Wrong context: 14 songs (64%)
+
+---
+
+### 🎉 PARTY (16 songs) - Detailed Breakdown
+
+| # | Song | Comment Theme | Issue | Usable? |
+|---|------|---------------|-------|---------|
+| 1 | **David Guetta - Sexy Bitch** | "Makes me think of my sister whos died" | **GRIEF** | ❌ |
+| 2 | Gucci Mane - Both | "never give up on your goals" | MOTIVATIONAL | ⚠️ |
+| 3 | **Flute Healing - Drizzle Sounds** | "my husband passed away 2 years ago" | **GRIEF** (and NOT a party song!) | ❌❌ |
+| 4 | Citizen Cope - Let The Drummer Kick | Philosophy about mantras | PHILOSOPHICAL | ⚠️ |
+| 5 | **Rockets in the Trees - www** | "played at his funeral =( I miss my dad" | **FUNERAL** | ❌ |
+| 6 | Opeth - The Drapery Falls | "atmosphere, the ambience... breathtaking" | MUSIC CRITICISM | ❌ |
+| 7 | **Korn - Daddy** | "my older cousin molested me when i was 8" | **CHILD ABUSE** | ❌❌❌ |
+| 8 | Guster - Satellite | "48 years and 2 divorces to get it right" | RELATIONSHIP | ⚠️ |
+| 9 | Radiohead - Paranoid Android | "like being in a nightmare... panic" | DARK/ANXIOUS | ❌ |
+| 10 | **Tom Petty** | "My husband died a year ago" | **GRIEF** | ❌ |
+| 11 | Mac Miller - The Spins | "46 year old mother... road trip" | FAMILY MEMORY | ⚠️ |
+| 12 | **Deru - 1979** | "fighting depression for 4 years" | **MENTAL HEALTH** | ❌ |
+| 13 | Herbie Hancock - Chameleon | "favorite song when i was around 10" | NOSTALGIA | ⚠️ |
+| 14 | **James Brown - Cold Sweat** | "RIP Pee Wee" | **DEATH** | ❌ |
+| 15 | **Marvin Gaye - I Want You** | "2 months before he died... something off" | **DEATH** | ❌ |
+| 16 | Tower of Power - What Is Hip | Concert memories at Toad's Place | **ACTUALLY PARTY!** | ✅ |
+
+**Party Summary:**
+- ✅ Usable: 1 song (6%)
+- ⚠️ Borderline: 5 songs (31%)
+- ❌ Wrong context: 10 songs (63%)
+- ❌❌❌ Horrifically wrong: 1 song (Korn - Daddy labeled as Party with child abuse story)
+
+---
+
+### 😊 HAPPY (21 songs) - Detailed Breakdown
+
+| # | Song | Comment Theme | Issue | Usable? |
+|---|------|---------------|-------|---------|
+| 1 | Baltimora - Tarzan Boy | "midtown Manhattan... snapped back into reality" | NOSTALGIC | ⚠️ |
+| 2 | KC & Sunshine Band - Boogie Shoes | "2002 wedding reception... everyone got up to dance!" | **ACTUALLY HAPPY!** | ✅ |
+| 3 | King Floyd - Groove Me | "Music saved me through dramatic cultural times" | SAVED ME | ⚠️ |
+| 4 | Jae Good - Chicago Rap | "this is from his heart, this is life in Chicago" | AUTHENTIC | ⚠️ |
+| 5 | **ABBA - Mamma Mia** | "She passed away of cancer 5 months ago" | **GRIEF** | ❌ |
+| 6 | Four Tops - I Can't Help Myself | "in and out of hospital... chopped off" | MEDICAL (but positive!) | ⚠️ |
+| 7 | **Nick Drake - Pink Moon** | "friend who... died of a stroke" | **GRIEF** | ❌ |
+| 8 | **Gordon Lightfoot - Sundown** | "Grandad passed away" | **GRIEF** | ❌ |
+| 9 | Marvin Gaye - What's Going On | 2Pac quote | QUOTE | ⚠️ |
+| 10 | Yaeji - What We Drew | "miss my friends so much... parted ways" | NOSTALGIA/LONGING | ❌ |
+| 11 | Marina - How to Be a Heartbreaker | "tired of being thrown away like a napkin" | BITTER/RESENTMENT | ❌ |
+| 12 | **Kavinsky - Nightcall** | "My dad... Miss you dad 💔" | **GRIEF** | ❌ |
+| 13 | **Robert Palmer - Addicted To Love** | "My husband just passed away" | **GRIEF** | ❌ |
+| 14 | New Constellations - Hot Blooded | "reunited with one of my best friends... adventures" | **ACTUALLY HAPPY!** | ✅ |
+| 15 | **Still Corners - The Trip** | "rehab for depression... darkest period" | **MENTAL HEALTH** | ❌ |
+| 16 | **Beatles - I'll Follow The Sun** | "at my grandads funeral... cry everytime" | **FUNERAL** | ❌ |
+| 17 | Icona Pop - I Love It | "younger brother... car with dad" | NOSTALGIC | ⚠️ |
+| 18 | Kesha - Let 'Em Talk | "came out as gay at 13... so happy to be my true self" | **ACTUALLY HAPPY!** | ✅ |
+| 19 | Best HipHop Music - Kanye | Just lyrics copy-pasted | BAD CONTENT | ❌ |
+| 20 | Binaural Beats Sleep | "helps quieten anxiety so I can study" | CHILL/STUDY | ⚠️ |
+| 21 | Black Eyed Peas - The Time | "so nostalgic... when I was 7-8" | NOSTALGIC | ⚠️ |
+
+**Happy Summary:**
+- ✅ Usable: 3 songs (14%)
+- ⚠️ Borderline: 8 songs (38%)
+- ❌ Wrong context: 10 songs (48%)
+
+---
+
+### 🎯 THE REAL PROBLEM REVEALED
+
+**Why so many grief comments?**
+
+The Reddit query "recommend me some motivational, pump up" from r/Music attracts:
+→ People sharing songs that "motivated them through" DIFFICULT TIMES
+→ Difficult times = death, illness, trauma
+
+The YouTube comment scraper then finds the MOST EMOTIONAL comments on those videos...
+→ Most emotional = death/grief stories (they get upvotes)
+
+**The scoring system rewards grief because grief = emotional intensity.**
+
+---
+
+### 💡 SCRAPER FIX NEEDED
+
+Current comment scorer gives points for:
+- `life_event` (births, deaths, illness, accidents)
+- `emotional_2` (strong emotional language)
+- `story` (personal narrative)
+
+**BUT IT DOESN'T CHECK IF THE EMOTION MATCHES THE VIBE!**
+
+A grief story scores HIGH because it's emotional... but it's the WRONG emotion for Party/Energy/Happy.
+
+**Possible fix:** Add VIBE-SPECIFIC keyword scoring:
+- For **Party**: +points for "dancing", "club", "friends", "party", "drunk", "festival", "hype"
+- For **Energy**: +points for "gym", "workout", "running", "PR", "pumped", "adrenaline"
+- For **Happy**: +points for "smile", "joy", "sunshine", "celebration", "wedding", "good day"
+- For **Sad**: +points for "grief", "loss", "funeral", "death", "cry" (this is where these belong!)
+
+**Negative filter:** If Party/Energy/Happy comment contains "funeral", "died", "passed away", "cancer", "depression" → REJECT or de-prioritize.
+
+---
+
+### 📊 ANANKI PREDICTION
+
+If we run Ananki on current data:
+- **Sad sub-vibes will be MASSIVELY overloaded** (grief stories from all vibes)
+- **Party/Energy/Happy sub-vibes will be nearly empty**
+- **Manifold will be extremely unbalanced**
+
+The second scrape with vibe-specific queries is CRITICAL to balance this out.
+
+---
+
+
 >> Claude - 11/30/2025 9:00 PM
 
 ## Run 1 Complete - 130 Songs Collected!
