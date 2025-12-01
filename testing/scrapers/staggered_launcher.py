@@ -15,16 +15,17 @@ import os
 import time
 from pathlib import Path
 from dotenv import load_dotenv
+from metavibe_config_v2 import METAVIBE_CONFIG_V2
 
 load_dotenv()
 
 METAVIBES = ["Chill", "Dark", "Drive", "Energy", "Happy", "Night", "Party", "Sad", "Uplifting"]
 
 def check_api_keys():
-    """Verify all 9 YouTube API keys are configured."""
+    """Verify all YouTube API keys are configured using actual key names from config."""
     missing = []
-    for mv in METAVIBES:
-        key_name = f"YOUTUBE_API_KEY_{mv.upper()}"
+    for mv, config in METAVIBE_CONFIG_V2.items():
+        key_name = config['key_env']  # Use the actual key name from config (handles _2 suffix)
         if not os.getenv(key_name):
             missing.append(key_name)
     

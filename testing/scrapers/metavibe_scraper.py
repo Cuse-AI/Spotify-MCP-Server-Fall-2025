@@ -41,153 +41,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # ============================================================================
-# META-VIBE CONFIGURATION
+# META-VIBE CONFIGURATION - Using V2 (experience-based queries)
+# Old genre-based config has been removed - see metavibe_config_v2.py
 # ============================================================================
-
-METAVIBE_CONFIG = {
-    "Chill": {
-        "key_env": "YOUTUBE_API_KEY_CHILL",
-        "subreddits": ["chillmusic", "listentothis", "Music", "spotify", "ifyoulikeblank", "electronicmusic", "triphop"],
-        "queries": [
-            "chill music recommendation",
-            "relaxing songs playlist",
-            "calm music for studying",
-            "peaceful songs suggestions",
-            "mellow music vibes",
-            "ambient chill songs",
-            "lo-fi recommendations",
-            "songs to relax to",
-            "downtempo music suggestions",
-            "chillhop playlist",
-            "Sunday morning music",
-            "lazy afternoon songs",
-            "coffee shop music",
-            "rainy day songs",
-            "chill electronic music",
-            "trip hop recommendations"
-        ]
-    },
-    "Dark": {
-        "key_env": "YOUTUBE_API_KEY_DARK",
-        "subreddits": ["Metal", "goth", "darkwave", "Music", "ifyoulikeblank", "anxiety", "depression"],
-        "queries": [
-            "dark atmospheric music",
-            "brooding songs recommendation",
-            "music for dark mood",
-            "haunting beautiful songs",
-            "melancholic music suggestions",
-            "dark ambient songs",
-            "eerie music recommendation",
-            "songs with dark vibes"
-        ]
-    },
-    "Drive": {
-        "key_env": "YOUTUBE_API_KEY_DRIVE",
-        "subreddits": ["Music", "spotify", "ifyoulikeblank", "roadtrip", "Autos"],
-        "queries": [
-            "driving playlist songs",
-            "road trip music recommendations",
-            "night drive songs",
-            "highway driving music",
-            "songs for long drives",
-            "cruising music vibes",
-            "windows down music",
-            "driving at night songs"
-        ]
-    },
-    "Energy": {
-        "key_env": "YOUTUBE_API_KEY_ENERGY",
-        "subreddits": ["Music", "spotify", "ifyoulikeblank", "Fitness", "running", "workout", "EDM", "dubstep", "DnB"],
-        "queries": [
-            "pump up songs recommendation",
-            "workout music playlist",
-            "high energy songs",
-            "hype music suggestions",
-            "adrenaline rush songs",
-            "intense workout music",
-            "songs that get you pumped",
-            "motivational gym songs",
-            "dubstep bangers",
-            "drum and bass recommendations",
-            "EDM workout songs",
-            "running playlist music",
-            "pre-game hype songs",
-            "intense electronic music",
-            "bass drop songs",
-            "headbanger music"
-        ]
-    },
-    "Happy": {
-        "key_env": "YOUTUBE_API_KEY_HAPPY",
-        "subreddits": ["Music", "spotify", "ifyoulikeblank", "CasualConversation", "happy"],
-        "queries": [
-            "songs that make me happy",
-            "feel good music recommendations",
-            "happy songs playlist",
-            "upbeat cheerful songs",
-            "songs that boost mood",
-            "joyful music suggestions",
-            "songs that make you smile",
-            "happy vibes music"
-        ]
-    },
-    "Night": {
-        "key_env": "YOUTUBE_API_KEY_NIGHT",
-        "subreddits": ["Music", "spotify", "ifyoulikeblank", "insomnia", "nightowls", "LateNightMusic"],
-        "queries": [
-            "late night music recommendations",
-            "3am songs playlist",
-            "songs for insomnia",
-            "midnight vibes music",
-            "cant sleep music",
-            "nocturnal songs suggestions",
-            "songs for overthinking at night",
-            "after midnight playlist"
-        ]
-    },
-    "Party": {
-        "key_env": "YOUTUBE_API_KEY_PARTY",
-        "subreddits": ["Music", "spotify", "ifyoulikeblank", "EDM", "DJs", "house"],
-        "queries": [
-            "party playlist songs",
-            "dance music recommendations",
-            "club bangers playlist",
-            "songs for parties",
-            "get the party started songs",
-            "house party music",
-            "dancing songs suggestions",
-            "best party anthems"
-        ]
-    },
-    "Sad": {
-        "key_env": "YOUTUBE_API_KEY_SAD",
-        "subreddits": ["Music", "spotify", "ifyoulikeblank", "depression", "GriefSupport", "BreakUps", "heartbreak"],
-        "queries": [
-            "sad songs recommendation",
-            "songs that make me cry",
-            "heartbreak playlist",
-            "songs about loss",
-            "music for grief",
-            "depressing beautiful songs",
-            "songs for broken heart",
-            "crying songs playlist"
-        ]
-    },
-    "Uplifting": {
-        "key_env": "YOUTUBE_API_KEY_UPLIFTING",
-        "subreddits": ["Music", "spotify", "ifyoulikeblank", "GetMotivated", "DecidingToBeBetter"],
-        "queries": [
-            "uplifting music recommendations",
-            "inspiring songs playlist",
-            "songs that give hope",
-            "motivational music suggestions",
-            "songs for new beginnings",
-            "empowering songs",
-            "music that lifts spirits",
-            "songs about overcoming"
-        ]
-    }
-}
 
 # Video versions to try (official first, then lyrics for rescue)
 VIDEO_VERSIONS = [
@@ -252,8 +108,30 @@ class CommentScorer:
         'saved', 'peace', 'hope', 'love', 'miss', 'remember'
     ]
     
-    def score(self, text: str) -> Tuple[int, List[str]]:
-        """Score a comment. Returns (score, list of reasons)."""
+    # NEW: Vibe-specific positive keywords (Bug #3 fix)
+    VIBE_POSITIVE_KEYWORDS = {
+        "Party": ["dancing", "club", "friends", "party", "drunk", "festival", "hype", "dancefloor", "rave", "night out", "pregame", "clubbing"],
+        "Energy": ["gym", "workout", "running", "pr", "pumped", "adrenaline", "lift", "exercise", "training", "run", "weights", "cardio"],
+        "Happy": ["smile", "joy", "sunshine", "celebration", "wedding", "good day", "happy", "laughing", "best day", "wonderful"],
+        "Dark": ["darkness", "villain", "shadow", "witch", "ritual", "haunting", "eerie", "creepy", "demon", "occult"],
+        "Chill": ["relax", "coffee", "rainy", "cozy", "peaceful", "calm", "study", "wind down", "lazy"],
+        "Drive": ["driving", "road trip", "highway", "cruising", "windows down", "night drive", "travel"],
+        "Night": ["3am", "midnight", "insomnia", "cant sleep", "late night", "nocturnal", "night owl"],
+        "Sad": ["cry", "grief", "heartbreak", "loss", "funeral", "died", "passed away", "tears", "broken heart"],
+        "Uplifting": ["hope", "overcome", "inspiring", "motivating", "rise up", "stronger", "new beginning"]
+    }
+    
+    # Keywords that DISQUALIFY for certain upbeat vibes
+    GRIEF_KEYWORDS = ["funeral", "died", "passed away", "cancer", "death", "rip", "lost my", "suicide", "chemo", "hospital"]
+    UPBEAT_VIBES = ["Party", "Energy", "Happy"]
+    
+    def score(self, text: str, metavibe: str = None) -> Tuple[int, List[str]]:
+        """Score a comment. Returns (score, list of reasons).
+        
+        Args:
+            text: The comment text to score
+            metavibe: Optional - the target vibe (enables vibe-specific filtering)
+        """
         if not text or len(text) < 30:
             return 0, []
         
@@ -270,6 +148,12 @@ class CommentScorer:
         for pattern in self.LYRIC_PATTERNS:
             if re.search(pattern, text):
                 return 0, ['lyrics']
+        
+        # NEW: Reject grief comments for upbeat vibes (Bug #3 fix)
+        if metavibe and metavibe in self.UPBEAT_VIBES:
+            for keyword in self.GRIEF_KEYWORDS:
+                if keyword in text_lower:
+                    return 0, ['grief_mismatch']
         
         # First person (+1)
         if re.search(r'\b(i|me|my|we|our)\b', text_lower):
@@ -297,7 +181,7 @@ class CommentScorer:
                 reasons.append('temporal')
                 break
         
-        # Life events (+2)
+        # Life events (+2) - but only if not already rejected for grief mismatch
         for pattern in self.LIFE_EVENT_PATTERNS:
             if re.search(pattern, text_lower):
                 score += 2
@@ -315,6 +199,14 @@ class CommentScorer:
         elif emotional_count == 1:
             score += 1
             reasons.append('emotional_1')
+        
+        # NEW: Bonus for vibe-matching keywords (Bug #3 fix)
+        if metavibe and metavibe in self.VIBE_POSITIVE_KEYWORDS:
+            for keyword in self.VIBE_POSITIVE_KEYWORDS[metavibe]:
+                if keyword in text_lower:
+                    score += 2
+                    reasons.append(f'vibe_match_{keyword}')
+                    break  # Only count once
         
         # Length bonus
         if len(text) > 200:
@@ -578,7 +470,8 @@ class MetavibeScraper:
                 comment = item['snippet']['topLevelComment']['snippet']
                 text = html.unescape(comment['textDisplay'])
                 
-                score, reasons = self.scorer.score(text)
+                # Pass metavibe to scorer for vibe-specific filtering (Bug #3 fix)
+                score, reasons = self.scorer.score(text, self.metavibe)
                 if score >= min_score:
                     return {
                         'text': text[:500],
