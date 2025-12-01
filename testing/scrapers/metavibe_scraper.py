@@ -473,8 +473,8 @@ class MetavibeScraper:
     
     def validate_spotify(self, artist: str, song: str) -> Optional[Dict]:
         """Validate song exists on Spotify and get normalized info."""
-        # Reject covers, tributes, karaoke versions
-        REJECT_PATTERNS = ['tribute', 'cover', 'karaoke', 'in the style of', 'made famous']
+        # Reject covers, tributes, karaoke versions, compilations
+        REJECT_PATTERNS = ['tribute', 'cover', 'karaoke', 'in the style of', 'made famous', 'originally by', 'various artists']
         
         try:
             query = f"track:{song} artist:{artist}"

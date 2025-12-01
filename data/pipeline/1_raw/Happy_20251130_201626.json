@@ -1,0 +1,154 @@
+{
+  "metavibe": "Happy",
+  "scraped_at": "2025-11-30T20:16:26.054960",
+  "total_songs": 6,
+  "stats": {
+    "metavibe": "Happy",
+    "reddit_comments": 40,
+    "songs_extracted": 123,
+    "spotify_validated": 17,
+    "already_exists": 0,
+    "youtube_searches": 31,
+    "youtube_comments": 13,
+    "quality_passed": 6,
+    "rescued_by_lyrics": 3,
+    "songs_saved": 6,
+    "yt_quota_used": 3113
+  },
+  "songs": [
+    {
+      "artist": "Baltimora",
+      "song": "Tarzan Boy",
+      "spotify_id": "273uCXd7NPrInaiNqtkOrA",
+      "spotify_uri": "spotify:track:273uCXd7NPrInaiNqtkOrA",
+      "album": "Living In The Background",
+      "comment_text": "This will never ever get old. Walking around midtown Manhattan not long ago, near radio city through a bunch of vendors and tents — wasn’t paying attention but the second I heard this it was like I snapped back into reality:)<br><br>Missing jimmy’s stage presence and ability to add that extra bit of Panache and flair",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "story",
+        "emotional_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=--6CdAypJsQ",
+      "youtube_version": "official",
+      "reddit_context": "What’s the happiest song you’ve ever heard? | r/Music",
+      "metavibe": "Happy",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:15:32.603789",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "KC & The Sunshine Band",
+      "song": "Boogie Shoes - 2004 Remaster",
+      "spotify_id": "37d8O4cIq36tssCoJnhJxg",
+      "spotify_uri": "spotify:track:37d8O4cIq36tssCoJnhJxg",
+      "album": "KC & the Sunshine Band",
+      "comment_text": "I put this on the play list for my 2002 wedding reception,  everyone got up to dance! This song will always make me smile and dance!",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect",
+        "life_event",
+        "good_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=_z1kOMLRbKY",
+      "youtube_version": "lyrics",
+      "reddit_context": "Let's create a playlist with music that make you f | r/Music",
+      "metavibe": "Happy",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:15:49.214418",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "King Floyd",
+      "song": "Groove Me",
+      "spotify_id": "1sG3M0yjIYweejCR9Amyh6",
+      "spotify_uri": "spotify:track:1sG3M0yjIYweejCR9Amyh6",
+      "album": "King Floyd",
+      "comment_text": "Raised in SanFrancisco Bay Area I  was blessed with ALL THE TUNES & BANDS. what i miss most is the percussion!!It seemed to disappear so quickly with the newer harder Rock bands  Horn section of Blood Sweat & Tears ~ & so many more~ ~Santana  got to get up & move ~&~ YES ~ were still the 2 best concerts for a Spiritual High ~ I was either with the bands of my local g arage or empty  warehouse or a rented studio in the City or at a concert. Music saved me through some highly dramatic  cultural ti",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect",
+        "emotional_2",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=5DlsfUinzwA",
+      "youtube_version": "official",
+      "reddit_context": "Let's create a playlist with music that make you f | r/Music",
+      "metavibe": "Happy",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:15:54.042742",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Jae Good",
+      "song": "Chicago Rap",
+      "spotify_id": "31CuykSFa48yahxN2kIL97",
+      "spotify_uri": "spotify:track:31CuykSFa48yahxN2kIL97",
+      "album": "Third Times A Charm",
+      "comment_text": "I'm not even from Chicago but this makes me feel like i'm right there living in the streets ready to ride for the boss. Even if yall don't get what he's talking about you just need to understand that this song right here is from his heart, this is life in Chicago.",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect",
+        "emotional_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=Hu8PtiN0Ce8",
+      "youtube_version": "lyrics",
+      "reddit_context": "Let's create a playlist with music that make you f | r/Music",
+      "metavibe": "Happy",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:16:01.437707",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "ABBA",
+      "song": "Mamma Mia",
+      "spotify_id": "7vny2vB8GVTi1zqXRwNNvX",
+      "spotify_uri": "spotify:track:7vny2vB8GVTi1zqXRwNNvX",
+      "album": "The Essential Collection",
+      "comment_text": "My mom used to love this song so much. She passed away of cancer 5 months ago... I miss you, mom. Love you <3",
+      "comment_score": 8,
+      "comment_reasons": [
+        "first_person",
+        "temporal",
+        "life_event",
+        "emotional_2",
+        "good_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=unfzfe8f9NI",
+      "youtube_version": "official",
+      "reddit_context": "Let's create a playlist with music that make you f | r/Music",
+      "metavibe": "Happy",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:16:14.755119",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Various Artists",
+      "song": "I Can't Help Myself (Sugar Pie, Honey Bunch) (Originally by Four Tops)",
+      "spotify_id": "1yMw8wPPkWrjmVnX6sonod",
+      "spotify_uri": "spotify:track:1yMw8wPPkWrjmVnX6sonod",
+      "album": "Oldies But Goodies - Golden Oldies Hits",
+      "comment_text": "OH boy does this take me back at 75 I’ve not been to well in recent times in and out of hospital with lumps, bits and pieces chopped off or taken out but I’m not morbid not in any way but am fully aware of my mortality music like this helps to keep me positive it’s a good 😊 life married to Shirley for 56yrs with four lovely children, 11 grandchildren and 9 great grandchildren it’s a good life as they say Gods bless you all",
+      "comment_score": 8,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect",
+        "life_event",
+        "emotional_1",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=EBA6z9sEzAo",
+      "youtube_version": "lyrics",
+      "reddit_context": "Let's create a playlist with music that make you f | r/Music",
+      "metavibe": "Happy",
+      "data_source": "metavibe_scraper",
+      "scraped_at": "2025-11-30T20:16:22.537856",
+      "_needs_ananki_analysis": true
+    }
+  ]
+}
