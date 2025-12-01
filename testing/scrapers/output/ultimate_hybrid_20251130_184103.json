@@ -1,0 +1,169 @@
+{
+  "source": "ultimate_hybrid_v4",
+  "scraped_at": "2025-11-30T18:41:03.969877",
+  "total_songs": 7,
+  "stats": {
+    "reddit_comments": 561,
+    "songs_extracted": 88,
+    "spotify_validated": 14,
+    "already_in_tapestry": 2,
+    "youtube_searches": 20,
+    "youtube_comments": 18,
+    "rescued_by_fallback": 1,
+    "quality_passed": 7,
+    "songs_saved": 7,
+    "yt_quota_used": 2018
+  },
+  "songs": [
+    {
+      "artist": "Third Eye Blind",
+      "song": "How's It Going to Be",
+      "spotify_id": "3Uvx1TO0Kg5HgGPk58lHXv",
+      "spotify_uri": "spotify:track:3Uvx1TO0Kg5HgGPk58lHXv",
+      "album": "Third Eye Blind",
+      "comment_text": "Sad posting here...  I think this song actually saved my marriage.  Wifey served the papers from her lawyer, I refused to meet her lawyer.  Times were tense—every minute—and our two young boys just watched, waited, for something to make sense.  We never screamed at each other in front of them, never bad mouthed each other to them but they could see Mommy didn’t love Daddy any more.  Driving in the van one day, we argued before we picked up the boys in the van from pre-school/kindergarten and thi",
+      "comment_score": 10,
+      "comment_reasons": [
+        "first_person",
+        "temporal",
+        "emotional_1",
+        "life_event",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=rE1oIhSgTgI",
+      "youtube_version": "official",
+      "reddit_context": "i need ‘missing them’ songs | r/spotify",
+      "data_source": "ultimate_hybrid_v4",
+      "scraped_at": "2025-11-30T18:39:47.406773",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "DJ MixMasters",
+      "song": "Master and Servant (Tribute in the Style of Depeche Mode)",
+      "spotify_id": "6spFNBJ8D7bbp2ljzzDye8",
+      "spotify_uri": "spotify:track:6spFNBJ8D7bbp2ljzzDye8",
+      "album": "Ultimate Depeche Mode Tones",
+      "comment_text": "My father was a huge fan of Depeche Mode . He is in the spirit realm now, but I’m so grateful he showed me a way to connect to him after he left the physical . I even went to see Depeche Mode live in honor of my father’s spirit. \n\nThis is so healing for my heart right now in the time I need it the most. Thank you for making this mix. 🤍",
+      "comment_score": 6,
+      "comment_reasons": [
+        "first_person",
+        "emotional_2",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=aU-PI0SbKis",
+      "youtube_version": "official",
+      "reddit_context": "looking for songs that capture the vibe of george orwell’s 1984 | r/spotify",
+      "data_source": "ultimate_hybrid_v4",
+      "scraped_at": "2025-11-30T18:39:51.544864",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Avril Lavigne",
+      "song": "My Happy Ending",
+      "spotify_id": "6sqNctd7MlJoKDOxPVCAvU",
+      "spotify_uri": "spotify:track:6sqNctd7MlJoKDOxPVCAvU",
+      "album": "Under My Skin",
+      "comment_text": "When i was 8 9 years old my big sister listened to avril lavigne and Kelly clarkson , my big brother listen to linkin park and evenesences . I will always be grateful to them for bringing me up with good music",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "story",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=0-zDFLbWK1Q",
+      "youtube_version": "official",
+      "reddit_context": "Need music for a broken heart! | r/BreakUps",
+      "data_source": "ultimate_hybrid_v4",
+      "scraped_at": "2025-11-30T18:40:13.292214",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "The Chills",
+      "song": "Pink Frost",
+      "spotify_id": "6RcbMVH18ReFMHdBzA0sE9",
+      "spotify_uri": "spotify:track:6RcbMVH18ReFMHdBzA0sE9",
+      "album": "Kaleidoscope World",
+      "comment_text": "This song literally makes me feel like walking deep into the woods while pondering about things for quite a while. The progression at the beginning still gives me a complex vibe of melancholy, grief, anxiety and calmness that kinda keep prevailing over the feeling of desperation caused by the lyrics just 'til the end of the track... Amazing one.",
+      "comment_score": 7,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect",
+        "emotional_2",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=oV_TMB2RtTA",
+      "youtube_version": "official",
+      "reddit_context": "Songs about grief and death | r/musicsuggestions",
+      "data_source": "ultimate_hybrid_v4",
+      "scraped_at": "2025-11-30T18:40:53.847264",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "The Offspring",
+      "song": "Gone Away - 1997",
+      "spotify_id": "5BnFZLH99sYav2cxJFGO2n",
+      "spotify_uri": "spotify:track:5BnFZLH99sYav2cxJFGO2n",
+      "album": "Ixnay On The Hombre",
+      "comment_text": "Lost my wife many years ago to cancer, 2 kids in gradeschool, she was a warm soul with great intellect and beauty.  I used to scream tears at this song while driving in my car and would wipe my face and show up home with a happy face knowing that my kids were doing better day by day.  It was especially true because \"if I could trade I would\" was something I'd have done and that's as much love as there is I reckon.  All said, they're in their 20's now and doing well, we are all close and set to v",
+      "comment_score": 13,
+      "comment_reasons": [
+        "first_person",
+        "story",
+        "temporal",
+        "emotional_2",
+        "life_event",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=40V9_1PMUGM",
+      "youtube_version": "official",
+      "reddit_context": "Songs about grief/loss | r/musicsuggestions",
+      "data_source": "ultimate_hybrid_v4",
+      "scraped_at": "2025-11-30T18:40:59.582298",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "Nine Inch Nails",
+      "song": "Somewhat Damaged",
+      "spotify_id": "0yUyPe5c1o5cCyV7aJkz6F",
+      "spotify_uri": "spotify:track:0yUyPe5c1o5cCyV7aJkz6F",
+      "album": "The Fragile",
+      "comment_text": "Introdused to NIN by a neibourghood friend when i was 14 with the DS in 1996 and directly linked up. I did not speak a lot of english at this time (french) but the noise and the energy fed something in me, I never know other NIN fans around me but I always listen. Now i'm almost 40 wife and a kid and NIN is in the Hall of Fame...",
+      "comment_score": 8,
+      "comment_reasons": [
+        "first_person",
+        "story",
+        "temporal",
+        "action",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=L47a_BAhp0c",
+      "youtube_version": "official",
+      "reddit_context": "Songs about grief/loss | r/musicsuggestions",
+      "data_source": "ultimate_hybrid_v4",
+      "scraped_at": "2025-11-30T18:41:00.616973",
+      "_needs_ananki_analysis": true
+    },
+    {
+      "artist": "James Taylor",
+      "song": "Fire and Rain - 2019 Remaster",
+      "spotify_id": "1oht5GevPN9t1T3kG1m1GO",
+      "spotify_uri": "spotify:track:1oht5GevPN9t1T3kG1m1GO",
+      "album": "Sweet Baby James (2019 Remaster)",
+      "comment_text": "My father passed away last August and he had a large amount of James Taylor records in his vinyl collection. This makes me cry so much when I listen to it as it reminds me so much of him. I love you Dad.",
+      "comment_score": 9,
+      "comment_reasons": [
+        "first_person",
+        "cause_effect",
+        "emotional_1",
+        "life_event",
+        "great_length"
+      ],
+      "youtube_url": "https://youtube.com/watch?v=C3uaXCJcRrE",
+      "youtube_version": "lyrics",
+      "reddit_context": "Songs about grief/loss | r/musicsuggestions",
+      "data_source": "ultimate_hybrid_v4",
+      "scraped_at": "2025-11-30T18:41:03.168415",
+      "_needs_ananki_analysis": true
+    }
+  ]
+}
