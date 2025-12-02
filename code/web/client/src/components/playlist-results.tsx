@@ -211,7 +211,11 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
                 const isValidated = validatedSongs.has(song.track_id);
                 const isDownvoted = downvotedSongs.has(song.track_id);
                 const isExtrapolated = song.extrapolated === true;
-                const spotifyUrl = `https://open.spotify.com/track/${song.track_id.replace('spotify:track:', '')}`;
+                
+                // For tapestry songs: direct link. For AI discoveries: search query
+                const spotifyUrl = isExtrapolated
+                  ? `https://open.spotify.com/search/${encodeURIComponent(`${song.artist} ${song.title}`)}`
+                  : `https://open.spotify.com/track/${song.track_id.replace('spotify:track:', '')}`;
                 
                 return (
                   <div
@@ -238,13 +242,17 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
                       </p>
                     </div>
                     
-                    {/* Spotify button - always visible in top right */}
+                    {/* Spotify button - search for AI discoveries, direct link for tapestry songs */}
                     <a
                       href={spotifyUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="absolute top-3 right-3 p-1.5 rounded-full bg-[#1DB954]/10 hover:bg-[#1DB954]/20 text-[#1DB954] transition-all hover:scale-110"
-                      title="Open in Spotify"
+                      className={`absolute top-3 right-3 p-1.5 rounded-full transition-all hover:scale-110 ${
+                        isExtrapolated 
+                          ? "bg-purple-500/10 hover:bg-purple-500/20 text-purple-400" 
+                          : "bg-[#1DB954]/10 hover:bg-[#1DB954]/20 text-[#1DB954]"
+                      }`}
+                      title={isExtrapolated ? "Search in Spotify" : "Open in Spotify"}
                     >
                       <SpotifyIcon className="w-4 h-4" />
                     </a>
