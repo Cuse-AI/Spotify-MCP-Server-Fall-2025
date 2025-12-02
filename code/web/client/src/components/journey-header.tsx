@@ -8,9 +8,13 @@ export function JourneyHeader({ playlistTitle, explanation }: JourneyHeaderProps
     <div className="text-center py-6">
       {/* Title */}
       {playlistTitle && (
-        <h1 
-          className="text-3xl md:text-4xl font-semibold text-white/90 mb-4"
-          style={{ fontFamily: "'Quicksand', 'Inter', sans-serif" }}
+        <h1
+          className="text-3xl md:text-4xl font-semibold text-white/90 mb-4 tracking-tight"
+          style={{
+            fontFamily: "'Space Grotesk', 'Inter', sans-serif",
+            fontWeight: 600,
+            letterSpacing: '-0.02em'
+          }}
         >
           {playlistTitle}
         </h1>

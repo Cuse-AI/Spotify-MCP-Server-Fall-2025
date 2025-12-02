@@ -164,7 +164,7 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
           
           {/* Soul Gem - Centered hero */}
           <div className="flex justify-center mb-6">
-            <SoulGem songs={data.songs} size={260} />
+            <SoulGem songs={data.songs} size={240} />
           </div>
 
           {/* Header - Title + AI description with elegant typography */}
@@ -325,12 +325,6 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
                   const humanQuote = !isExtrapolated ? song.reddit_context : undefined;
                   const aiReasoning = song.ananki_reasoning;
                   
-                  const sourceLabel = song.source_url?.includes('youtube') 
-                    ? 'YouTube comment' 
-                    : song.source_url?.includes('reddit') 
-                      ? 'Reddit' 
-                      : 'the community';
-                  
                   if (!humanQuote && !aiReasoning) return null;
                   
                   return (
@@ -362,9 +356,6 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
                                 "{humanQuote}"
                               </blockquote>
                             </div>
-                            <p className="text-xs text-white/30 mt-2 ml-7">
-                              — from {sourceLabel}
-                            </p>
                           </div>
                         )}
                         

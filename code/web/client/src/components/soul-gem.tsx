@@ -44,7 +44,7 @@ function calculateVibeScores(songs: SoulShardProps['songs']): VibeScore[] {
   }));
 }
 
-export function SoulGem({ songs, size = 260 }: SoulShardProps) {
+export function SoulGem({ songs, size = 240 }: SoulShardProps) {
   const [showDetails, setShowDetails] = useState(true);
   const [hasAnimated, setHasAnimated] = useState(false);
 
@@ -61,20 +61,26 @@ export function SoulGem({ songs, size = 260 }: SoulShardProps) {
   const dominantVibe = useMemo(() => {
     return vibeScores.reduce((a, b) => a.score > b.score ? a : b);
   }, [vibeScores]);
-  
+
   const glowColor = VIBE_COLORS[dominantVibe.vibe] || 'hsl(262, 55%, 55%)';
-  
-  // Calculate polygon points
+
+  // Calculate polygon points with seeded jitter for uncut/organic edges
   const center = size / 2;
   const maxRadius = size * 0.38;
-  
+
+  // Seeded jitter function for consistent randomness
+  const jitter = (val: number, seed: number, amount: number = 4) => {
+    const rand = Math.sin(seed * 12345.6789) * 0.5 + 0.5;
+    return val + (rand - 0.5) * amount;
+  };
+
   const points = useMemo(() => {
     return vibeScores.map((vibe, i) => {
       const angle = (i * 360 / vibeScores.length - 90) * (Math.PI / 180);
       const radius = (vibe.score / 100) * maxRadius;
       return {
-        x: center + radius * Math.cos(angle),
-        y: center + radius * Math.sin(angle),
+        x: jitter(center + radius * Math.cos(angle), i, 4),
+        y: jitter(center + radius * Math.sin(angle), i + 100, 4),
         vibe: vibe.vibe,
         score: vibe.score,
         angle,
@@ -82,18 +88,26 @@ export function SoulGem({ songs, size = 260 }: SoulShardProps) {
     });
   }, [vibeScores, center, maxRadius]);
   
-  // Create polygon path
-  const pathData = points
-    .map((p, i) => `${i === 0 ? 'M' : 'L'} ${p.x.toFixed(1)} ${p.y.toFixed(1)}`)
-    .join(' ') + ' Z';
+  // Create polygon path with micro-vertices for rougher edges
+  const pathData = useMemo(() => {
+    let path = `M ${points[0].x.toFixed(1)} ${points[0].y.toFixed(1)} `;
+    points.forEach((p, i) => {
+      const next = points[(i + 1) % points.length];
+      // Add subtle mid-point for organic edge variation
+      const midX = (p.x + next.x) / 2 + Math.sin(i * 7) * 2;
+      const midY = (p.y + next.y) / 2 + Math.cos(i * 7) * 2;
+      path += `L ${midX.toFixed(1)} ${midY.toFixed(1)} L ${next.x.toFixed(1)} ${next.y.toFixed(1)} `;
+    });
+    return path;
+  }, [points]);
 
   // Unique gradient ID
   const gradientId = useMemo(() => `shardGrad-${Math.random().toString(36).substr(2, 9)}`, []);
   const glowId = useMemo(() => `shardGlow-${Math.random().toString(36).substr(2, 9)}`, []);
 
   return (
-    <div 
-      className="relative cursor-pointer flex-shrink-0 transition-transform duration-300 hover:scale-105"
+    <div
+      className="relative cursor-pointer flex-shrink-0 gem-breathe"
       style={{ width: size, height: size }}
       onMouseEnter={() => setShowDetails(true)}
       onMouseLeave={() => hasAnimated && setShowDetails(false)}
@@ -120,12 +134,12 @@ export function SoulGem({ songs, size = 260 }: SoulShardProps) {
         style={{ overflow: 'visible' }}
       >
         <defs>
-          {/* Gradient fill for gem effect */}
-          <linearGradient id={gradientId} x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="rgba(255,255,255,0.3)" />
-            <stop offset="30%" stopColor={glowColor} stopOpacity="0.6" />
-            <stop offset="100%" stopColor={glowColor} stopOpacity="0.25" />
-          </linearGradient>
+          {/* Radial gradient from top-left (light source) for uncut gem effect */}
+          <radialGradient id={gradientId} cx="30%" cy="25%" r="75%">
+            <stop offset="0%" stopColor="hsl(262, 75%, 68%)" stopOpacity="0.8" />
+            <stop offset="60%" stopColor={glowColor} stopOpacity="0.6" />
+            <stop offset="100%" stopColor={glowColor} stopOpacity="0.3" />
+          </radialGradient>
           
           {/* Glow filter */}
           <filter id={glowId} x="-50%" y="-50%" width="200%" height="200%">
@@ -187,31 +201,31 @@ export function SoulGem({ songs, size = 260 }: SoulShardProps) {
           );
         })}
         
-        {/* Glossy highlight / gleam at top */}
+        {/* Asymmetric glossy highlight / gleam (top-left, off-center) */}
         <ellipse
-          cx={center - size * 0.05}
-          cy={center - size * 0.12}
-          rx={size * 0.08}
-          ry={size * 0.04}
-          fill="rgba(255,255,255,0.25)"
+          cx={center - size * 0.10}
+          cy={center - size * 0.15}
+          rx={size * 0.07}
+          ry={size * 0.035}
+          fill="rgba(255,255,255,0.22)"
           className="transition-opacity duration-700"
-          style={{ 
-            opacity: showDetails ? 0.3 : 0.6,
-            filter: 'blur(2px)',
+          style={{
+            opacity: showDetails ? 0.4 : 0.7,
+            filter: 'blur(3px)',
           }}
         />
-        
-        {/* Small secondary gleam */}
+
+        {/* Small secondary gleam (offset from center) */}
         <ellipse
-          cx={center + size * 0.08}
-          cy={center - size * 0.06}
-          rx={size * 0.03}
-          ry={size * 0.015}
-          fill="rgba(255,255,255,0.2)"
+          cx={center + size * 0.06}
+          cy={center - size * 0.08}
+          rx={size * 0.025}
+          ry={size * 0.012}
+          fill="rgba(255,255,255,0.18)"
           className="transition-opacity duration-700"
-          style={{ 
-            opacity: showDetails ? 0.2 : 0.5,
-            filter: 'blur(1px)',
+          style={{
+            opacity: showDetails ? 0.3 : 0.6,
+            filter: 'blur(2px)',
           }}
         />
         

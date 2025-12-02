@@ -345,6 +345,7 @@ Your task: Create an emotional journey by walking the manifold from the user's c
     const response = await client.messages.create({
       model: "claude-sonnet-4-5",
       max_tokens: 4096,
+      temperature: 1.0, // Add randomness to prevent repetitive AI discoveries
       system: [
         {
           type: "text",

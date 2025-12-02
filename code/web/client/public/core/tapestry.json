@@ -57113,38 +57113,6 @@
     "Dark - Villain Arc": {
       "songs": [
         {
-          "artist": "Rherherherh",
-          "song": "Mario Judah",
-          "spotify_id": "0f0id40FczbgeY0xcoveSc",
-          "spotify_uri": "spotify:track:0f0id40FczbgeY0xcoveSc",
-          "comment_score": 203,
-          "source_url": "https://youtube.com/watch?v=1yKper_NDmM",
-          "data_source": "analyzed_batch_nov27",
-          "extraction_confidence": 1,
-          "mapping_confidence": 1.0,
-          "full_context": "",
-          "post_title": "GYM RAGE PLAYLIST FOR VILLAIN ARC",
-          "comment_text": "Tears of rage in my eyes and goosebumps on my skin everytime I hear this legend’s speech",
-          "ananki_reasoning": "The context is explicitly about a 'VILLAIN ARC' gym playlist, and the commenter describes experiencing 'tears of rage' and 'goosebumps' from a motivational speech in the song. This perfectly aligns with the Dark - Villain Arc sub-vibe, which captures the intense, aggressive, and transformative emotional state associated with embracing a darker, more ruthless persona. The combination of rage, physical emotional response (goosebumps), and the explicit villain arc framing makes this classification clear.",
-          "mapped_subvibe": "Dark - Villain Arc",
-          "coordinates": {
-            "x": 347.5,
-            "y": 712.5
-          },
-          "current_vibe": "Dark - Villain Arc",
-          "emotional_composition": {
-            "Sad": 0.0,
-            "Happy": 0.0,
-            "Chill": 0.0,
-            "Energy": 0.25,
-            "Dark": 0.55,
-            "Romantic": 0.0,
-            "Night": 0.15,
-            "Drive": 0.05,
-            "Party": 0.0
-          }
-        },
-        {
           "artist": "Stellar",
           "song": "Daredevil",
           "spotify_id": "5Nakyq7fHFlhxkMfNqG4Fv",

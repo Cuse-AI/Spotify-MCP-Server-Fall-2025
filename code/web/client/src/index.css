@@ -43,9 +43,9 @@
   --chart-3: 200 65% 65%;
   --chart-4: 340 75% 68%;
   --chart-5: 45 85% 68%;
-  --font-sans: Inter, system-ui, sans-serif;
-  --font-serif: Georgia, serif;
-  --font-mono: Menlo, monospace;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'Space Grotesk', 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
   --radius: .5rem;
   --shadow-2xs: 0px 2px 0px 0px hsl(0 0% 0% / 0.00);
   --shadow-xs: 0px 2px 0px 0px hsl(0 0% 0% / 0.00);
@@ -288,5 +288,21 @@
   .border.active-elevate-2:not(.no-active-interaction-elevate)::after,
   .border.hover-elevate:not(.no-hover-interaction-elevate)::after {
     inset: -1px;
+  }
+
+  /* Soul Gem breathing animation - subtle pulse */
+  .gem-breathe {
+    animation: gem-breathe 4s ease-in-out infinite;
+  }
+
+  @keyframes gem-breathe {
+    0%, 100% {
+      filter: drop-shadow(0 0 15px rgba(139, 92, 246, 0.25));
+      transform: scale(1);
+    }
+    50% {
+      filter: drop-shadow(0 0 25px rgba(139, 92, 246, 0.45));
+      transform: scale(1.015);
+    }
   }
 }

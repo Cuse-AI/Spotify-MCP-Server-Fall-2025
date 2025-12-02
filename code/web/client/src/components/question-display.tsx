@@ -27,10 +27,10 @@ export function QuestionDisplay({ question, isVisible }: QuestionDisplayProps) {
       className={`text-center text-3xl md:text-5xl font-bold tracking-tight transition-opacity duration-300 ${
         fade ? "opacity-100" : "opacity-0"
       }`}
-      style={{ 
-        letterSpacing: "-0.01em",
-        fontFamily: "'Quicksand', 'Inter', sans-serif",
-        fontWeight: 600
+      style={{
+        letterSpacing: "-0.02em",
+        fontFamily: "'Space Grotesk', 'Inter', sans-serif",
+        fontWeight: 700
       }}
       data-testid="text-current-question"
     >
