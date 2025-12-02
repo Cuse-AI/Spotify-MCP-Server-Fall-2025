@@ -89,8 +89,8 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
       setValidatedSongs((prev) => new Set(prev).add(song.track_id));
       
       toast({
-        title: result.boosted ? "⬆️ Confidence boosted!" : "✨ Added to Tapestry!",
-        description: result.boosted 
+        title: result.boosted ? "⬆️ Confidence boosted!" : "✨ Added to Midden!",
+        description: result.boosted
           ? `"${song.title}" validation count increased`
           : `"${song.title}" is now part of the manifold`,
         duration: 1500,
@@ -263,7 +263,7 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
                               : "text-white/30 border-transparent opacity-40 hover:opacity-100 hover:border-green-400/50 hover:text-green-400 hover:bg-green-400/10"
                           }`}
                           data-testid={`button-validate-song-${index}`}
-                          title={isValidated ? "Added to Tapestry!" : isDownvoted ? "Already downvoted" : "Great match - add to Tapestry"}
+                          title={isValidated ? "Added to Midden!" : isDownvoted ? "Already downvoted" : "Great match - add to Midden"}
                         >
                           <ThumbsUp className="w-3.5 h-3.5" fill={isValidated ? "currentColor" : "none"} />
                         </button>
