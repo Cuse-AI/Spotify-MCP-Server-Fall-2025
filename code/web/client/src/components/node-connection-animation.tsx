@@ -1,15 +1,13 @@
 import { useEffect, useState } from "react";
 
 const LOADING_MESSAGES = [
-  "preparing the crystal ball...",
-  "consulting the cosmic entities...",
-  "I hope you enjoy your trip:} -sw13tch...",
-  "weaving your sonic journey...",
-  "channeling the musical vibrations...",
-  "aligning the stars...",
-  "walking through dimensions...",
-  "decoding your emotional frequency...",
-  "manifesting the perfect vibes...",
+  "Excavating emotional artifacts...",
+  "Digging through digital strata...",
+  "Aligning emotional coordinates...",
+  "Mapping uncharted emotional territory...",
+  "Collecting fragments of shared experience...",
+  "Searching the spaces between feelings...",
+  "Asking the algorithm nicely...",
 ];
 
 export function NodeConnectionAnimation() {
@@ -116,6 +114,10 @@ export function NodeConnectionAnimation() {
             className="text-xl font-light text-purple-300/90 transition-opacity duration-500"
             data-testid="text-loading-message"
             key={messageIndex}
+            style={{
+              fontFamily: "'Space Grotesk', 'Inter', sans-serif",
+              letterSpacing: '-0.01em'
+            }}
           >
             {LOADING_MESSAGES[messageIndex]}
           </p>
