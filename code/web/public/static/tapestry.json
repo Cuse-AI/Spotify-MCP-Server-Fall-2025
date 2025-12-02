@@ -50055,38 +50055,6 @@
           }
         },
         {
-          "artist": "Dan + Shay",
-          "song": "Show You Off",
-          "spotify_id": "4w9LtJn74XQhsHD1zAHnzY",
-          "spotify_uri": "spotify:track:4w9LtJn74XQhsHD1zAHnzY",
-          "comment_score": 60,
-          "source_url": "https://youtube.com/watch?v=bld2tsM4nLM",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 1,
-          "full_context": "",
-          "post_title": "Date night mix",
-          "comment_text": "You're like a sugar-sweet kiss in the morning,\nSunshine pouring right into my window.\nCool drink of water in the summer,\nBetter than the other, hm, side of the pillow.\n\nYou're everything that I'm not, and then a cherry on top,\nYeah, girl, I gotta see you tonight,\nYeah, I'm taking you out 'cause damn baby I'm proud.\n\nEy oh ey oh, when a guy like me\nEy oh ey oh, gets a girl like you\nYeah, you better know we're going to take it downtown,\nShowin' everybody what I'm crazy about.\nEy oh ey oh, anywhere we go, ey oh ey oh, gotta let 'em all know.\nAnd I'mma tattoo your name on my arm,\nBaby I just wanna show you off.\n\nYeah, show you off\n\nYou got a boy feelin' lucky, hm how you love me,\nAnd you're making my heart go\nTicking like a time bomb, baby when the top drops,\nAnd I'm watchin' your hair blow\n\nNo I don't wanna miss another kiss on your lips,\nYeah, girl I gotta see you tonight.\nPick you up about 8, countin' down I can't wait.\n\nEy oh ey oh, when a guy like me\nEy oh ey oh, gets a girl like you\nYeah, you better know we're going to take it downtown,\nShowin' everybody what I'm crazy about.\nEy oh ey oh, anywhere we go, ey oh ey oh, gotta let 'em all know.\nAnd I'mma tattoo your name on my arm,\nBaby I just wanna show you off.\n\nHm when a guy like me, gets a girl like you,\nYou better know what I'm gonna do,\nWhat I'm gonna do, yeah.\n\nEy oh ey oh, when a guy like me\nEy oh ey oh, gets a girl like you\nYeah, you better know we're going to take it downtown,\nShowin' everybody what I'm crazy about.\nEy oh ey oh, anywhere we go, ey oh ey oh, gotta let 'em all know.\nAnd I'mma tattoo your name on my arm,\nBaby I just wanna show you off.\n\nYeah, show you off, oh,\nOh, baby I just wanna show you off.",
-          "ananki_reasoning": "The context is extremely clear - the post is literally titled 'Date night mix' and the lyrics express pride and excitement about taking someone special out to show them off. The song describes adoration ('You're like a sugar-sweet kiss in the morning,' 'Sunshine pouring right into my window') and the specific intent to take their partner downtown to celebrate their relationship publicly ('taking you out 'cause damn baby I'm proud,' 'Showin' everybody what I'm crazy about'). This perfectly captures the excited, proud, celebratory energy of a date night where someone wants to showcase their relationship.",
-          "mapped_subvibe": "Romantic - Date Night",
-          "coordinates": {
-            "x": 635.0,
-            "y": 357.5
-          },
-          "current_vibe": "Romantic - Date Night",
-          "emotional_composition": {
-            "Romantic": 0.55,
-            "Happy": 0.25,
-            "Chill": 0.1,
-            "Energy": 0.05,
-            "Party": 0.05,
-            "Night": 0.0,
-            "Drive": 0.0,
-            "Dark": 0.0,
-            "Sad": 0.0
-          }
-        },
-        {
           "artist": "Frank Sinatra",
           "song": "I've Got You Under My Skin",
           "spotify_id": "74jklVKHYTmNMp0baGm6FB",
