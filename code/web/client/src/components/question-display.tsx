@@ -49,11 +49,11 @@ function BlinkingCursor({ visible }: { visible: boolean }) {
       className="animate-blink inline-block ml-1"
       style={{
         width: '4px',
-        height: '0.7em',
+        height: '1.0em',
         backgroundColor: 'rgb(192, 132, 252)',
         verticalAlign: 'baseline',
         position: 'relative',
-        top: '0.15em',  // positive = DOWN toward the dot
+        top: '0.15em',  // keeps bottom in same spot
         borderRadius: '1px',
       }}
     />
