@@ -27697,38 +27697,6 @@
           }
         },
         {
-          "artist": "OneRepublic",
-          "song": "I Ain't Worried",
-          "spotify_id": "4h9wh7iOZ0GGn8QVp4RAOB",
-          "spotify_uri": "spotify:track:4h9wh7iOZ0GGn8QVp4RAOB",
-          "comment_score": 49532,
-          "source_url": "https://youtube.com/watch?v=mNEUkkoUoIA",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Best Happy and Upbeat Songs - YouTube Playlist 2025",
-          "comment_text": "this song made the beach scene even more better than it already was. the whistling made it so catchy. i watched the movie two times already",
-          "ananki_reasoning": "The human explicitly describes the song as making a beach scene 'even more better' and highlights the catchy whistling as a key element. The context emphasizes a carefree, fun atmosphere associated with a beach setting in what appears to be an action movie (likely Top Gun: Maverick). The song's upbeat, whistling melody and the way it enhanced an already enjoyable beach scene points directly to a carefree, feel-good vibe rather than pure euphoria or celebration. The repeated watching of the movie and positive association with the scene reinforces the song's ability to evoke a breezy, worry-free emotional state.",
-          "mapped_subvibe": "Happy - Carefree",
-          "coordinates": {
-            "x": 472.5,
-            "y": 292.5
-          },
-          "current_vibe": "Happy - Carefree",
-          "emotional_composition": {
-            "Sad": 0.0,
-            "Happy": 0.55,
-            "Chill": 0.2,
-            "Energy": 0.15,
-            "Dark": 0.0,
-            "Romantic": 0.0,
-            "Night": 0.0,
-            "Drive": 0.1,
-            "Party": 0.0
-          }
-        },
-        {
           "artist": "Taylor Swift",
           "song": "I Forgot That You Existed",
           "spotify_id": "43rA71bccXFGD4C8GOpIlN",
@@ -62991,38 +62959,6 @@
             "Dark": 0.0,
             "Romantic": 0.2,
             "Night": 0.0,
-            "Drive": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
-          "artist": "Relaxing Music for Stress Relief",
-          "song": "Soft Calming Music",
-          "spotify_id": "6xsOIolcDvXCHyJkpWJVuk",
-          "spotify_uri": "spotify:track:6xsOIolcDvXCHyJkpWJVuk",
-          "comment_score": 0,
-          "source_url": "https://youtube.com/watch?v=VXFnPeaBT1o",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Healing Music 24/7💖Music heals the heart, soothes the nervous system, relaxes.",
-          "comment_text": "This channel features calming music blended with authentic nature sounds such as gentle rivers, forest wind, birdsong, soft rain, ...",
-          "ananki_reasoning": "The post explicitly describes this as 'Healing Music' that 'heals the heart, soothes the nervous system, relaxes' with calming music and nature sounds. The song title 'Soft Calming Music' by 'Relaxing Music for Stress Relief' reinforces therapeutic intent. While this could fit 'Chill - Meditative' or 'Chill - Serene', the explicit emphasis on healing the heart and nervous system makes 'Happy - Healing' the most accurate match, as it focuses on restorative and therapeutic emotional relief rather than just passive relaxation.",
-          "mapped_subvibe": "Happy - Healing",
-          "coordinates": {
-            "x": 630.0,
-            "y": 315.0
-          },
-          "current_vibe": "Happy - Healing",
-          "emotional_composition": {
-            "Sad": 0.0,
-            "Happy": 0.3,
-            "Chill": 0.5,
-            "Energy": 0.0,
-            "Dark": 0.0,
-            "Romantic": 0.1,
-            "Night": 0.1,
             "Drive": 0.0,
             "Party": 0.0
           }

@@ -377,6 +377,8 @@ Instructions:
 7. Consider the overall vibe "${journey.vibe}" as the journey's emotional character
 8. Create a smooth progression - don't just dump extrapolated songs at the end
 
+**CRITICAL: You MUST include 2-4 extrapolated songs (AI discoveries). This is REQUIRED, not optional.**
+
 Return ONLY a JSON object (no markdown, no extra text):
 {
   "playlistTitle": "A catchy, creative 2-5 word playlist name that captures the emotional journey (avoid generic titles like 'Your Journey' or 'Emotional Playlist')",
@@ -384,27 +386,39 @@ Return ONLY a JSON object (no markdown, no extra text):
   "emotionalArc": "Brief narrative description of the progression through sub-vibes. IMPORTANT: Do NOT include any numeric coordinates or manifold positions in this text - keep it purely descriptive and narrative.",
   "songs": [
     {
-      "track_id": "spotify:track:...",
-      "artist": "Artist Name",
-      "title": "Song Title",
-      "sub_vibe": "Sub-Vibe Name",
-      "meta_vibe": "Central Vibe",
+      "track_id": "spotify:track:3n3Ppam7vgaVa1iaRUc9Lp",
+      "artist": "Mr. Bungle",
+      "title": "Retrovertigo",
+      "sub_vibe": "Dark - Twisted",
+      "meta_vibe": "Dark",
       "confidence": 0.95,
       "reddit_context": "Brief context from Reddit or user validation",
       "ananki_reasoning": "Why this song fits this moment in the journey",
-      "extrapolated": false,
-      "manifold_x": 0.23,
-      "manifold_y": -0.45,
-      "emotional_composition": {"Chill": 60, "Sad": 25, "Night": 15},
-      "nearby_tapestry_songs": ["Artist - Song", "Artist - Song"]
+      "extrapolated": false
+    },
+    {
+      "track_id": "spotify:track:7KXjTSCq5nL1LoYtL7XAwS",
+      "artist": "Unknown Mortal Orchestra",
+      "title": "Multi-Love",
+      "sub_vibe": "Chill - Psychedelic",
+      "meta_vibe": "Chill",
+      "confidence": 0.88,
+      "ananki_reasoning": "This transitions from dark chaos into a dreamy psychedelic space. The swirling synths and hazy production create an expansive feeling, perfect for the emotional shift from intensity to contemplation.",
+      "extrapolated": true,
+      "manifold_x": 685,
+      "manifold_y": 285,
+      "emotional_composition": {"Chill": 65, "Happy": 20, "Sad": 15},
+      "nearby_tapestry_songs": ["Tame Impala - Let It Happen", "MGMT - Kids", "Beach House - Space Song"]
     }
   ]
 }
 
-Notes:
-- For Tapestry songs: extrapolated=false, you can omit manifold coordinates and nearby songs
+**Rules:**
+- You MUST have at least 2-4 songs with "extrapolated": true (AI discoveries)
+- For Tapestry songs: extrapolated=false, omit manifold coordinates and nearby songs
 - For extrapolated songs: extrapolated=true, MUST include manifold_x, manifold_y, emotional_composition, nearby_tapestry_songs
-- Intersperse extrapolated songs throughout the journey, not just at beginning/end`,
+- Intersperse extrapolated songs throughout the journey, not just at beginning/end
+- AI discoveries expand the user's musical horizons while staying true to the manifold`,
         },
       ],
     });
