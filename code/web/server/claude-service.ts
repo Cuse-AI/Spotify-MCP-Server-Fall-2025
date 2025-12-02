@@ -328,14 +328,14 @@ The Tapestry is a 2D emotional manifold mapping ${manifold.metadata.total_sub_vi
 
 Each sub-vibe has x,y coordinates and is a weighted composition of central vibes. Songs are mapped using TRUE Ananki - AI analysis of human-sourced Reddit and YouTube discussions, NOT keyword matching.
 
-**EXTRAPOLATION MODE**: You may include UP TO 2 extrapolated songs (AI discoveries) that fit the manifold math. Requirements for extrapolated songs:
+**EXTRAPOLATION MODE**: Include exactly 2 extrapolated songs (AI discoveries) that fit the manifold math. Requirements for extrapolated songs:
 1. You MUST calculate and provide exact x,y coordinates on the manifold
 2. You MUST specify the emotional composition (% of each central vibe)
 3. You MUST name 2-3 nearby Tapestry songs from the manifest to anchor the extrapolation
 4. You MUST explain the manifold reasoning (not just genre/keywords)
 5. Mark with "extrapolated": true
 
-**IMPORTANT: Maximum 2 extrapolated songs per playlist. Prioritize Tapestry songs with verified human context.**
+**IMPORTANT: Include exactly 2 extrapolated songs per playlist to add discovery while keeping human-sourced context dominant.**
 
 Your task: Create an emotional journey by walking the manifold from the user's current state to their desired destination.`;
 
@@ -370,7 +370,7 @@ Your task: Create an emotional journey by walking the manifold from the user's c
 Instructions:
 1. Analyze the emotional arc: identify starting sub-vibe(s) near "${journey.now}" and destination sub-vibe(s) near "${journey.going}"
 2. Use the 2D coordinates and emotional compositions to plot a path through the manifold
-3. Select 10-12 songs total: **10+ from Tapestry, maximum 2 extrapolated (AI discoveries)**
+3. Select 12 songs total: **10 from Tapestry + exactly 2 extrapolated (AI discoveries)**
 4. **PRIORITIZE songs marked with "keyword_match": true** - these have human comments that specifically mention themes related to the user's journey!
 5. For Tapestry songs: Use those with strong Ananki reasoning that match the path
 6. For extrapolated songs (max 2): Calculate manifold position, specify emotional composition, and name nearby Tapestry songs
