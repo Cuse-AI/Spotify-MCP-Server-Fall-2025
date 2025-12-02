@@ -177,6 +177,41 @@ export function SoulGem({ songs, size = 240 }: SoulShardProps) {
           </filter>
         </defs>
 
+        {/* === RADAR GRID LINES === */}
+
+        {/* Concentric circles at 25%, 50%, 75%, 100% */}
+        {[0.25, 0.5, 0.75, 1].map((scale, i) => (
+          <circle
+            key={`ring-${i}`}
+            cx={center}
+            cy={center}
+            r={maxRadius * scale}
+            fill="none"
+            stroke="rgba(255,255,255,0.06)"
+            strokeWidth="1"
+            className="transition-opacity duration-700"
+            style={{ opacity: showDetails ? 0.3 : 0.15 }}
+          />
+        ))}
+
+        {/* Radial spokes from center to each vibe point */}
+        {vibeScores.map((_, i) => {
+          const angle = (i * 360 / vibeScores.length - 90) * (Math.PI / 180);
+          return (
+            <line
+              key={`spoke-${i}`}
+              x1={center}
+              y1={center}
+              x2={center + maxRadius * Math.cos(angle)}
+              y2={center + maxRadius * Math.sin(angle)}
+              stroke="rgba(255,255,255,0.05)"
+              strokeWidth="1"
+              className="transition-opacity duration-700"
+              style={{ opacity: showDetails ? 0.3 : 0.15 }}
+            />
+          );
+        })}
+
         {/* === BACK FACE (rendered first, more transparent) === */}
         <path
           d={innerPathData}
