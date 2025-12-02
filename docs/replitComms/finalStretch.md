@@ -1,3 +1,838 @@
+# MIDDEN DESIGN VISION
+## Replit Agent - December 2, 2025
+
+---
+
+## THE VIBE
+
+**"Video game character stats meets cosmic music discovery"**
+
+Think: RPG stat screens, skill trees, achievement badges. The user just completed an emotional "quest" and now they're viewing their rewards.
+
+---
+
+## HERO ELEMENT: THE SOUL GEM (Animated Radar)
+
+A radar chart that transforms into a "soul gem" - your playlist's unique emotional fingerprint.
+
+### The Magic Effect
+
+1. **Page loads** → Full radar visible with labels (Happy, Dark, Chill, etc.)
+2. **After 2-3 seconds** → Labels and grid lines fade out
+3. **What remains** → Just the colored shape - your "Soul Gem"
+4. **On hover** → Labels fade back in to reveal the stats
+
+This creates a "reveal" moment - you see your stats, then they crystallize into your personal gem.
+
+### Concept
+
+```
+           Happy
+             /\
+            /  \
+     Party /    \ Chill
+          |      |
+   Energy  \    / Romantic
+            \  /
+             \/
+            Sad
+
+    ↓ fades to ↓
+
+        [Colored gem shape]
+```
+
+### Why It's Perfect
+
+- **Gamification:** Looks like a character stat screen (Strength, Agility, etc.)
+- **Magical:** The fade-to-gem effect feels like crystallization
+- **Personal:** Every playlist has a unique gem shape
+- **Interactive:** Hover to reveal the "hidden" stats
+- **Compact:** Fits nicely in a corner (180-220px)
+
+### Placement
+
+Top-right corner of the results page.
+
+---
+
+## SOUL GEM: FULL IMPLEMENTATION
+
+### Dependencies
+
+```bash
+npm install recharts
+```
+
+### Component Code
+
+```tsx
+// components/SoulGem.tsx
+import { useState, useEffect } from 'react';
+import { 
+  Radar, 
+  RadarChart, 
+  PolarGrid, 
+  PolarAngleAxis, 
+  ResponsiveContainer 
+} from 'recharts';
+
+interface VibeScore {
+  vibe: string;
+  score: number;
+  color: string;
+}
+
+interface SoulGemProps {
+  vibeScores: VibeScore[];
+  size?: number;
+}
+
+// Meta-vibe colors
+const VIBE_COLORS: Record<string, string> = {
+  Happy:    'hsl(48, 70%, 55%)',
+  Party:    'hsl(320, 65%, 55%)',
+  Chill:    'hsl(168, 55%, 50%)',
+  Energy:   'hsl(20, 65%, 55%)',
+  Romantic: 'hsl(340, 60%, 60%)',
+  Sad:      'hsl(210, 55%, 55%)',
+  Drive:    'hsl(25, 65%, 52%)',
+  Dark:     'hsl(262, 55%, 55%)',
+  Night:    'hsl(240, 40%, 35%)',
+};
+
+export function SoulGem({ vibeScores, size = 200 }: SoulGemProps) {
+  const [showDetails, setShowDetails] = useState(true);
+  const [hasAnimated, setHasAnimated] = useState(false);
+
+  // After 2.5 seconds, fade out the labels (crystallize into gem)
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowDetails(false);
+      setHasAnimated(true);
+    }, 2500);
+    return () => clearTimeout(timer);
+  }, []);
+
+  // Calculate dominant color for the gem glow
+  const dominantVibe = vibeScores.reduce((a, b) => 
+    a.score > b.score ? a : b
+  );
+  const glowColor = VIBE_COLORS[dominantVibe.vibe] || 'hsl(262, 55%, 55%)';
+
+  return (
+    <div 
+      className="relative cursor-pointer"
+      style={{ width: size, height: size }}
+      onMouseEnter={() => setShowDetails(true)}
+      onMouseLeave={() => hasAnimated && setShowDetails(false)}
+    >
+      {/* Glow effect behind the gem */}
+      <div 
+        className="absolute inset-0 rounded-full blur-xl transition-opacity duration-500"
+        style={{ 
+          background: glowColor,
+          opacity: showDetails ? 0.1 : 0.25,
+        }}
+      />
+      
+      {/* The radar/gem chart */}
+      <div className="relative z-10">
+        <ResponsiveContainer width={size} height={size}>
+          <RadarChart data={vibeScores} cx="50%" cy="50%">
+            {/* Grid lines - fade out */}
+            <PolarGrid 
+              stroke="rgba(255,255,255,0.15)"
+              strokeDasharray="3 3"
+              style={{
+                opacity: showDetails ? 1 : 0,
+                transition: 'opacity 0.8s ease-in-out',
+              }}
+            />
+            
+            {/* Axis labels - fade out */}
+            <PolarAngleAxis 
+              dataKey="vibe"
+              tick={({ x, y, payload }) => (
+                <text
+                  x={x}
+                  y={y}
+                  textAnchor="middle"
+                  fill="rgba(255,255,255,0.7)"
+                  fontSize={11}
+                  style={{
+                    opacity: showDetails ? 1 : 0,
+                    transition: 'opacity 0.8s ease-in-out',
+                  }}
+                >
+                  {payload.value}
+                </text>
+              )}
+            />
+            
+            {/* The gem shape - always visible */}
+            <Radar
+              name="Soul"
+              dataKey="score"
+              stroke={glowColor}
+              strokeWidth={2}
+              fill={glowColor}
+              fillOpacity={showDetails ? 0.3 : 0.5}
+              style={{
+                filter: showDetails ? 'none' : `drop-shadow(0 0 8px ${glowColor})`,
+                transition: 'all 0.8s ease-in-out',
+              }}
+            />
+          </RadarChart>
+        </ResponsiveContainer>
+      </div>
+
+      {/* "Your Soul Gem" label - appears after crystallization */}
+      <div 
+        className="absolute -bottom-6 left-1/2 -translate-x-1/2 text-xs text-white/50 whitespace-nowrap"
+        style={{
+          opacity: showDetails ? 0 : 1,
+          transition: 'opacity 0.5s ease-in-out 0.3s',
+        }}
+      >
+        Your Soul Gem
+      </div>
+    </div>
+  );
+}
+```
+
+### Helper Function: Calculate Vibe Scores
+
+```typescript
+// lib/vibeScores.ts
+interface Song {
+  mapped_subvibe: string;
+  // ... other fields
+}
+
+interface VibeScore {
+  vibe: string;
+  score: number;
+  color: string;
+}
+
+const META_VIBES = [
+  'Happy', 'Party', 'Chill', 'Energy', 'Romantic', 
+  'Sad', 'Drive', 'Dark', 'Night'
+];
+
+const VIBE_COLORS: Record<string, string> = {
+  Happy:    'hsl(48, 70%, 55%)',
+  Party:    'hsl(320, 65%, 55%)',
+  Chill:    'hsl(168, 55%, 50%)',
+  Energy:   'hsl(20, 65%, 55%)',
+  Romantic: 'hsl(340, 60%, 60%)',
+  Sad:      'hsl(210, 55%, 55%)',
+  Drive:    'hsl(25, 65%, 52%)',
+  Dark:     'hsl(262, 55%, 55%)',
+  Night:    'hsl(240, 40%, 35%)',
+};
+
+export function calculateVibeScores(songs: Song[]): VibeScore[] {
+  // Count songs per meta-vibe
+  const vibeCounts: Record<string, number> = {};
+  
+  songs.forEach(song => {
+    // Extract meta-vibe from "Dark - Gothic" -> "Dark"
+    const metaVibe = song.mapped_subvibe.split(' - ')[0];
+    vibeCounts[metaVibe] = (vibeCounts[metaVibe] || 0) + 1;
+  });
+
+  // Find max for normalization
+  const maxCount = Math.max(...Object.values(vibeCounts), 1);
+
+  // Build scores array (all 9 vibes, even if count is 0)
+  return META_VIBES.map(vibe => ({
+    vibe,
+    score: ((vibeCounts[vibe] || 0) / maxCount) * 100,
+    color: VIBE_COLORS[vibe],
+  }));
+}
+```
+
+### Usage in Results Page
+
+```tsx
+// In your results/playlist page
+import { SoulGem } from '@/components/SoulGem';
+import { calculateVibeScores } from '@/lib/vibeScores';
+
+function PlaylistResults({ songs }) {
+  const vibeScores = calculateVibeScores(songs);
+
+  return (
+    <div className="flex gap-8">
+      {/* Left side: Journey card */}
+      <div className="flex-1">
+        <JourneyCard ... />
+      </div>
+      
+      {/* Right side: Soul Gem */}
+      <div className="flex-shrink-0">
+        <SoulGem vibeScores={vibeScores} size={200} />
+      </div>
+    </div>
+  );
+}
+```
+
+---
+
+## PLAYLIST MAGIC: STACKED CARDS THAT POP
+
+Make the track list feel layered and alive with hover effects and staggered animations.
+
+### The Effect
+
+1. **On page load** → Cards fade in one by one (staggered delay)
+2. **At rest** → Cards look subtly stacked/layered
+3. **On hover** → Card lifts up, casts shadow, feels "picked up"
+4. **Hover neighbor cards** → Slightly pushed down (optional, fancy)
+
+### CSS Styles (Add to your global CSS or Tailwind)
+
+```css
+/* Playlist container */
+.playlist-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Individual song card */
+.song-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 12px 16px;
+  
+  /* Smooth transitions */
+  transition: 
+    transform 0.2s ease-out,
+    box-shadow 0.2s ease-out,
+    background 0.2s ease-out;
+  
+  /* For staggered animation */
+  opacity: 0;
+  animation: fadeSlideIn 0.4s ease-out forwards;
+}
+
+/* Staggered entrance - each card delays slightly */
+.song-card:nth-child(1) { animation-delay: 0.05s; }
+.song-card:nth-child(2) { animation-delay: 0.1s; }
+.song-card:nth-child(3) { animation-delay: 0.15s; }
+.song-card:nth-child(4) { animation-delay: 0.2s; }
+.song-card:nth-child(5) { animation-delay: 0.25s; }
+.song-card:nth-child(6) { animation-delay: 0.3s; }
+.song-card:nth-child(7) { animation-delay: 0.35s; }
+.song-card:nth-child(8) { animation-delay: 0.4s; }
+.song-card:nth-child(9) { animation-delay: 0.45s; }
+.song-card:nth-child(10) { animation-delay: 0.5s; }
+.song-card:nth-child(n+11) { animation-delay: 0.55s; }
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover state - card lifts up */
+.song-card:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 
+    0 8px 24px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+  z-index: 10;
+}
+
+/* Optional: glow effect matching vibe color */
+.song-card:hover {
+  box-shadow: 
+    0 8px 24px rgba(0, 0, 0, 0.3),
+    0 0 20px var(--vibe-color, rgba(139, 92, 246, 0.2));
+}
+```
+
+### React Component
+
+```tsx
+// components/SongCard.tsx
+interface SongCardProps {
+  song: {
+    track_name: string;
+    artist: string;
+    human_context: string;
+    mapped_subvibe: string;
+    spotify_id?: string;
+  };
+  index: number;
+}
+
+const VIBE_COLORS: Record<string, string> = {
+  Happy:    'rgba(255, 217, 61, 0.3)',
+  Party:    'rgba(233, 30, 140, 0.3)',
+  Chill:    'rgba(109, 213, 195, 0.3)',
+  Energy:   'rgba(255, 107, 53, 0.3)',
+  Romantic: 'rgba(255, 133, 162, 0.3)',
+  Sad:      'rgba(74, 144, 217, 0.3)',
+  Drive:    'rgba(249, 115, 22, 0.3)',
+  Dark:     'rgba(139, 92, 246, 0.3)',
+  Night:    'rgba(45, 48, 71, 0.3)',
+};
+
+export function SongCard({ song, index }: SongCardProps) {
+  const metaVibe = song.mapped_subvibe.split(' - ')[0];
+  const vibeColor = VIBE_COLORS[metaVibe] || VIBE_COLORS.Dark;
+  const vibeColorSolid = vibeColor.replace('0.3', '1');
+
+  return (
+    <div 
+      className="song-card group"
+      style={{ 
+        '--vibe-color': vibeColor,
+        animationDelay: `${index * 0.05}s`,
+      } as React.CSSProperties}
+    >
+      <div className="flex items-start gap-4">
+        {/* Vibe dot indicator */}
+        <div 
+          className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+          style={{ backgroundColor: vibeColorSolid }}
+        />
+        
+        {/* Song info */}
+        <div className="flex-1 min-w-0">
+          <div className="flex items-baseline gap-2">
+            <span className="font-medium text-white/90 truncate">
+              {song.track_name}
+            </span>
+            <span className="text-sm text-white/50 truncate">
+              {song.artist}
+            </span>
+          </div>
+          
+          {/* Human context quote */}
+          <p className="mt-1 text-sm text-white/60 italic line-clamp-2">
+            "{song.human_context}"
+          </p>
+          
+          {/* Sub-vibe tag */}
+          <span className="inline-block mt-2 px-2 py-0.5 text-xs rounded-full bg-white/5 text-white/40">
+            {song.mapped_subvibe}
+          </span>
+        </div>
+
+        {/* Play button - appears on hover */}
+        <button 
+          className="opacity-0 group-hover:opacity-100 transition-opacity p-2 rounded-full bg-white/10 hover:bg-white/20"
+          onClick={() => window.open(`https://open.spotify.com/track/${song.spotify_id}`, '_blank')}
+        >
+          <PlayIcon className="w-4 h-4" />
+        </button>
+      </div>
+    </div>
+  );
+}
+
+// Simple play icon
+function PlayIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M8 5v14l11-7z" />
+    </svg>
+  );
+}
+```
+
+### Playlist Container
+
+```tsx
+// components/Playlist.tsx
+import { SongCard } from './SongCard';
+
+interface PlaylistProps {
+  songs: Song[];
+  title?: string;
+}
+
+export function Playlist({ songs, title = "Your Playlist" }: PlaylistProps) {
+  return (
+    <div className="space-y-4">
+      {/* Header */}
+      <div className="flex items-center justify-between">
+        <h2 className="text-lg font-medium text-white/80">
+          {title}
+        </h2>
+        <span className="text-sm text-white/40">
+          {songs.length} songs
+        </span>
+      </div>
+      
+      {/* Divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+      
+      {/* Songs */}
+      <div className="playlist-container">
+        {songs.map((song, index) => (
+          <SongCard 
+            key={song.spotify_id || index} 
+            song={song} 
+            index={index} 
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
+```
+
+### Tailwind Alternative (If Not Using Custom CSS)
+
+```tsx
+// Using Tailwind classes directly
+<div 
+  className={`
+    group relative
+    bg-white/[0.03] hover:bg-white/[0.06]
+    border border-white/[0.06] hover:border-white/[0.1]
+    rounded-xl p-4
+    transition-all duration-200 ease-out
+    hover:-translate-y-1 hover:shadow-lg hover:shadow-black/30
+    animate-fade-in
+  `}
+  style={{ animationDelay: `${index * 50}ms` }}
+>
+  {/* Card content */}
+</div>
+```
+
+Add this to your tailwind.config.ts:
+```ts
+// tailwind.config.ts
+module.exports = {
+  theme: {
+    extend: {
+      animation: {
+        'fade-in': 'fadeIn 0.4s ease-out forwards',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0', transform: 'translateY(10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
+    },
+  },
+}
+```
+
+---
+
+## TOP SECTION: THE JOURNEY CARD
+
+The question/answer area wrapped in a premium card.
+
+### Current Problem
+- Text just floating on the page
+- No visual container
+- Feels unfinished
+
+### Solution: Glassmorphism Card
+
+```tsx
+function JourneyCard({ questions, answers }: JourneyCardProps) {
+  return (
+    <div className="relative p-6 rounded-2xl overflow-hidden">
+      {/* Glass background */}
+      <div 
+        className="absolute inset-0 bg-white/5 backdrop-blur-xl"
+        style={{
+          border: '1px solid rgba(255,255,255,0.1)',
+        }}
+      />
+      
+      {/* Gradient border glow */}
+      <div 
+        className="absolute inset-0 rounded-2xl"
+        style={{
+          background: 'linear-gradient(135deg, rgba(139,92,246,0.3), rgba(236,72,153,0.1))',
+          padding: '1px',
+          mask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+          maskComposite: 'exclude',
+        }}
+      />
+      
+      {/* Content */}
+      <div className="relative z-10 space-y-4">
+        {questions.map((q, i) => (
+          <div key={i} className="space-y-1">
+            <p className="text-sm text-white/50 uppercase tracking-wide">
+              {q}
+            </p>
+            <p className="text-lg text-white/90">
+              {answers[i]}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+```
+
+### CSS Alternative (Simpler)
+
+```css
+.journey-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 24px;
+  
+  /* Subtle inner glow */
+  box-shadow: 
+    inset 0 1px 0 rgba(255,255,255,0.05),
+    0 0 40px rgba(139, 92, 246, 0.1);
+}
+
+.journey-card .question-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 4px;
+}
+
+.journey-card .answer-text {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.5;
+}
+```
+
+---
+
+## PLAYLIST SECTION IMPROVEMENTS
+
+### Current Problem
+- Plain list of songs
+- No visual hierarchy
+- Feels like a spreadsheet
+
+### Ideas
+
+#### 1. Vibe-Colored Left Border
+
+Each song gets a subtle left border in its meta-vibe color:
+
+```tsx
+function SongRow({ song }: { song: Song }) {
+  const vibeColor = getMetaVibeColor(song.mapped_subvibe);
+  
+  return (
+    <div 
+      className="flex items-center gap-4 p-3 rounded-lg hover:bg-white/5 transition-colors"
+      style={{ borderLeft: `3px solid ${vibeColor}` }}
+    >
+      {/* Song content */}
+    </div>
+  );
+}
+```
+
+#### 2. Grouped by Journey Phase
+
+Instead of one flat list, group songs into phases:
+
+```
+DEPARTURE (songs 1-5)
+  Song 1...
+  Song 2...
+
+TRANSITION (songs 6-10)
+  Song 6...
+  
+ARRIVAL (songs 11-15)
+  Song 11...
+```
+
+Each section has a subtle header and maybe different background tint.
+
+#### 3. Mini Vibe Dot
+
+Instead of a big icon, just a small colored dot (8px) next to each song:
+
+```tsx
+<span 
+  className="w-2 h-2 rounded-full flex-shrink-0"
+  style={{ backgroundColor: vibeColor }}
+/>
+```
+
+Simple, not distracting, but still conveys color information.
+
+#### 4. Album Art Grid
+
+If we have album art, show a small grid of artwork at the top of the playlist section:
+
+```tsx
+<div className="flex flex-wrap gap-1 mb-4">
+  {songs.slice(0, 8).map(song => (
+    <img 
+      key={song.spotify_id}
+      src={song.album_art} 
+      className="w-12 h-12 rounded object-cover"
+    />
+  ))}
+</div>
+```
+
+Creates a visual mosaic that represents the playlist.
+
+---
+
+## COLOR SYSTEM
+
+### Meta-Vibe Colors (Muted for Dark Theme)
+
+```typescript
+const VIBE_COLORS = {
+  Happy:    'hsl(48, 70%, 55%)',   // Gold
+  Party:    'hsl(320, 65%, 55%)',  // Magenta
+  Chill:    'hsl(168, 55%, 50%)',  // Teal
+  Energy:   'hsl(20, 65%, 55%)',   // Orange
+  Romantic: 'hsl(340, 60%, 60%)',  // Pink
+  Sad:      'hsl(210, 55%, 55%)',  // Blue
+  Drive:    'hsl(25, 65%, 52%)',   // Amber
+  Dark:     'hsl(262, 55%, 55%)',  // Purple
+  Night:    'hsl(240, 40%, 35%)',  // Deep Indigo
+};
+```
+
+### Usage
+
+```typescript
+function getMetaVibeColor(subvibe: string): string {
+  const metaVibe = subvibe.split(' - ')[0];
+  return VIBE_COLORS[metaVibe] || VIBE_COLORS.Dark;
+}
+```
+
+---
+
+## LAYOUT SUGGESTION
+
+```
++--------------------------------------------------+
+|  [Logo]                              [New Quest] |
++--------------------------------------------------+
+|                                                  |
+|  +------------------+     +------------------+   |
+|  | JOURNEY CARD     |     | EMOTIONAL RADAR  |   |
+|  | Q1: ...          |     |     [Chart]      |   |
+|  | A1: ...          |     |                  |   |
+|  | Q2: ...          |     |  Happy: 3 songs  |   |
+|  | A2: ...          |     |  Dark: 5 songs   |   |
+|  +------------------+     +------------------+   |
+|                                                  |
+|  YOUR PLAYLIST                                   |
+|  ───────────────────────────────────────────    |
+|                                                  |
+|  [dot] Song 1 - Artist          "quote..."       |
+|  [dot] Song 2 - Artist          "quote..."       |
+|  [dot] Song 3 - Artist          "quote..."       |
+|  ...                                             |
+|                                                  |
++--------------------------------------------------+
+```
+
+---
+
+## QUICK WINS (Easy to Implement)
+
+1. **Add the radar chart** - Use recharts library, it's straightforward
+2. **Wrap top text in glass card** - Just CSS, no logic changes
+3. **Add colored dots to songs** - Small visual improvement, big impact
+4. **Typography hierarchy** - Make question labels smaller/muted, answers larger
+
+---
+
+## DEPENDENCIES TO ADD
+
+```bash
+npm install recharts
+```
+
+That's it! recharts handles the radar visualization beautifully.
+
+---
+
+## TL;DR SUMMARY FOR CLAUDE
+
+### The Three Big Things
+
+| Element | What It Does | The Magic |
+|---------|--------------|-----------|
+| **Soul Gem** | Radar chart → fades to gem shape → hover reveals stats | 2.5s auto-fade, hover to reveal |
+| **Journey Card** | Glassmorphism container for Q&A | Frosted glass + subtle purple glow |
+| **Playlist Cards** | Staggered fade-in + lift on hover | Cards cascade in, pop up when touched |
+
+### Animation Timeline
+
+```
+0.0s - Page loads
+0.0s - Soul Gem radar fully visible with labels
+0.0s - Playlist cards start cascading in (0.05s delay each)
+0.5s - All cards visible
+2.5s - Soul Gem labels fade out, just gem shape remains
+      - "Your Soul Gem" label fades in below
+∞    - Hover gem to see labels again
+     - Hover cards to lift them up
+```
+
+### Dependencies
+
+```bash
+npm install recharts
+```
+
+### Files to Create/Modify
+
+1. `components/SoulGem.tsx` - The animated radar/gem
+2. `lib/vibeScores.ts` - Helper to calculate vibe breakdown
+3. `components/SongCard.tsx` - Individual song with hover
+4. `components/Playlist.tsx` - Container with stagger
+5. `components/JourneyCard.tsx` - Glass Q&A container
+6. Add CSS for `.song-card` animations (or use Tailwind config)
+
+### The Feel
+
+- **Gamified** - RPG stat screen energy
+- **Magical** - crystallization reveal moment
+- **Alive** - everything responds to interaction
+- **Premium** - glass effects, smooth animations
+- **Personal** - every Soul Gem is unique to your playlist
+
+---
+
+This is gonna be amazing! Let me know if you need clarification on any of the code.
+
+*— Replit Agent*
+
+
 
 >> Replit Agent - 12/02/2025 2:00 AM
 
