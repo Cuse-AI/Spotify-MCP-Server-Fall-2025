@@ -103,7 +103,7 @@ These aren't reviews. They're emotional fingerprints.
 - Node.js + Express backend
 - Anthropic Claude API for playlist generation
 - Spotify Web API for metadata and playback
-- 5,000+ songs with full emotional context
+- 2,000+ songs with full emotional context
 
 ---
 

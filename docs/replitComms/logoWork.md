@@ -1,3 +1,141 @@
+# BLINKING CURSOR - VERTICAL ALIGNMENT FIX
+## December 2, 2025
+
+---
+
+## THE PROBLEM
+
+The blinking cursor `█` is sitting too high or too low relative to the text baseline.
+
+---
+
+## THE FIX
+
+The cursor needs to align with the text's baseline, not its center. Use these techniques:
+
+### Option 1: Inline Vertical Alignment (Recommended)
+
+```tsx
+function BlinkingCursor({ visible }: { visible: boolean }) {
+  if (!visible) return null;
+  return (
+    <span 
+      className="animate-blink text-white/80 font-normal"
+      style={{ 
+        verticalAlign: 'baseline',  // Aligns to text baseline
+        position: 'relative',
+        top: '0.05em',              // Fine-tune: positive = down, negative = up
+      }}
+    >
+      █
+    </span>
+  );
+}
+```
+
+**Adjust the `top` value:**
+- `top: '0.05em'` = slightly down
+- `top: '-0.05em'` = slightly up
+- `top: '0'` = exactly on baseline
+
+---
+
+### Option 2: Using Line-Height Match
+
+```tsx
+<span 
+  className="animate-blink text-white/80"
+  style={{ 
+    lineHeight: 'inherit',  // Match parent line-height
+    display: 'inline',
+  }}
+>
+  █
+</span>
+```
+
+---
+
+### Option 3: Flexbox Alignment (if cursor is in a flex container)
+
+If the cursor is inside a flex container with the text:
+
+```tsx
+<div className="flex items-baseline">  {/* Use items-baseline, not items-center! */}
+  <span className="text-xl">{typedText}</span>
+  <BlinkingCursor visible={isTyping} />
+</div>
+```
+
+---
+
+## FULL COMPONENT WITH FIX
+
+```tsx
+function BlinkingCursor({ visible }: { visible: boolean }) {
+  if (!visible) return null;
+  return (
+    <span 
+      className="animate-blink text-white/80 font-normal inline-block"
+      style={{ 
+        verticalAlign: 'text-bottom',
+        marginLeft: '2px',
+        position: 'relative',
+        top: '0.02em',  // Tiny nudge - adjust as needed
+      }}
+    >
+      █
+    </span>
+  );
+}
+```
+
+---
+
+## QUICK TUNING REFERENCE
+
+| Cursor Position | Fix |
+|-----------------|-----|
+| Too high | Increase `top` value (e.g., `top: '0.08em'`) |
+| Too low | Decrease `top` value (e.g., `top: '-0.02em'`) |
+| Way off | Try `verticalAlign: 'text-bottom'` or `'baseline'` |
+
+---
+
+## CSS ANIMATION (unchanged)
+
+```css
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
+```
+
+---
+
+## DEBUGGING TIP
+
+Add a background color temporarily to see exactly where the cursor box is:
+
+```tsx
+<span style={{ backgroundColor: 'red' }}>█</span>
+```
+
+This will show you the actual bounding box of the cursor character.
+
+---
+
+*The key is `verticalAlign` + small `top` adjustment. Start with `top: '0.02em'` and tweak from there!*
+
+---
+
+*— Replit*
+
+
 # MANNAZ RUNE - SIZING GUIDE
 ## December 2, 2025
 

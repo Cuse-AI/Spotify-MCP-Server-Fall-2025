@@ -41,7 +41,7 @@ function useTypewriter(text: string, speed: number = 35, startDelay: number = 0)
   return { displayed, isTyping, isDone };
 }
 
-// Blinking cursor component - thin bar that matches text height
+// Blinking cursor component - thin bar aligned to text baseline
 function BlinkingCursor({ visible }: { visible: boolean }) {
   if (!visible) return null;
   return (
@@ -53,7 +53,7 @@ function BlinkingCursor({ visible }: { visible: boolean }) {
         backgroundColor: 'rgb(192, 132, 252)',
         verticalAlign: 'baseline',
         position: 'relative',
-        bottom: '0.05em',
+        top: '-0.1em',  // negative = up
         borderRadius: '1px',
       }}
     />

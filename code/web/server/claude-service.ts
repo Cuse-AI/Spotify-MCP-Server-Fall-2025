@@ -94,12 +94,11 @@ function enrichSongsWithHumanContext(songs: TapestrySong[], tapestry: TapestryCo
   }
   
   return songs.map(song => {
-    // Try to find the original song in tapestry by track_id first
-    const trackId = song.track_id.replace('spotify:track:', '');
-    let original = songLookupByUri.get(song.track_id) || songLookupByUri.get(trackId);
+    let original: any = null;
     
-    // If not found by track_id, try artist+title match (Claude may have hallucinated the ID)
-    if (!original && !song.extrapolated) {
+    // For non-extrapolated songs, ALWAYS try artist+title FIRST (most reliable)
+    // Claude is good at names, bad at remembering 22-char track IDs
+    if (!song.extrapolated) {
       const artistTitleKey = `${song.artist.toLowerCase().trim()}:::${song.title.toLowerCase().trim()}`;
       original = songLookupByArtistTitle.get(artistTitleKey);
       
@@ -108,7 +107,6 @@ function enrichSongsWithHumanContext(songs: TapestrySong[], tapestry: TapestryCo
         const titleKey = song.title.toLowerCase().trim();
         const titleMatches = songLookupByTitle.get(titleKey);
         if (titleMatches && titleMatches.length > 0) {
-          // If only one match, use it; if multiple, try to find best artist match
           if (titleMatches.length === 1) {
             original = titleMatches[0];
           } else {
@@ -117,15 +115,23 @@ function enrichSongsWithHumanContext(songs: TapestrySong[], tapestry: TapestryCo
             original = titleMatches.find(s => 
               s.artist.toLowerCase().includes(artistLower) || 
               artistLower.includes(s.artist.toLowerCase())
-            ) || titleMatches[0]; // Fallback to first match
+            ) || titleMatches[0];
           }
         }
       }
       
+      // Only try track_id as LAST resort
+      if (!original) {
+        const trackId = song.track_id.replace('spotify:track:', '');
+        original = songLookupByUri.get(song.track_id) || songLookupByUri.get(trackId);
+      }
+      
+      // ALWAYS fix the track_id with correct one from tapestry
       if (original) {
-        // FIX the track_id with the correct one from tapestry!
         const correctUri = original.spotify_uri || `spotify:track:${original.spotify_id}`;
-        console.log(`🔧 Fixed track_id for "${song.artist} - ${song.title}": ${song.track_id} → ${correctUri}`);
+        if (song.track_id !== correctUri) {
+          console.log(`🔧 Fixed track_id for "${song.artist} - ${song.title}": ${song.track_id} → ${correctUri}`);
+        }
         song.track_id = correctUri;
       }
     }
