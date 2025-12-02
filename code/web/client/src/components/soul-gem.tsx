@@ -348,8 +348,9 @@ export function SoulGem({ songs, size = 240 }: SoulShardProps) {
               y={labelY}
               textAnchor="middle"
               dominantBaseline="middle"
-              fill="rgba(255,255,255,0.5)"
-              fontSize="10"
+              fill="rgba(255,255,255,0.85)"
+              fontSize="11"
+              fontWeight="500"
               className="transition-opacity duration-700"
               style={{ opacity: showDetails ? 1 : 0 }}
             >
