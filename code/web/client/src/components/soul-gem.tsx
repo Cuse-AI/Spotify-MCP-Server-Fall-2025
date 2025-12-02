@@ -74,6 +74,7 @@ export function SoulGem({ songs, size = 240 }: SoulShardProps) {
     return val + (rand - 0.5) * amount;
   };
 
+  // Front face points (outer)
   const points = useMemo(() => {
     return vibeScores.map((vibe, i) => {
       const angle = (i * 360 / vibeScores.length - 90) * (Math.PI / 180);
@@ -87,8 +88,19 @@ export function SoulGem({ songs, size = 240 }: SoulShardProps) {
       };
     });
   }, [vibeScores, center, maxRadius]);
-  
-  // Create polygon path with micro-vertices for rougher edges
+
+  // Back face points (inner, scaled and offset for 3D depth)
+  const innerScale = 0.6;
+  const depthOffset = 15;
+  const innerPoints = useMemo(() => {
+    return points.map(p => ({
+      x: center + (p.x - center) * innerScale,
+      y: center + (p.y - center) * innerScale + depthOffset,
+      vibe: p.vibe,
+    }));
+  }, [points, center]);
+
+  // Create polygon path for front face with micro-vertices for rougher edges
   const pathData = useMemo(() => {
     let path = `M ${points[0].x.toFixed(1)} ${points[0].y.toFixed(1)} `;
     points.forEach((p, i) => {
@@ -100,6 +112,14 @@ export function SoulGem({ songs, size = 240 }: SoulShardProps) {
     });
     return path;
   }, [points]);
+
+  // Back face path
+  const innerPathData = useMemo(() => {
+    return innerPoints.map((p, i) => {
+      if (i === 0) return `M ${p.x.toFixed(1)} ${p.y.toFixed(1)}`;
+      return `L ${p.x.toFixed(1)} ${p.y.toFixed(1)}`;
+    }).join(' ') + ' Z';
+  }, [innerPoints]);
 
   // Unique gradient ID
   const gradientId = useMemo(() => `shardGrad-${Math.random().toString(36).substr(2, 9)}`, []);
@@ -134,13 +154,19 @@ export function SoulGem({ songs, size = 240 }: SoulShardProps) {
         style={{ overflow: 'visible' }}
       >
         <defs>
-          {/* Radial gradient from top-left (light source) for uncut gem effect */}
+          {/* Radial gradient from top-left for front face */}
           <radialGradient id={gradientId} cx="30%" cy="25%" r="75%">
-            <stop offset="0%" stopColor="hsl(262, 75%, 68%)" stopOpacity="0.8" />
-            <stop offset="60%" stopColor={glowColor} stopOpacity="0.6" />
-            <stop offset="100%" stopColor={glowColor} stopOpacity="0.3" />
+            <stop offset="0%" stopColor="hsl(262, 75%, 68%)" stopOpacity="0.5" />
+            <stop offset="60%" stopColor={glowColor} stopOpacity="0.35" />
+            <stop offset="100%" stopColor={glowColor} stopOpacity="0.2" />
           </radialGradient>
-          
+
+          {/* Linear gradient for depth edges */}
+          <linearGradient id={`${gradientId}-edge`} x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor={glowColor} stopOpacity="0.6" />
+            <stop offset="100%" stopColor="hsl(262, 60%, 45%)" stopOpacity="0.4" />
+          </linearGradient>
+
           {/* Glow filter */}
           <filter id={glowId} x="-50%" y="-50%" width="200%" height="200%">
             <feGaussianBlur stdDeviation="6" result="blur" />
@@ -150,8 +176,40 @@ export function SoulGem({ songs, size = 240 }: SoulShardProps) {
             </feMerge>
           </filter>
         </defs>
-        
-        {/* Main shard shape with sharp miter joins */}
+
+        {/* === BACK FACE (rendered first, more transparent) === */}
+        <path
+          d={innerPathData}
+          fill="hsl(262, 50%, 35%)"
+          fillOpacity="0.2"
+          stroke="hsl(262, 60%, 50%)"
+          strokeWidth="1"
+          strokeOpacity="0.4"
+          className="transition-all duration-700"
+          style={{
+            opacity: showDetails ? 0.6 : 0.8,
+          }}
+        />
+
+        {/* === CONNECTING DEPTH EDGES === */}
+        {points.map((p, i) => (
+          <line
+            key={`depth-edge-${i}`}
+            x1={p.x}
+            y1={p.y}
+            x2={innerPoints[i].x}
+            y2={innerPoints[i].y}
+            stroke={`url(#${gradientId}-edge)`}
+            strokeWidth="1.5"
+            strokeOpacity="0.5"
+            className="transition-all duration-700"
+            style={{
+              opacity: showDetails ? 0.5 : 0.7,
+            }}
+          />
+        ))}
+
+        {/* === FRONT FACE (rendered on top, brighter) === */}
         <path
           d={pathData}
           fill={`url(#${gradientId})`}
@@ -162,44 +220,9 @@ export function SoulGem({ songs, size = 240 }: SoulShardProps) {
           filter={showDetails ? 'none' : `url(#${glowId})`}
           className="transition-all duration-700"
           style={{
-            opacity: showDetails ? 0.7 : 0.9,
+            opacity: showDetails ? 0.5 : 0.7,
           }}
         />
-        
-        {/* Internal facet lines from center to each point */}
-        {points.map((p, i) => (
-          <line
-            key={`facet-${i}`}
-            x1={center}
-            y1={center}
-            x2={p.x}
-            y2={p.y}
-            stroke="rgba(255,255,255,0.12)"
-            strokeWidth="1"
-            className="transition-opacity duration-700"
-            style={{ opacity: showDetails ? 0.8 : 0.4 }}
-          />
-        ))}
-        
-        {/* Secondary facet lines connecting adjacent points through center area */}
-        {points.map((p, i) => {
-          const next = points[(i + 1) % points.length];
-          const midX = (p.x + next.x) / 2;
-          const midY = (p.y + next.y) / 2;
-          return (
-            <line
-              key={`facet2-${i}`}
-              x1={center}
-              y1={center}
-              x2={midX}
-              y2={midY}
-              stroke="rgba(255,255,255,0.06)"
-              strokeWidth="0.5"
-              className="transition-opacity duration-700"
-              style={{ opacity: showDetails ? 0.6 : 0.3 }}
-            />
-          );
-        })}
         
         {/* Asymmetric glossy highlight / gleam (top-left, off-center) */}
         <ellipse

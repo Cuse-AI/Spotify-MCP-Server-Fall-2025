@@ -1,0 +1,309 @@
+======================================================================
+SPOTIFY ID VALIDATION REPORT
+======================================================================
+
+Total songs in tapestry: 2042
+
+RANDOM SAMPLE (50 songs to test):
+======================================================================
+
+1. KONGOS - Come with Me Now
+   Vibe: Happy - Feel Good
+   URL: https://open.spotify.com/track/2kWowW0k4oFymhkr7LmvzO
+
+2. Curta'n Wall - Crocodile Moat!!!!!!!
+   Vibe: Energy - Confidence
+   URL: https://open.spotify.com/track/7D5rXSv3KnsN0OhsEdIUBA
+
+3. The Red Jumpsuit Apparatus - Face Down
+   Vibe: Sad - Nostalgic Sad
+   URL: https://open.spotify.com/track/4wzjNqjKAKDU82e8uMhzmr
+
+4. Percy Faith & His Orchestra & Chorus - The Little Drummer Boy
+   Vibe: Sad - Nostalgic Childhood
+   URL: https://open.spotify.com/track/70sEUPLDNz3AXtrCnfbY5B
+
+5. James Arthur - Say You Won't Let Go
+   Vibe: Sad - Nostalgic Sad
+   URL: https://open.spotify.com/track/5uCax9HTNlzGybIStD3vDh
+
+6. Taylor Swift - Gorgeous
+   Vibe: Romantic - First Love
+   URL: https://open.spotify.com/track/1ZY1PqizIl78geGM4xWlEA
+
+7. Orville Peck - Dead of Night
+   Vibe: Drive - Night Drive
+   URL: https://open.spotify.com/track/08unC8N1V1dEcqiyi06g6W
+
+8. VIC MENSA - 2HONEST feat. SAINt JHN
+   Vibe: Romantic - Anniversary
+   URL: https://open.spotify.com/track/0iHGKZiXJ5Mqq14MJ9mjxg
+
+9. The Boomtown Rats - I Don't Like Mondays
+   Vibe: Dark - Haunting
+   URL: https://open.spotify.com/track/7JFoeg0arawADjGcz9gBnq
+
+10. Rex Orange County - Pluto Projector
+   Vibe: Chill - Evening
+   URL: https://open.spotify.com/track/4EWBhKf1fOFnyMtUzACXEc
+
+11. Blutengel - Nachtbringer
+   Vibe: Dark - Gothic
+   URL: https://open.spotify.com/track/3c1wNOwpwve9xem9FguJ8o
+
+12. Sting - Shape Of My Heart
+   Vibe: Sad - Nostalgic Sad
+   URL: https://open.spotify.com/track/6CKoWCWAqEVWVjpeoJXyNH
+
+13. Spit Syndicate - All Summer Long (Part Two)
+   Vibe: Dark - Gothic
+   URL: https://open.spotify.com/track/16O4tiTxlY5o9mJeq11M2a
+
+14. Hawthorne Heights - Saying Sorry
+   Vibe: Sad - Nostalgic Sad
+   URL: https://open.spotify.com/track/3tNF4ktNoFYVbzd5LAgfMY
+
+15. Nathan Sykes - Over And Over Again
+   Vibe: Romantic - Slow Dance
+   URL: https://open.spotify.com/track/26h6qDR3KtieqIWgnveqmC
+
+16. 2Pac - Run Tha Streetz (ft. Michel'le, Storm, Mutah)
+   Vibe: Night - Contemplative
+   URL: https://open.spotify.com/track/4FzMYYcuQg10kBzXgauodD
+
+17. Joy Division - I Remember Nothing - 2019 Digital Master
+   Vibe: Dark - Anxious Existential Dread
+   URL: https://open.spotify.com/track/2kRkLYYspTSmsVjME4Vuke
+
+18. proderics - strangers
+   Vibe: Night - Contemplative
+   URL: https://open.spotify.com/track/2QdcmNlQdW8iA4JEg29cgx
+
+19. EBK Jaaybo - Death Bedz
+   Vibe: Sad - Grief
+   URL: https://open.spotify.com/track/61CL5LrWlAIdi0uJ9wVyTC
+
+20. Fiona Apple - Werewolf
+   Vibe: Sad - Heartbreak
+   URL: https://open.spotify.com/track/5exHP9IYyaFSeQ5Y4OtbKb
+
+21. Coldplay - Hymn for the Weekend - Seeb Remix
+   Vibe: Happy - Carefree
+   URL: https://open.spotify.com/track/6s3GEN8wK0OMzzzZbXj0fu
+
+22. HENGE - Mushroom One
+   Vibe: Party - Festival
+   URL: https://open.spotify.com/track/5rzWO6vgUOP4ZrCtfrqPfU
+
+23. Mystery - Broken Legacy (FKA Untitled)
+   Vibe: Dark - Gothic
+   URL: https://open.spotify.com/track/18TdiRdEvYVVLDolsxn92g
+
+24. The Glitch Mob - Drive It Like You Stole It
+   Vibe: Drive - Speed
+   URL: https://open.spotify.com/track/0Dz49qemTOjX9RcPZzIl2q
+
+25. Anne-Marie - Perfect to Me
+   Vibe: Energy - Confidence
+   URL: https://open.spotify.com/track/0DC7Zs2qvAbNK1owWQ4mlL
+
+26. Billie Eilish - Bored
+   Vibe: Sad - Heartbreak
+   URL: https://open.spotify.com/track/04sN26COy28wTXYj3dMoiZ
+
+27. slowli - Apologize - slowed + reverb
+   Vibe: Sad - Crying
+   URL: https://open.spotify.com/track/0szwwD7KjBSfKlT3ZQ5qeb
+
+28. Nox Arcana - Night of the Wolf
+   Vibe: Dark - Gothic
+   URL: https://open.spotify.com/track/5m7xgHEk6UGAxfjUrAoomE
+
+29. Party Tyme - Angels Cry (made popular by Mariah Carey ft. Ne-Yo) [backing version]
+   Vibe: Sad - Grief
+   URL: https://open.spotify.com/track/0Bht7EojkiCEpF5WXJH803
+
+30. Kid Ink - Hell & Back
+   Vibe: Party - Pregame
+   URL: https://open.spotify.com/track/0TKWHD7sbO0CrEAdegPLZm
+
+31. ConKi - Ghost
+   Vibe: Romantic - Intimate
+   URL: https://open.spotify.com/track/7vuqyEt5hBBxSuakZBZLiK
+
+32. Alec Benjamin - Devil Doesn’t Bargain
+   Vibe: Sad - Heartbreak
+   URL: https://open.spotify.com/track/1zu2GKHPJIsUu80SUJX4H4
+
+33. The Devil Makes Three - I Am the Man Thomas
+   Vibe: Dark - Gothic
+   URL: https://open.spotify.com/track/3sxk63HVjX2kxNYNgd4onT
+
+34. Taylor Swift - I Forgot That You Existed
+   Vibe: Happy - Carefree
+   URL: https://open.spotify.com/track/43rA71bccXFGD4C8GOpIlN
+
+35. Bruno Mars - Grenade
+   Vibe: Sad - Heartbreak
+   URL: https://open.spotify.com/track/2tJulUYLDKOg9XrtVkMgcJ
+
+36. Coldplay - Fix You
+   Vibe: Sad - Nostalgic Sad
+   URL: https://open.spotify.com/track/7LVHVU3tWfcxj5aiPFEW4Q
+
+37. Avicii - Wake Me Up - PANG! Slowing Things Down Remix
+   Vibe: Chill - Sunday
+   URL: https://open.spotify.com/track/0gxfMHKy5AJyQw9fjJ81Je
+
+38. MIIA - Dynasty
+   Vibe: Sad - Crying
+   URL: https://open.spotify.com/track/37G4GK7vIzFjGWsDTWcA85
+
+39. Daughtry - It's Not Over
+   Vibe: Sad - Nostalgic Sad
+   URL: https://open.spotify.com/track/234RqTZmnDTnxWlVciXHLD
+
+40. Kina Grannis - Can't Help Falling In Love
+   Vibe: Romantic - Proposal
+   URL: https://open.spotify.com/track/6lfxq3CG4xtTiEg7opyCyx
+
+41. Train - Marry Me
+   Vibe: Romantic - Proposal
+   URL: https://open.spotify.com/track/2MWOqewf5j0qf2b6S5J6cS
+
+42. Bob Dylan - Don't Think Twice, It's All Right
+   Vibe: Sad - Heartbreak
+   URL: https://open.spotify.com/track/2WOjLF83vqjit2Zh4B69V3
+
+43. Universe Mind - Memories from Childhood
+   Vibe: Chill - Meditative
+   URL: https://open.spotify.com/track/7ItbzgvdQGfmAuwgZwTu8Y
+
+44. Trent Reznor and Atticus Ross - 3:14 Every Night
+   Vibe: Night - 3AM Thoughts
+   URL: https://open.spotify.com/track/6mJ5uZ33r2y1TRrax79k5p
+
+45. Kevin Rudolf - I Made It (Cash Money Heroes)
+   Vibe: Happy - Celebration
+   URL: https://open.spotify.com/track/6H2wnX7ytNeCKERIVqCwgs
+
+46. Journey - Don't Stop Believin'
+   Vibe: Sad - Nostalgic Simpler Times
+   URL: https://open.spotify.com/track/0IzVqcgtHh8NzWYxyPsUky
+
+47. Musica Sacra - The Race That Long in Darkness
+   Vibe: Dark - Gothic
+   URL: https://open.spotify.com/track/3ILDMPVaUmeWTSPLX6VVmH
+
+48. Scott Walker - The Old Man's Back Again (Dedicated To The Neo-Stalinist Regime)
+   Vibe: Night - Contemplative
+   URL: https://open.spotify.com/track/1RJkO4wNDYEuniXzg6WzA1
+
+49. tora shinoda - Girei (Pain’s Theme)
+   Vibe: Dark - Gothic
+   URL: https://open.spotify.com/track/3Sl9Ggb546gxlyoB3Nu8iG
+
+50. Babyface - How Come, How Long (feat. Stevie Wonder)
+   Vibe: Night - Introspective Philosophical
+   URL: https://open.spotify.com/track/6kTakcO9wwXh8tEqmJSV8h
+
+
+======================================================================
+HIGH-PRIORITY SONGS (Top 20 by comment score):
+======================================================================
+
+1. JVKE - golden hour
+   Score: 318,394
+   URL: https://open.spotify.com/track/4yNk9iz9WVJikRFle3XEvn
+
+2. Lady Gaga - Abracadabra
+   Score: 280,830
+   URL: https://open.spotify.com/track/5ZLUm9eab8y3tqQ1OhQSHI
+
+3. Gotye - Somebody That I Used To Know - Tiësto Remix
+   Score: 276,294
+   URL: https://open.spotify.com/track/0RtMRbaqeadQFvlYxcAczv
+
+4. Macklemore - Glorious (feat. Skylar Grey)
+   Score: 215,041
+   URL: https://open.spotify.com/track/0CokSRCu5hZgPxcZBaEzVE
+
+5. Billie Eilish - Happier Than Ever
+   Score: 197,244
+   URL: https://open.spotify.com/track/4RVwu0g32PAqgUiJoXsdF8
+
+6. Ed Sheeran - Perfect
+   Score: 185,370
+   URL: https://open.spotify.com/track/0tgVpDi06FyKpA1z0VMD4v
+
+7. Avicii - Wake Me Up
+   Score: 154,344
+   URL: https://open.spotify.com/track/0nrRP2bk19rLc0orkWPQk2
+
+8. Sabrina Carpenter - Espresso
+   Score: 149,718
+   URL: https://open.spotify.com/track/2HRqTpkrJO5ggZyyK6NPWz
+
+9. Ariana Grande - we can't be friends (wait for your love)
+   Score: 123,532
+   URL: https://open.spotify.com/track/51ZQ1vr10ffzbwIjDCwqm4
+
+10. The Weeknd - Save Your Tears
+   Score: 121,208
+   URL: https://open.spotify.com/track/5QO79kh1waicV47BqGRL3g
+
+11. Sadstation - A Prova de Balas
+   Score: 118,689
+   URL: https://open.spotify.com/track/51ExA7wFlYA4ejNtj7t7s1
+
+12. Trae Tha Truth - I'm On 3.0
+   Score: 113,498
+   URL: https://open.spotify.com/track/2g6w6UdtIBrk3HDN00wmsw
+
+13. Billie Eilish - BIRDS OF A FEATHER
+   Score: 113,166
+   URL: https://open.spotify.com/track/6dOtVTDdiauQNBQEDOtlAB
+
+14. Owsley - Oh No the Radio
+   Score: 112,828
+   URL: https://open.spotify.com/track/30mYFazLoBVKGTXSWXYA7R
+
+15. Ali Gatie - It's You
+   Score: 110,494
+   URL: https://open.spotify.com/track/5DqdesEfbRyOlSS3Tf6c29
+
+16. Katy Perry - The One That Got Away
+   Score: 98,982
+   URL: https://open.spotify.com/track/6hkOqJ5mE093AQf2lbZnsG
+
+17. Joji - Glimpse of Us
+   Score: 98,832
+   URL: https://open.spotify.com/track/2mlNgAeIBnL78ZriXgrRHz
+
+18. Party Tyme - death bed (coffee for your head) [made popular by Powfu ft. Beabadoobee] [backing version]
+   Score: 94,232
+   URL: https://open.spotify.com/track/4671V1XEmM8IVLu4oTangM
+
+19. Fabvl - World I Never Knew
+   Score: 92,490
+   URL: https://open.spotify.com/track/7yQ8i7mm477KSY3qPiVwFX
+
+20. Tatzstar 2 Shiny - Ma Girls
+   Score: 89,831
+   URL: https://open.spotify.com/track/7hdHZPwsyPXzdH2ZoTKGuT
+
+
+======================================================================
+VALIDATION INSTRUCTIONS:
+======================================================================
+
+1. Copy each URL and paste into your browser
+2. Check if the song loads correctly on Spotify
+3. Verify artist and song name match
+4. Note any broken links or mismatches
+
+If you find broken IDs:
+- Search for correct song on Spotify
+- Extract track ID from URL
+- Update tapestry_quality_final.json
+- Run sync_to_webapp.py
