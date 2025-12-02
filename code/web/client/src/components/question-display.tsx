@@ -41,19 +41,19 @@ function useTypewriter(text: string, speed: number = 35, startDelay: number = 0)
   return { displayed, isTyping, isDone };
 }
 
-// Blinking cursor component - thin bar aligned to text baseline
+// Blinking cursor component - thin bar aligned with text
 function BlinkingCursor({ visible }: { visible: boolean }) {
   if (!visible) return null;
   return (
     <span 
       className="animate-blink inline-block ml-1"
       style={{
-        width: '3px',
-        height: '0.9em',
+        width: '4px',
+        height: '0.7em',
         backgroundColor: 'rgb(192, 132, 252)',
         verticalAlign: 'baseline',
         position: 'relative',
-        top: '-0.1em',  // negative = up
+        top: '0.15em',  // positive = DOWN toward the dot
         borderRadius: '1px',
       }}
     />
