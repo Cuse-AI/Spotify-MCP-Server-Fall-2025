@@ -3,7 +3,7 @@
 ---
 
 ## Session: December 1-2, 2025 - MAJOR SYSTEM REBUILD
-### Status: Ananki V2 Modular System Built, Relevancy Check Running
+### Status: Relevancy Check ~63% Complete, UI Polish In Progress
 
 ---
 
@@ -12,8 +12,6 @@
 #### 1. MANIFOLD REDESIGN ✅
 Repositioned all 9 meta-vibes for proper emotional adjacency:
 ```
-OLD PROBLEM: Sad was next to Happy/Energy (made no sense!)
-
 NEW LAYOUT (Y-axis = Light→Dark, X-axis = Intense→Calm):
 
          Happy(500,200)
@@ -22,17 +20,11 @@ NEW LAYOUT (Y-axis = Light→Dark, X-axis = Intense→Calm):
          Sad(500,600)
     Drive(200,650)
     Dark(350,800)     Night(550,850)
-
-VERIFIED ADJACENCIES:
-- Sad → Dark, Night, Energy ✅
-- Happy → Party, Chill ✅
-- Dark → Night, Drive, Sad ✅
-- Energy → Party, Drive ✅
 ```
-Backup saved: `data/manifold/emotional_manifold_BACKUP_20251201_204318.json`
+Backup: `data/manifold/emotional_manifold_BACKUP_20251201_204318.json`
 
 #### 2. ANANKI V2 MODULAR SYSTEM ✅
-Created new modular analysis system in `/ananki/`:
+Created modular analysis system in `/ananki/`:
 
 | Module | Model | Cost | Purpose |
 |--------|-------|------|---------|
@@ -40,97 +32,127 @@ Created new modular analysis system in `/ananki/`:
 | `helper_coordinates.py` | Haiku | ~$0.001/song | Assign AI-analyzed x,y coordinates |
 | `analyzer.py` | Sonnet | ~$0.01/song | Full sub-vibe mapping + reasoning |
 
-**Scoring System (Relevancy):**
-- 5 = Perfect (directly describes emotional experience)
-- 4 = Strong (emotional content fitting mood)
-- 3 = Good (generally meaningful)
-- 2 = Weak but OK (mildly relevant OR funny/insightful)
-- 1 = FAIL (facts, popularity, timestamps, generic)
+#### 3. EMOTIONAL PIN COMPONENT ✅ (Multiple Iterations)
+**Goal:** Replace blank album art with visual "pins" showing emotional position
 
-#### 3. EMOTIONAL PIN COMPONENT ✅
-Replaced blank album art with color gradient pins:
-- Colors based on proximity to meta-vibes using coordinates
-- Hover → shows Spotify link icon
+**Iteration 1:** CSS-based pin with gradients
+- Problem: Looked like blobs, not pins
+
+**Iteration 2:** SVG-based teardrop pin shape
+- Proper vector pin/marker shape
+- Radial gradient fills based on coordinates
+- Colors blend based on proximity to 9 meta-vibes
 - Click → opens track in Spotify
-- NO MORE album art API calls needed!
+- Hover → scales up
 
-Files:
-- `code/web/client/src/components/emotional-pin.tsx` (NEW)
-- `code/web/client/src/components/playlist-results.tsx` (MODIFIED)
+**Current file:** `code/web/client/src/components/emotional-pin.tsx`
 
 #### 4. DATA SYNC FIX ✅
-Found stats bar was reading from stale file at `code/web/client/public/core/tapestry.json`
-Updated `core/sync_to_webapp.py` to sync to ALL THREE locations:
+Found THREE tapestry locations (was causing stats mismatch):
 1. `core/tapestry.json` (source)
 2. `code/web/core/tapestry.json` (server)
 3. `code/web/client/public/core/tapestry.json` (frontend static)
 
----
+Updated `core/sync_to_webapp.py` to sync all three.
 
-### CURRENTLY RUNNING: Relevancy Check
-
-**Process:** `helper_relevancy.py` scanning all 4,976 songs
-**Progress:** ~1,800/4,976 (~36%) as of last check
-**Pass Rate:** ~82-83%
-**Estimated Completion:** ~40 more minutes
-
-**Sample failures caught:**
-- "Generic timestamp comment with no emotional insight"
-- "Comment references different artist"
-- "Promotional comment about album release"
-- "News about artist's passing, not emotional experience"
+#### 5. UI CLEANUP ✅
+- Removed album art entirely (EmotionalPin only)
+- Removed preview_url functionality (unreliable)
+- Cleaned unused imports (Play, Pause, useRef, useEffect)
 
 ---
 
-### NEXT STEPS (After Relevancy Finishes)
+### CURRENTLY IN PROGRESS
 
-1. **Remove failed songs** from tapestry (~800-900 expected failures)
-2. **Run coordinate helper** on remaining songs (with NEW manifold positions)
-3. **Sync everything** to webapp
-4. **Commit & push** for Vercel deployment
-5. **Test** the new emotional pins!
+#### Relevancy Check (PID: 77616)
+```
+Progress: ~3150/4976 (~63%)
+Passed:   2557 (81%)
+Failed:   593 (19%)
+
+Score Distribution:
+  5 (Perfect):  581 (18%)
+  4 (Strong):   567 (18%)
+  3 (Good):     213 (7%)
+  2 (Weak OK):  1196 (38%)
+  1 (FAIL):     593 (19%)
+```
+**ETA:** ~20-25 more minutes
+
+#### UI Ideas Being Explored
+1. **Journey Path Visualization** - The `Chill → Night → Drive` bar above playlist looks boring
+   - Idea: Mini manifold path showing actual coordinate journey
+   - Idea: Colored dots for each song's position
+   - Idea: Remove entirely, let playlist speak for itself
+
+2. **Midden Logo/Icon** - Instead of generic pin shape
+   - Could be layered circles (sediment/midden theme)
+   - Could be abstract "M" like sound waves
+   - Could be compass/navigation symbol
+   - Brainstorming with Replit for ideas
 
 ---
 
-### FILES CLEANED UP
-Moved temp debug scripts to `archive/temp_scripts/`:
-- check_coords.py
-- check_manifold.py
-- test_manifold.py
-- redesign_manifold.py
-- update_manifold.py
+### NEXT STEPS
+
+1. **Wait for relevancy check to complete** (~20 min)
+2. **Remove failed songs** from tapestry (~950 expected)
+3. **Run coordinate helper** on remaining ~4000 songs
+4. **Finalize pin design** (pending logo brainstorm)
+5. **Journey path visualization** (pending decision)
+6. **Sync & deploy** to Vercel
+7. **Test everything** before demo
 
 ---
 
-### KEY FILE LOCATIONS
+### FILES MODIFIED THIS SESSION
 
 ```
-/ananki/                          <- NEW Ananki V2 modules
-  helper_relevancy.py             <- Haiku relevancy filter
-  helper_coordinates.py           <- Haiku coordinate assignment
-  analyzer.py                     <- Sonnet full analysis
-  output/                         <- Checkpoint files
+/ananki/
+  helper_relevancy.py         <- NEW (running now)
+  helper_coordinates.py       <- NEW (run after relevancy)
+  analyzer.py                 <- Updated
+  output/                     <- Checkpoint files
 
 /core/
-  tapestry.json                   <- Main data (4,976 songs)
-  sync_to_webapp.py               <- Syncs to all 3 webapp locations
+  tapestry.json               <- Will be updated after relevancy
+  sync_to_webapp.py           <- Fixed to sync 3 locations
 
 /data/manifold/
-  emotional_manifold_COMPLETE.json <- REDESIGNED manifold
+  emotional_manifold_COMPLETE.json  <- REDESIGNED positions
 
 /code/web/client/src/components/
-  emotional-pin.tsx               <- NEW color gradient component
-  playlist-results.tsx            <- MODIFIED (uses EmotionalPin)
+  emotional-pin.tsx           <- NEW (SVG pin with gradients)
+  playlist-results.tsx        <- Uses EmotionalPin, removed preview
+
+/archive/temp_scripts/        <- Moved debug scripts here
+```
+
+---
+
+### META-VIBE COLORS (Reference)
+```
+Happy:    #FFD93D (bright yellow)
+Party:    #E91E8C (magenta)  
+Chill:    #6DD5C3 (teal)
+Energy:   #FF6B35 (orange-red)
+Romantic: #FF85A2 (pink)
+Sad:      #4A90D9 (blue)
+Drive:    #F97316 (electric orange)
+Dark:     #8B5CF6 (purple)
+Night:    #2D3047 (deep indigo)
 ```
 
 ---
 
 ### DEMO TIMELINE
-- **Dec 2:** Demo day (TOMORROW!)
+- **Dec 2:** Demo day (TODAY!)
 - **Dec 4:** Industry AI summit
-- **Target:** Clean, quality data with proper coordinates
+- **Target:** Clean data, working pins, polished UI
 
 ---
 
-### SESSION SUMMARY
-Major infrastructure rebuild. The system is now properly modular, the manifold makes emotional sense, and we have a beautiful visual representation of emotional positioning. Once the relevancy check finishes and we apply proper coordinates, the app will be significantly more polished.
+### SESSION NOTES
+Major rebuild session. The infrastructure is now modular and clean. Manifold makes emotional sense. Visual pins are working (though logo design TBD). Relevancy check catching ~19% bad data - quality over quantity. Once complete, we'll have ~4000 verified high-quality songs with proper coordinates.
+
+**Brainstorming with Replit:** Logo/icon ideas for Midden brand mark to replace generic pin shape.

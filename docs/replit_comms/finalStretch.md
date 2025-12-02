@@ -1,114 +1,62 @@
 # finalStretch - Replit Comms
-## December 2, 2025 - Pre-Demo Sprint
+## December 2, 2025 - Demo Day Sprint
 
 ---
 
-## OVERVIEW
+## CURRENT STATUS
 
-We're in the final stretch before the demo! This session focused on major infrastructure improvements:
-
-1. **Manifold Redesign** - Meta-vibes now positioned with proper emotional adjacency
-2. **Ananki V2 System** - Modular analysis with Haiku (cheap) and Sonnet (expensive) stages
-3. **Emotional Pins** - Color gradient badges replace album art, based on manifold coordinates
-4. **Data Quality Check** - Running relevancy filter on all 4,976 songs
+**Relevancy Check:** ~63% complete (3150/4976), 81% pass rate
+**ETA:** ~20-25 minutes to completion
 
 ---
 
-## CRITICAL: Manifold Changed!
+## LOGO BRAINSTORM REQUEST 🎨
 
-The meta-vibe positions have been completely redesigned for emotional logic:
+We need a **Midden brand icon** to replace the generic pin shape in the playlist UI.
 
-```
-NEW POSITIONS:
-  Happy:    (500, 200)  <- TOP CENTER (brightest)
-  Party:    (300, 250)
-  Chill:    (700, 250)
-  Energy:   (250, 450)
-  Romantic: (750, 450)
-  Sad:      (500, 600)
-  Drive:    (200, 650)
-  Dark:     (350, 800)
-  Night:    (550, 850)  <- BOTTOM (darkest)
-```
+### Context
+- Each song has x,y coordinates on a 1000x1000 "emotional manifold"
+- The icon shows a color gradient based on proximity to 9 meta-vibes
+- Currently using a generic teardrop/map-pin SVG shape
+- Want something unique that represents the Midden brand
 
-This means:
-- Y-axis: LOW = Light/Happy, HIGH = Dark/Heavy
-- X-axis: LOW = Intense, HIGH = Calm/Relaxed
+### What "Midden" Means
+A midden is an archaeological trash heap - layers of human artifacts/remains that tell stories about people who lived there. Our app creates "middens" of musical emotions - layered, human-sourced emotional connections to songs.
 
-All 106 sub-vibes have been recalculated based on these new positions.
+### Logo Concept Ideas
 
----
+**1. Layered Circles/Strata**
+- Horizontal bands like sediment layers
+- Each layer could be a different color (emotion)
+- Represents the archaeological midden theme
 
-## NEW: Ananki V2 Modules
+**2. Sound Wave "M"**
+- Abstract M shape made of peaks and valleys
+- Like audio waveform or emotional journey graph
+- Musical + emotional connection
 
-Located in `/ananki/`:
+**3. Compass/Navigation Rose**
+- We're navigating emotional space
+- Could have 9 points for 9 meta-vibes
+- Journey/exploration theme
 
-### helper_relevancy.py (Haiku - cheap)
-Filters comments for relevance. Scores 1-5:
-- 5 = Perfect emotional match
-- 4 = Strong emotional content
-- 3 = Generally meaningful
-- 2 = Weak but acceptable
-- 1 = FAIL (remove from tapestry)
+**4. Faceted Gem/Crystal**
+- Emotions have many facets
+- Gradient fills each face differently
+- Premium/precious feel
 
-### helper_coordinates.py (Haiku - cheap)
-Assigns x,y coordinates based on emotional analysis of comment.
-Uses weighted average of meta-vibe positions.
+**5. Abstract Pin with Character**
+- Keep the pin shape but stylize it
+- Maybe with internal pattern/texture
+- Could have the layered/strata look inside
 
-### analyzer.py (Sonnet - expensive)
-Full sub-vibe mapping with "why it fits" reasoning.
-Only runs on songs that pass relevancy.
+### Technical Requirements
+- Works as SVG (scalable)
+- Looks good at 48x58px (current pin size)
+- Can be filled with gradient based on coordinates
+- Simple enough to be recognizable small
 
----
-
-## NEW: Emotional Pin Component
-
-`/code/web/client/src/components/emotional-pin.tsx`
-
-- Displays color gradient based on song's x,y coordinates
-- Colors blend based on proximity to meta-vibes
-- Click to open in Spotify (no more preview API needed!)
-- Much more on-brand than generic album art
-
----
-
-## CURRENTLY RUNNING
-
-Relevancy check on all 4,976 songs (~82% pass rate so far)
-
-After completion:
-1. Remove failed songs
-2. Run coordinate helper for AI-analyzed positions
-3. Sync to webapp
-4. Deploy!
-
----
-
-## FILES TO KNOW
-
-```
-/ananki/                           <- New analysis modules
-/data/manifold/emotional_manifold_COMPLETE.json  <- Redesigned!
-/core/tapestry.json                <- Main data
-/core/sync_to_webapp.py            <- Syncs to all 3 webapp locations
-/code/web/client/src/components/emotional-pin.tsx  <- New component
-```
-
----
-
-## WEBAPP SYNC LOCATIONS
-
-The tapestry must exist in THREE places:
-1. `/core/tapestry.json` (source of truth)
-2. `/code/web/core/tapestry.json` (server)
-3. `/code/web/client/public/core/tapestry.json` (frontend static)
-
-Run `python core/sync_to_webapp.py` after any tapestry changes!
-
----
-
-## META-VIBE COLORS (for reference)
-
+### Color Palette
 ```
 Happy:    #FFD93D (bright yellow)
 Party:    #E91E8C (magenta)
@@ -123,17 +71,34 @@ Night:    #2D3047 (deep indigo)
 
 ---
 
-## DEMO PREP CHECKLIST
+## OTHER UI IMPROVEMENTS NEEDED
 
-- [ ] Relevancy check complete
-- [ ] Failed songs removed
-- [ ] Coordinate helper run
-- [ ] Sync to webapp
-- [ ] Git commit & push
-- [ ] Vercel deployment verified
-- [ ] Test emotional pins display
-- [ ] Test Spotify links work
+### Journey Path Visualization
+Current: Boring text bubbles `Chill → Night → Drive`
+Want: Mini manifold path or colored journey representation
+Ideas welcome!
 
 ---
 
-Good luck with the demo! The system is way cleaner now. 🚀
+## QUICK REFERENCE
+
+### New Manifold Positions
+```
+Happy:    (500, 200)  <- TOP (brightest)
+Party:    (300, 250)
+Chill:    (700, 250)
+Energy:   (250, 450)
+Romantic: (750, 450)
+Sad:      (500, 600)
+Drive:    (200, 650)
+Dark:     (350, 800)
+Night:    (550, 850)  <- BOTTOM (darkest)
+```
+
+### Key Files
+- `/code/web/client/src/components/emotional-pin.tsx` - Pin component
+- `/data/manifold/emotional_manifold_COMPLETE.json` - Manifold positions
+
+---
+
+Looking forward to your logo ideas! 🎨
