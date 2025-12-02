@@ -41,11 +41,11 @@ function useTypewriter(text: string, speed: number = 35, startDelay: number = 0)
   return { displayed, isTyping, isDone };
 }
 
-// Blinking cursor component
+// Blinking cursor component - sized to match text
 function BlinkingCursor({ visible }: { visible: boolean }) {
   if (!visible) return null;
   return (
-    <span className="animate-blink text-purple-400 font-normal ml-0.5">▌</span>
+    <span className="animate-blink text-purple-400 font-normal ml-0.5 text-[0.85em]">▌</span>
   );
 }
 
@@ -59,15 +59,15 @@ export function QuestionDisplay({ question, isVisible }: QuestionDisplayProps) {
   if (!isVisible) return null;
 
   return (
-    <div className="flex items-start gap-3 justify-center">
-      {/* Mannaz rune as command prompt - sized to match text */}
+    <div className="flex items-center gap-3 justify-center">
+      {/* Mannaz rune as command prompt - sized to match text height */}
       <div 
-        className="flex-shrink-0 pt-1"
+        className="flex-shrink-0"
         style={{
           filter: 'drop-shadow(0 0 8px rgba(139, 92, 246, 0.5))',
         }}
       >
-        <MannazLogo size={24} color="hsl(262, 70%, 70%)" />
+        <MannazLogo size={20} color="hsl(262, 70%, 70%)" />
       </div>
       
       {/* Question with typing effect */}

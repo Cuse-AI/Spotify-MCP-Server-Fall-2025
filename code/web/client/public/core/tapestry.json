@@ -29643,38 +29643,6 @@
           }
         },
         {
-          "artist": "Avicii",
-          "song": "Wake Me Up - PANG! Slowing Things Down Remix",
-          "spotify_id": "0gxfMHKy5AJyQw9fjJ81Je",
-          "spotify_uri": "spotify:track:0gxfMHKy5AJyQw9fjJ81Je",
-          "comment_score": 9,
-          "source_url": "https://youtube.com/watch?v=P7fmO6t-4fU",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Boring day music",
-          "comment_text": "Feeling my way through the darkness\nGuided by a beating heart\nI can't tell where the journey will end\nBut I know where it starts\nThey tell me I'm too young to understand\nThey say I'm caught up in a dream\nWell life will pass me by if I don't open up my eyes\nWell that's fine by me\n\nSo wake me up when it's all over\nWhen I'm wiser and I'm older\nAll this time I was finding myself\nAnd I didn't know I was lost\n[x2]\n\nI tried carrying the weight of the world\nBut I only have two hands\nI hope I get the chance to travel the world\nAnd I don't have any plans\nI wish that I could stay forever this young\nNot afraid to close my eyes\nLife's a game made for everyone\nAnd love is a prize\n\nSo wake me up when it's all over\nWhen I'm wiser and I'm older\nAll this time I was finding myself\nAnd I didn't know I was lost\n[x2]\n\nI didn't know I was lost................ ........",
-          "ananki_reasoning": "The post is titled 'Boring day music' and features lyrics from Avicii's 'Wake Me Up' in a slowed-down remix version. The emotional context suggests a passive, reflective state during an uneventful day - not sad or depressed, but rather in a contemplative, low-energy mood where time feels slow. The lyrics about being 'too young to understand,' being 'caught up in a dream,' and 'life will pass me by' combined with 'that's fine by me' convey acceptance of a slower pace. The slowed remix format reinforces this relaxed, dragging-time feeling. 'Chill - Sunday' best captures this specific vibe of boring-day contentment - a lazy, uneventful atmosphere where nothing much is happening and that's okay. It's distinctly different from purposeful relaxation (Morning Coffee, Evening) or melancholic reflection (Sad - Melancholic, Night - 3AM Thoughts), instead fitting the specific emotional space of a boring, slow-moving day.",
-          "mapped_subvibe": "Chill - Sunday",
-          "coordinates": {
-            "x": 622.5,
-            "y": 402.5
-          },
-          "current_vibe": "Chill - Sunday",
-          "emotional_composition": {
-            "Sad": 0.2,
-            "Chill": 0.5,
-            "Romantic": 0.15,
-            "Dark": 0.1,
-            "Happy": 0.05,
-            "Energy": 0.0,
-            "Night": 0.0,
-            "Drive": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
           "artist": "Lido",
           "song": "Only One",
           "spotify_id": "2ORJ560yUWjOPeSYMXC86V",
