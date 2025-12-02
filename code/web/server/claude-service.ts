@@ -70,6 +70,7 @@ function enrichSongsWithHumanContext(songs: TapestrySong[], tapestry: TapestryCo
   // Build lookup maps
   const songLookupByUri = new Map<string, any>();
   const songLookupByArtistTitle = new Map<string, any>();
+  const songLookupByTitle = new Map<string, any[]>(); // Multiple songs can have same title
   
   for (const [subVibe, vibeData] of Object.entries(tapestry.vibes)) {
     for (const song of vibeData.songs || []) {
@@ -82,6 +83,13 @@ function enrichSongsWithHumanContext(songs: TapestrySong[], tapestry: TapestryCo
       // Map by normalized artist+title for fallback matching
       const key = `${song.artist.toLowerCase().trim()}:::${song.song.toLowerCase().trim()}`;
       songLookupByArtistTitle.set(key, song);
+      
+      // Also map by just title (for fuzzy matching when artist differs slightly)
+      const titleKey = song.song.toLowerCase().trim();
+      if (!songLookupByTitle.has(titleKey)) {
+        songLookupByTitle.set(titleKey, []);
+      }
+      songLookupByTitle.get(titleKey)!.push(song);
     }
   }
   
@@ -94,6 +102,25 @@ function enrichSongsWithHumanContext(songs: TapestrySong[], tapestry: TapestryCo
     if (!original && !song.extrapolated) {
       const artistTitleKey = `${song.artist.toLowerCase().trim()}:::${song.title.toLowerCase().trim()}`;
       original = songLookupByArtistTitle.get(artistTitleKey);
+      
+      // If still not found, try matching just by title (artist names can vary)
+      if (!original) {
+        const titleKey = song.title.toLowerCase().trim();
+        const titleMatches = songLookupByTitle.get(titleKey);
+        if (titleMatches && titleMatches.length > 0) {
+          // If only one match, use it; if multiple, try to find best artist match
+          if (titleMatches.length === 1) {
+            original = titleMatches[0];
+          } else {
+            // Try to find one where artist partially matches
+            const artistLower = song.artist.toLowerCase();
+            original = titleMatches.find(s => 
+              s.artist.toLowerCase().includes(artistLower) || 
+              artistLower.includes(s.artist.toLowerCase())
+            ) || titleMatches[0]; // Fallback to first match
+          }
+        }
+      }
       
       if (original) {
         // FIX the track_id with the correct one from tapestry!

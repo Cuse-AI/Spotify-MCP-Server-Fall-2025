@@ -132,17 +132,31 @@ export function SoulGem({ songs, size = 240 }: SoulShardProps) {
       onMouseEnter={() => setShowDetails(true)}
       onMouseLeave={() => hasAnimated && setShowDetails(false)}
     >
-      {/* Outer ambient glow */}
+      {/* Outer ambient glow - MORE prominent when crystallized */}
       <div 
         className="absolute rounded-full transition-all duration-700"
         style={{ 
-          top: '10%',
-          left: '10%',
-          right: '10%',
-          bottom: '10%',
-          background: `radial-gradient(circle, ${glowColor} 0%, transparent 60%)`,
-          opacity: showDetails ? 0.2 : 0.4,
-          filter: 'blur(30px)',
+          top: '5%',
+          left: '5%',
+          right: '5%',
+          bottom: '5%',
+          background: `radial-gradient(circle, ${glowColor} 0%, transparent 70%)`,
+          opacity: showDetails ? 0.25 : 0.6,
+          filter: 'blur(35px)',
+        }}
+      />
+      
+      {/* Secondary inner glow for depth */}
+      <div 
+        className="absolute rounded-full transition-all duration-700"
+        style={{ 
+          top: '20%',
+          left: '20%',
+          right: '20%',
+          bottom: '20%',
+          background: `radial-gradient(circle, rgba(255,255,255,0.15) 0%, ${glowColor} 40%, transparent 70%)`,
+          opacity: showDetails ? 0.1 : 0.35,
+          filter: 'blur(20px)',
         }}
       />
       
@@ -156,20 +170,20 @@ export function SoulGem({ songs, size = 240 }: SoulShardProps) {
         <defs>
           {/* Radial gradient - LIGHT center fading to DARK edges (like a real gem) */}
           <radialGradient id={gradientId} cx="40%" cy="35%" r="65%">
-            <stop offset="0%" stopColor="rgba(255,255,255,0.35)" />
-            <stop offset="40%" stopColor={glowColor} stopOpacity="0.25" />
-            <stop offset="100%" stopColor="hsl(262, 50%, 25%)" stopOpacity="0.15" />
+            <stop offset="0%" stopColor="rgba(255,255,255,0.4)" />
+            <stop offset="35%" stopColor={glowColor} stopOpacity="0.35" />
+            <stop offset="100%" stopColor="hsl(262, 50%, 20%)" stopOpacity="0.25" />
           </radialGradient>
 
           {/* Linear gradient for depth edges - darker for 3D effect */}
           <linearGradient id={`${gradientId}-edge`} x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor={glowColor} stopOpacity="0.8" />
-            <stop offset="100%" stopColor="hsl(262, 60%, 30%)" stopOpacity="0.6" />
+            <stop offset="0%" stopColor={glowColor} stopOpacity="0.9" />
+            <stop offset="100%" stopColor="hsl(262, 60%, 25%)" stopOpacity="0.7" />
           </linearGradient>
 
-          {/* Glow filter for crystallized state */}
+          {/* Glow filter for crystallized state - stronger */}
           <filter id={glowId} x="-50%" y="-50%" width="200%" height="200%">
-            <feGaussianBlur stdDeviation="8" result="blur" />
+            <feGaussianBlur stdDeviation="10" result="blur" />
             <feMerge>
               <feMergeNode in="blur" />
               <feMergeNode in="SourceGraphic" />

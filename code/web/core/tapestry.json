@@ -21571,38 +21571,6 @@
           }
         },
         {
-          "artist": "The Lumineers",
-          "song": "Angela",
-          "spotify_id": "0dV2XGlA08rObQZdL4mPOK",
-          "spotify_uri": "spotify:track:0dV2XGlA08rObQZdL4mPOK",
-          "comment_score": 6416,
-          "source_url": "https://youtube.com/watch?v=_II0fc7hgNY",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Romantic vibes✨🥞👁️👄👁️",
-          "comment_text": "She falls in love with a guy (Ophelia). Her father dies and the guy she loves asks her to leave town with him (Sleep On The Floor) but she stays in that town. She marries a guy she doesn't love and has a child (Angela). When she's old and divorced she regrets not leaving town with her lover, back when her father died (Cleopatra). Credit to Swiftologist for this theory.",
-          "ananki_reasoning": "The context describes 'Angela' as part of a narrative arc where the protagonist marries someone she doesn't love and has a child, ultimately leading to regret in old age about not following her true love. This song represents a pivotal moment of settling for a life path that will later be regretted. The emotional core is bittersweet nostalgia mixed with the sadness of lost opportunities and unfulfilled love - she's living a life but knowing it's not the one she truly wanted. This perfectly captures 'Nostalgic Sad' as it's about looking back on choices made and paths not taken, rather than acute grief or heartbreak in the present moment.",
-          "mapped_subvibe": "Sad - Nostalgic Sad",
-          "coordinates": {
-            "x": 542.5,
-            "y": 605.0
-          },
-          "current_vibe": "Sad - Nostalgic Sad",
-          "emotional_composition": {
-            "Sad": 0.55,
-            "Romantic": 0.25,
-            "Dark": 0.15,
-            "Night": 0.05,
-            "Chill": 0.0,
-            "Happy": 0.0,
-            "Energy": 0.0,
-            "Drive": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
           "artist": "Nirvana",
           "song": "The Man Who Sold The World - Live",
           "spotify_id": "15VRO9CQwMpbqUYA7e6Hwg",

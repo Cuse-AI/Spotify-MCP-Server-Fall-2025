@@ -59,10 +59,15 @@ export function QuestionDisplay({ question, isVisible }: QuestionDisplayProps) {
   if (!isVisible) return null;
 
   return (
-    <div className="flex items-start gap-4 justify-center">
-      {/* Mannaz rune as command prompt */}
-      <div className="flex-shrink-0 pt-1 opacity-70">
-        <MannazLogo size={32} color="hsl(262, 70%, 65%)" />
+    <div className="flex items-start gap-3 justify-center">
+      {/* Mannaz rune as command prompt - sized to match text */}
+      <div 
+        className="flex-shrink-0 pt-1"
+        style={{
+          filter: 'drop-shadow(0 0 8px rgba(139, 92, 246, 0.5))',
+        }}
+      >
+        <MannazLogo size={24} color="hsl(262, 70%, 70%)" />
       </div>
       
       {/* Question with typing effect */}
