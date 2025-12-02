@@ -192,7 +192,7 @@ def run_relevancy_check(input_source='tapestry', checkpoint_file=None):
         score = result.get('score', 0)
         score_counts[score] = score_counts.get(score, 0) + 1
         
-        if result['pass']:
+        if result['pass'] and score >= 3:  # Only pass score 3+
             song['relevancy_score'] = score
             song['relevancy_type'] = result['relevancy_type']
             passed.append(song)
@@ -200,14 +200,18 @@ def run_relevancy_check(input_source='tapestry', checkpoint_file=None):
             if score >= 4:
                 print(f"[{i+1}] GREAT ({score}): {song.get('artist', '?')[:15]} - {song.get('song', '?')[:20]}")
         else:
+            # Archive 1s and 2s
             failed.append({
                 'song': song,
                 'score': score,
-                'reason': result['reason'],
-                'relevancy_type': result['relevancy_type']
+                'reason': result.get('reason', 'Score below 3'),
+                'relevancy_type': result.get('relevancy_type', 'archived')
             })
-            print(f"[{i+1}] FAIL ({score}): {song.get('artist', '?')[:15]} - {song.get('song', '?')[:20]}")
-            print(f"        {result['reason']}")
+            if score <= 1:
+                print(f"[{i+1}] FAIL ({score}): {song.get('artist', '?')[:15]} - {song.get('song', '?')[:20]}")
+                print(f"        {result.get('reason', 'No reason')}")
+            else:
+                print(f"[{i+1}] WEAK ({score}): {song.get('artist', '?')[:15]} - {song.get('song', '?')[:20]} -> archived")
         
         # Progress & checkpoint
         if (i + 1) % 50 == 0:
