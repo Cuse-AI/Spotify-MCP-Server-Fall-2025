@@ -1,12 +1,31 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import type { PlaylistResponse, TapestrySong, UserJourney } from "@shared/schema";
-import { Music2, ThumbsUp, ThumbsDown, Quote } from "lucide-react";
+import type { PlaylistResponse, TapestrySong } from "@shared/schema";
+import { ThumbsUp, ThumbsDown, Quote, ExternalLink } from "lucide-react";
 import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
 import { CosmicBackground } from "./cosmic-background";
-import { ShardIcon } from "./shard-icon";
+import { SoulGem } from "./soul-gem";
+import { JourneyCard } from "./journey-card";
+
+// Meta-vibe colors for the dot indicator
+const VIBE_COLORS: Record<string, string> = {
+  Happy:    'hsl(48, 70%, 55%)',
+  Party:    'hsl(320, 65%, 55%)',
+  Chill:    'hsl(168, 55%, 50%)',
+  Energy:   'hsl(20, 65%, 55%)',
+  Romantic: 'hsl(340, 60%, 60%)',
+  Sad:      'hsl(210, 55%, 55%)',
+  Drive:    'hsl(25, 65%, 52%)',
+  Dark:     'hsl(262, 55%, 55%)',
+  Night:    'hsl(240, 40%, 35%)',
+};
+
+function getMetaVibeColor(subvibe: string): string {
+  const metaVibe = subvibe?.split(' - ')[0] || '';
+  return VIBE_COLORS[metaVibe] || VIBE_COLORS.Dark;
+}
 
 interface PlaylistResultsProps {
   data: PlaylistResponse;
@@ -150,185 +169,210 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
     <>
       <CosmicBackground />
       <div className="min-h-screen px-6 py-12 md:px-8 relative z-10">
-        <div className="max-w-3xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-10">
-          <h1 
-            className="text-4xl font-semibold mb-4" 
-            style={{ fontFamily: "'Quicksand', 'Inter', sans-serif" }}
-            data-testid="text-results-title"
-          >
-            {data.playlistTitle || "Your Emotional Journey"}
-          </h1>
+        <div className="max-w-4xl mx-auto">
           
-          <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto" data-testid="text-journey-explanation">
-            {data.explanation}
-          </p>
-        </div>
+          {/* Hero Section: Journey Card + Soul Gem side by side */}
+          <div className="flex flex-col md:flex-row gap-6 mb-10 items-start">
+            {/* Journey Card - Left side */}
+            <JourneyCard 
+              journey={data.journey} 
+              playlistTitle={data.playlistTitle || "Your Emotional Journey"}
+            />
+            
+            {/* Soul Gem - Right side */}
+            <div className="flex flex-col items-center">
+              <SoulGem songs={data.songs} size={180} />
+            </div>
+          </div>
 
-        {/* Playlist */}
-        <Card 
-          className="mb-8 overflow-hidden border-2 border-purple-500/20 shadow-[0_0_20px_rgba(168,85,247,0.1)]" 
-          data-testid="card-playlist"
-        >
-          <div className="divide-y divide-border">
+          {/* Explanation text */}
+          {data.explanation && (
+            <p className="text-muted-foreground text-sm leading-relaxed max-w-2xl mb-8" data-testid="text-journey-explanation">
+              {data.explanation}
+            </p>
+          )}
+
+          {/* Playlist Header */}
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-lg font-medium text-white/80">
+              Your Playlist
+            </h2>
+            <span className="text-sm text-white/40">
+              {data.songs.length} songs
+            </span>
+          </div>
+          
+          {/* Divider */}
+          <div className="h-px bg-gradient-to-r from-transparent via-white/10 to-transparent mb-4" />
+
+          {/* Playlist - Clean song list with vibe dots */}
+          <div className="space-y-1 mb-8">
             {data.songs.map((song, index) => {
               const isValidated = validatedSongs.has(song.track_id);
               const isDownvoted = downvotedSongs.has(song.track_id);
               const isExtrapolated = song.extrapolated === true;
+              const vibeColor = getMetaVibeColor(song.sub_vibe || '');
+              const spotifyUrl = `https://open.spotify.com/track/${song.track_id.replace('spotify:track:', '')}`;
               
               return (
                 <div
                   key={`${song.track_id}-${index}`}
-                  className="flex items-center gap-4 p-4 hover-elevate transition-all relative"
+                  className="group flex items-center gap-3 p-3 rounded-lg hover:bg-white/[0.03] transition-all"
+                  style={{ 
+                    borderLeft: `3px solid ${vibeColor}`,
+                    animationDelay: `${index * 50}ms`,
+                  }}
                   data-testid={`song-item-${index}`}
                 >
-                  {/* Shard Icon - pottery fragment with gradient based on coordinates, links to Spotify */}
-                  <ShardIcon 
-                    x={song.coordinates?.x ?? song.manifold_x}
-                    y={song.coordinates?.y ?? song.manifold_y}
-                    spotifyId={song.track_id}
-                    size="md"
-                  />
-                  
-                  <div className="flex-1 min-w-0 pr-20">
-                    <h3 className="font-medium truncate" data-testid={`text-song-title-${index}`}>
-                      {song.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground truncate" data-testid={`text-song-artist-${index}`}>
-                      {song.artist}
-                    </p>
-                    <p className="text-xs text-muted-foreground/60 mt-1">
-                      {song.sub_vibe}
-                      {isExtrapolated && <span className="ml-2 text-primary">✨ AI discovery</span>}
-                    </p>
-                  </div>
-                  
-                  {/* Feedback buttons - ONLY show for extrapolated songs */}
-                  {isExtrapolated && (
-                    <div className="absolute bottom-3 right-3 flex gap-2">
-                      <button
-                        onClick={() => handleValidateSong(song)}
-                        disabled={isValidated || isDownvoted}
-                        className={`p-1.5 rounded-md transition-all border ${
-                          isValidated
-                            ? "text-green-500 border-green-500 opacity-100"
-                            : isDownvoted
-                            ? "text-muted-foreground/30 border-transparent opacity-30 cursor-not-allowed"
-                            : "text-muted-foreground border-transparent opacity-40 hover:opacity-100 hover:border-green-500 hover:text-green-500"
-                        }`}
-                        data-testid={`button-validate-song-${index}`}
-                        title={isValidated ? "Added to Tapestry!" : isDownvoted ? "Already downvoted" : "Great match - add to Tapestry"}
-                      >
-                        <ThumbsUp className="w-3.5 h-3.5" fill={isValidated ? "currentColor" : "none"} />
-                      </button>
-                      
-                      <button
-                        onClick={() => handleDownvoteSong(song)}
-                        disabled={isDownvoted || isValidated}
-                        className={`p-1.5 rounded-md transition-all border ${
-                          isDownvoted
-                            ? "text-red-500 border-red-500 opacity-100"
-                            : isValidated
-                            ? "text-muted-foreground/30 border-transparent opacity-30 cursor-not-allowed"
-                            : "text-muted-foreground border-transparent opacity-40 hover:opacity-100 hover:border-red-500 hover:text-red-500"
-                        }`}
-                        data-testid={`button-downvote-song-${index}`}
-                        title={isDownvoted ? "Flagged for review" : isValidated ? "Already validated" : "Poor match"}
-                      >
-                        <ThumbsDown className="w-3.5 h-3.5" fill={isDownvoted ? "currentColor" : "none"} />
-                      </button>
+                  {/* Song info */}
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-baseline gap-2">
+                      <span className="font-medium text-white/90 truncate" data-testid={`text-song-title-${index}`}>
+                        {song.title}
+                      </span>
+                      <span className="text-sm text-white/50 truncate" data-testid={`text-song-artist-${index}`}>
+                        {song.artist}
+                      </span>
                     </div>
-                  )}
+                    <span className="text-xs text-white/30">
+                      {song.sub_vibe}
+                      {isExtrapolated && <span className="ml-2 text-primary/60">✨ AI</span>}
+                    </span>
+                  </div>
+
+                  {/* Actions - appear on hover */}
+                  <div className="flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                    {/* Spotify link */}
+                    <a
+                      href={spotifyUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-1.5 rounded-md text-white/40 hover:text-white/80 hover:bg-white/10 transition-all"
+                      title="Open in Spotify"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                    
+                    {/* Feedback buttons - ONLY for extrapolated songs */}
+                    {isExtrapolated && (
+                      <>
+                        <button
+                          onClick={() => handleValidateSong(song)}
+                          disabled={isValidated || isDownvoted}
+                          className={`p-1.5 rounded-md transition-all ${
+                            isValidated
+                              ? "text-green-500"
+                              : isDownvoted
+                              ? "text-white/20 cursor-not-allowed"
+                              : "text-white/40 hover:text-green-500 hover:bg-white/10"
+                          }`}
+                          title={isValidated ? "Added!" : "Good match"}
+                        >
+                          <ThumbsUp className="w-4 h-4" fill={isValidated ? "currentColor" : "none"} />
+                        </button>
+                        
+                        <button
+                          onClick={() => handleDownvoteSong(song)}
+                          disabled={isDownvoted || isValidated}
+                          className={`p-1.5 rounded-md transition-all ${
+                            isDownvoted
+                              ? "text-red-500"
+                              : isValidated
+                              ? "text-white/20 cursor-not-allowed"
+                              : "text-white/40 hover:text-red-500 hover:bg-white/10"
+                          }`}
+                          title={isDownvoted ? "Flagged" : "Poor match"}
+                        >
+                          <ThumbsDown className="w-4 h-4" fill={isDownvoted ? "currentColor" : "none"} />
+                        </button>
+                      </>
+                    )}
+                  </div>
                 </div>
               );
             })}
           </div>
-        </Card>
 
-        {/* Actions */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button
-            size="lg"
-            className="px-8"
-            data-testid="button-create-spotify-playlist"
-            onClick={handleCreateSpotifyPlaylist}
-            disabled={creatingPlaylist}
-          >
-            {creatingPlaylist ? "Creating..." : "Create Playlist on Spotify"}
-          </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="px-8"
-            onClick={onStartOver}
-            data-testid="button-start-over"
-          >
-            Start Over
-          </Button>
-        </div>
+          {/* Actions */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button
+              size="lg"
+              className="px-8"
+              data-testid="button-create-spotify-playlist"
+              onClick={handleCreateSpotifyPlaylist}
+              disabled={creatingPlaylist}
+            >
+              {creatingPlaylist ? "Creating..." : "Create Playlist on Spotify"}
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="px-8"
+              onClick={onStartOver}
+              data-testid="button-start-over"
+            >
+              Start Over
+            </Button>
+          </div>
 
-        {/* Song Stories - The Human Context */}
-        {data.songs.some((s) => s.reddit_context || s.ananki_reasoning) && (
-          <details className="mt-12">
-            <summary className="text-sm text-muted-foreground cursor-pointer hover:text-foreground transition-colors text-center">
-              Why these songs? See the stories behind each pick
-            </summary>
-            <div className="mt-6 space-y-4">
-              {data.songs.map((song, index) => {
-                const isExtrapolated = song.extrapolated === true;
-                const humanQuote = !isExtrapolated ? song.reddit_context : undefined; // No fake quotes for extrapolated
-                const aiReasoning = song.ananki_reasoning;
-                
-                // Determine source label from URL
-                const sourceLabel = song.source_url?.includes('youtube') 
-                  ? 'YouTube comment' 
-                  : song.source_url?.includes('reddit') 
-                    ? 'Reddit' 
-                    : 'the community';
-                
-                if (!humanQuote && !aiReasoning) return null;
-                
-                return (
-                  <Card 
-                    key={`detail-${song.track_id}-${index}`} 
-                    className="p-5 border-2 border-purple-500/20 shadow-[0_0_15px_rgba(168,85,247,0.08)]"
-                  >
-                    <h4 className="font-medium text-sm text-primary mb-3">
-                      {song.title} — {song.artist}
-                      {isExtrapolated && <span className="ml-2 text-xs text-muted-foreground">(AI discovery)</span>}
-                    </h4>
-                    
-                    {/* Human Quote - ONLY for tapestry songs */}
-                    {humanQuote && (
-                      <div className="mb-4">
-                        <div className="flex gap-3">
-                          <Quote className="w-5 h-5 text-primary/40 flex-shrink-0 mt-0.5" />
-                          <blockquote className="text-foreground/90 italic leading-relaxed">
-                            "{humanQuote}"
-                          </blockquote>
+          {/* Song Stories - The Human Context (collapsible) */}
+          {data.songs.some((s) => s.reddit_context || s.ananki_reasoning) && (
+            <details className="mt-12">
+              <summary className="text-sm text-muted-foreground cursor-pointer hover:text-foreground transition-colors text-center">
+                Why these songs? See the stories behind each pick
+              </summary>
+              <div className="mt-6 space-y-4">
+                {data.songs.map((song, index) => {
+                  const isExtrapolated = song.extrapolated === true;
+                  const humanQuote = !isExtrapolated ? song.reddit_context : undefined;
+                  const aiReasoning = song.ananki_reasoning;
+                  
+                  const sourceLabel = song.source_url?.includes('youtube') 
+                    ? 'YouTube' 
+                    : song.source_url?.includes('reddit') 
+                      ? 'Reddit' 
+                      : 'the community';
+                  
+                  if (!humanQuote && !aiReasoning) return null;
+                  
+                  return (
+                    <Card 
+                      key={`detail-${song.track_id}-${index}`} 
+                      className="p-5 bg-white/[0.02] border-white/[0.06]"
+                    >
+                      <h4 className="font-medium text-sm text-white/70 mb-3">
+                        {song.title} — {song.artist}
+                        {isExtrapolated && <span className="ml-2 text-xs text-white/40">(AI discovery)</span>}
+                      </h4>
+                      
+                      {humanQuote && (
+                        <div className="mb-4">
+                          <div className="flex gap-3">
+                            <Quote className="w-4 h-4 text-white/30 flex-shrink-0 mt-0.5" />
+                            <blockquote className="text-white/70 italic text-sm leading-relaxed">
+                              "{humanQuote}"
+                            </blockquote>
+                          </div>
+                          <p className="text-xs text-white/30 mt-2 ml-7">
+                            — from {sourceLabel}
+                          </p>
                         </div>
-                        <p className="text-xs text-muted-foreground/60 mt-2 ml-8">
-                          — from {sourceLabel}
-                        </p>
-                      </div>
-                    )}
-                    
-                    {/* AI Reasoning */}
-                    {aiReasoning && (
-                      <div className={humanQuote ? "border-t border-border/50 pt-3 mt-3" : ""}>
-                        <p className="text-xs text-muted-foreground leading-relaxed">
-                          <span className="font-medium text-muted-foreground/80">Why it fits: </span>
-                          {aiReasoning}
-                        </p>
-                      </div>
-                    )}
-                  </Card>
-                );
-              })}
-            </div>
-          </details>
-        )}
+                      )}
+                      
+                      {aiReasoning && (
+                        <div className={humanQuote ? "border-t border-white/[0.06] pt-3 mt-3" : ""}>
+                          <p className="text-xs text-white/50 leading-relaxed">
+                            <span className="font-medium text-white/60">Why it fits: </span>
+                            {aiReasoning}
+                          </p>
+                        </div>
+                      )}
+                    </Card>
+                  );
+                })}
+              </div>
+            </details>
+          )}
         </div>
       </div>
     </>
