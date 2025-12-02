@@ -141,7 +141,7 @@ export function SoulGem({ songs, size = 240 }: SoulShardProps) {
           right: '5%',
           bottom: '5%',
           background: `radial-gradient(circle, ${glowColor} 0%, transparent 70%)`,
-          opacity: showDetails ? 0.25 : 0.6,
+          opacity: showDetails ? 0.25 : 0.4,
           filter: 'blur(35px)',
         }}
       />
@@ -155,7 +155,7 @@ export function SoulGem({ songs, size = 240 }: SoulShardProps) {
           right: '20%',
           bottom: '20%',
           background: `radial-gradient(circle, rgba(255,255,255,0.15) 0%, ${glowColor} 40%, transparent 70%)`,
-          opacity: showDetails ? 0.1 : 0.35,
+          opacity: showDetails ? 0.1 : 0.25,
           filter: 'blur(20px)',
         }}
       />
@@ -249,12 +249,12 @@ export function SoulGem({ songs, size = 240 }: SoulShardProps) {
           d={innerPathData}
           fill="hsl(262, 50%, 35%)"
           fillOpacity="0.2"
-          stroke="hsl(262, 60%, 50%)"
-          strokeWidth="1"
-          strokeOpacity="0.4"
+          stroke="hsl(262, 60%, 55%)"
+          strokeWidth="1.5"
+          strokeOpacity="0.5"
           className="transition-all duration-700"
           style={{
-            opacity: showDetails ? 0.6 : 0.8,
+            opacity: showDetails ? 0.6 : 0.9,
           }}
         />
 
@@ -268,10 +268,10 @@ export function SoulGem({ songs, size = 240 }: SoulShardProps) {
             y2={innerPoints[i].y}
             stroke={`url(#${gradientId}-edge)`}
             strokeWidth="1.5"
-            strokeOpacity="0.5"
+            strokeOpacity="0.6"
             className="transition-all duration-700"
             style={{
-              opacity: showDetails ? 0.5 : 0.7,
+              opacity: showDetails ? 0.5 : 0.85,
             }}
           />
         ))}
@@ -281,7 +281,7 @@ export function SoulGem({ songs, size = 240 }: SoulShardProps) {
           d={pathData}
           fill={`url(#${gradientId})`}
           stroke={glowColor}
-          strokeWidth={showDetails ? 2 : 2.5}
+          strokeWidth={showDetails ? 2 : 3}
           strokeLinejoin="round"
           strokeLinecap="round"
           filter={showDetails ? 'none' : `url(#${glowId})`}
