@@ -51,7 +51,9 @@ function BlinkingCursor({ visible }: { visible: boolean }) {
         width: '3px',
         height: '0.9em',
         backgroundColor: 'rgb(192, 132, 252)',
-        verticalAlign: 'middle',
+        verticalAlign: 'baseline',
+        position: 'relative',
+        bottom: '0.05em',
         borderRadius: '1px',
       }}
     />
