@@ -1,32 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import type { PlaylistResponse, TapestrySong, UserJourney } from "@shared/schema";
-import { Music2, ThumbsUp, ThumbsDown, ArrowRight, Quote } from "lucide-react";
+import { Music2, ThumbsUp, ThumbsDown, Quote } from "lucide-react";
 import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
-import { useState, useMemo } from "react";
+import { useState } from "react";
 import { CosmicBackground } from "./cosmic-background";
-import { EmotionalPin } from "./emotional-pin";
+import { ShardIcon } from "./shard-icon";
 
 interface PlaylistResultsProps {
   data: PlaylistResponse;
   onStartOver: () => void;
-}
-
-// Extract unique sub-vibes in order from the playlist to show the journey
-function extractJourneyPath(songs: TapestrySong[]): string[] {
-  const seen = new Set<string>();
-  const path: string[] = [];
-  
-  for (const song of songs) {
-    const vibe = song.meta_vibe || song.sub_vibe;
-    if (vibe && !seen.has(vibe)) {
-      seen.add(vibe);
-      path.push(vibe);
-    }
-  }
-  
-  return path;
 }
 
 export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
@@ -34,8 +18,6 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
   const [validatedSongs, setValidatedSongs] = useState<Set<string>>(new Set());
   const [downvotedSongs, setDownvotedSongs] = useState<Set<string>>(new Set());
   const [creatingPlaylist, setCreatingPlaylist] = useState(false);
-
-  const journeyPath = useMemo(() => extractJourneyPath(data.songs), [data.songs]);
 
   const handleCreateSpotifyPlaylist = async () => {
     setCreatingPlaylist(true);
@@ -182,22 +164,6 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
           <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto" data-testid="text-journey-explanation">
             {data.explanation}
           </p>
-          
-          {/* Journey Path Visual */}
-          {journeyPath.length > 0 && (
-            <div className="mt-6 flex items-center justify-center flex-wrap gap-2">
-              {journeyPath.map((vibe, index) => (
-                <div key={vibe} className="flex items-center gap-2">
-                  <span className="px-3 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium border border-primary/20">
-                    {vibe}
-                  </span>
-                  {index < journeyPath.length - 1 && (
-                    <ArrowRight className="w-4 h-4 text-muted-foreground/50" />
-                  )}
-                </div>
-              ))}
-            </div>
-          )}
         </div>
 
         {/* Playlist */}
@@ -217,8 +183,8 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
                   className="flex items-center gap-4 p-4 hover-elevate transition-all relative"
                   data-testid={`song-item-${index}`}
                 >
-                  {/* Emotional Pin - color gradient based on coordinates, links to Spotify */}
-                  <EmotionalPin 
+                  {/* Shard Icon - pottery fragment with gradient based on coordinates, links to Spotify */}
+                  <ShardIcon 
                     x={song.coordinates?.x ?? song.manifold_x}
                     y={song.coordinates?.y ?? song.manifold_y}
                     spotifyId={song.track_id}
