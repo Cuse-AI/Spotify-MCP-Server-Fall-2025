@@ -189,6 +189,13 @@ export function SoulGem({ songs, size = 240 }: SoulShardProps) {
               <feMergeNode in="SourceGraphic" />
             </feMerge>
           </filter>
+          
+          {/* Surface shine gradient for smooth polished look */}
+          <linearGradient id="surfaceShine" x1="0%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stopColor="rgba(255,255,255,0.3)" />
+            <stop offset="40%" stopColor="rgba(255,255,255,0.05)" />
+            <stop offset="100%" stopColor="rgba(255,255,255,0)" />
+          </linearGradient>
         </defs>
 
         {/* === RADAR GRID LINES === */}
@@ -263,13 +270,25 @@ export function SoulGem({ songs, size = 240 }: SoulShardProps) {
           d={pathData}
           fill={`url(#${gradientId})`}
           stroke={glowColor}
-          strokeWidth={showDetails ? 2.5 : 4}
-          strokeLinejoin="miter"
+          strokeWidth={showDetails ? 2.5 : 3.5}
+          strokeLinejoin={showDetails ? "miter" : "round"}
+          strokeLinecap="round"
           strokeMiterlimit="10"
           filter={showDetails ? 'none' : `url(#${glowId})`}
           className="transition-all duration-700"
           style={{
-            opacity: showDetails ? 0.6 : 0.85,
+            opacity: showDetails ? 0.6 : 0.9,
+          }}
+        />
+        
+        {/* Smooth surface overlay - visible when crystallized for that polished look */}
+        <path
+          d={pathData}
+          fill="url(#surfaceShine)"
+          stroke="none"
+          className="transition-opacity duration-700 pointer-events-none"
+          style={{
+            opacity: showDetails ? 0 : 0.4,
           }}
         />
         

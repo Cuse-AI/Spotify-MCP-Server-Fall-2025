@@ -33675,38 +33675,6 @@
           }
         },
         {
-          "artist": "Silent Rhythm",
-          "song": "Fall into Sleep Instantly",
-          "spotify_id": "2vQZPLun1YEh0xtb4n4njk",
-          "spotify_uri": "spotify:track:2vQZPLun1YEh0xtb4n4njk",
-          "comment_score": 0,
-          "source_url": "https://youtube.com/watch?v=kFqZSg705wg",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 1,
-          "full_context": "",
-          "post_title": "Healing Sleep Music 🎼 Cures for Anxiety Disorders and Depression 💤 Relaxing Music for Stress Relief",
-          "comment_text": "Healing Sleep Music Cures for Anxiety Disorders and Depression Relaxing Music for Stress Relief This healing sleep music ...",
-          "ananki_reasoning": "The post title explicitly describes this as 'Healing Sleep Music' intended for falling asleep, and the song title is literally 'Fall into Sleep Instantly.' While the context mentions anxiety disorders, depression, and stress relief as therapeutic benefits, the primary functional purpose is clearly sleep-focused. The 'Night - Sleep' sub-vibe is the most accurate match for music specifically designed to help listeners fall asleep.",
-          "mapped_subvibe": "Night - Sleep",
-          "coordinates": {
-            "x": 620.0,
-            "y": 525.0
-          },
-          "current_vibe": "Night - Sleep",
-          "emotional_composition": {
-            "Sad": 0.1,
-            "Happy": 0.0,
-            "Chill": 0.5,
-            "Energy": 0.0,
-            "Dark": 0.0,
-            "Romantic": 0.0,
-            "Night": 0.4,
-            "Drive": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
           "artist": "Avery's Ambient",
           "song": "Rising Mist",
           "spotify_id": "1k6CZJQYsbIsWi9VTkzETC",

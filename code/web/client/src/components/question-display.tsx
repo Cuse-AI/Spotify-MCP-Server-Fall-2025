@@ -45,7 +45,7 @@ function useTypewriter(text: string, speed: number = 35, startDelay: number = 0)
 function BlinkingCursor({ visible }: { visible: boolean }) {
   if (!visible) return null;
   return (
-    <span className="animate-blink text-purple-400 font-normal ml-0.5 text-[0.85em]">▌</span>
+    <span className="animate-blink text-purple-400 font-normal ml-0.5 text-[0.7em] inline-block align-middle">▌</span>
   );
 }
 
