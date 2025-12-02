@@ -1,11 +1,9 @@
-import type { UserJourney } from "@shared/schema";
-
 interface JourneyCardProps {
-  journey: UserJourney;
   playlistTitle?: string;
+  explanation?: string;
 }
 
-export function JourneyCard({ journey, playlistTitle }: JourneyCardProps) {
+export function JourneyCard({ playlistTitle, explanation }: JourneyCardProps) {
   return (
     <div className="relative p-6 rounded-2xl overflow-hidden flex-1">
       {/* Glass background */}
@@ -26,7 +24,7 @@ export function JourneyCard({ journey, playlistTitle }: JourneyCardProps) {
       />
       
       {/* Content */}
-      <div className="relative z-10 space-y-4">
+      <div className="relative z-10">
         {/* Title */}
         {playlistTitle && (
           <h1 
@@ -37,41 +35,12 @@ export function JourneyCard({ journey, playlistTitle }: JourneyCardProps) {
           </h1>
         )}
         
-        {/* Journey questions/answers */}
-        <div className="space-y-3">
-          {journey.now && (
-            <div className="space-y-1">
-              <p className="text-[11px] text-white/40 uppercase tracking-wider">
-                Where you are
-              </p>
-              <p className="text-base text-white/85">
-                {journey.now}
-              </p>
-            </div>
-          )}
-          
-          {journey.going && (
-            <div className="space-y-1">
-              <p className="text-[11px] text-white/40 uppercase tracking-wider">
-                Where you're going
-              </p>
-              <p className="text-base text-white/85">
-                {journey.going}
-              </p>
-            </div>
-          )}
-          
-          {journey.vibe && (
-            <div className="space-y-1">
-              <p className="text-[11px] text-white/40 uppercase tracking-wider">
-                The vibe
-              </p>
-              <p className="text-base text-white/85">
-                {journey.vibe}
-              </p>
-            </div>
-          )}
-        </div>
+        {/* AI Explanation blurb */}
+        {explanation && (
+          <p className="text-sm text-white/60 leading-relaxed">
+            {explanation}
+          </p>
+        )}
       </div>
     </div>
   );
