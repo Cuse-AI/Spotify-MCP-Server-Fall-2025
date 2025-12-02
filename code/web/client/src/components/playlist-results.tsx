@@ -1,11 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import type { PlaylistResponse, TapestrySong, UserJourney } from "@shared/schema";
-import { Music2, ThumbsUp, ThumbsDown, Play, Pause, ArrowRight, Quote } from "lucide-react";
+import { Music2, ThumbsUp, ThumbsDown, ArrowRight, Quote } from "lucide-react";
 import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
-import { useState, useRef, useEffect, useMemo } from "react";
+import { useState, useMemo } from "react";
 import { CosmicBackground } from "./cosmic-background";
+import { EmotionalPin } from "./emotional-pin";
 
 interface PlaylistResultsProps {
   data: PlaylistResponse;
@@ -32,33 +33,9 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
   const { toast } = useToast();
   const [validatedSongs, setValidatedSongs] = useState<Set<string>>(new Set());
   const [downvotedSongs, setDownvotedSongs] = useState<Set<string>>(new Set());
-  const [playingTrackId, setPlayingTrackId] = useState<string | null>(null);
   const [creatingPlaylist, setCreatingPlaylist] = useState(false);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const journeyPath = useMemo(() => extractJourneyPath(data.songs), [data.songs]);
-
-  const handlePlayPreview = (trackId: string, previewUrl: string) => {
-    if (playingTrackId === trackId) {
-      audioRef.current?.pause();
-      setPlayingTrackId(null);
-    } else {
-      audioRef.current?.pause();
-      const audio = new Audio(previewUrl);
-      audioRef.current = audio;
-      audio.play();
-      setPlayingTrackId(trackId);
-      audio.addEventListener('ended', () => {
-        setPlayingTrackId(null);
-      });
-    }
-  };
-
-  useEffect(() => {
-    return () => {
-      audioRef.current?.pause();
-    };
-  }, []);
 
   const handleCreateSpotifyPlaylist = async () => {
     setCreatingPlaylist(true);
@@ -232,7 +209,6 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
             {data.songs.map((song, index) => {
               const isValidated = validatedSongs.has(song.track_id);
               const isDownvoted = downvotedSongs.has(song.track_id);
-              const isPlaying = playingTrackId === song.track_id;
               const isExtrapolated = song.extrapolated === true;
               
               return (
@@ -241,37 +217,13 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
                   className="flex items-center gap-4 p-4 hover-elevate transition-all relative"
                   data-testid={`song-item-${index}`}
                 >
-                  {/* Album cover or placeholder */}
-                  <div className="flex-shrink-0 w-16 h-16 rounded overflow-hidden bg-card-border relative group">
-                    {song.album_art ? (
-                      <>
-                        <img 
-                          src={song.album_art} 
-                          alt={`${song.title} album cover`}
-                          className="w-full h-full object-cover"
-                          data-testid={`img-album-${index}`}
-                        />
-                        {song.preview_url && (
-                          <button
-                            onClick={() => handlePlayPreview(song.track_id, song.preview_url!)}
-                            className="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
-                            data-testid={`button-preview-${index}`}
-                            title={isPlaying ? "Pause preview" : "Play preview"}
-                          >
-                            {isPlaying ? (
-                              <Pause className="w-6 h-6 text-white" fill="white" />
-                            ) : (
-                              <Play className="w-6 h-6 text-white" fill="white" />
-                            )}
-                          </button>
-                        )}
-                      </>
-                    ) : (
-                      <div className="w-full h-full flex items-center justify-center">
-                        <Music2 className="w-6 h-6 text-muted-foreground" />
-                      </div>
-                    )}
-                  </div>
+                  {/* Emotional Pin - color gradient based on coordinates, links to Spotify */}
+                  <EmotionalPin 
+                    x={song.coordinates?.x ?? song.manifold_x}
+                    y={song.coordinates?.y ?? song.manifold_y}
+                    spotifyId={song.track_id}
+                    size="md"
+                  />
                   
                   <div className="flex-1 min-w-0 pr-20">
                     <h3 className="font-medium truncate" data-testid={`text-song-title-${index}`}>
