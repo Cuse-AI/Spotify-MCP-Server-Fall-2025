@@ -6,6 +6,7 @@ Copies core data files to the webapp folder so changes go live on deploy.
 
 Files synced:
   - core/tapestry.json -> code/web/core/tapestry.json
+  - core/tapestry.json -> code/web/client/public/core/tapestry.json (STATIC/FRONTEND)
   - data/manifold/emotional_manifold_COMPLETE.json -> code/web/data/emotional_manifold_COMPLETE.json
 
 Run this after ANY changes to tapestry or manifold data!
@@ -22,9 +23,10 @@ PROJECT_ROOT = Path(__file__).parent.parent
 TAPESTRY_SRC = PROJECT_ROOT / "core" / "tapestry.json"
 MANIFOLD_SRC = PROJECT_ROOT / "data" / "manifold" / "emotional_manifold_COMPLETE.json"
 
-# Destination (webapp)
+# Destinations (webapp - multiple locations!)
 WEBAPP_DIR = PROJECT_ROOT / "code" / "web"
-TAPESTRY_DEST = WEBAPP_DIR / "core" / "tapestry.json"
+TAPESTRY_DEST_SERVER = WEBAPP_DIR / "core" / "tapestry.json"
+TAPESTRY_DEST_PUBLIC = WEBAPP_DIR / "client" / "public" / "core" / "tapestry.json"  # Frontend static!
 MANIFOLD_DEST = WEBAPP_DIR / "data" / "emotional_manifold_COMPLETE.json"
 
 def get_song_count(tapestry_path):
@@ -39,52 +41,44 @@ def get_vibe_count(tapestry_path):
         data = json.load(f)
     return len(data.get('vibes', {}))
 
+def sync_file(src, dest, name):
+    """Sync a single file, return True if synced"""
+    if not src.exists():
+        print(f"[ERROR] Source not found: {src}")
+        return False
+    
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    
+    if dest.exists():
+        # Compare sizes as quick check
+        if src.stat().st_size == dest.stat().st_size:
+            print(f"[OK] {name} already synced")
+            return False
+    
+    shutil.copy2(src, dest)
+    print(f"[SYNCED] {name}")
+    return True
+
 def sync_files():
     print("=" * 50)
     print("[SYNC] SYNCING DATA TO WEBAPP")
     print("=" * 50)
     
     synced = []
+    src_songs = get_song_count(TAPESTRY_SRC) if TAPESTRY_SRC.exists() else 0
+    src_vibes = get_vibe_count(TAPESTRY_SRC) if TAPESTRY_SRC.exists() else 0
     
-    # Sync tapestry
-    if TAPESTRY_SRC.exists():
-        src_songs = get_song_count(TAPESTRY_SRC)
-        src_vibes = get_vibe_count(TAPESTRY_SRC)
-        
-        # Check if dest exists and compare
-        if TAPESTRY_DEST.exists():
-            dest_songs = get_song_count(TAPESTRY_DEST)
-            if src_songs == dest_songs:
-                print(f"[OK] tapestry.json already synced ({src_songs} songs)")
-            else:
-                shutil.copy2(TAPESTRY_SRC, TAPESTRY_DEST)
-                print(f"[SYNCED] tapestry.json: {dest_songs} -> {src_songs} songs")
-                synced.append("tapestry.json")
-        else:
-            TAPESTRY_DEST.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copy2(TAPESTRY_SRC, TAPESTRY_DEST)
-            print(f"[COPIED] tapestry.json ({src_songs} songs, {src_vibes} vibes)")
-            synced.append("tapestry.json")
-    else:
-        print(f"[ERROR] Source not found: {TAPESTRY_SRC}")
+    # Sync tapestry to SERVER location
+    if sync_file(TAPESTRY_SRC, TAPESTRY_DEST_SERVER, "tapestry.json (server)"):
+        synced.append("tapestry-server")
+    
+    # Sync tapestry to PUBLIC/STATIC location (for frontend stats bar!)
+    if sync_file(TAPESTRY_SRC, TAPESTRY_DEST_PUBLIC, "tapestry.json (public/static)"):
+        synced.append("tapestry-public")
     
     # Sync manifold
-    if MANIFOLD_SRC.exists():
-        if MANIFOLD_DEST.exists():
-            # Compare file sizes as quick check
-            if MANIFOLD_SRC.stat().st_size == MANIFOLD_DEST.stat().st_size:
-                print(f"[OK] emotional_manifold_COMPLETE.json already synced")
-            else:
-                shutil.copy2(MANIFOLD_SRC, MANIFOLD_DEST)
-                print(f"[SYNCED] emotional_manifold_COMPLETE.json")
-                synced.append("manifold")
-        else:
-            MANIFOLD_DEST.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copy2(MANIFOLD_SRC, MANIFOLD_DEST)
-            print(f"[COPIED] emotional_manifold_COMPLETE.json")
-            synced.append("manifold")
-    else:
-        print(f"[ERROR] Source not found: {MANIFOLD_SRC}")
+    if sync_file(MANIFOLD_SRC, MANIFOLD_DEST, "emotional_manifold_COMPLETE.json"):
+        synced.append("manifold")
     
     print("=" * 50)
     
@@ -94,10 +88,7 @@ def sync_files():
         print("Everything already in sync!")
     
     # Show current stats
-    if TAPESTRY_SRC.exists():
-        songs = get_song_count(TAPESTRY_SRC)
-        vibes = get_vibe_count(TAPESTRY_SRC)
-        print(f"\n[STATS] Current: {songs} songs across {vibes} vibes")
+    print(f"\n[STATS] Current: {src_songs} songs across {src_vibes} vibes")
 
 if __name__ == "__main__":
     sync_files()

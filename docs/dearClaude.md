@@ -39,23 +39,6 @@ META-VIBE TOTALS:
 - `check_vibes.py` - Lists vibes in each chunk
 - `count_all.py` - Full dataset distribution analysis
 
-### Quality Findings:
-- **0 automated issues** found across chunks 01-05
-- All comments have genuine emotional context
-- Ananki reasoning is thorough and accurate
-- Vibe mappings are contextually appropriate
-
-### TO-DO LIST:
-1. ⬜ Continue quality analysis: Chunks 06-11
-2. ⬜ Merge all cleaned chunks into final tapestry
-3. ⬜ **ARCHIVING STRATEGY:** Balance dataset by archiving excess Sad (~900 songs) and Dark/Gothic (~325 songs) to achieve ~300-400 per meta-vibe
-4. ⬜ Replace current production tapestry.json with cleaned/merged version
-5. ⬜ Archive old tapestry before replacement
-
-### Estimated Final Balanced Dataset:
-- Current: 4,985 songs (unbalanced)
-- After trimming Sad & Dark: ~3,200-3,500 songs (well-balanced)
-- Target: ~300-400 songs per meta-vibe for even emotional coverage
 
 ### Files Location:
 ```
