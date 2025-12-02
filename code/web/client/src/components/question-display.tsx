@@ -41,11 +41,20 @@ function useTypewriter(text: string, speed: number = 35, startDelay: number = 0)
   return { displayed, isTyping, isDone };
 }
 
-// Blinking cursor component - sized to match text
+// Blinking cursor component - thin bar that matches text height
 function BlinkingCursor({ visible }: { visible: boolean }) {
   if (!visible) return null;
   return (
-    <span className="animate-blink text-purple-400 font-normal ml-0.5 text-[0.7em] inline-block align-middle">▌</span>
+    <span 
+      className="animate-blink inline-block ml-1"
+      style={{
+        width: '3px',
+        height: '0.9em',
+        backgroundColor: 'rgb(192, 132, 252)',
+        verticalAlign: 'middle',
+        borderRadius: '1px',
+      }}
+    />
   );
 }
 

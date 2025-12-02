@@ -30161,38 +30161,6 @@
           }
         },
         {
-          "artist": "Stardust Vibes",
-          "song": "Rainy Day Vibes",
-          "spotify_id": "135uOTu2ysZzNyIKt5BDm0",
-          "spotify_uri": "spotify:track:135uOTu2ysZzNyIKt5BDm0",
-          "comment_score": 4,
-          "source_url": "https://youtube.com/watch?v=N5ALy57FPNg",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Lofi Hip Hop - Calm Your Anxiety / Relaxing Music / Chill Hop",
-          "comment_text": "🌸 The soft crackle, the mellow loops, the faded memories—this is Lofi. 🎶 Drift away and lose yourself in the sound.\n\n💛 Love the feeling? Hit like and subscribe to stay connected with the vibe. 💫\n\n💬 What does this track remind you of? Let us know below! 🎧",
-          "ananki_reasoning": "The context explicitly identifies this as 'Lofi Hip Hop' with characteristic elements like 'soft crackle' and 'mellow loops.' The song title 'Rainy Day Vibes' and the description's focus on drifting away and losing yourself in the sound align perfectly with the lofi chill aesthetic. While 'Chill - Rainy Day' could also fit given the song title, the emphasis on lofi-specific production elements (crackle, loops, faded memories) and the genre classification in the post title make 'Chill - Lofi' the most precise match for the intended emotional context.",
-          "mapped_subvibe": "Chill - Lofi",
-          "coordinates": {
-            "x": 605.0,
-            "y": 337.5
-          },
-          "current_vibe": "Chill - Lofi",
-          "emotional_composition": {
-            "Sad": 0.1,
-            "Happy": 0.15,
-            "Chill": 0.5,
-            "Energy": 0.05,
-            "Dark": 0.0,
-            "Romantic": 0.1,
-            "Night": 0.05,
-            "Drive": 0.0,
-            "Party": 0.05
-          }
-        },
-        {
           "artist": "prins",
           "song": "Stay",
           "spotify_id": "04udvRxntsIFSJlc7xgb52",

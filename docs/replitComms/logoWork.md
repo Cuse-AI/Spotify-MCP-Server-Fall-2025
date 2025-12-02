@@ -1,3 +1,211 @@
+# MANNAZ RUNE - SIZING GUIDE
+## December 2, 2025
+
+---
+
+## THE PROBLEM
+
+The rune shape is correct but the sizing is off. Here's how to fix it.
+
+---
+
+## SIZING FOR DIFFERENT CONTEXTS
+
+### 1. Command Line Prompt (Question Page)
+
+The rune should match the text size next to it.
+
+```tsx
+// The rune height should roughly equal the line-height of the text
+// For text-xl (1.25rem = 20px), rune should be ~24-28px tall
+
+<div className="flex items-center gap-2">
+  <MannazLogo size={20} />  {/* width=20, height=30 */}
+  <span className="text-xl">:</span>
+  <span className="text-xl">How are you feeling?</span>
+</div>
+```
+
+**Key:** The rune's HEIGHT should match the x-height of the text (roughly).
+
+---
+
+### 2. Loading Screen (Large, Centered)
+
+For the rotating/pulsing loading state:
+
+```tsx
+<MannazLogo size={64} />  {/* width=64, height=96 */}
+```
+
+---
+
+### 3. Footer (Small, Subtle)
+
+```tsx
+<MannazLogo size={24} />  {/* width=24, height=36 */}
+```
+
+---
+
+## THE COMPONENT WITH PROPER SIZING
+
+```tsx
+interface MannazLogoProps {
+  size?: number;       // This controls WIDTH
+  color?: string;
+}
+
+function MannazLogo({ 
+  size = 32, 
+  color = "hsl(262, 70%, 65%)" 
+}: MannazLogoProps) {
+  // Height is 1.5x width (tall M shape)
+  const width = size;
+  const height = size * 1.5;
+  
+  return (
+    <svg 
+      width={width} 
+      height={height} 
+      viewBox="0 0 40 60" 
+      fill="none"
+      style={{ display: 'block' }}  // Removes inline spacing issues
+    >
+      <path
+        d="M8 4 L8 56 M8 4 L20 20 L32 4 M32 4 L32 56"
+        stroke={color}
+        strokeWidth="4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+```
+
+---
+
+## ALIGNING WITH TEXT
+
+The tricky part is making the rune sit correctly next to text. Here are the fixes:
+
+### Problem: Rune sits too high or low
+
+```tsx
+// BAD - misaligned
+<div className="flex items-center">
+  <MannazLogo size={20} />
+  <span>: text</span>
+</div>
+
+// GOOD - use items-end or manual adjustment
+<div className="flex items-end gap-2">
+  <MannazLogo size={20} />
+  <span className="text-xl leading-none">:</span>
+</div>
+
+// OR use a wrapper with specific positioning
+<div className="flex items-center gap-2">
+  <div className="flex items-center" style={{ height: '1.5em' }}>
+    <MannazLogo size={18} />
+  </div>
+  <span className="text-xl">:</span>
+</div>
+```
+
+---
+
+### Problem: Rune looks too small next to large text
+
+**Rule of thumb:** The rune WIDTH should be about 80% of the text's font-size.
+
+| Text Size | Rune `size` prop |
+|-----------|------------------|
+| `text-sm` (14px) | 12 |
+| `text-base` (16px) | 14 |
+| `text-lg` (18px) | 16 |
+| `text-xl` (20px) | 18 |
+| `text-2xl` (24px) | 20 |
+| `text-3xl` (30px) | 26 |
+
+---
+
+### Problem: Rune has extra whitespace
+
+Add `display: block` and `line-height: 0` to remove SVG inline spacing:
+
+```tsx
+<svg 
+  style={{ display: 'block', lineHeight: 0 }}
+  // ...
+>
+```
+
+---
+
+## QUICK REFERENCE
+
+| Context | `size` prop | Actual dimensions | Notes |
+|---------|-------------|-------------------|-------|
+| Prompt (text-xl) | 18-20 | 18×27 to 20×30 | Match text x-height |
+| Prompt (text-2xl) | 22-24 | 22×33 to 24×36 | Match text x-height |
+| Loading screen | 64-72 | 64×96 to 72×108 | Big and centered |
+| Footer | 20-24 | 20×30 to 24×36 | Subtle |
+| Header logo | 28-32 | 28×42 to 32×48 | With "Midden" text |
+
+---
+
+## EXAMPLE: PROMPT WITH CORRECT SIZING
+
+```tsx
+function QuestionPrompt({ question }: { question: string }) {
+  return (
+    <div className="flex items-end gap-3">
+      {/* Rune sized to match text-2xl */}
+      <div className="flex-shrink-0 pb-1">
+        <MannazLogo size={22} color="hsl(262, 70%, 65%)" />
+      </div>
+      
+      {/* Colon - same size as question text */}
+      <span className="text-2xl text-white/50 leading-none">:</span>
+      
+      {/* Question text */}
+      <span className="text-2xl text-white/90 leading-relaxed">
+        {question}
+      </span>
+    </div>
+  );
+}
+```
+
+**The `pb-1` (padding-bottom) nudges the rune down slightly to align with the text baseline.**
+
+---
+
+## DEBUGGING TIPS
+
+1. **Add a border to see the actual box:**
+   ```tsx
+   <div style={{ border: '1px solid red' }}>
+     <MannazLogo size={20} />
+   </div>
+   ```
+
+2. **Check if SVG has extra padding:**
+   - The viewBox should start at 0,0
+   - The path should use most of the viewBox space
+
+3. **Compare heights:**
+   - Rune height = `size * 1.5`
+   - Text line-height = font-size × line-height multiplier
+   - They should be close for good alignment
+
+---
+
+*— Replit*
+
+
 # SOUL GEM - PHYSICAL SHARD LOOK
 ## December 2, 2025
 
@@ -147,7 +355,11 @@ The previous version had uniform color + thin edges = PowerPoint chart.
 ## December 2, 2025
 
 ---
-
+|\  /| 
+| \/ |  
+|/  \|
+|    |  
+|    |
 ## OVERVIEW
 
 Two pages in the app:
