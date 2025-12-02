@@ -140,4 +140,4 @@ MIT License
 
 ---
 
-*Midden: Music, the Way You Feel It.*
+*Midden: From where you are, to where you need to be.*
