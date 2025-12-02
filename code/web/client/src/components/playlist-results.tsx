@@ -9,6 +9,15 @@ import { CosmicBackground } from "./cosmic-background";
 import { SoulGem } from "./soul-gem";
 import { JourneyHeader } from "./journey-header";
 
+// Spotify icon component
+function SpotifyIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+    </svg>
+  );
+}
+
 interface PlaylistResultsProps {
   data: PlaylistResponse;
   onStartOver: () => void;
@@ -164,12 +173,40 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
             explanation={data.explanation}
           />
 
-          {/* Playlist Card with 3D depth */}
-          <Card 
-            className="mb-8 overflow-hidden border border-white/[0.08] bg-gradient-to-b from-white/[0.04] to-white/[0.01] shadow-[0_0_30px_rgba(168,85,247,0.12),inset_0_1px_0_rgba(255,255,255,0.06)]" 
+          {/* Playlist Card - Deep space frosted glass bubble */}
+          <div 
+            className="mb-8 rounded-2xl overflow-hidden relative"
             data-testid="card-playlist"
           >
-            <div className="divide-y divide-white/[0.06]">
+            {/* Frosted glass background with purple/blue gradient */}
+            <div 
+              className="absolute inset-0 backdrop-blur-xl"
+              style={{
+                background: 'linear-gradient(135deg, rgba(139,92,246,0.08) 0%, rgba(59,130,246,0.05) 50%, rgba(168,85,247,0.08) 100%)',
+                border: '1px solid rgba(255,255,255,0.1)',
+                borderRadius: '1rem',
+              }}
+            />
+            
+            {/* Inner glow/shine effect */}
+            <div 
+              className="absolute inset-0 pointer-events-none"
+              style={{
+                background: 'radial-gradient(ellipse at 30% 0%, rgba(255,255,255,0.08) 0%, transparent 50%)',
+                borderRadius: '1rem',
+              }}
+            />
+            
+            {/* Subtle outer glow */}
+            <div 
+              className="absolute -inset-[1px] rounded-2xl pointer-events-none"
+              style={{
+                boxShadow: '0 0 40px rgba(139,92,246,0.15), 0 0 80px rgba(59,130,246,0.1)',
+              }}
+            />
+
+            {/* Content */}
+            <div className="relative z-10 divide-y divide-white/[0.06]">
               {data.songs.map((song, index) => {
                 const isValidated = validatedSongs.has(song.track_id);
                 const isDownvoted = downvotedSongs.has(song.track_id);
@@ -179,34 +216,38 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
                 return (
                   <div
                     key={`${song.track_id}-${index}`}
-                    className="flex items-center gap-4 p-4 hover:bg-white/[0.02] transition-all relative group"
+                    className="flex items-center gap-4 p-4 hover:bg-white/[0.03] transition-all relative group"
                     data-testid={`song-item-${index}`}
                   >
                     {/* Track number */}
-                    <span className="text-sm text-white/30 w-6 text-right font-mono">
+                    <span className="text-sm text-white/25 w-6 text-right font-mono">
                       {index + 1}
                     </span>
                     
                     {/* Song info */}
-                    <div className="flex-1 min-w-0 pr-20">
+                    <div className="flex-1 min-w-0">
                       <h3 className="font-medium truncate text-white/90" data-testid={`text-song-title-${index}`}>
-                        <a 
-                          href={spotifyUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="hover:text-primary transition-colors"
-                        >
-                          {song.title}
-                        </a>
+                        {song.title}
                       </h3>
                       <p className="text-sm text-white/50 truncate" data-testid={`text-song-artist-${index}`}>
                         {song.artist}
                       </p>
                       <p className="text-xs text-white/30 mt-1">
                         {song.sub_vibe}
-                        {isExtrapolated && <span className="ml-2 text-primary">✨ AI discovery</span>}
+                        {isExtrapolated && <span className="ml-2 text-purple-400">✨ AI discovery</span>}
                       </p>
                     </div>
+                    
+                    {/* Spotify button - always visible in top right */}
+                    <a
+                      href={spotifyUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="absolute top-3 right-3 p-1.5 rounded-full bg-[#1DB954]/10 hover:bg-[#1DB954]/20 text-[#1DB954] transition-all hover:scale-110"
+                      title="Open in Spotify"
+                    >
+                      <SpotifyIcon className="w-4 h-4" />
+                    </a>
                     
                     {/* Feedback buttons - ONLY show for extrapolated songs */}
                     {isExtrapolated && (
@@ -216,10 +257,10 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
                           disabled={isValidated || isDownvoted}
                           className={`p-1.5 rounded-md transition-all border ${
                             isValidated
-                              ? "text-green-500 border-green-500 opacity-100"
+                              ? "text-green-400 border-green-400/50 bg-green-400/10"
                               : isDownvoted
                               ? "text-white/20 border-transparent opacity-30 cursor-not-allowed"
-                              : "text-white/30 border-transparent opacity-40 hover:opacity-100 hover:border-green-500 hover:text-green-500"
+                              : "text-white/30 border-transparent opacity-40 hover:opacity-100 hover:border-green-400/50 hover:text-green-400 hover:bg-green-400/10"
                           }`}
                           data-testid={`button-validate-song-${index}`}
                           title={isValidated ? "Added to Tapestry!" : isDownvoted ? "Already downvoted" : "Great match - add to Tapestry"}
@@ -232,10 +273,10 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
                           disabled={isDownvoted || isValidated}
                           className={`p-1.5 rounded-md transition-all border ${
                             isDownvoted
-                              ? "text-red-500 border-red-500 opacity-100"
+                              ? "text-red-400 border-red-400/50 bg-red-400/10"
                               : isValidated
                               ? "text-white/20 border-transparent opacity-30 cursor-not-allowed"
-                              : "text-white/30 border-transparent opacity-40 hover:opacity-100 hover:border-red-500 hover:text-red-500"
+                              : "text-white/30 border-transparent opacity-40 hover:opacity-100 hover:border-red-400/50 hover:text-red-400 hover:bg-red-400/10"
                           }`}
                           data-testid={`button-downvote-song-${index}`}
                           title={isDownvoted ? "Flagged for review" : isValidated ? "Already validated" : "Poor match"}
@@ -248,7 +289,7 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
                 );
               })}
             </div>
-          </Card>
+          </div>
 
           {/* Actions */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -293,38 +334,50 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
                   if (!humanQuote && !aiReasoning) return null;
                   
                   return (
-                    <Card 
+                    <div 
                       key={`detail-${song.track_id}-${index}`} 
-                      className="p-5 bg-white/[0.02] border-white/[0.06]"
+                      className="relative p-5 rounded-xl overflow-hidden"
                     >
-                      <h4 className="font-medium text-sm text-white/70 mb-3">
-                        {song.title} — {song.artist}
-                        {isExtrapolated && <span className="ml-2 text-xs text-white/40">(AI discovery)</span>}
-                      </h4>
+                      {/* Frosted background */}
+                      <div 
+                        className="absolute inset-0 backdrop-blur-lg"
+                        style={{
+                          background: 'linear-gradient(135deg, rgba(139,92,246,0.05) 0%, rgba(59,130,246,0.03) 100%)',
+                          border: '1px solid rgba(255,255,255,0.06)',
+                          borderRadius: '0.75rem',
+                        }}
+                      />
                       
-                      {humanQuote && (
-                        <div className="mb-4">
-                          <div className="flex gap-3">
-                            <Quote className="w-4 h-4 text-white/30 flex-shrink-0 mt-0.5" />
-                            <blockquote className="text-white/60 italic text-sm leading-relaxed">
-                              "{humanQuote}"
-                            </blockquote>
+                      <div className="relative z-10">
+                        <h4 className="font-medium text-sm text-white/70 mb-3">
+                          {song.title} — {song.artist}
+                          {isExtrapolated && <span className="ml-2 text-xs text-purple-400/70">(AI discovery)</span>}
+                        </h4>
+                        
+                        {humanQuote && (
+                          <div className="mb-4">
+                            <div className="flex gap-3">
+                              <Quote className="w-4 h-4 text-purple-400/40 flex-shrink-0 mt-0.5" />
+                              <blockquote className="text-white/60 italic text-sm leading-relaxed">
+                                "{humanQuote}"
+                              </blockquote>
+                            </div>
+                            <p className="text-xs text-white/30 mt-2 ml-7">
+                              — from {sourceLabel}
+                            </p>
                           </div>
-                          <p className="text-xs text-white/30 mt-2 ml-7">
-                            — from {sourceLabel}
-                          </p>
-                        </div>
-                      )}
-                      
-                      {aiReasoning && (
-                        <div className={humanQuote ? "border-t border-white/[0.06] pt-3 mt-3" : ""}>
-                          <p className="text-xs text-white/50 leading-relaxed">
-                            <span className="font-medium text-white/60">Why it fits: </span>
-                            {aiReasoning}
-                          </p>
-                        </div>
-                      )}
-                    </Card>
+                        )}
+                        
+                        {aiReasoning && (
+                          <div className={humanQuote ? "border-t border-white/[0.06] pt-3 mt-3" : ""}>
+                            <p className="text-xs text-white/50 leading-relaxed">
+                              <span className="font-medium text-purple-400/70">Why it fits: </span>
+                              {aiReasoning}
+                            </p>
+                          </div>
+                        )}
+                      </div>
+                    </div>
                   );
                 })}
               </div>
