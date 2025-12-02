@@ -18,6 +18,16 @@ Midden excavates these digital layers to build something algorithms never could:
 
 ---
 
+## The ᛗ Symbol
+
+Midden's logo is the **Mannaz rune (ᛗ)** from the Elder Futhark alphabet. It means *"humanity"* and *"the self"*—the collective human experience and individual identity intertwined.
+
+It's the perfect symbol for what Midden does: excavating the deeply personal ways humans connect with music, then weaving those individual stories into a shared emotional map.
+
+Every song in Midden exists because a real person said *"this one matters to me."* The Mannaz rune honors that.
+
+---
+
 ## What Makes Midden Different
 
 **Traditional streaming algorithms:**
