@@ -99,22 +99,6 @@
           "mapped_subvibe": "Sad - Heartbreak"
         },
         {
-          "artist": "ROSÉ",
-          "song": "number one girl",
-          "spotify_id": "1lcBt7LoEikqYmhUoa2cez",
-          "spotify_uri": "spotify:track:1lcBt7LoEikqYmhUoa2cez",
-          "comment_score": 191385,
-          "source_url": "https://youtube.com/watch?v=pZ1NdE69VTs",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Best Sad Songs and Emotional Songs - YouTube Playlist 2025",
-          "comment_text": "number one on our playlist and in our hearts",
-          "ananki_reasoning": "ROSÉ's 'number one girl' is a vulnerable ballad about desperately seeking validation and love from someone, asking what they need her to be. The song's emotional core revolves around the pain of not feeling good enough in a relationship and the heartache of trying to change oneself for love. The comment 'number one on our playlist and in our hearts' on a 'Best Sad Songs and Emotional Songs' playlist confirms its placement in a sad/emotional context. While the song deals with themes of insecurity and longing, its primary emotional driver is relationship pain and the heartbreak of unfulfilled love, making 'Sad - Heartbreak' the most appropriate classification.",
-          "mapped_subvibe": "Sad - Heartbreak"
-        },
-        {
           "artist": "Billie Eilish",
           "song": "BIRDS OF A FEATHER",
           "spotify_id": "6dOtVTDdiauQNBQEDOtlAB",
@@ -227,22 +211,6 @@
           "mapped_subvibe": "Sad - Heartbreak"
         },
         {
-          "artist": "Vast",
-          "song": "I Need to Say Goodbye",
-          "spotify_id": "3GNU4HCHkIz6g48Kf21GcY",
-          "spotify_uri": "spotify:track:3GNU4HCHkIz6g48Kf21GcY",
-          "comment_score": 2,
-          "source_url": "https://youtube.com/watch?v=bXkW9FzxMZM",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Angry breakup songs",
-          "comment_text": "i love this song, and i found it on a skate video in 2010.",
-          "ananki_reasoning": "The human explicitly mentions this is an 'angry breakup song' they love. The song title 'I Need to Say Goodbye' combined with the breakup context strongly indicates heartbreak emotions. While the post title mentions 'angry' breakup songs, the act of needing to say goodbye and the breakup context points primarily to heartbreak as the core emotional sub-vibe, with anger being a component of that heartbreak processing.",
-          "mapped_subvibe": "Sad - Heartbreak"
-        },
-        {
           "artist": "Logic",
           "song": "Ten Years (feat. Royce Da 5'9'')",
           "spotify_id": "7IQvfSUydTVpnGxEEYOtQ4",
@@ -323,38 +291,6 @@
           "mapped_subvibe": "Sad - Heartbreak"
         },
         {
-          "artist": "WordzPerfect",
-          "song": "Runaway",
-          "spotify_id": "14zdYoCFp8GB1ygogBA8Rb",
-          "spotify_uri": "spotify:track:14zdYoCFp8GB1ygogBA8Rb",
-          "comment_score": 3480,
-          "source_url": "https://youtube.com/watch?v=URblbwlpnLc",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Angry Breakup Songs xD",
-          "comment_text": "Can we all take a moment to appreciate how beautiful Adam's voice is?",
-          "ananki_reasoning": "The post title explicitly identifies this as an 'Angry Breakup Song,' which directly indicates heartbreak content. While the comment focuses on appreciating the vocalist's (Adam's) voice quality rather than describing the emotional content, the context of being recommended in a thread specifically about breakup songs makes the emotional intent clear. Breakup songs, especially angry ones, fall squarely into the heartbreak category as they deal with the pain and emotions of romantic relationships ending.",
-          "mapped_subvibe": "Sad - Heartbreak"
-        },
-        {
-          "artist": "The Marías",
-          "song": "No One Noticed",
-          "spotify_id": "3siwsiaEoU4Kuuc9WKMUy5",
-          "spotify_uri": "spotify:track:3siwsiaEoU4Kuuc9WKMUy5",
-          "comment_score": 1415,
-          "source_url": "https://youtube.com/watch?v=9kbNWCcKLv0",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Breakup Songs 2025 - Sad Songs Playlist - Break up Songs Playlist",
-          "comment_text": "Leaving this here so people know I was alive when this masterpiece released",
-          "ananki_reasoning": "The song 'No One Noticed' by The Marías appears in a playlist explicitly titled 'Breakup Songs 2025 - Sad Songs Playlist'. The commenter's dramatic statement about wanting people to know they 'was alive when this masterpiece released' suggests deep emotional resonance with a powerful breakup/heartbreak song. The song title itself ('No One Noticed') evokes the painful feeling of invisibility or being unrecognized during emotional distress, which is a common heartbreak theme. Given the playlist context is specifically about breakup songs and the emotional weight the commenter assigns to it, this clearly maps to the heartbreak sub-vibe.",
-          "mapped_subvibe": "Sad - Heartbreak"
-        },
-        {
           "artist": "Dean Lewis",
           "song": "With You",
           "spotify_id": "7mdJAkMBPkKYOLxcVPDqa0",
@@ -416,38 +352,6 @@
           "post_title": "Breakup Songs 2025 - Sad Songs Playlist - Break up Songs Playlist",
           "comment_text": "Some of us really need this music .thank you for everything you do",
           "ananki_reasoning": "The song appears in a playlist explicitly titled 'Breakup Songs 2025 - Sad Songs Playlist' and the commenter expresses genuine need for this type of music, thanking the creator. The context is clearly about processing breakup emotions. The song title 'MAYBE.' suggests the uncertainty and questioning that comes with heartbreak. While other sad sub-vibes like 'Sad - Lonely' or 'Sad - Melancholic' could apply, the direct connection to breakup content and the playlist's explicit framing makes 'Sad - Heartbreak' the most precise match.",
-          "mapped_subvibe": "Sad - Heartbreak"
-        },
-        {
-          "artist": "Dean Lewis",
-          "song": "Memories",
-          "spotify_id": "063zL0vR7PPcFfrlsSdh0v",
-          "spotify_uri": "spotify:track:063zL0vR7PPcFfrlsSdh0v",
-          "comment_score": 118,
-          "source_url": "https://youtube.com/watch?v=GPH6sEaxk1g",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 1,
-          "full_context": "",
-          "post_title": "Breakup Songs 2025 - Sad Songs Playlist - Break up Songs Playlist",
-          "comment_text": "Any fans of Dean Lewis here? 👋",
-          "ananki_reasoning": "The song 'Memories' by Dean Lewis is shared in a post explicitly titled 'Breakup Songs 2025 - Sad Songs Playlist - Break up Songs Playlist'. The context is unambiguous: this is a breakup-themed playlist. Dean Lewis is known for emotional ballads about lost love and heartbreak. 'Memories' specifically deals with the painful recollection of a past relationship, which aligns perfectly with the heartbreak sub-vibe - the immediate emotional wound of romantic loss rather than general sadness or nostalgia.",
-          "mapped_subvibe": "Sad - Heartbreak"
-        },
-        {
-          "artist": "Bryant Barnes",
-          "song": "Why Can't You",
-          "spotify_id": "2fwsmT1AbClEwHbujP4ZMr",
-          "spotify_uri": "spotify:track:2fwsmT1AbClEwHbujP4ZMr",
-          "comment_score": 1033,
-          "source_url": "https://youtube.com/watch?v=n8babDzRbPw",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Breakup Songs 2025 - Sad Songs Playlist - Break up Songs Playlist",
-          "comment_text": "Write ''I was here'' before this masterpiece goes viral 🗣️🗣️",
-          "ananki_reasoning": "The song is explicitly featured in a 'Breakup Songs 2025' playlist and described as part of a 'Sad Songs Playlist' and 'Break up Songs Playlist'. The comment anticipates the song going viral as a 'masterpiece', suggesting strong emotional resonance with the breakup theme. Bryant Barnes' 'Why Can't You' is being recommended specifically in the context of breakup music, which directly aligns with heartbreak emotions - the acute pain and confusion following the end of a romantic relationship.",
           "mapped_subvibe": "Sad - Heartbreak"
         },
         {
@@ -531,22 +435,6 @@
           "mapped_subvibe": "Sad - Heartbreak"
         },
         {
-          "artist": "Madison Bailey",
-          "song": "Honestly",
-          "spotify_id": "19gGwhwaQUK2aQbJ03YMOo",
-          "spotify_uri": "spotify:track:19gGwhwaQUK2aQbJ03YMOo",
-          "comment_score": 717,
-          "source_url": "https://youtube.com/watch?v=yb656fOPnJk",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Breakup Songs 2025 - Sad Songs Playlist - Break up Songs Playlist",
-          "comment_text": "Already took fav actor now coming for fav artist too",
-          "ananki_reasoning": "The song appears in a 'Breakup Songs 2025' playlist, and the commenter's statement 'Already took fav actor now coming for fav artist too' suggests they're experiencing a breakup where their ex-partner is claiming or affecting things they care about (favorite actor, favorite artist). This indicates active heartbreak and the pain of losing someone who is impacting their life and interests. The song title 'Honestly' combined with this context suggests raw, truthful emotions about relationship pain, which fits the Heartbreak sub-vibe perfectly.",
-          "mapped_subvibe": "Sad - Heartbreak"
-        },
-        {
           "artist": "Matt Hansen",
           "song": "LET EM GO",
           "spotify_id": "2RnBxdoRGOBzy2yvThWtMe",
@@ -592,22 +480,6 @@
           "post_title": "Breakup Songs 2025 - Sad Songs Playlist - Break up Songs Playlist",
           "comment_text": "Whoever's reading this, i pray that whatever you're going through gets better and whatever you're struggling with or worrying about is going to be fine and that everyone has a fantastic day! Amen",
           "ananki_reasoning": "The song 'Forget Me' by Lewis Capaldi appears in a playlist explicitly titled 'Breakup Songs 2025 - Sad Songs Playlist'. Lewis Capaldi is known for emotional breakup ballads, and this song title itself suggests the painful experience of being forgotten after a relationship ends. While the comment is supportive and hopeful, the playlist context clearly indicates this is a heartbreak song meant for people going through breakups. The commenter's prayer for those 'going through' difficult times aligns with the emotional support people seek when dealing with romantic loss.",
-          "mapped_subvibe": "Sad - Heartbreak"
-        },
-        {
-          "artist": "Alexander Stewart",
-          "song": "i wish you cheated",
-          "spotify_id": "6ErCfbbI9BG4bK2djjKUvP",
-          "spotify_uri": "spotify:track:6ErCfbbI9BG4bK2djjKUvP",
-          "comment_score": 2799,
-          "source_url": "https://youtube.com/watch?v=bMRvAPeY_wM",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Breakup Songs 2025 - Sad Songs Playlist - Break up Songs Playlist",
-          "comment_text": "Leaving this comment here so that when someone likes it I get reminded of this beautiful song❤",
-          "ananki_reasoning": "The song 'i wish you cheated' by Alexander Stewart was recommended in a breakup songs playlist context, and the commenter describes it as 'beautiful' in an emotionally resonant way. The song title itself suggests the complex pain of a breakup where the ending might have been easier to process if there had been a clear betrayal - this is quintessential heartbreak material. The human's desire to be reminded of this song indicates it deeply connects with their breakup/heartbreak experience. While it could also fit 'Sad - Melancholic', the direct context of being in a 'Breakup Songs 2025' playlist and the song's theme makes Sad - Heartbreak the most precise match.",
           "mapped_subvibe": "Sad - Heartbreak"
         },
         {
@@ -704,38 +576,6 @@
           "post_title": "listen these songs if you were cheated or deep hurt.",
           "comment_text": "This song makes me cry every time. Not a lot of artists have this affect on me.",
           "ananki_reasoning": "The post title explicitly states 'listen these songs if you were cheated or deep hurt,' which directly indicates heartbreak from betrayal. The commenter's response that 'This song makes me cry every time' reinforces the emotional intensity and cathartic sadness associated with heartbreak. The combination of betrayal context and tear-inducing quality makes this clearly a heartbreak song rather than general sadness or crying, as it's specifically tied to romantic hurt and cheating.",
-          "mapped_subvibe": "Sad - Heartbreak"
-        },
-        {
-          "artist": "Erik Grönwall",
-          "song": "Leave A Light On For Me",
-          "spotify_id": "7HsYXC9os50608A3V3gYyd",
-          "spotify_uri": "spotify:track:7HsYXC9os50608A3V3gYyd",
-          "comment_score": 42,
-          "source_url": "https://youtube.com/watch?v=FEQCDTkGjKY",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "listen these songs if you were cheated or deep hurt.",
-          "comment_text": "All of My December was perfect. ",
-          "ananki_reasoning": "The post title explicitly states 'listen these songs if you were cheated or deep hurt,' which directly indicates heartbreak context. The comment describes 'All of My December' (likely the album) as 'perfect' for this emotional state. The song title 'Leave A Light On For Me' suggests themes of hoping someone will wait/return, which aligns with the aftermath of betrayal and deep emotional hurt from cheating. This is clearly positioned as a heartbreak recovery song.",
-          "mapped_subvibe": "Sad - Heartbreak"
-        },
-        {
-          "artist": "Kelly Clarkson",
-          "song": "Low",
-          "spotify_id": "7HtE5z6XsuogcQJmnTNAIH",
-          "spotify_uri": "spotify:track:7HtE5z6XsuogcQJmnTNAIH",
-          "comment_score": 386,
-          "source_url": "https://youtube.com/watch?v=QD3YBM5mpQA",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Songs about betrayal/losing friends",
-          "comment_text": "This is one of her best songs. People slept on it too hard.",
-          "ananki_reasoning": "The song 'Low' by Kelly Clarkson is being recommended in a thread specifically about 'betrayal/losing friends.' The context of betrayal and friendship loss creates an emotional space that closely aligns with heartbreak, as these types of losses involve broken trust and emotional pain similar to romantic heartbreak. The commenter's enthusiasm ('one of her best songs') and note that 'people slept on it too hard' suggests it's an emotionally resonant track that captures the pain of being let down by someone close. While this could involve friendship rather than romantic betrayal, the emotional core of betrayal-related loss maps most closely to the heartbreak sub-vibe.",
           "mapped_subvibe": "Sad - Heartbreak"
         },
         {
@@ -979,22 +819,6 @@
           "mapped_subvibe": "Sad - Heartbreak"
         },
         {
-          "artist": "The All-American Rejects",
-          "song": "It Ends Tonight",
-          "spotify_id": "1FMHNVeJ9s1x1l1WlaRs2I",
-          "spotify_uri": "spotify:track:1FMHNVeJ9s1x1l1WlaRs2I",
-          "comment_score": 4916,
-          "source_url": "https://youtube.com/watch?v=yfdAGkjHGac",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Betrayal songs",
-          "comment_text": "A Message to Future Generations, Don't let this song die. It's MAY 2025, let's see how many legends are listening to this masterpiece <3",
-          "ananki_reasoning": "The post title explicitly mentions 'Betrayal songs,' which directly relates to relationship betrayal and heartbreak. 'It Ends Tonight' by The All-American Rejects is a classic breakup anthem about ending a toxic or painful relationship. The song's themes of finality, emotional pain, and moving on from someone who has hurt you align perfectly with heartbreak. While the comment itself is a generic 'don't let this die' message, the categorization under 'Betrayal songs' is the key contextual indicator that this song resonates with the poster's experience of romantic betrayal and heartbreak.",
-          "mapped_subvibe": "Sad - Heartbreak"
-        },
-        {
           "artist": "Olivia Rodrigo",
           "song": "happier",
           "spotify_id": "3JJneCSDh1685L9OVvTiIo",
@@ -1072,54 +896,6 @@
           "post_title": "Sad Songs Playlist 2024 🌧️ with Lyrics",
           "comment_text": "came to see what the hype was about....I wasn't expecting it to be sad.",
           "ananki_reasoning": "The comment indicates the user discovered 'drivers license' through a 'Sad Songs Playlist 2024' and was surprised by how sad it actually was, confirming the song's emotional impact. 'drivers license' by Olivia Rodrigo is explicitly about heartbreak and the aftermath of a breakup, with lyrics detailing emotional pain over a lost relationship and seeing an ex move on. The song's core narrative of processing a failed romantic relationship and the raw emotional vulnerability makes Sad - Heartbreak the most appropriate sub-vibe, as it directly addresses romantic loss rather than general sadness, loneliness, or other sad variants.",
-          "mapped_subvibe": "Sad - Heartbreak"
-        },
-        {
-          "artist": "salem ilese",
-          "song": "About a Breakup",
-          "spotify_id": "4MxB7UkY3f3g9cvA7oubL5",
-          "spotify_uri": "spotify:track:4MxB7UkY3f3g9cvA7oubL5",
-          "comment_score": 13,
-          "source_url": "https://youtube.com/watch?v=PG5Gm6DlZiI",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Sad Songs Playlist 2024 🌧️ with Lyrics",
-          "comment_text": "why is salem ilese so amazing?",
-          "ananki_reasoning": "The song is explicitly titled 'About a Breakup' by salem ilese and was recommended in a 'Sad Songs Playlist 2024' context. The human's comment expresses admiration for the artist, validating the emotional impact of the song. Given the direct breakup theme and placement in a sad playlist, this clearly fits the Heartbreak sub-vibe, which specifically captures the emotional experience of relationship endings.",
-          "mapped_subvibe": "Sad - Heartbreak"
-        },
-        {
-          "artist": "Duncan Laurence",
-          "song": "Arcade",
-          "spotify_id": "1J14CdDAvBTE1AJYUOwl6C",
-          "spotify_uri": "spotify:track:1J14CdDAvBTE1AJYUOwl6C",
-          "comment_score": 147,
-          "source_url": "https://youtube.com/watch?v=BKlFh6DUWfQ",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Sad Songs Playlist 2024 🌧️ with Lyrics",
-          "comment_text": "Who is ready for another beautiful sad song?",
-          "ananki_reasoning": "Duncan Laurence's 'Arcade' is explicitly about lost love and heartbreak, with the central lyric 'Loving you is a losing game' capturing the pain of a failed relationship. The human describes it as a 'beautiful sad song' in a sad songs playlist, and the song's emotional core deals specifically with romantic loss and the lingering pain of a relationship that has ended. While it has melancholic elements, the primary emotional driver is the heartbreak narrative woven throughout the lyrics.",
-          "mapped_subvibe": "Sad - Heartbreak"
-        },
-        {
-          "artist": "Tate McRae",
-          "song": "working",
-          "spotify_id": "31sSFHIe4NaxltVFOEIcTa",
-          "spotify_uri": "spotify:track:31sSFHIe4NaxltVFOEIcTa",
-          "comment_score": 243,
-          "source_url": "https://youtube.com/watch?v=Vdjx1t5TiQc",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Sad Songs Playlist 2024 🌧️ with Lyrics",
-          "comment_text": "Any fans of *Tate McRae* and *Khalid* here?",
-          "ananki_reasoning": "The song 'working' by Tate McRae is featured in a 'Sad Songs Playlist 2024' context. Tate McRae is known for emotional pop songs about relationships and heartbreak, particularly dealing with complicated feelings about love and moving on. The song 'working' specifically deals with the emotional struggle of trying to make a relationship work despite difficulties, which aligns with heartbreak themes. The playlist context explicitly labels it as sad music, and given Tate McRae's signature style of vulnerable relationship-focused lyrics, 'Sad - Heartbreak' is the most appropriate classification.",
           "mapped_subvibe": "Sad - Heartbreak"
         },
         {
@@ -2919,22 +2695,6 @@
           "mapped_subvibe": "Sad - Crying"
         },
         {
-          "artist": "Ariana Grande",
-          "song": "pov",
-          "spotify_id": "3UoULw70kMsiVXxW0L3A33",
-          "spotify_uri": "spotify:track:3UoULw70kMsiVXxW0L3A33",
-          "comment_score": 33079,
-          "source_url": "https://youtube.com/watch?v=nQJEp-k-ogs",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Romantic Music - Cheesy Love Songs Playlist",
-          "comment_text": "I’m on the floor weepinggggg THIS IS SO BEAUTIFUL",
-          "ananki_reasoning": "The commenter explicitly states 'I'm on the floor weepinggggg THIS IS SO BEAUTIFUL' in response to Ariana Grande's 'pov' on a romantic playlist. The repeated 'g's in 'weepinggggg' emphasize the intensity of the emotional response. While the song appears on a romantic playlist and the emotion is positive ('SO BEAUTIFUL'), the primary emotional expression is crying/weeping, which indicates tears of overwhelming beauty rather than sadness. However, the 'Sad - Crying' sub-vibe best captures the literal weeping response, even if the tears are from being moved by romantic beauty rather than heartbreak. This is a common response to deeply touching romantic songs.",
-          "mapped_subvibe": "Sad - Crying"
-        },
-        {
           "artist": "The Band",
           "song": "It Makes No Difference - Concert Version",
           "spotify_id": "0jo6RYrOvzGSjtmgf7EEIg",
@@ -4204,22 +3964,6 @@
           "post_title": "Songs about betrayal/losing friends",
           "comment_text": "slow pretty reckless songs are awesome as hell.\nHere some: You, Waiting for a Friend, Bedroom Window, Take Me Down, Nothing Left to Lose",
           "ananki_reasoning": "The song 'Waiting For A Friend' by The Pretty Reckless is recommended in a thread specifically about betrayal and losing friends. The user describes these as 'slow pretty reckless songs,' emphasizing their slower, emotional tempo. This context suggests a reflective, bittersweet sadness about lost friendships rather than acute heartbreak or grief. The melancholic sub-vibe captures the contemplative, slow-burning sadness associated with betrayal and the end of friendships - it's sorrowful but in a more subdued, reflective way rather than openly crying or experiencing active heartbreak.",
-          "mapped_subvibe": "Sad - Melancholic"
-        },
-        {
-          "artist": "KingST",
-          "song": "Scarecrow",
-          "spotify_id": "7a7f0P7FFn5S0t9GkjwbH2",
-          "spotify_uri": "spotify:track:7a7f0P7FFn5S0t9GkjwbH2",
-          "comment_score": 50,
-          "source_url": "https://youtube.com/watch?v=NgPIcUW-4Yc",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "pov: you got betrayed playlist",
-          "comment_text": "What I called slowed to perfection.",
-          "ananki_reasoning": "The context 'pov: you got betrayed playlist' combined with the comment 'What I called slowed to perfection' indicates this is a song for processing betrayal emotions. The 'slowed' aspect suggests a reflective, melancholic mood rather than acute heartbreak or crying. Betrayal typically evokes a complex emotional state of sadness mixed with contemplation and processing - characteristic of melancholic music. The slowed tempo reinforces this reflective, lingering emotional quality over more immediate emotional responses like crying or heartbreak.",
           "mapped_subvibe": "Sad - Melancholic"
         },
         {
@@ -7392,22 +7136,6 @@
           "post_title": "Pensive / Somber Music for Writing",
           "comment_text": "\"Steve? Y-you're alive! Y-you-you came back...:literally the saddest part :'(",
           "ananki_reasoning": "The comment references a deeply emotional reunion scene ('Steve? Y-you're alive! Y-you came back') and explicitly labels it as 'literally the saddest part' with a crying emoticon. This suggests themes of loss, presumed death, and the overwhelming emotion of someone returning after being thought dead. The context of grief - the process of mourning loss and the emotional weight of believing someone is gone - fits better than simple sadness or melancholy. The exclamation marks and stuttering suggest shock and overwhelming emotion associated with profound loss and unexpected return, which are hallmarks of grief-related emotional experiences.",
-          "mapped_subvibe": "Sad - Grief"
-        },
-        {
-          "artist": "Jelly House",
-          "song": "Number 23",
-          "spotify_id": "6efS31oXMcucYOAAr8ZqPZ",
-          "spotify_uri": "spotify:track:6efS31oXMcucYOAAr8ZqPZ",
-          "comment_score": 272,
-          "source_url": "https://youtube.com/watch?v=51KSEh3p6fo",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Pensive / Somber Music for Writing",
-          "comment_text": "The reaping... elizabeth completely blew me away in catching fire. (obviously they all did) but the way effie's character developped through the books and the movies breaks me all over again. the way she calls them her greatest triumph, her victors, how she treats them as her own children, how she cries at the reaping, and how she says \"I'm truly sorry.\" when they say goodbye. That shows so much. It shows how the Capitol understands their cruelty, how they \"deserved so much more\". ",
-          "ananki_reasoning": "The human is describing the emotional impact of Effie's character development in The Hunger Games, specifically focusing on themes of loss, heartbreak, and the tragedy of the reaping system. Key phrases like 'breaks me all over again,' 'how she cries at the reaping,' 'I'm truly sorry,' and 'they deserved so much more' indicate deep sorrow tied to loss and injustice. The context of 'pensive/somber music for writing' combined with the specific emotional weight of characters losing their lives or futures to a cruel system aligns most closely with grief - a profound sadness about irreversible loss and the understanding of systemic cruelty. This transcends simple melancholy into the territory of mourning what was taken from these characters.",
           "mapped_subvibe": "Sad - Grief"
         },
         {
@@ -10663,22 +10391,6 @@
           "mapped_subvibe": "Sad - Depressive"
         },
         {
-          "artist": "Thirty Seconds To Mars",
-          "song": "The Kill (Bury Me)",
-          "spotify_id": "54bzhkAeWNCzl6Reh4h8pV",
-          "spotify_uri": "spotify:track:54bzhkAeWNCzl6Reh4h8pV",
-          "comment_score": 34851,
-          "source_url": "https://youtube.com/watch?v=8yvGCAvOAfM",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Depressing Rock Songs",
-          "comment_text": "Who's here after Chad nailed it in Drumeo 😂",
-          "ananki_reasoning": "The comment references a post titled 'Depressing Rock Songs' and mentions Chad's Drumeo performance of 'The Kill (Bury Me)' by Thirty Seconds To Mars. The song itself deals with themes of internal struggle and emotional turmoil ('bury me'), and it was explicitly shared in a thread seeking depressing rock songs. While the comment tone is lighthearted about the drum performance, the original context and post title clearly frame this as a depressive rock track, making 'Sad - Depressive' the most appropriate sub-vibe.",
-          "mapped_subvibe": "Sad - Depressive"
-        },
-        {
           "artist": "A Day To Remember",
           "song": "If It Means A Lot To You",
           "spotify_id": "3rEwGRmPVVudVjqdgv0tRR",
@@ -11739,22 +11451,6 @@
           "mapped_subvibe": "Sad - Nostalgic Sad"
         },
         {
-          "artist": "Lloyd P-White",
-          "song": "Moonlight",
-          "spotify_id": "57opvrHZDQaffOTShzIqcR",
-          "spotify_uri": "spotify:track:57opvrHZDQaffOTShzIqcR",
-          "comment_score": 18285,
-          "source_url": "https://youtube.com/watch?v=93dCIYaB4Os",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Easy songs to sing",
-          "comment_text": "2021 anyone? 😭 I still love this song years later",
-          "ananki_reasoning": "The comment expresses enduring love for a song from 2021, with the crying emoji (😭) indicating emotional attachment. The phrase '2021 anyone?' and 'years later' directly signals nostalgia - looking back fondly on something from the past while experiencing bittersweet emotions. The crying emoji combined with 'still love' suggests this isn't pure sadness but rather the melancholic fondness characteristic of nostalgia. The context of it being an 'easy song to sing' suggests accessibility and possibly simplicity that adds to its nostalgic charm.",
-          "mapped_subvibe": "Sad - Nostalgic Sad"
-        },
-        {
           "artist": "Gorillaz",
           "song": "On Melancholy Hill",
           "spotify_id": "0q6LuUqGLUiCPP1cbdwFs3",
@@ -12715,22 +12411,6 @@
           "mapped_subvibe": "Sad - Nostalgic Sad"
         },
         {
-          "artist": "Joe Cocker",
-          "song": "Up Where We Belong - From \"An Officer And A Gentleman\"",
-          "spotify_id": "4U6mBgGP8FXN6UH4T3AJhu",
-          "spotify_uri": "spotify:track:4U6mBgGP8FXN6UH4T3AJhu",
-          "comment_score": 485,
-          "source_url": "https://youtube.com/watch?v=X5h02ZmeB5c",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Ultimate Mellow Magic Playlist",
-          "comment_text": "wow, love this song!!! so many memories : )",
-          "ananki_reasoning": "The comment 'so many memories : )' combined with the song 'Up Where We Belong' (a classic 1982 romantic duet from 'An Officer and a Gentleman') strongly suggests nostalgic feelings. The playlist title 'Ultimate Mellow Magic Playlist' reinforces a reflective, memory-laden mood. While the smiley emoticon indicates positivity, the emphasis on 'so many memories' paired with this iconic love ballad points to bittersweet nostalgia - looking back fondly on past moments, likely romantic ones, that are tinged with the passage of time. This fits 'Nostalgic Sad' better than pure happiness or romance, as the emotional weight is on reminiscence rather than current joy or active romance.",
-          "mapped_subvibe": "Sad - Nostalgic Sad"
-        },
-        {
           "artist": "Crowded House",
           "song": "Don't Dream It's Over",
           "spotify_id": "7G7tgVYORlDuVprcYHuFJh",
@@ -13240,22 +12920,6 @@
           "post_title": "Film Noir Jazz",
           "comment_text": "My Mom and Dad dancing in the living room with Henry on the Hi-fi.  So young so graceful.  Both are gone now, but the sweet memories linger.",
           "ananki_reasoning": "The comment describes a bittersweet memory of the writer's parents dancing to Henry Mancini in their living room. The phrase 'Both are gone now, but the sweet memories linger' explicitly indicates grief and loss, combined with warm nostalgia for a cherished past moment. While there is genuine sadness about their parents' passing, the dominant emotion is nostalgic longing - remembering them 'so young so graceful' through the lens of this specific song. The memory is tender rather than devastatingly sad, making this a perfect example of nostalgic sadness where music serves as a vehicle for remembering lost loved ones.",
-          "mapped_subvibe": "Sad - Nostalgic Sad"
-        },
-        {
-          "artist": "Sydney J",
-          "song": "ballad in g",
-          "spotify_id": "0YXXk68nrUC8DJKYQkiGrK",
-          "spotify_uri": "spotify:track:0YXXk68nrUC8DJKYQkiGrK",
-          "comment_score": 1,
-          "source_url": "https://youtube.com/watch?v=Oy2LJQs55io",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Post-Apocalyptic Songs",
-          "comment_text": "Still here after 11 years, still love this song",
-          "ananki_reasoning": "The comment 'Still here after 11 years, still love this song' expresses a deep, enduring connection to the song over a significant time period. Combined with the post-apocalyptic theme context, this suggests a bittersweet, reflective emotional state - the person has carried this song with them through time, which evokes nostalgia. The longevity of their attachment (11 years) and the persistent love indicates this isn't about acute sadness, but rather a wistful, nostalgic connection to both the song and likely the memories associated with it. The post-apocalyptic framing adds to the melancholic, looking-back quality of the recommendation.",
           "mapped_subvibe": "Sad - Nostalgic Sad"
         },
         {
@@ -13800,22 +13464,6 @@
           "post_title": "happy/motivational songs",
           "comment_text": "Nostalgia is the best and worst feeling at the same time.",
           "ananki_reasoning": "The human explicitly states 'Nostalgia is the best and worst feeling at the same time' when recommending this song in a thread about happy/motivational music. This captures the bittersweet duality of nostalgia perfectly. While 'Viva La Vida' has triumphant musical elements, the lyrics reflect on past glory and loss ('I used to rule the world'), making it emotionally complex. The human's comment emphasizes the melancholic aspect of looking back, acknowledging both the beauty and pain of remembering. The 'best and worst' duality aligns precisely with nostalgic sadness - a longing for the past tinged with the awareness that it cannot return.",
-          "mapped_subvibe": "Sad - Nostalgic Sad"
-        },
-        {
-          "artist": "Childish Gambino",
-          "song": "Feels Like Summer",
-          "spotify_id": "7p4vHnYXkxlzvfePJVpcTr",
-          "spotify_uri": "spotify:track:7p4vHnYXkxlzvfePJVpcTr",
-          "comment_score": 21998,
-          "source_url": "https://youtube.com/watch?v=F1B9Fk_SgI0",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Don’t worry be happy - music playlist",
-          "comment_text": "this animation is so beautiful...",
-          "ananki_reasoning": "Childish Gambino's 'Feels Like Summer' is known for its wistful, contemplative tone dealing with themes of loss, change, and looking back. The human's comment focuses on the beauty of the animation (the music video features animated versions of celebrities, many of whom have passed or faced struggles), which carries a bittersweet, nostalgic quality. The song itself has a melancholic summer vibe - warm on the surface but tinged with sadness and reflection. While it could fit 'Chill - Beach/Summer,' the emphasis on the animation's beauty and the song's underlying emotional weight points more toward nostalgic sadness than carefree summer vibes.",
           "mapped_subvibe": "Sad - Nostalgic Sad"
         },
         {
@@ -14616,22 +14264,6 @@
           "post_title": "Nostalgic songs",
           "comment_text": "This song tells the history of a Bolivian legend. The kid is deaf and runs away from his abusive father. In his way he finds the dog, and helps a old man (in the legend, bullies were hitting him) then, both of them find a guy who was in a satanic cult but  deserted. Now, \"el tío\" (translates to \"uncle\" but represents satan,in Bolivian culture)  disfigured his face as punishment, which is why he covers it. They go to the mines caves where  \"el tio\" lives (in the city of Oruro), legend says that with his singing of hatred people get corrupted and kill each other.\n\nIt's then when the old man,the dog and the guy with the mask say goodbye to the kid, because they couldn't enter the cave without being corrupted. The kid is immune because of his deafness and he begins to sing to el Tio, in order to keep him calm for the whole eternity and prevent more people to hear his singing of hatred\n\nI am from Bolivia, in the city where this was filmed (La Paz), i like this video and i wanted to share the legend with you!\n\nEdit: after 7 years I decided to edit this comment to convey the story with a better English, thx to all for their kind messages over the years💚 I'll leave the previous version below just as a good memory to look at, hope it doesn't bother.\n\nThis song its about a legend from Bolivia (a latin country) the kid is deaf and his father is bad,so the kid run away. He finds the dog, and help a old man (en the legend,a bullies were hitting him) then, both of them find a guy who was in a satanic group but he desert and \"el tío\" (satan,in Bolivian culture)  disfigurement his face,thats why hi is cover it. They go to the cave of \"el tio\" and the legend said that \"el tio\" sing all the feelings of hate and that kind of thing,and the people get corrupted and kill each other. Its then when the old man,the dog and the guy with a mask say goodbye to the kid, so as not to get corrupted they leave. And the kid stay, because he is deaf so he cant get corrupted,and he begans to sing to \"el tio\" to keep him calm for the whole eternity \n\nI am from Bolivia, in the city were this was filmed, i like this video and i wanted to share the legend with you, sorry if I have a bad english,in the best i can do :)",
           "ananki_reasoning": "The human explicitly titled this post 'Nostalgic songs' and describes a Bolivian legend with deep cultural and folkloric significance. The story involves themes of hardship (a deaf child fleeing an abusive father), compassion (helping strangers), and cultural mythology (el tío/Satan figure in Bolivian mining culture). This combination of personal struggle, cultural storytelling, and the framing as 'nostalgic' suggests the song evokes a bittersweet, memory-laden emotional response tied to cultural heritage and poignant narrative. The legendary/folkloric nature adds a layer of looking back to traditional stories, which aligns perfectly with nostalgic sadness rather than pure melancholy or other sad sub-vibes.",
-          "mapped_subvibe": "Sad - Nostalgic Sad"
-        },
-        {
-          "artist": "Linkin Park",
-          "song": "In the End",
-          "spotify_id": "60a0Rd6pjrkxjPbaKzXjfq",
-          "spotify_uri": "spotify:track:60a0Rd6pjrkxjPbaKzXjfq",
-          "comment_score": 82672,
-          "source_url": "https://youtube.com/watch?v=eVTXPUF4Oz4",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Nostalgic songs",
-          "comment_text": "Message to the youth: Never let this song die!!!!!!",
-          "ananki_reasoning": "The human explicitly frames this in a post titled 'Nostalgic songs' and urges younger generations to keep the song alive, indicating a bittersweet longing for the past. 'In the End' by Linkin Park is a defining song from the early 2000s nu-metal era that carries heavy emotional weight for millennials who grew up with it. The plea to 'never let this song die' suggests the song represents a cherished memory of youth and a specific cultural moment. While the song itself deals with themes of effort, loss, and futility, the human's context specifically emphasizes the nostalgic, time-passing element rather than pure sadness or melancholy.",
           "mapped_subvibe": "Sad - Nostalgic Sad"
         },
         {
@@ -15787,22 +15419,6 @@
           "mapped_subvibe": "Sad - Nostalgic Sad"
         },
         {
-          "artist": "P!nk",
-          "song": "Good Old Days",
-          "spotify_id": "6Ip9pqPGZxFAOSHnepy1AI",
-          "spotify_uri": "spotify:track:6Ip9pqPGZxFAOSHnepy1AI",
-          "comment_score": 10,
-          "source_url": "https://youtube.com/watch?v=pTqK13Rojjw",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 1,
-          "full_context": "",
-          "post_title": "Songs About The Good Old Days",
-          "comment_text": "I love this song. Makes me think of high school.",
-          "ananki_reasoning": "The human explicitly states the song 'makes me think of high school' in response to a post about 'Songs About The Good Old Days.' This is a clear expression of nostalgia - looking back at a past time period (high school) with wistful remembrance. The song title 'Good Old Days' by P!nk featuring Macklemore is literally about nostalgic reflection on the past. The combination of the post context, comment, and song choice all point directly to bittersweet nostalgia rather than pure sadness or happiness.",
-          "mapped_subvibe": "Sad - Nostalgic Sad"
-        },
-        {
           "artist": "Kenny Chesney",
           "song": "Happy on the Hey Now (A Song for Kristi) - Live",
           "spotify_id": "16pzorKToMkVl9OGgPgLT3",
@@ -16024,22 +15640,6 @@
           "post_title": " &#39;00s Dance",
           "comment_text": "I remember listening to this song when life was simple. Just a random happy child. I miss these days.",
           "ananki_reasoning": "The human explicitly expresses nostalgia for their childhood ('I remember listening to this song when life was simple. Just a random happy child. I miss these days.'). While the song itself is from the '00s dance genre and likely upbeat, the emotional context is clearly bittersweet nostalgia - remembering happy times but feeling sad about their loss. The phrase 'I miss these days' combined with reflecting on simpler times as a child indicates this is nostalgic sadness rather than pure happiness or carefree feelings. The person is experiencing melancholic longing for the past when hearing this song.",
-          "mapped_subvibe": "Sad - Nostalgic Sad"
-        },
-        {
-          "artist": "Rivo",
-          "song": "In And Out Of Love",
-          "spotify_id": "7nxTzZJmf2lLplk5pfV64h",
-          "spotify_uri": "spotify:track:7nxTzZJmf2lLplk5pfV64h",
-          "comment_score": 8730,
-          "source_url": "https://youtube.com/watch?v=TxvpctgU_s8",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 1,
-          "full_context": "",
-          "post_title": " &#39;00s Dance",
-          "comment_text": "Nostalgia is the most beautiful form of pain",
-          "ananki_reasoning": "The human explicitly describes the experience as 'nostalgia' being 'the most beautiful form of pain' in the context of '00s Dance music. This is a textbook example of bittersweet nostalgia - looking back at dance music from the 2000s with a mix of fondness and melancholy. The phrase 'beautiful form of pain' captures the essence of nostalgic sadness perfectly: the joy of remembering combined with the ache of time passed. The song 'In And Out Of Love' from that era evokes memories of a specific time period that can't be relived.",
           "mapped_subvibe": "Sad - Nostalgic Sad"
         },
         {
@@ -17064,22 +16664,6 @@
           "post_title": "The End of the F***ing World: Season 2 (Soundtrack)",
           "comment_text": "It just hurts to say goodbye to this very underrated series...",
           "ananki_reasoning": "The human explicitly expresses emotional pain about saying goodbye to a beloved but underrated TV series. The song '(You Don't Know) How Glad I Am' by Nancy Wilson appears on the Season 2 soundtrack, and the context of bidding farewell to something cherished creates a bittersweet, nostalgic sadness. This isn't just melancholy or grief - it's the specific ache of looking back fondly on something that has ended, combined with the sweet memories of the experience. The use of 'hurts to say goodbye' alongside calling it 'very underrated' suggests a deep appreciation mixed with loss, which perfectly captures nostalgic sadness.",
-          "mapped_subvibe": "Sad - Nostalgic Sad"
-        },
-        {
-          "artist": "The Vogues",
-          "song": "My Special Angel",
-          "spotify_id": "2mIa7yUMZyREQXxrRpkefS",
-          "spotify_uri": "spotify:track:2mIa7yUMZyREQXxrRpkefS",
-          "comment_score": 151,
-          "source_url": "https://youtube.com/watch?v=QUg6xkiXJnI",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "The End of the F***ing World: Season 2 (Soundtrack)",
-          "comment_text": "I am not here from the movie, it is the song, I first heard this in 1971 when I was 14, a girl of 16 was a neighbor, she played it on the piano, sang it to me and played the record of this song. I am 62 now and still love it as though it was 1971 all over again!",
-          "ananki_reasoning": "The commenter describes a deeply nostalgic memory from 1971 when they were 14 years old, when a 16-year-old neighbor girl played and sang this song to them. Now at 62, they still cherish this memory 'as though it was 1971 all over again.' This is a textbook example of nostalgic emotion - a bittersweet longing for a specific moment in the past. The song 'My Special Angel' clearly represents a formative romantic or emotionally significant memory from their youth that still evokes powerful feelings decades later. While the memory brings them joy, the underlying emotion is rooted in wistful nostalgia for a time and perhaps a relationship that can never be recaptured.",
           "mapped_subvibe": "Sad - Nostalgic Sad"
         },
         {
@@ -19155,22 +18739,6 @@
           "mapped_subvibe": "Happy - Feel Good"
         },
         {
-          "artist": "Amara Victoria",
-          "song": "Realign",
-          "spotify_id": "1jQcR23Xv8dBAB7OAApEjQ",
-          "spotify_uri": "spotify:track:1jQcR23Xv8dBAB7OAApEjQ",
-          "comment_score": 6,
-          "source_url": "https://youtube.com/watch?v=VhmxB5ukv1w",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.75,
-          "full_context": "",
-          "post_title": "Unstoppable (2010) Songs &amp; Soundtracks",
-          "comment_text": "i absolutely love tis soundtrack so good :)",
-          "ananki_reasoning": "The human expresses genuine enthusiasm and love for the soundtrack with 'i absolutely love tis soundtrack so good :)' including a smiley emoticon. The comment conveys positive enjoyment and appreciation for the music from the film 'Unstoppable (2010)'. The song 'Realign' by Amara Victoria appears to be part of this beloved soundtrack. Given the upbeat, positive emotional expression without specific context suggesting other moods like romance, intensity, or melancholy, this fits best as a general feel-good, happy appreciation of music.",
-          "mapped_subvibe": "Happy - Feel Good"
-        },
-        {
           "artist": "Christina Perri",
           "song": "trust",
           "spotify_id": "19aqSkqtHqITcvoDWPprl7",
@@ -19488,22 +19056,6 @@
           "post_title": "Top 40 Country Songs This Week 2025",
           "comment_text": "Welcome back country, we've missed you",
           "ananki_reasoning": "The comment 'Welcome back country, we've missed you' expresses joy and satisfaction about authentic country music returning to the charts. This suggests the song embodies traditional country values that listeners have been longing for, creating a feel-good emotional response. The celebratory tone of 'welcoming back' something beloved indicates uplifting, positive emotions rather than sadness, nostalgia, or other moods. The context implies this is classic-sounding country that makes people happy to hear real country music again.",
-          "mapped_subvibe": "Happy - Feel Good"
-        },
-        {
-          "artist": "Jason Aldean",
-          "song": "Whiskey Drink",
-          "spotify_id": "4ZIOtzgjSwq7oSkhWqapwa",
-          "spotify_uri": "spotify:track:4ZIOtzgjSwq7oSkhWqapwa",
-          "comment_score": 153,
-          "source_url": "https://youtube.com/watch?v=t7Wb4OzsuXA",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.75,
-          "full_context": "",
-          "post_title": "Top 40 Country Songs This Week 2025",
-          "comment_text": "Jason NEVER goes below amazing!!!",
-          "ananki_reasoning": "The comment 'Jason NEVER goes below amazing!!!' expresses enthusiastic praise and consistent positive sentiment about Jason Aldean's music. The song title 'Whiskey Drink' combined with this upbeat endorsement suggests a feel-good country anthem rather than a somber drinking song. The exclamation marks and absolute praise ('NEVER goes below amazing') indicate the commenter associates this artist with reliably enjoyable, uplifting music that makes them feel good. Given the context of a Top 40 Country chart post and the celebratory nature of the comment, this fits the Happy - Feel Good sub-vibe over party-specific or chill categories.",
           "mapped_subvibe": "Happy - Feel Good"
         },
         {
@@ -20032,22 +19584,6 @@
           "post_title": "Don’t worry be happy - music playlist",
           "comment_text": "This song instantly puts me in a good mood",
           "ananki_reasoning": "The human explicitly states 'This song instantly puts me in a good mood' in response to a playlist titled 'Don't worry be happy.' This is a clear indication of feel-good emotion - the song creates an immediate positive emotional response. While the song title 'If I Should Die' might seem dark, the human's emotional reaction is unambiguously positive and mood-lifting, which aligns perfectly with the Happy - Feel Good sub-vibe rather than euphoric celebration or carefree happiness.",
-          "mapped_subvibe": "Happy - Feel Good"
-        },
-        {
-          "artist": "Queen",
-          "song": "I Want To Break Free - Remastered 2011",
-          "spotify_id": "7h2yhVxcZOGyQdOwD4Hu8J",
-          "spotify_uri": "spotify:track:7h2yhVxcZOGyQdOwD4Hu8J",
-          "comment_score": 14468,
-          "source_url": "https://youtube.com/watch?v=f4Mc-NYPHaQ",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Happy Uplifting Rock Songs - Feel-Good Rock Music Playlist (Updated 2025)",
-          "comment_text": "100% wonderful music\n150% Beautiful Rogerina",
-          "ananki_reasoning": "The comment appears in a post titled 'Happy Uplifting Rock Songs - Feel-Good Rock Music Playlist,' which directly establishes the emotional context as feel-good and uplifting. The commenter expresses enthusiasm ('100% wonderful music') and references 'Beautiful Rogerina' (a playful reference to Roger Taylor's appearance in the iconic music video where Queen members dressed in drag). Queen's 'I Want To Break Free' is an anthemic rock song about liberation and freedom with an upbeat tempo that perfectly fits the feel-good category. Despite the song's themes of breaking free from constraints, its energetic delivery and famous status as an uplifting anthem aligns with the Happy - Feel Good sub-vibe rather than more intense energy categories.",
           "mapped_subvibe": "Happy - Feel Good"
         },
         {
@@ -21107,22 +20643,6 @@
           "mapped_subvibe": "Happy - Feel Good"
         },
         {
-          "artist": "Rihanna",
-          "song": "Diamonds",
-          "spotify_id": "7Kt59L2ZZGtOnIhvMwzG6f",
-          "spotify_uri": "spotify:track:7Kt59L2ZZGtOnIhvMwzG6f",
-          "comment_score": 61880,
-          "source_url": "https://youtube.com/watch?v=lWA2pjMjpBs",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.8,
-          "full_context": "",
-          "post_title": "Clean Nostalgia Playlist",
-          "comment_text": "\"you're beautiful like diamonds in the sky\"",
-          "ananki_reasoning": "The quoted lyric 'you're beautiful like diamonds in the sky' from Rihanna's 'Diamonds' combined with the playlist title 'Clean Nostalgia Playlist' suggests an uplifting, positive emotional context. While there's a nostalgic element indicated by the playlist name, the song itself and this particular lyric emphasize beauty, brightness, and shine - creating an overall feel-good, uplifting vibe rather than a melancholic nostalgic one. The song's message is about recognizing beauty and light, which aligns with a positive, feel-good emotional state.",
-          "mapped_subvibe": "Happy - Feel Good"
-        },
-        {
           "artist": "Lupe Fiasco",
           "song": "The Show Goes On",
           "spotify_id": "4NTWZqvfQTlOMitlVn6tew",
@@ -21424,22 +20944,6 @@
           "post_title": "Slow Worship Songs",
           "comment_text": "I was addicted to drugs and alcohol. I had no hope left, I had lost the will to live. I overdosed a year ago and was dead for over 10 minutes, by the grace of God I was brought back to life without brain damage. I recommitted my life to Christ a little over a month ago and haven't went back to my old life ever since. Christ has given me hope and it's a miracle he brought me back. He saved me and I will love Him forever for that. He's showed himself to me through many spiritual experiences in the last 40 days that I've been sober. I've been transformed into a new creation. He can do the same thing in your life. Jesus can save you too. Invite Him into your heart and never look back. I was lost but now I'm found.",
           "ananki_reasoning": "While the context describes a journey through darkness (addiction, overdose, death), the emotional core is about redemption, hope, and gratitude after recommitting to Christ. The poster explicitly states 'Christ has given me hope' and 'I will love Him forever for that.' This is a worship song being recommended in the context of spiritual renewal and transformation - the emphasis is on the positive outcome (being saved, given new life, experiencing miracles) rather than dwelling on the pain. The 'slow worship' request combined with themes of salvation and gratitude maps to an uplifting, feel-good emotional space centered on thankfulness and spiritual joy.",
-          "mapped_subvibe": "Happy - Feel Good"
-        },
-        {
-          "artist": "Bug Hunter",
-          "song": "Slow Burn",
-          "spotify_id": "7q1eAkQHQbKcnMJqeNCuq2",
-          "spotify_uri": "spotify:track:7q1eAkQHQbKcnMJqeNCuq2",
-          "comment_score": 5,
-          "source_url": "https://youtube.com/watch?v=jeivxr7xfKo",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Slow Funny Music (Background Instrumentals)",
-          "comment_text": "🤣🤣 i love this face hahaha nice ❤️❤️",
-          "ananki_reasoning": "The post title explicitly mentions 'Slow Funny Music (Background Instrumentals)' and the comment expresses joy with laughing emojis and love hearts, indicating the song evokes a lighthearted, amusing, and positive emotional response. The 'funny' descriptor combined with the enthusiastic reaction ('i love this face hahaha nice') suggests the song creates a feel-good, humorous atmosphere rather than intense celebration or other happy sub-vibes. The slow tempo mentioned in the title paired with the funny/amusing quality aligns well with a gentle, feel-good vibe.",
           "mapped_subvibe": "Happy - Feel Good"
         },
         {
@@ -24287,22 +23791,6 @@
           "mapped_subvibe": "Happy - Carefree"
         },
         {
-          "artist": "Laid Back",
-          "song": "Bakerman",
-          "spotify_id": "68Wrmobntys0DWyV4gBiUR",
-          "spotify_uri": "spotify:track:68Wrmobntys0DWyV4gBiUR",
-          "comment_score": 929,
-          "source_url": "https://youtube.com/watch?v=ymdssZOAx3Q",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Laid Back (The very best of)",
-          "comment_text": "probably the best song ever written about bread.",
-          "ananki_reasoning": "The comment 'probably the best song ever written about bread' combined with the song title 'Bakerman' by Laid Back suggests a lighthearted, whimsical, and playful song. Laid Back is known for their relaxed, groovy electronic music with a humorous edge. A song literally about a bakerman/bread that's being praised in such a tongue-in-cheek way indicates a fun, carefree vibe rather than something serious or emotionally heavy. The playful nature of writing a song about bread and the user's enthusiastic recommendation points to an upbeat, feel-good track that doesn't take itself too seriously.",
-          "mapped_subvibe": "Happy - Carefree"
-        },
-        {
           "artist": "Mandaluca",
           "song": "Laid Back",
           "spotify_id": "65tjHoUPB5NASQjWRTptlq",
@@ -25867,22 +25355,6 @@
           "mapped_subvibe": "Chill - Beach/Summer"
         },
         {
-          "artist": "Alok",
-          "song": "Summer's Back",
-          "spotify_id": "4lbBiqC2alVR4ooruZSe0o",
-          "spotify_uri": "spotify:track:4lbBiqC2alVR4ooruZSe0o",
-          "comment_score": 45,
-          "source_url": "https://youtube.com/watch?v=2WqQzAsYii0",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Car Music 2025 - Driving Music - Music For Driving &amp; Car Playlist 2025",
-          "comment_text": "Amazing track for the summer vibes!!😍🔥",
-          "ananki_reasoning": "The human explicitly mentions 'summer vibes' with enthusiastic emojis, and the song is literally titled 'Summer's Back' by Alok. While the post context mentions driving music, the commenter's specific reaction focuses on the summer atmosphere rather than the driving aspect. The track appears to be a feel-good summer song that evokes seasonal warmth and relaxation, fitting perfectly with the beach/summer chill category.",
-          "mapped_subvibe": "Chill - Beach/Summer"
-        },
-        {
           "artist": "Disclosure",
           "song": "She’s Gone, Dance On",
           "spotify_id": "29I9dv9Nq704w0Oc5yFGsR",
@@ -26395,22 +25867,6 @@
           "mapped_subvibe": "Chill - Beach/Summer"
         },
         {
-          "artist": "Jason Derulo",
-          "song": "Love Not War (The Tampa Beat)",
-          "spotify_id": "4Lt6GXGzYsa1tgkv3nGSTm",
-          "spotify_uri": "spotify:track:4Lt6GXGzYsa1tgkv3nGSTm",
-          "comment_score": 2043,
-          "source_url": "https://youtube.com/watch?v=DBI3Pr26QrY",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Summer Vibes 2021 🍹 Happy Dance Music Playlist 2022",
-          "comment_text": "I love this song.  Who is listening  it now?",
-          "ananki_reasoning": "The post title explicitly states 'Summer Vibes 2021' and references a 'Happy Dance Music Playlist', clearly indicating a summer-themed context. The song 'Love Not War (The Tampa Beat)' by Jason Derulo is a tropical house track with upbeat, summery production. The comment expresses simple enjoyment ('I love this song'), and the overall framing is about summer vibes specifically. While this could also fit 'Happy - Feel Good' or 'Party - Dance', the explicit 'Summer Vibes' framing and beach-party aesthetic of this particular track makes 'Chill - Beach/Summer' the most accurate match, as it captures both the seasonal context and the relaxed, tropical dance vibe of the song.",
-          "mapped_subvibe": "Chill - Beach/Summer"
-        },
-        {
           "artist": "Kygo",
           "song": "What's Love Got to Do with It",
           "spotify_id": "3Be7CLdHZpyzsVijme39cW",
@@ -26764,22 +26220,6 @@
           "post_title": "Best Chill Country Songs of All Time - Most Popular Chill Country Music Playlist",
           "comment_text": "On repeat heavy and I’m a brother from the inner city ghettos. Music has no color and if we all enjoyed the colors of life rather than race, life wouldn’t seem so hard. I really appreciate good music 🙌🏾",
           "ananki_reasoning": "The commenter describes having 'Tennessee Whiskey' on 'repeat heavy' and emphasizes appreciation for 'good music' that transcends boundaries. The context of a 'Best Chill Country Songs' playlist, combined with the reflective, contemplative tone of their comment about music bringing people together, and the smooth, soulful nature of Chris Stapleton's 'Tennessee Whiskey' itself, points to an evening chill vibe. This song is known for its warm, laid-back groove with emotional depth - perfect for unwinding and reflecting. The emphasis on 'chill' in the playlist title and the appreciative, relaxed tone of discovery suggests a contemplative evening listening experience rather than something more energetic or sad.",
-          "mapped_subvibe": "Chill - Evening"
-        },
-        {
-          "artist": "Keith Urban",
-          "song": "Blue Ain't Your Color",
-          "spotify_id": "6wycnu8FWXsj68ig7BEot9",
-          "spotify_uri": "spotify:track:6wycnu8FWXsj68ig7BEot9",
-          "comment_score": 1241,
-          "source_url": "https://youtube.com/watch?v=SoIKv3xxuMA",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Best Chill Country Songs of All Time - Most Popular Chill Country Music Playlist",
-          "comment_text": "LOVE, LOVE, LOVE This song! I'm addicted to it!♡♡",
-          "ananki_reasoning": "The song 'Blue Ain't Your Color' by Keith Urban is recommended in a 'Best Chill Country Songs' playlist context, and the commenter expresses strong positive addiction to it with 'LOVE, LOVE, LOVE' and heart emojis. This song is a smooth, mellow country ballad with a relaxed tempo that fits the 'chill country' description. While it has romantic/consoling lyrical themes, the emotional context here emphasizes the chill, laid-back quality that makes it addictively listenable rather than intensely romantic or sad. The evening sub-vibe captures that smooth, unwinding quality of chill country music that you want to replay repeatedly in a relaxed setting.",
           "mapped_subvibe": "Chill - Evening"
         },
         {
@@ -27228,22 +26668,6 @@
           "post_title": "Laid back sofa Pop",
           "comment_text": "I see so many people hating on this. I love James’ old stuff but he can’t do acoustic guitar songs forever. This is unique it’s different and yet still him. I love it.",
           "ananki_reasoning": "The post title 'Laid back sofa Pop' explicitly describes a relaxed, comfortable listening experience. The commenter's defense of the song as 'unique' and 'different' while still being authentically James Bay, combined with the acoustic version designation, suggests this is meant for unwinding and casual listening. The 'laid back sofa' imagery specifically evokes evening relaxation time - not energetic enough for daytime activities, not contemplative enough for late night, but perfect for settling in after the day. The acoustic arrangement reinforces the mellow, stripped-back atmosphere suitable for easy evening listening.",
-          "mapped_subvibe": "Chill - Evening"
-        },
-        {
-          "artist": "Snow Patrol",
-          "song": "Chasing Cars",
-          "spotify_id": "5hnyJvgoWiQUYZttV4wXy6",
-          "spotify_uri": "spotify:track:5hnyJvgoWiQUYZttV4wXy6",
-          "comment_score": 35506,
-          "source_url": "https://youtube.com/watch?v=GemKqzILV4w",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Laid back pop 00&#39;s",
-          "comment_text": "“It’s a beautiful day to save lives”",
-          "ananki_reasoning": "The human describes this as 'laid back pop 00's' which directly indicates a relaxed, chill vibe. 'Chasing Cars' by Snow Patrol is indeed a quintessential laid-back 2000s song with gentle instrumentation and reflective lyrics. The quote 'It's a beautiful day to save lives' (a reference from Grey's Anatomy where this song was prominently featured) adds a contemplative, hopeful quality. The song's slow tempo, soft vocals, and intimate atmosphere align perfectly with an evening chill vibe - it's calming and reflective without being sleepy or melancholic. It's the kind of song that creates a peaceful, wind-down atmosphere typical of evening relaxation.",
           "mapped_subvibe": "Chill - Evening"
         },
         {
@@ -29028,22 +28452,6 @@
           "post_title": "songs to calm your nerves",
           "comment_text": "Aaron and cole finna collab n we not gonna know who is who 😂",
           "ananki_reasoning": "The post title 'songs to calm your nerves' clearly indicates a calming, relaxing emotional context. The comment itself is playful/joking about Aaron May and Cole (likely another artist) sounding similar, but doesn't override the explicit calming intent stated in the post title. Among the chill sub-vibes, 'Chill - Lofi' best captures the nerve-calming, relaxing quality being sought, as lofi is strongly associated with anxiety relief and calm focus.",
-          "mapped_subvibe": "Chill - Lofi"
-        },
-        {
-          "artist": "Aaron May",
-          "song": "In Love",
-          "spotify_id": "4Sp4AgLbWeqddzY7DNhJFv",
-          "spotify_uri": "spotify:track:4Sp4AgLbWeqddzY7DNhJFv",
-          "comment_score": 2361,
-          "source_url": "https://youtube.com/watch?v=LReJSI5HyiA",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "songs to calm your nerves",
-          "comment_text": "We Gotta protect this beautiful soul..",
-          "ananki_reasoning": "The post title explicitly states 'songs to calm your nerves,' indicating a soothing, anxiety-reducing purpose. The comment 'We Gotta protect this beautiful soul' suggests the song has a gentle, comforting quality that evokes a protective emotional response. Aaron May's 'In Love' combined with this calming context points to a laid-back, peaceful vibe. The Chill - Lofi sub-vibe best captures this nerve-calming, gentle emotional state that the human is expressing - it's relaxing music meant to ease tension and provide comfort.",
           "mapped_subvibe": "Chill - Lofi"
         },
         {
@@ -31180,22 +30588,6 @@
           "post_title": "30 Most Relaxing Songs of All Time",
           "comment_text": "How can a song released in 1988 be so timeless. This sounds like it's from the future. Enya is timeless.",
           "ananki_reasoning": "The human describes 'Orinoco Flow' as one of the 'Most Relaxing Songs of All Time' and emphasizes its timeless, futuristic quality. Enya's signature ethereal, layered vocal style and atmospheric production in this song creates a dreamy, ambient soundscape perfect for relaxation. While the song has gentle forward momentum, the context explicitly frames it as relaxing rather than energetic or drive-oriented. The 'timeless' and 'from the future' descriptions align with ambient music's spacious, otherworldly qualities. This fits Chill - Ambient better than other chill categories like Morning Coffee or Rainy Day, as it emphasizes the song's transcendent, atmospheric relaxation rather than a specific time-of-day mood.",
-          "mapped_subvibe": "Chill - Ambient"
-        },
-        {
-          "artist": "Mahaji",
-          "song": "Xombie",
-          "spotify_id": "33kHupLwh8zlOPCSv409fs",
-          "spotify_uri": "spotify:track:33kHupLwh8zlOPCSv409fs",
-          "comment_score": 17130,
-          "source_url": "https://youtube.com/watch?v=U0jmgLaNL-Y",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.75,
-          "full_context": "",
-          "post_title": "Billie Eilish slow/calm songs",
-          "comment_text": "finneas + billie = pure perfection",
-          "ananki_reasoning": "The human is seeking 'slow/calm songs' in the style of Billie Eilish, and praises the Finneas + Billie combination as 'pure perfection.' Billie Eilish's slow/calm tracks are characterized by atmospheric, minimalist production with intimate vocals - qualities that align with ambient chill vibes. The emphasis on 'slow/calm' suggests a relaxed, spacious soundscape rather than sad or dark emotions, pointing toward the contemplative, serene quality of ambient chill music. While this could potentially fit other chill categories, the Billie Eilish reference (known for her whisper-vocal, atmospheric productions) most closely aligns with ambient aesthetics.",
           "mapped_subvibe": "Chill - Ambient"
         },
         {
@@ -33431,22 +32823,6 @@
           "mapped_subvibe": "Night - Midnight Drive"
         },
         {
-          "artist": "Kygo",
-          "song": "Stranger Things (feat. OneRepublic)",
-          "spotify_id": "4sJqSKPc5fZ5OZ8JiVI44N",
-          "spotify_uri": "spotify:track:4sJqSKPc5fZ5OZ8JiVI44N",
-          "comment_score": 5471,
-          "source_url": "https://youtube.com/watch?v=3ChgRbqGi-E",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Midnight Vibes",
-          "comment_text": "Kygo + One Repuplic = Perfect 👌🏼",
-          "ananki_reasoning": "The post is explicitly titled 'Midnight Vibes' and features a Kygo track with OneRepublic, which is characteristic of Kygo's tropical house/electronic style that works perfectly for late-night listening. The commenter's enthusiastic approval ('Perfect 👌🏼') of this collaboration in a midnight context strongly suggests this song fits a nighttime driving or late-night atmosphere. The combination of 'Midnight Vibes' as the explicit framing and the upbeat-yet-atmospheric nature of Kygo's production style makes 'Night - Midnight Drive' the most appropriate sub-vibe, as it captures both the temporal setting (midnight) and the energetic-but-nocturnal mood that Kygo + OneRepublic collaborations typically deliver.",
-          "mapped_subvibe": "Night - Midnight Drive"
-        },
-        {
           "artist": "PALASTIC",
           "song": "Runaway",
           "spotify_id": "74KXlJIT3PuwvTsZWLdIyO",
@@ -33704,22 +33080,6 @@
           "post_title": "Late Night Songs Playlist: Best Night Music for Sleep (Playlist Updated in 2025)",
           "comment_text": "The music is a universal language.\nNobody understands.but everone feels it. \nlove from turkey 🇹🇷",
           "ananki_reasoning": "The post title explicitly states 'Late Night Songs Playlist: Best Night Music for Sleep', which directly indicates the intended use case for this song. The commenter's reflection about music being a 'universal language' that everyone feels (even if they don't understand) reinforces the emotional, transcendent quality that makes this Yann Tiersen piano piece ideal for nighttime relaxation and sleep. The song 'Comptine d'un autre été' is a gentle, minimalist piano composition known for its calming, contemplative nature - perfect for late-night listening and sleep preparation.",
-          "mapped_subvibe": "Night - Sleep"
-        },
-        {
-          "artist": "ENGRANE",
-          "song": "Time - Piano Version",
-          "spotify_id": "1bomWUyo2SeVdvu9CTyJXu",
-          "spotify_uri": "spotify:track:1bomWUyo2SeVdvu9CTyJXu",
-          "comment_score": 1,
-          "source_url": "https://youtube.com/watch?v=kwTjHVPKabE",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Late Night Songs Playlist: Best Night Music for Sleep (Playlist Updated in 2025)",
-          "comment_text": "❤Beautiful song Brian and Laura!",
-          "ananki_reasoning": "The post title explicitly mentions 'Late Night Songs Playlist: Best Night Music for Sleep' and the song is described as 'Beautiful' in a sleep-focused context. The song is a piano version, which aligns with calming, sleep-conducive music. The human's positive emotional response ('❤Beautiful song') within a playlist specifically curated for sleep makes this the most appropriate classification.",
           "mapped_subvibe": "Night - Sleep"
         },
         {
@@ -34024,22 +33384,6 @@
           "post_title": "Late Night Vibes 😴 Calm Music To Sleep / Relax To",
           "comment_text": "I loveee this. The art, the music, everything. Also, if you're reading this, you're blessed, highly favored, and loved deeply!",
           "ananki_reasoning": "The post title explicitly states 'Calm Music To Sleep / Relax To' and uses the sleepy emoji 😴, making it clear this song is intended for sleep purposes. The comment reinforces this with 'Late Night Vibes' and expresses love for the calming nature of the music and art. The artist Philanthrope is known for lofi/chill beats, and the track 'Plants' fits the sleep/relaxation context. While 'Chill - Serene' or 'Chill - Meditative' could also apply, the direct mention of sleep in the title makes 'Night - Sleep' the most accurate match.",
-          "mapped_subvibe": "Night - Sleep"
-        },
-        {
-          "artist": "The Accidental",
-          "song": "Jaw of a Whale",
-          "spotify_id": "28282y565EWutqUUK6UnR1",
-          "spotify_uri": "spotify:track:28282y565EWutqUUK6UnR1",
-          "comment_score": 933,
-          "source_url": "https://youtube.com/watch?v=PfgS405CdXk",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Late Night Vibes 😴 Calm Music To Sleep / Relax To",
-          "comment_text": "What a beautiful journey guys isn't it?",
-          "ananki_reasoning": "The post title explicitly states 'Late Night Vibes 😴 Calm Music To Sleep / Relax To', which directly indicates this song is intended for sleep and late-night relaxation. The comment 'What a beautiful journey guys isn't it?' suggests a peaceful, flowing listening experience consistent with music designed for winding down and sleeping. The sleep emoji in the title further reinforces this specific use case. While 'Chill - Serene' or 'Chill - Meditative' could also apply, the explicit mention of 'sleep' in the context makes 'Night - Sleep' the most precise match.",
           "mapped_subvibe": "Night - Sleep"
         },
         {
@@ -34847,22 +34191,6 @@
           "mapped_subvibe": "Night - Contemplative"
         },
         {
-          "artist": "Open Minded",
-          "song": "This Is the Freakshow!",
-          "spotify_id": "2bkjpkX8KHzE6DQRaQ9SX7",
-          "spotify_uri": "spotify:track:2bkjpkX8KHzE6DQRaQ9SX7",
-          "comment_score": 11473,
-          "source_url": "https://youtube.com/watch?v=l9VFg44H2z8",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.75,
-          "full_context": "",
-          "post_title": "Deep thinking songs",
-          "comment_text": "I am 72 years old and I love this band!!!",
-          "ananki_reasoning": "The post title 'Deep thinking songs' combined with the enthusiastic recommendation from a 72-year-old listener suggests this is music for introspective, thoughtful moments. The song title 'This Is the Freakshow!' by Open Minded implies philosophical or social commentary content that encourages reflection. This maps best to contemplative listening rather than sad, dark, or purely intellectual categories. The cross-generational appeal and 'deep thinking' framing indicates music for thoughtful, meditative states rather than high-energy or party contexts.",
-          "mapped_subvibe": "Night - Contemplative"
-        },
-        {
           "artist": "2Pac",
           "song": "Run Tha Streetz (ft. Michel'le, Storm, Mutah)",
           "spotify_id": "4FzMYYcuQg10kBzXgauodD",
@@ -35183,22 +34511,6 @@
           "mapped_subvibe": "Night - Contemplative"
         },
         {
-          "artist": "Fatima Altieri",
-          "song": "Nan dlo",
-          "spotify_id": "7LlIsAGvLs6XjGaYZXLgfa",
-          "spotify_uri": "spotify:track:7LlIsAGvLs6XjGaYZXLgfa",
-          "comment_score": 2,
-          "source_url": "https://youtube.com/watch?v=7nPTvgHiEzg",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Contemplative Music Videos",
-          "comment_text": "So so beautiful.  I also enjoyed the visuals.",
-          "ananki_reasoning": "The human explicitly describes this as a response to a post about 'Contemplative Music Videos' and emphasizes both the beauty of the song and its visuals. The word 'contemplative' directly suggests deep, reflective thought, which aligns perfectly with the 'Night - Contemplative' sub-vibe. The gentle, appreciative tone ('So so beautiful') indicates a meditative, thoughtful emotional response rather than energetic or sad emotions.",
-          "mapped_subvibe": "Night - Contemplative"
-        },
-        {
           "artist": "Dennis Kamakahi",
           "song": "Wahine 'Ilikea",
           "spotify_id": "7ctTIxYYyYYQ58pzkRrYiR",
@@ -35228,22 +34540,6 @@
           "post_title": "Contemplative Music Videos",
           "comment_text": "Thanks for this beautiful music, I love to listen to it.",
           "ananki_reasoning": "The post title explicitly mentions 'Contemplative Music Videos' and the comment expresses appreciation for 'beautiful music' they 'love to listen to.' The contemplative framing combined with the reflective, appreciative tone of the comment points directly to a contemplative listening experience. Amadou & Mariam's 'La Réalité' fits well within this context as music for thoughtful, reflective listening rather than active emotional states like sadness, energy, or celebration.",
-          "mapped_subvibe": "Night - Contemplative"
-        },
-        {
-          "artist": "Lorraine Jackson",
-          "song": "a grace so true",
-          "spotify_id": "2Yj8sbwuf1Q8OSFIrD4xXs",
-          "spotify_uri": "spotify:track:2Yj8sbwuf1Q8OSFIrD4xXs",
-          "comment_score": 4,
-          "source_url": "https://youtube.com/watch?v=KiXMQZCFApE",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Contemplative Music Videos",
-          "comment_text": "Beautiful & beautifully sung!❤️",
-          "ananki_reasoning": "The post title explicitly mentions 'Contemplative Music Videos,' and the comment describes the song as 'Beautiful & beautifully sung' with a heart emoji, suggesting emotional depth and aesthetic appreciation. The song title 'a grace so true' also suggests reflective, spiritual, or contemplative themes. Given the direct reference to contemplation in the post title and the reverent tone of the comment, this maps most clearly to the Night - Contemplative sub-vibe, which encompasses thoughtful, introspective emotional states.",
           "mapped_subvibe": "Night - Contemplative"
         },
         {
@@ -37707,22 +37003,6 @@
           "mapped_subvibe": "Energy - Pump Up"
         },
         {
-          "artist": "Katy Perry",
-          "song": "Rise",
-          "spotify_id": "1CwNogTShsnsn1C8UhRmYX",
-          "spotify_uri": "spotify:track:1CwNogTShsnsn1C8UhRmYX",
-          "comment_score": 22101,
-          "source_url": "https://youtube.com/watch?v=hdw1uKiTI5c",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "47 Songs about Overcoming Obstacles, Adversity, Hard Times, Challenges and Not Giving Up",
-          "comment_text": "Unpopular opinion: This is one of her best songs.",
-          "ananki_reasoning": "The song 'Rise' by Katy Perry was recommended in a post specifically about overcoming obstacles, adversity, hard times, challenges, and not giving up. This is clearly a motivational, empowerment context. The song itself is an anthemic track about perseverance and rising above difficulties. 'Energy - Pump Up' best captures this motivational, inspiring energy that encourages listeners to push through challenges and overcome adversity. While 'Energy - Confidence' was also considered, 'Pump Up' better encompasses the broader motivational theme of rising above obstacles rather than just personal confidence.",
-          "mapped_subvibe": "Energy - Pump Up"
-        },
-        {
           "artist": "The All-American Rejects",
           "song": "Move Along",
           "spotify_id": "2l57cfmCnOkwNX1tky02n1",
@@ -38136,22 +37416,6 @@
           "post_title": "Angry pissed off mood music",
           "comment_text": "This song is the \"We will rock you\" of Korn.",
           "ananki_reasoning": "The human explicitly describes this as 'angry pissed off mood music' and compares it to 'We Will Rock You' - an iconic anthemic pump-up song meant to energize and empower crowds. The comparison suggests this Korn song serves a similar function: channeling anger and aggression into powerful, motivating energy. While the emotion is anger-based, the context implies it's being used for cathartic empowerment rather than darkness or destruction, making it fit the 'Pump Up' category which encompasses aggressive, energizing music that fuels intensity and confidence through powerful emotions.",
-          "mapped_subvibe": "Energy - Pump Up"
-        },
-        {
-          "artist": "Papa Roach",
-          "song": "Kick In The Teeth",
-          "spotify_id": "5sMlJASQgm0hgJSY4oWoI3",
-          "spotify_uri": "spotify:track:5sMlJASQgm0hgJSY4oWoI3",
-          "comment_score": 237,
-          "source_url": "https://youtube.com/watch?v=7an-BB4-lLA",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Angry pissed off mood music",
-          "comment_text": "Exactly 6 years later and still an amazing song.",
-          "ananki_reasoning": "The post title explicitly states 'Angry pissed off mood music' and the song is Papa Roach's 'Kick In The Teeth' - a hard rock/nu-metal track designed to channel aggressive energy. The comment shows this song has lasting appeal for expressing anger and frustration. While the emotional tone is anger-based, the functional purpose is to pump up and energize through that aggression, which aligns with Energy - Pump Up rather than a dark or purely aggressive category. This type of music is typically used to release tension, get hyped, and transform negative emotions into powerful energy.",
           "mapped_subvibe": "Energy - Pump Up"
         },
         {
@@ -39403,22 +38667,6 @@
           "mapped_subvibe": "Energy - Pump Up"
         },
         {
-          "artist": "The Prototypes",
-          "song": "Rocket Guns Blazin'",
-          "spotify_id": "0amRrbYl4vKvp9ZvlmKsm0",
-          "spotify_uri": "spotify:track:0amRrbYl4vKvp9ZvlmKsm0",
-          "comment_score": 5,
-          "source_url": "https://youtube.com/watch?v=PfTWv5mlU5k",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Frenetic Music",
-          "comment_text": "that first drop. OMG!!! Amazing track!",
-          "ananki_reasoning": "The human's reaction focuses on 'that first drop' with emphatic excitement ('OMG!!!'), which is characteristic of high-energy electronic music, specifically drum and bass. The Prototypes are known for their energetic DnB productions, and 'Rocket Guns Blazin'' features an intense, explosive drop that creates an adrenaline-pumping experience. The post title 'Frenetic Music' reinforces the high-energy, fast-paced nature. The emphasis on the drop and the track being 'Amazing' suggests this is music designed to energize and pump up the listener, making 'Energy - Pump Up' the most appropriate sub-vibe over alternatives like Party - Festival or Energy - Workout.",
-          "mapped_subvibe": "Energy - Pump Up"
-        },
-        {
           "artist": "AKOV",
           "song": "Shak Out",
           "spotify_id": "2mA43s9KkyfMvDhec99gqZ",
@@ -39480,22 +38728,6 @@
           "post_title": "aggressive breakcore!",
           "comment_text": "After listening to Kiss My Super Bowl Ring, it made my ears primed to listen to this in the best state possible. Gah bless.",
           "ananki_reasoning": "The human explicitly describes this as 'aggressive breakcore' and mentions their ears were 'primed to listen to this in the best state possible' after another intense song. The excitement ('Gah bless') and the preparatory listening state suggest high-energy engagement. Machine Girl's 'Blood Magic' with its aggressive breakcore style fits the intensely energetic, pump-up category - music that delivers an adrenaline rush and aggressive energy rather than workout-specific motivation. The aggressive nature and the enthusiastic reception point to pure high-energy stimulation.",
-          "mapped_subvibe": "Energy - Pump Up"
-        },
-        {
-          "artist": "Sewerslvt",
-          "song": "Cyberia Lyr1",
-          "spotify_id": "4bSv6uXAGHnImto1mii9yg",
-          "spotify_uri": "spotify:track:4bSv6uXAGHnImto1mii9yg",
-          "comment_score": 2797,
-          "source_url": "https://youtube.com/watch?v=WUbdkC6OYg8",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "aggressive breakcore!",
-          "comment_text": "Cyberia is so good that there is already trilogy",
-          "ananki_reasoning": "The post title explicitly describes this as 'aggressive breakcore,' which indicates high-energy, intense music. The commenter's enthusiasm ('Cyberia is so good that there is already trilogy') reinforces this is energetic, hype-inducing music. Sewerslvt's 'Cyberia' series is known for frenetic, aggressive breakcore with fast drum patterns that create an intense, pumped-up atmosphere. The aggressive nature combined with the breakcore genre makes this best suited for an energy-driven context rather than party, dark, or other vibes.",
           "mapped_subvibe": "Energy - Pump Up"
         },
         {
@@ -41419,22 +40651,6 @@
           "mapped_subvibe": "Energy - Pump Up"
         },
         {
-          "artist": "Beastie Boys",
-          "song": "Sabotage",
-          "spotify_id": "0Puj4YlTm6xNzDDADXHMI9",
-          "spotify_uri": "spotify:track:0Puj4YlTm6xNzDDADXHMI9",
-          "comment_score": 15745,
-          "source_url": "https://youtube.com/watch?v=z5rRZdiu1UE",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 1,
-          "full_context": "",
-          "post_title": "Reddit&#39;s Top 50 Pump-Up Songs",
-          "comment_text": "Can we just appreciate how beautifully \"Sabotage\" incorporates metal, punk, rock and rap into a whole new experience?",
-          "ananki_reasoning": "The post title explicitly identifies this as one of 'Reddit's Top 50 Pump-Up Songs,' and the comment discusses the song's aggressive fusion of metal, punk, rock, and rap - all high-energy genres. 'Sabotage' by Beastie Boys is a quintessential pump-up track with its intense energy, driving bass, and aggressive vocals designed to energize and motivate listeners. The context clearly positions this song in a pump-up/hype category.",
-          "mapped_subvibe": "Energy - Pump Up"
-        },
-        {
           "artist": "The Karaoke Channel",
           "song": "Walk (In the Style of Pantera) [Karaoke Version]",
           "spotify_id": "4rjxNDVCfcfvAnhNTZSG46",
@@ -41704,22 +40920,6 @@
           "post_title": "🎉 Party Music Hits",
           "comment_text": "One of those non-Trap records I wanted to upload haha 😍",
           "ananki_reasoning": "The human posted this in a 'Party Music Hits' thread and explicitly noted it's 'one of those non-Trap records' they wanted to upload, indicating it fits a party/energetic context despite not being trap music. NF's 'CLOUDS' is a high-energy hip-hop track with aggressive, confident delivery and intense production that works well for pumping up listeners. While it was posted in a party context, the song's actual vibe is more motivational and aggressive than dance-oriented, making 'Energy - Pump Up' a better fit than the Party sub-vibes.",
-          "mapped_subvibe": "Energy - Pump Up"
-        },
-        {
-          "artist": "Pulses.",
-          "song": "Exist Warp Brakes",
-          "spotify_id": "5QKqoRxU1NUlIG39ERPlWR",
-          "spotify_uri": "spotify:track:5QKqoRxU1NUlIG39ERPlWR",
-          "comment_score": 905,
-          "source_url": "https://youtube.com/watch?v=ONzntmMFXGE",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.75,
-          "full_context": "",
-          "post_title": "GOOFY AHH SONGS",
-          "comment_text": "The song 🗿  \r\nThe beat 🗿  \r\nThe creator 🗿  \r\nThe producer 🗿  \r\nThe instrumental 🗿  \r\nThe software used to create this beat 🗿  \r\nThe synthesizers 🗿  \r\nThe drums 🗿  \r\nThe bassline 🗿  \r\nThe guitar riff 🗿  \r\nThe background melodies 🗿  \r\nThe sound effects 🗿  \r\nThe sound engineers 🗿  \r\nThe autotune 🗿  \r\nThe studio where it was recorded 🗿  \r\nThe recording booth 🗿  \r\nThe microphone 🗿  \r\nThe mixing board 🗿  \r\nThe mastering process 🗿  \r\nThe final touches 🗿  \r\nThe speakers blasting the sound 🗿  \r\nThe headphones 🗿  \r\nThe earbuds 🗿  \r\nThe phone playing the track 🗿  \r\nThe Bluetooth connection 🗿  \r\nThe AUX cord 🗿  \r\nThe radio stations broadcasting it 🗿  \r\nThe vibrations in the air 🗿  \r\nThe sound waves 🗿  \r\nThe subwoofer thumping 🗿  \r\nThe car stereo booming 🗿  \r\nThe vibrations in the walls 🗿  \r\nThe windows rattling 🗿  \r\nThe ones listening to it 🗿  \r\nThe neurons firing in your brain as you vibe to it 🗿  \r\nThe dopamine surge 🗿  \r\nThe adrenaline rush 🗿  \r\nThe goosebumps 🗿  \r\nThe fans cheering 🗿  \r\nThe viewers on YouTube 🗿  \r\nThe thumbs up on the video 🗿  \r\nThe comments left by fans 🗿  \r\nThe pinned comment 🗿  \r\nThe one who commented first 🗿  \r\nThe guy who got ratio'd 🗿  \r\nThe first person who heard it 🗿  \r\nThe person who replayed it 50 times 🗿  \r\nThe guy who added it to his playlist 🗿  \r\nThe person who saved it offline 🗿  \r\nThe one who recommended it to his friends 🗿  \r\nThe one who shared it in a group chat 🗿  \r\nThe people bobbing their heads 🗿  \r\nThe guy lip-syncing 🗿  \r\nThe DJs spinning this track 🗿  \r\nThe party where this was the vibe 🗿  \r\nThe house party shaking with the beat 🗿  \r\nThe concert where it was played 🗿  \r\nThe rave where the lights matched the music 🗿  \r\nThe crowd jumping to the beat 🗿  \r\nThe stage lights 🗿  \r\nThe speakers on stage 🗿  \r\nThe pyrotechnics 🗿  \r\nThe laser lights 🗿  \r\nThe fog machine 🗿  \r\nThe fireworks in the background 🗿  \r\nThe mosh pit forming 🗿  \r\nThe people getting hyped 🗿  \r\nThe hands up in the air 🗿  \r\nThe festival where this track was played 🗿  \r\nThe afterparty 🗿  \r\nThe Uber ride home blasting it 🗿  \r\nThe person humming the melody 🗿  \r\nThe muscle contractions making you dance 🗿  \r\nThe people posting fire emojis 🗿  \r\nThe GIF reactions 🗿  \r\nThe comments section 🗿  \r\nThe algorithms pushing this to the top 🗿  \r\nThe YouTube trending page 🗿  \r\nThe Spotify viral charts 🗿  \r\nThe people sharing it on social media 🗿  \r\nThe Instagram stories 🗿  \r\nThe TikTok videos 🗿  \r\nThe reels 🗿  \r\nThe algorithms pushing it further 🗿  \r\nThe fan-made remixes 🗿  \r\nThe nightcore version 🗿  \r\nThe slowed + reverb version 🗿  \r\nThe 1-hour loop 🗿  \r\nThe fans listening on repeat 🗿  \r\nThe house shaking from the bass 🗿  \r\nThe car subwoofer booming 🗿  \r\nThe windows vibrating 🗿  \r\nThe neighbors complaining 🗿  \r\nThe people putting it on during a party 🗿  \r\nThe road trips with this on repeat 🗿  \r\nThe Spotify Wrapped featuring this track 🗿  \r\nThe year-end list 🗿  \r\nThe workout playlist 🗿  \r\nThe gym bros blasting it during sets 🗿  \r\nThe headphones on full blast 🗿  \r\nThe Bluetooth speakers in the park 🗿  \r\nThe person running to the beat 🗿  \r\nThe joggers 🗿  \r\nThe cyclists 🗿  \r\nThe gym 🗿  \r\nThe squat rack 🗿  \r\nThe leg press 🗿  \r\nThe dumbbells 🗿  \r\nThe barbells 🗿  \r\nThe kettlebells 🗿  \r\nThe bench press 🗿  \r\nThe incline bench 🗿  \r\nThe rowing machine 🗿  \r\nThe spin bike 🗿  \r\nThe treadmills 🗿  \r\nThe elliptical 🗿  \r\nThe weights clanking 🗿  \r\nThe gym bros grunting 🗿  \r\nThe cardio section 🗿  \r\nThe squat racks 🗿  \r\nThe weight plates 🗿  \r\nThe chalk for gripping 🗿  \r\nThe protein shakes 🗿  \r\nThe supplements 🗿  \r\nThe jars of creatine 🗿  \r\nThe jars of BCAAs 🗿  \r\nThe pre-workout 🗿  \r\nThe protein powder 🗿  \r\nThe protein bars 🗿  \r\nThe energy drinks 🗿  \r\nThe guy hitting a PR 🗿  \r\nThe high-fives after hitting a new personal record 🗿  \r\nThe gym shoes 🗿  \r\nThe wrist wraps 🗿  \r\nThe lifting belts 🗿  \r\nThe gym clothes 🗿  \r\nThe sweatbands 🗿  \r\nThe shaker bottles 🗿  \r\nThe gym bags 🗿  \r\nThe powerlifting chalk 🗿  \r\nThe Bluetooth headphones 🗿  \r\nThe earbuds falling out mid-set 🗿  \r\nThe veins popping 🗿  \r\nThe sweat dripping 🗿  \r\nThe sweat-soaked shirt 🗿  \r\nThe adrenaline kicking in 🗿  \r\nThe guy doing extra reps 🗿  \r\nThe steam room after a workout 🗿  \r\nThe sauna 🗿  \r\nThe cold showers 🗿  \r\nThe post-workout soreness 🗿  \r\nThe foam roller 🗿  \r\nThe massage guns 🗿  \r\nThe stretching mats 🗿  \r\nThe mirrors reflecting those gains 🗿  \r\nThe bodyweight exercises 🗿  \r\nThe jump rope 🗿  \r\nThe planks 🗿  \r\nThe pull-up bar 🗿  \r\nThe gym lockers 🗿  \r\nThe water fountains 🗿  \r\nThe vending machines 🗿  \r\nThe pre-made meals 🗿  \r\nThe high-protein snacks 🗿  \r\nThe electrolytes 🗿  \r\nThe calorie counters 🗿  \r\nThe workout apps 🗿  \r\nThe fitness challenges 🗿  \r\nThe gym membership 🗿  \r\nThe recovery drinks 🗿  \r\nThe post-workout smoothies 🗿  \r\nThe sports massages 🗿  \r\nThe muscle fibers repairing 🗿  \r\nThe anabolic window 🗿  \r\nThe soreness after leg day 🗿  \r\nThe PRs being broken 🗿  \r\nThe progress photos 🗿  \r\nThe gym selfies 🗿  \r\nThe Instagram posts of gains 🗿  \r\nThe comments on those posts 🗿  \r\nThe likes on those posts 🗿  \r\nThe shares 🗿  \r\nThe stories reposting gym goals 🗿  \r\nThe fitness influencers 🗿  \r\nThe workout tutorials 🗿  \r\nThe lifting PRs 🗿  \r\nThe macros 🗿  \r\nThe meal prep 🗿  \r\nThe calories burned 🗿  \r\nThe fitness challenges 🗿  \r\nThe daily workout streak 🗿  \r\nThe biceps flexing 🗿  \r\nThe veins bulging 🗿  \r\nThe protein-rich meals 🗿  \r\nThe supplements 🗿  \r\nThe people saying \"one more set\" 🗿  \r\nThe squat depth 🗿  \r\nThe motivational quotes 🗿  \r\nThe workout music blasting in the background 🗿  \r\nThe gym attire 🗿  \r\nThe leggings 🗿  \r\nThe sweat-wicking shirts 🗿  \r\nThe tank tops 🗿  \r\nThe sports bras 🗿  \r\nThe lifting gloves 🗿  \r\nThe resistance bands 🗿  \r\nThe yoga mats 🗿 \r\nThe end of the universe 🗿  \r\nThe beginning of the next 🗿  \r\nThe dark matter around it 🗿  \r\nThe supermassive black hole 🗿  \r\nThe expansion of space 🗿  \r\nThe time dilation felt while vibing 🗿  \r\nThe energy permeating everything 🗿  \r\nThe strings of reality vibrating 🗿  \r\nThe particles dancing to the frequency 🗿  \r\nThe quantum fields affected 🗿  \r\nThe Big Bang itself 🗿  \r\nThe gravity of the situation 🗿  \r\nThe speed of light being surpassed 🗿  \r\nThe wormholes opening 🗿  \r\nThe alternate realities formed 🗿  \r\nThe cosmic dance of galaxies 🗿  \r\nThe infinite potential of existence 🗿  \r\nThe birth of stars as this plays 🗿  \r\nThe cosmic dust swirling 🗿  \r\nThe nebulae glowing 🗿  \r\nThe fusion reactions ignited by this song 🗿  \r\nThe pulsars pulsing to the rhythm 🗿  \r\nThe supernovas exploding in sync 🗿  \r\nThe black holes warping space-time 🗿  \r\nThe quasar beams slicing through galaxies 🗿  \r\nThe cosmic radiation vibrating 🗿  \r\nThe entire universe humming with the beat 🗿  \r\nThe parallel realities merging 🗿  \r\nThe time loops repeating this song 🗿  \r\nThe multiverse syncing to this frequency 🗿  \r\nThe fourth dimension bending around it 🗿  \r\nThe fifth-dimensional beings nodding their heads 🗿  \r\nThe strings of the universe vibrating with every note 🗿  \r\nThe quantum entanglement happening between listeners 🗿  \r\nThe gravitational waves caused by the bass 🗿  \r\nThe energy of every atom responding 🗿  \r\nThe dark energy accelerating its expansion 🗿  \r\nThe curvature of space bending around the sound 🗿  \r\nThe cosmic background radiation absorbing the melody 🗿  \r\nThe dimensions beyond our understanding feeling this 🗿   \r\nThe philosophers contemplating its meaning 🗿  \r\nThe poets writing verses inspired by it 🗿  \r\nThe artists painting to the sound of the beat 🗿  \r\nThe dancers moving in perfect sync 🗿  \r\nThe actors making cinematic masterpieces with this in the background 🗿  \r\nThe screenwriters crafting epic scenes set to this song 🗿  \r\nThe novelists writing entire sagas inspired by its rhythm 🗿  \r\nThe architects designing buildings that pulse with its beat 🗿  \r\nThe cities shaped by the energy of this track 🗿  \r\nThe lights of the world flickering to its tempo 🗿  \r\nThe oceans rising and falling with the flow 🗿  \r\nThe tides pulled by the gravitational pull of this song 🗿  \r\nThe winds across the world swirling in sync 🗿    \r\nThe essence of life itself flowing through the melody 🗿  \r\nThe fabric of reality stretching as the song pulses 🗿  \r\nThe energy in every atom accelerating 🗿  \r\nThe vibrations of the universe reaching their peak 🗿  \r\nThe infinite possibilities unfolding with every beat 🗿  \r\nThe ultimate truth of existence being revealed 🗿  \r\nThe very meaning of life unraveling in the song 🗿  \r\nThe purpose of everything aligning with the rhythm 🗿  \r\nThe cosmos awakening to its true nature 🗿  \r\nThe divine spark within all beings igniting 🗿  \r\nThe universe itself ascending 🗿  \r\nThe final realization that we are all one with the beat 🗿  \r\nme 🗿  \r\nyou 🗿  \r\nur girlfriend 🗿  \r\nur dog 🗿  \r\nohio sigmas 🗿  \r\nmr beast followers 🗿  \r\ngymrats 🗿  \r\naverage phonk user 🗿  \r\nthe FINAL BOSS 🗿  \r\nur skills 🗿  \r\nthe people 🗿  \r\nmy N word homie 🗿  \r\nur food 🗿  \r\nPeople who liked this comment 🗿",
-          "ananki_reasoning": "The comment uses the 🗿 (moai/stone face) emoji repeatedly in a copypasta format that's commonly used to express something being 'legendary,' 'iconic,' or impressively hard-hitting in internet slang. The title 'GOOFY AHH SONGS' combined with this reverent listing of every element of the production suggests the song has an absurdly hard beat or energy that's so over-the-top it's memeable. This type of exaggerated praise is typically reserved for tracks with aggressive, pump-up energy that hit hard. The systematic breakdown of every production element (beat, bassline, drums, sound effects) further emphasizes the track's powerful, energetic qualities.",
           "mapped_subvibe": "Energy - Pump Up"
         },
         {
@@ -42924,22 +42124,6 @@
           "post_title": "Angry breakup songs",
           "comment_text": "You can actually feel her ANGER. And that's why we love it.",
           "ananki_reasoning": "The human explicitly describes feeling the singer's ANGER in this breakup song, emphasizing the raw emotional power and intensity. 'You Oughta Know' by Alanis Morissette is iconic for its aggressive, unapologetic expression of rage and empowerment after a breakup. While it's about a breakup, the emphasis is on the ANGER and strength rather than sadness or vulnerability. This song channels fury into confident, assertive energy - it's about standing up and expressing rage without holding back. The 'Energy - Confidence' sub-vibe best captures this empowered, confrontational emotional state that makes listeners feel strong and validated in their anger.",
-          "mapped_subvibe": "Energy - Confidence"
-        },
-        {
-          "artist": "Kailee Morgue",
-          "song": "F**k U",
-          "spotify_id": "3jmEsXBxrm4aKu2hC0TaAy",
-          "spotify_uri": "spotify:track:3jmEsXBxrm4aKu2hC0TaAy",
-          "comment_score": 1638,
-          "source_url": "https://youtube.com/watch?v=5tE5YUxzDYE",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Angry breakup songs",
-          "comment_text": "I CANT BREATHE\n\nITS SO GOOD IM CHOKING",
-          "ananki_reasoning": "The human's expression of being unable to breathe and choking (from how good it is) in response to an 'angry breakup song' indicates an empowering, cathartic release rather than sadness. The song title 'F**k U' by Kailee Morgue combined with the 'angry breakup' context and the intensely positive reaction suggests this is an assertive, confidence-building anthem that helps process anger through empowerment rather than grief. The visceral, excited reaction ('ITS SO GOOD IM CHOKING') indicates the song provides energizing validation and strength, making it fit the confidence/empowerment sub-vibe better than darker or sadder categories.",
           "mapped_subvibe": "Energy - Confidence"
         },
         {
@@ -44831,22 +44015,6 @@
           "mapped_subvibe": "Energy - Confidence"
         },
         {
-          "artist": "Ellie Goulding",
-          "song": "Burn",
-          "spotify_id": "5lF0pHbsJ0QqyIrLweHJPW",
-          "spotify_uri": "spotify:track:5lF0pHbsJ0QqyIrLweHJPW",
-          "comment_score": 27,
-          "source_url": "https://youtube.com/watch?v=J5f27dW_AS0",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 1,
-          "full_context": "",
-          "post_title": "Confidence boosting songs",
-          "comment_text": "Love , love , love this song ... :)",
-          "ananki_reasoning": "The post title explicitly states 'Confidence boosting songs' and the commenter expresses strong enthusiasm ('Love, love, love this song'). Ellie Goulding's 'Burn' is an uplifting, empowering anthem with driving beats and lyrics about shining bright and being unstoppable - perfectly aligned with confidence-building. The song's energetic production and motivational message make it ideal for the Energy - Confidence sub-vibe.",
-          "mapped_subvibe": "Energy - Confidence"
-        },
-        {
           "artist": "Jessie J",
           "song": "Masterpiece",
           "spotify_id": "4PYiIgzcp4o5pEYji1xY9q",
@@ -45100,22 +44268,6 @@
           "post_title": "Epic Boss Battle Themes in Games",
           "comment_text": "This song really screams “the dream version of a legendary musician is coming to kick your ass with nothing but a top hat and a baton.”",
           "ananki_reasoning": "The human describes this as an epic boss battle theme with imagery of 'a legendary musician coming to kick your ass with nothing but a top hat and a baton.' This conveys a sense of theatrical, intimidating confidence and swagger - someone so powerful they don't need weapons, just style and skill. The 'boss battle' context suggests high-energy confrontation, but the specific emphasis on the legendary, almost showman-like quality ('top hat and a baton') points more toward confidence and dominance rather than pure aggression or workout energy. This is the musical equivalent of a powerful character entering the arena with complete self-assurance.",
-          "mapped_subvibe": "Energy - Confidence"
-        },
-        {
-          "artist": "Army Of The Pharaohs",
-          "song": "Terrorstorm",
-          "spotify_id": "3JrazVKF6rCU8QX3RCOlvv",
-          "spotify_uri": "spotify:track:3JrazVKF6rCU8QX3RCOlvv",
-          "comment_score": 74,
-          "source_url": "https://youtube.com/watch?v=4BV4oWmhAyI",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "DnD Boss Music",
-          "comment_text": "Who else is here from the sith warrior progression?",
-          "ananki_reasoning": "The context references 'DnD Boss Music' and 'sith warrior progression,' both indicating this song is used for epic, powerful moments in gaming contexts. Army of the Pharaohs' 'Terrorstorm' is an aggressive hip-hop track with intense, dominating energy. The association with boss battles and Sith warrior (a powerful, intimidating Star Wars character class) suggests this song evokes feelings of power, dominance, and confidence rather than pure workout intensity or combat energy. The 'boss music' context specifically implies facing a formidable challenge with swagger and strength, which aligns best with the Confidence sub-vibe.",
           "mapped_subvibe": "Energy - Confidence"
         },
         {
@@ -45404,22 +44556,6 @@
           "post_title": "Songs that make you feel Unstoppable",
           "comment_text": "Through an action, A Man becomes a hero. Through death a Hero becomes Legend. Through time, A Legend becomes a myth. Through hearing a myth, a man takes Action.",
           "ananki_reasoning": "The comment describes a powerful cyclical narrative about transformation through action and heroism, perfectly aligning with the post title 'Songs that make you feel Unstoppable' and the song title 'Heroic Opportunities.' The quote emphasizes taking action and becoming heroic, which is fundamentally about feeling empowered and unstoppable. While this could fit 'Energy - Pump Up,' the philosophical nature of the quote and emphasis on personal transformation through decisive action makes 'Energy - Confidence' the better match - it's about the internal conviction and self-belief needed to take heroic action rather than just raw energy or motivation.",
-          "mapped_subvibe": "Energy - Confidence"
-        },
-        {
-          "artist": "Valley Of Wolves",
-          "song": "We Are Legends",
-          "spotify_id": "4Ejmco0UUTha2jZ54sz5cz",
-          "spotify_uri": "spotify:track:4Ejmco0UUTha2jZ54sz5cz",
-          "comment_score": 481,
-          "source_url": "https://youtube.com/watch?v=TAFlK5HdfM8",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Songs that make you feel Unstoppable",
-          "comment_text": "Valley of Wolves, The Score= Perfection",
-          "ananki_reasoning": "The human explicitly describes this song as making them feel 'Unstoppable' and calls the combination 'Perfection.' The feeling of being unstoppable is a core confidence emotion - it's about empowerment, self-assurance, and invincibility. While this could also fit 'Energy - Pump Up,' the specific emotional descriptor 'unstoppable' points more directly to confidence-building rather than general energetic motivation. The song 'We Are Legends' by Valley of Wolves also reinforces this with its title suggesting grandiosity and self-assured power.",
           "mapped_subvibe": "Energy - Confidence"
         },
         {
@@ -46428,22 +45564,6 @@
           "post_title": "Late 2000s / early 2010s songs",
           "comment_text": "What a happy, upbeat song about a terribly unhealthy relationship",
           "ananki_reasoning": "The human's comment highlights the ironic juxtaposition of 'Misery' - a happy, upbeat song about an unhealthy relationship. This creates a defiant, empowered energy where the upbeat tempo and confident delivery override the toxic subject matter. The song channels negative relationship experiences into high-energy assertiveness rather than sadness or melancholy. The contrast between the cheerful sound and dark lyrics creates a confidently sarcastic, almost celebratory-of-survival vibe that fits best with Energy - Confidence, as it's about maintaining your energy and swagger even when discussing relationship dysfunction.",
-          "mapped_subvibe": "Energy - Confidence"
-        },
-        {
-          "artist": "Party Tyme",
-          "song": "Let Me Blow Ya Mind (made popular by Eve ft. Gwen Stefani) [backing version]",
-          "spotify_id": "0Efhf7aR68noMnsJnFJz0P",
-          "spotify_uri": "spotify:track:0Efhf7aR68noMnsJnFJz0P",
-          "comment_score": 9519,
-          "source_url": "https://youtube.com/watch?v=Wt88GMJmVk0",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "random hits 90&#39;s and 2000`s playlist",
-          "comment_text": "Eve, went hard on this one: who's still listening in 2021, is smart!!!🔥🔥🔥🔥🔥💯💯",
-          "ananki_reasoning": "The comment's enthusiastic tone with fire and 100 emojis, plus the phrase 'Eve went hard on this one' indicates high energy and attitude. 'Let Me Blow Ya Mind' is a classic early 2000s hip-hop track known for its bold, confident swagger and empowering energy. The track features Eve's assertive rap style combined with Gwen Stefani's rock edge, creating a confident, attitude-driven vibe rather than a party or workout context. The comment celebrates the song's enduring impact, which aligns with the confident, head-held-high feeling the track evokes.",
           "mapped_subvibe": "Energy - Confidence"
         },
         {
@@ -48077,26 +47197,6 @@
           "comment_text": "going on a noble quest to save the kingdom type beat",
           "ananki_reasoning": "The phrase 'going on a noble quest to save the kingdom type beat' evokes a heroic, adventurous scenario that requires boldness and determination. The song title 'Crocodile Moat!!!!!!!' (with excessive exclamation marks) reinforces this energetic, confident vibe - suggesting the protagonist is fearlessly facing dangerous obstacles. This context describes music that would fuel a sense of empowerment and heroic confidence rather than purely workout intensity or aggression. The 'noble quest' framing specifically suggests righteous, confident energy rather than darker or more aggressive tones.",
           "mapped_subvibe": "Energy - Confidence"
-        },
-        {
-          "artist": "Charli XCX",
-          "song": "Hot Girl",
-          "spotify_id": "extrapolated_001",
-          "spotify_uri": "spotify:track:extrapolated_001",
-          "full_context": "User-validated song from journey: \"girl party!\" (in my room blowing bublegum → out tonight to a club!)",
-          "ananki_analysis": "User-validated as perfect fit for their emotional journey",
-          "mapped_subvibe": "Energy - Confidence",
-          "mapping_confidence": 0.89,
-          "source": "user_validated",
-          "validated_at": "2025-11-14T01:01:55.130Z",
-          "validation_count": 1,
-          "manifold_x": 580.45,
-          "manifold_y": 620.33,
-          "emotional_composition": {
-            "Energy": 50,
-            "Confident": 40,
-            "Happy": 10
-          }
         },
         {
           "artist": "Jatin-Lalit",
@@ -49823,22 +48923,6 @@
           "mapped_subvibe": "Drive - Road Trip"
         },
         {
-          "artist": "Modern Talking",
-          "song": "Space Mix '98",
-          "spotify_id": "0ATlCapTlxbOnV4pPQ3uik",
-          "spotify_uri": "spotify:track:0ATlCapTlxbOnV4pPQ3uik",
-          "comment_score": 31,
-          "source_url": "https://youtube.com/watch?v=uj_373GArjE",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Car Music",
-          "comment_text": "I LOVE THIS CHANNEL . HE IS SO GOD OMG ❤🔥",
-          "ananki_reasoning": "The post title 'Car Music' directly indicates this is music for driving contexts. The enthusiastic all-caps comment ('I LOVE THIS CHANNEL. HE IS SO GOD OMG') with fire and heart emojis shows high energy and excitement. Modern Talking's 'Space Mix '98' is an upbeat Eurodance/synth-pop remix perfect for driving. The combination of car context and energetic enthusiasm points to Road Trip rather than more serious Night Drive or Speed driving - this feels like fun, enjoyable driving music that matches the celebratory tone of the comment.",
-          "mapped_subvibe": "Drive - Road Trip"
-        },
-        {
           "artist": "Robbie Williams",
           "song": "Rudebox",
           "spotify_id": "5NN5Di8dy8evZ7ciVGx1we",
@@ -49916,22 +49000,6 @@
           "post_title": "Classic Rock Road Trip Playlist  - Best Travelling Songs (60s, 70s, 80s Rock Music)",
           "comment_text": "My favorite artist Ian Asher is the future. Every track is addicting and I need more",
           "ananki_reasoning": "The post title explicitly mentions 'Classic Rock Road Trip Playlist - Best Travelling Songs,' clearly establishing a road trip driving context. The commenter is recommending Ian Asher's 'Constellations' within this specific playlist theme, indicating they believe this song fits the road trip vibe. The enthusiastic language ('Every track is addicting and I need more') suggests an energetic, engaging quality perfect for long drives. The song is being positioned as a traveling/road trip song despite the playlist's classic rock focus, suggesting it has that essential driving energy.",
-          "mapped_subvibe": "Drive - Road Trip"
-        },
-        {
-          "artist": "AC/DC",
-          "song": "Highway to Hell",
-          "spotify_id": "2zYzyRzz6pRmhPzyfMEC8s",
-          "spotify_uri": "spotify:track:2zYzyRzz6pRmhPzyfMEC8s",
-          "comment_score": 48849,
-          "source_url": "https://youtube.com/watch?v=l482T0yNkeo",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Classic Rock Road Trip Playlist  - Best Travelling Songs (60s, 70s, 80s Rock Music)",
-          "comment_text": "The best song to put on the school bus",
-          "ananki_reasoning": "The song 'Highway to Hell' by AC/DC is being recommended in a 'Classic Rock Road Trip Playlist' context, with the comment humorously suggesting it as 'the best song to put on the school bus.' This is a clear road trip/travel context. The song itself is literally about traveling on a highway, and the rebellious, high-energy rock anthem quality makes it a quintessential road trip song. While there's a playful edge to putting this particular song on a school bus (given its title and themes), the core emotional intent is clearly about driving and traveling, making 'Drive - Road Trip' the most appropriate sub-vibe.",
           "mapped_subvibe": "Drive - Road Trip"
         },
         {
@@ -50127,22 +49195,6 @@
           "mapped_subvibe": "Drive - Road Trip"
         },
         {
-          "artist": "Couché",
-          "song": "Dollar Dream",
-          "spotify_id": "1Hq1nm9RwDzTB2Cd3V1iIT",
-          "spotify_uri": "spotify:track:1Hq1nm9RwDzTB2Cd3V1iIT",
-          "comment_score": 2,
-          "source_url": "https://youtube.com/watch?v=754JTlGdPCw",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "ROADTRIP MUSIC 2025  🚗 VACATION HITS",
-          "comment_text": "Excellent Dreams, beautiful Melody, Vocals.",
-          "ananki_reasoning": "The post title explicitly states 'ROADTRIP MUSIC 2025 🚗 VACATION HITS', clearly positioning this song in a road trip context. The comment highlights positive qualities like 'Excellent Dreams, beautiful Melody, Vocals' which suggests an uplifting, pleasant driving experience rather than a darker night drive or high-speed scenario. The vacation/road trip framing combined with the appreciation of beautiful melodies makes this a clear fit for the Drive - Road Trip sub-vibe.",
-          "mapped_subvibe": "Drive - Road Trip"
-        },
-        {
           "artist": "ZHIKO",
           "song": "What Would You Do",
           "spotify_id": "5lnxPVSljiEDXyI76DRpf9",
@@ -50172,22 +49224,6 @@
           "post_title": "ROADTRIP MUSIC 2025  🚗 VACATION HITS",
           "comment_text": "Love y'all hope you enjoy this one ❤",
           "ananki_reasoning": "The post title explicitly states 'ROADTRIP MUSIC 2025 🚗 VACATION HITS' and the comment expresses positive sentiment about sharing the song. The context is unambiguously about road trip music, and the song 'Miles On It' by Marshmello (with 'miles' being a direct reference to travel/driving) aligns perfectly with the road trip theme. The car emoji and vacation context reinforce this is music intended for driving adventures.",
-          "mapped_subvibe": "Drive - Road Trip"
-        },
-        {
-          "artist": "Kane Brown",
-          "song": "I Can Feel It",
-          "spotify_id": "2eGvz6O6tVnh9nKiitDEhZ",
-          "spotify_uri": "spotify:track:2eGvz6O6tVnh9nKiitDEhZ",
-          "comment_score": 45,
-          "source_url": "https://youtube.com/watch?v=Arq3V36P_Eo",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 1,
-          "full_context": "",
-          "post_title": "ROADTRIP MUSIC 2025  🚗 VACATION HITS",
-          "comment_text": "I love this! Gonna be on repeat for sure",
-          "ananki_reasoning": "The post title explicitly states 'ROADTRIP MUSIC 2025 🚗 VACATION HITS' and the commenter enthusiastically says it will be 'on repeat for sure,' indicating this song perfectly fits the road trip driving vibe. The vacation context combined with the upbeat nature of Kane Brown's 'I Can Feel It' makes this a clear road trip anthem.",
           "mapped_subvibe": "Drive - Road Trip"
         },
         {
@@ -51267,38 +50303,6 @@
           "mapped_subvibe": "Drive - Night Drive"
         },
         {
-          "artist": "PARTYNEXTDOOR",
-          "song": "SOMETHING ABOUT YOU",
-          "spotify_id": "1F6nHHDJyTHLgDDFj1ZZDt",
-          "spotify_uri": "spotify:track:1F6nHHDJyTHLgDDFj1ZZDt",
-          "comment_score": 2638,
-          "source_url": "https://youtube.com/watch?v=7D8mRkGXiL8",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "LATE NIGHT DRIVE PLAYLIST 🌃 (SZA/Drake/PARTYNEXTDOOR/KENDRICK LAMAR,ETC.)",
-          "comment_text": "These beats in the headphones are perfect",
-          "ananki_reasoning": "The post title explicitly mentions 'LATE NIGHT DRIVE PLAYLIST' with a night cityscape emoji, and the commenter specifically validates that 'these beats in the headphones are perfect' for this context. The song by PARTYNEXTDOOR fits into a curated playlist designed for late night driving experiences. While 'Night - Midnight Drive' could also apply, 'Drive - Night Drive' is the more precise match as it emphasizes the driving activity during nighttime rather than just the time of day.",
-          "mapped_subvibe": "Drive - Night Drive"
-        },
-        {
-          "artist": "PARTYNEXTDOOR",
-          "song": "M a k e I t T o T h e M o r n i n g",
-          "spotify_id": "12VH4g5pTMZmrUVzfJq7F7",
-          "spotify_uri": "spotify:track:12VH4g5pTMZmrUVzfJq7F7",
-          "comment_score": 15716,
-          "source_url": "https://youtube.com/watch?v=Zzl20a6AmRE",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 1,
-          "full_context": "",
-          "post_title": "LATE NIGHT DRIVE PLAYLIST 🌃 (SZA/Drake/PARTYNEXTDOOR/KENDRICK LAMAR,ETC.)",
-          "comment_text": "If you’re not here from TikTok, you’re allowed to like the comment.",
-          "ananki_reasoning": "The post title explicitly states 'LATE NIGHT DRIVE PLAYLIST' with a night city emoji, making the context crystal clear. The song 'Make It To The Morning' by PARTYNEXTDOOR fits perfectly within this nocturnal driving theme - the title itself suggests the journey through nighttime hours until dawn. PARTYNEXTDOOR's atmospheric, moody R&B style is quintessential night drive music. The comment about TikTok doesn't affect the musical context established by the playlist theme.",
-          "mapped_subvibe": "Drive - Night Drive"
-        },
-        {
           "artist": "Drake",
           "song": "Fire & Desire",
           "spotify_id": "4BhGTc3Cgay2U1QcTS7vQe",
@@ -52011,22 +51015,6 @@
           "mapped_subvibe": "Drive - Speed"
         },
         {
-          "artist": "OliverRK",
-          "song": "Breakup Blitz",
-          "spotify_id": "0NrxYfYdI3GzPNySIitYAd",
-          "spotify_uri": "spotify:track:0NrxYfYdI3GzPNySIitYAd",
-          "comment_score": 49,
-          "source_url": "https://youtube.com/watch?v=0eve0iGVqRE",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Car Music",
-          "comment_text": "PERFECT. NO OTHER WORDS CAN DESCRIBE THIS. ✊✊",
-          "ananki_reasoning": "The post is titled 'Car Music' and the enthusiastic all-caps response 'PERFECT. NO OTHER WORDS CAN DESCRIBE THIS' with fist bump emojis suggests high energy and excitement. The song title 'Breakup Blitz' implies fast-paced, intense energy. The combination of car context, the emphatic positive reaction, and the word 'Blitz' (suggesting speed and intensity) strongly indicates this is high-energy driving music meant for fast, energetic car rides rather than contemplative or scenic drives.",
-          "mapped_subvibe": "Drive - Speed"
-        },
-        {
           "artist": "Nothing But Thieves",
           "song": "Excuse Me",
           "spotify_id": "5fJKYUXB7Me0V0QnKNaIil",
@@ -52367,22 +51355,6 @@
           "mapped_subvibe": "Drive - Scenic"
         },
         {
-          "artist": "Disney Ambient",
-          "song": "At All Costs",
-          "spotify_id": "6BxCZffIfwhuDlXLP4AIkh",
-          "spotify_uri": "spotify:track:6BxCZffIfwhuDlXLP4AIkh",
-          "comment_score": 21,
-          "source_url": "https://youtube.com/watch?v=ywNMGha7Cog",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Los Angeles Scenic Drives",
-          "comment_text": "Hi Everyone! please share your thoughts on this video.   As always thanks for watching these rides please like if you enjoyed it as it really helps grow the channel.",
-          "ananki_reasoning": "The post is explicitly about 'Los Angeles Scenic Drives' and the comment asks for thoughts on a video showing scenic rides. The song 'At All Costs' by Disney Ambient is being used as background music for what appears to be a YouTube video featuring scenic driving footage through Los Angeles. The context directly maps to the Drive - Scenic sub-vibe, which perfectly captures the emotional intent of peaceful, visually-focused driving content through beautiful landscapes or cityscapes.",
-          "mapped_subvibe": "Drive - Scenic"
-        },
-        {
           "artist": "Julian Vaughn",
           "song": "Saturday - Radio Edit",
           "spotify_id": "3cowOgWspD1KK2EbtEIEeJ",
@@ -52460,22 +51432,6 @@
           "post_title": "Los Angeles Scenic Drives",
           "comment_text": "I hope you guys enjoy this video let me know if you want more like it or if you have suggesions!",
           "ananki_reasoning": "The post is explicitly about 'Los Angeles Scenic Drives' and the song is titled 'Santa Monica' by Degli Scalzi. Santa Monica is a famous coastal location in Los Angeles known for its scenic views and iconic drives along the Pacific Coast Highway. The context directly relates to scenic driving experiences in LA, making this a perfect match for the Drive - Scenic sub-vibe.",
-          "mapped_subvibe": "Drive - Scenic"
-        },
-        {
-          "artist": "Disney Ambient",
-          "song": "How Far I'll Go",
-          "spotify_id": "4OJNQXj4BU4qZtaYZi0lWm",
-          "spotify_uri": "spotify:track:4OJNQXj4BU4qZtaYZi0lWm",
-          "comment_score": 26,
-          "source_url": "https://youtube.com/watch?v=-RTYlilGtek",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.9,
-          "full_context": "",
-          "post_title": "Los Angeles Scenic Drives",
-          "comment_text": "Did you want to see more Disney content?  Let me know your thoughts.",
-          "ananki_reasoning": "The post title explicitly mentions 'Los Angeles Scenic Drives' and the song is an ambient version of 'How Far I'll Go' from Moana - a song about journey and exploration. The Disney Ambient artist treatment suggests this is a relaxed, atmospheric version perfect for scenic driving. The connection between the scenic drive context and this inspirational journey song creates a clear match for the Drive - Scenic sub-vibe.",
           "mapped_subvibe": "Drive - Scenic"
         },
         {
@@ -53591,22 +52547,6 @@
           "mapped_subvibe": "Party - Pregame"
         },
         {
-          "artist": "Sam Hunt",
-          "song": "Break Up In A Small Town",
-          "spotify_id": "7aftSOGSOpSoIlVAQVBb71",
-          "spotify_uri": "spotify:track:7aftSOGSOpSoIlVAQVBb71",
-          "comment_score": 5702,
-          "source_url": "https://youtube.com/watch?v=YOb4VUgRqo0",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Country Drinking Songs 2025 (Country Party Songs Playlist &amp; Upbeat &amp; Fun)",
-          "comment_text": "If your still listening in 2024 your a legend!!!",
-          "ananki_reasoning": "The context clearly indicates this is from a 'Country Drinking Songs' and 'Country Party Songs' playlist that's described as 'Upbeat & Fun'. Sam Hunt's 'Break Up In A Small Town' is a popular modern country song with an upbeat tempo despite its breakup theme, and it's commonly played at country parties and bars. The playlist title emphasizes drinking and partying, which aligns perfectly with the pregame vibe - upbeat, fun, social drinking songs that get people energized for a night out. The comment about being a 'legend' for still listening reinforces the communal, celebratory party atmosphere.",
-          "mapped_subvibe": "Party - Pregame"
-        },
-        {
           "artist": "Sean Stemaly",
           "song": "Z71",
           "spotify_id": "5bfYViwMu4WevrF01Ck5PC",
@@ -53947,22 +52887,6 @@
           "mapped_subvibe": "Party - Club"
         },
         {
-          "artist": "Mau P",
-          "song": "The Less I Know The Better",
-          "spotify_id": "7lDGg8CFySbkKUrjgzcLlY",
-          "spotify_uri": "spotify:track:7lDGg8CFySbkKUrjgzcLlY",
-          "comment_score": 63,
-          "source_url": "https://youtube.com/watch?v=IIsm0ADh09U",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "House Music 2025 | Top Dance Songs 2025 | EDM &amp; Dance Music Playlist |  Best Dance Songs",
-          "comment_text": "Tame Impala + Mau P = Banger 🔥",
-          "ananki_reasoning": "This is a Mau P remix/reimagining of Tame Impala's 'The Less I Know The Better' presented in a 2025 House Music/EDM/Dance playlist context. The human's enthusiastic '🔥' emoji and 'Banger' description indicates high-energy dance music meant for club/party settings. Mau P is known for tech house productions that dominate club scenes, and this track was specifically highlighted in a dance music playlist, making it clearly intended for the club/dance floor environment rather than casual listening.",
-          "mapped_subvibe": "Party - Club"
-        },
-        {
           "artist": "Jess Bays",
           "song": "Ascension",
           "spotify_id": "7uNno3yILVgHirIMZ7JXiq",
@@ -54120,22 +53044,6 @@
           "post_title": "Party Vibes",
           "comment_text": "Fitting the 4x4 vibe at the moment.",
           "ananki_reasoning": "The post title is explicitly 'Party Vibes' and the comment mentions 'fitting the 4x4 vibe,' which is a direct reference to four-on-the-floor rhythm - a fundamental characteristic of house, techno, and club music. The 4x4 beat pattern (kick drum on every quarter note) is synonymous with dance/club music culture. This clear connection between the party context and the club-specific musical terminology (4x4) makes 'Party - Club' the most appropriate sub-vibe.",
-          "mapped_subvibe": "Party - Club"
-        },
-        {
-          "artist": "TS7",
-          "song": "Only One",
-          "spotify_id": "4SjNpNc3pef6isHFhTSC4S",
-          "spotify_uri": "spotify:track:4SjNpNc3pef6isHFhTSC4S",
-          "comment_score": 8,
-          "source_url": "https://youtube.com/watch?v=zTVeGRCuwU8",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Party Vibes",
-          "comment_text": "Monster of a tune... perfect update for 2025 !",
-          "ananki_reasoning": "The post title explicitly states 'Party Vibes' and the comment describes it as a 'Monster of a tune' that's 'perfect' for 2025, suggesting it's an energetic, updated party track. TS7 is known for UK garage and house music, which are club-oriented genres. The enthusiastic language ('monster of a tune') and reference to it being a timely update indicates this is meant for club/dance environments rather than casual house parties or pregaming.",
           "mapped_subvibe": "Party - Club"
         },
         {
@@ -54751,22 +53659,6 @@
           "mapped_subvibe": "Party - House Party"
         },
         {
-          "artist": "Georgie Riot",
-          "song": "Without You",
-          "spotify_id": "0miroBtlqKiIC4ueLsu2zS",
-          "spotify_uri": "spotify:track:0miroBtlqKiIC4ueLsu2zS",
-          "comment_score": 46,
-          "source_url": "https://youtube.com/watch?v=T6PKdhkAQDg",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Party Vibes",
-          "comment_text": "The perfect home for this track 💚",
-          "ananki_reasoning": "The post title is explicitly 'Party Vibes' and the commenter states 'The perfect home for this track' with a green heart emoji, indicating enthusiastic agreement that this song fits party contexts. Given the casual, affirming tone and context, this appears to be a house party vibe rather than club/festival/pregame - suggesting a more intimate party setting where this track would feel at home.",
-          "mapped_subvibe": "Party - House Party"
-        },
-        {
           "artist": "Genetics",
           "song": "Escape",
           "spotify_id": "6F2Jv7u7RjesTHO6n6b8gY",
@@ -55152,22 +54044,6 @@
           "post_title": " &#39;00s Dance",
           "comment_text": "No Phones, No Flags, No Signs, No BS just pure energy and passion for the music!",
           "ananki_reasoning": "The comment emphasizes 'pure energy and passion for the music' with 'No Phones, No Flags, No Signs, No BS' - this strongly evokes the classic festival/rave atmosphere where crowds are completely immersed in the music itself. Tiësto's 'Adagio For Strings' is an iconic trance anthem that became legendary in the '00s dance scene, particularly at massive festivals and club events. The emphasis on authentic, undistracted connection to the music and the pure energy described perfectly captures the festival trance experience of that era.",
-          "mapped_subvibe": "Party - Festival"
-        },
-        {
-          "artist": "FISHER",
-          "song": "Stay",
-          "spotify_id": "74y1VgzL668hynrvA59WQB",
-          "spotify_uri": "spotify:track:74y1VgzL668hynrvA59WQB",
-          "comment_score": 500,
-          "source_url": "https://youtube.com/watch?v=wUvrLsPVRss",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "House Music 2025 | Top Dance Songs 2025 | EDM &amp; Dance Music Playlist |  Best Dance Songs",
-          "comment_text": "HOPE YOU LEGENDS LOVE THIS ONE !!! ❤❤❤",
-          "ananki_reasoning": "The post title explicitly mentions 'House Music 2025', 'Top Dance Songs', and 'EDM & Dance Music Playlist', while the comment expresses enthusiastic excitement with 'HOPE YOU LEGENDS LOVE THIS ONE' and multiple heart emojis. FISHER is a well-known tech house/EDM artist, and this song is being presented as part of a best dance songs compilation. The energy, genre (house/EDM), and context of being shared as a top dance track all point to a festival atmosphere where this type of music thrives. The enthusiastic, collective ('LEGENDS') tone suggests large-scale party energy rather than intimate club or house party vibes.",
           "mapped_subvibe": "Party - Festival"
         },
         {
@@ -58351,22 +57227,6 @@
           "mapped_subvibe": "Romantic - First Love"
         },
         {
-          "artist": "Boyce Avenue",
-          "song": "Photograph",
-          "spotify_id": "6CgNoAbFJ4Q4Id4EjtbXlC",
-          "spotify_uri": "spotify:track:6CgNoAbFJ4Q4Id4EjtbXlC",
-          "comment_score": 10225,
-          "source_url": "https://youtube.com/watch?v=tIA_vrBDC1g",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Happy Love songs",
-          "comment_text": "Amazing!!!! Kisses from Brazil ❤️",
-          "ananki_reasoning": "The comment was posted in a thread titled 'Happy Love songs' and expresses enthusiastic approval ('Amazing!!!!') with affectionate imagery ('Kisses from Brazil ❤️'). 'Photograph' by Boyce Avenue is an acoustic cover of Ed Sheeran's romantic ballad about cherishing memories of a loved one. The combination of the happy love song context, the warm emotional expression, and the song's tender, nostalgic quality about keeping love alive through memories makes this fit the 'Romantic - First Love' sub-vibe, which captures that sweet, innocent, and deeply affectionate romantic feeling.",
-          "mapped_subvibe": "Romantic - First Love"
-        },
-        {
           "artist": "Bazzi",
           "song": "Mine",
           "spotify_id": "7uzmGiiJyRfuViKKK3lVmR",
@@ -59456,22 +58316,6 @@
           "post_title": "Pensive Music",
           "comment_text": "This song, along with numerous love ballad hits of the 70's, are what i like to call the\n \"heartbeat rhythm\" ballads.. Love songs that had barely any drums, if any at all, with just a simple, throbbing, rhythm that was soothing to everyone's ears, and would either put you in the mood, or put you to sleep.. This of course, is coming from a long time professional drummer, and child of the 70's who grew up listening to songs like this on the radio ;)) . Other examples of \"heartbeat ballads\" would be songs like Billy Joel's \"Just the Way You Are\",\nThe Bee Gee's \"How Deep Is Your Love\", and Chicago's \"If You Leave Me Now\", The Carpenters \"Close To You\", and of course, this one.. All great tunes that will always be remembered for their honesty, emotional depth, gorgeous musical arrangements, and peaceful and melancholic ambiance..",
           "ananki_reasoning": "The commenter describes 'I'm Not In Love' as a 'heartbeat rhythm' ballad - a love song with minimal drums and a simple, throbbing rhythm that is 'soothing' and would 'put you in the mood.' The emphasis on the intimate, gentle quality of 70s love ballads, combined with the 'heartbeat' metaphor (suggesting closeness and vulnerability) and the phrase 'put you in the mood' clearly points to an intimate romantic context. While the song title suggests emotional complexity, the human's framing focuses on the tender, mood-setting quality of these soft love ballads rather than sadness or melancholy.",
-          "mapped_subvibe": "Romantic - Intimate"
-        },
-        {
-          "artist": "Sam Smith",
-          "song": "Stay With Me",
-          "spotify_id": "5Nm9ERjJZ5oyfXZTECKmRt",
-          "spotify_uri": "spotify:track:5Nm9ERjJZ5oyfXZTECKmRt",
-          "comment_score": 28779,
-          "source_url": "https://youtube.com/watch?v=pB-5XG-DbAA",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Nostalgic songs",
-          "comment_text": "I just love how rich his voice is!!  Beautiful",
-          "ananki_reasoning": "Sam Smith's 'Stay With Me' is a powerful ballad about vulnerability and longing for connection. The human's emphasis on the 'rich' and 'beautiful' voice quality, combined with the post title 'Nostalgic songs,' suggests an emotional, intimate response to the music. While the song has melancholic undertones about fleeting romance, the core emotional appeal is the intimate, raw vulnerability of pleading for someone to stay. The gospel-influenced production and Smith's soulful vocal delivery create a deeply personal, intimate atmosphere that resonates with listeners on an emotional level.",
           "mapped_subvibe": "Romantic - Intimate"
         },
         {
@@ -62395,22 +61239,6 @@
           "mapped_subvibe": "Romantic - Long Distance"
         },
         {
-          "artist": "Richard Marx",
-          "song": "Right Here Waiting",
-          "spotify_id": "4LFwNJWoj74Yd71fIr1W8x",
-          "spotify_uri": "spotify:track:4LFwNJWoj74Yd71fIr1W8x",
-          "comment_score": 2794,
-          "source_url": "https://youtube.com/watch?v=S_E2EHVxNAE",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Classic Rock Road Trip Playlist  - Best Travelling Songs (60s, 70s, 80s Rock Music)",
-          "comment_text": "To the new generation. Don’t let this song die! Please 🙏🏼",
-          "ananki_reasoning": "Richard Marx's 'Right Here Waiting' is a quintessential power ballad about waiting for a loved one who is far away, with lyrics explicitly about separation and longing ('Wherever you go, whatever you do, I will be right here waiting for you'). While the comment expresses nostalgia for classic rock and a desire to preserve the song for future generations, the song itself is fundamentally about romantic separation and patience during long-distance love. The plea to 'not let this song die' reinforces its status as a classic romantic anthem that has resonated across generations for its portrayal of devoted, distance-defying love.",
-          "mapped_subvibe": "Romantic - Long Distance"
-        },
-        {
           "artist": "Back Track Karaoke",
           "song": "I Won't Give Up (Instrumental Version) [Originally performed by Jason Mraz]",
           "spotify_id": "3VZSgE1d6GiEPKaclhUGer",
@@ -62847,22 +61675,6 @@
           "mapped_subvibe": "Romantic - Anniversary"
         },
         {
-          "artist": "Mariah Carey",
-          "song": "Without You",
-          "spotify_id": "0pkIJFV6mviH9dmBYsFwTM",
-          "spotify_uri": "spotify:track:0pkIJFV6mviH9dmBYsFwTM",
-          "comment_score": 11167,
-          "source_url": "https://youtube.com/watch?v=Hat1Hc9SNwE",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.75,
-          "full_context": "",
-          "post_title": "Best Love Songs of All Time",
-          "comment_text": "A message to the future generations. Don't let this song die.",
-          "ananki_reasoning": "The comment 'A message to the future generations. Don't let this song die' in a thread titled 'Best Love Songs of All Time' suggests this is being positioned as a timeless, classic love song that should endure. Mariah Carey's 'Without You' is a powerful ballad about lost love, but in this context it's being celebrated as one of the greatest love songs ever - something enduring and monumental. The 'Anniversary' sub-vibe best captures this sense of a timeless, classic romantic song that represents enduring love across generations, rather than the heartbreak content of the lyrics themselves. The human is elevating it to legendary status among romantic songs.",
-          "mapped_subvibe": "Romantic - Anniversary"
-        },
-        {
           "artist": "Heatwave",
           "song": "Always and Forever",
           "spotify_id": "3w0pyHgJJW9JN0cJxmi33Z",
@@ -63020,22 +61832,6 @@
           "post_title": "Best Wedding Songs and Love Songs - Spotify Playlist 2025",
           "comment_text": "Everybody is talking about Shallow, but in my opinion this is the best song of the movie.\nHats off for Lady Gaga!",
           "ananki_reasoning": "The human is recommending this song in a context explicitly about 'Best Wedding Songs and Love Songs,' praising it as the best song from 'A Star Is Born.' The song 'Always Remember Us This Way' is a deeply emotional love ballad about cherishing memories of a relationship. Given the wedding playlist context and the song's theme of eternal remembrance and devotion, it fits the Anniversary sub-vibe, which captures lasting love, reflection on a relationship's journey, and promises of forever - all central themes in both wedding celebrations and this particular song.",
-          "mapped_subvibe": "Romantic - Anniversary"
-        },
-        {
-          "artist": "Ellie Goulding",
-          "song": "Love Me Like You Do - From \"Fifty Shades Of Grey\"",
-          "spotify_id": "3zHq9ouUJQFQRf3cm1rRLu",
-          "spotify_uri": "spotify:track:3zHq9ouUJQFQRf3cm1rRLu",
-          "comment_score": 20729,
-          "source_url": "https://youtube.com/watch?v=AJtDXIazrMo",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Best Wedding Songs and Love Songs - Spotify Playlist 2025",
-          "comment_text": "Stop asking who’s still listening in 2020, we never stopped listening",
-          "ananki_reasoning": "The comment 'we never stopped listening' in response to a wedding/love songs playlist indicates enduring, timeless love and devotion. This song from Fifty Shades of Grey is being celebrated as a classic romantic track that has stood the test of time. The context of a wedding playlist combined with the sentiment of continuous listening over years suggests celebrating long-term love and commitment, which best aligns with Anniversary sub-vibe - commemorating lasting romantic bonds rather than new love or specific moments like proposals or first dates.",
           "mapped_subvibe": "Romantic - Anniversary"
         },
         {
@@ -63748,22 +62544,6 @@
           "post_title": "Romantic Ballads: Best Romantic Songs of All Time (Music Playlist Updated in 2025)",
           "comment_text": "This quarantine got me listening to older songs and realize they're way better than today's music.",
           "ananki_reasoning": "The post title explicitly categorizes this as a 'Romantic Ballad' among the 'Best Romantic Songs of All Time.' Katy Perry's 'Unconditionally' is a sweeping romantic ballad about accepting and loving someone completely without conditions. The comment about 'older songs' (though 2013 isn't that old) and listening during quarantine suggests a nostalgic appreciation for romantic music. The slow, emotional nature of 'Unconditionally' with its powerful vocals and romantic lyrics ('I will love you unconditionally') fits perfectly with the Slow Dance sub-vibe - it's the type of romantic ballad couples would sway to at weddings or proms.",
-          "mapped_subvibe": "Romantic - Slow Dance"
-        },
-        {
-          "artist": "Bon Jovi",
-          "song": "Bed Of Roses",
-          "spotify_id": "1zng9uqqXoPkmU05nsAlsw",
-          "spotify_uri": "spotify:track:1zng9uqqXoPkmU05nsAlsw",
-          "comment_score": 6963,
-          "source_url": "https://youtube.com/watch?v=NvR60Wg9R7Q",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Best Love Songs of All Time",
-          "comment_text": "This is a message for future generations, don't let music like this die.",
-          "ananki_reasoning": "The human recommends 'Bed of Roses' by Bon Jovi in a thread about 'Best Love Songs of All Time' with an emphatic plea to preserve this music for future generations. This classic power ballad is iconic for its romantic, emotional intensity and slow tempo - perfectly suited for slow dancing and intimate romantic moments. The passionate, pleading nature of the song combined with its timeless love song status and the context of being recommended as one of the best love songs ever makes 'Romantic - Slow Dance' the most fitting sub-vibe, capturing both its romantic essence and its classic ballad structure.",
           "mapped_subvibe": "Romantic - Slow Dance"
         },
         {
@@ -64523,22 +63303,6 @@
           "mapped_subvibe": "Dark - Gothic"
         },
         {
-          "artist": "The Pretty Reckless",
-          "song": "Blame Me",
-          "spotify_id": "3xGBB3KwYrSLPL5gJRMxTX",
-          "spotify_uri": "spotify:track:3xGBB3KwYrSLPL5gJRMxTX",
-          "comment_score": 501,
-          "source_url": "https://youtube.com/watch?v=xX3ahNg-8_w",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Songs about betrayal/losing friends",
-          "comment_text": "I fucking love this song one of my favorites",
-          "ananki_reasoning": "The song 'Blame Me' by The Pretty Reckless was recommended in a thread specifically about betrayal and losing friends. The Pretty Reckless is known for their dark, gothic rock sound with heavy emotional themes. The combination of the betrayal context, the band's characteristic dark aesthetic, and the intense emotional investment ('I fucking love this song one of my favorites') suggests this fits the Dark - Gothic sub-vibe, which encompasses heavy, emotionally intense music dealing with painful interpersonal themes. The song appears to process betrayal through a darker, harder-edged musical lens rather than pure sadness.",
-          "mapped_subvibe": "Dark - Gothic"
-        },
-        {
           "artist": "Grand Funk Railroad",
           "song": "Inside Looking Out - Remastered",
           "spotify_id": "7wFW71xli1A4ILfvGB703G",
@@ -64616,22 +63380,6 @@
           "post_title": "Monotone Songs",
           "comment_text": "This got so popular it turned into a country",
           "ananki_reasoning": "The comment 'This got so popular it turned into a country' is a humorous reference to the Democratic Republic of Congo (DRC), playing on the song title 'Kids with Guns.' The song itself by Gorillaz is a dark, dystopian track with monotone vocal delivery (fitting the post title 'Monotone Songs'), militaristic themes, and a brooding atmosphere that critiques child soldiers and societal violence. The mechanical, detached vocal style combined with the ominous subject matter creates a gothic, dark aesthetic that reflects societal decay and violence.",
-          "mapped_subvibe": "Dark - Gothic"
-        },
-        {
-          "artist": "Lordi",
-          "song": "Horrifiction",
-          "spotify_id": "4StfoBV99gvdWBMogfszgz",
-          "spotify_uri": "spotify:track:4StfoBV99gvdWBMogfszgz",
-          "comment_score": 1702,
-          "source_url": "https://youtube.com/watch?v=QNFlk2B1ig8",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "trippy music videos when you&#39;re high",
-          "comment_text": "this is a perfect example of a collab done right",
-          "ananki_reasoning": "The song is by Lordi, a Finnish hard rock/heavy metal band known for their horror-themed theatrical performances and monster costumes. The song title 'Horrifiction' combines 'horror' and 'fiction,' clearly indicating dark, horror-themed content. While the human's comment mentions 'trippy music videos when you're high' and praises the collaboration, the artist's signature style and the song's horror theme align most strongly with the Dark - Gothic sub-vibe, which encompasses theatrical, horror-influenced music aesthetics. The trippy/visual context supports this dark theatrical nature rather than pointing to a psychedelic chill or party vibe.",
           "mapped_subvibe": "Dark - Gothic"
         },
         {
@@ -65051,22 +63799,6 @@
           "mapped_subvibe": "Dark - Gothic"
         },
         {
-          "artist": "The Animals",
-          "song": "House Of The Rising Sun",
-          "spotify_id": "7BY005dacJkbO6EPiOh2wb",
-          "spotify_uri": "spotify:track:7BY005dacJkbO6EPiOh2wb",
-          "comment_score": 5,
-          "source_url": "https://youtube.com/watch?v=RpCUS0jXGPE",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Dark versions of songs",
-          "comment_text": "This is amazing! Needs more likes!",
-          "ananki_reasoning": "The post title explicitly mentions 'Dark versions of songs' and the commenter is enthusiastically praising this particular version. 'House of the Rising Sun' by The Animals is a classic song with haunting, somber themes about a life of sin and ruin in New Orleans. The song's minor key, organ-driven arrangement, and Eric Burdon's brooding vocals create a distinctly dark, foreboding atmosphere. The context suggests this is being shared specifically as an example of a 'dark version,' and the Gothic sub-vibe best captures the song's ominous, melancholic, and shadowy emotional quality.",
-          "mapped_subvibe": "Dark - Gothic"
-        },
-        {
           "artist": "Cinescore",
           "song": "Avengers: Age of Ultron - I've Got No Strings - Cover Version",
           "spotify_id": "6mTI31Ol1PfcPZ5IgNmmiI",
@@ -65288,22 +64020,6 @@
           "post_title": "Dark Romance Playlist",
           "comment_text": "I need you, I need you\nEvery hour I need you\nI want you, I want you\nEvery hour I want you\nI wish that that were true\nDamn, I wish that had some truth at all\n\nLove me\nLove me whole\nLove all the frailties\nInside this uneventful soul\nLove me\nLove me whole\nLove all the frailties\nInside this ordinary soul\n\nI hate you, I hate you\nEvery hour, I hate you\nI loathe you, I loathe you\nEvery hour I loathe you\nI wish that that were true\nDamn, I wish that had some truth at all\n\nLove me\nLove me whole\nLove all the frailties\nInside this uneventful soul\nLove me\nLove me whole\nLove all the frailties\nInside this ordinary soul\n\nThis ordinary soul\nOrdinary, ordinary\nThis ordinary soul\nOrdinary, ordinary\nThis ordinary soul\nOrdinary, ordinary\nThis ordinary soul\nOrdinary, ordinary\n\nLove me\nLove me whole\nLove all the frailties\nInside this uneventful soul\nLove me\nLove me whole\nLove all the frailties\nInside this ordinary soul\nInside this ordinary soul\nInside this ordinary soul",
           "ananki_reasoning": "This song explores the duality of intense, contradictory emotions in a relationship - needing/wanting someone while simultaneously hating/loathing them, yet wishing these feelings had 'some truth at all.' The plea to 'love me whole' with all the 'frailties inside this uneventful/ordinary soul' speaks to a desperate desire for acceptance despite inner darkness and emotional turmoil. The human explicitly categorized this under 'Dark Romance,' and the lyrics convey a gothic sensibility with their exploration of love intertwined with self-loathing, emotional emptiness, and the inability to feel authentic emotions. This fits the dark, brooding aesthetic of gothic romance rather than typical romantic sub-vibes.",
-          "mapped_subvibe": "Dark - Gothic"
-        },
-        {
-          "artist": "MILCK",
-          "song": "Monster",
-          "spotify_id": "5EBqNVcx1sVCiuTLspkUU4",
-          "spotify_uri": "spotify:track:5EBqNVcx1sVCiuTLspkUU4",
-          "comment_score": 1511,
-          "source_url": "https://youtube.com/watch?v=z3-MbXXt4-I",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.9,
-          "full_context": "",
-          "post_title": "Dark Romance Playlist",
-          "comment_text": "any Teenwolf fans here? This was one of the best Teenwolf sound tracks.",
-          "ananki_reasoning": "The human explicitly mentions this song in the context of a 'Dark Romance Playlist' and references it as a Teen Wolf soundtrack. Teen Wolf is known for its dark, supernatural themes and moody atmosphere. The song 'Monster' by MILCK combined with the dark romance context and the show's gothic supernatural aesthetic points clearly to a dark, romantically-tinged emotional space. The 'Monster' title itself reinforces themes of darkness and internal struggle that align with gothic romantic sensibilities.",
           "mapped_subvibe": "Dark - Gothic"
         },
         {
@@ -66456,22 +65172,6 @@
           "post_title": "Gothic Rock Songs",
           "comment_text": "This is one of the most amazing covers I've heard a band do.",
           "ananki_reasoning": "The human explicitly mentions this is a 'Gothic Rock' song in the post title, and praises it as an amazing cover. The song is a gothic rock cover of Madonna's 'La Isla Bonita' by Twilight Guardians, a band known for their dark, gothic interpretations. The combination of the genre specification (Gothic Rock) and the artist's gothic style makes this a clear fit for the Dark - Gothic sub-vibe.",
-          "mapped_subvibe": "Dark - Gothic"
-        },
-        {
-          "artist": "To/Die/For",
-          "song": "In The Heat Of The Night",
-          "spotify_id": "3qaLvr0l1w2UkXTQ8gQwMr",
-          "spotify_uri": "spotify:track:3qaLvr0l1w2UkXTQ8gQwMr",
-          "comment_score": 134,
-          "source_url": "https://youtube.com/watch?v=n2PM1z6DcZo",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 1,
-          "full_context": "",
-          "post_title": "Gothic Rock Songs",
-          "comment_text": "One of the most beautiful cover ever heard",
-          "ananki_reasoning": "The song is explicitly recommended in a thread about 'Gothic Rock Songs' and is described as 'one of the most beautiful cover ever heard.' The artist To/Die/For is known for gothic/dark rock music, and the context clearly situates this within the gothic rock genre. The title 'In The Heat Of The Night' combined with the gothic rock classification and the emotional appreciation of its beauty points directly to the Dark - Gothic sub-vibe.",
           "mapped_subvibe": "Dark - Gothic"
         },
         {
@@ -68235,22 +66935,6 @@
           "mapped_subvibe": "Dark - Gothic"
         },
         {
-          "artist": "Lucie Cravero",
-          "song": "Ghost Ceremony",
-          "spotify_id": "00loo0BtWpUKzj4tgu7XRz",
-          "spotify_uri": "spotify:track:00loo0BtWpUKzj4tgu7XRz",
-          "comment_score": 13,
-          "source_url": "https://youtube.com/watch?v=evA2KxbJ6qs",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Scary Music 4 (CO.AG)",
-          "comment_text": "Wow, this is perfect! I could kiss you!",
-          "ananki_reasoning": "The post title 'Scary Music 4 (CO.AG)' explicitly indicates the user was looking for scary/frightening music. The song 'Ghost Ceremony' by Lucie Cravero fits perfectly into this request, as evidenced by the enthusiastic response ('this is perfect! I could kiss you!'). The combination of 'Ghost' in the title and 'Ceremony' suggests dark, eerie, possibly ritualistic themes. While this could potentially fit horror/thriller contexts, the Gothic sub-vibe best captures the scary, supernatural aesthetic implied by both the request and the song title.",
-          "mapped_subvibe": "Dark - Gothic"
-        },
-        {
           "artist": "Lil' Keke",
           "song": "Married 2 Da Game",
           "spotify_id": "2wPsnShCC0INJ0qKNIXov7",
@@ -68344,22 +67028,6 @@
           "post_title": "Scary Music 4 (CO.AG)",
           "comment_text": "Great stuff! Very atmospheric. Used in a video I just made, sent you a message with the details. Thumbs up!",
           "ananki_reasoning": "The post title explicitly mentions 'Scary Music' and the comment describes the song as 'very atmospheric,' which are key indicators of dark, moody content. The term 'scary' combined with atmospheric qualities points to a gothic/dark aesthetic. The song was used in a video production, suggesting it has cinematic, atmospheric qualities suitable for creating tension or dark ambiance. The song title 'TOP BOY' by Saint BaLenci, combined with the scary/atmospheric descriptors, aligns with dark urban or gothic vibes rather than other emotional contexts.",
-          "mapped_subvibe": "Dark - Gothic"
-        },
-        {
-          "artist": "oceanfinder",
-          "song": "Gentle Signal",
-          "spotify_id": "2H3BZ7C47k2oxcXXyFhjvO",
-          "spotify_uri": "spotify:track:2H3BZ7C47k2oxcXXyFhjvO",
-          "comment_score": 1,
-          "source_url": "https://youtube.com/watch?v=IjFjC23Fi04",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Dark Ambient Horror Music",
-          "comment_text": "Absolutely haunting — amazing work! 🖤",
-          "ananki_reasoning": "The post title explicitly mentions 'Dark Ambient Horror Music' and the comment describes it as 'absolutely haunting,' which directly points to dark, atmospheric horror content. The song 'Gentle Signal' by oceanfinder is being praised in the context of dark ambient horror, making 'Dark - Gothic' the most appropriate sub-vibe as it captures the haunting, dark atmospheric quality being discussed. While there isn't a specific 'Horror' sub-vibe available, Gothic encompasses the dark, haunting aesthetic that defines this musical context.",
           "mapped_subvibe": "Dark - Gothic"
         },
         {
@@ -69371,22 +68039,6 @@
           "mapped_subvibe": "Dark - Gothic"
         },
         {
-          "artist": "Sage Francis",
-          "song": "Threewrite",
-          "spotify_id": "43MpGsxzB9WcaYfi4XHPST",
-          "spotify_uri": "spotify:track:43MpGsxzB9WcaYfi4XHPST",
-          "comment_score": 175,
-          "source_url": "https://youtube.com/watch?v=M8bzCd7a8M0",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Witch Music",
-          "comment_text": "The best song of the Salem' heir album",
-          "ananki_reasoning": "The human explicitly describes this as 'Witch Music' and references the album 'Salem's Heir' - both strongly suggesting occult, witchcraft, and dark magical themes. The witch aesthetic is closely aligned with gothic subculture and dark atmospheres. Sage Francis is known for dense, introspective hip-hop with darker lyrical themes, and this track title 'Threewrite' (potentially referencing the rule of three in witchcraft or threefold law) reinforces the witchy, esoteric theme. The Gothic sub-vibe best captures this occult, witch-related emotional and aesthetic context.",
-          "mapped_subvibe": "Dark - Gothic"
-        },
-        {
           "artist": "Niklas Wagner",
           "song": "Witching Hour",
           "spotify_id": "2MZrnPxcBZsDDB3AZYaP5k",
@@ -69448,22 +68100,6 @@
           "post_title": "OCCULT SONGS PLAYLIST",
           "comment_text": "So this confirms it:\n\nMeganeko's Cybergrind is the \"easy\" theme while Keygen Church's is the \"hard\"",
           "ananki_reasoning": "The context references an 'OCCULT SONGS PLAYLIST' and describes this track as the 'hard' theme for Cybergrind, suggesting intense, dark, and potentially aggressive or challenging musical content. The occult theme combined with the gaming reference (Cybergrind appears to be from the game ULTRAKILL) and the designation as 'hard' difficulty indicates a darker, more intense atmosphere. The artist name 'Keygen Church' also suggests a blend of electronic/industrial elements with religious/occult imagery, which aligns with gothic dark themes.",
-          "mapped_subvibe": "Dark - Gothic"
-        },
-        {
-          "artist": "Castle Rat",
-          "song": "Dagger Dragger",
-          "spotify_id": "3LB0bW1a1MpugWWBjuHWJa",
-          "spotify_uri": "spotify:track:3LB0bW1a1MpugWWBjuHWJa",
-          "comment_score": 1448,
-          "source_url": "https://youtube.com/watch?v=gNP_RiiWjg0",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "OCCULT SONGS PLAYLIST",
-          "comment_text": "Who else is here because they just watched their “Cry For Me” video and now you want to listen to everything you can by this awesome band?",
-          "ananki_reasoning": "The context clearly indicates this is from an 'OCCULT SONGS PLAYLIST' and the commenter became interested in the band after watching their 'Cry For Me' video. The occult theme, combined with the band name 'Castle Rat' and song title 'Dagger Dragger', strongly suggests dark, gothic imagery and atmosphere. The enthusiasm for discovering more of this 'awesome band' through an occult-themed context points directly to Dark - Gothic as the most appropriate sub-vibe, as occult themes are central to gothic music aesthetics.",
           "mapped_subvibe": "Dark - Gothic"
         },
         {
@@ -69576,22 +68212,6 @@
           "post_title": "OCCULT SONGS PLAYLIST",
           "comment_text": "I know Papa V is going to be revealed tonight but Imagine how funny it would have been if it’s just a whole 5 minute video of him trying and failing to open the door.",
           "ananki_reasoning": "The comment is from a thread titled 'OCCULT SONGS PLAYLIST' and references Ghost, a Swedish rock band known for their occult themes, satanic imagery, and theatrical performances featuring different 'Papa' characters. The song 'Satanized' clearly fits within occult/satanic themes. The humorous comment about 'Papa V' (Papa Emeritus V, one of Ghost's theatrical personas) doesn't diminish the dark, occult nature of the music itself - it's just fan banter about the band's theatrical reveals. The Gothic sub-vibe perfectly captures Ghost's aesthetic, which blends dark religious/occult imagery with theatrical rock performance.",
-          "mapped_subvibe": "Dark - Gothic"
-        },
-        {
-          "artist": "Witchz",
-          "song": "THE ALGORITHM",
-          "spotify_id": "6JVusq2klMSmdwWRZ11uYS",
-          "spotify_uri": "spotify:track:6JVusq2klMSmdwWRZ11uYS",
-          "comment_score": 90,
-          "source_url": "https://youtube.com/watch?v=FyJfLoPy2aY",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "OCCULT SONGS PLAYLIST",
-          "comment_text": "You must control the algorithm\nOr the algorithm will control you\nYou must control the algorithm\nOr the algorithm will control you\nYou must control the algorithm\nOr the algorithm will control you\nYou must control the algorithm\nOr the algorithm will control you\nYou must control the rhythm\nYou must control the rhythm\nYou must control the rhythm\nYou must control the rhythm\n\nMy minds made up\nMy minds made up\nMy minds made up\nMy minds made up\nMy minds made up\nMy minds made up\nMy minds made up\nMy minds made up\n\nI feel like ive become a slave to the grind grind grind\nI feel like ive become a slave to the grind grind grind\nI feel like ive become a slave to the grind grind grind\nGot no time and my money aint even high\n\nMy minds made up\nMy minds made up\nMy minds made up\nMy minds made up\nMy minds made up\nMy minds made up\nMy minds made up\nMy minds made up\nMy minds made up\nMy minds made up\nMy minds made up\nMy minds made up\nMy minds made up\nMy minds made up\nMy minds made up\nMy minds made up\n\nYou must control the algorithm\nOr the algorithm will control you\nYou must control the algorithm\nOr the algorithm will control you\n\nYou must control the rhythm\n\nYou must control the rhythm\nYou must control the rhythm\nYou must control\n\nYou must control the rhythm\n(No pain No gain)\nYou must control the rhythm\n(No pain No gain)\nYou must control the rhythm\n(No pain No gain)\nYou must control\n(No pain No gain)\nYou must control the rhythm\n\nYou must control the algorithm\nOr the algorithm will control you",
-          "ananki_reasoning": "The repetitive, mantra-like lyrics about controlling 'the algorithm' combined with the context of being recommended in an 'OCCULT SONGS PLAYLIST' strongly suggests a dark, ritualistic aesthetic. The artist name 'Witchz' reinforces occult/gothic themes. The obsessive repetition ('My minds made up' repeated 8 times, the algorithm warning repeated 4 times) creates an hypnotic, cult-like atmosphere that fits perfectly within gothic/occult music traditions. This isn't just dark - it's specifically gothic in its mystical, ritual-focused presentation.",
           "mapped_subvibe": "Dark - Gothic"
         },
         {
@@ -70235,22 +68855,6 @@
           "mapped_subvibe": "Dark - Gothic"
         },
         {
-          "artist": "Lance and Lea",
-          "song": "Play With My Heart",
-          "spotify_id": "0eTuaCKPXJn3ipXs3lyHu7",
-          "spotify_uri": "spotify:track:0eTuaCKPXJn3ipXs3lyHu7",
-          "comment_score": 5,
-          "source_url": "https://youtube.com/watch?v=yVFgKNs4vNo",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "100% pure old-school Gothic Rock - 100 tracks",
-          "comment_text": "great band! she sings so good with him!!",
-          "ananki_reasoning": "The post title explicitly identifies this as '100% pure old-school Gothic Rock,' making the Gothic sub-vibe the most appropriate match. The comment emphasizes the vocal duet quality ('she sings so good with him'), which is characteristic of gothic rock's romantic, dramatic style. The artist name 'Lance and Lea' and song title 'Play With My Heart' suggest a male-female vocal partnership typical of the gothic rock genre. The context clearly positions this within the gothic rock aesthetic and sound.",
-          "mapped_subvibe": "Dark - Gothic"
-        },
-        {
           "artist": "Andrew Huang",
           "song": "Nostalgia",
           "spotify_id": "3DMFkZDDbf50fuojiL5MXj",
@@ -70536,22 +69140,6 @@
           "post_title": "Gothic Metal",
           "comment_text": "Congrats to Mikael for joining the band! Well done on the new song and video :)",
           "ananki_reasoning": "The post title explicitly mentions 'Gothic Metal' as the genre context, and the song is by Amaranthe with the title 'Damnation Flame' - both the genre classification and song title suggest dark, gothic themes. The comment is congratulatory about a new band member and song, but the musical context is clearly gothic metal, which aligns perfectly with the 'Dark - Gothic' sub-vibe. The song title 'Damnation Flame' reinforces the gothic aesthetic with its imagery of damnation and fire.",
-          "mapped_subvibe": "Dark - Gothic"
-        },
-        {
-          "artist": "Battle Beast",
-          "song": "Wings of Light",
-          "spotify_id": "69Tm9WdAS2Y74e99YBfZOE",
-          "spotify_uri": "spotify:track:69Tm9WdAS2Y74e99YBfZOE",
-          "comment_score": 316,
-          "source_url": "https://youtube.com/watch?v=JzILGd0NAfM",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Gothic Metal",
-          "comment_text": "The song. The band. The voice. Perfection!",
-          "ananki_reasoning": "The human explicitly labels this as 'Gothic Metal' in the post title and expresses complete admiration ('Perfection!') for the song, band, and voice. Battle Beast's 'Wings of Light' combines powerful metal instrumentation with gothic elements. The commenter's enthusiasm specifically about the gothic metal classification, combined with their praise of the vocal performance, directly maps to the 'Dark - Gothic' sub-vibe, which encompasses the atmospheric, dramatic, and dark aesthetic central to gothic metal as a genre.",
           "mapped_subvibe": "Dark - Gothic"
         },
         {
@@ -72059,22 +70647,6 @@
           "mapped_subvibe": "Dark - Gothic"
         },
         {
-          "artist": "Bone Thugs-N-Harmony",
-          "song": "Aww Shit",
-          "spotify_id": "5vIPnuQL30qbyzUDEG9KCq",
-          "spotify_uri": "spotify:track:5vIPnuQL30qbyzUDEG9KCq",
-          "comment_score": 169,
-          "source_url": "https://youtube.com/watch?v=B56oTQt2WAY",
-          "data_source": "analyzed_batch_nov27",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "SGP Taliban Kane Grocerys Goth Money Music Playlist",
-          "comment_text": "shit made me cry 1000 goth tears :( so beautiful",
-          "ananki_reasoning": "The comment explicitly references 'goth tears' and describes the song as 'beautiful' in an emotional way that made them cry, directly connecting to the 'Goth Money' aesthetic mentioned in the playlist title. While the comment mentions crying, the context is clearly about the gothic/dark aesthetic appreciation rather than personal sadness. The 'SGP Taliban Kane Grocerys Goth Money Music' in the title strongly indicates this is part of a specific dark/gothic hip-hop subgenre, and the user's emotional response ('1000 goth tears') is framed within that aesthetic context. This is a characteristic response to music within the gothic aesthetic - finding beauty in darkness.",
-          "mapped_subvibe": "Dark - Gothic"
-        },
-        {
           "artist": "Sickboyrari",
           "song": "K9 Crew",
           "spotify_id": "666oT0wrSpXNIqEEz9KOY2",
@@ -72319,27 +70891,6 @@
           "mapped_subvibe": "Dark - Brooding"
         },
         {
-          "artist": "Godspeed You! Black Emperor",
-          "song": "Sleep",
-          "spotify_id": "extrapolated_004",
-          "spotify_uri": "spotify:track:extrapolated_004",
-          "full_context": "User-validated song from journey: \"childhood friends and liminal dreams\" (i am in a the green field of a Windows XP background → I'm going to meet with the Cosmic Jury and they will determine if I go to Ego Jail for a billion years (prayers up for me))",
-          "ananki_analysis": "User-validated as perfect fit for their emotional journey",
-          "mapped_subvibe": "Dark - Brooding",
-          "mapping_confidence": 0.92,
-          "source": "user_validated",
-          "validated_at": "2025-11-14T01:32:54.490Z",
-          "validation_count": 1,
-          "manifold_x": 415.8,
-          "manifold_y": 875.3,
-          "emotional_composition": {
-            "Dark": 60,
-            "Night": 25,
-            "Introspective": 10,
-            "Sad": 5
-          }
-        },
-        {
           "artist": "Pixies",
           "song": "Bone Machine - 2007 Remaster",
           "spotify_id": "7ERZgMLgpVhrp2D6JYy02t",
@@ -72353,38 +70904,6 @@
           "post_title": "Songs that sound like this!",
           "comment_text": "Tom Waits' album \"Bone Machine\"",
           "ananki_reasoning": "The human is recommending Tom Waits' 'Bone Machine' album, which is known for its dark, experimental, and abrasive sound with themes of mortality and decay. The Pixies song 'Bone Machine' shares similar thematic darkness and intensity - it's a raw, aggressive track with ominous lyrics about a 'bone machine' and visceral imagery. Both works have a dark, intense quality that isn't purely aggressive energy but rather a brooding, unsettling atmosphere. The song's grinding bass line and confrontational delivery fit the brooding darkness category better than pure aggression or other dark sub-categories.",
-          "mapped_subvibe": "Dark - Brooding"
-        },
-        {
-          "artist": "Celestial Aeon Project",
-          "song": "Corruption of Power",
-          "spotify_id": "4197zpljmtusbluIi9DGSy",
-          "spotify_uri": "spotify:track:4197zpljmtusbluIi9DGSy",
-          "comment_score": 2,
-          "source_url": "https://reddit.com/r/Music/comments/1jj222p/what_plattform_do_you_use_when_you_just_sit_down/mjjsrt7/",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 0.7,
-          "full_context": "",
-          "post_title": "What plattform do you use when you just sit down and listen to music?",
-          "comment_text": "I wouldn't rely on an algorithm to serve you music well. It's inevitably going to be corrupted by whatever interests they have (eg. When Spotify was paid to suggest Drake on everyone's front page. When apple put a U2 album on everyone's device).\n\nHonestly I'll look through reddit threads, YouTube reviews, and websites like RYM, put together a list in my phone notes of albums that look interesting. Then queue them up in whatever platform you have.",
-          "ananki_reasoning": "The song title 'Corruption of Power' by Celestial Aeon Project suggests a dark, contemplative theme about moral decay and authority's abuse. While the Reddit comment context is about music discovery methods rather than emotional state, the song itself (given the artist's ambient/atmospheric style and the ominous title) most likely fits a brooding, dark atmosphere - reflecting on systemic corruption and power dynamics in a thoughtful, heavy way. The Celestial Aeon Project is known for atmospheric, cinematic compositions that explore darker philosophical themes.",
-          "mapped_subvibe": "Dark - Brooding"
-        },
-        {
-          "artist": "Ari Abdul",
-          "song": "Girls On The Internet",
-          "spotify_id": "2p646IXQ5NldzSmZmpHqC1",
-          "spotify_uri": "spotify:track:2p646IXQ5NldzSmZmpHqC1",
-          "comment_score": 23,
-          "source_url": "https://youtube.com/watch?v=MFg50UvLyK8",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Sexy Late Night Vibes ❤️‍🔥 Dark Alt R&amp;B &amp; Electronic Pop 2025",
-          "comment_text": "I feel like this song is missing something and the drop is not impressive.",
-          "ananki_reasoning": "The song 'Girls On The Internet' by Ari Abdul fits within a playlist titled 'Sexy Late Night Vibes ❤️‍🔥 Dark Alt R&B & Electronic Pop 2025', which explicitly mentions 'Dark' and 'Late Night' themes. Ari Abdul is known for dark, moody alt-pop/R&B with brooding, sultry undertones. The commenter's critique about the drop not being impressive suggests the song maintains a more subdued, atmospheric tension rather than explosive energy - characteristic of brooding music. The 'sexy late night' context combined with the dark alternative R&B genre points to a moody, introspective, darker emotional space rather than aggressive darkness or specific anxieties. 'Dark - Brooding' captures this sultry, contemplative, late-night darkness better than other dark sub-vibes.",
           "mapped_subvibe": "Dark - Brooding"
         },
         {
@@ -73159,22 +71678,6 @@
     },
     "Dark - Apocalyptic": {
       "songs": [
-        {
-          "artist": "Eptic",
-          "song": "Light Up",
-          "spotify_id": "7oouv30MA1XJGi0PvCosE7",
-          "spotify_uri": "spotify:track:7oouv30MA1XJGi0PvCosE7",
-          "comment_score": 72,
-          "source_url": "https://youtube.com/watch?v=WuLsHkl_Xuk",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.75,
-          "full_context": "",
-          "post_title": "(Post-)Apocalyptic Music",
-          "comment_text": "I've listened to a lot of your tracks man and needless to say, you deserve more subscribers. Keep up the good work. :)",
-          "ananki_reasoning": "The post title explicitly mentions '(Post-)Apocalyptic Music' as the thematic context for this recommendation. The comment is supportive but doesn't provide additional emotional context beyond praising the artist's work. Given the clear apocalyptic theme stated in the title, and that Eptic is known for heavy dubstep/bass music that often carries dark, intense, dystopian atmospheres, this song fits best within a dark apocalyptic emotional space. The title 'Light Up' in the context of apocalyptic music likely refers to explosive, intense energy rather than positive uplift.",
-          "mapped_subvibe": "Dark - Apocalyptic"
-        },
         {
           "artist": "Young Fathers",
           "song": "Promised Land",
@@ -73954,22 +72457,6 @@
           "comment_text": "I do not want them in the chair,\nI do not want them on the floor,\nI do not want them over here,\nI do not want them over there,\nI do not want green eggs and ham!\nI do not want them Sam I am!",
           "ananki_reasoning": "The post title explicitly states 'Anxiety inducing music,' which is the primary emotional context. The comment's Dr. Seuss-style repetitive verse ('I do not want them...') creates a frantic, obsessive quality that mirrors anxious thought patterns - the repetition and escalation reflect how anxiety loops and intensifies. Jonwayne's 'Beady Bablo' is being recommended specifically as anxiety-inducing music, making this clearly a dark, tense emotional recommendation. While 'Dark - Anxious' isn't in the provided list, this would best map to available dark sub-vibes or potentially 'Night - 3AM Thoughts' given the restless, worried energy. [Remapped from 'Dark - Anxious']",
           "mapped_subvibe": "Dark - Anxious Panic"
-        },
-        {
-          "artist": "GOLDEN G",
-          "song": "The Tall Poppy / Talent Before Fame",
-          "spotify_id": "0nyPJBIDwZaPIKqHRsbTm7",
-          "spotify_uri": "spotify:track:0nyPJBIDwZaPIKqHRsbTm7",
-          "comment_score": 37,
-          "source_url": "https://youtube.com/watch?v=F-cYJxSwA-s",
-          "data_source": "youtube",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Anxiety inducing music - StylizedKitsune",
-          "comment_text": "It's a trap... such a beautiful trap",
-          "ananki_reasoning": "The context is explicitly about 'anxiety inducing music' from the post title, and the comment 'It's a trap... such a beautiful trap' reinforces the idea of something that draws you in while creating tension or unease. The phrase suggests music that is aesthetically appealing yet psychologically unsettling - a hallmark of anxiety-inducing compositions. The 'trap' metaphor implies being caught in something that creates discomfort or heightened alertness, which directly aligns with anxiety as an emotional state. [Remapped from 'Dark - Anxiety']",
-          "mapped_subvibe": "Dark - Anxious Panic"
         }
       ]
     },
@@ -74093,22 +72580,6 @@
           "post_title": "Soothe your Nerves",
           "comment_text": "Music is a language that everyone could understand and wife is a magical word which bring happiness to life ✨ 💕",
           "ananki_reasoning": "The post title 'Soothe your Nerves' directly indicates anxiety relief and calming purposes. The comment mentions music as a universal language and references happiness, but the primary context is about soothing nerves - suggesting the song is used to calm anxious feelings or nervous tension. This aligns with the 'Calming Anxiety' sub-vibe rather than pure happiness or relaxation categories.",
-          "mapped_subvibe": "Dark - Anxious Calming Anxiety"
-        },
-        {
-          "artist": "Schiller",
-          "song": "Sommernacht - Live",
-          "spotify_id": "32mgz0aetpAspEidbbzHuj",
-          "spotify_uri": "spotify:track:32mgz0aetpAspEidbbzHuj",
-          "comment_score": 11,
-          "source_url": "https://youtube.com/watch?v=XOQ3XuugS-k",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 0.9,
-          "full_context": "",
-          "post_title": "Soothe your Nerves",
-          "comment_text": "Love Schiller, is unique. Make me feel so good...",
-          "ananki_reasoning": "The post title 'Soothe your Nerves' directly indicates the song's purpose is to calm anxious feelings. The comment emphasizes that Schiller 'makes me feel so good,' suggesting the music provides relief from nervous tension. The song title 'Sommernacht' (Summer Night) combined with the calming intent aligns with music that addresses anxiety in a soothing way. This fits the 'Anxious Calming Anxiety' sub-vibe, which represents music used to settle nerves and reduce anxious states.",
           "mapped_subvibe": "Dark - Anxious Calming Anxiety"
         },
         {
@@ -74293,22 +72764,6 @@
           "post_title": "What’s a song that instantly transports you back to a specific moment in your life?",
           "comment_text": "Suite: Judy Blue Eyes - CSN.  It’s 1974, 10 year old me & my younger sister passed out napping on the living room rug on a hot summer afternoon.  This song comes on from the downstairs apartment where the two lesbian gals live.  We can hear it playing as our ears are to the rug/floor.",
           "ananki_reasoning": "The comment describes a vivid childhood memory from 1974 when the person was 10 years old, napping with their younger sister on a hot summer afternoon. While they mention the song 'Suite: Judy Blue Eyes' by CSN in their memory (not the validated song), the emotional context is clearly about nostalgic recollection of a specific childhood moment - the sensory details of being on the living room rug, hearing music from the apartment below, the innocence of an afternoon nap with a sibling. This is a classic example of music triggering nostalgic memories of childhood, even though there's a mismatch between the song mentioned and the song validated by Spotify.",
-          "mapped_subvibe": "Sad - Nostalgic Childhood"
-        },
-        {
-          "artist": "KISS",
-          "song": "Rock And Roll All Nite - MOONLGHT Remix",
-          "spotify_id": "2eTYcP7pFAnFZOMfXlpXO4",
-          "spotify_uri": "spotify:track:2eTYcP7pFAnFZOMfXlpXO4",
-          "comment_score": 10,
-          "source_url": "https://reddit.com/r/musicsuggestions/comments/1of9v35/what_song_did_you_used_to_love/nl7hzje/",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "What song did you used to love?",
-          "comment_text": "Rock And Roll All Night - Kiss\n\nNot overplayed, but it was a song I loved as a kid when I first started listening to Kiss. After a few years I realized that I didn't like it anymore.",
-          "ananki_reasoning": "The comment explicitly describes loving this KISS song 'as a kid when I first started listening to Kiss,' indicating a strong childhood memory association. While the person no longer enjoys the song as much ('After a few years I realized that I didn't like it anymore'), the context of the post title 'What song did you used to love?' combined with the childhood reference makes this a nostalgic reflection on their younger years. The emotional context is about looking back at something they loved in childhood, even if their taste has evolved since then.",
           "mapped_subvibe": "Sad - Nostalgic Childhood"
         },
         {
@@ -76008,22 +74463,6 @@
           "mapped_subvibe": "Sad - Nostalgic Simpler Times"
         },
         {
-          "artist": "Ghost",
-          "song": "Mary On A Cross",
-          "spotify_id": "2wBnZdVWa5jVpvYRfGU7rP",
-          "spotify_uri": "spotify:track:2wBnZdVWa5jVpvYRfGU7rP",
-          "comment_score": 8,
-          "source_url": "https://reddit.com/r/musicsuggestions/comments/1of9v35/what_song_did_you_used_to_love/nl7kq1t/",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "What song did you used to love?",
-          "comment_text": "Mary On A Cross - Ghost\n\nI still absolutely love the song, however, it became overplayed due to its overuse on platforms like TikTok that it eventually ruined it for me. That exposure definitely gave Ghost their huge boost in recent popularity, which is good for them.",
-          "ananki_reasoning": "The comment expresses a bittersweet relationship with the song - they 'used to love' it and 'still absolutely love the song' but it became 'overplayed' and 'ruined' by mainstream exposure on TikTok. This reflects nostalgia for when the song felt special and personal before it became ubiquitous. The emotional context is about longing for the simpler time when they could enjoy the song without the association of oversaturation. 'Mary On A Cross' by Ghost has a retro, 60s-inspired sound that naturally lends itself to nostalgic feelings, and the commenter is mourning the loss of their pure, untainted relationship with the track.",
-          "mapped_subvibe": "Sad - Nostalgic Simpler Times"
-        },
-        {
           "artist": "Tucker Zimmerman",
           "song": "Ghost Train",
           "spotify_id": "7p7b8qicVfXY08h3ZbxdUG",
@@ -77133,9 +75572,6 @@
         }
       ]
     },
-    "Energy - Frustrated": {
-      "songs": []
-    },
     "Energy - Aggressive": {
       "songs": [
         {
@@ -77365,26 +75801,6 @@
           "comment_text": "KMFDM - Free your hate or Hau ruck (or just the whole album). ",
           "ananki_reasoning": "The human explicitly asks for 'anti establishment music' in response to frustration with the British government ('driving me insane'). KMFDM's 'Free Your Hate' is recommended as a direct response to this need to channel political anger and frustration. The song title itself suggests releasing pent-up negative emotions. This is a clear case of using aggressive industrial music as an outlet for anger toward authority, which aligns perfectly with cathartic anger - using music to process and release rage in a healthy way rather than pure destructive rage.",
           "mapped_subvibe": "Energy - Cathartic Anger"
-        },
-        {
-          "artist": "Breaking Benjamin",
-          "song": "I Will Not Bow",
-          "spotify_id": "extrapolated_1",
-          "spotify_uri": "extrapolated_1",
-          "full_context": "User-validated song from journey: \"a hard rock playlist\" (im at a hotel water park → i want to be far far away from my family (im feeling angsty))",
-          "ananki_analysis": "User-validated as perfect fit for their emotional journey",
-          "mapped_subvibe": "Energy - Cathartic Anger",
-          "mapping_confidence": 0.87,
-          "source": "user_validated",
-          "validated_at": "2025-11-15T05:48:51.291Z",
-          "validation_count": 1,
-          "manifold_x": 385.5,
-          "manifold_y": 395.2,
-          "emotional_composition": {
-            "Angry": 60,
-            "Confident": 25,
-            "Introspective": 15
-          }
         },
         {
           "artist": "Trophy Eyes",
@@ -79223,22 +77639,6 @@
           "mapped_subvibe": "Chill - Meditative"
         },
         {
-          "artist": "Miracle Healing Tones TP",
-          "song": "5 Hz: Improve Creativity (Theta Waves)",
-          "spotify_id": "3gEbZqS92x6wx58riiqo2j",
-          "spotify_uri": "spotify:track:3gEbZqS92x6wx58riiqo2j",
-          "comment_score": 1,
-          "source_url": "https://reddit.com/r/Music/comments/1nk8mej/do_you_agree_that_ai_music_is_not_real_music_yes/nevz9hy/",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Do you agree that AI Music is NOT Real Music Yes or No and Why?",
-          "comment_text": "I listened to some by accident and could tell right away.  What's intended to sound like a guitar sounds like garbage. It made me feel claustrophobic somehow.  Maybe because of the robotic elevator music style.  It'll never replace human made music for me. It lacks nuance, originality and style so it doesn't  qualify as art to me. What creativity is generated by a computer?",
-          "ananki_reasoning": "The song '5 Hz: Improve Creativity (Theta Waves)' by Miracle Healing Tones TP is a brainwave entrainment track designed for meditation and mental enhancement. Despite the commenter's negative stance on AI music in general, this specific track they validated is clearly intended for meditative/therapeutic purposes, using theta wave frequencies. The song's purpose aligns with relaxation, focus, and mental clarity - core characteristics of the 'Chill - Meditative' sub-vibe. While the context involves criticism of AI music, the actual song chosen is a meditation/healing frequency track, which is its primary emotional function regardless of the surrounding discussion.",
-          "mapped_subvibe": "Chill - Meditative"
-        },
-        {
           "artist": "Romain Axisa",
           "song": "75 Beats Per Minute",
           "spotify_id": "30Se4aaJrgbTNXRbLrN3WP",
@@ -80420,22 +78820,6 @@
           "post_title": "IIL awkward and boring songs about mundane everyday tasks, what genre/artist would I take interest in?",
           "comment_text": "That sounds like Living-Dining-Kitchen by Haroumi Hosono. even if it isn't, you'd probably really enjoy that song and also Sportsmen by him. \n\nModern Tragedy by Joanna Wang has songs about using sharp objects and washing the dishes.  ",
           "ananki_reasoning": "The human is specifically seeking 'awkward and boring songs about mundane everyday tasks,' and this Frank Zappa song was recommended in that context alongside songs about dining-kitchen spaces, sportsmen, and washing dishes. The request emphasizes the mundane, everyday, and 'boring' qualities - which aligns perfectly with 'Chill - Monotonous' as it captures that deliberate sense of repetitive, unstimulating content about ordinary activities. While the song title references the First Amendment, in this recommendation context it's being framed as fitting the aesthetic of mundane, matter-of-fact material.",
-          "mapped_subvibe": "Chill - Monotonous"
-        },
-        {
-          "artist": "NEFFEX",
-          "song": "Rumors",
-          "spotify_id": "7wOqBOryVGD3nqDUihDSwL",
-          "spotify_uri": "spotify:track:7wOqBOryVGD3nqDUihDSwL",
-          "comment_score": 1,
-          "source_url": "https://reddit.com/r/Music/comments/1n7aexs/genre_of_song_covers_that_sound_extremely/nc8ma3y/",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Genre of song covers that sound extremely soulless and generic over an EDM beat.",
-          "comment_text": "I just brought this up with my friends! There have been so many covers.latelt that just seem worse than the original. I heard a \"Here Come's The Sun\" one and \"Rumors\" recently. It doesn't fit with the EDM notion, but I feel like there's a surge of mediocre cover songs playing g at grocery stores and cafes",
-          "ananki_reasoning": "The human is specifically criticizing this cover song for being 'soulless and generic over an EDM beat' and 'worse than the original.' They describe it as part of a 'surge of mediocre cover songs' playing in grocery stores and cafes. This context strongly suggests a bland, repetitive, uninspired quality that lacks emotional depth or distinctive character. While the song might have energy due to the EDM beat, the emotional intent being communicated is one of formulaic background music that feels lifeless and monotonous - the kind of generic, cookie-cutter production that blends into the background without making an impression. 'Chill - Monotonous' best captures this sense of soulless repetitiveness and lack of distinctive emotional character.",
           "mapped_subvibe": "Chill - Monotonous"
         }
       ]

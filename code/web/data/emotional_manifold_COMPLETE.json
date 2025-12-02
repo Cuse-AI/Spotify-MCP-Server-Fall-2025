@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "total_sub_vibes": 114,
+    "total_sub_vibes": 107,
     "total_central_vibes": 9,
     "analysis_complete": true,
     "restructure_date": "2025-11-12",
@@ -15,7 +15,8 @@
         1000
       ],
       "algorithm": "weighted_composition"
-    }
+    },
+    "last_updated": "2025-11-28T23:47:18.822190"
   },
   "central_vibes": {
     "positions": {
@@ -956,19 +957,6 @@
       "analysis": "Tool 'Aenima', Soundgarden, Tori Amos 'Precious Things'. Big scary questions. Mortality and meaninglessness. Cosmic anxiety. Deep philosophical fear.",
       "proximity_notes": "Between Anxious, Dark, and Introspective. Existential dread = anxiety + darkness + deep thought."
     },
-    "Dark - Anxious Social Anxiety": {
-      "emotional_composition": {
-        "Anxious": 0.75,
-        "Sad": 0.15,
-        "Introspective": 0.1
-      },
-      "coordinates": {
-        "x": 669.18,
-        "y": 674.12
-      },
-      "analysis": "Ethel Cain 'Ptolemaea', Aphex Twin experimental, Diamanda Galas intensity. Fear of judgment. Awkwardness and isolation. Self-consciousness.",
-      "proximity_notes": "Near Anxious center with Sad pull. Social anxiety = specific anxiety + isolation + self-focus."
-    },
     "Sad - Nostalgic Childhood": {
       "emotional_composition": {
         "Nostalgic": 0.75,
@@ -1198,20 +1186,6 @@
       "analysis": "'Run for Your Life' - Beatles, 'Jolene' - Dolly Parton, Nick Jonas 'Jealous'. Possessive love. Fear of losing partner. Green-eyed monster.",
       "proximity_notes": "Near Jealous center with Angry pull. Romantic jealousy = envy + anger + insecurity in love."
     },
-    "Dark - Envious": {
-      "emotional_composition": {
-        "Jealous": 0.8,
-        "Sad": 0.1,
-        "Bitter": 0.05,
-        "Anxious": 0.05
-      },
-      "coordinates": {
-        "x": 80.73,
-        "y": 316.03
-      },
-      "analysis": "'Creep' - Radiohead, 'Possession' - Sarah McLachlan. Wanting what others have. Feeling inadequate. Comparing yourself. Longing for their life.",
-      "proximity_notes": "Very close to Jealous center. Envious = pure jealousy with sadness from lacking."
-    },
     "Dark - Insecure": {
       "emotional_composition": {
         "Jealous": 0.65,
@@ -1224,20 +1198,6 @@
       },
       "analysis": "Swans 'Failure', Linkin Park 'Numb', NF 'Let You Down'. Self-doubt and comparison. Worried about not measuring up. Feeling less-than.",
       "proximity_notes": "Between Jealous and Anxious/Sad. Insecure = jealousy rooted in self-doubt and worry."
-    },
-    "Dark - Competitive": {
-      "emotional_composition": {
-        "Jealous": 0.6,
-        "Angry": 0.2,
-        "Confident": 0.15,
-        "Energy": 0.05
-      },
-      "coordinates": {
-        "x": 213.76,
-        "y": 332.43
-      },
-      "analysis": "Illenium tracks, upbeat competitive vibes. Wanting to win. Rivalry energy. Driven by envy. Using jealousy as fuel.",
-      "proximity_notes": "Between Jealous and Angry/Confident. Competitive = jealousy channeled into drive and determination."
     },
     "Chill - Serene": {
       "emotional_composition": {
@@ -1347,19 +1307,6 @@
       "analysis": "Dire Straits 'Money for Nothing', Phil Collins 'In the Air Tonight', Ravel 'Bolero'. Innocent wonder. Simple joy. Rediscovering play. Youth energy.",
       "proximity_notes": "Between Playful and Nostalgic. Childlike = playfulness + innocent nostalgia, wonder reclaimed."
     },
-    "Energy - Frantic": {
-      "emotional_composition": {
-        "Chaotic": 0.8,
-        "Anxious": 0.15,
-        "Energy": 0.05
-      },
-      "coordinates": {
-        "x": 678.38,
-        "y": 314.25
-      },
-      "analysis": "Experimental electronic, Biosphere, Dungen. Scattered and rushing. Can't keep up. Everything at once. Overwhelming pace.",
-      "proximity_notes": "Very close to Chaotic center. Frantic = pure chaos, overwhelming scattered energy."
-    },
     "Energy - Overwhelming": {
       "emotional_composition": {
         "Chaotic": 0.75,
@@ -1387,19 +1334,6 @@
       },
       "analysis": "Gunship & Health, GosT 'Supreme', darkwave synthwave. Out of control. Wild and dangerous. Unstable energy. Madness edge.",
       "proximity_notes": "Between Chaotic and Dark/Angry. Unhinged = chaos + darkness + rage, dangerous instability."
-    },
-    "Energy - Scattered": {
-      "emotional_composition": {
-        "Chaotic": 0.75,
-        "Anxious": 0.15,
-        "Bored": 0.1
-      },
-      "coordinates": {
-        "x": 720.71,
-        "y": 305.34
-      },
-      "analysis": "Experimental tracks, Lemaitre, Godsmack. Can't focus. Mind all over. Distracted and disjointed. Lost in noise.",
-      "proximity_notes": "Between Chaotic and Anxious/Bored. Scattered = chaos + distraction, unfocused overwhelm."
     },
     "Chill - Restless": {
       "emotional_composition": {
@@ -1454,19 +1388,6 @@
       },
       "analysis": "The Frames, Vetusta Morla, Porcupine Tree 'Lightbulb Sun'. Repetitive grind. Same thing over and over. Draining sameness. Depression-adjacent.",
       "proximity_notes": "Between Bored and Sad/Dark. Monotonous = boredom with heaviness, draining repetition."
-    },
-    "Happy - Thankful": {
-      "emotional_composition": {
-        "Grateful": 0.8,
-        "Happy": 0.15,
-        "Peaceful": 0.05
-      },
-      "coordinates": {
-        "x": 748.18,
-        "y": 353.07
-      },
-      "analysis": "Grateful Dead 'Ripple', Elton John 'Tumbleweed Connection', The Meters. Appreciation and warmth. Counting blessings. Joy in gratitude.",
-      "proximity_notes": "Very close to Grateful center. Thankful = pure gratitude, warm appreciation."
     },
     "Happy - Content": {
       "emotional_composition": {
@@ -1549,20 +1470,6 @@
       },
       "analysis": "Aram Khachaturian, Hot Milk, Jambinai. Daring and fearless. Taking risks. Unapologetic. Brave energy. Standing out.",
       "proximity_notes": "Between Confident and Energy/Excited. Bold = confidence + daring, fearless assertion."
-    },
-    "Energy - Victorious": {
-      "emotional_composition": {
-        "Confident": 0.7,
-        "Happy": 0.2,
-        "Excited": 0.05,
-        "Grateful": 0.05
-      },
-      "coordinates": {
-        "x": 732.05,
-        "y": 527.84
-      },
-      "analysis": "'Walking on Sunshine', 'You Make My Dreams Come True', Whitney Houston. Winner energy. Triumph and celebration. Achieved success. Peak confidence.",
-      "proximity_notes": "Between Confident and Happy. Victorious = confidence + joy from winning, triumphant celebration."
     },
     "Energy - Unstoppable": {
       "emotional_composition": {
