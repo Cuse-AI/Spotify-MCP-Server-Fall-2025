@@ -7,15 +7,15 @@ Run this after Claude Desktop has cleaned all chunks.
 import json
 from pathlib import Path
 
-INPUT_DIR = "tapestry_chunks"
-OUTPUT_FILE = "tapestry_cleaned.json"
+INPUT_DIR = Path(__file__).parent / "tapestry_chunks"
+OUTPUT_FILE = Path(__file__).parent / "tapestry_cleaned.json"
 
 def merge_chunks():
     """Merge all cleaned chunks into one file."""
-    chunk_dir = Path(INPUT_DIR)
+    chunk_dir = INPUT_DIR
 
-    # Find all chunk files
-    chunk_files = sorted(chunk_dir.glob("tapestry_chunk_*.json"))
+    # Find all CLEANED chunk files
+    chunk_files = sorted(chunk_dir.glob("tapestry_chunk_*_CLEANED.json"))
 
     if not chunk_files:
         print(f"ERROR: No chunk files found in {INPUT_DIR}/")

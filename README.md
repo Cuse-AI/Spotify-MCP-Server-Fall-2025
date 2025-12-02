@@ -139,4 +139,4 @@ MIT License
 
 ---
 
-*Midden: Where human stories meet musical discovery.*
+*Midden: Music, the Way You Feel It.*
