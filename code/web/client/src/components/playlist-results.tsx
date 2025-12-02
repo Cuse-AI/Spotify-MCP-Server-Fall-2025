@@ -1,13 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import type { PlaylistResponse, TapestrySong } from "@shared/schema";
-import { ThumbsUp, ThumbsDown, Quote, ExternalLink } from "lucide-react";
+import { ThumbsUp, ThumbsDown, Quote } from "lucide-react";
 import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
 import { CosmicBackground } from "./cosmic-background";
 import { SoulGem } from "./soul-gem";
-import { JourneyCard } from "./journey-card";
+import { JourneyHeader } from "./journey-header";
 
 interface PlaylistResultsProps {
   data: PlaylistResponse;
@@ -151,28 +151,25 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
     <>
       <CosmicBackground />
       <div className="min-h-screen px-6 py-12 md:px-8 relative z-10">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           
-          {/* Hero Section: Journey Card + Soul Gem side by side */}
-          <div className="flex flex-col md:flex-row gap-6 mb-10 items-stretch">
-            {/* Journey Card - Left side */}
-            <JourneyCard 
-              playlistTitle={data.playlistTitle || "Your Emotional Journey"}
-              explanation={data.explanation}
-            />
-            
-            {/* Soul Gem - Right side */}
-            <div className="flex flex-col items-center justify-center">
-              <SoulGem songs={data.songs} size={200} />
-            </div>
+          {/* Soul Gem - Centered hero */}
+          <div className="flex justify-center mb-6">
+            <SoulGem songs={data.songs} size={260} />
           </div>
 
-          {/* Playlist Card - Original style with more depth */}
+          {/* Header - Title + AI description with elegant typography */}
+          <JourneyHeader 
+            playlistTitle={data.playlistTitle || "Your Emotional Journey"}
+            explanation={data.explanation}
+          />
+
+          {/* Playlist Card with 3D depth */}
           <Card 
-            className="mb-8 overflow-hidden border-2 border-purple-500/20 shadow-[0_0_30px_rgba(168,85,247,0.15),inset_0_1px_0_rgba(255,255,255,0.05)]" 
+            className="mb-8 overflow-hidden border border-white/[0.08] bg-gradient-to-b from-white/[0.04] to-white/[0.01] shadow-[0_0_30px_rgba(168,85,247,0.12),inset_0_1px_0_rgba(255,255,255,0.06)]" 
             data-testid="card-playlist"
           >
-            <div className="divide-y divide-border">
+            <div className="divide-y divide-white/[0.06]">
               {data.songs.map((song, index) => {
                 const isValidated = validatedSongs.has(song.track_id);
                 const isDownvoted = downvotedSongs.has(song.track_id);
@@ -186,13 +183,13 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
                     data-testid={`song-item-${index}`}
                   >
                     {/* Track number */}
-                    <span className="text-sm text-muted-foreground/50 w-6 text-right">
+                    <span className="text-sm text-white/30 w-6 text-right font-mono">
                       {index + 1}
                     </span>
                     
                     {/* Song info */}
                     <div className="flex-1 min-w-0 pr-20">
-                      <h3 className="font-medium truncate" data-testid={`text-song-title-${index}`}>
+                      <h3 className="font-medium truncate text-white/90" data-testid={`text-song-title-${index}`}>
                         <a 
                           href={spotifyUrl}
                           target="_blank"
@@ -202,10 +199,10 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
                           {song.title}
                         </a>
                       </h3>
-                      <p className="text-sm text-muted-foreground truncate" data-testid={`text-song-artist-${index}`}>
+                      <p className="text-sm text-white/50 truncate" data-testid={`text-song-artist-${index}`}>
                         {song.artist}
                       </p>
-                      <p className="text-xs text-muted-foreground/60 mt-1">
+                      <p className="text-xs text-white/30 mt-1">
                         {song.sub_vibe}
                         {isExtrapolated && <span className="ml-2 text-primary">✨ AI discovery</span>}
                       </p>
@@ -221,8 +218,8 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
                             isValidated
                               ? "text-green-500 border-green-500 opacity-100"
                               : isDownvoted
-                              ? "text-muted-foreground/30 border-transparent opacity-30 cursor-not-allowed"
-                              : "text-muted-foreground border-transparent opacity-40 hover:opacity-100 hover:border-green-500 hover:text-green-500"
+                              ? "text-white/20 border-transparent opacity-30 cursor-not-allowed"
+                              : "text-white/30 border-transparent opacity-40 hover:opacity-100 hover:border-green-500 hover:text-green-500"
                           }`}
                           data-testid={`button-validate-song-${index}`}
                           title={isValidated ? "Added to Tapestry!" : isDownvoted ? "Already downvoted" : "Great match - add to Tapestry"}
@@ -237,8 +234,8 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
                             isDownvoted
                               ? "text-red-500 border-red-500 opacity-100"
                               : isValidated
-                              ? "text-muted-foreground/30 border-transparent opacity-30 cursor-not-allowed"
-                              : "text-muted-foreground border-transparent opacity-40 hover:opacity-100 hover:border-red-500 hover:text-red-500"
+                              ? "text-white/20 border-transparent opacity-30 cursor-not-allowed"
+                              : "text-white/30 border-transparent opacity-40 hover:opacity-100 hover:border-red-500 hover:text-red-500"
                           }`}
                           data-testid={`button-downvote-song-${index}`}
                           title={isDownvoted ? "Flagged for review" : isValidated ? "Already validated" : "Poor match"}
@@ -278,7 +275,7 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
           {/* Song Stories - The Human Context */}
           {data.songs.some((s) => s.reddit_context || s.ananki_reasoning) && (
             <details className="mt-12">
-              <summary className="text-sm text-muted-foreground cursor-pointer hover:text-foreground transition-colors text-center">
+              <summary className="text-sm text-white/40 cursor-pointer hover:text-white/60 transition-colors text-center">
                 Why these songs? See the stories behind each pick
               </summary>
               <div className="mt-6 space-y-4">
@@ -298,31 +295,31 @@ export function PlaylistResults({ data, onStartOver }: PlaylistResultsProps) {
                   return (
                     <Card 
                       key={`detail-${song.track_id}-${index}`} 
-                      className="p-5 border-2 border-purple-500/20 shadow-[0_0_15px_rgba(168,85,247,0.08)]"
+                      className="p-5 bg-white/[0.02] border-white/[0.06]"
                     >
-                      <h4 className="font-medium text-sm text-primary mb-3">
+                      <h4 className="font-medium text-sm text-white/70 mb-3">
                         {song.title} — {song.artist}
-                        {isExtrapolated && <span className="ml-2 text-xs text-muted-foreground">(AI discovery)</span>}
+                        {isExtrapolated && <span className="ml-2 text-xs text-white/40">(AI discovery)</span>}
                       </h4>
                       
                       {humanQuote && (
                         <div className="mb-4">
                           <div className="flex gap-3">
-                            <Quote className="w-5 h-5 text-primary/40 flex-shrink-0 mt-0.5" />
-                            <blockquote className="text-foreground/90 italic leading-relaxed">
+                            <Quote className="w-4 h-4 text-white/30 flex-shrink-0 mt-0.5" />
+                            <blockquote className="text-white/60 italic text-sm leading-relaxed">
                               "{humanQuote}"
                             </blockquote>
                           </div>
-                          <p className="text-xs text-muted-foreground/60 mt-2 ml-8">
+                          <p className="text-xs text-white/30 mt-2 ml-7">
                             — from {sourceLabel}
                           </p>
                         </div>
                       )}
                       
                       {aiReasoning && (
-                        <div className={humanQuote ? "border-t border-border/50 pt-3 mt-3" : ""}>
-                          <p className="text-xs text-muted-foreground leading-relaxed">
-                            <span className="font-medium text-muted-foreground/80">Why it fits: </span>
+                        <div className={humanQuote ? "border-t border-white/[0.06] pt-3 mt-3" : ""}>
+                          <p className="text-xs text-white/50 leading-relaxed">
+                            <span className="font-medium text-white/60">Why it fits: </span>
                             {aiReasoning}
                           </p>
                         </div>
