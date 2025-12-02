@@ -1,5 +1,189 @@
 # QUICK FIXES - December 2, 2025
 
+---
+
+## 0. MAKING IT LOOK LIKE A SHARD (Crystal/Gem Effect)
+
+The current radar looks too smooth/organic. To make it more **crystalline/shard-like**:
+
+### Technique 1: Add Facet Lines (Easiest)
+
+Draw lines from the center to each point - like a cut gemstone:
+
+```tsx
+// After the Radar component, add facet lines
+{vibeScores.map((vibe, i) => {
+  const angle = (i * 360 / vibeScores.length - 90) * (Math.PI / 180);
+  const radius = (vibe.score / 100) * 80; // 80 = your chart radius
+  const x = 100 + radius * Math.cos(angle); // 100 = center
+  const y = 100 + radius * Math.sin(angle);
+  
+  return (
+    <line
+      key={i}
+      x1="100" y1="100"
+      x2={x} y2={y}
+      stroke="rgba(255,255,255,0.15)"
+      strokeWidth="1"
+    />
+  );
+})}
+```
+
+This creates internal facet lines like a cut diamond.
+
+### Technique 2: Sharper Angles (Use Fewer Points)
+
+9 points = rounder shape. Try showing only the TOP 5-6 vibes:
+
+```tsx
+const topVibes = vibeScores
+  .filter(v => v.score > 10)  // Only vibes with presence
+  .slice(0, 6);               // Max 6 points = sharper angles
+```
+
+Fewer points = more angular/crystalline.
+
+### Technique 3: Custom Polygon with Extended Points
+
+Instead of recharts, draw your own SVG with exaggerated spokes:
+
+```tsx
+function CrystalShard({ vibeScores, size = 200 }: Props) {
+  const center = size / 2;
+  const maxRadius = size * 0.4;
+  
+  // Calculate points with MORE extension (multiply scores)
+  const points = vibeScores.map((vibe, i) => {
+    const angle = (i * 360 / vibeScores.length - 90) * (Math.PI / 180);
+    const radius = (vibe.score / 100) * maxRadius * 1.2; // 1.2x extension
+    return {
+      x: center + radius * Math.cos(angle),
+      y: center + radius * Math.sin(angle),
+    };
+  });
+  
+  // Create polygon path
+  const pathData = points
+    .map((p, i) => `${i === 0 ? 'M' : 'L'} ${p.x} ${p.y}`)
+    .join(' ') + ' Z';
+  
+  return (
+    <svg width={size} height={size}>
+      {/* Outer glow */}
+      <defs>
+        <filter id="glow">
+          <feGaussianBlur stdDeviation="4" result="blur" />
+          <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+        <linearGradient id="shardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="hsl(262, 70%, 65%)" />
+          <stop offset="100%" stopColor="hsl(262, 50%, 35%)" />
+        </linearGradient>
+      </defs>
+      
+      {/* The shard shape */}
+      <path
+        d={pathData}
+        fill="url(#shardGradient)"
+        fillOpacity="0.6"
+        stroke="hsl(262, 80%, 70%)"
+        strokeWidth="2"
+        filter="url(#glow)"
+      />
+      
+      {/* Facet lines from center */}
+      {points.map((p, i) => (
+        <line
+          key={i}
+          x1={center} y1={center}
+          x2={p.x} y2={p.y}
+          stroke="rgba(255,255,255,0.2)"
+          strokeWidth="1"
+        />
+      ))}
+      
+      {/* Center highlight (gem gleam) */}
+      <circle
+        cx={center} cy={center - 10}
+        r="8"
+        fill="rgba(255,255,255,0.15)"
+      />
+    </svg>
+  );
+}
+```
+
+### Technique 4: Glossy Highlight Overlay
+
+Add a "gleam" to make it look 3D/crystalline:
+
+```tsx
+{/* After your main shape */}
+<ellipse
+  cx={center}
+  cy={center - 20}
+  rx={size * 0.15}
+  ry={size * 0.08}
+  fill="rgba(255,255,255,0.2)"
+  style={{ filter: 'blur(2px)' }}
+/>
+```
+
+### Technique 5: Sharp Edge Treatment
+
+Make the stroke sharper with `stroke-linejoin`:
+
+```tsx
+<path
+  d={pathData}
+  fill="..."
+  stroke="..."
+  strokeLinejoin="miter"  // Sharp corners, not rounded
+  strokeMiterlimit="10"   // How sharp
+/>
+```
+
+---
+
+### RECOMMENDED COMBO
+
+For max shard effect, combine:
+1. **Facet lines** (technique 1)
+2. **Miter stroke joins** (technique 5)  
+3. **Glossy highlight** (technique 4)
+4. **Gradient fill** with darker edges
+
+```tsx
+<svg>
+  {/* Main shard with sharp joins */}
+  <path
+    d={polygonPath}
+    fill="url(#shardGradient)"
+    fillOpacity="0.5"
+    stroke="hsl(262, 80%, 65%)"
+    strokeWidth="2"
+    strokeLinejoin="miter"
+  />
+  
+  {/* Internal facet lines */}
+  {points.map((p, i) => (
+    <line key={i} x1={center} y1={center} x2={p.x} y2={p.y} 
+          stroke="rgba(255,255,255,0.15)" strokeWidth="1" />
+  ))}
+  
+  {/* Glossy gleam */}
+  <ellipse cx={center} cy={center-15} rx="15" ry="8" 
+           fill="rgba(255,255,255,0.15)" />
+</svg>
+```
+
+
+# QUICK FIXES - December 2, 2025
+
 ## 1. RADAR FILL (Making it a Solid Gem, Not Lines)
 
 The recharts Radar component needs both `fill` AND `fillOpacity` to show the solid shape:
