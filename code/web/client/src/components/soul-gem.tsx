@@ -170,9 +170,10 @@ export function SoulGem({ songs, size = 240 }: SoulShardProps) {
         <defs>
           {/* Radial gradient - LIGHT center fading to DARK edges (like a real gem) */}
           <radialGradient id={gradientId} cx="40%" cy="35%" r="65%">
-            <stop offset="0%" stopColor="rgba(255,255,255,0.4)" />
-            <stop offset="35%" stopColor={glowColor} stopOpacity="0.35" />
-            <stop offset="100%" stopColor="hsl(262, 50%, 20%)" stopOpacity="0.25" />
+            <stop offset="0%" stopColor="rgba(255,255,255,0.45)" />
+            <stop offset="30%" stopColor={glowColor} stopOpacity="0.4" />
+            <stop offset="70%" stopColor="hsl(262, 50%, 30%)" stopOpacity="0.35" />
+            <stop offset="100%" stopColor="hsl(262, 50%, 15%)" stopOpacity="0.3" />
           </radialGradient>
 
           {/* Linear gradient for depth edges - darker for 3D effect */}
@@ -190,12 +191,22 @@ export function SoulGem({ songs, size = 240 }: SoulShardProps) {
             </feMerge>
           </filter>
           
-          {/* Surface shine gradient for smooth polished look */}
-          <linearGradient id="surfaceShine" x1="0%" y1="0%" x2="50%" y2="100%">
-            <stop offset="0%" stopColor="rgba(255,255,255,0.3)" />
-            <stop offset="40%" stopColor="rgba(255,255,255,0.05)" />
-            <stop offset="100%" stopColor="rgba(255,255,255,0)" />
+          {/* Liquid NFT sheen - sweeping highlight for plastic look */}
+          <linearGradient id="liquidSheen" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="rgba(255,255,255,0.5)" />
+            <stop offset="20%" stopColor="rgba(255,255,255,0.15)" />
+            <stop offset="40%" stopColor="rgba(255,255,255,0.02)" />
+            <stop offset="60%" stopColor="rgba(255,255,255,0.1)" />
+            <stop offset="80%" stopColor="rgba(255,255,255,0.02)" />
+            <stop offset="100%" stopColor="rgba(200,180,255,0.15)" />
           </linearGradient>
+          
+          {/* Inner glow for depth */}
+          <radialGradient id="innerGlow" cx="30%" cy="25%" r="60%">
+            <stop offset="0%" stopColor="rgba(255,255,255,0.25)" />
+            <stop offset="50%" stopColor="rgba(168,85,247,0.1)" />
+            <stop offset="100%" stopColor="rgba(0,0,0,0)" />
+          </radialGradient>
         </defs>
 
         {/* === RADAR GRID LINES === */}
@@ -208,10 +219,10 @@ export function SoulGem({ songs, size = 240 }: SoulShardProps) {
             cy={center}
             r={maxRadius * scale}
             fill="none"
-            stroke="rgba(255,255,255,0.06)"
+            stroke="rgba(255,255,255,0.08)"
             strokeWidth="1"
             className="transition-opacity duration-700"
-            style={{ opacity: showDetails ? 0.3 : 0.15 }}
+            style={{ opacity: showDetails ? 0.6 : 0.15 }}
           />
         ))}
 
@@ -225,10 +236,10 @@ export function SoulGem({ songs, size = 240 }: SoulShardProps) {
               y1={center}
               x2={center + maxRadius * Math.cos(angle)}
               y2={center + maxRadius * Math.sin(angle)}
-              stroke="rgba(255,255,255,0.05)"
+              stroke="rgba(255,255,255,0.06)"
               strokeWidth="1"
               className="transition-opacity duration-700"
-              style={{ opacity: showDetails ? 0.3 : 0.15 }}
+              style={{ opacity: showDetails ? 0.5 : 0.15 }}
             />
           );
         })}
@@ -270,25 +281,35 @@ export function SoulGem({ songs, size = 240 }: SoulShardProps) {
           d={pathData}
           fill={`url(#${gradientId})`}
           stroke={glowColor}
-          strokeWidth={showDetails ? 2.5 : 3.5}
-          strokeLinejoin={showDetails ? "miter" : "round"}
+          strokeWidth={showDetails ? 2 : 2.5}
+          strokeLinejoin="round"
           strokeLinecap="round"
-          strokeMiterlimit="10"
           filter={showDetails ? 'none' : `url(#${glowId})`}
           className="transition-all duration-700"
           style={{
-            opacity: showDetails ? 0.6 : 0.9,
+            opacity: showDetails ? 0.6 : 0.95,
           }}
         />
         
-        {/* Smooth surface overlay - visible when crystallized for that polished look */}
+        {/* Inner glow layer - depth effect */}
         <path
           d={pathData}
-          fill="url(#surfaceShine)"
+          fill="url(#innerGlow)"
           stroke="none"
           className="transition-opacity duration-700 pointer-events-none"
           style={{
-            opacity: showDetails ? 0 : 0.4,
+            opacity: showDetails ? 0 : 0.7,
+          }}
+        />
+        
+        {/* Liquid NFT sheen - sweeping highlight when crystallized */}
+        <path
+          d={pathData}
+          fill="url(#liquidSheen)"
+          stroke="none"
+          className="transition-opacity duration-700 pointer-events-none"
+          style={{
+            opacity: showDetails ? 0 : 0.6,
           }}
         />
         
