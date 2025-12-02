@@ -165,8 +165,8 @@ function loadTapestryData(): { tapestry: TapestryComplete; manifold: EmotionalMa
 async function identifyRelevantSubVibes(
   journey: UserJourney,
   manifold: EmotionalManifold
-): Promise<string[]> {
-  // Quick first pass: Ask Claude which sub-vibes are relevant
+): Promise<{ subVibes: string[]; keywords: string[] }> {
+  // Quick first pass: Ask Claude which sub-vibes are relevant AND extract keywords
   // This is MUCH faster than sending all songs
   const subVibesList = Object.keys(manifold.sub_vibes).map(sv => ({
     name: sv,
@@ -177,7 +177,7 @@ async function identifyRelevantSubVibes(
 
   const response = await client.messages.create({
     model: "claude-sonnet-4-5",
-    max_tokens: 1000,
+    max_tokens: 1200,
     messages: [{
       role: "user",
       content: `Given this emotional journey:
@@ -188,32 +188,48 @@ async function identifyRelevantSubVibes(
 And these ${subVibesList.length} sub-vibes with their coordinates and compositions:
 ${JSON.stringify(subVibesList, null, 2)}
 
-Identify 15-25 sub-vibes that are most relevant for creating a playlist journey from "${journey.now}" to "${journey.going}".
+Do TWO things:
 
+1. Identify 15-25 sub-vibes that are most relevant for creating a playlist journey from "${journey.now}" to "${journey.going}".
 Consider:
-1. Sub-vibes that match the starting emotional state
-2. Sub-vibes that match the destination
-3. Sub-vibes that form a good path between them
-4. The overall vibe "${journey.vibe}"
+- Sub-vibes that match the starting emotional state
+- Sub-vibes that match the destination
+- Sub-vibes that form a good path between them
+- The overall vibe "${journey.vibe}"
 
-Return ONLY a JSON array of sub-vibe names, nothing else:
-["sub-vibe-1", "sub-vibe-2", ...]`
+2. Extract 3-6 emotional/thematic keywords from the user's journey that could help find songs with matching human comments. Focus on:
+- Specific life situations (e.g., "breakup", "graduation", "road trip", "healing")
+- Emotional states beyond just the vibe name (e.g., "hopeful", "angry", "peaceful")
+- Activities or contexts (e.g., "workout", "studying", "crying", "dancing")
+
+Return ONLY a JSON object, nothing else:
+{
+  "subVibes": ["sub-vibe-1", "sub-vibe-2", ...],
+  "keywords": ["keyword1", "keyword2", ...]
+}`
     }]
   });
 
   const content = response.content[0];
   if (content.type === 'text') {
     const text = content.text.trim();
-    // Extract JSON array from response
-    const match = text.match(/\[[\s\S]*\]/);
+    // Extract JSON object from response
+    const match = text.match(/\{[\s\S]*\}/);
     if (match) {
-      return JSON.parse(match[0]);
+      const parsed = JSON.parse(match[0]);
+      return {
+        subVibes: parsed.subVibes || [],
+        keywords: parsed.keywords || []
+      };
     }
   }
 
   // Fallback: return all sub-vibes if parsing fails
   console.warn("⚠️  Failed to parse relevant sub-vibes, using all");
-  return Object.keys(manifold.sub_vibes);
+  return { 
+    subVibes: Object.keys(manifold.sub_vibes),
+    keywords: []
+  };
 }
 
 export async function generatePlaylistWithClaude(
@@ -231,30 +247,51 @@ export async function generatePlaylistWithClaude(
   // STEP 1: First pass - Ask Claude to identify relevant sub-vibes for the journey
   console.log("🎯 Step 1: Identifying relevant sub-vibes for the journey...");
 
-  const relevantSubVibes = await identifyRelevantSubVibes(journey, manifold);
+  const { subVibes: relevantSubVibes, keywords: journeyKeywords } = await identifyRelevantSubVibes(journey, manifold);
   console.log(`✅ Found ${relevantSubVibes.length} relevant sub-vibes:`, relevantSubVibes.slice(0, 5).join(', '), '...');
+  console.log(`🔑 Extracted keywords:`, journeyKeywords.join(', '));
 
   // STEP 2: Load ALL songs ONLY from relevant sub-vibes
+  // Prioritize songs where comments match journey keywords
   const relevantSongs: Record<string, any[]> = {};
   let totalSongs = 0;
+  let keywordMatchCount = 0;
 
   for (const subVibe of relevantSubVibes) {
     if (tapestry.vibes[subVibe]) {
       const songs = tapestry.vibes[subVibe].songs
-        .sort((a, b) => b.mapping_confidence - a.mapping_confidence)
-        .map(song => ({
-          artist: song.artist,
-          title: song.song,
-          spotify_uri: song.spotify_uri,
-          sub_vibe: subVibe,
-          ananki_reasoning: song.ananki_analysis
-        }));
+        .map(song => {
+          // Check if comment or reasoning contains any journey keywords
+          const commentText = (song.comment_text || '').toLowerCase();
+          const reasoning = (song.ananki_reasoning || '').toLowerCase();
+          const keywordMatch = journeyKeywords.some(kw => 
+            commentText.includes(kw.toLowerCase()) || reasoning.includes(kw.toLowerCase())
+          );
+          if (keywordMatch) keywordMatchCount++;
+          
+          return {
+            artist: song.artist,
+            title: song.song,
+            spotify_uri: song.spotify_uri,
+            sub_vibe: subVibe,
+            ananki_reasoning: song.ananki_analysis || song.ananki_reasoning,
+            keyword_match: keywordMatch, // Flag for Claude to prioritize
+            comment_preview: keywordMatch ? (song.comment_text || '').slice(0, 150) : undefined
+          };
+        })
+        // Sort: keyword matches first, then by mapping confidence
+        .sort((a, b) => {
+          if (a.keyword_match && !b.keyword_match) return -1;
+          if (!a.keyword_match && b.keyword_match) return 1;
+          return 0;
+        });
       relevantSongs[subVibe] = songs;
       totalSongs += songs.length;
     }
   }
 
-  console.log(`📚 Loaded ${totalSongs} songs from ${relevantSubVibes.length} relevant sub-vibes (out of 6,081 total)`);
+  console.log(`📚 Loaded ${totalSongs} songs from ${relevantSubVibes.length} relevant sub-vibes`);
+  console.log(`🎯 Found ${keywordMatchCount} songs with keyword matches in comments!`);
 
   // Filter out any sub-vibes that don't exist in the manifold (Claude might hallucinate names)
   const validSubVibes = relevantSubVibes.filter(subVibe => {
@@ -327,15 +364,17 @@ Your task: Create an emotional journey by walking the manifold from the user's c
 **Vibe**: ${journey.vibe}
 **Current State (Now)**: ${journey.now}
 **Desired Destination (Going)**: ${journey.going}
+**Journey Keywords**: ${journeyKeywords.join(', ')}
 
 Instructions:
 1. Analyze the emotional arc: identify starting sub-vibe(s) near "${journey.now}" and destination sub-vibe(s) near "${journey.going}"
 2. Use the 2D coordinates and emotional compositions to plot a path through the manifold
 3. Select 10-12 songs total: ~60-70% from Tapestry manifest, ~30-40% extrapolated from your music knowledge
-4. For Tapestry songs: Use those with strong Ananki reasoning that match the path
-5. For extrapolated songs: Calculate manifold position, specify emotional composition, and name nearby Tapestry songs
-6. Consider the overall vibe "${journey.vibe}" as the journey's emotional character
-7. Create a smooth progression - don't just dump extrapolated songs at the end
+4. **PRIORITIZE songs marked with "keyword_match": true** - these have human comments that specifically mention themes related to the user's journey!
+5. For Tapestry songs: Use those with strong Ananki reasoning that match the path
+6. For extrapolated songs: Calculate manifold position, specify emotional composition, and name nearby Tapestry songs
+7. Consider the overall vibe "${journey.vibe}" as the journey's emotional character
+8. Create a smooth progression - don't just dump extrapolated songs at the end
 
 Return ONLY a JSON object (no markdown, no extra text):
 {
