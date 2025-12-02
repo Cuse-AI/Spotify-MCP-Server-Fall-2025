@@ -32,7 +32,7 @@ Every song in Midden carries its story. Not metadata. Not genre tags. *Human con
 
 ## The Emotional Manifold
 
-Midden maps 5,000+ songs across 114 emotional micro-states, organized into 9 core vibes:
+Midden maps 2,000+ songs across 106 emotional micro-states, organized into 9 core vibes:
 
 **Sad** — Heartbreak, Grief, Nostalgic Childhood, Melancholic, Crying  
 **Happy** — Euphoric, Content, Sunshine, Reflective Gratitude  

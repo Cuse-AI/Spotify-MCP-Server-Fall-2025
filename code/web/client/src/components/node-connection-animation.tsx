@@ -42,16 +42,15 @@ export function NodeConnectionAnimation() {
         </div>
       </div>
 
-      {/* Loading text with subtle glow */}
+      {/* Loading text with slow wave glow */}
       <div className="h-16 flex items-center justify-center">
         <p
-          className="text-lg font-light text-purple-300/80 transition-all duration-700 animate-pulse"
+          className="text-lg font-light text-purple-300/80 transition-all duration-700 animate-text-wave"
           data-testid="text-loading-message"
           key={messageIndex}
           style={{
             fontFamily: "'Space Grotesk', 'Inter', sans-serif",
             letterSpacing: '0.02em',
-            textShadow: '0 0 20px rgba(168, 85, 247, 0.4), 0 0 40px rgba(168, 85, 247, 0.2)',
           }}
         >
           {LOADING_MESSAGES[messageIndex]}

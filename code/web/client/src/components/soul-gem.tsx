@@ -154,22 +154,22 @@ export function SoulGem({ songs, size = 240 }: SoulShardProps) {
         style={{ overflow: 'visible' }}
       >
         <defs>
-          {/* Radial gradient from top-left for front face */}
-          <radialGradient id={gradientId} cx="30%" cy="25%" r="75%">
-            <stop offset="0%" stopColor="hsl(262, 75%, 68%)" stopOpacity="0.5" />
-            <stop offset="60%" stopColor={glowColor} stopOpacity="0.35" />
-            <stop offset="100%" stopColor={glowColor} stopOpacity="0.2" />
+          {/* Radial gradient - LIGHT center fading to DARK edges (like a real gem) */}
+          <radialGradient id={gradientId} cx="40%" cy="35%" r="65%">
+            <stop offset="0%" stopColor="rgba(255,255,255,0.35)" />
+            <stop offset="40%" stopColor={glowColor} stopOpacity="0.25" />
+            <stop offset="100%" stopColor="hsl(262, 50%, 25%)" stopOpacity="0.15" />
           </radialGradient>
 
-          {/* Linear gradient for depth edges */}
+          {/* Linear gradient for depth edges - darker for 3D effect */}
           <linearGradient id={`${gradientId}-edge`} x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor={glowColor} stopOpacity="0.6" />
-            <stop offset="100%" stopColor="hsl(262, 60%, 45%)" stopOpacity="0.4" />
+            <stop offset="0%" stopColor={glowColor} stopOpacity="0.8" />
+            <stop offset="100%" stopColor="hsl(262, 60%, 30%)" stopOpacity="0.6" />
           </linearGradient>
 
-          {/* Glow filter */}
+          {/* Glow filter for crystallized state */}
           <filter id={glowId} x="-50%" y="-50%" width="200%" height="200%">
-            <feGaussianBlur stdDeviation="6" result="blur" />
+            <feGaussianBlur stdDeviation="8" result="blur" />
             <feMerge>
               <feMergeNode in="blur" />
               <feMergeNode in="SourceGraphic" />
@@ -249,37 +249,51 @@ export function SoulGem({ songs, size = 240 }: SoulShardProps) {
           d={pathData}
           fill={`url(#${gradientId})`}
           stroke={glowColor}
-          strokeWidth={showDetails ? 2 : 2.5}
+          strokeWidth={showDetails ? 2.5 : 4}
           strokeLinejoin="miter"
           strokeMiterlimit="10"
           filter={showDetails ? 'none' : `url(#${glowId})`}
           className="transition-all duration-700"
           style={{
-            opacity: showDetails ? 0.5 : 0.7,
+            opacity: showDetails ? 0.6 : 0.85,
           }}
         />
         
-        {/* Asymmetric glossy highlight / gleam (top-left, off-center) */}
+        {/* Main glossy highlight / gleam (top-left, bigger & brighter for plastic look) */}
         <ellipse
-          cx={center - size * 0.10}
-          cy={center - size * 0.15}
-          rx={size * 0.07}
-          ry={size * 0.035}
-          fill="rgba(255,255,255,0.22)"
+          cx={center - size * 0.08}
+          cy={center - size * 0.12}
+          rx={size * 0.09}
+          ry={size * 0.045}
+          fill="rgba(255,255,255,0.45)"
           className="transition-opacity duration-700"
           style={{
-            opacity: showDetails ? 0.4 : 0.7,
-            filter: 'blur(3px)',
+            opacity: showDetails ? 0.5 : 0.85,
+            filter: 'blur(4px)',
+          }}
+        />
+
+        {/* Sharp inner highlight for glassy effect */}
+        <ellipse
+          cx={center - size * 0.06}
+          cy={center - size * 0.10}
+          rx={size * 0.04}
+          ry={size * 0.02}
+          fill="rgba(255,255,255,0.7)"
+          className="transition-opacity duration-700"
+          style={{
+            opacity: showDetails ? 0.3 : 0.6,
+            filter: 'blur(1px)',
           }}
         />
 
         {/* Small secondary gleam (offset from center) */}
         <ellipse
-          cx={center + size * 0.06}
-          cy={center - size * 0.08}
-          rx={size * 0.025}
-          ry={size * 0.012}
-          fill="rgba(255,255,255,0.18)"
+          cx={center + size * 0.08}
+          cy={center - size * 0.06}
+          rx={size * 0.03}
+          ry={size * 0.015}
+          fill="rgba(255,255,255,0.35)"
           className="transition-opacity duration-700"
           style={{
             opacity: showDetails ? 0.3 : 0.6,

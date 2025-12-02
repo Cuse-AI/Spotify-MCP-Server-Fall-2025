@@ -65,25 +65,43 @@ interface TapestryComplete {
 }
 
 // Helper to look up human quotes from tapestry for songs in a playlist
+// Also FIXES track_ids by matching artist+title if Claude hallucinated them
 function enrichSongsWithHumanContext(songs: TapestrySong[], tapestry: TapestryComplete): TapestrySong[] {
-  // Build a lookup map: spotify_uri -> song data
-  const songLookup = new Map<string, any>();
+  // Build lookup maps
+  const songLookupByUri = new Map<string, any>();
+  const songLookupByArtistTitle = new Map<string, any>();
   
   for (const [subVibe, vibeData] of Object.entries(tapestry.vibes)) {
     for (const song of vibeData.songs || []) {
       const uri = song.spotify_uri || `spotify:track:${song.spotify_id}`;
-      songLookup.set(uri, song);
+      songLookupByUri.set(uri, song);
       // Also map by just the ID
       if (song.spotify_id) {
-        songLookup.set(song.spotify_id, song);
+        songLookupByUri.set(song.spotify_id, song);
       }
+      // Map by normalized artist+title for fallback matching
+      const key = `${song.artist.toLowerCase().trim()}:::${song.song.toLowerCase().trim()}`;
+      songLookupByArtistTitle.set(key, song);
     }
   }
   
   return songs.map(song => {
-    // Try to find the original song in tapestry
+    // Try to find the original song in tapestry by track_id first
     const trackId = song.track_id.replace('spotify:track:', '');
-    const original = songLookup.get(song.track_id) || songLookup.get(trackId);
+    let original = songLookupByUri.get(song.track_id) || songLookupByUri.get(trackId);
+    
+    // If not found by track_id, try artist+title match (Claude may have hallucinated the ID)
+    if (!original && !song.extrapolated) {
+      const artistTitleKey = `${song.artist.toLowerCase().trim()}:::${song.title.toLowerCase().trim()}`;
+      original = songLookupByArtistTitle.get(artistTitleKey);
+      
+      if (original) {
+        // FIX the track_id with the correct one from tapestry!
+        const correctUri = original.spotify_uri || `spotify:track:${original.spotify_id}`;
+        console.log(`🔧 Fixed track_id for "${song.artist} - ${song.title}": ${song.track_id} → ${correctUri}`);
+        song.track_id = correctUri;
+      }
+    }
     
     if (original && !song.extrapolated) {
       // ONLY enrich non-extrapolated songs with human quotes
@@ -272,7 +290,7 @@ export async function generatePlaylistWithClaude(
           return {
             artist: song.artist,
             title: song.song,
-            spotify_uri: song.spotify_uri,
+            track_id: song.spotify_uri || `spotify:track:${song.spotify_id}`, // Use track_id to match output schema
             sub_vibe: subVibe,
             ananki_reasoning: song.ananki_analysis || song.ananki_reasoning,
             keyword_match: keywordMatch, // Flag for Claude to prioritize
@@ -412,9 +430,9 @@ Return ONLY a JSON object (no markdown, no extra text):
 }
 
 **Rules:**
-- You MUST have at least 2-4 songs with "extrapolated": true (AI discoveries)
-- For Tapestry songs: extrapolated=false, omit manifold coordinates and nearby songs
-- For extrapolated songs: extrapolated=true, MUST include manifold_x, manifold_y, emotional_composition, nearby_tapestry_songs
+- You MUST use the EXACT track_id from the manifest for Tapestry songs - DO NOT make up or guess track IDs!
+- For Tapestry songs: extrapolated=false, use the track_id exactly as provided
+- For extrapolated songs: extrapolated=true, use track_id format "extrapolated:artist:title", MUST include manifold_x, manifold_y, emotional_composition, nearby_tapestry_songs
 - Intersperse extrapolated songs throughout the journey, not just at beginning/end
 - AI discoveries expand the user's musical horizons while staying true to the manifold`,
         },
