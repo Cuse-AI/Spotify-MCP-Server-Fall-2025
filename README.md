@@ -1,104 +1,142 @@
-# TAPESTRY PROJECT - EMOTIONAL MUSIC MAPPING
+# Midden
 
-**Last Updated:** November 12, 2025 - 
+### Human-Sourced. AI-Enhanced. Deeply Personal.
 
----
+In a world racing toward artificial everything, Midden preserves something precious: *how humans actually feel about music*.
 
-## PROJECT VISION
-
-**The Tapestry** maps songs to 114 emotional sub-vibes using human-sourced data from Reddit. This goes beyond simple keyword playlists to capture how humans actually describe music emotionally.
-
-**Goal:** Create a navigable 2D emotional manifold where each song has context explaining WHY it's associated with that emotion.
+We dive into the digital middens of Reddit and YouTube—the casual comments, the late-night confessions, the "this song saved me" moments—and surface playlists that feel like they were made by a friend who truly gets it.
 
 ---
 
-## CURRENT STATUS
+## Why "Midden"?
 
-### The Manifold
-- **114 sub-vibes** across 23 emotional categories (COMPLETE)
-- **2D coordinate system** for geometric emotion navigation (COMPLETE)
+In archaeology, a *midden* is a refuse heap—discarded shells, bones, broken pottery. To everyone else, it's trash. To archaeologists, it's a goldmine of how people *actually lived*.
 
-### The Database
-- **5,00+ validated songs and growing** with Spotify IDs
-- **Each song includes:**
-  - Original Reddit context (post title + comment)
-  - Ananki reasoning (AI analysis of emotional fit)
-  - Confidence score
-  - Sub-vibe placement
+The internet has its own middens: Reddit threads at 3am, YouTube comments under forgotten songs, the raw emotional outpourings that algorithms ignore. **This is where humans tell the truth about music.**
 
-### What Just Happened (BREAKTHROUGH!)
-We discovered the previous Ananki was using **keyword matching** instead of true AI reasoning. This caused false positives like motivational speaking tracks being mapped to "Happy - Euphoric."
-
-**Solution:** Built TRUE Ananki using Claude API for real human-level analysis!
+Midden excavates these digital layers to build something algorithms never could: a map of music organized by *how it makes you feel*, with the human stories to prove it.
 
 ---
 
-## THE WORKFLOW
+## What Makes Midden Different
 
-### Phase 1: Smart Scraping
-```bash
-cd data/reddit/smart_scrapers
-python scrape_happy.py  # Or any meta-vibe
+**Traditional streaming algorithms:**
+> "You listened to Radiohead, here's more Radiohead."
+
+**Midden:**
+> "You're feeling like the world is ending but you want to feel powerful anyway? Here's a playlist of songs that helped real people through their villain arc—and here's *why* each one worked for them."
+
+Every song in Midden carries its story. Not metadata. Not genre tags. *Human context.*
+
+---
+
+## The Emotional Manifold
+
+Midden maps 5,000+ songs across 114 emotional micro-states, organized into 9 core vibes:
+
+**Sad** — Heartbreak, Grief, Nostalgic Childhood, Melancholic, Crying  
+**Happy** — Euphoric, Content, Sunshine, Reflective Gratitude  
+**Dark** — Brooding, Gothic, Villain Arc, Witchy, Apocalyptic  
+**Energy** — Pump Up, Confidence, Adrenaline Rush  
+**Party** — Dance, Club Night, Festival Vibes  
+**Chill** — Cozy, Lazy Sunday, Lo-fi, Quiet Reflection  
+**Night** — 3AM Thoughts, Contemplative, City Lights  
+**Drive** — Road Trip, Night Drive, Highway Speed  
+**Romantic** — First Love, Slow Dance, Passionate
+
+Each song includes the original human context explaining *why* it belongs there.
+
+---
+
+## How It Works
+
+**You share where you are emotionally.**
+
+Midden asks three simple questions:
+1. How are you feeling right now?
+2. Where do you want to go?
+3. What's the context—late night alone, morning coffee, long drive?
+
+**Midden crafts your journey.**
+
+Not just a playlist. A narrative. Each song chosen because a real human once said *"this is the song that got me through."*
+
+---
+
+## A Living Archive
+
 ```
-- Searches Reddit for emotional music discussions
-- Extracts song mentions
-- Validates with Spotify API during extraction
-- Dedupes the results, so no track/artist happens more than once
-- **Result:** 100% validated songs with full context
-
-### Phase 2: TRUE Ananki Analysis
-```bash
-cd data/reddit
-python true_ananki_claude_api.py test_results/happy_smart_extraction_500.json
+Song: "The Night We Met" — Lord Huron
+Emotion: Heartbreak
+Human Context: "I had all and then most of you, some, and now none of you.
+               This line destroyed me."
 ```
-- Claude reads the Reddit context for each song
-- Analyzes emotional intent like a human would
-- Maps to specific sub-vibe (Happy - Feel Good vs Happy - Euphoric)
-- Flags ambiguous cases for review
-- **NO KEYWORD MATCHING - Real AI reasoning!**
 
-### Phase 3: Injection
-```bash
-python inject_to_tapestry.py test_results/happy_smart_extraction_500_CLAUDE_MAPPED.json
 ```
-- Adds songs to tapestry with all context preserved
-- Each song includes Ananki's reasoning
-- Result: Clean, high-confidence data
+Song: "Running Up That Hill" — Kate Bush  
+Emotion: Dark - Villain Arc
+Human Context: "This is my 'finally standing up for myself' song. 
+               Played it on repeat when I left."
+```
+
+```
+Song: "Here Comes The Sun" — The Beatles
+Emotion: Happy - Hopeful
+Human Context: "My dad played this every morning making breakfast. 
+               He's gone now but this song still feels like him."
+```
+
+These aren't reviews. They're emotional fingerprints.
 
 ---
 
-## ANANKI PRINCIPLES - ANANKI IS THE AGENT ACTING AS "HUMAN IN THE LOOP"
+## The Technology
 
-**What Ananki Does:**
-1. Reads full Reddit context (post title + comment)
-2. Analyzes emotional intent using Claude API
-3. Maps to specific sub-vibe based on human language
-4. Provides reasoning for the decision
-5. Flags ambiguous/off-topic cases
+**Data Pipeline**
+- Smart scraping of Reddit and YouTube for emotional music discussions
+- Spotify API validation for every track
+- AI analysis (Claude) to map songs to precise emotional sub-vibes
+- Human stories preserved alongside every entry
 
-**What Ananki Does NOT Do:**
-- Keyword matching
-- Artist/song name analysis
-- Guessing when context is unclear
-
-**Example:**
-- Post: "What's your favorite feel good song?"
-- Comment: "Goodbye Stranger by Supertramp"
-- Claude Analysis: "The human explicitly requested 'feel good song' recommendations, and 'Goodbye Stranger' was offered as a direct response. This is a clear match to the 'Happy - Feel Good' sub-vibe category."
-- Confidence: 1.0
-- Result: Song → Happy - Feel Good
-
+**Stack**
+- React + TypeScript + Tailwind CSS
+- Node.js + Express backend
+- Anthropic Claude API for playlist generation
+- Spotify Web API for metadata and playback
+- 5,000+ songs with full emotional context
 
 ---
 
-## FOR NEW CLAUDE INSTANCES
+## The Vision
 
-Read `docs/DearClaude.md` first! It has:
-- Current exact status
-- What was done in last session
-- What to do next
-- Where all the important files are
+In an age where AI generates everything, Midden is a sanctuary for *human* meaning.
+
+We're not replacing human curation with algorithms. We're *amplifying* the emotional wisdom that humans have already shared—preserving it, organizing it, and using AI to help you find exactly what you need, exactly when you need it.
+
+**The data is human. The intelligence is artificial. The experience is deeply personal.**
 
 ---
 
-**The breakthrough:** We're not doing keyword matching anymore. TRUE Ananki uses real AI reasoning to understand emotional context!
+## Roadmap (What's Next for Midden??)
+
+- Geometric navigation through the emotional manifold (an interactive map)
+- User-contributed emotional context 
+- Playlist export to Spotify
+- Mobile experience
+- Expanded archive (target: 20,000+ songs)
+
+---
+
+## Built With
+
+[React](https://reactjs.org/) • [Anthropic Claude](https://anthropic.com/) • [Spotify API](https://developer.spotify.com/) • [Tailwind CSS](https://tailwindcss.com/) • [TypeScript](https://www.typescriptlang.org/)
+
+---
+
+## License
+
+MIT License
+
+---
+
+*Midden: Where human stories meet musical discovery.*

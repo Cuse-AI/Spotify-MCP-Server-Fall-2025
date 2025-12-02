@@ -135,22 +135,6 @@
           "mapped_subvibe": "Dark - Brooding"
         },
         {
-          "artist": "Celestial Aeon Project",
-          "song": "Corruption of Power",
-          "spotify_id": "4197zpljmtusbluIi9DGSy",
-          "spotify_uri": "spotify:track:4197zpljmtusbluIi9DGSy",
-          "comment_score": 2,
-          "source_url": "https://reddit.com/r/Music/comments/1jj222p/what_plattform_do_you_use_when_you_just_sit_down/mjjsrt7/",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 0.7,
-          "full_context": "",
-          "post_title": "What plattform do you use when you just sit down and listen to music?",
-          "comment_text": "I wouldn't rely on an algorithm to serve you music well. It's inevitably going to be corrupted by whatever interests they have (eg. When Spotify was paid to suggest Drake on everyone's front page. When apple put a U2 album on everyone's device).\n\nHonestly I'll look through reddit threads, YouTube reviews, and websites like RYM, put together a list in my phone notes of albums that look interesting. Then queue them up in whatever platform you have.",
-          "ananki_reasoning": "The song title 'Corruption of Power' by Celestial Aeon Project suggests a dark, contemplative theme about moral decay and authority's abuse. While the Reddit comment context is about music discovery methods rather than emotional state, the song itself (given the artist's ambient/atmospheric style and the ominous title) most likely fits a brooding, dark atmosphere - reflecting on systemic corruption and power dynamics in a thoughtful, heavy way. The Celestial Aeon Project is known for atmospheric, cinematic compositions that explore darker philosophical themes.",
-          "mapped_subvibe": "Dark - Brooding"
-        },
-        {
           "artist": "Ari Abdul",
           "song": "Sinners (feat. Thomas LaRosa)",
           "spotify_id": "0VOyLRYrUBufrXQibWBipR",
@@ -2011,22 +1995,6 @@
           "mapped_subvibe": "Sad - Nostalgic Childhood"
         },
         {
-          "artist": "KISS",
-          "song": "Rock And Roll All Nite - MOONLGHT Remix",
-          "spotify_id": "2eTYcP7pFAnFZOMfXlpXO4",
-          "spotify_uri": "spotify:track:2eTYcP7pFAnFZOMfXlpXO4",
-          "comment_score": 10,
-          "source_url": "https://reddit.com/r/musicsuggestions/comments/1of9v35/what_song_did_you_used_to_love/nl7hzje/",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "What song did you used to love?",
-          "comment_text": "Rock And Roll All Night - Kiss\n\nNot overplayed, but it was a song I loved as a kid when I first started listening to Kiss. After a few years I realized that I didn't like it anymore.",
-          "ananki_reasoning": "The comment explicitly describes loving this KISS song 'as a kid when I first started listening to Kiss,' indicating a strong childhood memory association. While the person no longer enjoys the song as much ('After a few years I realized that I didn't like it anymore'), the context of the post title 'What song did you used to love?' combined with the childhood reference makes this a nostalgic reflection on their younger years. The emotional context is about looking back at something they loved in childhood, even if their taste has evolved since then.",
-          "mapped_subvibe": "Sad - Nostalgic Childhood"
-        },
-        {
           "artist": "The Big Bopper",
           "song": "Chantilly Lace",
           "spotify_id": "07GtDOCxmye5KDWsTSACPk",
@@ -3720,22 +3688,6 @@
           "post_title": "Is there a song you only know and fell in love with because you heard it in a film or a series you watched? ",
           "comment_text": "Moon River - Breakfast at Tiffany's. Audrey Hepburn did such a good job with that song.",
           "ananki_reasoning": "The user fell in love with 'Moon River' through the classic film 'Breakfast at Tiffany's,' highlighting the emotional connection formed through cinema. This song, performed by Audrey Hepburn in the iconic 1961 film, evokes a deep sense of nostalgia for classic Hollywood's golden era and simpler times. The gentle, wistful melody combined with the context of discovering it through a beloved classic film creates a nostalgic longing for the past. The song itself is about dreams and innocence, perfectly capturing the bittersweet nostalgia for a bygone era of elegance and romanticism.",
-          "mapped_subvibe": "Sad - Nostalgic Simpler Times"
-        },
-        {
-          "artist": "Ghost",
-          "song": "Mary On A Cross",
-          "spotify_id": "2wBnZdVWa5jVpvYRfGU7rP",
-          "spotify_uri": "spotify:track:2wBnZdVWa5jVpvYRfGU7rP",
-          "comment_score": 8,
-          "source_url": "https://reddit.com/r/musicsuggestions/comments/1of9v35/what_song_did_you_used_to_love/nl7kq1t/",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "What song did you used to love?",
-          "comment_text": "Mary On A Cross - Ghost\n\nI still absolutely love the song, however, it became overplayed due to its overuse on platforms like TikTok that it eventually ruined it for me. That exposure definitely gave Ghost their huge boost in recent popularity, which is good for them.",
-          "ananki_reasoning": "The comment expresses a bittersweet relationship with the song - they 'used to love' it and 'still absolutely love the song' but it became 'overplayed' and 'ruined' by mainstream exposure on TikTok. This reflects nostalgia for when the song felt special and personal before it became ubiquitous. The emotional context is about longing for the simpler time when they could enjoy the song without the association of oversaturation. 'Mary On A Cross' by Ghost has a retro, 60s-inspired sound that naturally lends itself to nostalgic feelings, and the commenter is mourning the loss of their pure, untainted relationship with the track.",
           "mapped_subvibe": "Sad - Nostalgic Simpler Times"
         },
         {
