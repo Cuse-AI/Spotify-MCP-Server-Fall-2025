@@ -117,13 +117,14 @@ We're not replacing human curation with algorithms. We're *amplifying* the emoti
 
 ---
 
-## Roadmap (What's Next for Midden??)
+## Roadmap (What's Next for Midden?)
 
-- Geometric navigation through the emotional manifold (an interactive map)
-- User-contributed emotional context 
-- Playlist export to Spotify
-- Mobile experience
-- Expanded archive (target: 20,000+ songs)
+- Geometric navigation through the emotional manifold (an interactive map of Midden)
+- User-contributed emotional context - persistance with thumb up and down for AI discovery tracks
+- Playlist export to Spotify - So you can move your playlist over to your listening app
+- Mobile experience - Take Midden on the go!
+- Expanded archive (target: 20,000+ songs) - Midden gets better with more data, and we're digging for gold daily
+- More sub-vibes (!!), which are derived from the data that we take in and not applied ad hoc
 
 ---
 
