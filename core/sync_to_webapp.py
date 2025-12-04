@@ -2,11 +2,13 @@
 """
 SYNC TO WEBAPP
 ==============
-Copies core data files to the webapp folder so changes go live on deploy.
+Copies core data files to ALL webapp locations so changes go live on deploy.
 
 Files synced:
   - core/tapestry.json -> code/web/core/tapestry.json
-  - core/tapestry.json -> code/web/client/public/core/tapestry.json (STATIC/FRONTEND)
+  - core/tapestry.json -> code/web/server/tapestry.json
+  - core/tapestry.json -> code/web/client/public/core/tapestry.json (FRONTEND STATS BAR)
+  - core/tapestry.json -> code/web/public/static/tapestry.json
   - data/manifold/emotional_manifold_COMPLETE.json -> code/web/data/emotional_manifold_COMPLETE.json
 
 Run this after ANY changes to tapestry or manifold data!
@@ -23,10 +25,14 @@ PROJECT_ROOT = Path(__file__).parent.parent
 TAPESTRY_SRC = PROJECT_ROOT / "core" / "tapestry.json"
 MANIFOLD_SRC = PROJECT_ROOT / "data" / "manifold" / "emotional_manifold_COMPLETE.json"
 
-# Destinations (webapp - multiple locations!)
+# Destinations (webapp - ALL locations that need tapestry!)
 WEBAPP_DIR = PROJECT_ROOT / "code" / "web"
-TAPESTRY_DEST_SERVER = WEBAPP_DIR / "core" / "tapestry.json"
-TAPESTRY_DEST_PUBLIC = WEBAPP_DIR / "client" / "public" / "core" / "tapestry.json"  # Frontend static!
+TAPESTRY_DESTINATIONS = [
+    (WEBAPP_DIR / "core" / "tapestry.json", "tapestry.json (web/core)"),
+    (WEBAPP_DIR / "server" / "tapestry.json", "tapestry.json (web/server)"),
+    (WEBAPP_DIR / "client" / "public" / "core" / "tapestry.json", "tapestry.json (client/public/core - STATS BAR)"),
+    (WEBAPP_DIR / "public" / "static" / "tapestry.json", "tapestry.json (public/static)"),
+]
 MANIFOLD_DEST = WEBAPP_DIR / "data" / "emotional_manifold_COMPLETE.json"
 
 def get_song_count(tapestry_path):
@@ -60,27 +66,24 @@ def sync_file(src, dest, name):
     return True
 
 def sync_files():
-    print("=" * 50)
-    print("[SYNC] SYNCING DATA TO WEBAPP")
-    print("=" * 50)
+    print("=" * 60)
+    print("[SYNC] SYNCING DATA TO WEBAPP (ALL LOCATIONS)")
+    print("=" * 60)
     
     synced = []
     src_songs = get_song_count(TAPESTRY_SRC) if TAPESTRY_SRC.exists() else 0
     src_vibes = get_vibe_count(TAPESTRY_SRC) if TAPESTRY_SRC.exists() else 0
     
-    # Sync tapestry to SERVER location
-    if sync_file(TAPESTRY_SRC, TAPESTRY_DEST_SERVER, "tapestry.json (server)"):
-        synced.append("tapestry-server")
-    
-    # Sync tapestry to PUBLIC/STATIC location (for frontend stats bar!)
-    if sync_file(TAPESTRY_SRC, TAPESTRY_DEST_PUBLIC, "tapestry.json (public/static)"):
-        synced.append("tapestry-public")
+    # Sync tapestry to ALL destinations
+    for dest_path, dest_name in TAPESTRY_DESTINATIONS:
+        if sync_file(TAPESTRY_SRC, dest_path, dest_name):
+            synced.append(dest_name)
     
     # Sync manifold
     if sync_file(MANIFOLD_SRC, MANIFOLD_DEST, "emotional_manifold_COMPLETE.json"):
         synced.append("manifold")
     
-    print("=" * 50)
+    print("=" * 60)
     
     if synced:
         print(f"Synced {len(synced)} file(s). Don't forget to commit & push!")

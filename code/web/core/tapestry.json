@@ -102,38 +102,6 @@
           }
         },
         {
-          "artist": "Porridge Radio",
-          "song": "Machine Starts To Sing",
-          "spotify_id": "6punxlpYRPP7vuGZCanJ4i",
-          "spotify_uri": "spotify:track:6punxlpYRPP7vuGZCanJ4i",
-          "comment_score": 5179,
-          "source_url": "https://youtube.com/watch?v=fHCraDGaotM",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "songs to calm your nerves",
-          "comment_text": "Guess mine is not the first heart broken\nMy eyes are not the first to cry\nI'm not the first to know there's\nJust no getting over you\n\nYou know I'm just a fool who's willing\nTo sit around and wait for you\nBut baby can't you see there's nothing else for me to do\nI'm hopelessly devoted to you\n\nBut now there's no way to hide\nSince you pushed my love aside\nI'm outta my head hopelessly devoted to you\nHopelessly devoted to you\nHopelessly devoted to you\n\nMy head is saying fool forget him\nMy heart is saying don't let go\nHold on to the end, that's what I intend to do\nI'm hopelessly devoted to you\n\nBut now there's no way to hide\nSince you pushed my love aside\nI'm outta my head hopelessly devoted to you\nHopelessly devoted to you\nHopelessly devoted to you",
-          "ananki_reasoning": "The human is quoting lyrics from 'Hopelessly Devoted to You' which is a classic heartbreak anthem about unrequited love and inability to move on from someone. The lyrics explicitly mention 'heart broken,' being a 'fool who's willing to sit around and wait for you,' and being 'hopelessly devoted' despite knowing it's futile. The post title 'songs to calm your nerves' combined with these deeply emotional heartbreak lyrics suggests the person is seeking cathartic music to process heartbreak feelings. The validated song 'Machine Starts To Sing' by Porridge Radio, when paired with this context of devotion, waiting, and broken hearts, clearly maps to the Sad - Heartbreak sub-vibe rather than general sadness or melancholy.",
-          "mapped_subvibe": "Sad - Heartbreak",
-          "coordinates": {
-            "x": 527.5,
-            "y": 585.0
-          },
-          "current_vibe": "Sad - Heartbreak",
-          "emotional_composition": {
-            "Sad": 0.55,
-            "Romantic": 0.25,
-            "Dark": 0.15,
-            "Energy": 0.05,
-            "Happy": 0.0,
-            "Chill": 0.0,
-            "Night": 0.0,
-            "Drive": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
           "artist": "mazie",
           "song": "dumb dumb (sped up)",
           "spotify_id": "795vMU0gpddltaxFPiv7BV",
@@ -4723,38 +4691,6 @@
           }
         },
         {
-          "artist": "The Naughty Northern",
-          "song": "Good Company",
-          "spotify_id": "2HkeazBWy0DEiAt3x8aeNT",
-          "spotify_uri": "spotify:track:2HkeazBWy0DEiAt3x8aeNT",
-          "comment_score": 3344,
-          "source_url": "https://youtube.com/watch?v=wj9jkVQS-No",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Late Night Songs Playlist: Best Night Music for Sleep (Playlist Updated in 2025)",
-          "comment_text": "I was the lone wolf,\nin you, I found my home.\nMy dream came true, \nI wasn't alone.\n\nI lived in the night,\nyou gave me the light.\nI realised soon,\nyou were my Moon.\n\nI fought for you,\nbut I lost the fight. \nAlone again,\nI live in the night. \n\nI wander through forests,\nwith my broken heart.\nCursing the fate\nthat made us to part. \n\nI will howl for you,\nuntil the day I die. \nYou are my Moon,\nfor you I cry.",
-          "ananki_reasoning": "The poem describes a profound journey from loneliness ('I was the lone wolf') to finding companionship ('in you, I found my home'), then returning to isolation after loss ('Alone again, I live in the night'). The recurring imagery of being a lone wolf wandering through forests with a broken heart, combined with the eternal longing ('I will howl for you, until the day I die'), speaks directly to deep loneliness rather than just heartbreak. While heartbreak is present, the dominant emotional theme is the return to solitary existence and the perpetual state of being alone. The context of this being in a 'Late Night Songs' playlist reinforces the solitary, nocturnal emotional space. The wolf metaphor throughout emphasizes isolation as the core emotional experience.",
-          "mapped_subvibe": "Sad - Lonely",
-          "coordinates": {
-            "x": 490.0,
-            "y": 655.0
-          },
-          "current_vibe": "Sad - Lonely",
-          "emotional_composition": {
-            "Sad": 0.5,
-            "Dark": 0.2,
-            "Night": 0.15,
-            "Romantic": 0.1,
-            "Energy": 0.05,
-            "Happy": 0.0,
-            "Chill": 0.0,
-            "Drive": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
           "artist": "Avril Lavigne",
           "song": "Nobody's Home",
           "spotify_id": "0cZDC7uxNK8lqQ3GgyvCnD",
@@ -6423,38 +6359,6 @@
             "Energy": 0.0,
             "Drive": 0.0,
             "Party": 0.0
-          }
-        },
-        {
-          "artist": "Witchz",
-          "song": "DRUGZ2FEEL",
-          "spotify_id": "4LLySzXVXv6A2qv9b5t5Eq",
-          "spotify_uri": "spotify:track:4LLySzXVXv6A2qv9b5t5Eq",
-          "comment_score": 67,
-          "source_url": "https://youtube.com/watch?v=gv7Tyw2pf44",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "OCCULT SONGS PLAYLIST",
-          "comment_text": "DRUGS 2 FEEL\n\nBabe ill give you time to heal\nBabe ill give you time to deal\nBaby give me time to think things through \nCus baby you been taking drugs to feel\nBabe ill give you time to heal\nBabe ill give you time to deal\nBaby give me time to think things through \nCus baby you been taking drugs to feel\n\nBabe ill give you time to heal\nBabe ill give you time to deal\nBaby give me time to think things through \nCus baby you been taking drugs to feel\nBabe ill give you time to heal\nBabe ill give you time to deal\nBaby give me time to think things through \nCus baby you been taking drugs to feel\n\nIm all mixed up\nThe way that you \nWay that you\nWay that you ifting me up\n\nI’m falling up\nThe way that you \nWay that you \nWay that you love \n\nBabe ill give you time to heal\nBabe ill give you time to deal\nBaby give me time to think things through \nCus baby you been taking drugs to feel\nBabe ill give you time to heal\nBabe ill give you time to deal\nBaby give me time to think things through \nCus baby you been taking drugs to feel\nBabe ill give you time to heal\nBabe ill give you time to deal\nBaby give me time to think things through \nCus baby you been taking drugs to feel\nBabe ill give you time to heal\nBabe ill give you time to deal\nBaby give me time to think things through \nCus baby you been taking drugs to feel\n\nMotherfucker do you feel it now\nIm on my face and im feeling numb\nMotherfucker can you hear me now\nIn outer space in a burning cloud\nMotherfucker do you feel it now\nIm on my face and im feeling numb\nMotherfucker can you hear me now\nIn outer space in a burning cloud\n\nMotherfucker do you feel it now\nMotherfucker can you hear me now\nMotherfucker do you feel it now\nMotherfucker can you hear me now\nMotherfucker do you feel it now\nMotherfucker can you hear me now\nMotherfucker do you feel it now\nMotherfucker can you hear me now",
-          "ananki_reasoning": "The repetitive lyrics describe a relationship struggling with substance abuse ('you been taking drugs to feel'), where the narrator is asking for time and space to process the situation. The context of being posted in an 'OCCULT SONGS PLAYLIST' combined with the artist name 'Witchz' suggests a dark aesthetic, but the emotional core is melancholic rather than gothic - it's about the sadness of watching someone you care about self-medicate and needing distance to figure things out. The repeated phrases 'give you time to heal' and 'give me time to think things through' convey a sorrowful, contemplative mood rather than acute heartbreak or loneliness. It's the kind of resigned, bittersweet sadness that comes with caring for someone while recognizing the relationship's unhealthy patterns.",
-          "mapped_subvibe": "Sad - Melancholic",
-          "coordinates": {
-            "x": 485.0,
-            "y": 670.0
-          },
-          "current_vibe": "Sad - Melancholic",
-          "emotional_composition": {
-            "Sad": 0.5,
-            "Dark": 0.3,
-            "Romantic": 0.1,
-            "Night": 0.1,
-            "Happy": 0.0,
-            "Party": 0.0,
-            "Chill": 0.0,
-            "Energy": 0.0,
-            "Drive": 0.0
           }
         },
         {
@@ -12927,70 +12831,6 @@
           }
         },
         {
-          "artist": "Calm My Pet",
-          "song": "Emotional Support Piano",
-          "spotify_id": "6bVyN15LRvFttbdEuUk1P3",
-          "spotify_uri": "spotify:track:6bVyN15LRvFttbdEuUk1P3",
-          "comment_score": 75,
-          "source_url": "https://youtube.com/watch?v=AUbWPrWMaRo",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Gothic piano and violin music",
-          "comment_text": "She gazed upon her lover's still face\nWhat was full of life is now blank and cold\nShe gazed upon her empty house\nWhat was once young is now lonely and old\n\nShe grabs her cloak, fighting back tears\nAnd flees to somewhere far away\nWhere she can escape her fear and sorrow\nBut as she stops, she knows it's there to stay\n\nOnly then does she tilt her face to the sky\nHer face damp and streaked from tears\nChoking back on a sob she faces the moon\nTo which she wails out all her fears\n\nNever does she receive a response\nFrom the still, blankly cold moon\nWhat was once her life was whisked away\nWhat was once happy ended so soon\n\nShe wishes to hear her name again\nSpoken softly on her lover's tongue\nNever again will she feel such embrace\nShe tries to remember what was once sung\n\nLuna, my love, Luna my dear\nTell me you will always be near\nFor I am the sky, and you are my stars\nLook to the moon, I will never be far",
-          "ananki_reasoning": "The comment is a poetic narrative describing profound loss and mourning. The imagery includes 'her lover's still face' (death), 'blank and cold,' an 'empty house,' fleeing while 'fighting back tears,' and 'wailing out all her fears' to the moon. This is a clear depiction of grief - the deep sorrow following the death of a loved one. The emotional arc moves from numbness at the loss, through attempted escape, to ultimately expressing overwhelming grief. Combined with the post title requesting 'Gothic piano and violin music' and the song being 'Emotional Support Piano,' this perfectly aligns with the Sad - Grief sub-vibe rather than general sadness, melancholy, or loneliness.",
-          "mapped_subvibe": "Sad - Grief",
-          "coordinates": {
-            "x": 502.5,
-            "y": 640.0
-          },
-          "current_vibe": "Sad - Grief",
-          "emotional_composition": {
-            "Sad": 0.55,
-            "Dark": 0.25,
-            "Romantic": 0.15,
-            "Night": 0.05,
-            "Happy": 0.0,
-            "Chill": 0.0,
-            "Energy": 0.0,
-            "Drive": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
-          "artist": "MaxRxghBeats",
-          "song": "Forgive Me - Emotional Vocal R&B Beat Mix",
-          "spotify_id": "0pGeuy9zIY0mNlSrRjefvT",
-          "spotify_uri": "spotify:track:0pGeuy9zIY0mNlSrRjefvT",
-          "comment_score": 83,
-          "source_url": "https://youtube.com/watch?v=lbp8GaALXp8",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Gothic piano and violin music",
-          "comment_text": "My dear friend, why must your heart be like stones\nWe still have much to do yet\nMy heart aches, as well as my weary bones\nMy dear friend, I pray must you not forget\n\nThe good times well spent, the good memories remember\nMoments came and went, from January to December\n\nThere were tears of joy, \nThere were tears of gladness\nThere were times we'd like to destroy\nThere were times of madness\n\nEven through storms, we made it through\nWe stuck it together, me and you\n\nMy dear friend, why did you leave\nWas it something I said or would do\nPlease tell me, I will believe\nLet me fix this problem just for you\n\nDon't let this friendship die, it will break my heart\nFor my sake, please don't lie, it may tear us apart\n\nBut now I can see it clearly\nWhy you couldn't tell\nIt was your illness making you weary\nYou don't look nor feel well\n\nMy dear friend, I'm such a fool\nTo hell you had to descend, while my body, kept cool\n\nHad I'd known about this, you being pained\nSurely, I would have done something\nIf told sooner, again happiness you'd have gained\nIn my ignorance, I've done nothing\n\nSo here I am pondering,\nAs I stand here under the gloomy skies, \nSorrowful as can be...\n\nMy dear departed friend I'm wondering, \nWith many tears in my eyes, \nCan you ever forgive me...?",
-          "ananki_reasoning": "The comment is a poignant poem written to a departed friend, expressing deep sorrow over their loss. The phrases 'why did you leave' (cut off but clearly indicating departure/death), 'my heart aches,' 'weary bones,' and the reflective remembrance of shared experiences ('good times well spent,' 'we made it through') all point to grief and mourning. While the title mentions 'Gothic piano and violin music' which could suggest Dark - Gothic, the emotional content is fundamentally about loss and grieving a friend who has passed away or left permanently. The song title 'Forgive Me' combined with this deeply personal elegy makes Sad - Grief the most appropriate sub-vibe, as it captures the emotional weight of losing someone important and processing that loss through memory and lamentation.",
-          "mapped_subvibe": "Sad - Grief",
-          "coordinates": {
-            "x": 552.5,
-            "y": 607.5
-          },
-          "current_vibe": "Sad - Grief",
-          "emotional_composition": {
-            "Sad": 0.55,
-            "Romantic": 0.25,
-            "Dark": 0.1,
-            "Night": 0.1,
-            "Happy": 0.0,
-            "Party": 0.0,
-            "Chill": 0.0,
-            "Energy": 0.0,
-            "Drive": 0.0
-          }
-        },
-        {
           "artist": "Kino",
           "song": "Спокойная ночь",
           "spotify_id": "0u6SJZRhC1KSguPxLACkt9",
@@ -13668,38 +13508,6 @@
           }
         },
         {
-          "artist": "Anna Clendening",
-          "song": "Anxiety",
-          "spotify_id": "6rP36OPgUSLpucxmOebHmL",
-          "spotify_uri": "spotify:track:6rP36OPgUSLpucxmOebHmL",
-          "comment_score": 4013,
-          "source_url": "https://youtube.com/watch?v=otvSNtC0Bgk",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Songs for anxiety, insecure, etc.",
-          "comment_text": "A- A pain\nN- Not happiness\nX- Xylophones dont play happy tunes\nI- I hate it\nE- Everything seems bad\nT- Terrible Times\nY- Yes it SUCKS\n\nBut you can get through it ❤️😊🥰😘",
-          "ananki_reasoning": "The human's comment uses an acrostic spelling out 'ANXIETY' with each line describing negative emotional states: pain, lack of happiness, hate, everything seeming bad, and terrible times. The song is literally titled 'Anxiety' by Anna Clendening. While the comment ends with encouragement ('But you can get through it'), the core emotional content describes the heavy, overwhelming feelings characteristic of anxiety and depression - not just sadness or loneliness, but a more pervasive sense that 'everything seems bad' and times are 'terrible.' This maps most closely to Sad - Depressive rather than other sad sub-vibes, as it captures the weight and encompassing nature of anxiety disorders.",
-          "mapped_subvibe": "Sad - Depressive",
-          "coordinates": {
-            "x": 457.5,
-            "y": 680.0
-          },
-          "current_vibe": "Sad - Depressive",
-          "emotional_composition": {
-            "Sad": 0.55,
-            "Dark": 0.25,
-            "Night": 0.15,
-            "Energy": 0.05,
-            "Happy": 0.0,
-            "Chill": 0.0,
-            "Romantic": 0.0,
-            "Drive": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
           "artist": "Nightcore Reality",
           "song": "You Don't Know",
           "spotify_id": "3aEmviGjLaNDEYdeuZ8MG8",
@@ -14049,38 +13857,6 @@
             "Chill": 0.0,
             "Energy": 0.0,
             "Drive": 0.0
-          }
-        },
-        {
-          "artist": "Hillsong Worship",
-          "song": "What A Beautiful Name",
-          "spotify_id": "4eqajlNmGZTmwUxd0BIBSH",
-          "spotify_uri": "spotify:track:4eqajlNmGZTmwUxd0BIBSH",
-          "comment_score": 22220,
-          "source_url": "https://youtube.com/watch?v=nQWFzMvCfLE",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Feeling down😔- Christian Songs",
-          "comment_text": "He's there during depression.\r\nHe's there during anxiety.\r\nHe's there during stress.\r\nHe's there during fear.\r\nHe's there during sadness.\r\nHe's there during pain.\r\nHe's there during guilt.\r\nHe understands you.\r\nHe loves you.\r\n\r\nGod, bless whoever is reading this. Help them with their needs, Lord. In Your name I pray, Amen.",
-          "ananki_reasoning": "The post title explicitly states 'Feeling down😔' and the comment systematically lists serious emotional struggles including depression, anxiety, stress, fear, sadness, pain, and guilt. The commenter is offering spiritual comfort through the message that God is present during all these difficult states. 'What A Beautiful Name' by Hillsong Worship is being recommended as a source of hope and reassurance during depressive feelings. While the song itself carries an uplifting message, it's being recommended specifically for someone experiencing depression and multiple forms of emotional distress, making 'Sad - Depressive' the most appropriate sub-vibe classification for this context.",
-          "mapped_subvibe": "Sad - Depressive",
-          "coordinates": {
-            "x": 515.0,
-            "y": 550.0
-          },
-          "current_vibe": "Sad - Depressive",
-          "emotional_composition": {
-            "Sad": 0.5,
-            "Dark": 0.2,
-            "Romantic": 0.1,
-            "Chill": 0.1,
-            "Happy": 0.1,
-            "Energy": 0.0,
-            "Night": 0.0,
-            "Drive": 0.0,
-            "Party": 0.0
           }
         },
         {
@@ -14975,38 +14751,6 @@
             "Happy": 0.0,
             "Chill": 0.0,
             "Energy": 0.0,
-            "Drive": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
-          "artist": "Mr. Emotional",
-          "song": "Tragic",
-          "spotify_id": "5p6oFAw7GADItvho7xCzSX",
-          "spotify_uri": "spotify:track:5p6oFAw7GADItvho7xCzSX",
-          "comment_score": 2311,
-          "source_url": "https://youtube.com/watch?v=zQtZDH6QkUc",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 1,
-          "full_context": "",
-          "post_title": "Suicidal, depression, anxiety and self harm songs",
-          "comment_text": "Just a cut\nJust a scratch \nJust a scar \nIt was just the cat\nJust an excuse \nJust another lie \nWhat’s with all the bracelets? \nJust fashion, why? \nJust a tear \nJust a scream \nJust a fear\nWhy were u crying why are u afraid \nJust a bad dream. \nBut it’s not just a cut \nOr a tear or a lie\nIt’s always just once more \nUntil I die",
-          "ananki_reasoning": "The context is a poem explicitly about self-harm, suicidal ideation, depression, and anxiety. The repeated phrase 'just' minimizes serious mental health struggles and self-destructive behaviors, culminating in 'It's always just once more / Until I die.' This directly addresses suicidal thoughts and the cycle of self-harm. The song 'Tragic' by Mr. Emotional was validated in a thread specifically requesting 'Suicidal, depression, anxiety and self harm songs.' This content goes beyond general sadness or melancholy - it deals with severe depression and actively suicidal/self-harm themes, making 'Sad - Depressive' the most appropriate classification as it captures the clinical/serious nature of depression rather than situational sadness.",
-          "mapped_subvibe": "Sad - Depressive",
-          "coordinates": {
-            "x": 442.5,
-            "y": 660.0
-          },
-          "current_vibe": "Sad - Depressive",
-          "emotional_composition": {
-            "Sad": 0.55,
-            "Dark": 0.25,
-            "Energy": 0.1,
-            "Night": 0.1,
-            "Happy": 0.0,
-            "Chill": 0.0,
-            "Romantic": 0.0,
             "Drive": 0.0,
             "Party": 0.0
           }
@@ -21862,38 +21606,6 @@
           }
         },
         {
-          "artist": "SIX60",
-          "song": "Up There",
-          "spotify_id": "7HjPVBopvseaOMPUS6Fryi",
-          "spotify_uri": "spotify:track:7HjPVBopvseaOMPUS6Fryi",
-          "comment_score": 1,
-          "source_url": "https://reddit.com/r/ifyoulikeblank/comments/1mm6d5f/iil_looking_for_specific_type_of_music/n7vnhq7/",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "[iil] Looking for specific type of music",
-          "comment_text": "The night we met- Lord Huron;\nSwans- Uncle Bob;\nThe mess inside- Mountain Goats, their whole album Tallahassee;\ni wish i was the moon- neko case;\nAugust (acoustic)- flipturn;\nold ties and companions- watchtower;\nBy and By- caamp;\nrises the moon- liana flores;\ndear mccraken- bug hunter;\nlover's carvings (wxrxaxp)- bilbio;\nplay crack the sky- brand new;\nportland maine- donovan woods;\nsophie- bear den;\nbig black car- gregory allan isakov*;\nnaked as we came- iron & wine *;\nThe microphones/phil everum, tallest man on earth, the ones with *generally\nhopefully this is a good starting off point and that some of it meets your tastes!",
-          "ananki_reasoning": "The context list is dominated by indie folk/acoustic songs with melancholic, introspective, and yearning qualities. Songs like 'The Night We Met' by Lord Huron, 'Naked As We Came' by Iron & Wine, and 'Big Black Car' by Gregory Allan Isakov are archetypal sad-nostalgic tracks that reflect on memory, loss, and bittersweet reflection. The list emphasizes stripped-down, emotionally raw acoustic arrangements that evoke wistfulness rather than acute heartbreak or grief. SIX60's 'Up There' fits this emotional palette of gentle melancholy mixed with nostalgic longing, consistent with the indie folk aesthetic the requester is seeking.",
-          "mapped_subvibe": "Sad - Nostalgic Sad",
-          "coordinates": {
-            "x": 562.5,
-            "y": 610.0
-          },
-          "current_vibe": "Sad - Nostalgic Sad",
-          "emotional_composition": {
-            "Sad": 0.55,
-            "Romantic": 0.25,
-            "Night": 0.15,
-            "Dark": 0.05,
-            "Chill": 0.0,
-            "Happy": 0.0,
-            "Energy": 0.0,
-            "Drive": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
           "artist": "The Supernaturals",
           "song": "The Day Before Yesterday's Man",
           "spotify_id": "2SbbdbdMxi7KCtx1dLeait",
@@ -24118,38 +23830,6 @@
             "Romantic": 0.3,
             "Chill": 0.1,
             "Energy": 0.05,
-            "Sad": 0.0,
-            "Dark": 0.0,
-            "Night": 0.0,
-            "Drive": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
-          "artist": "Laid Back",
-          "song": "Beautiful Day",
-          "spotify_id": "5xRGn3vg8EfDJGuIf9GBt7",
-          "spotify_uri": "spotify:track:5xRGn3vg8EfDJGuIf9GBt7",
-          "comment_score": 47,
-          "source_url": "https://youtube.com/watch?v=763Uij9n1tc",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Laid Back (The very best of)",
-          "comment_text": "When I woke up this morning,\nI said to myself:\nShould I laugh, or should I cry?\nIt's a beautiful, beautiful, beautiful day today\nDon't take it away\n\nFunny little things\nCan make my day\nFunny little things\nCan take it away\n\nIt's a beautiful day",
-          "ananki_reasoning": "The lyrics clearly express a deliberate choice to embrace positivity ('Should I laugh, or should I cry?') and appreciation for life's simple pleasures ('Funny little things / Can make my day'). The repeated affirmation 'It's a beautiful day' and the plea 'Don't take it away' suggest a conscious celebration of good feelings and everyday joys. This perfectly aligns with the 'Feel Good' sub-vibe, which captures uplifting, optimistic moments focused on appreciating the present rather than pure euphoria or celebration.",
-          "mapped_subvibe": "Happy - Feel Good",
-          "coordinates": {
-            "x": 560.0,
-            "y": 265.0
-          },
-          "current_vibe": "Happy - Feel Good",
-          "emotional_composition": {
-            "Happy": 0.5,
-            "Chill": 0.3,
-            "Energy": 0.1,
-            "Romantic": 0.1,
             "Sad": 0.0,
             "Dark": 0.0,
             "Night": 0.0,
@@ -28097,7 +27777,7 @@
           "mapping_confidence": 0.85,
           "full_context": "",
           "post_title": "Music for boring days",
-          "comment_text": "Đây là Touliver của năm 2011 mà e đã từng biết nhưng ở 1 phiên bản mới hơn, vẫn là tiếng Piano đấy, vẫn là những nốt melody chạm vào tim.. bài này thực sự là  viên thuốc nạp lại năng lượng cho 1 ngày mới 😊😊",
+          "comment_text": "This is the Touliver of 2011 that I used to know but in a newer version, still that Piano sound, still those melodies that touch the heart.. this song is truly a pill that recharges energy for a new day",
           "ananki_reasoning": "The commenter describes this song as 'medicine to recharge energy for a new day' (viên thuốc nạp lại năng lượng cho 1 ngày mới), specifically mentioning piano and melody notes that 'touch the heart.' The context of 'boring days' in the post title combined with the energizing yet gentle, piano-based nature of the song suggests a peaceful, uplifting start-of-day vibe rather than intense energy. The emphasis on emotional recharging and preparation for a new day aligns perfectly with the contemplative yet optimistic feeling of a morning coffee ritual.",
           "mapped_subvibe": "Chill - Morning Coffee",
           "coordinates": {
@@ -28211,38 +27891,6 @@
             "Night": 0.0,
             "Drive": 0.1,
             "Party": 0.0
-          }
-        },
-        {
-          "artist": "Echoes of Dawn",
-          "song": "Shaman Soundscape",
-          "spotify_id": "64nEe0OVFFQuDNSwbMVlXI",
-          "spotify_uri": "spotify:track:64nEe0OVFFQuDNSwbMVlXI",
-          "comment_score": 52,
-          "source_url": "https://youtube.com/watch?v=YiITXNYCjAg",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Japan Zen Music for Meditation, Relax and Study",
-          "comment_text": "Taking inspiration from early morning walks in rural Japan, today we have something with a little more energy to start the day. Hope it helps :)",
-          "ananki_reasoning": "The human explicitly describes this music as inspired by 'early morning walks in rural Japan' and mentions it has 'a little more energy to start the day.' The context clearly positions this as morning-focused content for meditation, relaxation, and study. While the song title 'Shaman Soundscape' suggests ambient/meditative qualities, the emphasis on morning energy and starting the day aligns perfectly with the 'Morning Coffee' sub-vibe, which captures that calm yet energizing quality of peaceful morning routines.",
-          "mapped_subvibe": "Chill - Morning Coffee",
-          "coordinates": {
-            "x": 562.5,
-            "y": 312.5
-          },
-          "current_vibe": "Chill - Morning Coffee",
-          "emotional_composition": {
-            "Chill": 0.5,
-            "Energy": 0.25,
-            "Happy": 0.15,
-            "Romantic": 0.1,
-            "Sad": 0.0,
-            "Party": 0.0,
-            "Dark": 0.0,
-            "Night": 0.0,
-            "Drive": 0.0
           }
         },
         {
@@ -29735,38 +29383,6 @@
             "Dark": 0.0,
             "Night": 0.0,
             "Drive": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
-          "artist": "Woodlock",
-          "song": "We Gotta Go",
-          "spotify_id": "7yhMzOtnrsZUULmpRpIBA8",
-          "spotify_uri": "spotify:track:7yhMzOtnrsZUULmpRpIBA8",
-          "comment_score": 34,
-          "source_url": "https://youtube.com/watch?v=xD3DqRxWfDs",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "chill &amp; mellow",
-          "comment_text": "❖ Lyrics: Woodlock - We Gotta Go:\n\nI know we gotta leave\nBut we don’t gotta go right now\nYour anxieties\nYou been trying to hold them down\nThey’re pulling at your sleeve\nWe are gonna ride this out\n\nEverything will be alright\nEverything will be alright\n\nBut we gotta go now\nTo a city that loves you\nSomething like I do\nBut we gotta go now\nYea we gotta go\n\nWe’re gonna find out\nThings we’ve been missing\nWe don’t really know\nBut we’re gonna find out\nWe gotta go\nYea we gotta go\n\nIt used to make me weak\nAnd now it’s running in my blood\nSomething I can’t see\nLifts you up but weighs a ton\nMoving through the crowds\nPicks you up and wears you down\n\nEverything will be alright\nEverything will be alright\n\nBut we gotta go now\nTo a city that loves you\nSomething like I do\nBut we gotta go now\nYea we gotta go\n\nWe’re gonna find out\nThings we’ve been missing\nWe don’t really know\nBut we’re gonna find out\nSo we gotta go\nYea we gotta go\n\nEverything will be alright\n\nBut we gotta go now\nTo a city that loves you\nSomething like I do\nBut we gotta go now\nYea we gotta go\n\nWe’re gonna find out\nThings we’ve been missing\nWe don’t really know\nBut we’re gonna find out\nSo we gotta go\nYea we gotta go",
-          "ananki_reasoning": "The post title explicitly states 'chill & mellow,' and the lyrics reflect a gentle, reassuring tone about leaving/moving forward without urgency ('we don't gotta go right now'). The song has a calming, contemplative quality with themes of comfort ('Everything will be alright') and measured transition rather than intense emotion. The 'Sunday' sub-vibe captures this relaxed, unhurried atmosphere of gentle reflection and easy-going transition - not quite as ambient or background as 'Lofi' or 'Ambient', but more purposeful. The reassuring, soft encouragement in the lyrics ('gonna ride this out') fits the reflective comfort of a Sunday feeling.",
-          "mapped_subvibe": "Chill - Sunday",
-          "coordinates": {
-            "x": 595.0,
-            "y": 405.0
-          },
-          "current_vibe": "Chill - Sunday",
-          "emotional_composition": {
-            "Chill": 0.45,
-            "Romantic": 0.25,
-            "Drive": 0.15,
-            "Sad": 0.1,
-            "Energy": 0.05,
-            "Happy": 0.0,
-            "Dark": 0.0,
-            "Night": 0.0,
             "Party": 0.0
           }
         },
@@ -31419,38 +31035,6 @@
           }
         },
         {
-          "artist": "Relaxing Music for Stress Relief",
-          "song": "Beautiful Stress Relief",
-          "spotify_id": "6CeNIAwUHYSUona8L8IjSQ",
-          "spotify_uri": "spotify:track:6CeNIAwUHYSUona8L8IjSQ",
-          "comment_score": 27,
-          "source_url": "https://youtube.com/watch?v=42_yTg1eVpY",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Japan Zen Music for Meditation, Relax and Study",
-          "comment_text": "We step into a tranquil world today, immersed in the spirit of Japanese Zen Music. Really enjoyed putting this together. Hope it helps :)",
-          "ananki_reasoning": "The human explicitly describes this as 'Japanese Zen Music for Meditation, Relax and Study' and mentions stepping into a 'tranquil world.' The context emphasizes peaceful, meditative qualities designed to help listeners relax or focus. The song title 'Beautiful Stress Relief' by an artist specializing in relaxing music confirms this is ambient, atmospheric content meant for calming rather than any emotional storytelling or active engagement. While 'Night - Sleep' could be considered, the mention of 'study' and general meditation purposes makes 'Chill - Ambient' the most accurate fit, as it captures the broader contemplative, atmospheric quality of Zen-inspired relaxation music used throughout the day.",
-          "mapped_subvibe": "Chill - Ambient",
-          "coordinates": {
-            "x": 625.0,
-            "y": 345.0
-          },
-          "current_vibe": "Chill - Ambient",
-          "emotional_composition": {
-            "Sad": 0.0,
-            "Happy": 0.1,
-            "Chill": 0.6,
-            "Energy": 0.1,
-            "Dark": 0.0,
-            "Romantic": 0.1,
-            "Night": 0.1,
-            "Drive": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
           "artist": "The Grouch & Eligh",
           "song": "Sound, Noise, Music",
           "spotify_id": "3ybcNYnJroHSI4pJ47jG2t",
@@ -33089,38 +32673,6 @@
           }
         },
         {
-          "artist": "Sinizter",
-          "song": "Dark Graves",
-          "spotify_id": "7r82V5OnVckfeiGOE8Rtui",
-          "spotify_uri": "spotify:track:7r82V5OnVckfeiGOE8Rtui",
-          "comment_score": 10,
-          "source_url": "https://youtube.com/watch?v=z9KwUZrWzSE",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 1.0,
-          "full_context": "",
-          "post_title": "songs to cry to alone in your room at 3am",
-          "comment_text": "LYRICS:\n\n(SINIZTER)\n\nI don’t show no affection/\nThese hoes want my attention/\nI don’t fold under pressure/\nAll I had was good intentions/\n\nLook at the world for what it is/\nI just be tellin’ shit how it is/\nHalf of you not even genuine/\nFuck with me for your own benefit/\n\nI drown in my thoughts in my conscious/\nSympathy gone if I’m honest/\nAin’t talkin’ to no one I’m silent/\nDeep in the depths I have fallen/\n\nI’m seein’ dark graves, I watch the light fade/\nI seal my fate, they open death’s gate/\n\n(BEARDED LEGEND)\n\nHead up, oh no\nHead up, oh no\nHead up, oh no\nHead up, oh...\n\nWhy they acting cold?\nI couldn’t sell my soul,\nYou see they do it all the same, I had to break the mold,\nI do it by myself,\nIt’s like I’m single-celled,\nIt ain’t my demons I’ll be keeping, send ‘em all to hell,\nFeeling like I’m levitating and I don’t know why,\nDoing what I want and I’ll admit it, fuck an alibi,\nIf I wanna get it, I’ma get it, I’ma do it right,\nYou ain’t understanding what my plan is ‘cause we’re not alike, yeah,\nBetter stay away,\nOr meet a dark grave,\nYou’re surrounded by the night, see the light fade,\nYou’re ready for the worst,\nAnd know the truth hurts,\nYou see the damage being done, it cannot be reversed\n\nHead up, oh no\nHead up, oh no\nHead up, oh no\nHead up, oh…",
-          "ananki_reasoning": "The post title explicitly mentions 'songs to cry to alone in your room at 3am,' and the lyrics deeply align with late-night introspection and dark rumination. The song explores themes of emotional isolation ('Ain't talkin' to no one I'm silent'), drowning in one's thoughts ('I drown in my thoughts in my conscious'), and existential darkness ('I'm seein' dark graves, I watch the light fade'). This perfectly captures the specific emotional state of being alone with overwhelming thoughts in the early morning hours - a quintessential 3AM experience of spiraling into dark internal reflection rather than general sadness or depression.",
-          "mapped_subvibe": "Night - 3AM Thoughts",
-          "coordinates": {
-            "x": 392.5,
-            "y": 702.5
-          },
-          "current_vibe": "Night - 3AM Thoughts",
-          "emotional_composition": {
-            "Sad": 0.25,
-            "Happy": 0.0,
-            "Chill": 0.0,
-            "Energy": 0.15,
-            "Dark": 0.5,
-            "Romantic": 0.0,
-            "Night": 0.1,
-            "Drive": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
           "artist": "The Universe",
           "song": "Bedtime Stories",
           "spotify_id": "3azPPepQ1yI4YugenFXcxl",
@@ -33574,38 +33126,6 @@
             "Romantic": 0.0,
             "Happy": 0.0,
             "Energy": 0.0,
-            "Drive": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
-          "artist": "Silent Rhythm",
-          "song": "Deep Healing Sleep Music",
-          "spotify_id": "2M2VejsVLg83cSnjvCz9Ty",
-          "spotify_uri": "spotify:track:2M2VejsVLg83cSnjvCz9Ty",
-          "comment_score": 32362,
-          "source_url": "https://youtube.com/watch?v=xsfyb1pStdw",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 1,
-          "full_context": "",
-          "post_title": "Calming music for anxiety - Healing Music for Stress Relief - Peaceful Meditation, Deep Sleep Music",
-          "comment_text": "Some of us don't hear or read this too often, so I'm just here to say that, I love you. You'll be okay, you are going to be alright. ❤️",
-          "ananki_reasoning": "The post title explicitly mentions 'Deep Sleep Music' and 'Healing Music for Stress Relief,' while the comment offers comforting reassurance to anxious listeners. The song title 'Deep Healing Sleep Music' and the entire context centers on using music as a tool for sleep and anxiety relief. This clearly maps to the Night - Sleep sub-vibe, as the music is specifically designed for sleep purposes with healing and calming intentions.",
-          "mapped_subvibe": "Night - Sleep",
-          "coordinates": {
-            "x": 628.57,
-            "y": 532.14
-          },
-          "current_vibe": "Night - Sleep",
-          "emotional_composition": {
-            "Sad": 0.0,
-            "Happy": 0.07142857142857144,
-            "Chill": 0.35714285714285715,
-            "Energy": 0.0,
-            "Dark": 0.0,
-            "Romantic": 0.14285714285714288,
-            "Night": 0.4285714285714286,
             "Drive": 0.0,
             "Party": 0.0
           }
@@ -35153,38 +34673,6 @@
             "Party": 0.0,
             "Romantic": 0.0,
             "Chill": 0.0
-          }
-        },
-        {
-          "artist": "Ray Wilson",
-          "song": "Mama - Live And Acoustic",
-          "spotify_id": "3HaL4nsGxs3mIEsPQhI75Z",
-          "spotify_uri": "spotify:track:3HaL4nsGxs3mIEsPQhI75Z",
-          "comment_score": 328,
-          "source_url": "https://youtube.com/watch?v=CiWvVKuUSsw",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "contemplative Christian Music",
-          "comment_text": "Lyric\nI fall down upon the ground\nPress my face against the earth\nTill my heart it rises over my head\nAs the wheat it bows down low\nWhen the autumn wind blows\nI kneel before the One I love\n\nFind me grateful\nFind me thankful\nFind me on my knees\nFind me dreaming\nFind me singing\nFind me lost in Your grace\n\nLike the dust that You first held\nIn a garden where You knelt\nPull me up against Your face again\nTill the breath of Your hope\nFill the depths of my soul\nTill all I know is I’ve been found by love",
-          "ananki_reasoning": "The post title explicitly describes this as 'contemplative Christian Music,' and the lyrics strongly support this categorization. The song expresses deep spiritual reflection through imagery of kneeling, pressing one's face to the ground, and seeking connection with the divine. The contemplative nature is evident in themes of gratitude, surrender, being 'lost in Your grace,' and the searching quality of 'till my heart it rises over my head.' The meditative, introspective tone of worship - particularly the vulnerable posture of falling down and kneeling - aligns perfectly with contemplative emotional space. While this has spiritual/religious elements, the overall emotional experience is one of quiet, deep reflection and seeking, which is the essence of the Night - Contemplative sub-vibe.",
-          "mapped_subvibe": "Night - Contemplative",
-          "coordinates": {
-            "x": 630.0,
-            "y": 565.0
-          },
-          "current_vibe": "Night - Contemplative",
-          "emotional_composition": {
-            "Sad": 0.1,
-            "Happy": 0.0,
-            "Chill": 0.3,
-            "Energy": 0.0,
-            "Dark": 0.0,
-            "Romantic": 0.2,
-            "Night": 0.4,
-            "Drive": 0.0,
-            "Party": 0.0
           }
         },
         {
@@ -37642,38 +37130,6 @@
           }
         },
         {
-          "artist": "Korn",
-          "song": "Freak On a Leash",
-          "spotify_id": "6W21LNLz9Sw7sUSNWMSHRu",
-          "spotify_uri": "spotify:track:6W21LNLz9Sw7sUSNWMSHRu",
-          "comment_score": 31941,
-          "source_url": "https://youtube.com/watch?v=jRGrNDV2mKc",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Energy Booster: Rock",
-          "comment_text": "When he said\n\nBoom na da noom na na nema\nDa boom na da noom na namena\nDa boom na ba noom na namena\nDa boom na da noom na namena\nDa boom na ba noom na namena\nDa boom na da noom na namena\nDa boom na ba noom na namena\nDa boom na da noom na namena\nDa boom na ba noom na namena\nDa boom na da noom na namena\nDa boom na ba noom na namena\nDa boom na da noom na namena\nGo!\n\nI felt that",
-          "ananki_reasoning": "The human is expressing visceral excitement about the iconic vocal breakdown in Korn's 'Freak On a Leash' - one of nu-metal's most recognizable moments. The post title explicitly categorizes this as an 'Energy Booster: Rock' and the comment emphasizes the cathartic, powerful delivery of the nonsensical vocal section that builds to 'Go!' This is a classic pump-up moment that energizes listeners through raw intensity and release. The song's aggressive, driving nature and this particular section's explosive energy make it ideal for getting hyped up rather than just general workout (which is more sustained cardio energy).",
-          "mapped_subvibe": "Energy - Pump Up",
-          "coordinates": {
-            "x": 305.0,
-            "y": 615.0
-          },
-          "current_vibe": "Energy - Pump Up",
-          "emotional_composition": {
-            "Energy": 0.5,
-            "Dark": 0.3,
-            "Drive": 0.1,
-            "Night": 0.1,
-            "Sad": 0.0,
-            "Happy": 0.0,
-            "Chill": 0.0,
-            "Romantic": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
           "artist": "OneRepublic",
           "song": "Sunshine",
           "spotify_id": "7qKIbKpRqsDoXG5vMK6fuT",
@@ -38023,38 +37479,6 @@
             "Night": 0.0,
             "Drive": 0.2,
             "Party": 0.0
-          }
-        },
-        {
-          "artist": "System Of A Down",
-          "song": "Prison Song",
-          "spotify_id": "3AwLxSqo1jOOMpNsgxqRNE",
-          "spotify_uri": "spotify:track:3AwLxSqo1jOOMpNsgxqRNE",
-          "comment_score": 38,
-          "source_url": "https://reddit.com/r/Music/comments/1lillg6/where_are_the_good_modern_protest_songs/mzd5d29/",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Where are the good modern protest songs?",
-          "comment_text": "System Of A Down - Prison Song\n\n\"Following the rights movements  \nYou clamped on with your iron fists,  \nDrugs became conveniently  \nAvailable for all the kids,\"\n\n\"Minor drug offenders fill your prisons  \nYou don't even flinch  \nAll our taxes paying for your wars  \nAgainst the new non-rich,\"",
-          "ananki_reasoning": "This is a political protest song by System Of A Down that critiques the prison-industrial complex and mass incarceration for minor drug offenses. The quoted lyrics show aggressive social commentary about systemic injustice. While the content is politically charged and angry rather than celebratory, SOAD's signature style combines furious energy with metal aggression that pumps up listeners through its intensity and call-to-action message. The song channels righteous anger into high-energy performance, making it protest music that energizes rather than depresses. It's meant to activate and mobilize listeners against injustice through raw, aggressive energy.",
-          "mapped_subvibe": "Energy - Pump Up",
-          "coordinates": {
-            "x": 315.0,
-            "y": 605.0
-          },
-          "current_vibe": "Energy - Pump Up",
-          "emotional_composition": {
-            "Dark": 0.4,
-            "Energy": 0.5,
-            "Sad": 0.1,
-            "Party": 0.0,
-            "Happy": 0.0,
-            "Chill": 0.0,
-            "Romantic": 0.0,
-            "Night": 0.0,
-            "Drive": 0.0
           }
         },
         {
@@ -38891,38 +38315,6 @@
             "Chill": 0.0,
             "Romantic": 0.0,
             "Night": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
-          "artist": "Peppermint Ollie",
-          "song": "Difficult",
-          "spotify_id": "5lxus7Uge3HPujvzCa5SCh",
-          "spotify_uri": "spotify:track:5lxus7Uge3HPujvzCa5SCh",
-          "comment_score": 142,
-          "source_url": "https://youtube.com/watch?v=dh-r03vQB0M",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.75,
-          "full_context": "",
-          "post_title": "Angry breakup songs",
-          "comment_text": "[Verse 1: Brendan]\nIf you weren't so stupid\nI could have loved you\nAnd if you weren't so stupid\nBut you're pretty stupid\nAnd if you weren't so busy\nI could have loved you\nBut you work in an office\nAnd you've got other offers\n\n[Pre-Chorus: Brendan]\nTell me what is his name now\nWhat is his name?\nI am excited to hear the news\nTell me what is his name now\nWhat does it say about you?\n\n[Chorus: Brendan]\nBut let's not\nBe friends\nOr else this'll never end\nLet's not\nBe friends\nFor sure, for sure\n\n[Verse 2: Brendan]\nAnd if you weren't so ugly I could've loved you\nIt's something I tell myself when down\nTo get high\nLord\n\n[Verse 3: Brendan]\nIf you made me a coffee I could've loved you\nAnd I'd make you hot chocolate\nAnd anything you wanted\n\n[Pre-Chorus 2; Brendan]\nTell me who is invited?\nSo fuckin' delighted\nTo see all the boys you see\nTell me why don't I fight it\nWhat does it say about me?\n\n[Chorus: Brendan]\nAnd let's not\nBe friends\nOr else this'll never end\nLet's not\nBe friends\nFor sure, for sure\n\n[Outro]\nWe'd adopt\nWe'd adopt\nI'd have all the things he's got\nBut I'm not\nSo let's stop\nPretend\nThat there'll be a happy end\nLet's not be friends\nFor, sure\n(For sure)\nWe'd adopt\nWe'd have dogs\nI'd have all the things He's got\nBut I'm not",
-          "ananki_reasoning": "While this was posted in an 'angry breakup songs' thread, the lyrics convey a defiant, empowered stance rather than sadness or vulnerability. The narrator is calling out their ex's flaws ('if you weren't so stupid'), setting firm boundaries ('let's not be friends'), and asserting themselves with a tone that's more confrontational and self-assured than heartbroken. The energy is assertive and boundary-setting - the person is done and saying it clearly. This maps better to confidence/empowerment rather than traditional breakup sadness or anger vibes.",
-          "mapped_subvibe": "Energy - Confidence",
-          "coordinates": {
-            "x": 395.0,
-            "y": 565.0
-          },
-          "current_vibe": "Energy - Confidence",
-          "emotional_composition": {
-            "Sad": 0.3,
-            "Energy": 0.4,
-            "Dark": 0.2,
-            "Romantic": 0.1,
-            "Happy": 0.0,
-            "Chill": 0.0,
-            "Night": 0.0,
-            "Drive": 0.0,
             "Party": 0.0
           }
         },
@@ -39985,38 +39377,6 @@
           }
         },
         {
-          "artist": "Laid Back",
-          "song": "I Walk Proud",
-          "spotify_id": "5mnjOgduR031VPi0Dpygal",
-          "spotify_uri": "spotify:track:5mnjOgduR031VPi0Dpygal",
-          "comment_score": 13,
-          "source_url": "https://youtube.com/watch?v=1ZbWGRMIQ3Y",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Laid Back (The very best of)",
-          "comment_text": "I   walk   proud  \nThru the rush and crowd \nCause  I  know things will go my way \n I  got time \nGot lots of time \nAll  I  have to do is ride around \nAnd keep my feet close to the ground \nAs  I   walk  thru the crowded street \nJust  walk   proud  \nIf you are in a crowd \n\nDancing stairway to the sky \nWhen  I  need to get away  I  fly \nOut there away from home \n I  can go and find my peace of mind \nBut  I  keep my feet close to the ground \nAs  I   walk  thru the crowded street \nJust  walk   proud  \nIf you are on a cloud \n\n Walking  alone so free and easy \nThinking about my destiny \nSinging a song so sweet and breezy \n I’m  thinking of you \n I   walk   proud  \n I   walk   proud  \n\n Walking  alone so free and easy \nThinking about my destiny \nSinging a song so sweet and breezy \n I’m  thinking of you \n I   walk   proud  \n I   walk   proud  \nThrough the rush and crowd \n I   walk   proud  \nOh yeah \n I   walk   proud  \nCause  I  know those things will go my way \n I   walk   proud",
-          "ananki_reasoning": "The lyrics repeatedly emphasize walking proud through crowds, knowing things will go their way, and maintaining self-assurance ('keep my feet close to the ground'). The song's core message is about confident self-possession while moving through life and crowded spaces. The tone is assertive and self-assured rather than aggressive workout energy or celebratory - it's about inner confidence and composure ('I know things will go my way', 'I got time, Got lots of time'). While there are chill elements about finding peace of mind, the dominant emotional thread is empowered confidence.",
-          "mapped_subvibe": "Energy - Confidence",
-          "coordinates": {
-            "x": 415.0,
-            "y": 420.0
-          },
-          "current_vibe": "Energy - Confidence",
-          "emotional_composition": {
-            "Sad": 0.0,
-            "Happy": 0.2,
-            "Chill": 0.2,
-            "Energy": 0.4,
-            "Dark": 0.0,
-            "Romantic": 0.0,
-            "Night": 0.1,
-            "Drive": 0.1,
-            "Party": 0.0
-          }
-        },
-        {
           "artist": "Selena Gomez & The Scene",
           "song": "Who Says",
           "spotify_id": "3TcL0dyCMyr0kyTTc4NLgI",
@@ -40365,38 +39725,6 @@
             "Romantic": 0.1,
             "Night": 0.0,
             "Drive": 0.1,
-            "Party": 0.0
-          }
-        },
-        {
-          "artist": "Little Mix",
-          "song": "We Are Who We Are",
-          "spotify_id": "3IH70GR4OiqkWMZhaByJDk",
-          "spotify_uri": "spotify:track:3IH70GR4OiqkWMZhaByJDk",
-          "comment_score": 8,
-          "source_url": "https://youtube.com/watch?v=Nvgc1t7w8LY",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 1,
-          "full_context": "",
-          "post_title": "Confidence boosting songs",
-          "comment_text": "Momma, momma, momma made me the way I am\nMy face, my eyes, someone turn me up, I'm speaking my mind\nAnd I, and I, I've been wasting a lot of time looking in mirrors\nAnd hating on me, but now I like what I see\nI know, I know, I never be perfect\nI know, I know, but I'm gonna work it\nLet go, let go, put your new shoes on\nThe new you on\nWe are who we are, who we are, pretty's just a petty word\nAnd I'm gonna shine like a star, cause I'm the only me in this world\nThrow away the books and the magazines, I'm never gonna look like a beauty queen\nWe are who we are, who we are, and I'm just doing me, just doing me\nAnd I'm just doing me, just doing me\nMomma, momma, momma made me the way I am\nShe told me I should look up on the world with my head held high\nAnd I, and I, I've been wasting a lot of time looking in mirrors\nAnd hating on me, but now I like what I see\nI know, I know, I never be perfect\nI know, I know, but I'm gonna work it\nLet go, let go, put your new shoes on\nThe new you on\nWe are who we are, who we are, pretty's just a petty word\nAnd I'm gonna shine like a star, cause I'm the only me in this world\nThrow away the books and the magazines, I'm never gonna look like a beauty queen\nWe are who we are, who we are, and I'm just doing me, just doing me\nAnd I'm just doing me, just doing me\nI know, I know, I never be perfect\nI know, I know, but I'm gonna work it\nLet go, let go, put your new shoes on\nThe new you on\nWe are who we are, who we are, pretty's just a petty word\nAnd I'm gonna shine like a star, cause I'm the only me in this world\nThrow away the books and the magazines, I'm never gonna look like a beauty queen\nWe are who we are, who we are, and I'm just doing me, just doing me\nAnd I'm just doing me, just doing me\nAnd I'm just doing me, just doing me\nAnd I'm just doing me, just doing me\nAnd I'm just doing me, just doing me",
-          "ananki_reasoning": "The post title explicitly asks for 'Confidence boosting songs' and the lyrics directly support this theme with messages of self-acceptance, self-love, and empowerment. Key phrases like 'now I like what I see,' 'I'm gonna work it,' 'I'm gonna shine like a star,' and 'I'm the only me in this world' all emphasize building confidence and embracing one's authentic self. The song's message about rejecting societal beauty standards ('throw away the books and the magazines,' 'pretty's just a petty word') and celebrating individuality aligns perfectly with confidence-building. This is a clear match for the Energy - Confidence sub-vibe.",
-          "mapped_subvibe": "Energy - Confidence",
-          "coordinates": {
-            "x": 390.0,
-            "y": 350.0
-          },
-          "current_vibe": "Energy - Confidence",
-          "emotional_composition": {
-            "Happy": 0.4,
-            "Energy": 0.4,
-            "Chill": 0.1,
-            "Drive": 0.1,
-            "Sad": 0.0,
-            "Romantic": 0.0,
-            "Dark": 0.0,
-            "Night": 0.0,
             "Party": 0.0
           }
         },
@@ -41680,38 +41008,6 @@
             "Romantic": 0.1,
             "Night": 0.0,
             "Drive": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
-          "artist": "Bon Jovi",
-          "song": "We Weren't Born To Follow",
-          "spotify_id": "6tVwi09OwB7zVYV0NUajeP",
-          "spotify_uri": "spotify:track:6tVwi09OwB7zVYV0NUajeP",
-          "comment_score": 96,
-          "source_url": "https://youtube.com/watch?v=qF3D2oiy6YA",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "PHILOSOPHICAL SONGS",
-          "comment_text": "\"We Weren't Born To Follow\"\n\nThis one goes out to the man who mines for miracles\nThis one goes out to the ones in need\nThis one goes out to the sinner and the cynical\nThis ain't about no apology\nThis road was paved by the hopeless and the hungry\nThis road was paved by the winds of change\nWalking beside the guilty and the innocent\nHow will you raise your hand when they call your name?\nYeah, yeah, yeah\n\nWe weren't born to follow\nCome on and get up off your knees\nWhen life is a bitter pill to swallow\nYou gotta hold on to what you believe\nBelieve that the sun will shine tomorrow\nAnd that your saints and sinners bleed\nWe weren't born to follow\nYou gotta stand up for what you believe\nLet me hear you say yeah, yeah, yeah, oh yeah\n\nThis one's about anyone who does it differently\nThis one's about the one who cusses and spits\nThis ain't about our livin' in a fantasy\nThis ain't about givin' up or givin' in\nYeah, yeah, yeah\n\nWe weren't born to follow\nCome on and get up off your knees\nWhen life is a bitter pill to swallow\nYou gotta hold on to what you believe\nBelieve that the sun will shine tomorrow\nAnd that your saints and sinners bleed\nWe weren't born to follow\nYou gotta stand up for what you believe\nLet me hear you say yeah, yeah, yeah, oh yeah\nLet me hear you say yeah, yeah, yeah, oh yeah\n\n\n\nWe weren't born to follow\nCome on and get up off your knees\nWhen life is a bitter pill to swallow\nYou gotta hold on to what you believe\nBelieve that the sun will shine tomorrow\nAnd that your saints and sinners bleed\nWe weren't born to follow\nYou gotta stand up for what you believe\nLet me hear you say yeah, yeah, yeah, oh yeah\nLet me hear you say yeah, yeah, yeah, oh yeah\n\nWe weren't born to follow - oh yeah\nWe weren't born to follow - oh yeah",
-          "ananki_reasoning": "This song is clearly about empowerment, standing up for yourself, and refusing to conform ('We weren't born to follow', 'get up off your knees'). The lyrics address those who are struggling ('the hopeless and the hungry', 'the sinner and the cynical') and calls them to action. The context of it being posted under 'PHILOSOPHICAL SONGS' suggests it's about defiant individualism and personal agency. While it has anthem-like qualities that could fit 'Pump Up', the core message is about finding your own voice and confidence to resist conformity rather than pure hype energy. The phrase 'How will you raise your hand when they call your name?' is a direct challenge to stand confident in your convictions.",
-          "mapped_subvibe": "Energy - Confidence",
-          "coordinates": {
-            "x": 270.0,
-            "y": 520.0
-          },
-          "current_vibe": "Energy - Confidence",
-          "emotional_composition": {
-            "Energy": 0.5,
-            "Drive": 0.3,
-            "Dark": 0.1,
-            "Happy": 0.1,
-            "Sad": 0.0,
-            "Chill": 0.0,
-            "Romantic": 0.0,
-            "Night": 0.0,
             "Party": 0.0
           }
         },
@@ -48066,38 +47362,6 @@
           }
         },
         {
-          "artist": "Laid Back",
-          "song": "I Can't Live Without Love",
-          "spotify_id": "3S8bPuGVqLCEI1ylZ6mlg8",
-          "spotify_uri": "spotify:track:3S8bPuGVqLCEI1ylZ6mlg8",
-          "comment_score": 5,
-          "source_url": "https://youtube.com/watch?v=CJ_0D-Q3tRY",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Laid Back (The very best of)",
-          "comment_text": "It's so easy\nTo go wrong\nIt's so easy\nIt's so simple\nIt's so clear\nI can't live without love\nI'm nothing without love\nI can't live without love\nIt all means nothing without someone to love\nSomeone to love\nIt's so simple but true\nYou can travel down the end of the rainbow\nAnd in the end you will see\nThat life is nothing without a friend\nSomeone to love\nI'm nothing without you\nI can't live\nI can't live\nIt's you my friend\nI can't live without love\nI can't live without love\nI can't live without love",
-          "ananki_reasoning": "The lyrics express a profound, vulnerable declaration about the essential nature of love and friendship in one's life. The repeated phrase 'I can't live without love' and 'I'm nothing without you' conveys deep emotional intimacy and dependence on someone close. The message is simple, clear, and heartfelt - emphasizing that material achievements ('travel down the end of the rainbow') mean nothing without someone to love. This isn't the excitement of first love or the formality of date night, but rather the deep, honest vulnerability of intimate romantic expression. The tone is earnest and tender rather than celebratory or sad.",
-          "mapped_subvibe": "Romantic - Intimate",
-          "coordinates": {
-            "x": 635.0,
-            "y": 420.0
-          },
-          "current_vibe": "Romantic - Intimate",
-          "emotional_composition": {
-            "Sad": 0.1,
-            "Happy": 0.1,
-            "Chill": 0.2,
-            "Energy": 0.0,
-            "Dark": 0.0,
-            "Romantic": 0.5,
-            "Night": 0.0,
-            "Drive": 0.1,
-            "Party": 0.0
-          }
-        },
-        {
           "artist": "Extreme",
           "song": "More Than Words",
           "spotify_id": "1gVgkQFOKa8Wc1HYsJtPdH",
@@ -49346,102 +48610,6 @@
           }
         },
         {
-          "artist": "Brad Arthur",
-          "song": "Nyx",
-          "spotify_id": "6w7OFP63orVrMR42sMc6x7",
-          "spotify_uri": "spotify:track:6w7OFP63orVrMR42sMc6x7",
-          "comment_score": 18,
-          "source_url": "https://youtube.com/watch?v=5V2TV6qFcRE",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 0.9,
-          "full_context": "",
-          "post_title": "Sexy Late Night Vibes ❤️‍🔥 Dark Alt R&amp;B &amp; Electronic Pop 2025",
-          "comment_text": "Lyrics:\n\nStars die\nTear into pieces in your eyes\nMirror in mine\nI try and I try\nHold on in the dying light\nSometimes\nI wish for nothing but you I\nLong for your voice\nIn the moonshine\nTell me oh tell me you're mine\n\nIf there's no love\nPouring pouring in my blood\nPour it away\nTill I'm under your spell\nThe power of hell defied\nI go gently into the night\n\nBlack stone\nScream in a void\nNow I'm ice cold\nAll I know will never come back\nBiting the hand that feeds me\nGripping me tight\n\nMoon light\nHow could I ever be untied\nUnder your spell\nEternally divine\nTell me oh tell me you're mine\n\nIf there's no love\nPouring pouring in my blood\nPour it away\nTill I'm under your spell\nThe power of hell defied\nI go gently into\nA sweet daze\nIn this moment\nThere's no pain\nTell me you'll stay with me\nWay beyond time\nTell me oh tell me you're mine\nI go gently into the night\n\nTell me oh tell me you're mine\nTell me oh tell me you're mine\nTell me oh tell me you're mine\n\nIf there's no love\nPouring pouring in my blood\nPour it away\nTill I'm under your spell\nThe power of hell defied\nIn a sweet daze\nFor this moment\nThere's no pain\nTell me you'll stay with me\nWay beyond time\nTell me oh tell me you're mine\nI go gently into the night\nOhh Woah\nTell me oh tell me you're mine\nI go gently into the night",
-          "ananki_reasoning": "The post title 'Sexy Late Night Vibes ❤️‍🔥 Dark Alt R&B & Electronic Pop' explicitly frames this as intimate/sexy content. The lyrics strongly support this with romantic themes ('Tell me oh tell me you're mine', 'I wish for nothing but you', 'Long for your voice', 'under your spell') combined with dark, sensual imagery ('dying light', 'moonshine', 'gently into the night', 'ice cold'). The song title 'Nyx' (Greek goddess of night) reinforces the nocturnal, mysterious romantic atmosphere. While there are dark elements, the core emotional intent is romantic intimacy with a sultry, nighttime aesthetic rather than pure darkness or melancholy.",
-          "mapped_subvibe": "Romantic - Intimate",
-          "coordinates": {
-            "x": 600.0,
-            "y": 590.0
-          },
-          "current_vibe": "Romantic - Intimate",
-          "emotional_composition": {
-            "Sad": 0.2,
-            "Romantic": 0.5,
-            "Dark": 0.2,
-            "Night": 0.1,
-            "Energy": 0.0,
-            "Happy": 0.0,
-            "Chill": 0.0,
-            "Drive": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
-          "artist": "LEOWOLF",
-          "song": "Romantic Gangster",
-          "spotify_id": "4efTjn0DtxivTuqsd8kyo2",
-          "spotify_uri": "spotify:track:4efTjn0DtxivTuqsd8kyo2",
-          "comment_score": 49,
-          "source_url": "https://youtube.com/watch?v=IzO1ht9cVPo",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Sexy Late Night Vibes ❤️‍🔥 Dark Alt R&amp;B &amp; Electronic Pop 2025",
-          "comment_text": "Lyrics: \n\nHeld close,\nLet go\nFaced death \nWith each frail breath\n\nGrasping \nFacing\nLife’s turns \nHeart’s beat returns\n\nHoping\nCrying \nHeart’s plea \nIn a cold world\nBond strain \nBreak chain\n\nBaby, \nHeaven’s at the door \nBut they won’t save me \nJust take it easy darling\n\nBaby, story seemed so gold \nBut don’t you worry \nCause maybe\n\nPlans could be changing \nFeelings’\nNever been so sore\n\nI could make them real\nSweet\nYou will get some more\n\nDawn’s light \nSo bright \nLife’s gift \nAfter the rift\n\nPulse strong\nLife’s song\nJoy’s birth in my cold heart\n\nBaby\nHell was at the door but they just saved me \nJust take it easy darling\nBaby\nWait a little more I’ll turn you crazy\n Cause maybe\n\nI could be changing \nFeel it\nDeath was at my door \nThat just made it very\nReal\nYou’ve seen my true core",
-          "ananki_reasoning": "The post is titled 'Sexy Late Night Vibes ❤️‍🔥 Dark Alt R&B & Electronic Pop 2025' and the song is literally called 'Romantic Gangster.' The lyrics describe intense closeness ('Held close'), vulnerability ('frail breath'), emotional rawness ('Feelings' Never been so sore'), and intimate promises ('I could make them real / Sweet / You will get some more'). The combination of the playlist context (sexy late night vibes), the dark alt R&B genre (known for sensual, intimate production), and lyrics that oscillate between physical closeness and emotional vulnerability strongly point to an intimate romantic experience. The 'Heaven's at the door' and 'take it easy darling' lines reinforce the tender, close connection typical of intimate romantic encounters.",
-          "mapped_subvibe": "Romantic - Intimate",
-          "coordinates": {
-            "x": 612.5,
-            "y": 542.5
-          },
-          "current_vibe": "Romantic - Intimate",
-          "emotional_composition": {
-            "Romantic": 0.55,
-            "Sad": 0.25,
-            "Dark": 0.1,
-            "Night": 0.05,
-            "Energy": 0.05,
-            "Happy": 0.0,
-            "Chill": 0.0,
-            "Drive": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
-          "artist": "Andre Nickatina",
-          "song": "The Ave. Remix",
-          "spotify_id": "2ZNh00nmG19m6Pgfs8VMhY",
-          "spotify_uri": "spotify:track:2ZNh00nmG19m6Pgfs8VMhY",
-          "comment_score": 23,
-          "source_url": "https://youtube.com/watch?v=9dMAEobHTFY",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Sexy Late Night Vibes ❤️‍🔥 Dark Alt R&amp;B &amp; Electronic Pop 2025",
-          "comment_text": "Lyrics: \n\n\nVERSE 1\nLove is a blessing\nLost in your eyes\nBabe you’re my fire\nCome after dark\nMake me feel warm\nGive me your poison\nEnter my mind\nMake me feel better\nMake me feel right\nStay by my side, cause\n\nPRE CHORUS:\nI can give you more\nThan you can dream\nJust breathe out the word\nI’ll make you sin\nI’ll make you sin\n\nCHORUS\nBaby our world\nWent up in flame\nFeel up the heat inside\nLet me undress your mind\nBaby our souls\nThey just make one\nWhen our two mouths collide\nWhen our hearts intertwine\n\nVERSE 2\nShadows around us,\nSecrets abound\nNothing was promised\nTill you undressed babe\nTill it’s a mess, yeah\nSometimes I’m scared\nI never know\nWhat you would do\nWhen we’re alone\nCause even your dark shines\nso bright\n\nPRE CHORUS 2:\nYeah you give me more\nThan I can dream\nI’ll breathe out the words\nJust make me sin,\nMake me sin\n\nCHORUS\nBaby our world\nwent up in flame\nFeel up the heat inside\nLet me undress your mind\nBaby our souls\nThey just make one\nWhen our two mouths collide\nWhen our hearts intertwine\nyeah\nGive me your whole\nGive me your whole",
-          "ananki_reasoning": "The lyrics explicitly describe a deeply sensual and intimate romantic encounter with themes of physical and emotional connection ('when our two mouths collide', 'when our hearts intertwine', 'let me undress your mind'). The post title 'Sexy Late Night Vibes' with 'Dark Alt R&B' genre confirmation reinforces the sultry, intimate atmosphere. The lyrics focus on passionate closeness ('stay by my side', 'our souls they just make one') and seduction ('I'll make you sin', 'give me your poison') which aligns perfectly with intimate romantic vibes rather than just general romance or party contexts.",
-          "mapped_subvibe": "Romantic - Intimate",
-          "coordinates": {
-            "x": 590.0,
-            "y": 522.5
-          },
-          "current_vibe": "Romantic - Intimate",
-          "emotional_composition": {
-            "Sad": 0.0,
-            "Happy": 0.0,
-            "Chill": 0.1,
-            "Energy": 0.15,
-            "Dark": 0.15,
-            "Romantic": 0.5,
-            "Night": 0.1,
-            "Drive": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
           "artist": "Lana Del Rey",
           "song": "Music To Watch Boys To",
           "spotify_id": "34rRFl0bz9PocxWuO2ca5J",
@@ -49613,7 +48781,7 @@
           "mapping_confidence": 0.95,
           "full_context": "",
           "post_title": "Piano Ballads: Piano Love Songs (Music Playlist Updated 2025)",
-          "comment_text": "Quem tem sensibilidade e amor, é  capaz de admirar as melodias! Todas nos trazem belas mensagens! 🕊🦋🌻❤️",
+          "comment_text": "Those who have sensitivity and love are able to admire the melodies! They all bring us beautiful messages!",
           "ananki_reasoning": "The commenter expresses that 'those who have sensitivity and love are capable of admiring the melodies! They all bring us beautiful messages!' This reflects a deeply emotional, gentle appreciation for romantic piano music. The song title 'Romantic Piano' by Yoga Music, combined with the playlist context 'Piano Love Songs' and the commenter's emphasis on love and sensitivity, clearly indicates an intimate romantic atmosphere. The use of peaceful emojis (dove, butterfly, sunflower, heart) reinforces the tender, loving nature of the listening experience. This fits 'Romantic - Intimate' better than other options like 'Chill - Gentle' or 'Chill - Serene' because the core emotional context is explicitly about love and romantic connection.",
           "mapped_subvibe": "Romantic - Intimate",
           "coordinates": {
@@ -50055,38 +49223,6 @@
           }
         },
         {
-          "artist": "Dan + Shay",
-          "song": "Show You Off",
-          "spotify_id": "4w9LtJn74XQhsHD1zAHnzY",
-          "spotify_uri": "spotify:track:4w9LtJn74XQhsHD1zAHnzY",
-          "comment_score": 60,
-          "source_url": "https://youtube.com/watch?v=bld2tsM4nLM",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 1,
-          "full_context": "",
-          "post_title": "Date night mix",
-          "comment_text": "You're like a sugar-sweet kiss in the morning,\nSunshine pouring right into my window.\nCool drink of water in the summer,\nBetter than the other, hm, side of the pillow.\n\nYou're everything that I'm not, and then a cherry on top,\nYeah, girl, I gotta see you tonight,\nYeah, I'm taking you out 'cause damn baby I'm proud.\n\nEy oh ey oh, when a guy like me\nEy oh ey oh, gets a girl like you\nYeah, you better know we're going to take it downtown,\nShowin' everybody what I'm crazy about.\nEy oh ey oh, anywhere we go, ey oh ey oh, gotta let 'em all know.\nAnd I'mma tattoo your name on my arm,\nBaby I just wanna show you off.\n\nYeah, show you off\n\nYou got a boy feelin' lucky, hm how you love me,\nAnd you're making my heart go\nTicking like a time bomb, baby when the top drops,\nAnd I'm watchin' your hair blow\n\nNo I don't wanna miss another kiss on your lips,\nYeah, girl I gotta see you tonight.\nPick you up about 8, countin' down I can't wait.\n\nEy oh ey oh, when a guy like me\nEy oh ey oh, gets a girl like you\nYeah, you better know we're going to take it downtown,\nShowin' everybody what I'm crazy about.\nEy oh ey oh, anywhere we go, ey oh ey oh, gotta let 'em all know.\nAnd I'mma tattoo your name on my arm,\nBaby I just wanna show you off.\n\nHm when a guy like me, gets a girl like you,\nYou better know what I'm gonna do,\nWhat I'm gonna do, yeah.\n\nEy oh ey oh, when a guy like me\nEy oh ey oh, gets a girl like you\nYeah, you better know we're going to take it downtown,\nShowin' everybody what I'm crazy about.\nEy oh ey oh, anywhere we go, ey oh ey oh, gotta let 'em all know.\nAnd I'mma tattoo your name on my arm,\nBaby I just wanna show you off.\n\nYeah, show you off, oh,\nOh, baby I just wanna show you off.",
-          "ananki_reasoning": "The context is extremely clear - the post is literally titled 'Date night mix' and the lyrics express pride and excitement about taking someone special out to show them off. The song describes adoration ('You're like a sugar-sweet kiss in the morning,' 'Sunshine pouring right into my window') and the specific intent to take their partner downtown to celebrate their relationship publicly ('taking you out 'cause damn baby I'm proud,' 'Showin' everybody what I'm crazy about'). This perfectly captures the excited, proud, celebratory energy of a date night where someone wants to showcase their relationship.",
-          "mapped_subvibe": "Romantic - Date Night",
-          "coordinates": {
-            "x": 635.0,
-            "y": 357.5
-          },
-          "current_vibe": "Romantic - Date Night",
-          "emotional_composition": {
-            "Romantic": 0.55,
-            "Happy": 0.25,
-            "Chill": 0.1,
-            "Energy": 0.05,
-            "Party": 0.05,
-            "Night": 0.0,
-            "Drive": 0.0,
-            "Dark": 0.0,
-            "Sad": 0.0
-          }
-        },
-        {
           "artist": "Frank Sinatra",
           "song": "I've Got You Under My Skin",
           "spotify_id": "74jklVKHYTmNMp0baGm6FB",
@@ -50409,38 +49545,6 @@
             "Dark": 0.0,
             "Night": 0.0,
             "Drive": 0.0
-          }
-        },
-        {
-          "artist": "Jessie J",
-          "song": "Flashlight - From \"Pitch Perfect 2\" Soundtrack",
-          "spotify_id": "6SkoBaMd0lzoQjID5aV2d9",
-          "spotify_uri": "spotify:track:6SkoBaMd0lzoQjID5aV2d9",
-          "comment_score": 1668,
-          "source_url": "https://youtube.com/watch?v=DzwkcbTQ7ZE",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Romantic Ballads: Best Romantic Songs of All Time (Music Playlist Updated in 2025)",
-          "comment_text": "When tomorrow comes, I'll be on my own\nFeeling frightened of the things that I don't know\nWhen tomorrow comes, tomorrow comes, tomorrow comes.\nAnd though the road is long, \nI look up to the sky,\n and in the dark I found s'hope that I won't fly\nAnd I sing along, I sing along, then I sing along\n\nI got all I need when I got you and I\nI look around me and say sweet life\nI'm stuck in the dark but you're my flashlight\nYou're getting me, getting me through the night\nCan't stop my heart when you shine it in my eyes,\nCan't lie it's a sweet life\nI'm stuck in the dark but you're my flashlight you're getting me, getting me through the night \nCause you're my flashlight, you're my flashlight, you're my flashlight (ooh)\n\nI see the shadow's long beneath the mountain top,\nI'm not afraid when the rain won't stop,\nCause you light the way, you light the way, you light the way\n\nI got all I need when I got you and I\nI look around me and say sweet life\nI'm stuck in the dark but you're my flashlight\nYou're getting me, getting me through the night\nCan't stop my heart when you shine it in my eyes,\nCan't lie it's a sweet life\nI'm stuck in the dark but you're my flashlight you're getting me, getting me through the night\n\nLight light light you're my flash\nLight light light you're my flash\nLight light light light light \nOooh you're my flash OooohWoah!\n\nI got all I need when I got you and I\nI look around me and say sweet life\nI'm stuck in the dark but you're my flashlight\nYou're getting me, getting me through the night\nCan't stop my heart when you shine it in my eyes,\nCan't lie it's a sweet life\nI'm stuck in the dark but you're my flashlight you're getting me, getting me through the night\nCause you're my flashlight\nCause you're my flashlight \nYou're my flashlight \n\nWoooo woooo woooooo\nOooh oh oh\n\nYou're my flash light light light \nYou're my flash light light light \nYeah yeah\nYou're my flashlight🔦",
-          "ananki_reasoning": "The lyrics emphasize themes of separation ('When tomorrow comes, I'll be on my own'), uncertainty about the future ('Feeling frightened of the things that I don't know'), and finding strength and hope through a romantic partner who isn't physically present but provides emotional support ('you're my flashlight', 'getting me through the night'). The metaphor of being a 'flashlight' in darkness suggests the partner is a guiding light during difficult times apart. The line 'I got all I need when I got you and I' emphasizes emotional connection over physical presence, which is characteristic of long-distance relationships. While this could fit other romantic sub-vibes, the emphasis on navigating darkness and uncertainty alone while being sustained by the thought/connection of the partner most strongly aligns with the long-distance romantic experience.",
-          "mapped_subvibe": "Romantic - Long Distance",
-          "coordinates": {
-            "x": 565.0,
-            "y": 490.0
-          },
-          "current_vibe": "Romantic - Long Distance",
-          "emotional_composition": {
-            "Sad": 0.1,
-            "Happy": 0.2,
-            "Chill": 0.0,
-            "Energy": 0.1,
-            "Dark": 0.1,
-            "Romantic": 0.4,
-            "Night": 0.1,
-            "Drive": 0.0,
-            "Party": 0.0
           }
         },
         {
@@ -52800,70 +51904,6 @@
           }
         },
         {
-          "artist": "NUGAT",
-          "song": "Blass",
-          "spotify_id": "25JoriyWqm6ozX1iqcPo3l",
-          "spotify_uri": "spotify:track:25JoriyWqm6ozX1iqcPo3l",
-          "comment_score": 9616,
-          "source_url": "https://youtube.com/watch?v=-qZxMY7FZf8",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Anger/Hate/Revenge Songs",
-          "comment_text": "He sang like an angel\nHe screamed like a demon\nHe lived like a man\nAnd died as a legend💕\n\nEdit: OMG THANK YOU SM FOR THE LIKES",
-          "ananki_reasoning": "The comment describes someone who 'sang like an angel' but 'screamed like a demon' and 'died as a legend,' which evokes a duality of light and darkness. This was posted in a thread specifically about 'Anger/Hate/Revenge Songs,' indicating intense, aggressive emotions. The juxtaposition of angelic and demonic qualities, combined with the tragic 'died as a legend' element and the context of anger/revenge themes, strongly suggests a dark, Gothic aesthetic that embraces both beauty and darkness, mortality and rage. The reverent yet morbid tone of memorializing someone who embodied these contrasts aligns perfectly with Gothic sensibilities.",
-          "mapped_subvibe": "Dark - Gothic",
-          "coordinates": {
-            "x": 392.5,
-            "y": 650.0
-          },
-          "current_vibe": "Dark - Gothic",
-          "emotional_composition": {
-            "Sad": 0.15,
-            "Happy": 0.05,
-            "Chill": 0.0,
-            "Energy": 0.2,
-            "Dark": 0.4,
-            "Romantic": 0.05,
-            "Night": 0.1,
-            "Drive": 0.05,
-            "Party": 0.0
-          }
-        },
-        {
-          "artist": "Vernic",
-          "song": "I'm So Stressed",
-          "spotify_id": "3d1rTt8speodxA8iSnwWpY",
-          "spotify_uri": "spotify:track:3d1rTt8speodxA8iSnwWpY",
-          "comment_score": 9376,
-          "source_url": "https://youtube.com/watch?v=x9--4fqRCek",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "monotonous songs☄️",
-          "comment_text": "You keep dreaming and dark scheming\nYeah, you do\nYou're a poison and I know that is the truth\nAll my friends think you're vicious\nAnd they say you're suspicious\nYou keep dreaming and dark scheming\nYeah, you do\n\nI feel like I'm drowning\nAah, drowning\nYou're holding me down and\nHolding me down\nYou're killing me slow\nSo slow, oh-no\nI feel like I'm drowning\nAah, drowning\n\nYou're so plastic and that's tragic\nJust when you\nI don't know what the hell you gonna do\nWhen your look start depleting\nAnd your friends all start leaving\nYou're so plastic and that's tragic\nJust when you\n\nI feel like I'm drowning\nAah, drowning\nYou're holding me down and\nHolding me down\nYou're killing me slow\nSo slow, oh-no\nI feel like I'm drowning\nAah, drowning\n\nMy life's okay\nYeah, just when you're not around me\nMy life's okay\nJust when you're not around me\nMy life's okay\nJust when you're not around me\nMy life's okay\n\nI feel like I'm drowning\nAah, drowning\nYou're holding me down and\nHolding me down\nYou're killing me slow\nSo slow, oh-no\nI feel like I'm drowning\nAah, drowning",
-          "ananki_reasoning": "The lyrics describe a toxic, suffocating relationship with dark imagery ('dark scheming,' 'poison,' 'vicious,' 'drowning,' 'killing me slow'). Combined with the song title 'I'm So Stressed' and the post title 'monotonous songs,' this creates a dark, oppressive emotional atmosphere. The repetitive, droning quality suggested by 'monotonous' along with the gothic themes of toxicity, drowning, and slow death align perfectly with a Dark - Gothic sub-vibe. The plastic/tragic imagery and the sense of being held down by a malevolent force further reinforces this dark aesthetic.",
-          "mapped_subvibe": "Dark - Gothic",
-          "coordinates": {
-            "x": 405.0,
-            "y": 710.0
-          },
-          "current_vibe": "Dark - Gothic",
-          "emotional_composition": {
-            "Sad": 0.3,
-            "Dark": 0.5,
-            "Night": 0.1,
-            "Energy": 0.1,
-            "Happy": 0.0,
-            "Party": 0.0,
-            "Chill": 0.0,
-            "Romantic": 0.0,
-            "Drive": 0.0
-          }
-        },
-        {
           "artist": "Tae Wall",
           "song": "Don Juli",
           "spotify_id": "73OPpeXbhSXb712UYeKaJf",
@@ -53088,38 +52128,6 @@
           }
         },
         {
-          "artist": "MISSIO",
-          "song": "Love Me Whole",
-          "spotify_id": "0ePFT7PamqhsOSJEB4V95B",
-          "spotify_uri": "spotify:track:0ePFT7PamqhsOSJEB4V95B",
-          "comment_score": 327,
-          "source_url": "https://youtube.com/watch?v=O9wW5oQhyxM",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Dark Romance Playlist",
-          "comment_text": "I need you, I need you\nEvery hour I need you\nI want you, I want you\nEvery hour I want you\nI wish that that were true\nDamn, I wish that had some truth at all\n\nLove me\nLove me whole\nLove all the frailties\nInside this uneventful soul\nLove me\nLove me whole\nLove all the frailties\nInside this ordinary soul\n\nI hate you, I hate you\nEvery hour, I hate you\nI loathe you, I loathe you\nEvery hour I loathe you\nI wish that that were true\nDamn, I wish that had some truth at all\n\nLove me\nLove me whole\nLove all the frailties\nInside this uneventful soul\nLove me\nLove me whole\nLove all the frailties\nInside this ordinary soul\n\nThis ordinary soul\nOrdinary, ordinary\nThis ordinary soul\nOrdinary, ordinary\nThis ordinary soul\nOrdinary, ordinary\nThis ordinary soul\nOrdinary, ordinary\n\nLove me\nLove me whole\nLove all the frailties\nInside this uneventful soul\nLove me\nLove me whole\nLove all the frailties\nInside this ordinary soul\nInside this ordinary soul\nInside this ordinary soul",
-          "ananki_reasoning": "This song explores the duality of intense, contradictory emotions in a relationship - needing/wanting someone while simultaneously hating/loathing them, yet wishing these feelings had 'some truth at all.' The plea to 'love me whole' with all the 'frailties inside this uneventful/ordinary soul' speaks to a desperate desire for acceptance despite inner darkness and emotional turmoil. The human explicitly categorized this under 'Dark Romance,' and the lyrics convey a gothic sensibility with their exploration of love intertwined with self-loathing, emotional emptiness, and the inability to feel authentic emotions. This fits the dark, brooding aesthetic of gothic romance rather than typical romantic sub-vibes.",
-          "mapped_subvibe": "Dark - Gothic",
-          "coordinates": {
-            "x": 480.0,
-            "y": 695.0
-          },
-          "current_vibe": "Dark - Gothic",
-          "emotional_composition": {
-            "Dark": 0.5,
-            "Sad": 0.2,
-            "Romantic": 0.2,
-            "Night": 0.1,
-            "Chill": 0.0,
-            "Happy": 0.0,
-            "Party": 0.0,
-            "Energy": 0.0,
-            "Drive": 0.0
-          }
-        },
-        {
           "artist": "The B-52's",
           "song": "Wig",
           "spotify_id": "0wgDtRxLHOlILeN5GxvfYS",
@@ -53212,38 +52220,6 @@
             "Romantic": 0.05,
             "Night": 0.15,
             "Drive": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
-          "artist": "Plastique Noir",
-          "song": "Rose of Flesh and Blood",
-          "spotify_id": "4DGe75LtEVn5Cy54xZC5NY",
-          "spotify_uri": "spotify:track:4DGe75LtEVn5Cy54xZC5NY",
-          "comment_score": 130,
-          "source_url": "https://youtube.com/watch?v=XOULtyb7Ld8",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 1,
-          "full_context": "",
-          "post_title": "A goth playlist from a baby bat 🦇",
-          "comment_text": "LYRICS: ^^ Rose Of Flesh And Blood\n\n\nBaby, you're millions of things\nWishes obscene dreams\nI don't know yet\nMaybe it explains\nAll these millions of miles\nBetween us laid on the same bed\nWhy so much alcohol?\nSpeed, sleeping pills, I ask myself\nI could make easier your espace\nBut I am afraid too\nI must confess\n\nYour trails have been so uncertain\nIron curtain those sheets that divide us\nNot even a russian missile\nWould break such solid silence\nI hate every dingle day after\nI look to my side\nAnd you are not there\nNigh has just fallen\nAnd you are lost again\nI don't know in anywhere\n\nI read your name in the night lights\nAmbulance and police cars\nA strobe that flashes forever\nI read your name in the night lights\nIn the basement of a night club\nIn a strobe that flashes forever\n\nBaby, you're millions of things\nWishes obscene dreams\nI don't know yet\n\nMaybe it explains all the miles\nThat I walked down into the sewer\nThere I could rest\nWhy so much contempt?\nWhy so few talking\nI ask myself\nBut i can wait for the morning\nWhen your bleeding petals\nWill water the whole neon garden\n\nYou're a rose of flesh and blood\nYou're temptation for the pure\nYou're redemption for the clod",
-          "ananki_reasoning": "This song perfectly embodies the gothic aesthetic and emotional landscape. The context explicitly frames it as part of 'a goth playlist from a baby bat' (baby bat being goth subculture terminology for a newcomer). The lyrics explore dark romantic themes of emotional distance, substance use as escape mechanisms, and the pain of being physically close yet emotionally separated ('millions of miles / Between us laid on the same bed'). The imagery of 'Iron curtain,' 'solid silence,' and the cold, detached observation of a lover's struggle with alcohol and pills creates a distinctly gothic atmosphere - beautiful yet melancholic, intimate yet distant. The artist Plastique Noir is a darkwave/post-punk act, and the song title 'Rose of Flesh and Blood' itself evokes gothic imagery. This is archetypal dark romantic gothic content.",
-          "mapped_subvibe": "Dark - Gothic",
-          "coordinates": {
-            "x": 462.5,
-            "y": 685.0
-          },
-          "current_vibe": "Dark - Gothic",
-          "emotional_composition": {
-            "Dark": 0.45,
-            "Sad": 0.25,
-            "Romantic": 0.15,
-            "Night": 0.1,
-            "Energy": 0.05,
-            "Drive": 0.0,
-            "Happy": 0.0,
-            "Chill": 0.0,
             "Party": 0.0
           }
         },
@@ -53696,38 +52672,6 @@
           }
         },
         {
-          "artist": "Limbonic Art",
-          "song": "Astral Projection",
-          "spotify_id": "1R4QhBNcRUB6yaEmlwWFiZ",
-          "spotify_uri": "spotify:track:1R4QhBNcRUB6yaEmlwWFiZ",
-          "comment_score": 36,
-          "source_url": "https://youtube.com/watch?v=nP6qNlMmb9I",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.9,
-          "full_context": "",
-          "post_title": "(Post-)Apocalyptic Music",
-          "comment_text": "Peace is a lie, there is only passion. \nThrough passion, I gain strength,\nThrough strength, I gain power, \nThrough power, I gain victory,\nThrough victory, My chains are broken. \nMy anger fuels my hate, \nMy hate fuels my rage, \nMy rage fuels my ambition, \nMy ambition fuels my greed, \nMy greed fuels my lust for power. \nWe are blinded by these false prophets, by these so called intelligent men. \nWe the people shall rise against this corrupt system. \nWe the people will rule the world. \nWe the people shall rise. \nUnited We Stand, United We Fall.",
-          "ananki_reasoning": "The comment combines quotes from the Sith Code (Star Wars) with revolutionary rhetoric expressing themes of anger, hate, rage, and power. The phrase 'post-apocalyptic music' combined with Limbonic Art (a Norwegian symphonic black metal band) and this dark, aggressive text creates a clear gothic/dark atmosphere. The song 'Astral Projection' is a black metal track that sonically matches these themes of darkness, power, and rebellion. The theatrical, intense emotional expression about corruption, uprising, and emotional darkness (anger→hate→rage chain) strongly aligns with gothic sensibilities and dark musical aesthetics.",
-          "mapped_subvibe": "Dark - Gothic",
-          "coordinates": {
-            "x": 325.0,
-            "y": 685.0
-          },
-          "current_vibe": "Dark - Gothic",
-          "emotional_composition": {
-            "Sad": 0.0,
-            "Happy": 0.0,
-            "Chill": 0.0,
-            "Energy": 0.3,
-            "Dark": 0.5,
-            "Romantic": 0.0,
-            "Night": 0.1,
-            "Drive": 0.1,
-            "Party": 0.0
-          }
-        },
-        {
           "artist": "Dying Fetus",
           "song": "Devout Atrocity",
           "spotify_id": "70kWZk7O1BjzpIYvIsWPYd",
@@ -53980,38 +52924,6 @@
             "Happy": 0.0,
             "Chill": 0.0,
             "Drive": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
-          "artist": "Siouxsie and the Banshees",
-          "song": "Got To Get Up",
-          "spotify_id": "5W5qvqrvBwnT6k1Cj5Oknn",
-          "spotify_uri": "spotify:track:5W5qvqrvBwnT6k1Cj5Oknn",
-          "comment_score": 9,
-          "source_url": "https://youtube.com/watch?v=vm2Tp95Ff0M",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Goth playlist",
-          "comment_text": "Got to get up, get into life, got to get up, get into life\nGot to get up and live this life, got to get up and win this life\nNo more looking down, look up\nSkyward up your eyes, devour the sun now\nGot to, got to get up now, so get up\nGonna shake my bones gonna shed my skin\nShake out what's mine, shake out this thing\nI'm gonna shake my bones, gonna shed my skin\nShake out what's mine, shake out this thing\n'Cause I've been here too long, now I'm up\nSkyward up this song, devour the sun now\nI've got to, got to get up now, oh, so get up\nBad luck you say, it's just not your day\nBut you've got to reach out, grab your destiny\nKick up the dust, kick up a storm\nKick out the past and take control\nThere's no-one else, it's up to you\nAre you gonna wake up or cry boo hoo?\nNo one else but you can rise up\nYou know what to do, got to get up\nNo more looking down, look up\nCome and claim your crown, got to get up, got to get up",
-          "ananki_reasoning": "This song was explicitly recommended in a 'Goth playlist' thread, and it's by Siouxsie and the Banshees, a seminal gothic rock band. The lyrics show themes of transformation and rebirth ('gonna shed my skin', 'shake my bones') which are common in gothic music. While the lyrics themselves are empowering and uplifting ('got to get up', 'devour the sun'), the gothic rock aesthetic and the context of being shared specifically for a goth playlist makes Dark - Gothic the most appropriate classification. The song represents the darker, theatrical side of alternative music that defines the gothic subculture.",
-          "mapped_subvibe": "Dark - Gothic",
-          "coordinates": {
-            "x": 360.0,
-            "y": 630.0
-          },
-          "current_vibe": "Dark - Gothic",
-          "emotional_composition": {
-            "Sad": 0.0,
-            "Happy": 0.0,
-            "Chill": 0.1,
-            "Energy": 0.3,
-            "Dark": 0.4,
-            "Romantic": 0.0,
-            "Night": 0.1,
-            "Drive": 0.1,
             "Party": 0.0
           }
         },
@@ -54720,38 +53632,6 @@
           }
         },
         {
-          "artist": "Halsey",
-          "song": "Control",
-          "spotify_id": "3SKzTIl9mW0DadTys9SFo3",
-          "spotify_uri": "spotify:track:3SKzTIl9mW0DadTys9SFo3",
-          "comment_score": 12889,
-          "source_url": "https://youtube.com/watch?v=so8V5dAli-Q",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "SONGS that make you feel like a VILLAIN",
-          "comment_text": "themes in this song:\n--wanting to be in control\n--being scared of things that shouldn't scare you\n--loneliness, probably an illusion\n--the feeling of a million worlds on your shoulder\n--self-hate \n--but also pride?\n--feeling trapped\n--feeling powerless\n--not believing when others try to help\n--confusion\n--power that you don't realize you have\n--not caring for oneself properly\n--being infatuated with a problem or sutuation that seems unfixable\n--skittishness\n--shame\n--feeling accomplished \n--blame\n--pressure\n--guilt\n--unhealthy habits\n\n\n\nshit this would make for a good anthem to an angsty fanfiction--",
-          "ananki_reasoning": "The emotional context describes a complex psychological state centered around internal struggle, powerlessness, self-hate, shame, and feeling trapped - all while paradoxically containing elements of pride and unrecognized power. The 'villain' framing in the post title combined with themes of control, confusion, and being 'infatuated with a problem that seems unfixable' creates a dark, introspective atmosphere. Halsey's 'Control' deals with losing control of one's mind and struggling with inner demons, which aligns perfectly with gothic emotional territory - dark, psychological, internal conflict, and a sense of being haunted by oneself. The mix of vulnerability and power, shame and accomplishment, fits the brooding complexity of gothic aesthetics rather than pure sadness or night-time contemplation.",
-          "mapped_subvibe": "Dark - Gothic",
-          "coordinates": {
-            "x": 375.0,
-            "y": 715.0
-          },
-          "current_vibe": "Dark - Gothic",
-          "emotional_composition": {
-            "Dark": 0.5,
-            "Sad": 0.2,
-            "Energy": 0.1,
-            "Night": 0.1,
-            "Drive": 0.1,
-            "Romantic": 0.0,
-            "Happy": 0.0,
-            "Chill": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
           "artist": "Sadistik",
           "song": "Salem Witches",
           "spotify_id": "6bfJQnrycXOsQHDXLFixyg",
@@ -54779,38 +53659,6 @@
             "Happy": 0.0,
             "Chill": 0.0,
             "Romantic": 0.0,
-            "Drive": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
-          "artist": "Nate Strider",
-          "song": "Ahsoka Tano!",
-          "spotify_id": "7zbiTwFAKIfQVC69UkTr0w",
-          "spotify_uri": "spotify:track:7zbiTwFAKIfQVC69UkTr0w",
-          "comment_score": 1641,
-          "source_url": "https://youtube.com/watch?v=PXEsU2M8SqI",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "10/10 antagonist ost",
-          "comment_text": "Anakin is glad\n*Gladakin*\nAnakin is sad\n*Sadakin*\nAnakin is mad\n*The younglings are dead*",
-          "ananki_reasoning": "The comment is a darkly humorous reference to Anakin Skywalker's transformation into Darth Vader, culminating in the infamous scene where he kills the younglings (children) at the Jedi Temple. The escalating rhyme scheme ('Gladakin'/'Sadakin') builds to 'mad' which triggers 'The younglings are dead' - a reference to one of Star Wars' darkest moments. The song 'Ahsoka Tano!' by Nate Strider is described as a '10/10 antagonist ost', indicating it's villain/antagonist music. Combined with the dark humor about mass murder and Anakin's fall to the dark side, this clearly maps to a dark, ominous emotional vibe. Gothic captures both the dramatic, orchestral antagonist soundtrack quality and the sinister, tragic nature of the reference.",
-          "mapped_subvibe": "Dark - Gothic",
-          "coordinates": {
-            "x": 375.0,
-            "y": 670.0
-          },
-          "current_vibe": "Dark - Gothic",
-          "emotional_composition": {
-            "Sad": 0.3,
-            "Happy": 0.0,
-            "Chill": 0.0,
-            "Energy": 0.2,
-            "Dark": 0.5,
-            "Romantic": 0.0,
-            "Night": 0.0,
             "Drive": 0.0,
             "Party": 0.0
           }
@@ -55008,102 +53856,6 @@
           }
         },
         {
-          "artist": "Niklas Wagner",
-          "song": "Witching Hour",
-          "spotify_id": "2MZrnPxcBZsDDB3AZYaP5k",
-          "spotify_uri": "spotify:track:2MZrnPxcBZsDDB3AZYaP5k",
-          "comment_score": 137,
-          "source_url": "https://youtube.com/watch?v=KqfqWkf1iow",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Dark witch music",
-          "comment_text": "As I walk I see\nStanding tall and strong\nI am not wrong\nI start to be free\n\nShe is dancing\nIn the light\nI can feel her might\nOff the moon is glancing\n\nAs I walk towards\nThe flowers start to die\nI begin to cry\nFaced among many swords\n\nShe doesn't look at me\nAs the birds fly\nI am not shy\nI will not flee\n\nAs the birds dance\nFlying about her head\nMy heart starts to bled\nThis is my chance\nInstead\n\nAs she looks at me\nWearing her crown of blood\nI feel a flood\nOver the knee\n\nThe birds they turn\nFlying about my stead\nMy life begins to burn\nOn the ground she tread\n\nShe is dancing\nI am dying\nMy life is glancing\nI am crying\n\nMy time is done\nThe clock is striking twelve\nI feel her power\nI feel her gun\nAs I see her helve\nI am in the Witching Hour  ",
-          "ananki_reasoning": "The human's poetic context explicitly describes 'dark witch music' and paints a vivid gothic scene with imagery of a powerful witch figure wearing 'a crown of blood,' flowers dying as the narrator approaches, dancing in moonlight, birds circling, and an atmosphere of dark enchantment mixed with longing. The poem combines elements of dark romanticism, occult imagery, and gothic aesthetics - a witch as a powerful, almost deity-like figure who evokes both fear and attraction. The song title 'Witching Hour' by Niklas Wagner perfectly aligns with this gothic witch narrative. This is clearly intended as atmospheric, dark, witchy music with strong gothic undertones.",
-          "mapped_subvibe": "Dark - Gothic",
-          "coordinates": {
-            "x": 452.5,
-            "y": 705.0
-          },
-          "current_vibe": "Dark - Gothic",
-          "emotional_composition": {
-            "Sad": 0.25,
-            "Dark": 0.45,
-            "Night": 0.15,
-            "Romantic": 0.1,
-            "Energy": 0.05,
-            "Happy": 0.0,
-            "Chill": 0.0,
-            "Drive": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
-          "artist": "Jon Bryant",
-          "song": "I Wanna Die in LA",
-          "spotify_id": "2FOuVGs1VJpWbxRjByg4hh",
-          "spotify_uri": "spotify:track:2FOuVGs1VJpWbxRjByg4hh",
-          "comment_score": 32,
-          "source_url": "https://youtube.com/watch?v=cZjfGQEOSKQ",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Dark witch music",
-          "comment_text": "Look at those pitiful souls,\nThe haunted, the wretched,\nThose lost from \nOur deepest sorrows\nA face of beauty that haunts\nOnce lingered here\nIn the hours of twilight\nWhere the day starts to fade \nAnd whisper into night\nShe had a way to taunt\nYou near\nBut upon approach\nWould evade, then disappear\nMany would search\nFor the beauty they lost\nAnd the haunting,\nWould become the haunted\nThe strangers voices\nCould often be heard \nMourning upon the whispering winds\nBut the haunting face \nCould not be stirred \nAs her heart belonged  to another\nWhy, her beauty never lured him\nThough he searched the wretched place\nHe never found her\nAs he waited\nIn the faded night\nWhen dawn showed\nIts first light\nHe waited in life\nThen he waited in death\nBut Dawn never\nMet with Twilight\nLook at those\nPitiful souls\nDoomed to desolation\nThose haunted hearts\nTorn apart \nCondemned to isolation...",
-          "ananki_reasoning": "The context explicitly requests 'Dark witch music' and provides gothic imagery throughout - haunted souls, wretchedness, twilight fading into night, a haunting beauty that disappears, voices mourning on winds, and spectral themes of the hunted becoming the haunted. This poetic description creates a gothic atmospheric narrative with supernatural elements, ghostly imagery, and dark romanticism. The song 'I Wanna Die in LA' by Jon Bryant, paired with this specific gothic/witch aesthetic context, clearly maps to the Dark - Gothic sub-vibe.",
-          "mapped_subvibe": "Dark - Gothic",
-          "coordinates": {
-            "x": 452.5,
-            "y": 720.0
-          },
-          "current_vibe": "Dark - Gothic",
-          "emotional_composition": {
-            "Sad": 0.35,
-            "Dark": 0.45,
-            "Night": 0.15,
-            "Romantic": 0.05,
-            "Drive": 0.0,
-            "Happy": 0.0,
-            "Party": 0.0,
-            "Chill": 0.0,
-            "Energy": 0.0
-          }
-        },
-        {
-          "artist": "Witchz",
-          "song": "Killem",
-          "spotify_id": "4HCMZSLaCLkYXlzrskATmL",
-          "spotify_uri": "spotify:track:4HCMZSLaCLkYXlzrskATmL",
-          "comment_score": 385,
-          "source_url": "https://youtube.com/watch?v=aFHKCFl5gXA",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "OCCULT SONGS PLAYLIST",
-          "comment_text": "Killem gotta killem\nKillem gotta killem\nKillem gotta killem\nKillem gotta killem\nKillem gotta killem\nKillem gotta killem\nYou know they're the villains\nAnd you know we gotta killem\n\nSellin lies\nWith the hope in our eyes\nEvil minds\nNow their souls gonna fly\nTheir confined\nAgonize agonize ha\nYou know they're the villains\nAnd you know we gotta killem\n\nWhile\nHeaven sighs\nCus it's about to feel the\nHate inside of me\nFuck their lives\nIll eat their hearts\nThe only things\nThat Brings me peace\n\nKillem gotta killem\nKillem gotta killem\nKillem gotta killem\nKillem gotta killem\nKillem gotta killem\nKillem gotta killem\n\nFantasize of their eyes as their tied up\nTheir demise\nGot 'em crying\nGot 'em crying ha\nLoad the 9\nIt's an eye for an eye ha\nYou know they're the villains\nAnd you know we gotta killem\n\nWhile\nHeaven sighs\nCus it's about to feel the\nHate inside of me\nFuck their lives\nIll eat their hearts\nThe only things\nThat Brings me peace\n\nKillem gotta killem\nKillem gotta killem\nKillem gotta killem\nKillem gotta killem\nKillem gotta killem\nKillem gotta killem",
-          "ananki_reasoning": "The lyrics express intense darkness, violence, and vengeful themes with references to eating hearts, evil minds, souls flying, and bringing peace through destruction. The song was posted in an 'OCCULT SONGS PLAYLIST' thread, further indicating dark/occult aesthetic. The repetitive, chant-like 'killem gotta killem' structure combined with imagery of heaven sighing and hate inside creates a gothic, dark ritualistic atmosphere. While this has aggressive energy, the occult context and the disturbing, sinister emotional tone makes it distinctly gothic/dark rather than simply energetic or angry.",
-          "mapped_subvibe": "Dark - Gothic",
-          "coordinates": {
-            "x": 312.5,
-            "y": 692.5
-          },
-          "current_vibe": "Dark - Gothic",
-          "emotional_composition": {
-            "Dark": 0.55,
-            "Energy": 0.25,
-            "Drive": 0.15,
-            "Night": 0.05,
-            "Sad": 0.0,
-            "Happy": 0.0,
-            "Chill": 0.0,
-            "Romantic": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
           "artist": "Mystery",
           "song": "Broken Legacy (FKA Untitled)",
           "spotify_id": "18TdiRdEvYVVLDolsxn92g",
@@ -55232,70 +53984,6 @@
           }
         },
         {
-          "artist": "The Necromancers",
-          "song": "Salem Girl, Pt. I",
-          "spotify_id": "0k634CRYp5aZTpALMo07FI",
-          "spotify_uri": "spotify:track:0k634CRYp5aZTpALMo07FI",
-          "comment_score": 24,
-          "source_url": "https://youtube.com/watch?v=6l59xiRqMTY",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 1,
-          "full_context": "",
-          "post_title": "Occult / Horror Rock Playlist - All hail the devil&#39;s music! Hard Rock, Doom Metal, Halloween New",
-          "comment_text": "Drawing a red line\nShe refers to the devil's time\nBeautiful black priestess\n\n\nIn this town lives Satan's Venus\n\nThey called her Salem Girl\nThe maiden queen of the graveyard\n\nThey called her Salem Girl\nThe maiden queen of the graveyard\n\nDaughter of Tituba\nCapricorn hallelujah\nDamned by profane prayers\nJudged by holy sinners\n\nThey called her Salem Girl\nThe maiden queen of the graveyard\n\nThey called her Salem Girl\nThe maiden queen of the graveyard\n\nI charge you my lord\nBy your manifold names\nTo come as I roared\nBeelzebub, inferno rex\n\nAlright, dear sir\nThe wolves are at your doors\nProtect your girls\nAnd chain your boys\n\nTonight the devil will come\nInto your bed and soul\nDaughter will join the craze\nHearing the beast's howl\n\nShe's running in the woods\nHide from the cross claiming the good\nKilled her to save their souls\nDidn't know she cursed them all\n\nThey called her Salem Girl\nThe maiden queen of the graveyard\n\nThey called her Salem Girl\nThe maiden queen of the graveyard",
-          "ananki_reasoning": "The song 'Salem Girl, Pt. I' by The Necromancers is explicitly described in an 'Occult / Horror Rock Playlist' context with references to devil worship, Satan's Venus, black priestess, graveyard imagery, Tituba (from Salem witch trials), and demonic invocations. The lyrics paint a vivid picture of occult themes, witch trial imagery, and dark supernatural elements. This perfectly aligns with Dark - Gothic sub-vibe, which encompasses gothic horror, occult aesthetics, and dark supernatural themes in music. The song is clearly intended to evoke a gothic, horror-inspired atmosphere rather than general darkness or depression.",
-          "mapped_subvibe": "Dark - Gothic",
-          "coordinates": {
-            "x": 417.5,
-            "y": 765.0
-          },
-          "current_vibe": "Dark - Gothic",
-          "emotional_composition": {
-            "Dark": 0.55,
-            "Night": 0.25,
-            "Sad": 0.15,
-            "Energy": 0.05,
-            "Happy": 0.0,
-            "Party": 0.0,
-            "Chill": 0.0,
-            "Romantic": 0.0,
-            "Drive": 0.0
-          }
-        },
-        {
-          "artist": "Rilo Kiley",
-          "song": "15",
-          "spotify_id": "659MgS7iMuKXPhCIZN3FIj",
-          "spotify_uri": "spotify:track:659MgS7iMuKXPhCIZN3FIj",
-          "comment_score": 109,
-          "source_url": "https://youtube.com/watch?v=PBY-lTlrcNE",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Occult / Horror Rock Playlist - All hail the devil&#39;s music! Hard Rock, Doom Metal, Halloween New",
-          "comment_text": "I believe my time ain't long\nI got a feeling I am going wrong\nAnd if u see me coming round\nYou know my words will only bring you down\n\nBlue is the color of my soul\nBad times breaking up my lifeline\nNow my days are overcast and\nI can't seem to find my way upon this lonely road\n\nI believe that before too long\nall my sorrows will be overcome\nI don't know but I've been told\nYou ain't worth much \nwhen you're blood is cold\n\nBlue is the color of my soul\nBad times breaking up my lifeline\nNow my days are overcast and\nI can't seem to find my way upon this lonely road, no!\n\nWell have you heard the screams\nof a thousand dead\n(The) Reaper wispers in your ears when you're falling dead\none more day and I'm dragging on\nI curse the people that I walk among\n\nTears falling from my heavy eye\nsnow's falling from my yellow sky\none more day and I ask my self\n\"How long, how long before I do pass on?\"\n\nRed sun burn my eyes\nWhite vision arrives from forgotten times\nblue is the color of my soul\nand I can seem to find my way upon this lonely road, no!\n\nRed sun burn my eyes as I wake up\nblue soul bad times breaking up my lifeline\nred sun burn my eyes as I wake up\nblue soul bad times breaking up my lifeline",
-          "ananki_reasoning": "This song was recommended in an 'Occult / Horror Rock Playlist' context with references to devil's music, doom metal, and Halloween themes. The lyrics themselves contain dark imagery: death premonition ('I believe my time ain't long'), despair ('my words will only bring you down'), coldness of blood, and overwhelming blueness representing a troubled soul. The combination of the playlist's occult/horror framing with the song's morbid lyrical content about impending doom and spiritual darkness aligns perfectly with a Gothic sub-vibe, which encompasses dark, somber, and macabre emotional territory rather than standard sadness.",
-          "mapped_subvibe": "Dark - Gothic",
-          "coordinates": {
-            "x": 450.0,
-            "y": 690.0
-          },
-          "current_vibe": "Dark - Gothic",
-          "emotional_composition": {
-            "Sad": 0.45,
-            "Dark": 0.35,
-            "Night": 0.1,
-            "Romantic": 0.05,
-            "Drive": 0.05,
-            "Happy": 0.0,
-            "Party": 0.0,
-            "Chill": 0.0,
-            "Energy": 0.0
-          }
-        },
-        {
           "artist": "Monks Of The Abbey Of Notre Dame",
           "song": "Sanctum Et Immaculata",
           "spotify_id": "3tFkm9M9hFt0P3x98HWYwR",
@@ -55360,134 +54048,6 @@
           }
         },
         {
-          "artist": "The Awakening",
-          "song": "Fault",
-          "spotify_id": "65YS95DlaadZfTutxZXNQW",
-          "spotify_uri": "spotify:track:65YS95DlaadZfTutxZXNQW",
-          "comment_score": 29,
-          "source_url": "https://youtube.com/watch?v=tRJ3pyRyOkI",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 1.0,
-          "full_context": "",
-          "post_title": "100% pure old-school Gothic Rock - 100 tracks",
-          "comment_text": "Dress it down so it feels like fashion\nThe high life in a low-lit glow\nTurning out for the same reaction\nLight it all, light it up and go\nLight it all, light it up and go\nah ah ah\n\nFind a reason\nfor the last time and the thousand times before\nFind a reason\nto say goodbye\n\nFind a reason\nfor the memories you buried in the dirt\nFind a reason to say goodbye\nOh it doesn't feel like heaven anymore\n\nTear it up like a New Romantic\nlip gloss, lip service show\nThe impulse so automatic\nBreak it down, light it up and go\nBreak it down, light it up and go\nah ah ah\n\nFind a reason\nfor the last time and the thousand times before\nFind a reason\nto say goodbye\n\nFind a reason\nfor the memories you buried in the dirt\nFind a reason to say goodbye\nOh it doesn't feel like heaven \nOh the feelings are all broken \nNo it doesn't feel like heaven anymore",
-          "ananki_reasoning": "The post title explicitly states '100% pure old-school Gothic Rock' which directly categorizes this song. The lyrics reinforce this with Gothic themes: imagery of high life in 'low-lit glow,' cyclical patterns of reaction and ritual ('turning out for the same reaction'), themes of farewell and loss ('say goodbye,' 'memories you buried in the dirt'), and the closing line 'it doesn't feel like heaven anymore' which carries Gothic melancholy. The reference to 'New Romantic' (a movement closely tied to Gothic rock aesthetics) and the theatrical presentation ('lip gloss, lip service show') further cement the Gothic rock atmosphere. This is clearly a Gothic rock track both by explicit categorization and lyrical/aesthetic content.",
-          "mapped_subvibe": "Dark - Gothic",
-          "coordinates": {
-            "x": 442.5,
-            "y": 725.0
-          },
-          "current_vibe": "Dark - Gothic",
-          "emotional_composition": {
-            "Dark": 0.5,
-            "Sad": 0.2,
-            "Night": 0.15,
-            "Romantic": 0.1,
-            "Drive": 0.05,
-            "Energy": 0.0,
-            "Chill": 0.0,
-            "Happy": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
-          "artist": "Children On Stun",
-          "song": "Downfall",
-          "spotify_id": "0kUJbCV6LWWX84DGfqd66L",
-          "spotify_uri": "spotify:track:0kUJbCV6LWWX84DGfqd66L",
-          "comment_score": 8,
-          "source_url": "https://youtube.com/watch?v=hGXeaxO7piM",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 1.0,
-          "full_context": "",
-          "post_title": "100% pure old-school Gothic Rock - 100 tracks",
-          "comment_text": "Advance in swirling overcoat\nThe man called shadows after dark\nHe looked on ribboned head in front\nSkipping to the empty park\nHe ran inside to vacant stretch\nThe footsteps were so soft behind her\nDisappearing through the gate\nIt wouldn't take too long to find her\nHe breathed, \"We are alone\"\n\"We are alone\"\n\"Alone\"\nThe night drew in and watched them there\nA cat and mouse but who could tell\nA scathing hand caught ribbons bright\nA rough face pushed against her hair\nShe turned to face and caught his eye\nWith sharper teeth so long and bright\nHow Legion laughed!\nHow Legion cried!\nOh lucky day!\nOh sweet surprise!\nShe breathed, \"We are alone\"\n\"We are alone\"\n\"Alone\"\nAnd Legion told her\n\"We'll never leave you alone\"\n\"We'll never leave you alone\"\n\"We'll never leave you\"\n\"We'll never leave you alone\"\n\"We'll never leave you alone\"\n\"We'll never leave you\"\n\"We'll never leave you alone\"\n\"We'll never leave you alone\"\n\"We'll never leave you\"\n\"We'll never leave you alone\"\n\"We'll never leave you alone\"\n\"We'll never leave you\"\n\"We'll never leave you alone\"\n\"We'll never leave you alone\"\n\"We'll never leave you\"\n\"We'll never leave you alone\"\n\"We'll never leave you alone\"\n\"We'll never leave you\"\n\"We'll never leave you alone\"\n\"We'll never leave you alone\"\n\"We'll never leave you\"\n\"We'll never leave you alone\"\n\"We'll never leave you alone\"\n\"We'll never leave you\"",
-          "ananki_reasoning": "The context is explicitly about 'old-school Gothic Rock' (from the post title), and the lyrics provided describe a dark, sinister scene of someone pursuing another person through empty spaces at night - a classic gothic narrative featuring shadows, darkness, isolation, and menacing tension. The imagery of 'the man called shadows,' nocturnal settings, cat-and-mouse dynamics, and the ominous atmosphere are quintessentially gothic rock. The band Children On Stun and the song 'Downfall' are from the gothic rock genre, making this a clear match for the Dark - Gothic sub-vibe.",
-          "mapped_subvibe": "Dark - Gothic",
-          "coordinates": {
-            "x": 430.0,
-            "y": 695.0
-          },
-          "current_vibe": "Dark - Gothic",
-          "emotional_composition": {
-            "Sad": 0.2,
-            "Happy": 0.0,
-            "Chill": 0.0,
-            "Energy": 0.1,
-            "Dark": 0.5,
-            "Romantic": 0.1,
-            "Night": 0.1,
-            "Drive": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
-          "artist": "Jack Ingram",
-          "song": "Mary Go Round",
-          "spotify_id": "6qoJvSluKkFJ1nqcxk9I8s",
-          "spotify_uri": "spotify:track:6qoJvSluKkFJ1nqcxk9I8s",
-          "comment_score": 18,
-          "source_url": "https://youtube.com/watch?v=woaHiXNXkDk",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "100% pure old-school Gothic Rock - 100 tracks",
-          "comment_text": "#Lirics\n\nMary Sleeps Alone\r\n\nNo one ever understands why Mary sleeps alone\r\nShe doesn't care about the path the world is in her mind\r\nNot so far from heaven she's leaving in the past\r\n\nShe broke her toys she killed the dog Mary sleeps alone\r\nShe feels the shot it's a no man's land Mary sleeps alone\r\n\nFather takes her in his arms and tells her what she likes to hear\r\nSweet mother is always there with flowers and her precious kisses\r\nNot so far from heaven Mary sleeps alone\r\n\nShe broke her toys she killed the dog Mary sleeps alone\r\nShe feels the shot it's a no man's land Mary sleeps alone",
-          "ananki_reasoning": "The post is explicitly titled '100% pure old-school Gothic Rock' and the lyrics describe disturbing, dark imagery about Mary sleeping alone, broken toys, killing a dog, isolation, and a 'no man's land.' The lyrical content combined with the Gothic Rock genre designation clearly points to a dark, Gothic atmosphere. While there's a Spotify validation mismatch (Jack Ingram's 'Mary Go Round' is country, not Gothic rock), the human's emotional context and intent is unambiguously about Gothic rock music with dark, haunting themes.",
-          "mapped_subvibe": "Dark - Gothic",
-          "coordinates": {
-            "x": 452.5,
-            "y": 680.0
-          },
-          "current_vibe": "Dark - Gothic",
-          "emotional_composition": {
-            "Sad": 0.45,
-            "Dark": 0.35,
-            "Night": 0.1,
-            "Romantic": 0.05,
-            "Energy": 0.05,
-            "Happy": 0.0,
-            "Party": 0.0,
-            "Chill": 0.0,
-            "Drive": 0.0
-          }
-        },
-        {
-          "artist": "The Merry Thoughts",
-          "song": "Low Violet",
-          "spotify_id": "4zuJ1LXpRO7z3cRwDD17n7",
-          "spotify_uri": "spotify:track:4zuJ1LXpRO7z3cRwDD17n7",
-          "comment_score": 24,
-          "source_url": "https://youtube.com/watch?v=gm6BgXi9Z1k",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 1.0,
-          "full_context": "",
-          "post_title": "100% pure old-school Gothic Rock - 100 tracks",
-          "comment_text": "Somebody sent me\nSomebody\nThe final thing, the biggest scene\nWhere sand flows slowly, time is just a dream\nCall my head and call my name\nThe heart is dead, now who's to blame\nNothing has changed\nNothing is the same\n\nSomebody sent me ...\n\nThe sense comes down in the violet hour\nThe sense comes down in the violet hour\n\nOur flight was dry, the sun had shone\nWith a dry eye, give me another gun\nSuffocate, we both knew shame\nThe time they prayed\nAgain, again\nNothing has changed\nNothing is the same\n\nSomebody sent me ...\nThe sense comes down in the violet hour\nSomebody sent me ...\nThe sense calms down\nSomebody sent me ...\n\nNothing has changed\nLow violet\nSomebody sent me ...\nNothing has changed\nLow violet\nSomebody sent me ...\nNothing is the same\nLow violet",
-          "ananki_reasoning": "The song 'Low Violet' by The Merry Thoughts is explicitly recommended in a post titled '100% pure old-school Gothic Rock' which directly establishes the genre context. The lyrics emphasize classic gothic themes: death ('The heart is dead'), spiritual/existential emptiness ('Nothing has changed / Nothing is the same'), darkness ('violet hour' traditionally referring to dusk/twilight), and imagery of sending/being sent somewhere with religious undertones ('The time they prayed'). The repetitive, haunting quality of the lyrics ('Somebody sent me... Somebody') and themes of stagnation, shame, and spiritual deadness are quintessentially gothic rock. This fits perfectly within the Dark - Gothic sub-vibe category.",
-          "mapped_subvibe": "Dark - Gothic",
-          "coordinates": {
-            "x": 430.0,
-            "y": 725.0
-          },
-          "current_vibe": "Dark - Gothic",
-          "emotional_composition": {
-            "Sad": 0.4,
-            "Dark": 0.5,
-            "Night": 0.1,
-            "Energy": 0.0,
-            "Romantic": 0.0,
-            "Chill": 0.0,
-            "Happy": 0.0,
-            "Party": 0.0,
-            "Drive": 0.0
-          }
-        },
-        {
           "artist": "Christian Death",
           "song": "Spiritual Cramp - 1",
           "spotify_id": "3jSTCf4oCzZ2yhKNbmfl5k",
@@ -55520,38 +54080,6 @@
           }
         },
         {
-          "artist": "Pink Turns Blue",
-          "song": "Your Master is calling",
-          "spotify_id": "0TXfAQ5ohVQPzt4Mrr5azG",
-          "spotify_uri": "spotify:track:0TXfAQ5ohVQPzt4Mrr5azG",
-          "comment_score": 1515,
-          "source_url": "https://youtube.com/watch?v=FT9lwMakwv8",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 1.0,
-          "full_context": "",
-          "post_title": "80&#39;𝔰 𝔗𝔯𝔞𝔡 𝔊𝔬𝔱𝔥",
-          "comment_text": "My sister's calling with her lovely spell\nHer endless passions mean a greatful hell\nI'm waving gently to another world\nI need her kisses although it hurts \n\nMy master is calling - she is calling \n\nShe stays my hunger with a burning meal\nAnd I feel shelter in her bloody sea\nI call her devil and I call her God\nShe cures my soul while my senses rot \n\nMy master's calling - she is calling \n\nI'm burned by love the heart of earth\nWhile preachers announce he end of the world\nA carnal love in the dead of night\nMy heaven's hell from the other side \n\nMy master's calling",
-          "ananki_reasoning": "The post is explicitly titled '80's Trad Goth' which directly signals the gothic subculture and musical style. The lyrics depict classic gothic themes: a dark, obsessive love relationship with sadomasochistic undertones ('her bloody sea', 'my senses rot'), religious imagery mixed with carnal desire ('I call her devil and I call her God'), and apocalyptic references ('preachers announce the end of the world'). Pink Turns Blue is a known darkwave/gothic rock band from the 80s. The emotional context is one of passionate, dark romanticism with supernatural and religious overtones - the archetypal gothic aesthetic combining love, pain, devotion, and darkness. This fits 'Dark - Gothic' perfectly as it captures both the musical genre and the emotional atmosphere of obsessive, dark romance.",
-          "mapped_subvibe": "Dark - Gothic",
-          "coordinates": {
-            "x": 427.5,
-            "y": 682.5
-          },
-          "current_vibe": "Dark - Gothic",
-          "emotional_composition": {
-            "Sad": 0.25,
-            "Happy": 0.0,
-            "Chill": 0.0,
-            "Energy": 0.1,
-            "Dark": 0.5,
-            "Romantic": 0.1,
-            "Night": 0.05,
-            "Drive": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
           "artist": "The Devil Makes Three",
           "song": "I Am the Man Thomas",
           "spotify_id": "3sxk63HVjX2kxNYNgd4onT",
@@ -55578,38 +54106,6 @@
             "Energy": 0.2,
             "Dark": 0.5,
             "Romantic": 0.0,
-            "Night": 0.1,
-            "Drive": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
-          "artist": "Volturian",
-          "song": "The Killing Joke",
-          "spotify_id": "4J4czguMrefWsLF7bUqJHA",
-          "spotify_uri": "spotify:track:4J4czguMrefWsLF7bUqJHA",
-          "comment_score": 174,
-          "source_url": "https://youtube.com/watch?v=SzzvZ4kYwSQ",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 1.0,
-          "full_context": "",
-          "post_title": "Gothic Metal",
-          "comment_text": "Lyrics as written in album booklet.\n\nDifferent like day and night\nOn a beam of light we'll walk\nWhere sanity is just a step away\nFrom our demise\nYou'll go first, I'll come behind\nAnd what divided us is made of glass\nAnd ties two laces never meant to align\n\nI never left my private place\nNot without a mask\nNever been to the edge\nOut of my control,\nBut time is of the essence\nSo I'm ready to go\nAnd leave it all behind\n\nWe will leave this place at night\nIn the moonlight all the fears\nWill seem like fragile dreams\nWhen seen in a different light\n\nSaid it once, I'll say it twice\nI can't use your help as it's too late\nFor you to save my soul\nI swear no pride\n\nWe will leave this place at night\nIn the moonlight all the fears\nWill seem like fragile dreams\nWhen seen in a different light\n\nWe will leave this place at night\nWhen in the moonlight all the fears\nWill seem like fragile dreams\nWe'll break through to the other side\n\nI'm the ghost and you're the child\nWhere you end I start\nAs we're forever tied\nI'll haunt you till the end of time\n\nWe will leave this place at night\nIn the moonlight all the fears\nWill seem like fragile dreams\nWhen seen in a different light \n\nWe will leave this place at night\nWhen in the moonlight all the fears\nWill seem like fragile dreams\nWe'll break through to the other side",
-          "ananki_reasoning": "The post is explicitly titled 'Gothic Metal' and the song is by Volturian, a Gothic metal band. The lyrics contain classic Gothic themes: darkness and light imagery ('day and night,' 'beam of light,' 'moonlight'), leaving behind one's reality ('leave this place at night,' 'leave it all behind'), masks and hidden identity ('never left my private place / Not without a mask'), and the tension between fear and transcendence. The imagery of walking 'where sanity is just a step away from our demise' and venturing to places 'out of my control' with moonlight making fears disappear are quintessentially Gothic. This is a clear-cut case of Gothic metal with appropriate dark romantic and theatrical Gothic aesthetics.",
-          "mapped_subvibe": "Dark - Gothic",
-          "coordinates": {
-            "x": 417.5,
-            "y": 702.5
-          },
-          "current_vibe": "Dark - Gothic",
-          "emotional_composition": {
-            "Sad": 0.25,
-            "Happy": 0.0,
-            "Chill": 0.0,
-            "Energy": 0.1,
-            "Dark": 0.5,
-            "Romantic": 0.05,
             "Night": 0.1,
             "Drive": 0.0,
             "Party": 0.0
@@ -55840,70 +54336,6 @@
           }
         },
         {
-          "artist": "Jamez Michael",
-          "song": "Black Rose Beauty",
-          "spotify_id": "7CVLCxPK3r2a0YCpAtCP0w",
-          "spotify_uri": "spotify:track:7CVLCxPK3r2a0YCpAtCP0w",
-          "comment_score": 113,
-          "source_url": "https://youtube.com/watch?v=z5absmIJN24",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 1.0,
-          "full_context": "",
-          "post_title": "Gothic piano and violin music",
-          "comment_text": "Icy glare it's petals dance,\nIts deadly touch would leave a trance.\nIts firmness softness, its spiky thorn,\nWould send a chilling, relentless mourn.\nOh how I feel, the touch of grace,\nTo emerge myself, from inner place.\nWhere I cannot move, I froze with fear,\nTo found myself standing, upon the sphere.",
-          "ananki_reasoning": "The comment text is a poem that perfectly aligns with gothic themes - it describes a 'Black Rose' with imagery of coldness ('icy glare'), danger ('deadly touch', 'spiky thorn'), darkness ('chilling, relentless mourn'), and frozen fear. The song title 'Black Rose Beauty' combined with the post title explicitly requesting 'Gothic piano and violin music' makes this a clear-cut case. The poetic language evokes classic gothic aesthetics: beauty intertwined with danger, grace mixed with fear, and the contrast between softness and sharpness. The entire context - from the title to the comment to the song - centers on gothic musical atmosphere.",
-          "mapped_subvibe": "Dark - Gothic",
-          "coordinates": {
-            "x": 462.5,
-            "y": 685.0
-          },
-          "current_vibe": "Dark - Gothic",
-          "emotional_composition": {
-            "Sad": 0.25,
-            "Dark": 0.45,
-            "Romantic": 0.15,
-            "Night": 0.1,
-            "Energy": 0.05,
-            "Happy": 0.0,
-            "Chill": 0.0,
-            "Drive": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
-          "artist": "HUNTR/X",
-          "song": "How It’s Done",
-          "spotify_id": "3RXUgPNIbUgFxsDWuBQEt6",
-          "spotify_uri": "spotify:track:3RXUgPNIbUgFxsDWuBQEt6",
-          "comment_score": 1015,
-          "source_url": "https://youtube.com/watch?v=itMd1_nxfzc",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Gothic piano and violin music",
-          "comment_text": "In the darkness of the night\nNot a star does shine in sight\nWithout hope, filled with plight\nIt's in this silence that we fly\n\nThrough the cold and bitter air\nFilled with longing, alone we roam\nSeeking, hoping, we pray to find\nA place to call forever home\n\nAlas, but Fate is cruel\nFor in this tale we are the fools\nWhatever we wish, wherever we search\nNever will we find a ledge to perch\n\nYet tired and beaten, still we try\nFlying through shadow, looking for light\nTill we drop like angels on high\nInto the darkness of forever night",
-          "ananki_reasoning": "The post title explicitly states 'Gothic piano and violin music,' and the accompanying poem reinforces this with classic gothic themes: darkness, despair, isolation, the search for belonging in a cruel world, and imagery of fallen angels. The poem's narrative of flying through darkness 'seeking, hoping' but being doomed by fate ('Fate is cruel / For in this tale we are the fools') embodies the melancholic, atmospheric quality of gothic music. The romantic yet tragic tone, combined with the classical instrumentation mentioned (piano and violin), aligns perfectly with the Dark - Gothic sub-vibe.",
-          "mapped_subvibe": "Dark - Gothic",
-          "coordinates": {
-            "x": 430.0,
-            "y": 725.0
-          },
-          "current_vibe": "Dark - Gothic",
-          "emotional_composition": {
-            "Sad": 0.4,
-            "Dark": 0.5,
-            "Night": 0.1,
-            "Romantic": 0.0,
-            "Drive": 0.0,
-            "Energy": 0.0,
-            "Chill": 0.0,
-            "Happy": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
           "artist": "Rejalacion Del Mar",
           "song": "Emotional Cure",
           "spotify_id": "5NwxF0IRAHe4NSryZoTIQi",
@@ -55933,38 +54365,6 @@
             "Night": 0.0,
             "Drive": 0.0,
             "Party": 0.0
-          }
-        },
-        {
-          "artist": "Seventh Wonder",
-          "song": "King Of Whitewater",
-          "spotify_id": "39nBaaOIDYRx0qrvUfMFH9",
-          "spotify_uri": "spotify:track:39nBaaOIDYRx0qrvUfMFH9",
-          "comment_score": 122,
-          "source_url": "https://youtube.com/watch?v=DVen9Nsw4cE",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Gothic piano and violin music",
-          "comment_text": "Life, confused as this young thing shuttered at the look of death asked, \"Death . . . why do people fear you, but cling to me?\"\n\nDeath responded in his usual monotone manner, \"Because they have known you, they have grown with you . . . but me . . . they have only heard of me, seen me only when the ones they loved disappeared in my embrace.\n\nThough you are harder on them, making them push just to get so little they still fear me . . .\n\nBut no matter how much they fear me when the time comes, I accept them with open arms as if we where old friends.\"",
-          "ananki_reasoning": "The post title explicitly mentions 'Gothic piano and violin music,' and the comment provides a poetic dialogue between Life and Death that explores mortality, fear, and the human relationship with death in a philosophical, dark manner. This theatrical, contemplative meditation on death with gothic instrumentation (piano and violin) clearly aligns with the Dark - Gothic sub-vibe, which encompasses both the musical style referenced and the thematic content about death, fear, and existential themes.",
-          "mapped_subvibe": "Dark - Gothic",
-          "coordinates": {
-            "x": 455.0,
-            "y": 710.0
-          },
-          "current_vibe": "Dark - Gothic",
-          "emotional_composition": {
-            "Sad": 0.3,
-            "Dark": 0.5,
-            "Night": 0.1,
-            "Romantic": 0.1,
-            "Happy": 0.0,
-            "Party": 0.0,
-            "Chill": 0.0,
-            "Energy": 0.0,
-            "Drive": 0.0
           }
         },
         {
@@ -56032,38 +54432,6 @@
           }
         },
         {
-          "artist": "Niobeth",
-          "song": "The Whisper Of Rain",
-          "spotify_id": "3mHfXtf1H5gHCOlPPR0UJa",
-          "spotify_uri": "spotify:track:3mHfXtf1H5gHCOlPPR0UJa",
-          "comment_score": 4,
-          "source_url": "https://youtube.com/watch?v=leS3KmzllnI",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 1.0,
-          "full_context": "",
-          "post_title": "melodic female gothic",
-          "comment_text": "Keep my secret deep within,\nHear my call...\nOh... oh how I cry\nIn the lone night\nPlease save me from\nThe embrace denying my future\nWhere are you father?\nWhere are you mother?\nCome from the deep,\nBless me, protect me\nFrom her cold fingers\nEchoes of terror\nIn this solitude\nWhere's my angel?\nI remember your eyes (and)\nHow we played together\nAngel...\nI feel fear...\n(Darkness is coming,\nWatch out from your back,\nHere we are...)\nWhy I hear but silence?\n(Hunting your last breath,\nStealing your soul,\nTorn apart)\nGet out this cold\n(Keeping the cold\nEven colder\nAround and inside)\nFreezing my illusions\n(Stalking the child\nYou once was,\nWhere is it now?)\nThe whisper of rain will bring me life\nFrom an unique memory\nMissing inside the twilight,\nThe crown of my sunrise\nAnd moon of my pale…",
-          "ananki_reasoning": "The post title explicitly states 'melodic female gothic' and the lyrics perfectly embody gothic themes: supernatural terror, calling to absent parents, fear of dark forces ('her cold fingers,' 'darkness is coming'), solitude, and pleas for angelic protection. The imagery of secrets, echoes of terror, soul-stealing, and hunting last breath are classic gothic horror elements. The melodic, atmospheric nature combined with fear and supernatural dread makes this definitively Dark - Gothic rather than other dark categories like Haunting (which would be less thematically specific) or Anxious (which lacks the supernatural/gothic aesthetic).",
-          "mapped_subvibe": "Dark - Gothic",
-          "coordinates": {
-            "x": 437.5,
-            "y": 700.0
-          },
-          "current_vibe": "Dark - Gothic",
-          "emotional_composition": {
-            "Sad": 0.35,
-            "Dark": 0.45,
-            "Night": 0.1,
-            "Romantic": 0.05,
-            "Energy": 0.05,
-            "Happy": 0.0,
-            "Party": 0.0,
-            "Chill": 0.0,
-            "Drive": 0.0
-          }
-        },
-        {
           "artist": "Xandria",
           "song": "Valentine",
           "spotify_id": "6JyihFL870QcYKhggoi8cz",
@@ -56092,38 +54460,6 @@
             "Sad": 0.0,
             "Happy": 0.0,
             "Chill": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
-          "artist": "Soviet Soviet",
-          "song": "Ecstasy",
-          "spotify_id": "0TKkvYT4K94hECUZqQVC9G",
-          "spotify_uri": "spotify:track:0TKkvYT4K94hECUZqQVC9G",
-          "comment_score": 1800,
-          "source_url": "https://youtube.com/watch?v=AUxOF7eLA_0",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Post Punk/Goth/Dark Wave/Cold Wave/Synth/Electro/Industrial/Minimal/Dance",
-          "comment_text": "0:11 Persona (Bergman)\n0:58 The Mirror (Tarkovsky)\n1:33 Eraserhead (Lynch)\n1:52 Meshes of the afternoon (Maya Deren)\n2:03 La passion de Jeanne d'Arc (Dreyer)\n2:24 Der himmel über Berlin (Win Wenders)\n2:31 Ikiru (Kurosawa)\n2:50 Umberto D (De Sica)",
-          "ananki_reasoning": "The comment lists iconic art house and existential cinema masterpieces with timestamps, suggesting the song's visual accompaniment or thematic alignment with deeply atmospheric, contemplative, and gothic-tinged filmmaking. The post title explicitly includes 'Goth/Dark Wave/Cold Wave' genres. Soviet Soviet is a post-punk/cold wave band, and the referenced films (Persona, Eraserhead, The Passion of Joan of Arc, etc.) are renowned for their haunting, austere, and often spiritually dark aesthetics. The combination of the genre tags, band style, and the cinematic references points to a gothic atmosphere that transcends simple darkness—it's artistic, atmospheric, and aesthetically aligned with gothic sensibilities in both sound and visual culture.",
-          "mapped_subvibe": "Dark - Gothic",
-          "coordinates": {
-            "x": 435.0,
-            "y": 637.5
-          },
-          "current_vibe": "Dark - Gothic",
-          "emotional_composition": {
-            "Sad": 0.25,
-            "Happy": 0.0,
-            "Chill": 0.1,
-            "Energy": 0.1,
-            "Dark": 0.4,
-            "Romantic": 0.05,
-            "Night": 0.05,
-            "Drive": 0.05,
             "Party": 0.0
           }
         },
@@ -56219,38 +54555,6 @@
             "Chill": 0.0,
             "Energy": 0.0,
             "Night": 0.0,
-            "Drive": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
-          "artist": "Lebanon Hanover",
-          "song": "I Believe You Can Survive",
-          "spotify_id": "1bkx2vJHGvLipl6Afjpges",
-          "spotify_uri": "spotify:track:1bkx2vJHGvLipl6Afjpges",
-          "comment_score": 502,
-          "source_url": "https://youtube.com/watch?v=wdFTnIovtPs",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 1.0,
-          "full_context": "",
-          "post_title": "dark &amp; gothic love songs",
-          "comment_text": "#Lyrics  \nWith your hands on your ears\nI see you reading\nAnd it doesn't even matter\nThat everyone can see you\n\nIn you there is no masquerade\nJust purity and realness\nFrom head to toe discrepancy\nUnlike anyone here\n\nIn you there is a fire\nYour warmth shines onto me\nI bet you find bestsellers and crimes\nExactly as unreadable\n\nIn you I see a lightning\nAnd if it struck me I wouldn't mind\nYou are beautiful because you wear\nYour dismday in your smile\n\nIn you there is no imitation\nJust a delicate strong mind\nAnd with an attitude like that\nI believe you can survive\n\nIn you there is a rose\nTo harm anyone your too shy\nBut your intentions of revolt\nAre bursting inside\n\nIn you there is a darksome cloud\nWith a very friendly vibe\nA gloomy look is simply\nThe most soothing in our time\n\nWith your hands on your ears\nI see you reading\nAnd it doesn't even matter\nThat everyone can see you\n\nIn your face I see hapiness\nWith a shimmer of decline\nI bet your bookshelf\nLooks similar to mine",
-          "ananki_reasoning": "The post title explicitly states 'dark & gothic love songs,' and the lyrics perfectly align with this aesthetic. Lebanon Hanover is a well-known darkwave/gothic band, and this song combines dark romantic themes with gothic sensibilities. The lyrics describe an intense, observant love with imagery like 'fire,' 'lightning,' and 'dismday in your smile' (likely 'doomsday'), which are classic gothic romance elements - beauty intertwined with darkness. The subject is described as having 'purity and realness' and 'discrepancy,' celebrating their outsider status ('Unlike anyone here'), which is a core gothic theme. This is a clear example of gothic romantic expression rather than general sadness, brooding, or other dark categories.",
-          "mapped_subvibe": "Dark - Gothic",
-          "coordinates": {
-            "x": 467.5,
-            "y": 702.5
-          },
-          "current_vibe": "Dark - Gothic",
-          "emotional_composition": {
-            "Sad": 0.25,
-            "Dark": 0.5,
-            "Romantic": 0.15,
-            "Night": 0.1,
-            "Energy": 0.0,
-            "Happy": 0.0,
-            "Chill": 0.0,
             "Drive": 0.0,
             "Party": 0.0
           }
@@ -57155,70 +55459,6 @@
     "Night - Introspective Philosophical": {
       "songs": [
         {
-          "artist": "Guns N' Roses",
-          "song": "Civil War",
-          "spotify_id": "6i4Qi1mJxXjqNIL9HfJhRs",
-          "spotify_uri": "spotify:track:6i4Qi1mJxXjqNIL9HfJhRs",
-          "comment_score": 1,
-          "source_url": "https://reddit.com/r/Music/comments/1omnqss/what_are_some_of_your_favorite_song_lyrics/nmqo9w6/",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "What are some of your favorite song lyrics?",
-          "comment_text": "'you wear a black armband\nWhen they shot the man\nWho said \"Peace could last forever\"\nAnd in my first memories\nThey shot Kennedy\nI went numb when I learned to see\nSo I never fell for Vietnam\nWe got the wall of D.C. to remind us all\nThat you can't trust freedom\nWhen it's not in your hands\nWhen everybody's fightin'\nFor their promised land\n\nCivil War  Guns 'n Roses",
-          "ananki_reasoning": "The commenter highlights lyrics from 'Civil War' that deal with profound historical tragedies (assassinations of peace advocates, Kennedy, Vietnam War) and grapples with heavy philosophical questions about freedom, trust, war, and the disillusionment that comes from learning harsh political realities ('I went numb when I learned to see'). The emphasis on loss of innocence, questioning the nature of freedom, and reflecting on how conflict shapes society points to deep philosophical introspection about humanity, war, and social consciousness. This is contemplative engagement with weighty existential and political themes rather than anger or catharsis.",
-          "mapped_subvibe": "Night - Introspective Philosophical",
-          "coordinates": {
-            "x": 440.0,
-            "y": 695.0
-          },
-          "current_vibe": "Night - Introspective Philosophical",
-          "emotional_composition": {
-            "Sad": 0.4,
-            "Dark": 0.3,
-            "Night": 0.2,
-            "Energy": 0.1,
-            "Chill": 0.0,
-            "Happy": 0.0,
-            "Party": 0.0,
-            "Romantic": 0.0,
-            "Drive": 0.0
-          }
-        },
-        {
-          "artist": "Will Wood and the Tapeworms",
-          "song": "The Song with Five Names a.k.a. Soapbox Tao a.k.a. Checkmate Atheists! a.k.a. Neospace Government (A.K.A. You Can Never Know)",
-          "spotify_id": "2wcYmOsdlW2lEuzV7rcLkA",
-          "spotify_uri": "spotify:track:2wcYmOsdlW2lEuzV7rcLkA",
-          "comment_score": 2,
-          "source_url": "https://reddit.com/r/ifyoulikeblank/comments/1lqqvqf/iil_songs_about_having_a_hard_time_with_religion/n17kzy0/",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "[IIL] Songs about having a hard time with religion [WEWIL]",
-          "comment_text": "The entire Self-Ish album by Will Wood has some serious bangers that have to do with this subject, but the religion part isn't the main idea. Rather, religion is used within metaphor as a support for the main messages throughout.\n\nIf anything, a song like \"The Song With Five Names a.k.a. [...]\" should probably be at whatever point your character has peaked in self-realization. \n\nAttributable lyrics: \n\n\"I noticed that the sunshine is a gaslight\nI'm hoping that this one might be my past life\nMy Lord, I know enough to get my facts right\nAnd that's good enough for me\nAnd everything and everyone will die soon\nAnd we'll have nothing left for us to lie to\nNo matter what we seek you'll never find truth\nAnd that's good enough for me\nSo give me that Old Time Religion\nGimme that Old Time Religion\nGive me that Old Time Religion\nIt's Good Enough For Me\"\n\nImmediately followed by \"It's good enough but not enough to be good enough for me\" \n\nSo wherever THAT fits in........ Not sure!\n\nHope your project goes swimmingly!\n\n[Edit: just realized you already have if a book doesn't sell lol]",
-          "ananki_reasoning": "The comment describes this song as representing a peak moment of 'self-realization' within an album dealing with religion through metaphor. The lyrics mention 'sunshine is a gaslight' and 'hoping this one might be my past life,' which indicate deep philosophical questioning about reality, truth, and existence. The song's full title includes 'Checkmate Atheists!' and 'You Can Never Know,' further emphasizing themes of epistemological uncertainty and wrestling with big existential questions. This is distinctly philosophical introspection rather than emotional distress (anxious existential dread) or simple self-reflection - it's about reaching a point of questioning fundamental truths about reality, religion, and knowledge itself.",
-          "mapped_subvibe": "Night - Introspective Philosophical",
-          "coordinates": {
-            "x": 477.5,
-            "y": 760.0
-          },
-          "current_vibe": "Night - Introspective Philosophical",
-          "emotional_composition": {
-            "Night": 0.5,
-            "Dark": 0.3,
-            "Sad": 0.1,
-            "Chill": 0.05,
-            "Energy": 0.05,
-            "Romantic": 0.0,
-            "Happy": 0.0,
-            "Party": 0.0,
-            "Drive": 0.0
-          }
-        },
-        {
           "artist": "Montana of 300",
           "song": "Slaughterhouse",
           "spotify_id": "4BLf56AhYIWjKG9jQqeeYZ",
@@ -58069,6 +56309,38 @@
             "Energy": 0.0,
             "Romantic": 0.0,
             "Night": 0.0,
+            "Drive": 0.0
+          }
+        },
+        {
+          "artist": "Will Wood and the Tapeworms",
+          "song": "The Song with Five Names a.k.a. Soapbox Tao a.k.a. Checkmate Atheists! a.k.a. Neospace Government (A.K.A. You Can Never Know)",
+          "spotify_id": "2wcYmOsdlW2lEuzV7rcLkA",
+          "spotify_uri": "spotify:track:2wcYmOsdlW2lEuzV7rcLkA",
+          "comment_score": 2,
+          "source_url": "https://reddit.com/r/ifyoulikeblank/comments/1lqqvqf/iil_songs_about_having_a_hard_time_with_religion/n17kzy0/",
+          "data_source": "reddit_smart_v2",
+          "extraction_confidence": 1,
+          "mapping_confidence": 0.85,
+          "full_context": "",
+          "post_title": "[IIL] Songs about having a hard time with religion [WEWIL]",
+          "comment_text": "The entire Self-Ish album by Will Wood has some serious bangers. The religion part isn't the main idea - rather, religion is used as metaphor for the main messages throughout. This song should probably be at whatever point your character has peaked in self-realization - that moment when you realize you can never truly know anything, and somehow that's... okay?",
+          "ananki_reasoning": "Dark cabaret existential questioning - the song grapples with truth, knowledge, identity and the futility of certainty. Uses religious imagery as metaphor for deeper existential themes. Peak self-realization moment where accepting unknowability becomes its own dark comfort.",
+          "mapped_subvibe": "Dark - Anxious Existential Dread",
+          "coordinates": {
+            "x": 320.0,
+            "y": 580.0
+          },
+          "current_vibe": "Dark - Anxious Existential Dread",
+          "emotional_composition": {
+            "Dark": 0.45,
+            "Night": 0.3,
+            "Sad": 0.15,
+            "Energy": 0.05,
+            "Chill": 0.05,
+            "Romantic": 0.0,
+            "Happy": 0.0,
+            "Party": 0.0,
             "Drive": 0.0
           }
         }
@@ -60494,39 +58766,6 @@
             "Party": 0.0,
             "Energy": 0.0,
             "Drive": 0.0
-          }
-        },
-        {
-          "artist": "One Direction",
-          "song": "Little Things",
-          "spotify_id": "0TAmnCzOtqRfvA38DDLTjj",
-          "spotify_uri": "spotify:track:0TAmnCzOtqRfvA38DDLTjj",
-          "comment_score": 20553,
-          "source_url": "https://youtube.com/watch?v=xGPeNN9S0Fg",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1.0,
-          "mapping_confidence": 0.85,
-          "full_context": "",
-          "post_title": "Romantic wedding songs",
-          "comment_text": "When Niall had blonde hair\nWhen Louis wasn't a dad\nWhen Zayn didn't leave the band\nWhen Liam had \"no hair\"\nWhen Harry didn't have any tattoos\nWhen One Direction was One Direction",
-          "ananki_reasoning": "The comment is deeply nostalgic, reminiscing about the early days of One Direction before significant life changes occurred (Zayn leaving, members growing up, getting tattoos, having children). The wistful tone of 'When One Direction was One Direction' captures longing for a simpler past when the band was intact and the members were younger. While 'Little Things' is indeed a romantic wedding song, the emotional context provided focuses entirely on nostalgia for the band's early era rather than romance. The commenter is reflecting on a time that can't be returned to, making this primarily a nostalgic sentiment about simpler times.",
-          "mapped_subvibe": "Sad - Nostalgic Simpler Times",
-          "coordinates": {
-            "x": 567.86,
-            "y": 542.86
-          },
-          "current_vibe": "Sad - Nostalgic Simpler Times",
-          "emotional_composition": {
-            "Sad": 0.5,
-            "Nostalgic": 0.3,
-            "Romantic": 0.15,
-            "Chill": 0.05,
-            "Happy": 0.0,
-            "Energy": 0.0,
-            "Dark": 0.0,
-            "Night": 0.0,
-            "Drive": 0.0,
-            "Party": 0.0
           }
         },
         {

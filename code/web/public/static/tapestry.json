@@ -56311,6 +56311,38 @@
             "Night": 0.0,
             "Drive": 0.0
           }
+        },
+        {
+          "artist": "Will Wood and the Tapeworms",
+          "song": "The Song with Five Names a.k.a. Soapbox Tao a.k.a. Checkmate Atheists! a.k.a. Neospace Government (A.K.A. You Can Never Know)",
+          "spotify_id": "2wcYmOsdlW2lEuzV7rcLkA",
+          "spotify_uri": "spotify:track:2wcYmOsdlW2lEuzV7rcLkA",
+          "comment_score": 2,
+          "source_url": "https://reddit.com/r/ifyoulikeblank/comments/1lqqvqf/iil_songs_about_having_a_hard_time_with_religion/n17kzy0/",
+          "data_source": "reddit_smart_v2",
+          "extraction_confidence": 1,
+          "mapping_confidence": 0.85,
+          "full_context": "",
+          "post_title": "[IIL] Songs about having a hard time with religion [WEWIL]",
+          "comment_text": "The entire Self-Ish album by Will Wood has some serious bangers. The religion part isn't the main idea - rather, religion is used as metaphor for the main messages throughout. This song should probably be at whatever point your character has peaked in self-realization - that moment when you realize you can never truly know anything, and somehow that's... okay?",
+          "ananki_reasoning": "Dark cabaret existential questioning - the song grapples with truth, knowledge, identity and the futility of certainty. Uses religious imagery as metaphor for deeper existential themes. Peak self-realization moment where accepting unknowability becomes its own dark comfort.",
+          "mapped_subvibe": "Dark - Anxious Existential Dread",
+          "coordinates": {
+            "x": 320.0,
+            "y": 580.0
+          },
+          "current_vibe": "Dark - Anxious Existential Dread",
+          "emotional_composition": {
+            "Dark": 0.45,
+            "Night": 0.3,
+            "Sad": 0.15,
+            "Energy": 0.05,
+            "Chill": 0.05,
+            "Romantic": 0.0,
+            "Happy": 0.0,
+            "Party": 0.0,
+            "Drive": 0.0
+          }
         }
       ],
       "song_count": 2
