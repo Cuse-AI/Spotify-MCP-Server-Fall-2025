@@ -27894,38 +27894,6 @@
           }
         },
         {
-          "artist": "Echoes of Dawn",
-          "song": "Shaman Soundscape",
-          "spotify_id": "64nEe0OVFFQuDNSwbMVlXI",
-          "spotify_uri": "spotify:track:64nEe0OVFFQuDNSwbMVlXI",
-          "comment_score": 52,
-          "source_url": "https://youtube.com/watch?v=YiITXNYCjAg",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Japan Zen Music for Meditation, Relax and Study",
-          "comment_text": "Taking inspiration from early morning walks in rural Japan, today we have something with a little more energy to start the day. Hope it helps :)",
-          "ananki_reasoning": "The human explicitly describes this music as inspired by 'early morning walks in rural Japan' and mentions it has 'a little more energy to start the day.' The context clearly positions this as morning-focused content for meditation, relaxation, and study. While the song title 'Shaman Soundscape' suggests ambient/meditative qualities, the emphasis on morning energy and starting the day aligns perfectly with the 'Morning Coffee' sub-vibe, which captures that calm yet energizing quality of peaceful morning routines.",
-          "mapped_subvibe": "Chill - Morning Coffee",
-          "coordinates": {
-            "x": 562.5,
-            "y": 312.5
-          },
-          "current_vibe": "Chill - Morning Coffee",
-          "emotional_composition": {
-            "Chill": 0.5,
-            "Energy": 0.25,
-            "Happy": 0.15,
-            "Romantic": 0.1,
-            "Sad": 0.0,
-            "Party": 0.0,
-            "Dark": 0.0,
-            "Night": 0.0,
-            "Drive": 0.0
-          }
-        },
-        {
           "artist": "John Legend",
           "song": "Good Morning",
           "spotify_id": "78W3OjLt8Ugxaar3h9mY2j",
@@ -31067,38 +31035,6 @@
           }
         },
         {
-          "artist": "Relaxing Music for Stress Relief",
-          "song": "Beautiful Stress Relief",
-          "spotify_id": "6CeNIAwUHYSUona8L8IjSQ",
-          "spotify_uri": "spotify:track:6CeNIAwUHYSUona8L8IjSQ",
-          "comment_score": 27,
-          "source_url": "https://youtube.com/watch?v=42_yTg1eVpY",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 0.95,
-          "full_context": "",
-          "post_title": "Japan Zen Music for Meditation, Relax and Study",
-          "comment_text": "We step into a tranquil world today, immersed in the spirit of Japanese Zen Music. Really enjoyed putting this together. Hope it helps :)",
-          "ananki_reasoning": "The human explicitly describes this as 'Japanese Zen Music for Meditation, Relax and Study' and mentions stepping into a 'tranquil world.' The context emphasizes peaceful, meditative qualities designed to help listeners relax or focus. The song title 'Beautiful Stress Relief' by an artist specializing in relaxing music confirms this is ambient, atmospheric content meant for calming rather than any emotional storytelling or active engagement. While 'Night - Sleep' could be considered, the mention of 'study' and general meditation purposes makes 'Chill - Ambient' the most accurate fit, as it captures the broader contemplative, atmospheric quality of Zen-inspired relaxation music used throughout the day.",
-          "mapped_subvibe": "Chill - Ambient",
-          "coordinates": {
-            "x": 625.0,
-            "y": 345.0
-          },
-          "current_vibe": "Chill - Ambient",
-          "emotional_composition": {
-            "Sad": 0.0,
-            "Happy": 0.1,
-            "Chill": 0.6,
-            "Energy": 0.1,
-            "Dark": 0.0,
-            "Romantic": 0.1,
-            "Night": 0.1,
-            "Drive": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
           "artist": "The Grouch & Eligh",
           "song": "Sound, Noise, Music",
           "spotify_id": "3ybcNYnJroHSI4pJ47jG2t",
@@ -33190,38 +33126,6 @@
             "Romantic": 0.0,
             "Happy": 0.0,
             "Energy": 0.0,
-            "Drive": 0.0,
-            "Party": 0.0
-          }
-        },
-        {
-          "artist": "Silent Rhythm",
-          "song": "Deep Healing Sleep Music",
-          "spotify_id": "2M2VejsVLg83cSnjvCz9Ty",
-          "spotify_uri": "spotify:track:2M2VejsVLg83cSnjvCz9Ty",
-          "comment_score": 32362,
-          "source_url": "https://youtube.com/watch?v=xsfyb1pStdw",
-          "data_source": "reddit_smart_v2",
-          "extraction_confidence": 1,
-          "mapping_confidence": 1,
-          "full_context": "",
-          "post_title": "Calming music for anxiety - Healing Music for Stress Relief - Peaceful Meditation, Deep Sleep Music",
-          "comment_text": "Some of us don't hear or read this too often, so I'm just here to say that, I love you. You'll be okay, you are going to be alright. ❤️",
-          "ananki_reasoning": "The post title explicitly mentions 'Deep Sleep Music' and 'Healing Music for Stress Relief,' while the comment offers comforting reassurance to anxious listeners. The song title 'Deep Healing Sleep Music' and the entire context centers on using music as a tool for sleep and anxiety relief. This clearly maps to the Night - Sleep sub-vibe, as the music is specifically designed for sleep purposes with healing and calming intentions.",
-          "mapped_subvibe": "Night - Sleep",
-          "coordinates": {
-            "x": 628.57,
-            "y": 532.14
-          },
-          "current_vibe": "Night - Sleep",
-          "emotional_composition": {
-            "Sad": 0.0,
-            "Happy": 0.07142857142857144,
-            "Chill": 0.35714285714285715,
-            "Energy": 0.0,
-            "Dark": 0.0,
-            "Romantic": 0.14285714285714288,
-            "Night": 0.4285714285714286,
             "Drive": 0.0,
             "Party": 0.0
           }
